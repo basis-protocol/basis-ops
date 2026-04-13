@@ -1,14 +1,3 @@
-2026-04-12T23:55:08.106261829Z [error] 2026-04-12 23:55:08,102 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/RLUSD?format=json "HTTP/1.1 200 "
-2026-04-12T23:55:08.106266434Z [error] 2026-04-12 23:55:08,103 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/RLUSD 200 (10806 bytes)
-2026-04-12T23:55:08.106269641Z [error] 2026-04-12 23:55:08,103 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDe params={'format': 'json'}
-2026-04-12T23:55:10.654193597Z [error] 2026-04-12 23:55:10,348 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDe?format=json "HTTP/1.1 200 "
-2026-04-12T23:55:10.654200362Z [error] 2026-04-12 23:55:10,348 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDe 200 (14434 bytes)
-2026-04-12T23:55:10.654205380Z [error] 2026-04-12 23:55:10,349 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDS params={'format': 'json'}
-2026-04-12T23:55:10.654210106Z [error] 2026-04-12 23:55:10,408 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDS?format=json "HTTP/1.1 429 "
-2026-04-12T23:55:10.654215697Z [error] 2026-04-12 23:55:10,408 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDS 429 (56 bytes)
-2026-04-12T23:55:10.654220798Z [error] 2026-04-12 23:55:10,408 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-12T23:55:10.654227601Z [error] 2026-04-12 23:55:10,409 WARNING [basis_state] Failed to fetch history for stablecoin:USDS
-2026-04-12T23:55:10.654232561Z [error] 2026-04-12 23:55:10,409 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/GHO params={'format': 'json'}
 2026-04-12T23:55:12.654979531Z [error] 2026-04-12 23:55:12,545 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/GHO?format=json "HTTP/1.1 200 "
 2026-04-12T23:55:12.654983919Z [error] 2026-04-12 23:55:12,546 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/GHO 200 (11250 bytes)
 2026-04-12T23:55:12.654991150Z [error] 2026-04-12 23:55:12,547 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/PYUSD params={'format': 'json'}
@@ -499,3 +488,14 @@
 2026-04-13T18:45:34.426642271Z [info] INFO:     100.64.0.35:58296 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
 2026-04-13T18:45:54.427639719Z [info] INFO:     100.64.0.10:17222 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
 2026-04-13T18:47:44.437800528Z [info] INFO:     100.64.0.20:37110 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-13T19:06:09.921786203Z [info] INFO:     100.64.0.14:41942 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-13T19:06:49.951194258Z [info] INFO:     100.64.0.12:51542 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-13T19:08:20.042943151Z [info] INFO:     100.64.0.36:48128 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-13T19:08:39.710547570Z [info] INFO:     100.64.0.12:21692 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-13T19:15:19.824775705Z [info] INFO:     100.64.0.10:26344 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
+2026-04-13T19:15:39.823252926Z [info] INFO:     100.64.0.7:30666 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
+2026-04-13T19:25:50.464420641Z [info] INFO:     100.64.0.4:45666 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-13T19:26:10.135328178Z [info] INFO:     100.64.0.8:62770 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-13T19:26:10.135331580Z [info] INFO:     100.64.0.8:62770 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-13T19:27:50.145956100Z [info] INFO:     100.64.0.26:51164 - "GET /wp-login.php HTTP/1.1" 404 Not Found
+2026-04-13T19:29:10.151025789Z [info] INFO:     100.64.0.18:31800 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
