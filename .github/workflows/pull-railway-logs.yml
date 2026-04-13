@@ -1,0 +1,91 @@
+name: Pull Railway Logs
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'  # Every 15 minutes
+  workflow_dispatch:  # Manual trigger
+
+jobs:
+  pull-logs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Pull logs from all Railway services
+        env:
+          RAILWAY_API_TOKEN: ${{ secrets.RAILWAY_API_TOKEN }}
+          PROJECT_ID: "736af3ec-ed9d-41d5-a8b6-c778393dd12b"
+          ENVIRONMENT_ID: "e50bf3e2-ee86-445d-b934-ad44098d040a"
+        run: |
+          mkdir -p logs
+
+          declare -A SERVICES
+          SERVICES=(
+            ["basis-provenance"]="7eb5b894-2107-439c-9c53-00e99fc37b72"
+            ["basis-state"]="61d5cb8c-7441-4db8-bfda-ad466f39497a"
+            ["api-server"]="39defdfc-cfa8-4929-9e17-6dfe86d7d791"
+            ["scoring-worker"]="8da95cc8-e389-460c-9efa-0f77a19de6fc"
+            ["keeper"]="f3b9fe6e-3e15-46b1-bdde-a919574d4732"
+          )
+
+          TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+          SINCE=$(date -u -d '30 minutes ago' +"%Y-%m-%dT%H:%M:%SZ")
+
+          for SERVICE_NAME in "${!SERVICES[@]}"; do
+            SERVICE_ID="${SERVICES[$SERVICE_NAME]}"
+            echo "Pulling logs for $SERVICE_NAME ($SERVICE_ID)..."
+
+            # Get the latest deployment for this service
+            DEPLOY_RESPONSE=$(curl -s -X POST https://backboard.railway.app/graphql/v2 \
+              -H "Content-Type: application/json" \
+              -H "Authorization: Bearer $RAILWAY_API_TOKEN" \
+              -d "{
+                \"query\": \"query { deployments(first: 1, input: { projectId: \\\"$PROJECT_ID\\\", serviceId: \\\"$SERVICE_ID\\\", environmentId: \\\"$ENVIRONMENT_ID\\\" }) { edges { node { id status } } } }\"
+              }")
+
+            DEPLOYMENT_ID=$(echo "$DEPLOY_RESPONSE" | jq -r '.data.deployments.edges[0].node.id // empty')
+
+            if [ -z "$DEPLOYMENT_ID" ]; then
+              echo "No deployment found for $SERVICE_NAME"
+              echo "[$TIMESTAMP] No active deployment found" > "logs/${SERVICE_NAME}.log"
+              continue
+            fi
+
+            # Pull logs for this deployment
+            LOG_RESPONSE=$(curl -s -X POST https://backboard.railway.app/graphql/v2 \
+              -H "Content-Type: application/json" \
+              -H "Authorization: Bearer $RAILWAY_API_TOKEN" \
+              -d "{
+                \"query\": \"query { deploymentLogs(deploymentId: \\\"$DEPLOYMENT_ID\\\", limit: 500) { message timestamp severity } }\"
+              }")
+
+            # Write raw logs
+            echo "$LOG_RESPONSE" | jq -r '.data.deploymentLogs[]? | "\(.timestamp) [\(.severity)] \(.message)"' > "logs/${SERVICE_NAME}.log" 2>/dev/null
+
+            # If jq parsing failed, write the raw response for debugging
+            if [ $? -ne 0 ] || [ ! -s "logs/${SERVICE_NAME}.log" ]; then
+              echo "$LOG_RESPONSE" > "logs/${SERVICE_NAME}.log"
+            fi
+
+            LINE_COUNT=$(wc -l < "logs/${SERVICE_NAME}.log")
+            echo "  Got $LINE_COUNT lines for $SERVICE_NAME"
+          done
+
+          # Write a summary/manifest
+          echo "Last pulled: $TIMESTAMP" > logs/LAST_PULL.txt
+          echo "" >> logs/LAST_PULL.txt
+          for SERVICE_NAME in "${!SERVICES[@]}"; do
+            if [ -f "logs/${SERVICE_NAME}.log" ]; then
+              LINES=$(wc -l < "logs/${SERVICE_NAME}.log")
+              SIZE=$(du -h "logs/${SERVICE_NAME}.log" | cut -f1)
+              echo "$SERVICE_NAME: $LINES lines ($SIZE)" >> logs/LAST_PULL.txt
+            fi
+          done
+
+      - name: Commit and push logs
+        run: |
+          git config user.name "railway-log-bot"
+          git config user.email "bot@basisprotocol.xyz"
+          git add logs/
+          git diff --staged --quiet || git commit -m "logs: $(date -u +%Y-%m-%d_%H:%M) UTC"
+          git push
