@@ -1,30 +1,3 @@
-2026-04-12T00:02:58.606025432Z [info] INFO:     100.64.0.15:16906 - "GET /portfolio HTTP/1.1" 200 OK
-2026-04-12T00:04:18.669450552Z [info] INFO:     100.64.0.3:16232 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
-2026-04-12T00:06:28.685585204Z [info] INFO:     100.64.0.13:54956 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
-2026-04-12T00:06:28.685592581Z [info] INFO:     100.64.0.20:44858 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
-2026-04-12T00:06:38.519255720Z [info] INFO:     100.64.0.15:28054 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
-2026-04-12T00:26:59.322245110Z [info] INFO:     100.64.0.2:46116 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
-2026-04-12T00:27:04.317689530Z [info] INFO:     100.64.0.21:19956 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
-2026-04-12T00:28:14.413310981Z [info] INFO:     100.64.0.11:23376 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
-2026-04-12T00:28:23.988488589Z [info] INFO:     100.64.0.4:25334 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
-2026-04-12T00:29:43.994298155Z [info] INFO:     100.64.0.20:34728 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
-2026-04-12T00:30:13.995838963Z [info] INFO:     100.64.0.28:22578 - "GET / HTTP/1.1" 200 OK
-2026-04-12T00:30:13.995845538Z [error] 2026-04-12 00:30:05,009 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/scores params=None
-2026-04-12T00:30:13.995850229Z [info] INFO:     100.64.0.16:20474 - "GET /favicon.ico HTTP/1.1" 404 Not Found
-2026-04-12T00:30:13.995854646Z [info] INFO:     100.64.0.29:51278 - "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 Not Found
-2026-04-12T00:30:13.995859234Z [info] INFO:     100.64.0.30:22446 - "GET /apple-touch-icon.png HTTP/1.1" 404 Not Found
-2026-04-12T00:30:13.995863733Z [error] 2026-04-12 00:30:05,660 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/scores "HTTP/1.1 200 "
-2026-04-12T00:30:13.995868307Z [error] 2026-04-12 00:30:05,664 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/scores 200 (25131 bytes)
-2026-04-12T00:30:13.995873093Z [error] 2026-04-12 00:30:05,665 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/psi/scores params=None
-2026-04-12T00:30:13.995878095Z [error] 2026-04-12 00:30:06,037 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/psi/scores "HTTP/1.1 200 "
-2026-04-12T00:30:13.995882839Z [error] 2026-04-12 00:30:06,038 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/psi/scores 200 (5774 bytes)
-2026-04-12T00:30:13.995887508Z [error] 2026-04-12 00:30:06,038 INFO [basis_state] Returning 49 entities to client (caching)
-2026-04-12T00:30:13.995891944Z [error] 2026-04-12 00:30:06,038 INFO [basis_state] Computing 7d changes for 36 entities
-2026-04-12T00:30:13.995896605Z [error] 2026-04-12 00:30:06,038 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDT params={'format': 'json'}
-2026-04-12T00:30:13.995900751Z [info] INFO:     100.64.0.28:22578 - "GET /api/entities HTTP/1.1" 200 OK
-2026-04-12T00:30:18.744688423Z [error] 2026-04-12 00:30:18,743 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDT?format=json "HTTP/1.1 200 "
-2026-04-12T00:30:18.746676523Z [error] 2026-04-12 00:30:18,744 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDT 200 (18203 bytes)
-2026-04-12T00:30:18.746679981Z [error] 2026-04-12 00:30:18,745 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDC params={'format': 'json'}
 2026-04-12T00:30:20.497853648Z [info] INFO:     100.64.0.10:61838 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
 2026-04-12T00:30:21.482592736Z [error] 2026-04-12 00:30:21,306 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDC?format=json "HTTP/1.1 200 "
 2026-04-12T00:30:21.482595304Z [error] 2026-04-12 00:30:21,307 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDC 200 (18225 bytes)
@@ -1999,3 +1972,30 @@
 2026-04-13T21:15:20.878899491Z [info] INFO:     100.64.0.11:32156 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
 2026-04-13T21:16:00.850104426Z [info] INFO:     100.64.0.14:18122 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
 2026-04-13T21:17:54.220320680Z [info] INFO:     100.64.0.10:60596 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-13T21:27:08.708541985Z [info] INFO:     100.64.0.35:46748 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
+2026-04-13T21:30:08.364498117Z [info] INFO:     100.64.0.35:59762 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
+2026-04-13T21:36:48.468274188Z [info] INFO:     100.64.0.15:58188 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-13T21:36:57.040853810Z [info] INFO:     100.64.0.35:35468 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-13T21:37:47.044855470Z [info] INFO:     100.64.0.33:35592 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-13T21:38:07.044402519Z [info] INFO:     100.64.0.12:42642 - "GET //wp-includes/ID3/license.txt HTTP/1.1" 404 Not Found
+2026-04-13T21:38:07.044408822Z [info] INFO:     100.64.0.9:23754 - "GET //feed/ HTTP/1.1" 404 Not Found
+2026-04-13T21:38:07.044412752Z [info] INFO:     100.64.0.12:42642 - "GET //xmlrpc.php?rsd HTTP/1.1" 404 Not Found
+2026-04-13T21:38:07.044417286Z [info] INFO:     100.64.0.8:12542 - "GET //blog/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-13T21:38:07.044420915Z [info] INFO:     100.64.0.9:23754 - "GET //web/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-13T21:38:07.044424911Z [info] INFO:     100.64.0.8:12542 - "GET //wordpress/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-13T21:38:07.044428328Z [info] INFO:     100.64.0.12:42642 - "GET //wp/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-13T21:38:07.044432459Z [info] INFO:     100.64.0.12:42642 - "GET //2020/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-13T21:38:07.044436444Z [info] INFO:     100.64.0.12:42642 - "GET //2019/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-13T21:38:07.044440202Z [info] INFO:     100.64.0.9:23754 - "GET //2021/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-13T21:38:07.044443674Z [info] INFO:     100.64.0.4:25870 - "GET //shop/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-13T21:38:07.044447295Z [info] INFO:     100.64.0.8:12542 - "GET //wp1/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-13T21:38:07.536984048Z [info] INFO:     100.64.0.8:12542 - "GET //test/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-13T21:38:07.536990452Z [info] INFO:     100.64.0.8:12542 - "GET //site/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-13T21:38:07.611108377Z [info] INFO:     100.64.0.9:23754 - "GET //cms/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-13T21:39:37.671531209Z [info] INFO:     100.64.0.48:57940 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-13T21:54:48.777639858Z [info] INFO:     100.64.0.21:31636 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
+2026-04-13T21:55:58.432897590Z [info] INFO:     100.64.0.13:45498 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
+2026-04-13T21:57:28.439432420Z [info] INFO:     100.64.0.4:33376 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-13T21:57:35.134277709Z [info] INFO:     100.64.0.34:26342 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-13T21:58:55.142041395Z [info] INFO:     100.64.0.20:36252 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-13T22:00:35.180443001Z [info] INFO:     100.64.0.9:30248 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
