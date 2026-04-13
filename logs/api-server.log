@@ -942,3 +942,23 @@
 2026-04-13T21:08:16.515781922Z [info] INFO:     100.64.0.18:24522 - "GET /wallet/0x000000000ddd00eb0fdca7000f0e090008000000 HTTP/1.1" 200 OK
 2026-04-13T21:08:16.515812697Z [error] 2026-04-13 21:08:15,099 [INFO] basis.reindex: === Batch Re-index Complete === indexed=182, scored=182, balances_updated=256, errors=318, batch_failures=132, elapsed=492s, remaining=32308
 2026-04-13T21:08:16.515817740Z [error] 2026-04-13 21:08:15,348 [INFO] app.state_attestation: State attested: domain=wallets entity=None records=1 hash=37c02ade7af8ee1d...
+2026-04-13T21:13:17.404136114Z [info] INFO:     100.64.0.19:19148 - "GET /robots.txt HTTP/1.1" 200 OK
+2026-04-13T21:13:18.483606108Z [error] 2026-04-13 21:13:18,226 [WARNING] app.database: Connection failed liveness ping (attempt 1/2) — discarding and replacing: SSL connection has been closed unexpectedly
+2026-04-13T21:13:18.483615083Z [error] 
+2026-04-13T21:13:18.483625242Z [error] 2026-04-13 21:13:18,226 [WARNING] app.database: Connection failed liveness ping (attempt 2/2) — discarding and replacing: SSL connection has been closed unexpectedly
+2026-04-13T21:13:18.483632652Z [error] 
+2026-04-13T21:13:22.379379535Z [error] 2026-04-13 21:13:21,948 [ERROR] app.publisher.page_renderer: Template rendering failed: 'wallet.html' not found in search path: '/app/templates'
+2026-04-13T21:13:22.379384006Z [info] INFO:     100.64.0.20:42700 - "GET /wallet/0x00000000009c7f96284472465e1b5c44e8cfcda1 HTTP/1.1" 200 OK
+2026-04-13T21:15:12.007821727Z [info] INFO:     100.64.0.21:20422 - "POST /api/ops/health/check HTTP/1.1" 200 OK
+2026-04-13T21:15:12.007833762Z [error] 2026-04-13 21:15:02,142 [WARNING] app.database: Connection failed liveness ping (attempt 1/2) — discarding and replacing: SSL connection has been closed unexpectedly
+2026-04-13T21:15:12.007841966Z [error] 
+2026-04-13T21:15:32.058395313Z [info] INFO:     100.64.0.9:48174 - "GET /api/health HTTP/1.1" 200 OK
+2026-04-13T21:15:32.058406206Z [error] 2026-04-13 21:15:26,254 [INFO] httpx: HTTP Request: GET https://basisprotocol.xyz/api/health "HTTP/1.1 200 "
+2026-04-13T21:15:51.607850310Z [info] INFO:     100.64.0.2:50818 - "GET /api/reports/stablecoin/usdc?template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-13T21:15:51.607855320Z [error] 2026-04-13 21:15:44,255 [INFO] httpx: HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/usdc?template=sbt_metadata "HTTP/1.1 200 "
+2026-04-13T21:18:21.653223581Z [error] 2026-04-13 21:18:20,588 [WARNING] app.database: Connection failed liveness ping (attempt 1/2) — discarding and replacing: SSL connection has been closed unexpectedly
+2026-04-13T21:18:21.653232870Z [error] 
+2026-04-13T21:18:21.653247592Z [error] 2026-04-13 21:18:20,588 [WARNING] app.database: Connection failed liveness ping (attempt 2/2) — discarding and replacing: SSL connection has been closed unexpectedly
+2026-04-13T21:18:21.653256835Z [error] 
+2026-04-13T21:18:23.956100582Z [error] 2026-04-13 21:18:23,953 [ERROR] app.publisher.page_renderer: Template rendering failed: 'wallet.html' not found in search path: '/app/templates'
+2026-04-13T21:18:23.956116445Z [info] INFO:     100.64.0.22:18686 - "GET /wallet/0x000000000000000000000002df34440198b2c777 HTTP/1.1" 200 OK
