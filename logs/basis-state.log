@@ -1,16 +1,3 @@
-2026-04-12T16:56:41.426173057Z [error] 2026-04-12 16:56:41,425 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-12T16:56:41.427846266Z [error] 2026-04-12 16:56:41,425 WARNING [basis_state] Failed to fetch history for stablecoin:STKGHO
-2026-04-12T16:56:41.427851335Z [error] 2026-04-12 16:56:41,425 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/STEAKUSDC params={'format': 'json'}
-2026-04-12T16:56:41.450851427Z [error] 2026-04-12 16:56:41,449 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/STEAKUSDC?format=json "HTTP/1.1 429 "
-2026-04-12T16:56:41.450858499Z [error] 2026-04-12 16:56:41,449 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/STEAKUSDC 429 (56 bytes)
-2026-04-12T16:56:41.450865067Z [error] 2026-04-12 16:56:41,449 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-12T16:56:41.450868612Z [error] 2026-04-12 16:56:41,449 WARNING [basis_state] Failed to fetch history for stablecoin:STEAKUSDC
-2026-04-12T16:56:41.450872303Z [error] 2026-04-12 16:56:41,449 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/SUSDS params={'format': 'json'}
-2026-04-12T16:56:41.477271185Z [error] 2026-04-12 16:56:41,475 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/SUSDS?format=json "HTTP/1.1 429 "
-2026-04-12T16:56:41.477278445Z [error] 2026-04-12 16:56:41,475 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/SUSDS 429 (56 bytes)
-2026-04-12T16:56:41.477283138Z [error] 2026-04-12 16:56:41,476 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-12T16:56:41.478819229Z [error] 2026-04-12 16:56:41,476 WARNING [basis_state] Failed to fetch history for stablecoin:SUSDS
-2026-04-12T16:56:41.478823750Z [error] 2026-04-12 16:56:41,476 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/EURI params={'format': 'json'}
 2026-04-12T16:56:41.510312670Z [error] 2026-04-12 16:56:41,507 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/EURI?format=json "HTTP/1.1 429 "
 2026-04-12T16:56:41.510319785Z [error] 2026-04-12 16:56:41,508 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/EURI 429 (56 bytes)
 2026-04-12T16:56:41.510323583Z [error] 2026-04-12 16:56:41,508 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
@@ -1999,3 +1986,16 @@
 2026-04-14T17:04:16.382987481Z [info] INFO:     100.64.0.11:40306 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
 2026-04-14T17:04:24.461038955Z [info] INFO:     100.64.0.4:15706 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
 2026-04-14T17:04:34.133641868Z [info] INFO:     100.64.0.6:52088 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-14T17:18:24.935829341Z [info] INFO:     100.64.0.25:43738 - "POST /xmlrpc.php HTTP/1.1" 404 Not Found
+2026-04-14T18:16:19.071443013Z [info] INFO:     100.64.0.15:40226 - "GET / HTTP/1.1" 200 OK
+2026-04-14T18:16:19.071448160Z [info] INFO:     100.64.0.21:19926 - "GET /js/lkk_ch.js HTTP/1.1" 404 Not Found
+2026-04-14T18:16:20.072623894Z [info] INFO:     100.64.0.13:20042 - "GET /assets/js/message.js HTTP/1.1" 404 Not Found
+2026-04-14T18:16:22.174371466Z [info] INFO:     100.64.0.35:16216 - "GET /assets/js/qr_modal.js HTTP/1.1" 404 Not Found
+2026-04-14T18:16:24.606729097Z [info] INFO:     100.64.0.7:55780 - "GET /js/twint_ch.js HTTP/1.1" 404 Not Found
+2026-04-14T18:16:33.094620541Z [info] INFO:     100.64.0.12:17276 - "GET /static/style/protect/index.js HTTP/1.1" 404 Not Found
+2026-04-14T18:16:35.080752348Z [info] INFO:     100.64.0.9:24326 - "GET /robots.txt HTTP/1.1" 404 Not Found
+2026-04-14T18:16:37.630317123Z [info] INFO:     100.64.0.9:24326 - "GET /bot-connect.js HTTP/1.1" 404 Not Found
+2026-04-14T18:38:48.643699186Z [info] INFO:     100.64.0.22:13620 - "POST / HTTP/1.1" 405 Method Not Allowed
+2026-04-14T18:38:48.643702915Z [info] INFO:     100.64.0.19:19464 - "POST /index.php HTTP/1.1" 404 Not Found
+2026-04-14T18:38:48.643708009Z [info] INFO:     100.64.0.26:10930 - "POST /admin HTTP/1.1" 404 Not Found
+2026-04-14T18:38:48.643712188Z [info] INFO:     100.64.0.51:15876 - "POST /api HTTP/1.1" 404 Not Found
