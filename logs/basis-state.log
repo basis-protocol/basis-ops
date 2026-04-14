@@ -1,25 +1,3 @@
-2026-04-12T16:56:41.510312670Z [error] 2026-04-12 16:56:41,507 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/EURI?format=json "HTTP/1.1 429 "
-2026-04-12T16:56:41.510319785Z [error] 2026-04-12 16:56:41,508 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/EURI 429 (56 bytes)
-2026-04-12T16:56:41.510323583Z [error] 2026-04-12 16:56:41,508 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-12T16:56:41.510327420Z [error] 2026-04-12 16:56:41,508 WARNING [basis_state] Failed to fetch history for stablecoin:EURI
-2026-04-12T16:56:41.510331948Z [error] 2026-04-12 16:56:41,508 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/FRAX params={'format': 'json'}
-2026-04-12T16:56:41.533997411Z [error] 2026-04-12 16:56:41,531 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/FRAX?format=json "HTTP/1.1 429 "
-2026-04-12T16:56:41.534003070Z [error] 2026-04-12 16:56:41,531 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/FRAX 429 (56 bytes)
-2026-04-12T16:56:41.534007277Z [error] 2026-04-12 16:56:41,531 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-12T16:56:41.534010430Z [error] 2026-04-12 16:56:41,531 WARNING [basis_state] Failed to fetch history for stablecoin:FRAX
-2026-04-12T16:56:41.534013600Z [error] 2026-04-12 16:56:41,531 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/EURE params={'format': 'json'}
-2026-04-12T16:56:41.556700234Z [error] 2026-04-12 16:56:41,555 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/EURE?format=json "HTTP/1.1 429 "
-2026-04-12T16:56:41.558171477Z [error] 2026-04-12 16:56:41,555 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/EURE 429 (56 bytes)
-2026-04-12T16:56:41.558176219Z [error] 2026-04-12 16:56:41,556 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-12T16:56:41.558179450Z [error] 2026-04-12 16:56:41,556 WARNING [basis_state] Failed to fetch history for stablecoin:EURE
-2026-04-12T16:56:41.558185047Z [error] 2026-04-12 16:56:41,556 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/BUSD0 params={'format': 'json'}
-2026-04-12T16:56:41.584612482Z [error] 2026-04-12 16:56:41,583 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/BUSD0?format=json "HTTP/1.1 429 "
-2026-04-12T16:56:41.584616762Z [error] 2026-04-12 16:56:41,583 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/BUSD0 429 (56 bytes)
-2026-04-12T16:56:41.584619953Z [error] 2026-04-12 16:56:41,583 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-12T16:56:41.584622749Z [error] 2026-04-12 16:56:41,583 WARNING [basis_state] Failed to fetch history for stablecoin:BUSD0
-2026-04-12T16:56:41.584626790Z [error] 2026-04-12 16:56:41,583 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/SDOLA params={'format': 'json'}
-2026-04-12T16:56:41.628029528Z [error] 2026-04-12 16:56:41,625 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/SDOLA?format=json "HTTP/1.1 429 "
-2026-04-12T16:56:41.628036923Z [error] 2026-04-12 16:56:41,625 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/SDOLA 429 (56 bytes)
 2026-04-12T16:56:41.628042333Z [error] 2026-04-12 16:56:41,626 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
 2026-04-12T16:56:41.628047060Z [error] 2026-04-12 16:56:41,626 WARNING [basis_state] Failed to fetch history for stablecoin:SDOLA
 2026-04-12T16:56:41.628051769Z [error] 2026-04-12 16:56:41,626 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDD (BTTC bridge) params={'format': 'json'}
@@ -1999,3 +1977,25 @@
 2026-04-14T18:38:48.643702915Z [info] INFO:     100.64.0.19:19464 - "POST /index.php HTTP/1.1" 404 Not Found
 2026-04-14T18:38:48.643708009Z [info] INFO:     100.64.0.26:10930 - "POST /admin HTTP/1.1" 404 Not Found
 2026-04-14T18:38:48.643712188Z [info] INFO:     100.64.0.51:15876 - "POST /api HTTP/1.1" 404 Not Found
+2026-04-14T19:08:29.716266138Z [info] INFO:     100.64.0.16:35754 - "GET / HTTP/1.1" 200 OK
+2026-04-14T19:11:19.394178849Z [info] INFO:     100.64.0.35:14436 - "GET /blog/.git/config HTTP/1.1" 404 Not Found
+2026-04-14T19:11:19.394185657Z [info] INFO:     100.64.0.12:43646 - "GET /www/.git/config HTTP/1.1" 404 Not Found
+2026-04-14T19:11:19.394189764Z [info] INFO:     100.64.0.11:35602 - "GET /frontend/.git/config HTTP/1.1" 404 Not Found
+2026-04-14T19:11:19.394193584Z [info] INFO:     100.64.0.33:18908 - "GET /.git/config HTTP/1.1" 404 Not Found
+2026-04-14T19:11:19.394198118Z [info] INFO:     100.64.0.8:16774 - "GET /packages/.git/config HTTP/1.1" 404 Not Found
+2026-04-14T19:11:19.394202826Z [info] INFO:     100.64.0.20:10890 - "GET /microservices/.git/config HTTP/1.1" 404 Not Found
+2026-04-14T19:11:19.394206621Z [info] INFO:     100.64.0.48:11212 - "GET /app/.git/config HTTP/1.1" 404 Not Found
+2026-04-14T19:11:19.394210170Z [info] INFO:     100.64.0.7:55812 - "GET /src/.git/config HTTP/1.1" 404 Not Found
+2026-04-14T19:11:19.394214633Z [info] INFO:     100.64.0.5:11034 - "GET /admin/.git/config HTTP/1.1" 404 Not Found
+2026-04-14T19:20:59.616894566Z [info] INFO:     100.64.0.13:62214 - "GET / HTTP/1.1" 200 OK
+2026-04-14T19:21:19.274282681Z [info] INFO:     100.64.0.10:18466 - "GET //plausible.io/js/script.js HTTP/1.1" 404 Not Found
+2026-04-14T19:21:59.275967822Z [info] INFO:     100.64.0.12:56288 - "GET //plausible.io/js/script.js HTTP/1.1" 404 Not Found
+2026-04-14T19:22:39.278967109Z [info] INFO:     100.64.0.33:15004 - "GET //plausible.io/js/script.js HTTP/1.1" 404 Not Found
+2026-04-14T19:23:19.284378710Z [info] INFO:     100.64.0.48:53162 - "GET //plausible.io/js/script.js HTTP/1.1" 404 Not Found
+2026-04-14T19:23:59.286360957Z [info] INFO:     100.64.0.8:47454 - "GET //plausible.io/js/script.js HTTP/1.1" 404 Not Found
+2026-04-14T19:24:29.286186775Z [info] INFO:     100.64.0.36:47198 - "GET //plausible.io/js/script.js HTTP/1.1" 404 Not Found
+2026-04-14T19:25:09.287644418Z [info] INFO:     100.64.0.8:25482 - "GET //plausible.io/js/script.js HTTP/1.1" 404 Not Found
+2026-04-14T19:26:09.292424977Z [info] INFO:     100.64.0.21:49078 - "GET //plausible.io/js/script.js HTTP/1.1" 404 Not Found
+2026-04-14T19:28:19.303959389Z [info] INFO:     100.64.0.2:58080 - "GET //plausible.io/js/script.js HTTP/1.1" 404 Not Found
+2026-04-14T20:04:21.711306328Z [info] INFO:     100.64.0.22:44874 - "GET /wp-login.php HTTP/1.1" 404 Not Found
+2026-04-14T20:07:01.917454311Z [info] INFO:     100.64.0.24:40324 - "GET / HTTP/1.1" 200 OK
