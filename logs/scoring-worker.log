@@ -1286,3 +1286,205 @@
 2026-04-15T17:50:22.347681654Z [error] 2026-04-15 17:50:12,779 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/steakhouse-usdc-morpho-vault/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
 2026-04-15T17:51:32.141257233Z [error] 2026-04-15 17:51:25,851 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usdtb/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
 2026-04-15T17:53:22.627958014Z [error] 2026-04-15 17:53:22,246 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/rai/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-15T17:55:12.507806655Z [error] 2026-04-15 17:55:06,772 [ERROR] worker: === PEG: 9572, MCHART: 9572 ===
+2026-04-15T17:55:12.507814639Z [error] 2026-04-15 17:55:07,579 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usd-coin/tickers?include_exchange_logo=false "HTTP/1.1 200 OK"
+2026-04-15T17:55:12.507818762Z [error] 2026-04-15 17:55:12,087 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/tether/tickers?include_exchange_logo=false "HTTP/1.1 200 OK"
+2026-04-15T17:55:17.508549391Z [error] 2026-04-15 17:55:17,210 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/dai/tickers?include_exchange_logo=false "HTTP/1.1 200 OK"
+2026-04-15T17:55:19.523165431Z [error] 2026-04-15 17:55:19,433 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/frax/tickers?include_exchange_logo=false "HTTP/1.1 200 OK"
+2026-04-15T17:55:19.844647273Z [error] 2026-04-15 17:55:19,811 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/paypal-usd/tickers?include_exchange_logo=false "HTTP/1.1 200 OK"
+2026-04-15T17:55:22.965396016Z [error] 2026-04-15 17:55:22,958 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/first-digital-usd/tickers?include_exchange_logo=false "HTTP/1.1 200 OK"
+2026-04-15T17:55:23.993493146Z [error] 2026-04-15 17:55:23,963 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/true-usd/tickers?include_exchange_logo=false "HTTP/1.1 200 OK"
+2026-04-15T17:55:27.565320627Z [error] 2026-04-15 17:55:27,426 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usdd/tickers?include_exchange_logo=false "HTTP/1.1 200 OK"
+2026-04-15T17:55:30.025273351Z [error] 2026-04-15 17:55:30,005 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/ethena-usde/tickers?include_exchange_logo=false "HTTP/1.1 200 OK"
+2026-04-15T17:55:33.574993348Z [error] 2026-04-15 17:55:33,505 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usd1-wlfi/tickers?include_exchange_logo=false "HTTP/1.1 200 OK"
+2026-04-15T17:55:36.925705795Z [error] 2026-04-15 17:55:36,921 [ERROR] worker: === LIQUIDITY: 115 ok, 0 err, total=RealDictRow([('c', 489)]) ===
+2026-04-15T17:55:37.130111885Z [error] 2026-04-15 17:55:37,128 [ERROR] worker: === MINTBURN: 0 ok, 0 err ===
+2026-04-15T17:55:37.622818124Z [error] 2026-04-15 17:55:37,590 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0x98C23E9d8f34FEFb1B7BD6a91B7FF122F4e16F5c&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-15T17:55:57.342314107Z [error] 2026-04-15 17:55:48,165 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0x23878914EFE38d27C4D67Ab83ed1b93A74D4086a&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-15T17:55:58.732477646Z [error] 2026-04-15 17:55:58,626 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0x018008bfb33d285247A21d44E50697654f754e63&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-15T17:56:18.440424010Z [error] 2026-04-15 17:56:09,555 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0xd4e245848d6E1220DBE62e155d89fa327A284cB0&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-15T17:56:18.440429970Z [error] 2026-04-15 17:56:10,010 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0x0C0d01AbF3e6aDfcA0989eBbA9d6e85dD58EaB1E&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-15T17:56:20.876715189Z [error] 2026-04-15 17:56:20,873 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0x4F5923Fc5FD4a93352581b38B7cD26943012DECF&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-15T17:56:40.663333234Z [error] 2026-04-15 17:56:31,322 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0x4e65fE4DbA92790696d040ac24Aa414708F5c0AB&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-15T17:56:40.663341717Z [error] 2026-04-15 17:56:31,723 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0x724dc807b04555b71ed48a6896b6F41593b8C637&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-15T17:56:40.663347568Z [error] 2026-04-15 17:56:32,134 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0x6ab707Aca953eDAeFBc4fD23bA73294241490620&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-15T17:56:40.663353186Z [error] 2026-04-15 17:56:32,548 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-15T17:56:40.663359286Z [error] 2026-04-15 17:56:32,947 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0x38d693cE1dF5AaDF7bC62043aE5EE32bb3f1259B&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-15T17:56:40.663365956Z [error] 2026-04-15 17:56:33,401 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0x377C3bd93f2a2984E1E7bE6A5C22c525eD4A4815&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-15T17:56:44.339998608Z [error] 2026-04-15 17:56:44,337 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0xe7dF13b8e3d6740fe17CBE928C7334243d86c92f&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-15T17:57:04.338558754Z [error] 2026-04-15 17:56:54,805 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0x4DEDf26112B3Ec8eC46e7E31EA5e123490B05B8B&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-15T17:57:05.289891100Z [error] 2026-04-15 17:57:05,280 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0xc3d688B66703497DAA19211EEdff47f25384cdc3&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-15T17:57:25.001041734Z [error] 2026-04-15 17:57:16,149 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0x3Afdc9BCA9213A35503b077a6072F3D0d5AB0840&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-15T17:57:27.022108585Z [error] 2026-04-15 17:57:27,017 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-15T17:57:47.015945683Z [error] 2026-04-15 17:57:37,867 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0xb125E6687d4313864e53df431d5425969c15Eb2F&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-15T17:57:47.015950384Z [error] 2026-04-15 17:57:38,268 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0xA5EDBDD9646f8dFF606d7448e414884C7d905dCA&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-15T17:57:47.015953440Z [error] 2026-04-15 17:57:38,669 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0xBEEF01735c132Ada46AA9aA9cE21E792a30CFE8b&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-15T17:57:47.015957500Z [error] 2026-04-15 17:57:38,920 [ERROR] worker: === POOL_WALLETS: 550 ok, 0 err ===
+2026-04-15T17:57:47.015960334Z [error] 2026-04-15 17:57:39,292 [INFO] httpx: HTTP Request: POST https://hub.snapshot.org/graphql "HTTP/1.1 200 OK"
+2026-04-15T17:57:47.015963150Z [error] 2026-04-15 17:57:39,449 [INFO] httpx: HTTP Request: POST https://hub.snapshot.org/graphql "HTTP/1.1 200 OK"
+2026-04-15T17:57:49.794721738Z [error] 2026-04-15 17:57:49,789 [INFO] httpx: HTTP Request: POST https://hub.snapshot.org/graphql "HTTP/1.1 200 OK"
+2026-04-15T17:57:49.912131633Z [error] 2026-04-15 17:57:49,911 [INFO] httpx: HTTP Request: POST https://hub.snapshot.org/graphql "HTTP/1.1 200 OK"
+2026-04-15T17:57:50.563940957Z [error] 2026-04-15 17:57:50,563 [INFO] httpx: HTTP Request: POST https://hub.snapshot.org/graphql "HTTP/1.1 200 OK"
+2026-04-15T17:57:50.725587595Z [error] 2026-04-15 17:57:50,724 [INFO] httpx: HTTP Request: POST https://hub.snapshot.org/graphql "HTTP/1.1 200 OK"
+2026-04-15T17:57:58.964180444Z [error] 2026-04-15 17:57:58,963 [INFO] httpx: HTTP Request: POST https://hub.snapshot.org/graphql "HTTP/1.1 200 OK"
+2026-04-15T17:57:59.111305453Z [error] 2026-04-15 17:57:59,105 [INFO] httpx: HTTP Request: POST https://hub.snapshot.org/graphql "HTTP/1.1 200 OK"
+2026-04-15T17:58:29.131346051Z [error] 2026-04-15 17:58:19,807 [INFO] httpx: HTTP Request: POST https://hub.snapshot.org/graphql "HTTP/1.1 200 OK"
+2026-04-15T17:58:29.131349532Z [error] 2026-04-15 17:58:19,949 [INFO] httpx: HTTP Request: POST https://hub.snapshot.org/graphql "HTTP/1.1 200 OK"
+2026-04-15T17:58:38.802764484Z [error] 2026-04-15 17:58:38,696 [INFO] httpx: HTTP Request: POST https://hub.snapshot.org/graphql "HTTP/1.1 200 OK"
+2026-04-15T17:58:38.818806202Z [error] 2026-04-15 17:58:38,813 [INFO] httpx: HTTP Request: POST https://hub.snapshot.org/graphql "HTTP/1.1 200 OK"
+2026-04-15T17:58:41.832965743Z [error] 2026-04-15 17:58:41,531 [ERROR] worker: === GOV_VOTERS: 287 ok, 0 err ===
+2026-04-15T17:58:41.832969932Z [error] 2026-04-15 17:58:41,731 [ERROR] worker: === CONTRACT_SURV: skipped (last 24h ago) ===
+2026-04-15T17:58:41.832974898Z [error] 2026-04-15 17:58:41,731 [ERROR] worker: === DATA LAYER END ===
+2026-04-15T17:58:46.905685698Z [error] 2026-04-15 17:58:46,752 [INFO] app.agent.watcher: === Verification agent cycle starting ===
+2026-04-15T17:58:47.161641562Z [error] 2026-04-15 17:58:47,155 [INFO] app.agent.watcher: Score change trigger: rlusd moved -3.9 pts
+2026-04-15T17:58:47.161644598Z [error] 2026-04-15 17:58:47,155 [INFO] app.agent.watcher: Score change trigger: usdp moved -4.4 pts
+2026-04-15T17:58:48.262305979Z [error] 2026-04-15 17:58:48,259 [WARNING] app.agent.watcher: Depeg trigger: liquity-usd at $1.0246 (2.46% deviation)
+2026-04-15T17:58:48.933683407Z [error] 2026-04-15 17:58:48,862 [INFO] app.agent.store: Assessment stored: 2577c628-2076-4105-bd42-7b5e9fd287e8 | wallet=0x00000000... | trigger=heartbeat | severity=silent
+2026-04-15T17:58:49.066542624Z [error] 2026-04-15 17:58:49,064 [INFO] app.agent.watcher: === Agent cycle complete: 0 assessments | severities={} | broadcasts=0 ===
+2026-04-15T17:58:49.066547635Z [error] 2026-04-15 17:58:49,065 [INFO] worker: Agent cycle: 0 assessments
+2026-04-15T17:58:49.080730136Z [error] 2026-04-15 17:58:49,077 [INFO] worker: Running health sweep...
+2026-04-15T17:59:09.084293678Z [error] 2026-04-15 17:59:05,997 [INFO] httpx: HTTP Request: GET https://basisprotocol.xyz/api/health "HTTP/1.1 200 "
+2026-04-15T17:59:28.817046831Z [error] 2026-04-15 17:59:21,380 [INFO] httpx: HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/usdc?template=sbt_metadata "HTTP/1.1 200 "
+2026-04-15T17:59:28.817062887Z [error] 2026-04-15 17:59:22,682 [INFO] worker: Health sweep: 9/18 healthy
+2026-04-15T17:59:28.817068013Z [error] 2026-04-15 17:59:24,482 [INFO] worker: Health alerts dispatched for 9 failing system(s)
+2026-04-15T17:59:28.817073359Z [error] 2026-04-15 17:59:24,484 [INFO] app.pulse_generator: Generating daily pulse for 2026-04-15
+2026-04-15T17:59:35.043950528Z [error] 2026-04-15 17:59:35,041 [INFO] app.pulse_generator: Daily pulse generated for 2026-04-15: 36 stablecoins, 13 protocols, content_hash=0x607e94c1b6698922...
+2026-04-15T17:59:35.370457186Z [error] 2026-04-15 17:59:35,246 [INFO] worker: Assembling daily digest...
+2026-04-15T17:59:35.666335352Z [error] 
+2026-04-15T17:59:35.666337321Z [error] 2026-04-15 17:59:35,660 [ERROR] app.database: Database error in get_conn(): column "calculated_at" does not exist
+2026-04-15T17:59:35.666346458Z [error] LINE 1: SELECT COUNT(*) as cnt, MAX(calculated_at) as latest FROM sc...
+2026-04-15T17:59:35.666351696Z [error]                                     ^
+2026-04-15T17:59:35.666355659Z [error] Traceback (most recent call last):
+2026-04-15T17:59:35.666358582Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-15T17:59:35.666361368Z [error]     yield conn
+2026-04-15T17:59:35.666364270Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-15T17:59:35.666367053Z [error]     yield cur
+2026-04-15T17:59:35.666370106Z [error]   File "/app/app/database.py", line 153, in fetch_one
+2026-04-15T17:59:35.666372875Z [error]     cur.execute(sql, params)
+2026-04-15T17:59:35.666375597Z [error]   File "/usr/local/lib/python3.11/site-packages/psycopg2/extras.py", line 236, in execute
+2026-04-15T17:59:35.666378350Z [error]     return super().execute(query, vars)
+2026-04-15T17:59:35.666380982Z [error]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-15T17:59:35.666383751Z [error] psycopg2.errors.UndefinedColumn: column "calculated_at" does not exist
+2026-04-15T17:59:35.666386313Z [error] LINE 1: SELECT COUNT(*) as cnt, MAX(calculated_at) as latest FROM sc...
+2026-04-15T17:59:35.666390021Z [error]                                     ^
+2026-04-15T17:59:35.713897661Z [error] 2026-04-15 17:59:35,712 [WARNING] worker: Daily digest failed: column "calculated_at" does not exist
+2026-04-15T17:59:35.713904719Z [error] LINE 1: SELECT COUNT(*) as cnt, MAX(calculated_at) as latest FROM sc...
+2026-04-15T17:59:35.713908448Z [error]                                     ^
+2026-04-15T17:59:35.713912767Z [error] 
+2026-04-15T17:59:36.072847962Z [error] 2026-04-15 17:59:36,068 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2&data=0x35ea6a75000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-15T17:59:36.607502135Z [error] 2026-04-15 17:59:36,604 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2&data=0x35ea6a75000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-15T17:59:37.424428344Z [error] 2026-04-15 17:59:37,157 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2&data=0x35ea6a75000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-15T17:59:37.747920646Z [error] 2026-04-15 17:59:37,690 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2&data=0x35ea6a75000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-15T17:59:38.419660018Z [error] 2026-04-15 17:59:38,223 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2&data=0x35ea6a75000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-15T17:59:38.768049146Z [error] 2026-04-15 17:59:38,760 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2&data=0x35ea6a75000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-15T17:59:39.449517769Z [error] 2026-04-15 17:59:39,289 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2&data=0x35ea6a75000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-15T17:59:39.832572273Z [error] 2026-04-15 17:59:39,824 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2&data=0x35ea6a75000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-15T17:59:40.466685086Z [error] 2026-04-15 17:59:40,365 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2&data=0x35ea6a75000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-15T17:59:40.894355836Z [error] 2026-04-15 17:59:40,893 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2&data=0x35ea6a75000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-15T17:59:41.474323131Z [error] 2026-04-15 17:59:41,422 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2&data=0x35ea6a750000000000000000000000006b175474e89094c44da98b954eedeac495271d0f&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-15T17:59:41.960197619Z [error] 2026-04-15 17:59:41,958 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2&data=0x35ea6a750000000000000000000000006b175474e89094c44da98b954eedeac495271d0f&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-15T17:59:42.499310062Z [error] 2026-04-15 17:59:42,493 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2&data=0x35ea6a750000000000000000000000006b175474e89094c44da98b954eedeac495271d0f&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-15T17:59:43.030004472Z [error] 2026-04-15 17:59:43,023 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2&data=0x35ea6a750000000000000000000000006b175474e89094c44da98b954eedeac495271d0f&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-15T17:59:43.559151329Z [error] 2026-04-15 17:59:43,558 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2&data=0x35ea6a750000000000000000000000006b175474e89094c44da98b954eedeac495271d0f&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-15T17:59:44.093226326Z [error] 2026-04-15 17:59:44,090 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2&data=0x35ea6a75000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-15T17:59:44.640068735Z [error] 2026-04-15 17:59:44,630 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2&data=0x35ea6a75000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-15T17:59:45.465196879Z [error] 2026-04-15 17:59:45,155 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2&data=0x35ea6a75000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-15T17:59:45.706189783Z [error] 2026-04-15 17:59:45,689 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2&data=0x35ea6a75000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-15T17:59:46.508324266Z [error] 2026-04-15 17:59:46,229 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2&data=0x35ea6a75000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-15T17:59:46.774140258Z [error] 2026-04-15 17:59:46,762 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2&data=0x35ea6a750000000000000000000000002260fac5e5542a773aa44fbcfedf7c193bc2c599&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-15T17:59:47.447273131Z [error] 2026-04-15 17:59:47,300 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2&data=0x35ea6a750000000000000000000000002260fac5e5542a773aa44fbcfedf7c193bc2c599&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-15T17:59:47.857535680Z [error] 2026-04-15 17:59:47,845 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2&data=0x35ea6a750000000000000000000000002260fac5e5542a773aa44fbcfedf7c193bc2c599&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-15T17:59:48.470100439Z [error] 2026-04-15 17:59:48,382 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2&data=0x35ea6a750000000000000000000000002260fac5e5542a773aa44fbcfedf7c193bc2c599&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-15T17:59:48.920837884Z [error] 2026-04-15 17:59:48,910 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2&data=0x35ea6a750000000000000000000000002260fac5e5542a773aa44fbcfedf7c193bc2c599&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-15T17:59:49.485520967Z [error] 2026-04-15 17:59:49,451 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/api?module=proxy&action=eth_call&to=0xc3d688B66703497DAA19211EEdff47f25384cdc3&data=0xc2be3a6c000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-15T17:59:49.989636863Z [error] 2026-04-15 17:59:49,986 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/api?module=proxy&action=eth_call&to=0xc3d688B66703497DAA19211EEdff47f25384cdc3&data=0xc2be3a6c000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-15T17:59:50.532599660Z [error] 2026-04-15 17:59:50,529 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/api?module=proxy&action=eth_call&to=0xc3d688B66703497DAA19211EEdff47f25384cdc3&data=0xc2be3a6c0000000000000000000000002260fac5e5542a773aa44fbcfedf7c193bc2c599&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-15T17:59:51.059344024Z [error] 2026-04-15 17:59:51,056 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/api?module=proxy&action=eth_call&to=0xc3d688B66703497DAA19211EEdff47f25384cdc3&data=0xc2be3a6c0000000000000000000000002260fac5e5542a773aa44fbcfedf7c193bc2c599&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-15T17:59:51.496478176Z [error] 2026-04-15 17:59:51,256 [INFO] worker: Parameter check: 29 params, no changes
+2026-04-15T17:59:51.496482431Z [error] 2026-04-15 17:59:51,460 [ERROR] worker: Oracle behavior collector failed: relation "oracle_registry" does not exist
+2026-04-15T17:59:51.496485630Z [error] LINE 1: SELECT * FROM oracle_registry WHERE is_active = TRUE
+2026-04-15T17:59:51.496489191Z [error]                       ^
+2026-04-15T17:59:51.496492474Z [error] 
+2026-04-15T17:59:51.496496292Z [error] 2026-04-15 17:59:51,460 [INFO] app.collectors.registry: === Collector cycle stats ===
+2026-04-15T17:59:51.496499372Z [error] 2026-04-15 17:59:51,460 [INFO] app.collectors.registry:   actor_metrics                   ok= 36  timeout= 0  error= 0  avg= 1297ms  components=72
+2026-04-15T17:59:51.496502671Z [error] 2026-04-15 17:59:51,460 [INFO] app.collectors.registry:   curve                           ok= 36  timeout= 0  error= 0  avg= 1306ms  components=9
+2026-04-15T17:59:51.496505779Z [error] 2026-04-15 17:59:51,460 [INFO] app.collectors.registry:   defillama                       ok= 36  timeout= 0  error= 0  avg= 2488ms  components=85
+2026-04-15T17:59:51.496508874Z [error] 2026-04-15 17:59:51,460 [INFO] app.collectors.registry:   derived                         ok= 36  timeout= 0  error= 0  avg=  601ms  components=103
+2026-04-15T17:59:51.496512629Z [error] 2026-04-15 17:59:51,460 [INFO] app.collectors.registry:   etherscan                       ok= 36  timeout= 0  error= 0  avg= 3937ms  components=30
+2026-04-15T17:59:51.496515874Z [error] 2026-04-15 17:59:51,460 [INFO] app.collectors.registry:   flows                           ok= 36  timeout= 0  error= 0  avg= 2662ms  components=171
+2026-04-15T17:59:51.496519077Z [error] 2026-04-15 17:59:51,460 [INFO] app.collectors.registry:   governance                      ok= 36  timeout= 0  error= 0  avg=    0ms  components=20
+2026-04-15T17:59:51.496521949Z [error] 2026-04-15 17:59:51,460 [INFO] app.collectors.registry:   liquidity                       ok= 35  timeout= 0  error= 1  avg= 1556ms  components=265
+2026-04-15T17:59:51.497682915Z [error] 2026-04-15 17:59:51,460 [INFO] app.collectors.registry:   market                          ok= 36  timeout= 0  error= 0  avg= 1556ms  components=272
+2026-04-15T17:59:51.497686633Z [error] 2026-04-15 17:59:51,460 [INFO] app.collectors.registry:   network                         ok= 36  timeout= 0  error= 0  avg=    0ms  components=72
+2026-04-15T17:59:51.497690695Z [error] 2026-04-15 17:59:51,460 [INFO] app.collectors.registry:   peg                             ok= 36  timeout= 0  error= 0  avg= 2641ms  components=347
+2026-04-15T17:59:51.497694940Z [error] 2026-04-15 17:59:51,460 [INFO] app.collectors.registry:   regulatory                      ok= 36  timeout= 0  error= 0  avg=    0ms  components=20
+2026-04-15T17:59:51.497700162Z [error] 2026-04-15 17:59:51,460 [INFO] app.collectors.registry:   reserves                        ok= 36  timeout= 0  error= 0  avg=    0ms  components=20
+2026-04-15T17:59:51.497704748Z [error] 2026-04-15 17:59:51,460 [INFO] app.collectors.registry:   smart_contract                  ok= 36  timeout= 0  error= 0  avg= 1999ms  components=216
+2026-04-15T17:59:51.497708664Z [error] 2026-04-15 17:59:51,460 [INFO] app.collectors.registry:   solana                          ok= 36  timeout= 0  error= 0  avg= 1735ms  components=32
+2026-04-15T17:59:51.497712796Z [error] 2026-04-15 17:59:51,460 [INFO] app.collectors.registry:   transparency                    ok= 36  timeout= 0  error= 0  avg=    0ms  components=40
+2026-04-15T17:59:52.482867194Z [error] 2026-04-15 17:59:52,417 [INFO] worker: === Fast cycle complete in 5241s ===
+2026-04-15T17:59:52.482870639Z [error] 2026-04-15 17:59:52,430 [ERROR] worker: === FAST CYCLE RETURNED, STARTING SLOW CYCLE ===
+2026-04-15T17:59:52.482874814Z [error] 2026-04-15 17:59:52,430 [INFO] worker: === Parallel slow cycle start ===
+2026-04-15T17:59:52.482878568Z [error] 2026-04-15 17:59:52,441 [INFO] app.enrichment_worker: Enrichment [liquidity_depth] starting...
+2026-04-15T17:59:52.646792343Z [error] 2026-04-15 17:59:52,642 [INFO] app.enrichment_worker: Enrichment [yield_data] skipped (gate closed)
+2026-04-15T17:59:52.848051231Z [error] 2026-04-15 17:59:52,844 [INFO] app.enrichment_worker: Enrichment [peg_5m_monitoring] skipped (gate closed)
+2026-04-15T17:59:53.006038328Z [error] 2026-04-15 17:59:52,994 [ERROR] app.database: Database error in get_conn(): column "collected_at" does not exist
+2026-04-15T17:59:53.006045760Z [error] LINE 1: SELECT MAX(collected_at) AS latest FROM governance_proposals
+2026-04-15T17:59:53.006050457Z [error]                    ^
+2026-04-15T17:59:53.006055137Z [error] Traceback (most recent call last):
+2026-04-15T17:59:53.006059818Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-15T17:59:53.006063818Z [error]     yield conn
+2026-04-15T17:59:53.006067073Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-15T17:59:53.006075049Z [error]     yield cur
+2026-04-15T17:59:53.006080009Z [error]   File "/app/app/database.py", line 153, in fetch_one
+2026-04-15T17:59:53.006083464Z [error]     cur.execute(sql, params)
+2026-04-15T17:59:53.006086562Z [error]   File "/usr/local/lib/python3.11/site-packages/psycopg2/extras.py", line 236, in execute
+2026-04-15T17:59:53.006089459Z [error]     return super().execute(query, vars)
+2026-04-15T17:59:53.006092442Z [error]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-15T17:59:53.006095587Z [error] psycopg2.errors.UndefinedColumn: column "collected_at" does not exist
+2026-04-15T17:59:53.006098714Z [error] LINE 1: SELECT MAX(collected_at) AS latest FROM governance_proposals
+2026-04-15T17:59:53.006101449Z [error]                    ^
+2026-04-15T17:59:53.006104845Z [error] 
+2026-04-15T17:59:53.046397096Z [error] 2026-04-15 17:59:53,044 [WARNING] app.enrichment_worker: Gate check failed for governance_activity: column "collected_at" does not exist
+2026-04-15T17:59:53.046401712Z [error] LINE 1: SELECT MAX(collected_at) AS latest FROM governance_proposals
+2026-04-15T17:59:53.046405054Z [error]                    ^
+2026-04-15T17:59:53.046407908Z [error] 
+2026-04-15T17:59:53.046410678Z [error] 2026-04-15 17:59:53,044 [INFO] app.enrichment_worker: Enrichment [governance_activity] starting...
+2026-04-15T17:59:53.502896432Z [error] 2026-04-15 17:59:53,244 [INFO] app.enrichment_worker: Enrichment [bridge_flows] starting...
+2026-04-15T17:59:53.502899126Z [error] 2026-04-15 17:59:53,444 [INFO] app.enrichment_worker: Enrichment [exchange_data] starting...
+2026-04-15T17:59:53.645699037Z [error] 2026-04-15 17:59:53,644 [INFO] app.enrichment_worker: Enrichment [dex_pool_ohlcv] starting...
+2026-04-15T17:59:53.856334811Z [error] 2026-04-15 17:59:53,847 [INFO] app.enrichment_worker: Enrichment [market_chart_backfill] skipped (gate closed)
+2026-04-15T17:59:54.077133734Z [error] 2026-04-15 17:59:54,069 [INFO] app.enrichment_worker: Enrichment [circle7_5min_pulls] starting...
+2026-04-15T17:59:54.675311017Z [error] 2026-04-15 17:59:54,669 [INFO] app.enrichment_worker: Enrichment [contract_surveillance] skipped (gate closed)
+2026-04-15T17:59:56.856483884Z [error] 2026-04-15 17:59:56,835 [ERROR] app.database: Database error in get_conn(): column "created_at" does not exist
+2026-04-15T17:59:56.856491728Z [error] LINE 1: SELECT MAX(created_at) AS latest FROM discovery_signals WHER...
+2026-04-15T17:59:56.856495801Z [error]                    ^
+2026-04-15T17:59:56.856499424Z [error] Traceback (most recent call last):
+2026-04-15T17:59:56.856503223Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-15T17:59:56.856509118Z [error]     yield conn
+2026-04-15T17:59:56.856513028Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-15T17:59:56.856518193Z [error]     yield cur
+2026-04-15T17:59:56.856521773Z [error]   File "/app/app/database.py", line 153, in fetch_one
+2026-04-15T17:59:56.856525094Z [error]     cur.execute(sql, params)
+2026-04-15T17:59:56.856528590Z [error]   File "/usr/local/lib/python3.11/site-packages/psycopg2/extras.py", line 236, in execute
+2026-04-15T17:59:56.856532165Z [error]     return super().execute(query, vars)
+2026-04-15T17:59:56.856536709Z [error]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-15T17:59:56.856540271Z [error] psycopg2.errors.UndefinedColumn: column "created_at" does not exist
+2026-04-15T17:59:56.856543420Z [error] LINE 1: SELECT MAX(created_at) AS latest FROM discovery_signals WHER...
+2026-04-15T17:59:56.856548160Z [error]                    ^
+2026-04-15T17:59:56.856552238Z [error] 
+2026-04-15T17:59:56.886681542Z [error] 2026-04-15 17:59:56,885 [WARNING] app.enrichment_worker: Gate check failed for entity_discovery: column "created_at" does not exist
+2026-04-15T17:59:56.886684322Z [error] LINE 1: SELECT MAX(created_at) AS latest FROM discovery_signals WHER...
+2026-04-15T17:59:56.886687025Z [error]                    ^
+2026-04-15T17:59:56.886690829Z [error] 
+2026-04-15T17:59:58.203717953Z [error] 2026-04-15 17:59:58,201 [INFO] app.enrichment_worker: Enrichment [dex_pool_ohlcv] complete in 4.6s
+2026-04-15T17:59:58.203724562Z [error] 2026-04-15 17:59:58,201 [INFO] app.enrichment_worker: Enrichment [mint_burn_events] starting...
+2026-04-15T17:59:58.652002682Z [error] 2026-04-15 17:59:58,629 [INFO] httpx: HTTP Request: GET https://bridges.llama.fi/bridges?includeChains=true "HTTP/1.1 402 Payment Required"
+2026-04-15T17:59:58.652007049Z [error] 2026-04-15 17:59:58,630 [WARNING] app.data_layer.bridge_flow_collector: DeFiLlama bridges fetch failed: Client error '402 Payment Required' for url 'https://bridges.llama.fi/bridges?includeChains=true'
+2026-04-15T17:59:58.652010799Z [error] For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402
+2026-04-15T17:59:58.652014973Z [error] 2026-04-15 17:59:58,630 [INFO] app.enrichment_worker: Enrichment [bridge_flows] complete in 5.4s
+2026-04-15T17:59:58.652018820Z [error] 2026-04-15 17:59:58,630 [INFO] app.enrichment_worker: Enrichment [entity_snapshots] starting...
+2026-04-15T17:59:59.067316850Z [error] 2026-04-15 17:59:59,039 [INFO] httpx: HTTP Request: POST https://hub.snapshot.org/graphql "HTTP/1.1 200 OK"
+2026-04-15T17:59:59.067320417Z [error] 2026-04-15 17:59:59,041 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/staked-ether/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-15T17:59:59.067323447Z [error] 2026-04-15 17:59:59,042 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/exchanges/binance "HTTP/1.1 200 OK"
+2026-04-15T18:00:59.124322447Z [error] 2026-04-15 18:00:57,140 [INFO] app.data_layer.market_chart_backfill: Stored 289 market chart records
