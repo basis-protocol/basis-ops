@@ -1,49 +1,3 @@
-2026-04-12T23:45:04.129561225Z [info] INFO:     100.64.0.8:45030 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
-2026-04-12T23:45:04.129565923Z [info] INFO:     100.64.0.6:62300 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
-2026-04-12T23:45:04.129570646Z [info] INFO:     100.64.0.33:24052 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
-2026-04-12T23:54:54.651367908Z [info] INFO:     100.64.0.53:62196 - "GET /robots.txt HTTP/1.1" 404 Not Found
-2026-04-12T23:54:54.651370612Z [info] INFO:     100.64.0.39:33324 - "GET / HTTP/1.1" 200 OK
-2026-04-12T23:54:54.651373487Z [info] INFO:     100.64.0.55:44700 - "GET / HTTP/1.1" 200 OK
-2026-04-12T23:54:54.651376295Z [error] 2026-04-12 23:54:47,720 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/scores params=None
-2026-04-12T23:54:54.651380155Z [error] 2026-04-12 23:54:48,971 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/scores "HTTP/1.1 200 "
-2026-04-12T23:54:54.651383647Z [error] 2026-04-12 23:54:48,973 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/scores 200 (25207 bytes)
-2026-04-12T23:54:54.651387012Z [error] 2026-04-12 23:54:48,973 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/psi/scores params=None
-2026-04-12T23:54:54.651390243Z [error] 2026-04-12 23:54:49,353 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/psi/scores "HTTP/1.1 200 "
-2026-04-12T23:54:54.651393593Z [error] 2026-04-12 23:54:49,354 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/psi/scores 200 (5769 bytes)
-2026-04-12T23:54:54.651396430Z [error] 2026-04-12 23:54:49,354 INFO [basis_state] Returning 49 entities to client (caching)
-2026-04-12T23:54:54.651399236Z [error] 2026-04-12 23:54:49,354 INFO [basis_state] Computing 7d changes for 36 entities
-2026-04-12T23:54:54.651402278Z [error] 2026-04-12 23:54:49,354 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDC params={'format': 'json'}
-2026-04-12T23:54:54.651405313Z [info] INFO:     100.64.0.42:61072 - "GET /api/entities HTTP/1.1" 200 OK
-2026-04-12T23:54:54.651409503Z [error] 2026-04-12 23:54:49,602 INFO [basis_state] Returning 49 cached entities
-2026-04-12T23:54:54.651412962Z [info] INFO:     100.64.0.32:57242 - "GET /api/entities HTTP/1.1" 200 OK
-2026-04-12T23:54:54.652571943Z [info] INFO:     100.64.0.47:24424 - "GET /favicon.ico HTTP/1.1" 404 Not Found
-2026-04-12T23:54:54.652581531Z [error] 2026-04-12 23:54:51,886 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDC?format=json "HTTP/1.1 200 "
-2026-04-12T23:54:54.652587911Z [error] 2026-04-12 23:54:51,887 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDC 200 (18298 bytes)
-2026-04-12T23:54:54.652593320Z [error] 2026-04-12 23:54:51,887 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDT params={'format': 'json'}
-2026-04-12T23:54:54.652599400Z [error] 2026-04-12 23:54:54,128 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDT?format=json "HTTP/1.1 200 "
-2026-04-12T23:54:54.652604423Z [error] 2026-04-12 23:54:54,130 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDT 200 (18287 bytes)
-2026-04-12T23:54:54.652609333Z [error] 2026-04-12 23:54:54,131 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USD1 params={'format': 'json'}
-2026-04-12T23:54:56.629864333Z [error] 2026-04-12 23:54:56,374 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/DAI params={'format': 'json'}
-2026-04-12T23:54:56.629913342Z [error] 2026-04-12 23:54:56,373 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USD1?format=json "HTTP/1.1 200 "
-2026-04-12T23:54:56.629918207Z [error] 2026-04-12 23:54:56,373 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USD1 200 (13732 bytes)
-2026-04-12T23:54:58.633437213Z [error] 2026-04-12 23:54:58,630 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/DAI?format=json "HTTP/1.1 200 "
-2026-04-12T23:54:58.637117526Z [error] 2026-04-12 23:54:58,635 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/DAI 200 (15010 bytes)
-2026-04-12T23:54:58.637123021Z [error] 2026-04-12 23:54:58,635 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/crvUSD params={'format': 'json'}
-2026-04-12T23:54:59.646902400Z [info] INFO:     100.64.0.5:24214 - "GET / HTTP/1.1" 200 OK
-2026-04-12T23:55:00.935210169Z [error] 2026-04-12 23:55:00,933 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/crvUSD?format=json "HTTP/1.1 200 "
-2026-04-12T23:55:00.937121960Z [error] 2026-04-12 23:55:00,935 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/crvUSD 200 (10692 bytes)
-2026-04-12T23:55:00.937126923Z [error] 2026-04-12 23:55:00,935 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDP params={'format': 'json'}
-2026-04-12T23:55:03.629819374Z [error] 2026-04-12 23:55:03,507 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDP?format=json "HTTP/1.1 200 "
-2026-04-12T23:55:03.629824512Z [error] 2026-04-12 23:55:03,508 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDP 200 (10695 bytes)
-2026-04-12T23:55:03.629829498Z [error] 2026-04-12 23:55:03,508 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/TUSD params={'format': 'json'}
-2026-04-12T23:55:05.806214545Z [error] 2026-04-12 23:55:05,803 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/TUSD?format=json "HTTP/1.1 200 "
-2026-04-12T23:55:05.806220303Z [error] 2026-04-12 23:55:05,804 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/TUSD 200 (13825 bytes)
-2026-04-12T23:55:05.806223980Z [error] 2026-04-12 23:55:05,804 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/RLUSD params={'format': 'json'}
-2026-04-12T23:55:08.106261829Z [error] 2026-04-12 23:55:08,102 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/RLUSD?format=json "HTTP/1.1 200 "
-2026-04-12T23:55:08.106266434Z [error] 2026-04-12 23:55:08,103 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/RLUSD 200 (10806 bytes)
-2026-04-12T23:55:08.106269641Z [error] 2026-04-12 23:55:08,103 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDe params={'format': 'json'}
-2026-04-12T23:55:10.654193597Z [error] 2026-04-12 23:55:10,348 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDe?format=json "HTTP/1.1 200 "
-2026-04-12T23:55:10.654200362Z [error] 2026-04-12 23:55:10,348 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDe 200 (14434 bytes)
 2026-04-12T23:55:10.654205380Z [error] 2026-04-12 23:55:10,349 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDS params={'format': 'json'}
 2026-04-12T23:55:10.654210106Z [error] 2026-04-12 23:55:10,408 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDS?format=json "HTTP/1.1 429 "
 2026-04-12T23:55:10.654215697Z [error] 2026-04-12 23:55:10,408 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDS 429 (56 bytes)
@@ -1999,3 +1953,49 @@
 2026-04-15T05:40:14.014903372Z [info] INFO:     100.64.0.12:38194 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
 2026-04-15T05:40:44.015447632Z [info] INFO:     100.64.0.6:48290 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
 2026-04-15T05:41:44.019375690Z [info] INFO:     100.64.0.4:62984 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-15T06:00:34.720648797Z [info] INFO:     100.64.0.10:12306 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-15T06:01:44.383276811Z [info] INFO:     100.64.0.14:42702 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-15T06:03:54.397732855Z [info] INFO:     100.64.0.3:25400 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-15T06:04:24.399497978Z [info] INFO:     100.64.0.13:15296 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-15T06:09:14.428712304Z [info] INFO:     100.64.0.35:55486 - "GET / HTTP/1.1" 200 OK
+2026-04-15T06:10:34.434837329Z [info] INFO:     100.64.0.20:24928 - "GET / HTTP/1.1" 200 OK
+2026-04-15T06:25:35.369113118Z [info] INFO:     100.64.0.2:57432 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-15T06:26:35.024970426Z [info] INFO:     100.64.0.10:18710 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-15T06:26:55.023939579Z [info] INFO:     100.64.0.35:32910 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-15T06:27:25.023782695Z [info] INFO:     100.64.0.6:28808 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-15T06:47:05.851734204Z [info] INFO:     100.64.0.14:56946 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-15T06:47:05.851741165Z [info] INFO:     100.64.0.13:53096 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-15T06:47:35.492948206Z [info] INFO:     100.64.0.34:37978 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-15T06:49:15.502466149Z [info] INFO:     100.64.0.2:48506 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-15T07:04:26.037491139Z [info] INFO:     100.64.0.34:43844 - "GET / HTTP/1.1" 200 OK
+2026-04-15T07:08:16.331204674Z [info] INFO:     100.64.0.14:51882 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-15T07:10:35.961820593Z [info] INFO:     100.64.0.6:26458 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-15T07:11:25.963918427Z [info] INFO:     100.64.0.4:30648 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-15T07:11:25.963924248Z [info] INFO:     100.64.0.13:18396 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-15T07:28:46.593450779Z [info] INFO:     100.64.0.10:36744 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-15T07:31:16.733107657Z [info] INFO:     100.64.0.14:51152 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-15T07:31:56.384204262Z [info] INFO:     100.64.0.14:47618 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-15T07:32:02.976357734Z [info] INFO:     100.64.0.35:36152 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-15T07:44:29.154644784Z [info] INFO:     100.64.0.17:56104 - "GET / HTTP/1.1" 200 OK
+2026-04-15T07:44:29.154648696Z [info] INFO:     100.64.0.49:62316 - "GET //wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-15T07:44:29.154652157Z [info] INFO:     100.64.0.49:62316 - "GET //xmlrpc.php?rsd HTTP/1.1" 404 Not Found
+2026-04-15T07:44:29.154657141Z [info] INFO:     100.64.0.22:52182 - "GET / HTTP/1.1" 200 OK
+2026-04-15T07:44:29.154660564Z [info] INFO:     100.64.0.51:12922 - "GET //blog/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-15T07:44:29.154665491Z [info] INFO:     100.64.0.51:12922 - "GET //web/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-15T07:44:29.154669075Z [info] INFO:     100.64.0.51:12922 - "GET //wordpress/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-15T07:44:29.154673641Z [info] INFO:     100.64.0.17:56104 - "GET //website/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-15T07:44:29.154677515Z [info] INFO:     100.64.0.24:28024 - "GET //wp/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-15T07:44:29.154681382Z [info] INFO:     100.64.0.51:12922 - "GET //news/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-15T07:44:29.154684801Z [info] INFO:     100.64.0.51:12922 - "GET //2020/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-15T07:44:29.154688503Z [info] INFO:     100.64.0.51:12922 - "GET //2019/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-15T07:44:29.154691835Z [info] INFO:     100.64.0.51:12922 - "GET //shop/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-15T07:44:29.154695812Z [info] INFO:     100.64.0.17:56104 - "GET //wp1/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-15T07:44:29.154701007Z [info] INFO:     100.64.0.24:28024 - "GET //test/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-15T07:44:29.154704764Z [info] INFO:     100.64.0.51:12922 - "GET //wp2/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-15T07:44:29.155389365Z [info] INFO:     100.64.0.24:28024 - "GET //site/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-15T07:44:29.316953170Z [info] INFO:     100.64.0.17:56104 - "GET //cms/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-15T07:44:29.526325400Z [info] INFO:     100.64.0.24:28024 - "GET //sito/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-15T07:50:39.675672110Z [info] INFO:     100.64.0.20:43784 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-15T07:51:39.696571400Z [info] INFO:     100.64.0.10:39604 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-15T07:51:39.696582428Z [info] INFO:     100.64.0.21:49140 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-15T07:52:09.714985840Z [info] INFO:     100.64.0.13:54746 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
