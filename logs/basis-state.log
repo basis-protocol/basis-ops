@@ -1,23 +1,3 @@
-2026-04-15T01:29:58.660959930Z [info] INFO:     100.64.0.14:55192 - "GET /.env.bak HTTP/1.1" 404 Not Found
-2026-04-15T01:29:58.660964104Z [info] INFO:     100.64.0.48:33752 - "GET /config/.env HTTP/1.1" 404 Not Found
-2026-04-15T01:29:58.660968067Z [info] INFO:     100.64.0.18:59136 - "GET /.env HTTP/1.1" 404 Not Found
-2026-04-15T01:29:58.660972003Z [info] INFO:     100.64.0.2:32638 - "GET /.env.production HTTP/1.1" 404 Not Found
-2026-04-15T01:29:58.660975559Z [info] INFO:     100.64.0.18:59140 - "GET /server/.env HTTP/1.1" 404 Not Found
-2026-04-15T01:29:58.660979236Z [info] INFO:     100.64.0.21:10198 - "GET / HTTP/1.1" 200 OK
-2026-04-15T01:36:48.370574034Z [info] INFO:     100.64.0.41:35386 - "GET /robots.txt HTTP/1.1" 404 Not Found
-2026-04-15T01:36:48.370580317Z [info] INFO:     100.64.0.38:52478 - "GET / HTTP/1.1" 200 OK
-2026-04-15T01:36:48.370585058Z [info] INFO:     100.64.0.46:24274 - "GET /robots.txt HTTP/1.1" 404 Not Found
-2026-04-15T01:36:48.370589445Z [error] 2026-04-15 01:36:45,469 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/scores params=None
-2026-04-15T01:36:48.370595857Z [error] 2026-04-15 01:36:46,291 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/scores "HTTP/1.1 200 "
-2026-04-15T01:36:48.370600531Z [error] 2026-04-15 01:36:46,293 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/scores 200 (25244 bytes)
-2026-04-15T01:36:48.370604465Z [error] 2026-04-15 01:36:46,294 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/psi/scores params=None
-2026-04-15T01:36:48.370608031Z [error] 2026-04-15 01:36:46,558 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/psi/scores "HTTP/1.1 200 "
-2026-04-15T01:36:48.370611910Z [error] 2026-04-15 01:36:46,559 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/psi/scores 200 (5792 bytes)
-2026-04-15T01:36:48.370615206Z [error] 2026-04-15 01:36:46,559 INFO [basis_state] Returning 49 entities to client (caching)
-2026-04-15T01:36:48.370619700Z [error] 2026-04-15 01:36:46,560 INFO [basis_state] Computing 7d changes for 36 entities
-2026-04-15T01:36:48.370622994Z [error] 2026-04-15 01:36:46,560 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDC params={'format': 'json'}
-2026-04-15T01:36:48.370626435Z [info] INFO:     100.64.0.44:36254 - "GET /api/entities HTTP/1.1" 200 OK
-2026-04-15T01:36:48.455657084Z [error] 2026-04-15 01:36:48,451 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDC?format=json "HTTP/1.1 200 "
 2026-04-15T01:36:48.457474724Z [error] 2026-04-15 01:36:48,453 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDC 200 (18310 bytes)
 2026-04-15T01:36:48.457481943Z [error] 2026-04-15 01:36:48,454 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDT params={'format': 'json'}
 2026-04-15T01:36:50.298093961Z [error] 2026-04-15 01:36:50,295 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDT?format=json "HTTP/1.1 200 "
@@ -1999,3 +1979,23 @@
 2026-04-17T17:30:29.106997274Z [error] 2026-04-17 17:30:28,938 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
 2026-04-17T17:30:29.107001823Z [error] 2026-04-17 17:30:28,939 WARNING [basis_state] Failed to fetch history for stablecoin:EURS
 2026-04-17T17:30:29.107006454Z [error] 2026-04-17 17:30:28,939 INFO [basis_state] 7d changes computed for 35 entities
+2026-04-17T17:45:09.172984898Z [info] INFO:     100.64.0.21:18386 - "GET / HTTP/1.1" 200 OK
+2026-04-17T17:45:09.172988284Z [info] INFO:     100.64.0.21:18386 - "GET /js/twint_ch.js HTTP/1.1" 404 Not Found
+2026-04-17T17:45:09.172991431Z [info] INFO:     100.64.0.35:30534 - "GET /assets/js/auth.js HTTP/1.1" 404 Not Found
+2026-04-17T17:45:11.169853943Z [info] INFO:     100.64.0.34:11172 - "GET /robots.txt HTTP/1.1" 404 Not Found
+2026-04-17T17:45:13.238624266Z [info] INFO:     100.64.0.8:51386 - "GET /bot-connect.js HTTP/1.1" 404 Not Found
+2026-04-17T17:45:15.176093452Z [info] INFO:     100.64.0.10:32814 - "GET /css/support_parent.css HTTP/1.1" 404 Not Found
+2026-04-17T17:45:19.741517778Z [info] INFO:     100.64.0.14:61258 - "GET /static/style/protect/index.js HTTP/1.1" 404 Not Found
+2026-04-17T17:45:21.293226641Z [info] INFO:     100.64.0.20:37928 - "GET /assets/js/qr_modal.js HTTP/1.1" 404 Not Found
+2026-04-17T17:45:23.178691861Z [info] INFO:     100.64.0.33:47650 - "GET /js/lkk_ch.js HTTP/1.1" 404 Not Found
+2026-04-17T17:45:52.798958160Z [info] INFO:     100.64.0.13:27442 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-17T17:48:32.812568100Z [info] INFO:     100.64.0.17:32940 - "GET /wp-login.php HTTP/1.1" 404 Not Found
+2026-04-17T18:08:33.880212447Z [info] INFO:     100.64.0.9:46022 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-17T18:08:33.880216826Z [info] INFO:     100.64.0.2:52644 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-17T18:09:33.495717939Z [info] INFO:     100.64.0.18:60142 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-17T18:10:13.501782826Z [info] INFO:     100.64.0.3:62626 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-17T18:11:53.510503409Z [info] INFO:     100.64.0.33:33120 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-17T18:28:24.260808736Z [info] INFO:     100.64.0.15:50520 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-17T18:28:24.260812240Z [info] INFO:     100.64.0.10:58928 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-17T18:31:23.905914210Z [info] INFO:     100.64.0.9:57990 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-17T18:32:23.911884205Z [info] INFO:     100.64.0.15:49072 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
