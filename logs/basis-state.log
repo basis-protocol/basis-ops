@@ -1,14 +1,3 @@
-2026-04-15T15:51:54.491038020Z [error] 2026-04-15 15:51:54,487 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/RAI params={'format': 'json'}
-2026-04-15T15:51:54.516825407Z [error] 2026-04-15 15:51:54,512 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/RAI?format=json "HTTP/1.1 429 "
-2026-04-15T15:51:54.516829522Z [error] 2026-04-15 15:51:54,513 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/RAI 429 (56 bytes)
-2026-04-15T15:51:54.516833655Z [error] 2026-04-15 15:51:54,513 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-15T15:51:54.516837475Z [error] 2026-04-15 15:51:54,513 WARNING [basis_state] Failed to fetch history for stablecoin:RAI
-2026-04-15T15:51:54.516840860Z [error] 2026-04-15 15:51:54,513 INFO [basis_state] 7d changes computed for 35 entities
-2026-04-15T15:53:44.527300898Z [info] INFO:     100.64.0.15:17738 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
-2026-04-15T16:12:25.439041670Z [info] INFO:     100.64.0.18:53654 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
-2026-04-15T16:12:55.081271693Z [info] INFO:     100.64.0.13:49372 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
-2026-04-15T16:14:45.085796489Z [info] INFO:     100.64.0.8:13848 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
-2026-04-15T16:15:55.090537119Z [info] INFO:     100.64.0.44:43064 - "GET / HTTP/1.1" 200 OK
 2026-04-15T16:15:55.090545124Z [info] INFO:     100.64.0.45:38866 - "GET / HTTP/1.1" 200 OK
 2026-04-15T16:16:15.090852129Z [info] INFO:     100.64.0.34:38322 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
 2026-04-15T16:35:56.117868532Z [info] INFO:     100.64.0.21:31690 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
@@ -1999,3 +1988,14 @@
 2026-04-18T21:57:55.565454591Z [info] INFO:     100.64.0.13:57472 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
 2026-04-18T21:58:55.568774746Z [info] INFO:     100.64.0.5:14134 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
 2026-04-18T22:00:05.575709539Z [info] INFO:     100.64.0.9:28326 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-18T22:21:36.597162836Z [info] INFO:     100.64.0.8:18978 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-18T22:23:56.787891325Z [info] INFO:     100.64.0.15:48622 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-18T22:24:36.788025313Z [info] INFO:     100.64.0.7:60778 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-18T22:25:06.827708615Z [info] INFO:     100.64.0.7:17420 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-18T22:40:26.886235467Z [info] INFO:     100.64.0.5:59880 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-18T22:49:46.528203713Z [info] INFO:     100.64.0.5:51824 - "GET / HTTP/1.1" 200 OK
+2026-04-18T23:01:47.354100249Z [info] INFO:     100.64.0.9:52688 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-18T23:03:17.409750165Z [info] INFO:     100.64.0.34:38866 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-18T23:03:37.406704139Z [info] INFO:     100.64.0.6:44108 - "GET / HTTP/1.1" 200 OK
+2026-04-18T23:03:37.406719470Z [info] INFO:     100.64.0.8:40690 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-18T23:03:57.053806046Z [info] INFO:     100.64.0.4:21748 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
