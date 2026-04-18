@@ -1071,3 +1071,319 @@
 2026-04-17T23:55:46.698801850Z [error] 2026-04-17 23:55:46,207 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=token&action=tokenholdercount&contractaddress=0xdac17f958d2ee523a2206206994597c13d831ec7&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
 2026-04-17T23:55:51.741931678Z [error] 2026-04-17 23:55:51,366 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/tokens/0xdac17f958d2ee523a2206206994597c13d831ec7/counters "HTTP/1.1 200 OK"
 2026-04-17T23:55:51.811486420Z [error] 2026-04-17 23:55:51,809 [INFO] app.services.cda_scores: CDA: usdt — 4 components from reducto_pdf (confidence: 0.97)
+2026-04-17T23:55:51.832163318Z [error] 2026-04-17 23:55:51,830 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/tether?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-17T23:56:11.840759004Z [error] 2026-04-17 23:56:02,534 [INFO] app.state_attestation: State attested: domain=sii_components entity=usdt records=84 hash=af4ea4f26dd1cef8...
+2026-04-17T23:56:11.840767885Z [error] 2026-04-17 23:56:02,534 [INFO] worker: usdt: 85.17 - 84 components in 36.5s
+2026-04-17T23:56:11.840773061Z [error] 2026-04-17 23:56:06,868 [INFO] httpx: HTTP Request: GET https://stablecoins.llama.fi/stablecoins "HTTP/1.1 200 OK"
+2026-04-17T23:56:11.840777208Z [error] 2026-04-17 23:56:07,000 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usdtb?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-17T23:56:11.840781270Z [error] 2026-04-17 23:56:07,004 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usdtb?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-17T23:56:11.840785773Z [error] 2026-04-17 23:56:07,008 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usdtb?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-17T23:56:11.840790157Z [error] 2026-04-17 23:56:07,009 [INFO] httpx: HTTP Request: GET https://yields.llama.fi/pools "HTTP/1.1 200 OK"
+2026-04-17T23:56:11.840794267Z [error] 2026-04-17 23:56:07,099 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=contract&action=getabi&address=0xc139190f447e929f090edeb554d95abb8b18ac1c&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-17T23:56:11.840798897Z [error] 2026-04-17 23:56:07,184 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usdtb/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-17T23:56:11.840802958Z [error] 2026-04-17 23:56:07,472 [INFO] app.state_attestation: State attested: domain=smart_contracts entity=usdtb records=6 hash=3b1662aa90cd2917...
+2026-04-17T23:56:11.842406608Z [error] 2026-04-17 23:56:07,474 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&contractaddress=0xc139190f447e929f090edeb554d95abb8b18ac1c&page=1&offset=200&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-17T23:56:11.842412629Z [error] 2026-04-17 23:56:07,476 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usdtb/market_chart?vs_currency=usd&days=7 "HTTP/1.1 200 OK"
+2026-04-17T23:56:11.842418032Z [error] 2026-04-17 23:56:08,346 [INFO] app.state_attestation: State attested: domain=flows entity=usdtb records=5 hash=c97e2327d0ec140e...
+2026-04-17T23:56:11.842423024Z [error] 2026-04-17 23:56:08,347 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usdtb/market_chart?vs_currency=usd&days=30 "HTTP/1.1 200 OK"
+2026-04-17T23:56:11.842428531Z [error] 2026-04-17 23:56:09,536 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=contract&action=getabi&address=0xc139190f447e929f090edeb554d95abb8b18ac1c&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-17T23:56:11.842433946Z [error] 2026-04-17 23:56:09,755 [INFO] httpx: HTTP Request: GET https://api.blockscout.com/v2/api?chain_id=1&module=contract&action=getabi&apikey=proapi_sVUHiHnZyiiVZKeE55f7LEHIvT5VtAg2ZqnkKtYnBtDIBtPXriZABzLQMeOuF1iY_dvna1J&address=0xc139190f447e929f090edeb554d95abb8b18ac1c "HTTP/1.1 200 OK"
+2026-04-17T23:56:11.842438784Z [error] 2026-04-17 23:56:10,345 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=token&action=tokenholdercount&contractaddress=0xc139190f447e929f090edeb554d95abb8b18ac1c&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-17T23:56:15.898921801Z [error] 2026-04-17 23:56:15,527 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/tokens/0xc139190f447e929f090edeb554d95abb8b18ac1c/counters "HTTP/1.1 200 OK"
+2026-04-17T23:56:15.992463720Z [error] 2026-04-17 23:56:15,990 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usdtb?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-17T23:56:22.885311043Z [error] 2026-04-17 23:56:22,723 [INFO] app.state_attestation: State attested: domain=sii_components entity=usdtb records=48 hash=aa1bcd1cc142c94f...
+2026-04-17T23:56:22.885316736Z [error] 2026-04-17 23:56:22,723 [INFO] worker: usdtb: 69.02 - 48 components in 17.5s
+2026-04-17T23:56:25.169277491Z [error] 2026-04-17 23:56:25,165 [INFO] worker: Scoring cycle complete: 36/36 scored in 799s
+2026-04-17T23:56:25.292806334Z [error] 2026-04-17 23:56:25,290 [INFO] worker: Running PSI scoring cycle...
+2026-04-17T23:56:25.885616644Z [error] 2026-04-17 23:56:25,744 [INFO] app.collectors.governance_detector:   aave: governance config unchanged
+2026-04-17T23:56:26.205692805Z [error] 2026-04-17 23:56:26,187 [INFO] app.collectors.governance_detector:   lido: governance config unchanged
+2026-04-17T23:56:27.012322442Z [error] 2026-04-17 23:56:26,629 [INFO] app.collectors.governance_detector:   eigenlayer: governance config unchanged
+2026-04-17T23:56:27.080302907Z [error] 2026-04-17 23:56:27,071 [INFO] app.collectors.governance_detector:   sky: governance config unchanged
+2026-04-17T23:56:27.898857695Z [error] 2026-04-17 23:56:27,513 [INFO] app.collectors.governance_detector:   compound-finance: governance config unchanged
+2026-04-17T23:56:27.976396979Z [error] 2026-04-17 23:56:27,955 [INFO] app.collectors.governance_detector:   uniswap: governance config unchanged
+2026-04-17T23:56:28.402929843Z [error] 2026-04-17 23:56:28,397 [INFO] app.collectors.governance_detector:   curve-finance: governance config unchanged
+2026-04-17T23:56:28.935502827Z [error] 2026-04-17 23:56:28,837 [INFO] app.collectors.governance_detector:   morpho: governance config unchanged
+2026-04-17T23:56:29.286237109Z [error] 2026-04-17 23:56:29,278 [INFO] app.collectors.governance_detector:   spark: governance config unchanged
+2026-04-17T23:56:29.944361308Z [error] 2026-04-17 23:56:29,720 [INFO] app.collectors.governance_detector:   convex-finance: governance config unchanged
+2026-04-17T23:56:30.440849341Z [error] 2026-04-17 23:56:30,422 [INFO] app.collectors.governance_detector:   drift: governance config unchanged
+2026-04-17T23:56:31.238464329Z [error] 2026-04-17 23:56:31,233 [INFO] app.collectors.governance_detector:   jupiter-perpetual-exchange: governance config unchanged
+2026-04-17T23:56:31.953995643Z [error] 2026-04-17 23:56:31,872 [INFO] app.collectors.governance_detector:   raydium: governance config unchanged
+2026-04-17T23:56:31.954004423Z [error] 2026-04-17 23:56:31,872 [INFO] app.collectors.governance_detector: Governance snapshots: 13 captured, 0 changes detected
+2026-04-17T23:56:31.954010580Z [error] 2026-04-17 23:56:31,875 [INFO] app.collectors.collateral_coverage: Collecting collateral coverage and market snapshots...
+2026-04-17T23:56:33.102800530Z [error] 2026-04-17 23:56:33,084 [INFO] app.collectors.collateral_coverage:   aave: coverage 45.0% ($12,329,728,734 / $27,426,105,417)
+2026-04-17T23:56:33.311533760Z [error] 2026-04-17 23:56:33,310 [INFO] app.collectors.collateral_coverage:   lido: coverage 100.0% ($22,888,695,246 / $22,888,695,246)
+2026-04-17T23:56:33.976336353Z [error] 2026-04-17 23:56:33,590 [INFO] app.collectors.collateral_coverage:   eigenlayer: coverage 100.0% ($0 / $0)
+2026-04-17T23:56:33.976342176Z [error] 2026-04-17 23:56:33,817 [INFO] app.collectors.collateral_coverage:   sky: coverage 100.0% ($0 / $0)
+2026-04-17T23:56:34.045563640Z [error] 2026-04-17 23:56:34,042 [INFO] app.collectors.collateral_coverage:   compound-finance: coverage 83.8% ($1,281,750,017 / $1,529,036,808)
+2026-04-17T23:56:34.912463252Z [error] 2026-04-17 23:56:34,500 [INFO] app.collectors.collateral_coverage:   uniswap: coverage 64.2% ($2,219,642,030 / $3,457,068,173)
+2026-04-17T23:56:34.960684876Z [error] 2026-04-17 23:56:34,954 [INFO] app.collectors.collateral_coverage:   curve-finance: coverage 64.9% ($1,355,132,004 / $2,087,973,346)
+2026-04-17T23:56:35.182915785Z [error] 2026-04-17 23:56:35,180 [INFO] app.collectors.collateral_coverage:   morpho: coverage 100.0% ($0 / $0)
+2026-04-17T23:56:35.409857909Z [error] 2026-04-17 23:56:35,408 [INFO] app.collectors.collateral_coverage:   spark: coverage 100.0% ($0 / $0)
+2026-04-17T23:56:35.972323392Z [error] 2026-04-17 23:56:35,854 [INFO] app.collectors.collateral_coverage:   convex-finance: coverage 63.9% ($374,834,860 / $586,240,743)
+2026-04-17T23:56:36.083720988Z [error] 2026-04-17 23:56:36,081 [INFO] app.collectors.collateral_coverage:   drift: coverage 100.0% ($0 / $0)
+2026-04-17T23:56:36.308722012Z [error] 2026-04-17 23:56:36,306 [INFO] app.collectors.collateral_coverage:   jupiter-perpetual-exchange: coverage 100.0% ($0 / $0)
+2026-04-17T23:56:36.910464270Z [error] 2026-04-17 23:56:36,757 [INFO] app.collectors.collateral_coverage:   raydium: coverage 40.4% ($453,304,775 / $1,122,441,486)
+2026-04-17T23:56:38.985147366Z [error] 2026-04-17 23:56:38,666 [WARNING] app.collectors.collateral_coverage: MARKET EVENT: uniswap: 6 new markets added in a single day (severity=warning)
+2026-04-17T23:56:38.985153783Z [error] 2026-04-17 23:56:38,909 [WARNING] app.collectors.collateral_coverage: MARKET EVENT: uniswap: new markets contain unscored assets: VTLP, SNR, VILLN, SOVRA, ASTEROID (severity=critical)
+2026-04-17T23:56:40.993562676Z [error] 2026-04-17 23:56:40,911 [WARNING] app.collectors.collateral_coverage: MARKET EVENT: raydium: 9 new markets added in a single day (severity=warning)
+2026-04-17T23:56:41.173951339Z [error] 2026-04-17 23:56:41,163 [WARNING] app.collectors.collateral_coverage: MARKET EVENT: raydium: new markets contain unscored assets: WILDNOUT, CONVICTION, AI, EUPHORIA, CRASHOUT, WSOL, KM, AART, BRENT, DJCAT (severity=critical)
+2026-04-17T23:56:41.173958714Z [error] 2026-04-17 23:56:41,163 [INFO] app.collectors.collateral_coverage: Market snapshots: 7 protocols, 15 new markets detected
+2026-04-17T23:56:41.414528572Z [error] 2026-04-17 23:56:41,403 [INFO] app.collectors.psi_collector: Scoring protocol: aave
+2026-04-17T23:58:41.780855025Z [error] 2026-04-17 23:58:32,572 [INFO] app.collectors.psi_collector:   Stored 418 treasury holdings for aave
+2026-04-17T23:58:41.780859044Z [error] 2026-04-17 23:58:32,572 [INFO] app.collectors.psi_collector:   Aave: 83.64 - 23/27 components
+2026-04-17T23:58:41.780863018Z [error] 2026-04-17 23:58:32,808 [INFO] app.collectors.psi_collector: Scoring protocol: lido
+2026-04-17T23:58:46.807579987Z [error] 2026-04-17 23:58:46,658 [INFO] app.collectors.psi_collector:   Stored 21 treasury holdings for lido
+2026-04-17T23:58:46.807585601Z [error] 2026-04-17 23:58:46,658 [INFO] app.collectors.psi_collector:   Lido: 80.06 - 22/27 components
+2026-04-17T23:58:46.897999111Z [error] 2026-04-17 23:58:46,893 [INFO] app.collectors.psi_collector: Scoring protocol: eigenlayer
+2026-04-17T23:58:53.846853786Z [error] 2026-04-17 23:58:53,721 [INFO] app.collectors.psi_collector:   EigenCloud: 61.99 - 21/27 components
+2026-04-17T23:58:53.957718045Z [error] 2026-04-17 23:58:53,956 [INFO] app.collectors.psi_collector: Scoring protocol: sky
+2026-04-17T23:59:13.384224590Z [error] 2026-04-17 23:59:04,306 [INFO] app.collectors.psi_collector:   Stored 14 treasury holdings for sky
+2026-04-17T23:59:13.384238152Z [error] 2026-04-17 23:59:04,306 [INFO] app.collectors.psi_collector:   Sky: 72.14 - 22/27 components
+2026-04-17T23:59:13.384247467Z [error] 2026-04-17 23:59:04,541 [INFO] app.collectors.psi_collector: Scoring protocol: compound-finance
+2026-04-17T23:59:21.203460118Z [error] 2026-04-17 23:59:21,195 [INFO] app.collectors.psi_collector:   Stored 21 treasury holdings for compound-finance
+2026-04-17T23:59:21.203463782Z [error] 2026-04-17 23:59:21,195 [INFO] app.collectors.psi_collector:   Compound Finance: 61.27 - 23/27 components
+2026-04-17T23:59:21.434401486Z [error] 2026-04-17 23:59:21,431 [INFO] app.collectors.psi_collector: Scoring protocol: uniswap
+2026-04-17T23:59:41.435286657Z [error] 2026-04-17 23:59:31,901 [INFO] app.collectors.psi_collector:   Stored 5 treasury holdings for uniswap
+2026-04-17T23:59:41.435295236Z [error] 2026-04-17 23:59:31,902 [INFO] app.collectors.psi_collector:   Uniswap: 75.68 - 22/27 components
+2026-04-17T23:59:41.435301357Z [error] 2026-04-17 23:59:32,137 [INFO] app.collectors.psi_collector: Scoring protocol: curve-finance
+2026-04-17T23:59:51.016399621Z [error] 2026-04-17 23:59:51,012 [INFO] app.collectors.psi_collector:   Stored 7 treasury holdings for curve-finance
+2026-04-17T23:59:51.016408420Z [error] 2026-04-17 23:59:51,013 [INFO] app.collectors.psi_collector:   Curve Finance: 52.62 - 23/27 components
+2026-04-17T23:59:51.547371411Z [error] 2026-04-17 23:59:51,247 [INFO] app.collectors.psi_collector: Scoring protocol: morpho
+2026-04-18T00:00:11.167606374Z [error] 2026-04-18 00:00:02,268 [INFO] app.collectors.psi_collector:   Stored 12 treasury holdings for morpho
+2026-04-18T00:00:11.167623517Z [error] 2026-04-18 00:00:02,268 [INFO] app.collectors.psi_collector:   Morpho: 75.7 - 22/27 components
+2026-04-18T00:00:11.167631984Z [error] 2026-04-18 00:00:02,503 [INFO] app.collectors.psi_collector: Scoring protocol: spark
+2026-04-18T00:00:21.064656038Z [error] 2026-04-18 00:00:20,522 [INFO] app.collectors.psi_collector:   Stored 27 treasury holdings for spark
+2026-04-18T00:00:21.064662428Z [error] 2026-04-18 00:00:20,522 [INFO] app.collectors.psi_collector:   Spark: 65.61 - 19/27 components
+2026-04-18T00:00:21.064669484Z [error] 2026-04-18 00:00:20,757 [INFO] app.collectors.psi_collector: Scoring protocol: convex-finance
+2026-04-18T00:00:50.402827474Z [error] 2026-04-18 00:00:46,405 [INFO] app.collectors.psi_collector:   Stored 25 treasury holdings for convex-finance
+2026-04-18T00:00:50.402834935Z [error] 2026-04-18 00:00:46,405 [INFO] app.collectors.psi_collector:   Convex Finance: 63.57 - 23/27 components
+2026-04-18T00:00:50.402840379Z [error] 2026-04-18 00:00:46,641 [INFO] app.collectors.psi_collector: Scoring protocol: drift
+2026-04-18T00:00:55.276579977Z [error] 2026-04-18 00:00:55,148 [INFO] app.collectors.psi_collector: PSI drift: admin risk from on-chain authority = 50
+2026-04-18T00:00:56.279571473Z [error] 2026-04-18 00:00:56,208 [INFO] app.collectors.psi_collector:   Drift: 49.35 - 21/27 components
+2026-04-18T00:00:56.445551118Z [error] 2026-04-18 00:00:56,443 [INFO] app.collectors.psi_collector: Scoring protocol: jupiter-perpetual-exchange
+2026-04-18T00:01:15.726624889Z [error] 2026-04-18 00:01:05,933 [INFO] app.collectors.psi_collector: PSI jupiter-perpetual-exchange: admin risk from on-chain authority = 55
+2026-04-18T00:01:15.726629094Z [error] 2026-04-18 00:01:06,995 [INFO] app.collectors.psi_collector:   Jupiter Perpetual Exchange: 60.6 - 18/27 components
+2026-04-18T00:01:15.726634224Z [error] 2026-04-18 00:01:07,231 [INFO] app.collectors.psi_collector: Scoring protocol: raydium
+2026-04-18T00:01:55.732256807Z [error] 2026-04-18 00:01:47,621 [INFO] app.collectors.psi_collector: PSI raydium: admin risk from on-chain authority = 45
+2026-04-18T00:01:55.732263703Z [error] 2026-04-18 00:01:48,683 [INFO] app.collectors.psi_collector:   Raydium: 56.7 - 21/27 components
+2026-04-18T00:01:55.732269641Z [error] 2026-04-18 00:01:48,918 [INFO] worker: PSI scoring complete: 13 protocols scored
+2026-04-18T00:01:55.732276081Z [error] 2026-04-18 00:01:49,156 [INFO] app.state_attestation: State attested: domain=psi_components entity=None records=13 hash=93555d47280d6ca9...
+2026-04-18T00:01:55.732281767Z [error] 2026-04-18 00:01:49,160 [INFO] worker: Running bridge monitoring...
+2026-04-18T00:01:56.581321464Z [error] 2026-04-18 00:01:56,175 [INFO] app.state_attestation: State attested: domain=bridge_monitoring entity=None records=1 hash=89cd3709f0162575...
+2026-04-18T00:01:56.581327709Z [error] 2026-04-18 00:01:56,175 [INFO] worker: Bridge monitoring complete: 1/9 bridges checked
+2026-04-18T00:01:56.581335806Z [error] 2026-04-18 00:01:56,177 [INFO] worker: Running exchange health monitoring...
+2026-04-18T00:02:05.662530308Z [error] 2026-04-18 00:02:05,518 [INFO] app.state_attestation: State attested: domain=exchange_health entity=None records=8 hash=0ac63b570b1de003...
+2026-04-18T00:02:05.662535062Z [error] 2026-04-18 00:02:05,518 [INFO] worker: Exchange health: 6/8 healthy
+2026-04-18T00:02:05.662540626Z [error] 2026-04-18 00:02:05,518 [ERROR] worker: === DATA LAYER START ===
+2026-04-18T00:02:06.024521738Z [error] 2026-04-18 00:02:06,020 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usd-coin?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:06.695475661Z [error] 2026-04-18 00:02:06,629 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/tether?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:07.787485112Z [error] 2026-04-18 00:02:07,143 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/dai?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:07.787508523Z [error] 2026-04-18 00:02:07,678 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/frax?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:08.723429266Z [error] 2026-04-18 00:02:08,188 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/paypal-usd?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:08.723434768Z [error] 2026-04-18 00:02:08,687 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/first-digital-usd?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:09.700331138Z [error] 2026-04-18 00:02:09,191 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/true-usd?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:09.702784534Z [error] 2026-04-18 00:02:09,699 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usdd?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:10.682920006Z [error] 2026-04-18 00:02:10,214 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/ethena-usde?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:10.729959684Z [error] 2026-04-18 00:02:10,727 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usd1-wlfi?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:11.650352646Z [error] 2026-04-18 00:02:11,228 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/crvusd?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:11.784246866Z [error] 2026-04-18 00:02:11,775 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/paxos-standard?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:12.623760457Z [error] 2026-04-18 00:02:12,312 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/gho?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:12.809514418Z [error] 2026-04-18 00:02:12,805 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/dola-usd?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:13.708078885Z [error] 2026-04-18 00:02:13,399 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/gemini-dollar?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:13.947366621Z [error] 2026-04-18 00:02:13,943 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/liquity-usd?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:14.610406319Z [error] 2026-04-18 00:02:14,492 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/nusd?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:15.042437090Z [error] 2026-04-18 00:02:15,035 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/magic-internet-money?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:15.694527176Z [error] 2026-04-18 00:02:15,594 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/stasis-eurs?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:16.101030861Z [error] 2026-04-18 00:02:16,098 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/eurite?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:16.611655328Z [error] 2026-04-18 00:02:16,608 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/frax-share?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:17.694637516Z [error] 2026-04-18 00:02:17,168 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/susds?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:17.694642885Z [error] 2026-04-18 00:02:17,675 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/euro-coin?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:18.691043873Z [error] 2026-04-18 00:02:18,177 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/ripple-usd?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:18.768884363Z [error] 2026-04-18 00:02:18,765 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/monerium-eur-money-2?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:19.673488535Z [error] 2026-04-18 00:02:19,341 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/ethena-staked-usde?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:19.888521294Z [error] 2026-04-18 00:02:19,878 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/aave-stkgho?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:20.688892350Z [error] 2026-04-18 00:02:20,491 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usd0-liquid-bond?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:21.786475078Z [error] 2026-04-18 00:02:21,169 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/sdola?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:21.786480173Z [error] 2026-04-18 00:02:21,675 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usds?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:22.648830618Z [error] 2026-04-18 00:02:22,228 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/decentralized-usd?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:22.762863039Z [error] 2026-04-18 00:02:22,761 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/origin-dollar?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:23.681149171Z [error] 2026-04-18 00:02:23,285 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/metamask-usd?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:23.843366927Z [error] 2026-04-18 00:02:23,842 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/steakhouse-usdc-morpho-vault?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:24.702924601Z [error] 2026-04-18 00:02:24,355 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usdtb?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:24.935457544Z [error] 2026-04-18 00:02:24,933 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/rai?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:25.693644022Z [error] 2026-04-18 00:02:25,427 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/aave?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:25.927981686Z [error] 2026-04-18 00:02:25,923 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/compound-governance-token?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:26.732392268Z [error] 2026-04-18 00:02:26,420 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/morpho?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:26.932501502Z [error] 2026-04-18 00:02:26,926 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/lido-dao?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:27.708970845Z [error] 2026-04-18 00:02:27,428 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/uniswap?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:27.932782834Z [error] 2026-04-18 00:02:27,928 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/curve-dao-token?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:28.805530046Z [error] 2026-04-18 00:02:28,431 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/convex-finance?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:28.954467177Z [error] 2026-04-18 00:02:28,944 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/eigenlayer?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:29.756856298Z [error] 2026-04-18 00:02:29,454 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/maker?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:29.944424992Z [error] 2026-04-18 00:02:29,936 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/spark-protocol?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 404 Not Found"
+2026-04-18T00:02:30.116892246Z [error] 2026-04-18 00:02:30,111 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/pendle?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:30.753365252Z [error] 2026-04-18 00:02:30,613 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/ethena?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-18T00:02:31.726491238Z [error] 2026-04-18 00:02:31,244 [ERROR] worker: === ENTITIES: 47 ok, 0 err, total=RealDictRow([('c', 917)]) ===
+2026-04-18T00:02:31.726499341Z [error] 2026-04-18 00:02:31,477 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/exchanges/binance "HTTP/1.1 200 OK"
+2026-04-18T00:02:32.020015299Z [error] 2026-04-18 00:02:32,017 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/exchanges/gdax "HTTP/1.1 200 OK"
+2026-04-18T00:02:32.777988146Z [error] 2026-04-18 00:02:32,580 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/exchanges/okex "HTTP/1.1 200 OK"
+2026-04-18T00:02:33.811357438Z [error] 2026-04-18 00:02:33,222 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/exchanges/bybit_spot "HTTP/1.1 200 OK"
+2026-04-18T00:02:33.811363549Z [error] 2026-04-18 00:02:33,752 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/exchanges/kraken "HTTP/1.1 200 OK"
+2026-04-18T00:02:34.736954743Z [error] 2026-04-18 00:02:34,414 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/exchanges/kucoin "HTTP/1.1 200 OK"
+2026-04-18T00:02:35.037099110Z [error] 2026-04-18 00:02:35,031 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/exchanges/gate "HTTP/1.1 200 OK"
+2026-04-18T00:02:35.983319525Z [error] 2026-04-18 00:02:35,974 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/exchanges/bitget "HTTP/1.1 200 OK"
+2026-04-18T00:02:36.730552983Z [error] 2026-04-18 00:02:36,724 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/exchanges/huobi "HTTP/1.1 200 OK"
+2026-04-18T00:02:37.694434356Z [error] 2026-04-18 00:02:37,360 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/exchanges/crypto_com "HTTP/1.1 200 OK"
+2026-04-18T00:02:37.968263619Z [error] 2026-04-18 00:02:37,874 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/exchanges/mxc "HTTP/1.1 200 OK"
+2026-04-18T00:02:38.677762226Z [error] 2026-04-18 00:02:38,595 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/exchanges/bitfinex "HTTP/1.1 200 OK"
+2026-04-18T00:02:39.242912588Z [error] 2026-04-18 00:02:39,240 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/exchanges/bitstamp "HTTP/1.1 200 OK"
+2026-04-18T00:02:39.928718453Z [error] 2026-04-18 00:02:39,925 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/exchanges/gemini "HTTP/1.1 200 OK"
+2026-04-18T00:02:40.846013404Z [error] 2026-04-18 00:02:40,843 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/exchanges/lbank "HTTP/1.1 200 OK"
+2026-04-18T00:02:41.821701028Z [error] 2026-04-18 00:02:41,468 [ERROR] worker: === EXCHANGES: 15 ok, 0 err, total=RealDictRow([('c', 229)]) ===
+2026-04-18T00:02:41.821708333Z [error] 2026-04-18 00:02:41,622 [INFO] httpx: HTTP Request: GET https://yields.llama.fi/pools "HTTP/1.1 200 OK"
+2026-04-18T00:02:42.962113029Z [error] 2026-04-18 00:02:42,955 [ERROR] worker: === YIELDS: 200/200 in 0.6s ===
+2026-04-18T00:02:44.033206554Z [error] 2026-04-18 00:02:43,373 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usd-coin/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:02:44.037859483Z [error] 2026-04-18 00:02:44,034 [ERROR] worker: peg/mchart usdc: 289 rows in 0.8s
+2026-04-18T00:02:44.947011599Z [error] 2026-04-18 00:02:44,349 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/tether/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:02:44.947022305Z [error] 2026-04-18 00:02:44,899 [ERROR] worker: peg/mchart usdt: 289 rows in 0.7s
+2026-04-18T00:02:45.163279376Z [error] 2026-04-18 00:02:45,162 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/dai/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:02:45.828361115Z [error] 2026-04-18 00:02:45,597 [ERROR] worker: peg/mchart dai: 289 rows in 0.5s
+2026-04-18T00:02:45.886087946Z [error] 2026-04-18 00:02:45,881 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/frax/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:02:46.834042187Z [error] 2026-04-18 00:02:46,314 [ERROR] worker: peg/mchart frax: 289 rows in 0.6s
+2026-04-18T00:02:46.834051243Z [error] 2026-04-18 00:02:46,574 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/paypal-usd/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:02:47.016401466Z [error] 2026-04-18 00:02:47,009 [ERROR] worker: peg/mchart pyusd: 289 rows in 0.5s
+2026-04-18T00:02:47.259914098Z [error] 2026-04-18 00:02:47,258 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/first-digital-usd/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:02:47.859794957Z [error] 2026-04-18 00:02:47,691 [ERROR] worker: peg/mchart fdusd: 289 rows in 0.5s
+2026-04-18T00:02:47.956087812Z [error] 2026-04-18 00:02:47,950 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/true-usd/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:02:48.897997669Z [error] 2026-04-18 00:02:48,393 [ERROR] worker: peg/mchart tusd: 289 rows in 0.6s
+2026-04-18T00:02:48.898001993Z [error] 2026-04-18 00:02:48,684 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usdd/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:02:49.125936540Z [error] 2026-04-18 00:02:49,124 [ERROR] worker: peg/mchart usdd: 289 rows in 0.6s
+2026-04-18T00:02:49.900676578Z [error] 2026-04-18 00:02:49,439 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/ethena-usde/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:02:49.900680967Z [error] 2026-04-18 00:02:49,871 [ERROR] worker: peg/mchart usde: 289 rows in 0.6s
+2026-04-18T00:02:50.152414535Z [error] 2026-04-18 00:02:50,146 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usd1-wlfi/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:02:51.021224970Z [error] 2026-04-18 00:02:50,578 [ERROR] worker: peg/mchart usd1: 289 rows in 0.6s
+2026-04-18T00:02:51.021234626Z [error] 2026-04-18 00:02:50,855 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/crvusd/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:02:51.301507746Z [error] 2026-04-18 00:02:51,289 [ERROR] worker: peg/mchart crvusd: 289 rows in 0.6s
+2026-04-18T00:02:51.952963262Z [error] 2026-04-18 00:02:51,611 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/paxos-standard/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:02:52.047175042Z [error] 2026-04-18 00:02:52,045 [ERROR] worker: peg/mchart usdp: 289 rows in 0.6s
+2026-04-18T00:02:52.321542268Z [error] 2026-04-18 00:02:52,318 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/gho/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:02:52.921267202Z [error] 2026-04-18 00:02:52,753 [ERROR] worker: peg/mchart gho: 289 rows in 0.6s
+2026-04-18T00:02:53.065414896Z [error] 2026-04-18 00:02:53,063 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/dola-usd/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:02:53.962680298Z [error] 2026-04-18 00:02:53,497 [ERROR] worker: peg/mchart dola: 289 rows in 0.6s
+2026-04-18T00:02:53.962687155Z [error] 2026-04-18 00:02:53,818 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/gemini-dollar/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:02:54.255389533Z [error] 2026-04-18 00:02:54,251 [ERROR] worker: peg/mchart gusd: 289 rows in 0.6s
+2026-04-18T00:02:54.889057952Z [error] 2026-04-18 00:02:54,523 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/liquity-usd/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:02:54.898738542Z [error] 2026-04-18 00:02:54,897 [ERROR] worker: peg/mchart lusd: 289 rows in 0.5s
+2026-04-18T00:02:55.182426022Z [error] 2026-04-18 00:02:55,181 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/nusd/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:02:55.926309718Z [error] 2026-04-18 00:02:55,924 [ERROR] worker: peg/mchart susd: 289 rows in 0.9s
+2026-04-18T00:02:56.192804834Z [error] 2026-04-18 00:02:56,191 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/magic-internet-money/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:02:56.881872897Z [error] 2026-04-18 00:02:56,698 [ERROR] worker: peg/mchart mim: 289 rows in 0.6s
+2026-04-18T00:02:56.998260933Z [error] 2026-04-18 00:02:56,994 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/stasis-eurs/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:02:57.927186347Z [error] 2026-04-18 00:02:57,428 [ERROR] worker: peg/mchart eurs: 289 rows in 0.6s
+2026-04-18T00:02:57.927190961Z [error] 2026-04-18 00:02:57,706 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/eurite/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:02:58.195345834Z [error] 2026-04-18 00:02:58,192 [ERROR] worker: peg/mchart euri: 289 rows in 0.6s
+2026-04-18T00:02:58.952483238Z [error] 2026-04-18 00:02:58,482 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/frax-share/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:02:58.952490538Z [error] 2026-04-18 00:02:58,919 [ERROR] worker: peg/mchart frax_64d0: 289 rows in 0.6s
+2026-04-18T00:02:59.172998108Z [error] 2026-04-18 00:02:59,170 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/susds/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:03:00.047175655Z [error] 2026-04-18 00:02:59,606 [ERROR] worker: peg/mchart susds: 289 rows in 0.5s
+2026-04-18T00:03:00.047183443Z [error] 2026-04-18 00:02:59,860 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/euro-coin/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:03:00.300252880Z [error] 2026-04-18 00:03:00,297 [ERROR] worker: peg/mchart eurc: 289 rows in 0.5s
+2026-04-18T00:03:01.050067512Z [error] 2026-04-18 00:03:00,584 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/ripple-usd/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:03:01.050073072Z [error] 2026-04-18 00:03:01,015 [ERROR] worker: peg/mchart rlusd: 289 rows in 0.6s
+2026-04-18T00:03:01.300421134Z [error] 2026-04-18 00:03:01,298 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/monerium-eur-money-2/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:03:01.878905036Z [error] 2026-04-18 00:03:01,732 [ERROR] worker: peg/mchart eure: 289 rows in 0.6s
+2026-04-18T00:03:01.981919093Z [error] 2026-04-18 00:03:01,978 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/ethena-staked-usde/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:03:02.962557312Z [error] 2026-04-18 00:03:02,411 [ERROR] worker: peg/mchart susde: 289 rows in 0.5s
+2026-04-18T00:03:02.962563288Z [error] 2026-04-18 00:03:02,676 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/aave-stkgho/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:03:02.980860114Z [error] 2026-04-18 00:03:02,972 [ERROR] worker: peg/mchart stkgho: 1 rows in 0.4s
+2026-04-18T00:03:04.060043734Z [error] 2026-04-18 00:03:03,550 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usd0-liquid-bond/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:03:04.060050913Z [error] 2026-04-18 00:03:03,988 [ERROR] worker: peg/mchart busd0: 289 rows in 0.9s
+2026-04-18T00:03:04.360022029Z [error] 2026-04-18 00:03:04,357 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/sdola/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:03:04.959466480Z [error] 2026-04-18 00:03:04,727 [ERROR] worker: peg/mchart sdola: 200 rows in 0.6s
+2026-04-18T00:03:05.005443719Z [error] 2026-04-18 00:03:04,999 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usds/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:03:05.382108410Z [error] 2026-04-18 00:03:05,379 [ERROR] worker: peg/mchart usds: 289 rows in 0.5s
+2026-04-18T00:03:06.000203865Z [error] 2026-04-18 00:03:05,711 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/decentralized-usd/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:03:06.150153204Z [error] 2026-04-18 00:03:06,147 [ERROR] worker: peg/mchart usddbttcbridge: 289 rows in 0.6s
+2026-04-18T00:03:06.961180630Z [error] 2026-04-18 00:03:06,453 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/origin-dollar/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:03:06.961187502Z [error] 2026-04-18 00:03:06,888 [ERROR] worker: peg/mchart ousd: 289 rows in 0.6s
+2026-04-18T00:03:07.184583311Z [error] 2026-04-18 00:03:07,180 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/metamask-usd/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:03:07.945958170Z [error] 2026-04-18 00:03:07,614 [ERROR] worker: peg/mchart musd: 289 rows in 0.6s
+2026-04-18T00:03:07.945966363Z [error] 2026-04-18 00:03:07,865 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/steakhouse-usdc-morpho-vault/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:03:08.182573809Z [error] 2026-04-18 00:03:08,176 [ERROR] worker: peg/mchart steakusdc: 170 rows in 0.4s
+2026-04-18T00:03:09.115627349Z [error] 2026-04-18 00:03:08,460 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usdtb/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:03:09.115633990Z [error] 2026-04-18 00:03:08,889 [ERROR] worker: peg/mchart usdtb: 289 rows in 0.6s
+2026-04-18T00:03:09.199091593Z [error] 2026-04-18 00:03:09,193 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/rai/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-18T00:03:10.101045850Z [error] 2026-04-18 00:03:09,563 [ERROR] worker: peg/mchart rai: 289 rows in 0.5s
+2026-04-18T00:03:10.101065092Z [error] 2026-04-18 00:03:09,714 [ERROR] worker: === PEG: 9908, MCHART: 9908, elapsed=26.8s ===
+2026-04-18T00:03:10.151996492Z [error] 2026-04-18 00:03:10,150 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usd-coin/tickers?include_exchange_logo=false "HTTP/1.1 200 OK"
+2026-04-18T00:03:15.942047490Z [error] 2026-04-18 00:03:15,501 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/tether/tickers?include_exchange_logo=false "HTTP/1.1 200 OK"
+2026-04-18T00:03:20.993595704Z [error] 2026-04-18 00:03:20,730 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/dai/tickers?include_exchange_logo=false "HTTP/1.1 200 OK"
+2026-04-18T00:03:24.063278155Z [error] 2026-04-18 00:03:23,657 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/frax/tickers?include_exchange_logo=false "HTTP/1.1 200 OK"
+2026-04-18T00:03:24.063279745Z [error] 2026-04-18 00:03:24,045 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/paypal-usd/tickers?include_exchange_logo=false "HTTP/1.1 200 OK"
+2026-04-18T00:03:27.111616184Z [error] 2026-04-18 00:03:27,104 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/first-digital-usd/tickers?include_exchange_logo=false "HTTP/1.1 200 OK"
+2026-04-18T00:03:28.439468529Z [error] 2026-04-18 00:03:28,428 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/true-usd/tickers?include_exchange_logo=false "HTTP/1.1 200 OK"
+2026-04-18T00:03:33.216176673Z [error] 2026-04-18 00:03:32,773 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usdd/tickers?include_exchange_logo=false "HTTP/1.1 200 OK"
+2026-04-18T00:03:36.156753959Z [error] 2026-04-18 00:03:36,040 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/ethena-usde/tickers?include_exchange_logo=false "HTTP/1.1 200 OK"
+2026-04-18T00:03:40.195491048Z [error] 2026-04-18 00:03:40,024 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usd1-wlfi/tickers?include_exchange_logo=false "HTTP/1.1 200 OK"
+2026-04-18T00:03:44.197335771Z [error] 2026-04-18 00:03:44,194 [ERROR] worker: === LIQUIDITY: 122 ok, 0 err, total=RealDictRow([('c', 1740)]) ===
+2026-04-18T00:03:44.447150713Z [error] 2026-04-18 00:03:44,440 [ERROR] worker: === MINTBURN: skipped (last 14h ago) ===
+2026-04-18T00:03:45.418252596Z [error] 2026-04-18 00:03:45,413 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0x98C23E9d8f34FEFb1B7BD6a91B7FF122F4e16F5c&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-18T00:04:05.416395067Z [error] 2026-04-18 00:03:57,996 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0x23878914EFE38d27C4D67Ab83ed1b93A74D4086a&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-18T00:04:10.272571667Z [error] 2026-04-18 00:04:10,269 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0x018008bfb33d285247A21d44E50697654f754e63&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-18T00:04:29.803998232Z [error] 2026-04-18 00:04:22,458 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0xd4e245848d6E1220DBE62e155d89fa327A284cB0&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-18T00:04:29.804005952Z [error] 2026-04-18 00:04:22,896 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0x0C0d01AbF3e6aDfcA0989eBbA9d6e85dD58EaB1E&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-18T00:04:35.366337792Z [error] 2026-04-18 00:04:35,100 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0x4F5923Fc5FD4a93352581b38B7cD26943012DECF&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-18T00:04:54.956425223Z [error] 2026-04-18 00:04:47,287 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0x4e65fE4DbA92790696d040ac24Aa414708F5c0AB&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-18T00:04:54.956430696Z [error] 2026-04-18 00:04:47,686 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0x724dc807b04555b71ed48a6896b6F41593b8C637&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-18T00:04:54.956435770Z [error] 2026-04-18 00:04:48,086 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0x6ab707Aca953eDAeFBc4fD23bA73294241490620&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-18T00:04:54.956440728Z [error] 2026-04-18 00:04:48,489 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-18T00:04:54.956445056Z [error] 2026-04-18 00:04:48,888 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0x38d693cE1dF5AaDF7bC62043aE5EE32bb3f1259B&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-18T00:04:54.956449250Z [error] 2026-04-18 00:04:49,312 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0x377C3bd93f2a2984E1E7bE6A5C22c525eD4A4815&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-18T00:05:01.742495706Z [error] 2026-04-18 00:05:01,702 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0xe7dF13b8e3d6740fe17CBE928C7334243d86c92f&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-18T00:05:21.742797767Z [error] 2026-04-18 00:05:13,922 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0x4DEDf26112B3Ec8eC46e7E31EA5e123490B05B8B&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-18T00:05:26.134757541Z [error] 2026-04-18 00:05:26,127 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0xc3d688B66703497DAA19211EEdff47f25384cdc3&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-18T00:05:46.145201057Z [error] 2026-04-18 00:05:38,669 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0x3Afdc9BCA9213A35503b077a6072F3D0d5AB0840&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-18T00:05:51.069100796Z [error] 2026-04-18 00:05:50,932 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-18T00:06:10.526259663Z [error] 2026-04-18 00:06:03,144 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0xb125E6687d4313864e53df431d5425969c15Eb2F&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-18T00:06:10.526268581Z [error] 2026-04-18 00:06:03,544 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0xA5EDBDD9646f8dFF606d7448e414884C7d905dCA&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-18T00:06:10.526274745Z [error] 2026-04-18 00:06:03,949 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?module=token&action=getTokenHolders&contractaddress=0xBEEF01735c132Ada46AA9aA9cE21E792a30CFE8b&page=1&offset=50 "HTTP/1.1 200 OK"
+2026-04-18T00:06:10.526280671Z [error] 2026-04-18 00:06:04,201 [ERROR] worker: === POOL_WALLETS: 550 ok, 0 err ===
+2026-04-18T00:06:10.526286220Z [error] 2026-04-18 00:06:04,613 [INFO] httpx: HTTP Request: POST https://hub.snapshot.org/graphql "HTTP/1.1 200 OK"
+2026-04-18T00:06:10.526292356Z [error] 2026-04-18 00:06:04,762 [INFO] httpx: HTTP Request: POST https://hub.snapshot.org/graphql "HTTP/1.1 200 OK"
+2026-04-18T00:06:30.521853790Z [error] 2026-04-18 00:06:29,165 [INFO] httpx: HTTP Request: POST https://hub.snapshot.org/graphql "HTTP/1.1 200 OK"
+2026-04-18T00:06:30.521861967Z [error] 2026-04-18 00:06:29,341 [INFO] httpx: HTTP Request: POST https://hub.snapshot.org/graphql "HTTP/1.1 200 OK"
+2026-04-18T00:06:30.521867665Z [error] 2026-04-18 00:06:29,987 [INFO] httpx: HTTP Request: POST https://hub.snapshot.org/graphql "HTTP/1.1 200 OK"
+2026-04-18T00:06:30.521872984Z [error] 2026-04-18 00:06:30,301 [INFO] httpx: HTTP Request: POST https://hub.snapshot.org/graphql "HTTP/1.1 200 OK"
+2026-04-18T00:06:40.249825456Z [error] 2026-04-18 00:06:39,891 [INFO] httpx: HTTP Request: POST https://hub.snapshot.org/graphql "HTTP/1.1 200 OK"
+2026-04-18T00:06:40.249833284Z [error] 2026-04-18 00:06:40,021 [INFO] httpx: HTTP Request: POST https://hub.snapshot.org/graphql "HTTP/1.1 200 OK"
+2026-04-18T00:07:10.390191167Z [error] 2026-04-18 00:07:04,494 [INFO] httpx: HTTP Request: POST https://hub.snapshot.org/graphql "HTTP/1.1 200 OK"
+2026-04-18T00:07:10.390197596Z [error] 2026-04-18 00:07:04,617 [INFO] httpx: HTTP Request: POST https://hub.snapshot.org/graphql "HTTP/1.1 200 OK"
+2026-04-18T00:07:29.884051799Z [error] 2026-04-18 00:07:26,461 [INFO] httpx: HTTP Request: POST https://hub.snapshot.org/graphql "HTTP/1.1 200 OK"
+2026-04-18T00:07:29.884063982Z [error] 2026-04-18 00:07:26,584 [INFO] httpx: HTTP Request: POST https://hub.snapshot.org/graphql "HTTP/1.1 200 OK"
+2026-04-18T00:07:29.884069972Z [error] 2026-04-18 00:07:29,675 [ERROR] worker: === GOV_VOTERS: 339 ok, 0 err ===
+2026-04-18T00:07:29.919363449Z [error] 2026-04-18 00:07:29,913 [ERROR] worker: === CONTRACT_SURV: skipped (last 78h ago) ===
+2026-04-18T00:07:29.919369354Z [error] 2026-04-18 00:07:29,913 [ERROR] worker: === DATA LAYER END ===
+2026-04-18T00:07:34.943581652Z [error] 2026-04-18 00:07:34,925 [INFO] app.agent.watcher: === Verification agent cycle starting ===
+2026-04-18T00:07:36.534122936Z [error] 2026-04-18 00:07:36,345 [WARNING] app.agent.watcher: Depeg trigger: liquity-usd at $1.0246 (2.46% deviation)
+2026-04-18T00:07:36.826017790Z [error] 2026-04-18 00:07:36,821 [INFO] app.agent.watcher: Running daily cycle assessment...
+2026-04-18T00:07:38.553729251Z [error] 2026-04-18 00:07:38,372 [INFO] app.agent.store: Assessment stored: 26fa2ba7-4c18-4906-b7e2-e83a995e56b0 | wallet=0xF977814e... | trigger=daily_cycle | severity=silent
+2026-04-18T00:07:40.596655114Z [error] 2026-04-18 00:07:40,040 [INFO] app.agent.store: Assessment stored: db5d5c22-77f2-4b6e-b548-d0980d9a6bb3 | wallet=0xf977814e... | trigger=daily_cycle | severity=silent
+2026-04-18T00:07:41.699104797Z [error] 2026-04-18 00:07:41,696 [INFO] app.agent.store: Assessment stored: 998deb80-f2c3-408a-9651-e8b5c0015c2f | wallet=0x47ac0Fb4... | trigger=daily_cycle | severity=silent
+2026-04-18T00:07:43.788555326Z [error] 2026-04-18 00:07:43,412 [INFO] app.agent.store: Assessment stored: 0b146a43-9297-41cc-8b8d-6b784d0ff7fb | wallet=0x5a52e96b... | trigger=daily_cycle | severity=silent
+2026-04-18T00:07:45.676019144Z [error] 2026-04-18 00:07:45,066 [INFO] app.agent.store: Assessment stored: f77894fb-8962-4fe0-8ac0-4cfd6e51fd97 | wallet=0x9d39a5de... | trigger=daily_cycle | severity=silent
+2026-04-18T00:07:46.775905269Z [error] 2026-04-18 00:07:46,723 [INFO] app.agent.store: Assessment stored: 96fa8c2c-c9bf-4aa3-a1e4-82448b44e0f3 | wallet=0x5754284f... | trigger=daily_cycle | severity=silent
+2026-04-18T00:07:50.052507790Z [error] 2026-04-18 00:07:50,046 [INFO] app.agent.store: Assessment stored: 51cd7d6d-70b0-415d-96ef-cf0d0a3f91a0 | wallet=0x40ec5b33... | trigger=daily_cycle | severity=silent
+2026-04-18T00:07:51.767864182Z [error] 2026-04-18 00:07:51,758 [INFO] app.agent.store: Assessment stored: 7fee0635-3917-43e9-9749-26795bac1992 | wallet=0x40ec5B33... | trigger=daily_cycle | severity=silent
+2026-04-18T00:07:53.888549141Z [error] 2026-04-18 00:07:53,414 [INFO] app.agent.store: Assessment stored: a3256901-1916-4cef-878b-4b197f382283 | wallet=0x28C6c062... | trigger=daily_cycle | severity=silent
+2026-04-18T00:07:55.662394319Z [error] 2026-04-18 00:07:55,290 [INFO] app.agent.store: Assessment stored: e552198c-8b11-4148-9ce9-a1c36212ec5d | wallet=0x28c6c062... | trigger=daily_cycle | severity=silent
+2026-04-18T00:07:57.007675394Z [error] 2026-04-18 00:07:57,001 [INFO] app.agent.store: Assessment stored: 2e4f5bb7-03b2-4c8e-8852-4cd565d2b93c | wallet=0x5d3a1ff2... | trigger=daily_cycle | severity=silent
+2026-04-18T00:07:58.808085081Z [error] 2026-04-18 00:07:58,656 [INFO] app.agent.store: Assessment stored: 0af96462-13df-4de4-b750-01518bf2ff36 | wallet=0xee7ae85f... | trigger=daily_cycle | severity=silent
+2026-04-18T00:08:00.627517446Z [error] 2026-04-18 00:08:00,313 [INFO] app.agent.store: Assessment stored: 7043b782-c3ea-4baf-8905-e6146482cbd6 | wallet=0x1601843c... | trigger=daily_cycle | severity=silent
+2026-04-18T00:08:02.025754852Z [error] 2026-04-18 00:08:02,023 [INFO] app.agent.store: Assessment stored: b32ea44b-7962-40d5-8a35-c7d7a6a24915 | wallet=0xa7c0d36c... | trigger=daily_cycle | severity=silent
+2026-04-18T00:08:03.701468883Z [error] 2026-04-18 00:08:03,680 [INFO] app.agent.store: Assessment stored: e68f7f1c-6c85-4879-bb56-6803269e05d3 | wallet=0x98adef6f... | trigger=daily_cycle | severity=silent
+2026-04-18T00:08:05.661894054Z [error] 2026-04-18 00:08:05,332 [INFO] app.agent.store: Assessment stored: f1788523-a6c6-4dce-91e9-f437df11ef54 | wallet=0x98c23e9d... | trigger=daily_cycle | severity=silent
+2026-04-18T00:08:06.999491859Z [error] 2026-04-18 00:08:06,986 [INFO] app.agent.store: Assessment stored: 55677226-6bf1-4ac1-9ae4-4a0766e18216 | wallet=0x4f5923fc... | trigger=daily_cycle | severity=silent
+2026-04-18T00:08:08.647928006Z [error] 2026-04-18 00:08:08,642 [INFO] app.agent.store: Assessment stored: 3986201a-4925-48ae-85be-503c6834fcc5 | wallet=0xf6e72db5... | trigger=daily_cycle | severity=silent
+2026-04-18T00:08:10.652955344Z [error] 2026-04-18 00:08:10,294 [INFO] app.agent.store: Assessment stored: aa7f883c-7fa6-4b4e-b97a-ff21536455f1 | wallet=0xbbbbbbbb... | trigger=daily_cycle | severity=silent
+2026-04-18T00:08:11.950215368Z [error] 2026-04-18 00:08:11,946 [INFO] app.agent.store: Assessment stored: 6f664b72-2eaf-4a25-bf83-894a3c673c6a | wallet=0x05ff6964... | trigger=daily_cycle | severity=silent
+2026-04-18T00:08:13.672129573Z [error] 2026-04-18 00:08:13,596 [INFO] app.agent.store: Assessment stored: a73ee0b5-3a64-41fa-942b-799d919057e8 | wallet=0x99C9fc46... | trigger=daily_cycle | severity=silent
