@@ -1,38 +1,3 @@
-2026-04-16T03:18:30.295146816Z [info] INFO:     100.64.0.7:35870 - "GET /aws.config.js HTTP/1.1" 404 Not Found
-2026-04-16T03:18:30.457928626Z [info] INFO:     100.64.0.36:41196 - "GET /phpinfo.php HTTP/1.1" 404 Not Found
-2026-04-16T03:18:30.910671329Z [info] INFO:     100.64.0.5:51254 - "GET /.git/HEAD HTTP/1.1" 404 Not Found
-2026-04-16T03:18:30.910683979Z [info] INFO:     100.64.0.5:51254 - "GET /.git/config HTTP/1.1" 404 Not Found
-2026-04-16T03:21:00.568310186Z [info] INFO:     100.64.0.17:48430 - "POST / HTTP/1.1" 405 Method Not Allowed
-2026-04-16T03:21:00.568315026Z [info] INFO:     100.64.0.17:48430 - "POST /index.php HTTP/1.1" 404 Not Found
-2026-04-16T03:21:00.568318017Z [info] INFO:     100.64.0.26:20470 - "POST /admin HTTP/1.1" 404 Not Found
-2026-04-16T03:21:00.568321064Z [info] INFO:     100.64.0.19:37258 - "POST /api HTTP/1.1" 404 Not Found
-2026-04-16T03:42:41.536260581Z [info] INFO:     100.64.0.57:40278 - "POST /xmlrpc.php HTTP/1.1" 404 Not Found
-2026-04-16T04:36:34.197432194Z [info] INFO:     100.64.0.18:31392 - "GET / HTTP/1.1" 200 OK
-2026-04-16T05:11:25.839180548Z [info] INFO:     100.64.0.27:32452 - "GET /sftp-config.json HTTP/1.1" 404 Not Found
-2026-04-16T05:11:25.839186255Z [info] INFO:     100.64.0.22:22926 - "GET /.vscode/sftp.json HTTP/1.1" 404 Not Found
-2026-04-16T05:20:26.439562824Z [info] INFO:     100.64.0.4:48134 - "GET /.git/config HTTP/1.1" 404 Not Found
-2026-04-16T05:31:07.177399629Z [info] INFO:     100.64.0.39:45868 - "GET / HTTP/1.1" 200 OK
-2026-04-16T05:31:07.177406641Z [info] INFO:     100.64.0.39:45868 - "GET /favicon.ico HTTP/1.1" 404 Not Found
-2026-04-16T05:31:07.177410326Z [error] 2026-04-16 05:31:03,002 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/scores params=None
-2026-04-16T05:31:07.177413372Z [error] 2026-04-16 05:31:03,719 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/scores "HTTP/1.1 200 "
-2026-04-16T05:31:07.177416980Z [error] 2026-04-16 05:31:03,720 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/scores 200 (25270 bytes)
-2026-04-16T05:31:07.177421432Z [error] 2026-04-16 05:31:03,721 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/psi/scores params=None
-2026-04-16T05:31:07.177424476Z [error] 2026-04-16 05:31:04,036 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/psi/scores "HTTP/1.1 200 "
-2026-04-16T05:31:07.177427603Z [error] 2026-04-16 05:31:04,036 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/psi/scores 200 (5794 bytes)
-2026-04-16T05:31:07.177431545Z [error] 2026-04-16 05:31:04,037 INFO [basis_state] Returning 49 entities to client (caching)
-2026-04-16T05:31:07.177434777Z [error] 2026-04-16 05:31:04,037 INFO [basis_state] Computing 7d changes for 36 entities
-2026-04-16T05:31:07.177437954Z [error] 2026-04-16 05:31:04,037 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDC params={'format': 'json'}
-2026-04-16T05:31:07.177440843Z [info] INFO:     100.64.0.32:48596 - "GET /api/entities HTTP/1.1" 200 OK
-2026-04-16T05:31:07.177444443Z [error] 2026-04-16 05:31:06,100 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDC?format=json "HTTP/1.1 200 "
-2026-04-16T05:31:07.177447684Z [error] 2026-04-16 05:31:06,103 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDC 200 (18313 bytes)
-2026-04-16T05:31:07.179232654Z [error] 2026-04-16 05:31:06,103 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDT params={'format': 'json'}
-2026-04-16T05:31:07.179237854Z [info] INFO:     100.64.0.43:16068 - "GET /favicon.ico HTTP/1.1" 404 Not Found
-2026-04-16T05:31:08.153984019Z [error] 2026-04-16 05:31:08,149 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDT?format=json "HTTP/1.1 200 "
-2026-04-16T05:31:08.153987599Z [error] 2026-04-16 05:31:08,151 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDT 200 (18282 bytes)
-2026-04-16T05:31:08.156119270Z [error] 2026-04-16 05:31:08,152 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USD1 params={'format': 'json'}
-2026-04-16T05:31:10.218110091Z [error] 2026-04-16 05:31:10,200 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USD1?format=json "HTTP/1.1 200 "
-2026-04-16T05:31:10.218117980Z [error] 2026-04-16 05:31:10,201 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USD1 200 (13741 bytes)
-2026-04-16T05:31:10.218123059Z [error] 2026-04-16 05:31:10,202 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/DAI params={'format': 'json'}
 2026-04-16T05:31:12.199953254Z [error] 2026-04-16 05:31:12,196 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/DAI?format=json "HTTP/1.1 200 "
 2026-04-16T05:31:12.202090452Z [error] 2026-04-16 05:31:12,198 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/DAI 200 (15016 bytes)
 2026-04-16T05:31:12.202097496Z [error] 2026-04-16 05:31:12,198 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDe params={'format': 'json'}
@@ -1999,3 +1964,38 @@
 2026-04-19T08:26:49.244595014Z [info] INFO:     100.64.0.4:60490 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
 2026-04-19T08:28:58.855277828Z [info] INFO:     100.64.0.4:21884 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
 2026-04-19T08:29:58.859765869Z [info] INFO:     100.64.0.14:22162 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-19T08:46:09.706168070Z [info] INFO:     100.64.0.41:41828 - "GET / HTTP/1.1" 200 OK
+2026-04-19T08:46:49.706077735Z [info] INFO:     100.64.0.7:42164 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-19T08:47:19.240888330Z [info] INFO:     100.64.0.53:51050 - "GET / HTTP/1.1" 200 OK
+2026-04-19T08:48:19.247462734Z [info] INFO:     100.64.0.36:24452 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-19T08:49:09.255659889Z [info] INFO:     100.64.0.7:53446 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-19T08:49:49.259430218Z [info] INFO:     100.64.0.18:58994 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-19T08:54:29.289374962Z [info] INFO:     100.64.0.55:62492 - "GET / HTTP/1.1" 200 OK
+2026-04-19T09:02:29.757436641Z [info] INFO:     100.64.0.37:47414 - "GET / HTTP/1.1" 200 OK
+2026-04-19T09:02:29.757440232Z [info] INFO:     100.64.0.29:23042 - "GET //wp/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-19T09:02:29.757441227Z [info] INFO:     100.64.0.57:59522 - "GET //wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-19T09:02:29.757446707Z [info] INFO:     100.64.0.57:59522 - "GET //xmlrpc.php?rsd HTTP/1.1" 404 Not Found
+2026-04-19T09:02:29.757450000Z [info] INFO:     100.64.0.29:23042 - "GET //news/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-19T09:02:29.757451546Z [info] INFO:     100.64.0.28:24660 - "GET / HTTP/1.1" 200 OK
+2026-04-19T09:02:29.757456494Z [info] INFO:     100.64.0.57:59522 - "GET //2020/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-19T09:02:29.757456585Z [info] INFO:     100.64.0.37:47414 - "GET //blog/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-19T09:02:29.757462004Z [info] INFO:     100.64.0.58:50974 - "GET //2019/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-19T09:02:29.757462644Z [info] INFO:     100.64.0.57:59522 - "GET //web/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-19T09:02:29.757468289Z [info] INFO:     100.64.0.29:23042 - "GET //shop/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-19T09:02:29.757468602Z [info] INFO:     100.64.0.29:23042 - "GET //wordpress/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-19T09:02:29.757475404Z [info] INFO:     100.64.0.29:23042 - "GET //wp1/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-19T09:02:29.757475649Z [info] INFO:     100.64.0.29:23042 - "GET //website/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-19T09:02:30.152581070Z [info] INFO:     100.64.0.57:59522 - "GET //test/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-19T09:02:30.742696587Z [info] INFO:     100.64.0.29:23042 - "GET //wp2/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-19T09:02:31.688776406Z [info] INFO:     100.64.0.29:23042 - "GET //site/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-19T09:02:31.909176730Z [info] INFO:     100.64.0.37:56680 - "GET //cms/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-19T09:02:32.717971483Z [info] INFO:     100.64.0.57:59522 - "GET //sito/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-19T09:06:22.334279268Z [info] INFO:     100.64.0.36:30534 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-19T09:06:52.334510933Z [info] INFO:     100.64.0.9:18160 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-19T09:08:12.341052619Z [info] INFO:     100.64.0.48:60984 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-19T09:09:52.349415318Z [info] INFO:     100.64.0.36:34526 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-19T09:26:33.510551507Z [info] INFO:     100.64.0.18:17126 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-19T09:27:13.045467234Z [info] INFO:     100.64.0.12:27320 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-19T09:28:23.057117453Z [info] INFO:     100.64.0.7:29418 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-19T09:29:23.060697643Z [info] INFO:     100.64.0.21:41728 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-19T09:31:13.070376496Z [info] INFO:     100.64.0.50:45844 - "GET / HTTP/1.1" 200 OK
