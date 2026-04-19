@@ -1,13 +1,3 @@
-2026-04-17T01:42:34.818295087Z [error] 2026-04-17 01:42:34,474 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/GUSD params={'format': 'json'}
-2026-04-17T01:42:34.818299650Z [error] 2026-04-17 01:42:34,502 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/GUSD?format=json "HTTP/1.1 429 "
-2026-04-17T01:42:34.818305848Z [error] 2026-04-17 01:42:34,502 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/GUSD 429 (56 bytes)
-2026-04-17T01:42:34.818310176Z [error] 2026-04-17 01:42:34,502 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-17T01:42:34.818313712Z [error] 2026-04-17 01:42:34,502 WARNING [basis_state] Failed to fetch history for stablecoin:GUSD
-2026-04-17T01:42:34.818317270Z [error] 2026-04-17 01:42:34,502 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/OUSD params={'format': 'json'}
-2026-04-17T01:42:34.818321327Z [error] 2026-04-17 01:42:34,532 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/OUSD?format=json "HTTP/1.1 429 "
-2026-04-17T01:42:34.818326048Z [error] 2026-04-17 01:42:34,533 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/OUSD 429 (56 bytes)
-2026-04-17T01:42:34.818329878Z [error] 2026-04-17 01:42:34,533 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-17T01:42:34.818333312Z [error] 2026-04-17 01:42:34,533 WARNING [basis_state] Failed to fetch history for stablecoin:OUSD
 2026-04-17T01:42:34.819522037Z [error] 2026-04-17 01:42:34,533 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/DOLA params={'format': 'json'}
 2026-04-17T01:42:34.819529670Z [error] 2026-04-17 01:42:34,561 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/DOLA?format=json "HTTP/1.1 429 "
 2026-04-17T01:42:34.819536242Z [error] 2026-04-17 01:42:34,562 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/DOLA 429 (56 bytes)
@@ -1999,3 +1989,13 @@
 2026-04-19T16:45:44.549169626Z [info] INFO:     100.64.0.21:15180 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
 2026-04-19T16:46:54.912659297Z [info] INFO:     100.64.0.33:11210 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
 2026-04-19T16:47:00.926518042Z [info] INFO:     100.64.0.10:26396 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-19T17:04:11.555221889Z [info] INFO:     100.64.0.34:40762 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-19T17:05:51.950906115Z [info] INFO:     100.64.0.48:58136 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-19T17:06:41.947258498Z [info] INFO:     100.64.0.12:15378 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-19T17:07:21.952608953Z [info] INFO:     100.64.0.9:22942 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-19T17:08:12.150566051Z [info] INFO:     100.64.0.28:30978 - "POST /xmlrpc.php HTTP/1.1" 404 Not Found
+2026-04-19T17:24:03.932653806Z [info] INFO:     100.64.0.12:48298 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-19T17:24:09.461634260Z [info] INFO:     100.64.0.4:51542 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-19T17:25:09.085999251Z [info] INFO:     100.64.0.3:28626 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-19T17:25:29.087415831Z [info] INFO:     100.64.0.35:16166 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-19T17:27:39.100829624Z [info] INFO:     100.64.0.13:43520 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
