@@ -1,111 +1,90 @@
-2026-04-19T11:43:36.997502692Z [info] Starting Container
-2026-04-19T11:43:37.772122732Z [error] 2026-04-19 11:43:36,967 [WARNING] app.server: x402 not installed — paid endpoints disabled. Run: pip install x402
-2026-04-19T11:43:37.772126148Z [error] 2026-04-19 11:43:37,011 [INFO] main: Initializing database pool...
-2026-04-19T11:43:37.772129836Z [error] 2026-04-19 11:43:37,011 [INFO] app.database: Database URL prefix: postgresql://neondb_owner:npg_ZQ7pTvYVNE1U@ep-soft...
-2026-04-19T11:43:37.772133407Z [error] 2026-04-19 11:43:37,650 [INFO] app.database: Database pool initialized (min=2, max=10, keepalives=on)
-2026-04-19T11:43:37.855807317Z [error] 2026-04-19 11:43:37,853 [INFO] main: Database connected ✓
-2026-04-19T11:43:38.065160617Z [error] 2026-04-19 11:43:38,059 [INFO] main: Migration 001_initial_schema already applied ✓
-2026-04-19T11:43:38.264061647Z [error] 2026-04-19 11:43:38,262 [INFO] main: Migration 002_import_governance already applied ✓
-2026-04-19T11:43:38.776464380Z [error] 2026-04-19 11:43:38,464 [INFO] main: Migration 006_add_usd1 already applied ✓
-2026-04-19T11:43:38.776468473Z [error] 2026-04-19 11:43:38,665 [INFO] main: Migration 007_wallet_graph already applied ✓
-2026-04-19T11:43:38.872710413Z [error] 2026-04-19 11:43:38,867 [INFO] main: Migration 011_token_type_column already applied ✓
-2026-04-19T11:43:39.071067328Z [error] 2026-04-19 11:43:39,069 [INFO] main: Migration 012_widen_symbol_columns already applied ✓
-2026-04-19T11:43:39.273383180Z [error] 2026-04-19 11:43:39,271 [INFO] main: Migration 013_api_usage already applied ✓
-2026-04-19T11:43:39.784197616Z [error] 2026-04-19 11:43:39,473 [INFO] main: Applying migration 014: assessment events + daily pulses...
-2026-04-19T11:43:39.784203124Z [error] 2026-04-19 11:43:39,625 [ERROR] app.database: Database error in get_conn(): relation "idx_ae_severity" already exists
-2026-04-19T11:43:39.784209191Z [error] Traceback (most recent call last):
-2026-04-19T11:43:39.784214808Z [error]   File "/app/app/database.py", line 107, in get_conn
-2026-04-19T11:43:39.784220351Z [error]     yield conn
-2026-04-19T11:43:39.784225384Z [error]   File "/app/app/database.py", line 171, in run_migration
-2026-04-19T11:43:39.784231252Z [error]     cur.execute(sql)
-2026-04-19T11:43:39.784236908Z [error] psycopg2.errors.DuplicateTable: relation "idx_ae_severity" already exists
-2026-04-19T11:43:39.784242274Z [error] 
-2026-04-19T11:43:39.784247171Z [error] 2026-04-19 11:43:39,676 [ERROR] app.database: Migration failed (/app/migrations/014_assessment_events.sql): relation "idx_ae_severity" already exists
-2026-04-19T11:43:39.784251495Z [error] 
-2026-04-19T11:43:39.784256646Z [error] 2026-04-19 11:43:39,676 [ERROR] main: Failed to apply migration 014_assessment_events
-2026-04-19T11:43:59.471753478Z [error] INFO:     Started server process [4]
-2026-04-19T11:43:59.471766390Z [error] INFO:     Waiting for application startup.
-2026-04-19T11:43:59.471770933Z [error] 2026-04-19 11:43:53,773 [INFO] app.database: Database URL prefix: postgresql://neondb_owner:npg_ZQ7pTvYVNE1U@ep-soft...
-2026-04-19T11:43:59.471775711Z [error] INFO:     Started server process [5]
-2026-04-19T11:43:59.471779593Z [error] 2026-04-19 11:43:53,388 [INFO] main: Database ready: 36 stablecoins registered ✓
-2026-04-19T11:43:59.471781488Z [error] INFO:     Waiting for application startup.
-2026-04-19T11:43:59.471785407Z [error] 2026-04-19 11:43:53,388 [INFO] main: Worker disabled (set WORKER_ENABLED=true to enable)
-2026-04-19T11:43:59.471788446Z [error] 2026-04-19 11:43:53,774 [INFO] app.database: Database URL prefix: postgresql://neondb_owner:npg_ZQ7pTvYVNE1U@ep-soft...
-2026-04-19T11:43:59.471791471Z [error] 2026-04-19 11:43:53,388 [INFO] main: Keeper disabled (KEEPER_PRIVATE_KEY not set)
-2026-04-19T11:43:59.471796379Z [error] 2026-04-19 11:43:54,389 [INFO] app.database: Database pool initialized (min=2, max=10, keepalives=on)
-2026-04-19T11:43:59.471796861Z [error] 2026-04-19 11:43:53,400 [INFO] main: Starting API on port 8000
-2026-04-19T11:43:59.471802605Z [error] 2026-04-19 11:43:54,391 [INFO] app.database: Database pool initialized (min=2, max=10, keepalives=on)
-2026-04-19T11:43:59.471803308Z [error] INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-2026-04-19T11:43:59.471809104Z [error] INFO:     Started parent process [1]
-2026-04-19T11:43:59.471810894Z [error] 2026-04-19 11:43:56,424 [INFO] app.server: CDA issuer registry seeded (10 upserts attempted)
-2026-04-19T11:43:59.471813906Z [error] 2026-04-19 11:43:53,706 [WARNING] app.server: x402 not installed — paid endpoints disabled. Run: pip install x402
-2026-04-19T11:43:59.471817322Z [error] 2026-04-19 11:43:53,715 [WARNING] app.server: x402 not installed — paid endpoints disabled. Run: pip install x402
-2026-04-19T11:43:59.473378906Z [error] 2026-04-19 11:43:57,737 [INFO] app.agent.api: Agent API routes registered: /api/assessments, /api/pulse
-2026-04-19T11:43:59.473388768Z [error] 2026-04-19 11:43:57,737 [INFO] app.server: Verification agent routes registered
-2026-04-19T11:43:59.473392680Z [error] 2026-04-19 11:43:57,745 [INFO] app.publisher.page_renderer: Page routes registered: /terms, /wallet, /asset, /assessment, /pulse, /sitemap.xml, /robots.txt
-2026-04-19T11:43:59.473396043Z [error] 2026-04-19 11:43:56,481 [INFO] app.server: CDA issuer registry seeded (10 upserts attempted)
-2026-04-19T11:43:59.473397321Z [error] 2026-04-19 11:43:57,745 [INFO] app.server: Publisher page routes registered
-2026-04-19T11:43:59.473401529Z [error] 2026-04-19 11:43:56,856 [INFO] app.governance: Governance tables ready
-2026-04-19T11:43:59.473404761Z [error] 2026-04-19 11:43:56,858 [INFO] app.server: Governance intelligence routes registered
-2026-04-19T11:43:59.473407517Z [error] 2026-04-19 11:43:56,865 [INFO] app.server: Content engine routes registered
-2026-04-19T11:43:59.473410474Z [error] 2026-04-19 11:43:56,887 [INFO] app.server: Wallet indexer routes registered
-2026-04-19T11:43:59.473413240Z [error] 2026-04-19 11:43:56,953 [INFO] app.governance: Governance tables ready
-2026-04-19T11:43:59.473418129Z [error] 2026-04-19 11:43:56,955 [INFO] app.server: Governance intelligence routes registered
-2026-04-19T11:43:59.473421380Z [error] 2026-04-19 11:43:56,957 [INFO] app.server: Content engine routes registered
-2026-04-19T11:43:59.473424342Z [error] 2026-04-19 11:43:56,965 [INFO] app.server: Wallet indexer routes registered
-2026-04-19T11:43:59.473427261Z [error] 2026-04-19 11:43:57,094 [INFO] app.server: Cleared stale temporal reconstruction cache entries
-2026-04-19T11:43:59.473430063Z [error] 2026-04-19 11:43:57,169 [INFO] app.server: Cleared stale temporal reconstruction cache entries
-2026-04-19T11:43:59.473432921Z [error] 2026-04-19 11:43:57,729 [INFO] app.server: historical_protocol_data: 23845 rows
-2026-04-19T11:43:59.474938531Z [error] 2026-04-19 11:43:57,781 [INFO] app.server: historical_protocol_data: 23845 rows
-2026-04-19T11:43:59.474945689Z [error] 2026-04-19 11:43:57,784 [INFO] app.agent.api: Agent API routes registered: /api/assessments, /api/pulse
-2026-04-19T11:43:59.474950146Z [error] 2026-04-19 11:43:57,784 [INFO] app.server: Verification agent routes registered
-2026-04-19T11:43:59.474954429Z [error] 2026-04-19 11:43:57,786 [INFO] app.publisher.page_renderer: Page routes registered: /terms, /wallet, /asset, /assessment, /pulse, /sitemap.xml, /robots.txt
-2026-04-19T11:43:59.474958200Z [error] 2026-04-19 11:43:57,786 [INFO] app.server: Publisher page routes registered
-2026-04-19T11:43:59.474962178Z [error] 2026-04-19 11:43:57,792 [INFO] app.ops.routes: Operations Hub routes registered
-2026-04-19T11:43:59.474967803Z [error] 2026-04-19 11:43:57,802 [INFO] app.ops.entity_routes: Entity view routes registered
-2026-04-19T11:43:59.474971473Z [error] 2026-04-19 11:43:57,802 [INFO] app.server: Operations Hub routes registered
-2026-04-19T11:43:59.474975034Z [error] 2026-04-19 11:43:57,802 [WARNING] app.server: Squads Guard not available: No module named 'squads_guard'
-2026-04-19T11:43:59.474979467Z [error] 2026-04-19 11:43:57,817 [INFO] app.ops.routes: Operations Hub routes registered
-2026-04-19T11:43:59.474984051Z [error] 2026-04-19 11:43:57,821 [INFO] app.ops.entity_routes: Entity view routes registered
-2026-04-19T11:43:59.474988680Z [error] 2026-04-19 11:43:57,821 [INFO] app.server: Operations Hub routes registered
-2026-04-19T11:43:59.474992715Z [error] 2026-04-19 11:43:57,821 [WARNING] app.server: Squads Guard not available: No module named 'squads_guard'
-2026-04-19T11:43:59.474996659Z [error] 2026-04-19 11:43:57,989 [INFO] app.server: MCP HTTP endpoint registered at /mcp
-2026-04-19T11:43:59.475000242Z [error] 2026-04-19 11:43:57,989 [INFO] app.server: Basis Protocol API started
-2026-04-19T11:43:59.475003564Z [error] 2026-04-19 11:43:58,014 [INFO] app.server: MCP HTTP endpoint registered at /mcp
-2026-04-19T11:43:59.476603524Z [error] 2026-04-19 11:43:58,015 [INFO] app.server: Basis Protocol API started
-2026-04-19T11:43:59.476607924Z [error] 2026-04-19 11:43:58,217 [INFO] mcp.server.streamable_http_manager: StreamableHTTP session manager started
-2026-04-19T11:43:59.476611542Z [error] 2026-04-19 11:43:58,238 [INFO] mcp.server.streamable_http_manager: StreamableHTTP session manager started
-2026-04-19T11:43:59.476617207Z [error] 2026-04-19 11:43:58,369 [INFO] httpx: HTTP Request: POST https://api.resend.com/emails "HTTP/1.1 200 OK"
-2026-04-19T11:43:59.476620881Z [error] 2026-04-19 11:43:58,369 [INFO] app.ops.tools.alerter: Email alert sent to shlok@basisprotocol.xyz
-2026-04-19T11:43:59.476624819Z [error] 2026-04-19 11:43:58,384 [INFO] httpx: HTTP Request: POST https://api.resend.com/emails "HTTP/1.1 200 OK"
-2026-04-19T11:43:59.476628500Z [error] 2026-04-19 11:43:58,384 [INFO] app.ops.tools.alerter: Email alert sent to shlok@basisprotocol.xyz
-2026-04-19T11:43:59.476632268Z [error] INFO:     Application startup complete.
-2026-04-19T11:43:59.476636164Z [error] INFO:     Application startup complete.
-2026-04-19T11:45:09.483273836Z [info] INFO:     100.64.0.2:46066 - "POST /api/ops/health/check HTTP/1.1" 200 OK
-2026-04-19T11:45:29.482239975Z [info] INFO:     100.64.0.3:26186 - "GET /api/health HTTP/1.1" 200 OK
-2026-04-19T11:45:29.482243049Z [error] 2026-04-19 11:45:20,542 [INFO] httpx: HTTP Request: GET https://basisprotocol.xyz/api/health "HTTP/1.1 200 "
-2026-04-19T11:45:36.189012800Z [info] INFO:     100.64.0.3:42260 - "GET /api/reports/stablecoin/usdc?template=sbt_metadata HTTP/1.1" 200 OK
-2026-04-19T11:45:36.192434114Z [error] 2026-04-19 11:45:36,191 [INFO] httpx: HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/usdc?template=sbt_metadata "HTTP/1.1 200 "
-2026-04-19T11:46:16.210643863Z [info] INFO:     100.64.0.4:61180 - "GET / HTTP/1.1" 200 OK
-2026-04-19T11:49:15.923272622Z [info] INFO:     100.64.0.2:31020 - "GET / HTTP/1.1" 200 OK
-2026-04-19T11:50:05.990009107Z [info] INFO:     100.64.0.5:16704 - "POST /api/provenance/register HTTP/1.1" 200 OK
-2026-04-19T11:50:13.225915302Z [info] INFO:     100.64.0.6:51838 - "POST /api/provenance/register HTTP/1.1" 200 OK
-2026-04-19T11:50:22.214913610Z [info] INFO:     100.64.0.7:62596 - "POST /api/provenance/register HTTP/1.1" 200 OK
-2026-04-19T11:50:26.428791025Z [info] INFO:     100.64.0.6:52518 - "POST /api/provenance/register HTTP/1.1" 200 OK
-2026-04-19T11:50:28.099742964Z [info] INFO:     100.64.0.8:35480 - "POST /api/provenance/register HTTP/1.1" 200 OK
-2026-04-19T11:50:30.379961846Z [info] INFO:     100.64.0.5:10526 - "POST /api/provenance/register HTTP/1.1" 200 OK
-2026-04-19T11:50:32.542228672Z [info] INFO:     100.64.0.3:23356 - "POST /api/provenance/register HTTP/1.1" 200 OK
-2026-04-19T11:50:37.142341662Z [info] INFO:     100.64.0.9:28160 - "POST /api/provenance/register HTTP/1.1" 200 OK
-2026-04-19T11:50:40.338902380Z [info] INFO:     100.64.0.3:47898 - "POST /api/provenance/register HTTP/1.1" 200 OK
-2026-04-19T11:50:43.582540467Z [info] INFO:     100.64.0.8:25782 - "POST /api/provenance/register HTTP/1.1" 200 OK
-2026-04-19T11:50:47.975443744Z [info] INFO:     100.64.0.10:34042 - "POST /api/provenance/register HTTP/1.1" 200 OK
-2026-04-19T11:51:17.645682929Z [info] INFO:     100.64.0.10:20168 - "POST /api/provenance/register HTTP/1.1" 200 OK
-2026-04-19T11:51:17.645687360Z [info] INFO:     100.64.0.3:32514 - "POST /api/provenance/register HTTP/1.1" 200 OK
-2026-04-19T11:51:17.645690540Z [info] INFO:     100.64.0.8:36212 - "GET /api/provenance/cda-sources HTTP/1.1" 200 OK
-2026-04-19T11:51:17.645693597Z [info] INFO:     100.64.0.9:24696 - "POST /api/provenance/register HTTP/1.1" 200 OK
-2026-04-19T11:51:17.645697337Z [info] INFO:     100.64.0.6:33730 - "POST /api/provenance/register HTTP/1.1" 200 OK
-2026-04-19T11:51:21.599965226Z [info] INFO:     100.64.0.11:13648 - "POST /api/provenance/static/register HTTP/1.1" 405 Method Not Allowed
-2026-04-19T11:51:24.043976080Z [info] INFO:     100.64.0.8:27666 - "POST /api/provenance/static/register HTTP/1.1" 405 Method Not Allowed
-2026-04-19T11:51:26.359468569Z [info] INFO:     100.64.0.7:38714 - "POST /api/provenance/static/register HTTP/1.1" 405 Method Not Allowed
-2026-04-19T11:51:29.321446455Z [info] INFO:     100.64.0.7:38714 - "POST /api/provenance/static/register HTTP/1.1" 405 Method Not Allowed
-2026-04-19T11:51:34.066025489Z [info] INFO:     100.64.0.8:50536 - "POST /api/provenance/static/register HTTP/1.1" 405 Method Not Allowed
+2026-04-19T13:07:12.012327432Z [info] Starting Container
+2026-04-19T13:07:12.836499730Z [error] 2026-04-19 13:07:12,383 [WARNING] app.server: x402 not installed — paid endpoints disabled. Run: pip install x402
+2026-04-19T13:07:12.836505423Z [error] 2026-04-19 13:07:12,483 [INFO] main: Initializing database pool...
+2026-04-19T13:07:12.836513682Z [error] 2026-04-19 13:07:12,483 [INFO] app.database: Database URL prefix: postgresql://neondb_owner:npg_ZQ7pTvYVNE1U@ep-soft...
+2026-04-19T13:07:13.178969882Z [error] 2026-04-19 13:07:13,145 [INFO] app.database: Database pool initialized (min=2, max=10, keepalives=on)
+2026-04-19T13:07:13.780452024Z [error] 2026-04-19 13:07:13,355 [INFO] main: Database connected ✓
+2026-04-19T13:07:13.780457966Z [error] 2026-04-19 13:07:13,565 [INFO] main: Migration 001_initial_schema already applied ✓
+2026-04-19T13:07:13.780464985Z [error] 2026-04-19 13:07:13,775 [INFO] main: Migration 002_import_governance already applied ✓
+2026-04-19T13:07:13.990825527Z [error] 2026-04-19 13:07:13,983 [INFO] main: Migration 006_add_usd1 already applied ✓
+2026-04-19T13:07:14.197467090Z [error] 2026-04-19 13:07:14,193 [INFO] main: Migration 007_wallet_graph already applied ✓
+2026-04-19T13:07:14.866066012Z [error] 2026-04-19 13:07:14,402 [INFO] main: Migration 011_token_type_column already applied ✓
+2026-04-19T13:07:14.866071518Z [error] 2026-04-19 13:07:14,611 [INFO] main: Migration 012_widen_symbol_columns already applied ✓
+2026-04-19T13:07:14.866082587Z [error] 2026-04-19 13:07:14,820 [INFO] main: Migration 013_api_usage already applied ✓
+2026-04-19T13:07:15.032546395Z [error] 2026-04-19 13:07:15,029 [INFO] main: Applying migration 014: assessment events + daily pulses...
+2026-04-19T13:07:15.189279104Z [error] 2026-04-19 13:07:15,186 [ERROR] app.database: Database error in get_conn(): relation "idx_ae_severity" already exists
+2026-04-19T13:07:15.189289477Z [error] Traceback (most recent call last):
+2026-04-19T13:07:15.189296123Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-19T13:07:15.189302233Z [error]     yield conn
+2026-04-19T13:07:15.189307832Z [error]   File "/app/app/database.py", line 171, in run_migration
+2026-04-19T13:07:15.189316984Z [error]     cur.execute(sql)
+2026-04-19T13:07:15.189335483Z [error] psycopg2.errors.DuplicateTable: relation "idx_ae_severity" already exists
+2026-04-19T13:07:15.189347832Z [error] 
+2026-04-19T13:07:15.772040447Z [error] 2026-04-19 13:07:15,239 [ERROR] app.database: Migration failed (/app/migrations/014_assessment_events.sql): relation "idx_ae_severity" already exists
+2026-04-19T13:07:15.772048122Z [error] 
+2026-04-19T13:07:15.772054887Z [error] 2026-04-19 13:07:15,239 [ERROR] main: Failed to apply migration 014_assessment_events
+2026-04-19T13:07:35.300385621Z [error] 2026-04-19 13:07:29,472 [INFO] main: Database ready: 36 stablecoins registered ✓
+2026-04-19T13:07:35.300392249Z [error] 2026-04-19 13:07:29,472 [INFO] main: Worker disabled (set WORKER_ENABLED=true to enable)
+2026-04-19T13:07:35.300398467Z [error] 2026-04-19 13:07:29,472 [INFO] main: Keeper disabled (KEEPER_PRIVATE_KEY not set)
+2026-04-19T13:07:35.300405025Z [error] 2026-04-19 13:07:29,488 [INFO] main: Starting API on port 8000
+2026-04-19T13:07:35.300411690Z [error] INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-04-19T13:07:35.300418847Z [error] INFO:     Started parent process [1]
+2026-04-19T13:07:35.300424989Z [error] 2026-04-19 13:07:30,114 [WARNING] app.server: x402 not installed — paid endpoints disabled. Run: pip install x402
+2026-04-19T13:07:35.300430744Z [error] 2026-04-19 13:07:30,144 [WARNING] app.server: x402 not installed — paid endpoints disabled. Run: pip install x402
+2026-04-19T13:07:35.300436478Z [error] INFO:     Started server process [4]
+2026-04-19T13:07:35.300442412Z [error] INFO:     Waiting for application startup.
+2026-04-19T13:07:35.300449259Z [error] 2026-04-19 13:07:30,240 [INFO] app.database: Database URL prefix: postgresql://neondb_owner:npg_ZQ7pTvYVNE1U@ep-soft...
+2026-04-19T13:07:35.300455370Z [error] INFO:     Started server process [5]
+2026-04-19T13:07:35.300461184Z [error] INFO:     Waiting for application startup.
+2026-04-19T13:07:35.300467153Z [error] 2026-04-19 13:07:30,254 [INFO] app.database: Database URL prefix: postgresql://neondb_owner:npg_ZQ7pTvYVNE1U@ep-soft...
+2026-04-19T13:07:35.300472938Z [error] 2026-04-19 13:07:30,933 [INFO] app.database: Database pool initialized (min=2, max=10, keepalives=on)
+2026-04-19T13:07:35.300482156Z [error] 2026-04-19 13:07:30,973 [INFO] app.database: Database pool initialized (min=2, max=10, keepalives=on)
+2026-04-19T13:07:35.300489099Z [error] 2026-04-19 13:07:33,094 [INFO] app.server: CDA issuer registry seeded (10 upserts attempted)
+2026-04-19T13:07:35.302996327Z [error] 2026-04-19 13:07:33,287 [INFO] app.server: CDA issuer registry seeded (10 upserts attempted)
+2026-04-19T13:07:35.303000714Z [error] 2026-04-19 13:07:33,602 [INFO] app.governance: Governance tables ready
+2026-04-19T13:07:35.303005828Z [error] 2026-04-19 13:07:33,605 [INFO] app.server: Governance intelligence routes registered
+2026-04-19T13:07:35.303010893Z [error] 2026-04-19 13:07:33,615 [INFO] app.server: Content engine routes registered
+2026-04-19T13:07:35.303016497Z [error] 2026-04-19 13:07:33,651 [INFO] app.server: Wallet indexer routes registered
+2026-04-19T13:07:35.303022363Z [error] 2026-04-19 13:07:33,767 [INFO] app.governance: Governance tables ready
+2026-04-19T13:07:35.303027309Z [error] 2026-04-19 13:07:33,771 [INFO] app.server: Governance intelligence routes registered
+2026-04-19T13:07:35.303033009Z [error] 2026-04-19 13:07:33,777 [INFO] app.server: Content engine routes registered
+2026-04-19T13:07:35.303037807Z [error] 2026-04-19 13:07:33,799 [INFO] app.server: Wallet indexer routes registered
+2026-04-19T13:07:35.303042948Z [error] 2026-04-19 13:07:33,866 [INFO] app.server: Cleared stale temporal reconstruction cache entries
+2026-04-19T13:07:35.303047701Z [error] 2026-04-19 13:07:34,029 [INFO] app.server: Cleared stale temporal reconstruction cache entries
+2026-04-19T13:07:35.303053142Z [error] 2026-04-19 13:07:34,514 [INFO] app.server: historical_protocol_data: 23845 rows
+2026-04-19T13:07:35.303058073Z [error] 2026-04-19 13:07:34,522 [INFO] app.agent.api: Agent API routes registered: /api/assessments, /api/pulse
+2026-04-19T13:07:35.303063128Z [error] 2026-04-19 13:07:34,522 [INFO] app.server: Verification agent routes registered
+2026-04-19T13:07:35.303067985Z [error] 2026-04-19 13:07:34,532 [INFO] app.publisher.page_renderer: Page routes registered: /terms, /wallet, /asset, /assessment, /pulse, /sitemap.xml, /robots.txt
+2026-04-19T13:07:35.303072487Z [error] 2026-04-19 13:07:34,532 [INFO] app.server: Publisher page routes registered
+2026-04-19T13:07:35.304772916Z [error] 2026-04-19 13:07:34,617 [INFO] app.ops.routes: Operations Hub routes registered
+2026-04-19T13:07:35.304779470Z [error] 2026-04-19 13:07:34,636 [INFO] app.ops.entity_routes: Entity view routes registered
+2026-04-19T13:07:35.304783888Z [error] 2026-04-19 13:07:34,636 [INFO] app.server: Operations Hub routes registered
+2026-04-19T13:07:35.304787659Z [error] 2026-04-19 13:07:34,636 [WARNING] app.server: Squads Guard not available: No module named 'squads_guard'
+2026-04-19T13:07:35.304792029Z [error] 2026-04-19 13:07:34,724 [INFO] app.server: historical_protocol_data: 23845 rows
+2026-04-19T13:07:35.304795921Z [error] 2026-04-19 13:07:34,727 [INFO] app.agent.api: Agent API routes registered: /api/assessments, /api/pulse
+2026-04-19T13:07:35.304799798Z [error] 2026-04-19 13:07:34,727 [INFO] app.server: Verification agent routes registered
+2026-04-19T13:07:35.304803671Z [error] 2026-04-19 13:07:34,730 [INFO] app.publisher.page_renderer: Page routes registered: /terms, /wallet, /asset, /assessment, /pulse, /sitemap.xml, /robots.txt
+2026-04-19T13:07:35.304807403Z [error] 2026-04-19 13:07:34,730 [INFO] app.server: Publisher page routes registered
+2026-04-19T13:07:35.304811807Z [error] 2026-04-19 13:07:34,778 [INFO] app.ops.routes: Operations Hub routes registered
+2026-04-19T13:07:35.304815465Z [error] 2026-04-19 13:07:34,784 [INFO] app.ops.entity_routes: Entity view routes registered
+2026-04-19T13:07:35.304819765Z [error] 2026-04-19 13:07:34,784 [INFO] app.server: Operations Hub routes registered
+2026-04-19T13:07:35.304823307Z [error] 2026-04-19 13:07:34,784 [WARNING] app.server: Squads Guard not available: No module named 'squads_guard'
+2026-04-19T13:07:35.304827071Z [error] 2026-04-19 13:07:35,014 [INFO] app.server: MCP HTTP endpoint registered at /mcp
+2026-04-19T13:07:35.304831403Z [error] 2026-04-19 13:07:35,015 [INFO] app.server: Basis Protocol API started
+2026-04-19T13:07:35.304834892Z [error] 2026-04-19 13:07:35,085 [INFO] app.server: MCP HTTP endpoint registered at /mcp
+2026-04-19T13:07:35.306779466Z [error] 2026-04-19 13:07:35,085 [INFO] app.server: Basis Protocol API started
+2026-04-19T13:07:35.306788113Z [error] 2026-04-19 13:07:35,264 [INFO] mcp.server.streamable_http_manager: StreamableHTTP session manager started
+2026-04-19T13:07:35.358585691Z [error] 2026-04-19 13:07:35,348 [INFO] mcp.server.streamable_http_manager: StreamableHTTP session manager started
+2026-04-19T13:07:36.031963099Z [error] 2026-04-19 13:07:35,431 [INFO] httpx: HTTP Request: POST https://api.resend.com/emails "HTTP/1.1 200 OK"
+2026-04-19T13:07:36.031967978Z [error] 2026-04-19 13:07:35,432 [INFO] app.ops.tools.alerter: Email alert sent to shlok@basisprotocol.xyz
+2026-04-19T13:07:36.031972199Z [error] 2026-04-19 13:07:35,564 [INFO] httpx: HTTP Request: POST https://api.resend.com/emails "HTTP/1.1 200 OK"
+2026-04-19T13:07:36.031976422Z [error] 2026-04-19 13:07:35,565 [INFO] app.ops.tools.alerter: Email alert sent to shlok@basisprotocol.xyz
+2026-04-19T13:07:36.031980762Z [error] INFO:     Application startup complete.
+2026-04-19T13:07:36.031984947Z [error] INFO:     Application startup complete.
+2026-04-19T13:10:16.452551584Z [info] INFO:     100.64.0.2:61022 - "GET / HTTP/1.1" 200 OK
+2026-04-19T13:13:17.591548763Z [info] INFO:     100.64.0.3:41222 - "GET / HTTP/1.1" 200 OK
+2026-04-19T13:15:08.034925614Z [info] INFO:     100.64.0.4:61040 - "POST /api/ops/health/check HTTP/1.1" 200 OK
+2026-04-19T13:15:27.451517957Z [info] INFO:     100.64.0.5:57420 - "GET /api/health HTTP/1.1" 200 OK
+2026-04-19T13:15:27.451526980Z [error] 2026-04-19 13:15:19,274 [INFO] httpx: HTTP Request: GET https://basisprotocol.xyz/api/health "HTTP/1.1 200 "
+2026-04-19T13:15:35.585716793Z [info] INFO:     100.64.0.5:34800 - "GET /api/reports/stablecoin/usdc?template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-19T13:15:35.589072789Z [error] 2026-04-19 13:15:35,587 [INFO] httpx: HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/usdc?template=sbt_metadata "HTTP/1.1 200 "
