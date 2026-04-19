@@ -1,11 +1,3 @@
-2026-04-17T01:42:34.991711975Z [error] 2026-04-17 01:42:34,989 WARNING [basis_state] Failed to fetch history for stablecoin:EURS
-2026-04-17T01:42:35.020569181Z [error] 2026-04-17 01:42:35,017 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/SDOLA?format=json "HTTP/1.1 429 "
-2026-04-17T01:42:35.020575474Z [error] 2026-04-17 01:42:35,017 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/SDOLA 429 (56 bytes)
-2026-04-17T01:42:35.020579815Z [error] 2026-04-17 01:42:35,017 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-17T01:42:35.020583744Z [error] 2026-04-17 01:42:35,018 WARNING [basis_state] Failed to fetch history for stablecoin:SDOLA
-2026-04-17T01:42:35.020587630Z [error] 2026-04-17 01:42:35,018 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDD (BTTC bridge) params={'format': 'json'}
-2026-04-17T01:42:35.062392083Z [error] 2026-04-17 01:42:35,057 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDD%20(BTTC%20bridge)?format=json "HTTP/1.1 429 "
-2026-04-17T01:42:35.062401643Z [error] 2026-04-17 01:42:35,058 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDD (BTTC bridge) 429 (56 bytes)
 2026-04-17T01:42:35.062405244Z [error] 2026-04-17 01:42:35,058 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
 2026-04-17T01:42:35.062408629Z [error] 2026-04-17 01:42:35,058 WARNING [basis_state] Failed to fetch history for stablecoin:USDD (BTTC bridge)
 2026-04-17T01:42:35.062411935Z [error] 2026-04-17 01:42:35,058 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/RAI params={'format': 'json'}
@@ -1999,3 +1991,11 @@
 2026-04-19T22:06:04.148694992Z [info] INFO:     100.64.0.5:25614 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
 2026-04-19T22:06:10.967907858Z [info] INFO:     100.64.0.15:41978 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
 2026-04-19T22:07:40.583528636Z [info] INFO:     100.64.0.36:57632 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-19T22:30:02.646386649Z [info] INFO:     100.64.0.21:27022 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-19T22:30:06.927602327Z [info] INFO:     100.64.0.14:11960 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-19T22:31:06.932266850Z [info] INFO:     100.64.0.20:39772 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-19T22:33:07.248763181Z [info] INFO:     100.64.0.7:24006 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-19T22:45:58.346706211Z [info] INFO:     100.64.0.48:54676 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-19T22:46:28.345715140Z [info] INFO:     100.64.0.13:57174 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-19T22:47:18.348058327Z [info] INFO:     100.64.0.6:14494 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-19T22:48:38.356754981Z [info] INFO:     100.64.0.35:51272 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
