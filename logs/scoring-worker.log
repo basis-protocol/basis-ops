@@ -1947,8 +1947,37 @@
 2026-04-20T18:44:33.892118161Z [error] 2026-04-20 18:44:33,857 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokenbalance&contractaddress=0x467719aD09025FcC6cF6F8311755809d45a5E5f3&address=0x60FaAe176336dAb62e284Fe19B885B095d29fB7F&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
 2026-04-20T18:44:34.633564317Z [error] 2026-04-20 18:44:34,178 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokenbalance&contractaddress=0x467719aD09025FcC6cF6F8311755809d45a5E5f3&address=0x99C9fc46f92E8a1c0deC1b1747d010903E884bE1&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
 2026-04-20T18:44:34.633568756Z [error] 2026-04-20 18:44:34,414 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokenbalance&contractaddress=0x467719aD09025FcC6cF6F8311755809d45a5E5f3&address=0x4Dbd4fc535Ac27206064B68FfCf827b0A60BAB3f&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-20T18:44:34.893677688Z [error] 2026-04-20 18:44:34,893 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokenbalance&contractaddress=0x467719aD09025FcC6cF6F8311755809d45a5E5f3&address=0xa3A7B6F88361F48403514059F1F16C8E78d60EeC&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-20T18:44:35.687162626Z [error] 2026-04-20 18:44:35,155 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokenbalance&contractaddress=0x467719aD09025FcC6cF6F8311755809d45a5E5f3&address=0x3154Cf16ccdb4C6d922629664174b904d80F2C35&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
 2026-04-20T18:44:35.687167233Z [error] 2026-04-20 18:44:35,423 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokenbalance&contractaddress=0x467719aD09025FcC6cF6F8311755809d45a5E5f3&address=0x40ec5B33f54e0E8A33A975908C5BA1c14e5BbbDf&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
 2026-04-20T18:44:35.687170954Z [error] 2026-04-20 18:44:35,575 [INFO] app.collectors.holder_analysis: Holder analysis 0x467719aD...: top10=0.0% exchange=0.0% defi=0.0% gini=0.480 holders=12236 (7 addresses with balance)
 2026-04-20T18:44:35.687174775Z [error] 2026-04-20 18:44:35,575 [INFO] app.collectors.bridge_collector: Scoring bridge: wormhole
 2026-04-20T18:44:36.807531540Z [error] 2026-04-20 18:44:36,681 [INFO] httpx: HTTP Request: GET https://immunefi.com/api/bounties "HTTP/1.1 308 Permanent Redirect"
+2026-04-20T18:44:36.884540315Z [error] 2026-04-20 18:44:36,883 [INFO] app.collectors.bridge_collector:   Wormhole: 76.38 (24/29 components)
 2026-04-20T18:44:36.884546970Z [error] 2026-04-20 18:44:36,883 [INFO] app.collectors.bridge_collector: Scoring bridge: layerzero
+2026-04-20T18:44:37.932138281Z [error] 2026-04-20 18:44:37,925 [INFO] httpx: HTTP Request: GET https://immunefi.com/api/bounties "HTTP/1.1 308 Permanent Redirect"
+2026-04-20T18:44:38.134866545Z [error] 2026-04-20 18:44:38,127 [INFO] app.collectors.bridge_collector:   LayerZero: 80.73 (24/29 components)
+2026-04-20T18:44:38.134869433Z [error] 2026-04-20 18:44:38,127 [INFO] app.collectors.bridge_collector: Scoring bridge: axelar
+2026-04-20T18:44:39.204776337Z [error] 2026-04-20 18:44:39,198 [INFO] httpx: HTTP Request: GET https://immunefi.com/api/bounties "HTTP/1.1 308 Permanent Redirect"
+2026-04-20T18:44:39.762168685Z [error] 2026-04-20 18:44:39,400 [INFO] app.collectors.bridge_collector:   Axelar: 79.67 (24/29 components)
+2026-04-20T18:44:39.762171534Z [error] 2026-04-20 18:44:39,400 [INFO] app.collectors.bridge_collector: Scoring bridge: circle-cctp
+2026-04-20T18:44:40.807410248Z [error] 2026-04-20 18:44:40,445 [INFO] httpx: HTTP Request: GET https://immunefi.com/api/bounties "HTTP/1.1 308 Permanent Redirect"
+2026-04-20T18:44:41.910294858Z [error] 2026-04-20 18:44:41,488 [INFO] httpx: HTTP Request: GET https://immunefi.com/api/bounties "HTTP/1.1 308 Permanent Redirect"
+2026-04-20T18:44:41.910298023Z [error] 2026-04-20 18:44:41,690 [INFO] app.collectors.bridge_collector:   Circle CCTP: 54.04 (24/29 components)
+2026-04-20T18:44:41.910301277Z [error] 2026-04-20 18:44:41,690 [INFO] app.collectors.bridge_collector: Scoring bridge: across
+2026-04-20T18:44:42.856324973Z [error] 2026-04-20 18:44:42,738 [INFO] httpx: HTTP Request: GET https://immunefi.com/api/bounties "HTTP/1.1 308 Permanent Redirect"
+2026-04-20T18:44:42.947436557Z [error] 2026-04-20 18:44:42,945 [INFO] app.collectors.bridge_collector:   Across Protocol: 72.05 (24/29 components)
+2026-04-20T18:44:42.947440943Z [error] 2026-04-20 18:44:42,946 [INFO] app.collectors.bridge_collector: Scoring bridge: stargate
+2026-04-20T18:44:44.151103020Z [error] 2026-04-20 18:44:44,149 [INFO] httpx: HTTP Request: GET https://immunefi.com/api/bounties "HTTP/1.1 308 Permanent Redirect"
+2026-04-20T18:44:44.354116314Z [error] 2026-04-20 18:44:44,351 [INFO] app.collectors.bridge_collector:   Stargate: 69.98 (24/29 components)
+2026-04-20T18:44:44.354121094Z [error] 2026-04-20 18:44:44,351 [INFO] app.collectors.bridge_collector: Scoring bridge: synapse
+2026-04-20T18:44:45.408098344Z [error] 2026-04-20 18:44:45,406 [INFO] httpx: HTTP Request: GET https://immunefi.com/api/bounties "HTTP/1.1 308 Permanent Redirect"
+2026-04-20T18:44:45.870884085Z [error] 2026-04-20 18:44:45,608 [INFO] app.collectors.bridge_collector:   Synapse: 65.14 (24/29 components)
+2026-04-20T18:44:45.870888551Z [error] 2026-04-20 18:44:45,608 [INFO] app.collectors.bridge_collector: Scoring bridge: debridge
+2026-04-20T18:44:46.900501150Z [error] 2026-04-20 18:44:46,655 [INFO] httpx: HTTP Request: GET https://immunefi.com/api/bounties "HTTP/1.1 308 Permanent Redirect"
+2026-04-20T18:44:46.900511449Z [error] 2026-04-20 18:44:46,857 [INFO] app.collectors.bridge_collector:   deBridge: 71.57 (24/29 components)
+2026-04-20T18:44:46.900516833Z [error] 2026-04-20 18:44:46,857 [INFO] app.collectors.bridge_collector: Scoring bridge: celer-cbridge
+2026-04-20T18:44:47.897100757Z [error] 2026-04-20 18:44:47,893 [INFO] httpx: HTTP Request: GET https://immunefi.com/api/bounties "HTTP/1.1 308 Permanent Redirect"
+2026-04-20T18:44:48.939897683Z [error] 2026-04-20 18:44:48,936 [INFO] httpx: HTTP Request: GET https://immunefi.com/api/bounties "HTTP/1.1 308 Permanent Redirect"
+2026-04-20T18:44:49.142137349Z [error] 2026-04-20 18:44:49,138 [INFO] app.collectors.bridge_collector:   Celer cBridge: 68.58 (24/29 components)
+2026-04-20T18:44:49.342750372Z [error] 2026-04-20 18:44:49,339 [INFO] app.state_attestation: State attested: domain=bri_components entity=None records=9 hash=2cc39a8f724d3fd2...
