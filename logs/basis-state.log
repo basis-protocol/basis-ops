@@ -1,32 +1,3 @@
-2026-04-17T17:30:25.659842274Z [error] 2026-04-17 17:30:25,656 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-17T17:30:25.659845253Z [error] 2026-04-17 17:30:25,656 WARNING [basis_state] Failed to fetch history for stablecoin:GUSD
-2026-04-17T17:30:25.659848078Z [error] 2026-04-17 17:30:25,656 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/LUSD params={'format': 'json'}
-2026-04-17T17:30:25.701879929Z [error] 2026-04-17 17:30:25,697 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/LUSD?format=json "HTTP/1.1 429 "
-2026-04-17T17:30:25.701886501Z [error] 2026-04-17 17:30:25,698 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/LUSD 429 (56 bytes)
-2026-04-17T17:30:25.701892684Z [error] 2026-04-17 17:30:25,698 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-17T17:30:25.701896516Z [error] 2026-04-17 17:30:25,698 WARNING [basis_state] Failed to fetch history for stablecoin:LUSD
-2026-04-17T17:30:25.701900307Z [error] 2026-04-17 17:30:25,698 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/DOLA params={'format': 'json'}
-2026-04-17T17:30:26.142925504Z [error] 2026-04-17 17:30:25,736 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/DOLA?format=json "HTTP/1.1 429 "
-2026-04-17T17:30:26.142931503Z [error] 2026-04-17 17:30:25,736 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/DOLA 429 (56 bytes)
-2026-04-17T17:30:26.142935263Z [error] 2026-04-17 17:30:25,736 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-17T17:30:26.142938887Z [error] 2026-04-17 17:30:25,736 WARNING [basis_state] Failed to fetch history for stablecoin:DOLA
-2026-04-17T17:30:26.142944229Z [error] 2026-04-17 17:30:25,736 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/OUSD params={'format': 'json'}
-2026-04-17T17:30:26.142949628Z [error] 2026-04-17 17:30:25,762 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/OUSD?format=json "HTTP/1.1 429 "
-2026-04-17T17:30:26.142954709Z [error] 2026-04-17 17:30:25,763 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/OUSD 429 (56 bytes)
-2026-04-17T17:30:26.142958727Z [error] 2026-04-17 17:30:25,763 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-17T17:30:26.142963816Z [error] 2026-04-17 17:30:25,763 WARNING [basis_state] Failed to fetch history for stablecoin:OUSD
-2026-04-17T17:30:26.142969310Z [error] 2026-04-17 17:30:25,763 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/EURC params={'format': 'json'}
-2026-04-17T17:30:26.142974469Z [error] 2026-04-17 17:30:25,788 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/EURC?format=json "HTTP/1.1 429 "
-2026-04-17T17:30:26.142979101Z [error] 2026-04-17 17:30:25,788 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/EURC 429 (56 bytes)
-2026-04-17T17:30:26.145076210Z [error] 2026-04-17 17:30:25,788 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-17T17:30:26.145080687Z [error] 2026-04-17 17:30:25,789 WARNING [basis_state] Failed to fetch history for stablecoin:EURC
-2026-04-17T17:30:26.145084283Z [error] 2026-04-17 17:30:25,789 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/SUSDE params={'format': 'json'}
-2026-04-17T17:30:26.145087757Z [error] 2026-04-17 17:30:25,823 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/SUSDE?format=json "HTTP/1.1 429 "
-2026-04-17T17:30:26.145091171Z [error] 2026-04-17 17:30:25,823 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/SUSDE 429 (56 bytes)
-2026-04-17T17:30:26.145094694Z [error] 2026-04-17 17:30:25,823 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-17T17:30:26.145098401Z [error] 2026-04-17 17:30:25,823 WARNING [basis_state] Failed to fetch history for stablecoin:SUSDE
-2026-04-17T17:30:26.145101523Z [error] 2026-04-17 17:30:25,823 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/MIM params={'format': 'json'}
-2026-04-17T17:30:26.145104648Z [error] 2026-04-17 17:30:25,980 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/MIM?format=json "HTTP/1.1 429 "
 2026-04-17T17:30:26.145110316Z [error] 2026-04-17 17:30:25,981 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/MIM 429 (56 bytes)
 2026-04-17T17:30:26.145114559Z [error] 2026-04-17 17:30:25,981 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
 2026-04-17T17:30:26.145118325Z [error] 2026-04-17 17:30:25,981 WARNING [basis_state] Failed to fetch history for stablecoin:MIM
@@ -1999,3 +1970,32 @@
 2026-04-20T07:50:07.933087831Z [info] INFO:     100.64.0.40:15706 - "GET /robots.txt HTTP/1.1" 404 Not Found
 2026-04-20T08:19:50.847711411Z [info] INFO:     100.64.0.11:12314 - "GET /ads.txt HTTP/1.1" 404 Not Found
 2026-04-20T08:21:01.689057864Z [info] INFO:     100.64.0.43:55380 - "GET / HTTP/1.1" 200 OK
+2026-04-20T08:41:42.987568901Z [info] INFO:     100.64.0.41:32318 - "GET / HTTP/1.1" 200 OK
+2026-04-20T08:41:42.987577216Z [info] INFO:     100.64.0.43:11050 - "GET / HTTP/1.1" 200 OK
+2026-04-20T08:41:42.987582947Z [info] INFO:     100.64.0.39:22860 - "GET / HTTP/1.1" 200 OK
+2026-04-20T08:41:43.102037759Z [info] INFO:     100.64.0.39:22860 - "GET /https%3A/fonts.googleapis.com/css2%3Ffamily%3DIBM%2BPlex%2BMono%3Awght%40400%3B500%3B600%3B700%26family%3DIBM%2BPlex%2BSans%3Awght%40400%3B500%3B600%3B700%26display%3Dswap HTTP/1.1" 404 Not Found
+2026-04-20T08:41:43.753290918Z [info] INFO:     100.64.0.39:22860 - "GET /https%3A/basisprotocol.xyz HTTP/1.1" 404 Not Found
+2026-04-20T08:41:44.269552447Z [info] INFO:     100.64.0.45:18452 - "GET /classify HTTP/1.1" 200 OK
+2026-04-20T08:41:44.712116118Z [info] INFO:     100.64.0.38:51830 - "GET /portfolio HTTP/1.1" 200 OK
+2026-04-20T08:41:44.712121328Z [info] INFO:     100.64.0.41:26054 - "GET /monitor HTTP/1.1" 200 OK
+2026-04-20T08:41:44.712126830Z [info] INFO:     100.64.0.31:31210 - "GET /lenses HTTP/1.1" 200 OK
+2026-04-20T08:41:47.740523922Z [info] INFO:     100.64.0.55:46874 - "GET /https%3A/arbiscan.io/address/0x1651d7b2E238a952167E51A1263FFe607584DB83 HTTP/1.1" 404 Not Found
+2026-04-20T08:41:47.740536210Z [info] INFO:     100.64.0.39:22862 - "GET /terms HTTP/1.1" 200 OK
+2026-04-20T08:41:48.193448932Z [info] INFO:     100.64.0.32:60176 - "GET /https%3A/basescan.org/address/0x1651d7b2E238a952167E51A1263FFe607584DB83 HTTP/1.1" 404 Not Found
+2026-04-20T09:18:55.738635590Z [info] INFO:     100.64.0.39:27486 - "GET /%40fs/etc/passwd?raw?? HTTP/1.1" 404 Not Found
+2026-04-20T09:18:55.738639924Z [info] INFO:     100.64.0.38:43894 - "GET /%40fs/etc/passwd?import&raw?? HTTP/1.1" 404 Not Found
+2026-04-20T09:18:55.738643065Z [info] INFO:     100.64.0.38:43894 - "GET /etc/passwd?raw?? HTTP/1.1" 404 Not Found
+2026-04-20T09:18:55.738646945Z [info] INFO:     100.64.0.38:43894 - "GET /etc/passwd?import&raw?? HTTP/1.1" 404 Not Found
+2026-04-20T09:21:15.886878425Z [info] INFO:     100.64.0.55:54594 - "GET /%40fs/etc/passwd?raw?? HTTP/1.1" 404 Not Found
+2026-04-20T09:21:15.886883601Z [info] INFO:     100.64.0.55:54594 - "GET /%40fs/etc/passwd?import&raw?? HTTP/1.1" 404 Not Found
+2026-04-20T09:21:15.886887640Z [info] INFO:     100.64.0.47:61558 - "GET /etc/passwd?raw?? HTTP/1.1" 404 Not Found
+2026-04-20T09:21:15.886892151Z [info] INFO:     100.64.0.47:61558 - "GET /etc/passwd?import&raw?? HTTP/1.1" 404 Not Found
+2026-04-20T09:21:35.886418288Z [info] INFO:     100.64.0.45:56424 - "GET /%40fs/etc/passwd?raw?? HTTP/1.1" 404 Not Found
+2026-04-20T09:21:35.886422077Z [info] INFO:     100.64.0.54:54220 - "GET /%40fs/etc/passwd?import&raw?? HTTP/1.1" 404 Not Found
+2026-04-20T09:21:35.886426056Z [info] INFO:     100.64.0.44:45604 - "GET /etc/passwd?raw?? HTTP/1.1" 404 Not Found
+2026-04-20T09:21:35.886429400Z [info] INFO:     100.64.0.44:45604 - "GET /etc/passwd?import&raw?? HTTP/1.1" 404 Not Found
+2026-04-20T09:39:18.454655926Z [info] INFO:     100.64.0.41:28192 - "GET /%40fs/etc/passwd?raw?? HTTP/1.1" 404 Not Found
+2026-04-20T09:39:18.454661874Z [info] INFO:     100.64.0.41:28192 - "GET /%40fs/etc/passwd?import&raw?? HTTP/1.1" 404 Not Found
+2026-04-20T09:39:18.454666768Z [info] INFO:     100.64.0.41:28192 - "GET /etc/passwd?raw?? HTTP/1.1" 404 Not Found
+2026-04-20T09:39:18.454670219Z [info] INFO:     100.64.0.41:28192 - "GET /etc/passwd?import&raw?? HTTP/1.1" 404 Not Found
+2026-04-20T10:14:05.285654732Z [info] INFO:     100.64.0.26:24446 - "GET / HTTP/1.1" 200 OK
