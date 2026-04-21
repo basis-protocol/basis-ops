@@ -78,3 +78,11 @@
 2026-04-21T09:04:23.339828512Z [info] INFO:     100.64.0.2:45422 - "GET / HTTP/1.1" 200 OK
 2026-04-21T09:07:13.934606650Z [info] INFO:     100.64.0.3:48892 - "GET / HTTP/1.1" 200 OK
 2026-04-21T09:10:24.315125696Z [info] INFO:     100.64.0.4:27036 - "GET / HTTP/1.1" 200 OK
+2026-04-21T09:13:05.104366046Z [info] INFO:     100.64.0.5:55826 - "GET / HTTP/1.1" 200 OK
+2026-04-21T09:15:06.351597823Z [info] INFO:     100.64.0.6:28722 - "POST /api/ops/health/check HTTP/1.1" 200 OK
+2026-04-21T09:15:26.349995842Z [info] INFO:     100.64.0.7:45934 - "GET /api/health HTTP/1.1" 200 OK
+2026-04-21T09:15:45.781236906Z [error] 2026-04-21 09:15:39,022 [WARNING] app.report: _get_holder_concentration_trend(usdc) failed: relation "concentration_snapshots" does not exist
+2026-04-21T09:15:45.781241319Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-21T09:15:45.781245439Z [error]                          ^
+2026-04-21T09:15:45.781250068Z [error] 
+2026-04-21T09:15:45.781254586Z [info] INFO:     100.64.0.8:30054 - "GET /api/reports/stablecoin/usdc?template=sbt_metadata HTTP/1.1" 200 OK

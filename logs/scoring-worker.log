@@ -975,32 +975,94 @@
 2026-04-21T09:10:52.894345230Z [error] 2026-04-21 09:10:52,893 [INFO] app.collectors.etherscan: Etherscan usdt: top10=16.5% exchanges=15.7% holders=13,577,187 (live) (26 addresses with balance)
 2026-04-21T09:10:53.975730462Z [error] 2026-04-21 09:10:53,972 [INFO] app.services.cda_scores: CDA: usdt — 4 components from reducto_pdf (confidence: 0.97)
 2026-04-21T09:10:54.001118959Z [error] 2026-04-21 09:10:53,992 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/tether?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-21T09:11:14.001270384Z [error] 2026-04-21 09:11:04,481 [INFO] app.state_attestation: State attested: domain=sii_components entity=usdt records=84 hash=2c7eae60c9070a4f...
 2026-04-21T09:11:14.001273513Z [error] 2026-04-21 09:11:04,481 [INFO] worker: usdt: 85.85 - 84 components in 25.6s
 2026-04-21T09:11:14.001276375Z [error] 2026-04-21 09:11:08,782 [INFO] httpx: HTTP Request: GET https://stablecoins.llama.fi/stablecoins "HTTP/1.1 200 OK"
 2026-04-21T09:11:14.001279216Z [error] 2026-04-21 09:11:08,810 [INFO] httpx: HTTP Request: GET https://yields.llama.fi/pools "HTTP/1.1 200 OK"
+2026-04-21T09:11:14.001282001Z [error] 2026-04-21 09:11:08,978 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usdtb?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
 2026-04-21T09:11:14.001285295Z [error] 2026-04-21 09:11:08,978 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usdtb?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-21T09:11:14.001297276Z [error] 2026-04-21 09:11:08,981 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usdtb?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-21T09:11:14.001301687Z [error] 2026-04-21 09:11:09,062 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=contract&action=getabi&address=0xc139190f447e929f090edeb554d95abb8b18ac1c&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
 2026-04-21T09:11:14.001304504Z [error] 2026-04-21 09:11:09,153 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usdtb/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-21T09:11:14.001307154Z [error] 2026-04-21 09:11:09,193 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&contractaddress=0xc139190f447e929f090edeb554d95abb8b18ac1c&page=1&offset=200&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-21T09:11:14.003744928Z [error] 2026-04-21 09:11:09,429 [INFO] app.state_attestation: State attested: domain=smart_contracts entity=usdtb records=6 hash=3b1662aa90cd2917...
+2026-04-21T09:11:14.003748877Z [error] 2026-04-21 09:11:09,431 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usdtb/market_chart?vs_currency=usd&days=7 "HTTP/1.1 200 OK"
 2026-04-21T09:11:14.003752929Z [error] 2026-04-21 09:11:10,078 [INFO] app.state_attestation: State attested: domain=flows entity=usdtb records=5 hash=7a263c8d43634cb9...
+2026-04-21T09:11:14.003756636Z [error] 2026-04-21 09:11:10,241 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usdtb/market_chart?vs_currency=usd&days=30 "HTTP/1.1 200 OK"
+2026-04-21T09:11:14.003759834Z [error] 2026-04-21 09:11:11,343 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usdtb?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
 2026-04-21T09:11:17.939576960Z [error] 2026-04-21 09:11:17,937 [INFO] app.state_attestation: State attested: domain=sii_components entity=usdtb records=48 hash=39b7a99be5e3af92...
+2026-04-21T09:11:17.939581351Z [error] 2026-04-21 09:11:17,937 [INFO] worker: usdtb: 72.14 - 48 components in 10.8s
 2026-04-21T09:11:20.512917909Z [error] 2026-04-21 09:11:20,370 [INFO] worker: Scoring cycle complete: 36/36 scored in 594s
+2026-04-21T09:11:20.514220366Z [error] 2026-04-21 09:11:20,512 [INFO] worker: Running PSI scoring cycle...
 2026-04-21T09:11:20.957302465Z [error] 2026-04-21 09:11:20,952 [INFO] app.collectors.governance_detector:   aave: governance config unchanged
 2026-04-21T09:11:21.525844571Z [error] 2026-04-21 09:11:21,385 [INFO] app.collectors.governance_detector:   lido: governance config unchanged
 2026-04-21T09:11:21.821017330Z [error] 2026-04-21 09:11:21,817 [INFO] app.collectors.governance_detector:   eigenlayer: governance config unchanged
 2026-04-21T09:11:22.543446179Z [error] 2026-04-21 09:11:22,249 [INFO] app.collectors.governance_detector:   sky: governance config unchanged
 2026-04-21T09:11:22.684604104Z [error] 2026-04-21 09:11:22,682 [INFO] app.collectors.governance_detector:   compound-finance: governance config unchanged
+2026-04-21T09:11:23.120039164Z [error] 2026-04-21 09:11:23,114 [INFO] app.collectors.governance_detector:   uniswap: governance config unchanged
 2026-04-21T09:11:23.564775411Z [error] 2026-04-21 09:11:23,548 [INFO] app.collectors.governance_detector:   curve-finance: governance config unchanged
+2026-04-21T09:11:23.983308481Z [error] 2026-04-21 09:11:23,980 [INFO] app.collectors.governance_detector:   morpho: governance config unchanged
+2026-04-21T09:11:24.537192156Z [error] 2026-04-21 09:11:24,413 [INFO] app.collectors.governance_detector:   spark: governance config unchanged
 2026-04-21T09:11:24.846151268Z [error] 2026-04-21 09:11:24,845 [INFO] app.collectors.governance_detector:   convex-finance: governance config unchanged
 2026-04-21T09:11:25.640958017Z [error] 2026-04-21 09:11:25,635 [INFO] app.collectors.governance_detector:   drift: governance config unchanged
 2026-04-21T09:11:26.594700888Z [error] 2026-04-21 09:11:26,378 [INFO] app.collectors.governance_detector:   jupiter-perpetual-exchange: governance config unchanged
+2026-04-21T09:11:27.150261372Z [error] 2026-04-21 09:11:27,148 [INFO] app.collectors.governance_detector:   raydium: governance config unchanged
 2026-04-21T09:11:27.150265922Z [error] 2026-04-21 09:11:27,148 [INFO] app.collectors.governance_detector: Governance snapshots: 13 captured, 0 changes detected
+2026-04-21T09:11:27.152497349Z [error] 2026-04-21 09:11:27,150 [INFO] app.collectors.collateral_coverage: Collecting collateral coverage and market snapshots...
 2026-04-21T09:11:28.627192026Z [error] 2026-04-21 09:11:28,349 [INFO] app.collectors.collateral_coverage:   aave: coverage 38.5% ($6,880,307,375 / $17,852,177,986)
 2026-04-21T09:11:28.627200026Z [error] 2026-04-21 09:11:28,622 [INFO] app.collectors.collateral_coverage:   lido: coverage 100.0% ($21,715,683,766 / $21,715,683,766)
 2026-04-21T09:11:28.843521245Z [error] 2026-04-21 09:11:28,842 [INFO] app.collectors.collateral_coverage:   eigenlayer: coverage 100.0% ($0 / $0)
+2026-04-21T09:11:29.107988804Z [error] 2026-04-21 09:11:29,066 [INFO] app.collectors.collateral_coverage:   sky: coverage 100.0% ($0 / $0)
 2026-04-21T09:11:29.588964350Z [error] 2026-04-21 09:11:29,287 [INFO] app.collectors.collateral_coverage:   compound-finance: coverage 82.1% ($1,185,598,334 / $1,444,157,996)
 2026-04-21T09:11:29.732704848Z [error] 2026-04-21 09:11:29,732 [INFO] app.collectors.collateral_coverage:   uniswap: coverage 65.8% ($2,000,280,276 / $3,040,100,934)
 2026-04-21T09:11:30.175325717Z [error] 2026-04-21 09:11:30,169 [INFO] app.collectors.collateral_coverage:   curve-finance: coverage 64.1% ($1,238,412,768 / $1,931,910,155)
 2026-04-21T09:11:30.591179533Z [error] 2026-04-21 09:11:30,389 [INFO] app.collectors.collateral_coverage:   morpho: coverage 100.0% ($0 / $0)
+2026-04-21T09:11:30.621031599Z [error] 2026-04-21 09:11:30,610 [INFO] app.collectors.collateral_coverage:   spark: coverage 100.0% ($0 / $0)
 2026-04-21T09:11:31.049017205Z [error] 2026-04-21 09:11:31,047 [INFO] app.collectors.collateral_coverage:   convex-finance: coverage 64.2% ($352,804,117 / $549,847,539)
+2026-04-21T09:11:31.595086291Z [error] 2026-04-21 09:11:31,267 [INFO] app.collectors.collateral_coverage:   drift: coverage 100.0% ($0 / $0)
 2026-04-21T09:11:31.595091951Z [error] 2026-04-21 09:11:31,488 [INFO] app.collectors.collateral_coverage:   jupiter-perpetual-exchange: coverage 100.0% ($0 / $0)
+2026-04-21T09:11:31.932788257Z [error] 2026-04-21 09:11:31,930 [INFO] app.collectors.collateral_coverage:   raydium: coverage 39.7% ($421,682,776 / $1,061,730,177)
 2026-04-21T09:11:36.612094541Z [error] 2026-04-21 09:11:36,227 [INFO] app.collectors.collateral_coverage: Market snapshots: 7 protocols, 0 new markets detected
 2026-04-21T09:11:36.612100851Z [error] 2026-04-21 09:11:36,453 [INFO] app.collectors.psi_collector: Scoring protocol: aave
+2026-04-21T09:13:16.334094322Z [error] 2026-04-21 09:13:15,033 [INFO] app.collectors.psi_collector:   Stored 420 treasury holdings for aave
+2026-04-21T09:13:16.334098797Z [error] 2026-04-21 09:13:15,033 [INFO] app.collectors.psi_collector:   Aave: 84.28 - 23/27 components
+2026-04-21T09:13:16.334102233Z [error] 2026-04-21 09:13:15,248 [INFO] app.collectors.psi_collector: Scoring protocol: lido
+2026-04-21T09:13:36.346292595Z [error] 2026-04-21 09:13:27,673 [INFO] app.collectors.psi_collector: Scoring protocol: eigenlayer
+2026-04-21T09:13:36.346300148Z [error] 2026-04-21 09:13:33,879 [INFO] app.collectors.psi_collector:   EigenCloud: 60.55 - 21/27 components
+2026-04-21T09:13:36.346304374Z [error] 2026-04-21 09:13:34,094 [INFO] app.collectors.psi_collector: Scoring protocol: sky
+2026-04-21T09:13:36.346348825Z [error] 2026-04-21 09:13:27,458 [INFO] app.collectors.psi_collector:   Stored 21 treasury holdings for lido
+2026-04-21T09:13:36.346352460Z [error] 2026-04-21 09:13:27,458 [INFO] app.collectors.psi_collector:   Lido: 80.38 - 22/27 components
+2026-04-21T09:13:43.456841355Z [error] 2026-04-21 09:13:43,455 [INFO] app.collectors.psi_collector:   Stored 13 treasury holdings for sky
+2026-04-21T09:13:43.456846058Z [error] 2026-04-21 09:13:43,455 [INFO] app.collectors.psi_collector:   Sky: 73.04 - 22/27 components
+2026-04-21T09:13:43.674179107Z [error] 2026-04-21 09:13:43,671 [INFO] app.collectors.psi_collector: Scoring protocol: compound-finance
+2026-04-21T09:14:03.689689690Z [error] 2026-04-21 09:13:57,298 [INFO] app.collectors.psi_collector:   Stored 22 treasury holdings for compound-finance
+2026-04-21T09:14:03.689692945Z [error] 2026-04-21 09:13:57,298 [INFO] app.collectors.psi_collector:   Compound Finance: 62.12 - 23/27 components
+2026-04-21T09:14:03.689696379Z [error] 2026-04-21 09:13:57,514 [INFO] app.collectors.psi_collector: Scoring protocol: uniswap
+2026-04-21T09:14:06.525651673Z [error] 2026-04-21 09:14:06,186 [INFO] app.collectors.psi_collector:   Stored 5 treasury holdings for uniswap
+2026-04-21T09:14:06.525655187Z [error] 2026-04-21 09:14:06,186 [INFO] app.collectors.psi_collector:   Uniswap: 75.87 - 22/27 components
+2026-04-21T09:14:06.525658507Z [error] 2026-04-21 09:14:06,523 [INFO] app.collectors.psi_collector: Scoring protocol: curve-finance
+2026-04-21T09:14:26.185127048Z [error] 2026-04-21 09:14:16,570 [INFO] app.collectors.psi_collector:   Stored 7 treasury holdings for curve-finance
+2026-04-21T09:14:26.185130189Z [error] 2026-04-21 09:14:16,570 [INFO] app.collectors.psi_collector:   Curve Finance: 53.4 - 23/27 components
+2026-04-21T09:14:26.185133160Z [error] 2026-04-21 09:14:16,786 [INFO] app.collectors.psi_collector: Scoring protocol: morpho
+2026-04-21T09:14:26.624767683Z [error] 2026-04-21 09:14:26,374 [INFO] app.collectors.psi_collector:   Stored 12 treasury holdings for morpho
+2026-04-21T09:14:26.624773072Z [error] 2026-04-21 09:14:26,374 [INFO] app.collectors.psi_collector:   Morpho: 75.36 - 23/27 components
+2026-04-21T09:14:26.624778554Z [error] 2026-04-21 09:14:26,589 [INFO] app.collectors.psi_collector: Scoring protocol: spark
+2026-04-21T09:14:46.266702304Z [error] 2026-04-21 09:14:39,883 [INFO] app.collectors.psi_collector:   Spark: 67.82 - 19/27 components
+2026-04-21T09:14:46.266709503Z [error] 2026-04-21 09:14:40,099 [INFO] app.collectors.psi_collector: Scoring protocol: convex-finance
+2026-04-21T09:14:46.266762566Z [error] 2026-04-21 09:14:39,883 [INFO] app.collectors.psi_collector:   Stored 27 treasury holdings for spark
+2026-04-21T09:15:06.255276889Z [error] 2026-04-21 09:14:59,237 [INFO] app.collectors.psi_collector:   Convex Finance: 63.48 - 23/27 components
+2026-04-21T09:15:06.255280360Z [error] 2026-04-21 09:14:59,452 [INFO] app.collectors.psi_collector: Scoring protocol: drift
+2026-04-21T09:15:06.255283837Z [error] 2026-04-21 09:15:04,923 [INFO] app.collectors.psi_collector: PSI drift: admin risk from on-chain authority = 50
+2026-04-21T09:15:06.255286970Z [error] 2026-04-21 09:15:05,841 [INFO] app.collectors.psi_collector:   Drift: 48.93 - 21/27 components
+2026-04-21T09:15:06.255290025Z [error] 2026-04-21 09:15:06,057 [INFO] app.collectors.psi_collector: Scoring protocol: jupiter-perpetual-exchange
+2026-04-21T09:15:13.238744491Z [error] 2026-04-21 09:15:13,233 [INFO] app.collectors.psi_collector: Scoring protocol: raydium
+2026-04-21T09:15:23.937536689Z [error] 2026-04-21 09:15:23,519 [INFO] app.agent.store: Assessment stored: 1fc34ecb-7058-4681-9c4a-7a377bb08a78 | wallet=protocol:r... | trigger=psi_score_change | severity=notable
+2026-04-21T09:15:23.937542142Z [error] 2026-04-21 09:15:23,763 [INFO] app.collectors.psi_collector: PSI event: raydium notable (-3.2 pts)
+2026-04-21T09:15:23.937612133Z [error] 2026-04-21 09:15:23,763 [INFO] worker: PSI scoring complete: 13 protocols scored
+2026-04-21T09:15:23.983677467Z [error] 2026-04-21 09:15:23,982 [INFO] app.state_attestation: State attested: domain=psi_components entity=None records=13 hash=06e7cf3e95037505...
+2026-04-21T09:15:29.967839294Z [error] 2026-04-21 09:15:29,945 [INFO] httpx: HTTP Request: POST https://blue-api.morpho.org/graphql "HTTP/1.1 200 OK"
+2026-04-21T09:15:31.248493809Z [error] 2026-04-21 09:15:31,246 [INFO] httpx: HTTP Request: POST https://blue-api.morpho.org/graphql "HTTP/1.1 200 OK"
+2026-04-21T09:15:33.419003731Z [error] 2026-04-21 09:15:33,410 [INFO] httpx: HTTP Request: POST https://blue-api.morpho.org/graphql "HTTP/1.1 200 OK"
+2026-04-21T09:15:34.204731013Z [error] 2026-04-21 09:15:34,199 [INFO] httpx: HTTP Request: POST https://blue-api.morpho.org/graphql "HTTP/1.1 200 OK"
+2026-04-21T09:15:35.961269708Z [error] 2026-04-21 09:15:35,907 [INFO] httpx: HTTP Request: POST https://blue-api.morpho.org/graphql "HTTP/1.1 200 OK"
+2026-04-21T09:15:38.166897515Z [error] 2026-04-21 09:15:38,159 [INFO] httpx: HTTP Request: POST https://blue-api.morpho.org/graphql "HTTP/1.1 200 OK"
