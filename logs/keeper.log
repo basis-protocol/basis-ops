@@ -1,14 +1,29 @@
-2026-04-21T09:01:01.401867084Z [info] Starting Container
-2026-04-21T09:01:01.870277215Z [info] ◇ injected env (0) from .env // tip: ◈ encrypted .env [www.dotenvx.com]
-2026-04-21T09:01:01.870284091Z [info] Basis Keeper starting
-2026-04-21T09:01:01.870287455Z [info] Wallet balances
-2026-04-21T09:01:01.870290488Z [info] Keeper wallet address
-2026-04-21T09:01:01.870294684Z [error] ALERT: Keeper started. Interval: 3600s. Wallet: 0x2dF0f62D1861Aa59A4430e3B2b2E7a0D29Cb723b
-2026-04-21T09:01:02.153665002Z [info] === Keeper cycle start ===
-2026-04-21T09:01:02.153670288Z [info] Fetching scores from API
-2026-04-21T09:01:02.878464368Z [info] Fetched API scores
-2026-04-21T09:01:02.878468786Z [info] Dynamic token map includes new tokens not in static map
-2026-04-21T09:01:02.878472391Z [error] Unhandled error in keeper cycle
-2026-04-21T09:01:02.878475431Z [error] ALERT: Unhandled error in keeper cycle
-2026-04-21T09:01:03.098989351Z [info] Wallet balances
-2026-04-21T09:01:03.098994698Z [info] Sleeping 3600s until next cycle
+2026-04-21T09:51:49.540626824Z [info] Starting Container
+2026-04-21T09:51:51.443168046Z [info] Basis Keeper starting
+2026-04-21T09:51:51.443176631Z [info] Keeper wallet address
+2026-04-21T09:51:51.443218753Z [info] ◇ injected env (0) from .env // tip: ◈ secrets for agents [www.dotenvx.com]
+2026-04-21T09:51:51.443445064Z [error] ALERT: Keeper started. Interval: 3600s. Wallet: 0x2dF0f62D1861Aa59A4430e3B2b2E7a0D29Cb723b
+2026-04-21T09:51:51.443452532Z [info] Wallet balances
+2026-04-21T09:51:55.662449064Z [info] === Keeper cycle start ===
+2026-04-21T09:51:55.662452596Z [info] Fetching scores from API
+2026-04-21T09:52:25.342543796Z [warn] Failed to fetch API scores — skipping score updates, using static TOKEN_ADDRESSES for staleness check
+2026-04-21T09:52:25.342547332Z [error] ALERT: Basis keeper: API fetch failed — API returned HTTP 502: {"status":"error","code":502,"message":"Application failed to respond","request_id":"NIW16_xxQTaZ47pFxtoGcA"}
+2026-04-21T09:52:25.342551620Z [info] Diff complete
+2026-04-21T09:52:25.342554997Z [info] No updates to publish
+2026-04-21T09:52:25.342558595Z [info] No updates to publish
+2026-04-21T09:52:25.342562409Z [info] Fetching PSI scores from API
+2026-04-21T09:52:25.342567754Z [warn] PSI score publishing failed (non-blocking)
+2026-04-21T09:52:25.342571389Z [info] No on-chain updates needed this cycle
+2026-04-21T09:52:25.342574880Z [error] ALERT: STALE SCORE: 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 not updated in 7200s
+2026-04-21T09:52:25.342578523Z [error] ALERT: STALE SCORE: 0xdac17f958d2ee523a2206206994597c13d831ec7 not updated in 7200s
+2026-04-21T09:52:25.343620851Z [error] ALERT: STALE SCORE: 0x6b175474e89094c44da98b954eedeac495271d0f not updated in 7200s
+2026-04-21T09:52:25.343623815Z [error] ALERT: STALE SCORE: 0x853d955acef822db058eb8505911ed77f175b99e not updated in 7200s
+2026-04-21T09:52:25.343627015Z [error] ALERT: STALE SCORE: 0x6c3ea9036406852006290770bedfcaba0e23a0e8 not updated in 7200s
+2026-04-21T09:52:25.343629833Z [error] ALERT: STALE SCORE: 0xc5f0f7b66764F6ec8C8Dff7BA683102295E16409 not updated in 7200s
+2026-04-21T09:52:25.343633723Z [error] ALERT: STALE SCORE: 0x0000000000085d4780B73119b644AE5ecd22b376 not updated in 7200s
+2026-04-21T09:52:25.343636758Z [error] ALERT: STALE SCORE: 0x0C10bF8FcB7Bf5412187A595ab97a3609160b5c6 not updated in 7200s
+2026-04-21T09:52:25.343639899Z [error] ALERT: STALE SCORE: 0x4c9EDD5852cd905f086C759E8383e09bff1E68B3 not updated in 7200s
+2026-04-21T09:52:25.343643156Z [error] ALERT: STALE SCORE: 0x8d0D000Ee44948FC98c9B98A4FA4921476f08B0d not updated in 7200s
+2026-04-21T09:52:25.343645985Z [info] === Keeper cycle complete ===
+2026-04-21T09:52:25.343648723Z [info] Wallet balances
+2026-04-21T09:52:25.343651511Z [info] Sleeping 3600s until next cycle
