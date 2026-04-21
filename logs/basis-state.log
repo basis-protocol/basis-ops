@@ -1,7 +1,3 @@
-2026-04-19T12:28:02.860447088Z [error] 2026-04-19 12:28:02,858 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDP?format=json "HTTP/1.1 429 "
-2026-04-19T12:28:02.862707928Z [error] 2026-04-19 12:28:02,858 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDP 429 (56 bytes)
-2026-04-19T12:28:02.862712877Z [error] 2026-04-19 12:28:02,858 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-19T12:28:02.862716645Z [error] 2026-04-19 12:28:02,858 WARNING [basis_state] Failed to fetch history for stablecoin:USDP
 2026-04-19T12:28:02.862720423Z [error] 2026-04-19 12:28:02,858 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/TUSD params={'format': 'json'}
 2026-04-19T12:28:02.883562230Z [error] 2026-04-19 12:28:02,879 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/TUSD?format=json "HTTP/1.1 429 "
 2026-04-19T12:28:02.883565969Z [error] 2026-04-19 12:28:02,879 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/TUSD 429 (56 bytes)
@@ -1999,3 +1995,7 @@
 2026-04-21T07:58:26.054192183Z [error] 2026-04-21 07:58:26,051 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/EURS?format=json "HTTP/1.1 200 "
 2026-04-21T07:58:26.056268146Z [error] 2026-04-21 07:58:26,052 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/EURS 200 (10852 bytes)
 2026-04-21T07:58:26.056273209Z [error] 2026-04-21 07:58:26,052 INFO [basis_state] 7d changes computed for 35 entities
+2026-04-21T08:38:18.431953345Z [info] INFO:     100.64.0.46:14602 - "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 Not Found
+2026-04-21T08:38:18.431961276Z [info] INFO:     100.64.0.54:36612 - "GET /monitor HTTP/1.1" 200 OK
+2026-04-21T08:38:18.431966273Z [info] INFO:     100.64.0.55:39196 - "GET /apple-touch-icon.png HTTP/1.1" 404 Not Found
+2026-04-21T08:38:18.431970476Z [info] INFO:     100.64.0.42:18770 - "GET /favicon.ico HTTP/1.1" 404 Not Found
