@@ -1,14 +1,21 @@
-2026-04-21T19:33:00.764387816Z [info] Starting Container
-2026-04-21T19:33:01.549795374Z [info] Fetching scores from API
-2026-04-21T19:33:01.549859156Z [info] ◇ injected env (0) from .env // tip: ⌁ auth for agents [www.vestauth.com]
-2026-04-21T19:33:01.549863572Z [info] Basis Keeper starting
-2026-04-21T19:33:01.549867646Z [info] Keeper wallet address
-2026-04-21T19:33:01.549872261Z [error] ALERT: Keeper started. Interval: 3600s. Wallet: 0x2dF0f62D1861Aa59A4430e3B2b2E7a0D29Cb723b
-2026-04-21T19:33:01.549879050Z [info] Wallet balances
-2026-04-21T19:33:01.549884456Z [info] === Keeper cycle start ===
-2026-04-21T19:33:01.687956021Z [info] Fetched API scores
-2026-04-21T19:33:01.687964269Z [info] Dynamic token map includes new tokens not in static map
-2026-04-21T19:33:01.746409792Z [error] Unhandled error in keeper cycle
-2026-04-21T19:33:01.746414173Z [error] ALERT: Unhandled error in keeper cycle
-2026-04-21T19:33:02.021661751Z [info] Wallet balances
-2026-04-21T19:33:02.021666391Z [info] Sleeping 3600s until next cycle
+2026-04-21T21:13:00.800155946Z [info] Starting Container
+2026-04-21T21:13:02.945365490Z [info] ◇ injected env (0) from .env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-04-21T21:13:02.945372302Z [info] Basis Keeper starting
+2026-04-21T21:13:02.945378866Z [info] Keeper wallet address
+2026-04-21T21:13:02.945383453Z [error] ALERT: Keeper started. Interval: 3600s. Wallet: 0x2dF0f62D1861Aa59A4430e3B2b2E7a0D29Cb723b
+2026-04-21T21:13:02.945390533Z [info] Wallet balances
+2026-04-21T21:13:02.945395219Z [info] === Keeper cycle start ===
+2026-04-21T21:13:02.945399897Z [info] Fetching scores from API
+2026-04-21T21:13:02.945406044Z [info] Fetched API scores
+2026-04-21T21:13:02.945411474Z [info] Dynamic token map includes new tokens not in static map
+2026-04-21T21:13:02.945417790Z [error] Unhandled error in keeper cycle
+2026-04-21T21:13:02.945820472Z [info] Sleeping 3600s until next cycle
+2026-04-21T21:13:02.945863599Z [error] ALERT: Unhandled error in keeper cycle
+
+TypeError: Cannot read properties of undefined (reading 'charCodeAt')
+    at gradeToBytes2 (/app/keeper/converter.ts:20:23)
+    at computeUpdates (/app/keeper/differ.ts:82:22)
+    at runCycle (/app/keeper/index.ts:188:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async main (/app/keeper/index.ts:515:7)
+2026-04-21T21:13:02.945869930Z [info] Wallet balances
