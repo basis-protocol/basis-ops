@@ -1,21 +1,70 @@
-2026-04-21T21:13:00.800155946Z [info] Starting Container
-2026-04-21T21:13:02.945365490Z [info] ◇ injected env (0) from .env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
-2026-04-21T21:13:02.945372302Z [info] Basis Keeper starting
-2026-04-21T21:13:02.945378866Z [info] Keeper wallet address
-2026-04-21T21:13:02.945383453Z [error] ALERT: Keeper started. Interval: 3600s. Wallet: 0x2dF0f62D1861Aa59A4430e3B2b2E7a0D29Cb723b
-2026-04-21T21:13:02.945390533Z [info] Wallet balances
-2026-04-21T21:13:02.945395219Z [info] === Keeper cycle start ===
-2026-04-21T21:13:02.945399897Z [info] Fetching scores from API
-2026-04-21T21:13:02.945406044Z [info] Fetched API scores
-2026-04-21T21:13:02.945411474Z [info] Dynamic token map includes new tokens not in static map
-2026-04-21T21:13:02.945417790Z [error] Unhandled error in keeper cycle
-2026-04-21T21:13:02.945820472Z [info] Sleeping 3600s until next cycle
-2026-04-21T21:13:02.945863599Z [error] ALERT: Unhandled error in keeper cycle
-
-TypeError: Cannot read properties of undefined (reading 'charCodeAt')
-    at gradeToBytes2 (/app/keeper/converter.ts:20:23)
-    at computeUpdates (/app/keeper/differ.ts:82:22)
-    at runCycle (/app/keeper/index.ts:188:23)
-    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
-    at async main (/app/keeper/index.ts:515:7)
-2026-04-21T21:13:02.945869930Z [info] Wallet balances
+2026-04-21T21:36:16.361888188Z [info] Starting Container
+2026-04-21T21:36:17.878022721Z [info] ◇ injected env (0) from .env // tip: ⌘ suppress logs { quiet: true }
+2026-04-21T21:36:17.878027592Z [info] Basis Keeper starting
+2026-04-21T21:36:17.878032060Z [info] Keeper wallet address
+2026-04-21T21:36:17.878035467Z [error] ALERT: Keeper started. Interval: 3600s. Wallet: 0x2dF0f62D1861Aa59A4430e3B2b2E7a0D29Cb723b
+2026-04-21T21:36:17.878038750Z [info] Wallet balances
+2026-04-21T21:36:17.878041579Z [info] === Keeper cycle start ===
+2026-04-21T21:36:17.878044483Z [info] Fetching scores from API
+2026-04-21T21:36:18.051434049Z [info] Fetched API scores
+2026-04-21T21:36:18.051440560Z [info] Dynamic token map includes new tokens not in static map
+2026-04-21T21:36:18.106128260Z [info] Score update — delta
+2026-04-21T21:36:18.106131618Z [info] Score update — delta
+2026-04-21T21:36:18.106135274Z [info] Score update — delta
+2026-04-21T21:36:18.106138666Z [info] Score update — delta
+2026-04-21T21:36:18.106149770Z [info] Score update — delta
+2026-04-21T21:36:18.106153822Z [info] Score update — delta
+2026-04-21T21:36:18.106157690Z [info] Diff complete
+2026-04-21T21:36:18.900893552Z [info] Transaction submitted
+2026-04-21T21:36:18.902629743Z [info] Transaction submitted
+2026-04-21T21:36:18.948295321Z [info] Transaction confirmed
+2026-04-21T21:36:22.916102403Z [info] Transaction confirmed
+2026-04-21T21:36:22.916106195Z [info] Fetching PSI scores from API
+2026-04-21T21:36:23.053340053Z [info] Fetched PSI scores
+2026-04-21T21:36:23.502058903Z [info] PSI transaction submitted
+2026-04-21T21:36:23.916997613Z [info] PSI transaction submitted
+2026-04-21T21:36:23.956661695Z [warn] Retry 1/3 in 1090ms: batchUpdatePsiScores on arbitrum
+2026-04-21T21:36:25.491866850Z [warn] Retry 2/3 in 2824ms: batchUpdatePsiScores on arbitrum
+2026-04-21T21:36:27.928645052Z [warn] Retry 1/3 in 1952ms: batchUpdatePsiScores on base
+2026-04-21T21:36:28.957142882Z [warn] Retry 3/3 in 4782ms: batchUpdatePsiScores on arbitrum
+2026-04-21T21:36:30.060634365Z [info] PSI transaction submitted
+2026-04-21T21:36:30.099926565Z [warn] Retry 2/3 in 2000ms: batchUpdatePsiScores on base
+2026-04-21T21:36:32.557148519Z [info] PSI transaction submitted
+2026-04-21T21:36:32.955963943Z [warn] Retry 3/3 in 4556ms: batchUpdatePsiScores on base
+2026-04-21T21:36:34.003061677Z [error] ALERT: FAILED after 3 retries: batchUpdatePsiScores on arbitrum
+2026-04-21T21:36:34.004758543Z [warn] PSI score publishing failed (non-blocking)
+2026-04-21T21:36:34.006923340Z [info] Cycle publish summary
+2026-04-21T21:36:37.986523512Z [info] PSI transaction submitted
+2026-04-21T21:36:37.986532194Z [error] ALERT: FAILED after 3 retries: batchUpdatePsiScores on base
+2026-04-21T21:37:17.656336169Z [info] Fetched report hashes from hub
+2026-04-21T21:37:17.656339797Z [info] Report hash published
+2026-04-21T21:37:17.656343341Z [info] Report hash published
+2026-04-21T21:37:17.656348456Z [info] Report hash published
+2026-04-21T21:37:18.163452246Z [info] Report hash published
+2026-04-21T21:37:19.182057030Z [info] Report hash published
+2026-04-21T21:37:19.570544033Z [info] Report hash published
+2026-04-21T21:37:19.592397463Z [info] Report hash published
+2026-04-21T21:37:20.317579638Z [info] Report hash published
+2026-04-21T21:37:21.181193965Z [info] Report hash published
+2026-04-21T21:37:22.211466562Z [info] Report hash published
+2026-04-21T21:37:22.575698165Z [info] Report hash published
+2026-04-21T21:37:23.320972829Z [info] Report hash published
+2026-04-21T21:37:24.183587597Z [info] Report hash published
+2026-04-21T21:37:24.183593007Z [info] Report hash published
+2026-04-21T21:37:28.553411933Z [info] Report hash published
+2026-04-21T21:37:33.183323292Z [info] Report hash published
+2026-04-21T21:37:37.539928765Z [info] Report hash published
+2026-04-21T21:37:42.292410559Z [info] Report hash published
+2026-04-21T21:37:46.494123922Z [info] Report hash published
+2026-04-21T21:37:51.316352313Z [info] Report hash published
+2026-04-21T21:37:55.463355081Z [info] Report hash published
+2026-04-21T21:37:59.940764128Z [info] Report hash published
+2026-04-21T21:38:04.415983339Z [info] Report hash published
+2026-04-21T21:38:08.902364032Z [info] Report hash published
+2026-04-21T21:38:08.902371079Z [info] Report hashes published
+2026-04-21T21:38:09.363750040Z [info] Fetched state root hash
+2026-04-21T21:38:09.363753258Z [info] State root already published today, skipping
+2026-04-21T21:38:09.387994845Z [info] State root already published today, skipping
+2026-04-21T21:38:09.388002035Z [info] === Keeper cycle complete ===
+2026-04-21T21:38:09.671669195Z [info] Wallet balances
+2026-04-21T21:38:09.671676050Z [info] Sleeping 3600s until next cycle
