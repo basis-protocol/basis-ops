@@ -1,38 +1,3 @@
-2026-04-19T12:28:03.645686752Z [error] 2026-04-19 12:28:03,511 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDD (BTTC bridge) params={'format': 'json'}
-2026-04-19T12:28:03.645690859Z [error] 2026-04-19 12:28:03,533 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDD%20(BTTC%20bridge)?format=json "HTTP/1.1 429 "
-2026-04-19T12:28:03.645694066Z [error] 2026-04-19 12:28:03,533 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDD (BTTC bridge) 429 (56 bytes)
-2026-04-19T12:28:03.645697695Z [error] 2026-04-19 12:28:03,533 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-19T12:28:03.645701180Z [error] 2026-04-19 12:28:03,533 WARNING [basis_state] Failed to fetch history for stablecoin:USDD (BTTC bridge)
-2026-04-19T12:28:03.645705070Z [error] 2026-04-19 12:28:03,533 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/sUSD params={'format': 'json'}
-2026-04-19T12:28:03.645708324Z [error] 2026-04-19 12:28:03,538 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/sUSD?format=json "HTTP/1.1 429 "
-2026-04-19T12:28:03.645711852Z [error] 2026-04-19 12:28:03,538 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/sUSD 429 (56 bytes)
-2026-04-19T12:28:03.645716359Z [error] 2026-04-19 12:28:03,538 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-19T12:28:03.647879212Z [error] 2026-04-19 12:28:03,539 WARNING [basis_state] Failed to fetch history for stablecoin:sUSD
-2026-04-19T12:28:03.647884622Z [error] 2026-04-19 12:28:03,539 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/RAI params={'format': 'json'}
-2026-04-19T12:28:03.647888057Z [error] 2026-04-19 12:28:03,559 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/sUSD?format=json "HTTP/1.1 429 "
-2026-04-19T12:28:03.647892081Z [error] 2026-04-19 12:28:03,559 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/sUSD 429 (56 bytes)
-2026-04-19T12:28:03.647898975Z [error] 2026-04-19 12:28:03,559 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-19T12:28:03.647905058Z [error] 2026-04-19 12:28:03,559 WARNING [basis_state] Failed to fetch history for stablecoin:sUSD
-2026-04-19T12:28:03.647909106Z [error] 2026-04-19 12:28:03,559 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/RAI params={'format': 'json'}
-2026-04-19T12:28:03.647913203Z [error] 2026-04-19 12:28:03,564 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/RAI?format=json "HTTP/1.1 429 "
-2026-04-19T12:28:03.647917286Z [error] 2026-04-19 12:28:03,565 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/RAI 429 (56 bytes)
-2026-04-19T12:28:03.647921415Z [error] 2026-04-19 12:28:03,565 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-19T12:28:03.647924829Z [error] 2026-04-19 12:28:03,565 WARNING [basis_state] Failed to fetch history for stablecoin:RAI
-2026-04-19T12:28:03.647928160Z [error] 2026-04-19 12:28:03,565 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/EURS params={'format': 'json'}
-2026-04-19T12:28:03.650106813Z [error] 2026-04-19 12:28:03,597 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/RAI?format=json "HTTP/1.1 429 "
-2026-04-19T12:28:03.650111420Z [error] 2026-04-19 12:28:03,597 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/EURS?format=json "HTTP/1.1 429 "
-2026-04-19T12:28:03.650114805Z [error] 2026-04-19 12:28:03,597 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/RAI 429 (56 bytes)
-2026-04-19T12:28:03.650118359Z [error] 2026-04-19 12:28:03,598 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-19T12:28:03.650122025Z [error] 2026-04-19 12:28:03,598 WARNING [basis_state] Failed to fetch history for stablecoin:RAI
-2026-04-19T12:28:03.650125403Z [error] 2026-04-19 12:28:03,598 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/EURS params={'format': 'json'}
-2026-04-19T12:28:03.650128590Z [error] 2026-04-19 12:28:03,603 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/EURS 429 (56 bytes)
-2026-04-19T12:28:03.650131889Z [error] 2026-04-19 12:28:03,603 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-19T12:28:03.650135177Z [error] 2026-04-19 12:28:03,603 WARNING [basis_state] Failed to fetch history for stablecoin:EURS
-2026-04-19T12:28:03.650138568Z [error] 2026-04-19 12:28:03,603 INFO [basis_state] 7d changes computed for 35 entities
-2026-04-19T12:28:03.650142190Z [error] 2026-04-19 12:28:03,622 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/EURS?format=json "HTTP/1.1 429 "
-2026-04-19T12:28:03.650145588Z [error] 2026-04-19 12:28:03,622 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/EURS 429 (56 bytes)
-2026-04-19T12:28:03.650148997Z [error] 2026-04-19 12:28:03,622 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-19T12:28:03.652339570Z [error] 2026-04-19 12:28:03,622 WARNING [basis_state] Failed to fetch history for stablecoin:EURS
 2026-04-19T12:28:03.652345476Z [error] 2026-04-19 12:28:03,622 INFO [basis_state] 7d changes computed for 35 entities
 2026-04-19T12:28:23.652379454Z [info] INFO:     100.64.0.47:10358 - "GET /robots.txt HTTP/1.1" 404 Not Found
 2026-04-19T12:28:23.652384728Z [info] INFO:     100.64.0.45:45046 - "GET / HTTP/1.1" 200 OK
@@ -1999,3 +1964,38 @@
 2026-04-21T17:05:05.295315203Z [info] INFO:     100.64.0.8:28054 - "GET /wordpress/wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
 2026-04-21T17:06:16.343343506Z [info] INFO:     100.64.0.9:31096 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
 2026-04-21T17:08:15.312717918Z [info] INFO:     100.64.0.56:41124 - "GET / HTTP/1.1" 200 OK
+2026-04-21T18:01:29.440094759Z [info] INFO:     100.64.0.11:38336 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-21T18:02:49.515752375Z [info] INFO:     100.64.0.8:53002 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-21T18:04:59.660680777Z [info] INFO:     100.64.0.2:58690 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-21T18:05:29.630076471Z [info] INFO:     100.64.0.9:53796 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
+2026-04-21T18:14:19.334868477Z [info] INFO:     100.64.0.53:16336 - "GET / HTTP/1.1" 200 OK
+2026-04-21T18:28:50.393140490Z [info] INFO:     100.64.0.8:49590 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
+2026-04-21T18:29:50.447597728Z [info] INFO:     100.64.0.12:53420 - "GET /wordpress/wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
+2026-04-21T18:31:50.110141782Z [info] INFO:     100.64.0.12:40316 - "GET /wordpress/wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
+2026-04-21T18:32:10.111219422Z [info] INFO:     100.64.0.7:39538 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
+2026-04-21T18:32:17.718344018Z [info] INFO:     100.64.0.21:40648 - "GET /wordpress/wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
+2026-04-21T18:37:38.009851736Z [info] INFO:     100.64.0.42:52744 - "GET / HTTP/1.1" 200 OK
+2026-04-21T18:37:38.009855509Z [info] INFO:     100.64.0.41:43044 - "GET //wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-21T18:37:38.009860862Z [info] INFO:     100.64.0.41:43044 - "GET //xmlrpc.php?rsd HTTP/1.1" 404 Not Found
+2026-04-21T18:37:38.009864412Z [info] INFO:     100.64.0.40:36622 - "GET / HTTP/1.1" 200 OK
+2026-04-21T18:37:38.009867391Z [info] INFO:     100.64.0.44:61654 - "GET //blog/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-21T18:37:38.009880180Z [info] INFO:     100.64.0.41:43044 - "GET //web/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-21T18:37:38.009884413Z [info] INFO:     100.64.0.41:43044 - "GET //wordpress/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-21T18:37:38.009888481Z [info] INFO:     100.64.0.32:38222 - "GET //website/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-21T18:37:38.009892929Z [info] INFO:     100.64.0.32:38222 - "GET //wp/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-21T18:37:38.009896672Z [info] INFO:     100.64.0.32:38222 - "GET //news/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-21T18:37:38.009900067Z [info] INFO:     100.64.0.31:42766 - "GET //wp1/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-21T18:37:38.009903058Z [info] INFO:     100.64.0.31:42766 - "GET //test/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-21T18:37:38.009906046Z [info] INFO:     100.64.0.32:38222 - "GET //wp2/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-21T18:37:38.009909059Z [info] INFO:     100.64.0.32:38222 - "GET //site/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-21T18:37:38.009912400Z [info] INFO:     100.64.0.31:42766 - "GET //cms/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-21T18:37:38.009915733Z [info] INFO:     100.64.0.32:38222 - "GET //sito/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-04-21T18:54:58.126975718Z [info] INFO:     100.64.0.15:23864 - "GET /wordpress/wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
+2026-04-21T18:55:47.750371500Z [info] INFO:     100.64.0.3:41000 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
+2026-04-21T18:57:47.764037044Z [info] INFO:     100.64.0.36:31958 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
+2026-04-21T18:58:17.765746144Z [info] INFO:     100.64.0.36:41082 - "GET /wordpress/wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
+2026-04-21T19:09:08.089382698Z [info] INFO:     100.64.0.36:38570 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
+2026-04-21T19:10:17.720521424Z [info] INFO:     100.64.0.13:29054 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
+2026-04-21T19:12:07.731757652Z [info] INFO:     100.64.0.4:26112 - "GET /wordpress/wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
+2026-04-21T19:12:27.730771313Z [info] INFO:     100.64.0.48:31362 - "GET /wordpress/wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
+2026-04-21T19:15:37.749452067Z [info] INFO:     100.64.0.44:37594 - "GET /portfolio HTTP/1.1" 200 OK
