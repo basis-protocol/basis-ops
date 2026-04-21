@@ -1,146 +1,3 @@
-2026-04-21T14:29:40.583213058Z [error] 2026-04-21 14:29:39,297 [WARNING] app.server: x402 not installed — paid endpoints disabled. Run: pip install x402
-2026-04-21T14:29:40.583216993Z [error] 2026-04-21 14:29:39,342 [INFO] main: Initializing database pool...
-2026-04-21T14:29:40.583225804Z [error] 2026-04-21 14:29:39,342 [INFO] app.database: Database URL prefix: postgresql://neondb_owner:npg_ZQ7pTvYVNE1U@ep-soft...
-2026-04-21T14:29:40.600009097Z [error] 2026-04-21 14:29:40,024 [INFO] app.database: Database pool initialized (min=2, max=10, keepalives=on)
-2026-04-21T14:29:41.644570257Z [error] 2026-04-21 14:29:40,226 [INFO] main: Database connected ✓
-2026-04-21T14:29:41.657162747Z [error] 2026-04-21 14:29:40,433 [INFO] main: Migration 001_initial_schema already applied ✓
-2026-04-21T14:29:41.657169073Z [error] 2026-04-21 14:29:40,641 [INFO] main: Migration 002_import_governance already applied ✓
-2026-04-21T14:29:41.661080539Z [error] 2026-04-21 14:29:40,842 [INFO] main: Migration 006_add_usd1 already applied ✓
-2026-04-21T14:29:41.674419718Z [error] 2026-04-21 14:29:41,042 [INFO] main: Migration 007_wallet_graph already applied ✓
-2026-04-21T14:29:41.688833805Z [error] 2026-04-21 14:29:41,243 [INFO] main: Migration 011_token_type_column already applied ✓
-2026-04-21T14:29:41.735590046Z [info] Starting Container
-2026-04-21T14:29:41.801885326Z [error] 2026-04-21 14:29:41,443 [INFO] main: Migration 012_widen_symbol_columns already applied ✓
-2026-04-21T14:29:41.801889074Z [error] 2026-04-21 14:29:41,644 [INFO] main: Migration 013_api_usage already applied ✓
-2026-04-21T14:29:45.346755109Z [error] 2026-04-21 14:29:41,844 [INFO] main: Migration 014_assessment_events already applied ✓
-2026-04-21T14:30:01.846097180Z [error] 2026-04-21 14:29:57,334 [ERROR] main: [migrations] 89 migration files, 84 recorded in DB
-2026-04-21T14:30:01.846101206Z [error] 2026-04-21 14:29:57,534 [INFO] main: Database ready: 36 stablecoins registered ✓
-2026-04-21T14:30:01.846104740Z [error] 2026-04-21 14:29:57,534 [INFO] main: Worker disabled (set WORKER_ENABLED=true to enable)
-2026-04-21T14:30:01.846108315Z [error] 2026-04-21 14:29:57,534 [INFO] main: Keeper disabled (KEEPER_PRIVATE_KEY not set)
-2026-04-21T14:30:01.846112147Z [error] 2026-04-21 14:29:57,546 [INFO] main: Starting API on port 8000
-2026-04-21T14:30:01.846115707Z [error] INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-2026-04-21T14:30:01.846118974Z [error] INFO:     Started parent process [1]
-2026-04-21T14:30:01.846122556Z [error] 2026-04-21 14:29:57,856 [WARNING] app.server: x402 not installed — paid endpoints disabled. Run: pip install x402
-2026-04-21T14:30:01.846125756Z [error] 2026-04-21 14:29:57,859 [WARNING] app.server: x402 not installed — paid endpoints disabled. Run: pip install x402
-2026-04-21T14:30:01.846130811Z [error] INFO:     Started server process [4]
-2026-04-21T14:30:01.846134145Z [error] INFO:     Waiting for application startup.
-2026-04-21T14:30:01.846137115Z [error] 2026-04-21 14:29:57,925 [INFO] app.database: Database URL prefix: postgresql://neondb_owner:npg_ZQ7pTvYVNE1U@ep-soft...
-2026-04-21T14:30:01.846140446Z [error] INFO:     Started server process [5]
-2026-04-21T14:30:01.846143355Z [error] INFO:     Waiting for application startup.
-2026-04-21T14:30:01.846146456Z [error] 2026-04-21 14:29:57,926 [INFO] app.database: Database URL prefix: postgresql://neondb_owner:npg_ZQ7pTvYVNE1U@ep-soft...
-2026-04-21T14:30:01.846149656Z [error] 2026-04-21 14:29:58,544 [INFO] app.database: Database pool initialized (min=2, max=10, keepalives=on)
-2026-04-21T14:30:01.846152563Z [error] 2026-04-21 14:29:58,544 [INFO] app.database: Database pool initialized (min=2, max=10, keepalives=on)
-2026-04-21T14:30:01.848230407Z [error] 2026-04-21 14:30:00,562 [INFO] app.server: CDA issuer registry seeded (10 upserts attempted)
-2026-04-21T14:30:01.848234967Z [error] 2026-04-21 14:30:00,613 [INFO] app.server: CDA issuer registry seeded (10 upserts attempted)
-2026-04-21T14:30:01.848239439Z [error] 2026-04-21 14:30:00,984 [INFO] app.governance: Governance tables ready
-2026-04-21T14:30:01.848243296Z [error] 2026-04-21 14:30:00,986 [INFO] app.server: Governance intelligence routes registered
-2026-04-21T14:30:01.848247749Z [error] 2026-04-21 14:30:00,993 [INFO] app.server: Content engine routes registered
-2026-04-21T14:30:01.848252174Z [error] 2026-04-21 14:30:01,018 [INFO] app.server: Wallet indexer routes registered
-2026-04-21T14:30:01.848256989Z [error] 2026-04-21 14:30:01,076 [INFO] app.governance: Governance tables ready
-2026-04-21T14:30:01.848261348Z [error] 2026-04-21 14:30:01,078 [INFO] app.server: Governance intelligence routes registered
-2026-04-21T14:30:01.848265292Z [error] 2026-04-21 14:30:01,081 [INFO] app.server: Content engine routes registered
-2026-04-21T14:30:01.848269600Z [error] 2026-04-21 14:30:01,090 [INFO] app.server: Wallet indexer routes registered
-2026-04-21T14:30:01.848273506Z [error] 2026-04-21 14:30:01,223 [INFO] app.server: Cleared stale temporal reconstruction cache entries
-2026-04-21T14:30:01.848277640Z [error] 2026-04-21 14:30:01,290 [INFO] app.server: Cleared stale temporal reconstruction cache entries
-2026-04-21T14:30:01.863697872Z [error] 2026-04-21 14:30:01,859 [INFO] app.server: historical_protocol_data: 23845 rows
-2026-04-21T14:30:01.868159702Z [error] 2026-04-21 14:30:01,866 [INFO] app.agent.api: Agent API routes registered: /api/assessments, /api/pulse
-2026-04-21T14:30:01.868166110Z [error] 2026-04-21 14:30:01,866 [INFO] app.server: Verification agent routes registered
-2026-04-21T14:30:01.877520560Z [error] 2026-04-21 14:30:01,874 [INFO] app.publisher.page_renderer: Page routes registered: /terms, /wallet, /asset, /assessment, /pulse, /sitemap.xml, /robots.txt
-2026-04-21T14:30:01.877527240Z [error] 2026-04-21 14:30:01,874 [INFO] app.server: Publisher page routes registered
-2026-04-21T14:30:01.894428126Z [error] 2026-04-21 14:30:01,892 [INFO] app.server: historical_protocol_data: 23845 rows
-2026-04-21T14:30:01.898859260Z [error] 2026-04-21 14:30:01,895 [INFO] app.agent.api: Agent API routes registered: /api/assessments, /api/pulse
-2026-04-21T14:30:01.898866848Z [error] 2026-04-21 14:30:01,895 [INFO] app.server: Verification agent routes registered
-2026-04-21T14:30:01.898872069Z [error] 2026-04-21 14:30:01,897 [INFO] app.publisher.page_renderer: Page routes registered: /terms, /wallet, /asset, /assessment, /pulse, /sitemap.xml, /robots.txt
-2026-04-21T14:30:01.898876595Z [error] 2026-04-21 14:30:01,897 [INFO] app.server: Publisher page routes registered
-2026-04-21T14:30:01.927774255Z [error] 2026-04-21 14:30:01,925 [INFO] app.ops.routes: Operations Hub routes registered
-2026-04-21T14:30:01.932471446Z [error] 2026-04-21 14:30:01,930 [INFO] app.ops.routes: Operations Hub routes registered
-2026-04-21T14:30:01.938970697Z [error] 2026-04-21 14:30:01,935 [INFO] app.ops.entity_routes: Entity view routes registered
-2026-04-21T14:30:01.938974683Z [error] 2026-04-21 14:30:01,935 [INFO] app.server: Operations Hub routes registered
-2026-04-21T14:30:01.938980060Z [error] 2026-04-21 14:30:01,935 [WARNING] app.server: Squads Guard not available: No module named 'squads_guard'
-2026-04-21T14:30:01.938984328Z [error] 2026-04-21 14:30:01,936 [INFO] app.ops.entity_routes: Entity view routes registered
-2026-04-21T14:30:01.938988631Z [error] 2026-04-21 14:30:01,936 [INFO] app.server: Operations Hub routes registered
-2026-04-21T14:30:01.938993033Z [error] 2026-04-21 14:30:01,937 [WARNING] app.server: Squads Guard not available: No module named 'squads_guard'
-2026-04-21T14:30:02.119385740Z [error] 2026-04-21 14:30:02,117 [INFO] app.server: MCP HTTP endpoint registered at /mcp
-2026-04-21T14:30:02.124316467Z [error] 2026-04-21 14:30:02,120 [INFO] app.server: Incident routes registered (/api/incident/*, /api/incident-notify)
-2026-04-21T14:30:02.124320326Z [error] 2026-04-21 14:30:02,121 [INFO] app.server: Mounted /share from /app/public/share
-2026-04-21T14:30:02.124325274Z [error] 2026-04-21 14:30:02,121 [INFO] app.server: Basis Protocol API started
-2026-04-21T14:30:02.126571734Z [error] 2026-04-21 14:30:02,124 [INFO] app.server: MCP HTTP endpoint registered at /mcp
-2026-04-21T14:30:02.128867796Z [error] 2026-04-21 14:30:02,127 [INFO] app.server: Mounted /share from /app/public/share
-2026-04-21T14:30:02.128871226Z [error] 2026-04-21 14:30:02,127 [INFO] app.server: Basis Protocol API started
-2026-04-21T14:30:02.128891201Z [error] 2026-04-21 14:30:02,127 [INFO] app.server: Incident routes registered (/api/incident/*, /api/incident-notify)
-2026-04-21T14:30:02.379506854Z [error] 2026-04-21 14:30:02,376 [INFO] mcp.server.streamable_http_manager: StreamableHTTP session manager started
-2026-04-21T14:30:02.407050892Z [error] 2026-04-21 14:30:02,405 [INFO] mcp.server.streamable_http_manager: StreamableHTTP session manager started
-2026-04-21T14:30:02.829477882Z [error] 2026-04-21 14:30:02,599 [INFO] httpx: HTTP Request: POST https://api.resend.com/emails "HTTP/1.1 200 OK"
-2026-04-21T14:30:02.829481806Z [error] 2026-04-21 14:30:02,599 [INFO] app.ops.tools.alerter: Email alert sent to shlok@basisprotocol.xyz
-2026-04-21T14:30:02.829485713Z [error] 2026-04-21 14:30:02,638 [INFO] httpx: HTTP Request: POST https://api.resend.com/emails "HTTP/1.1 200 OK"
-2026-04-21T14:30:02.829489544Z [error] 2026-04-21 14:30:02,638 [INFO] app.ops.tools.alerter: Email alert sent to shlok@basisprotocol.xyz
-2026-04-21T14:30:02.829512877Z [error] INFO:     Application startup complete.
-2026-04-21T14:30:02.841698638Z [error] INFO:     Application startup complete.
-2026-04-21T14:30:03.367209499Z [info] INFO:     100.64.0.3:20066 - "POST /api/ops/health/check HTTP/1.1" 200 OK
-2026-04-21T14:30:23.365716362Z [info] INFO:     100.64.0.4:40416 - "GET /api/health HTTP/1.1" 200 OK
-2026-04-21T14:30:23.365723158Z [error] 2026-04-21 14:30:22,094 [INFO] httpx: HTTP Request: GET https://basisprotocol.xyz/api/health "HTTP/1.1 200 "
-2026-04-21T14:30:43.366261960Z [error] 2026-04-21 14:30:38,336 [WARNING] app.report: _get_holder_concentration_trend(usdc) failed: relation "concentration_snapshots" does not exist
-2026-04-21T14:30:43.366268995Z [error] LINE 4:             FROM concentration_snapshots
-2026-04-21T14:30:43.366273844Z [error]                          ^
-2026-04-21T14:30:43.366278175Z [error] 
-2026-04-21T14:30:43.366283339Z [info] INFO:     100.64.0.5:50830 - "GET /api/reports/stablecoin/usdc?template=sbt_metadata HTTP/1.1" 200 OK
-2026-04-21T14:30:43.366287138Z [error] 2026-04-21 14:30:38,968 [INFO] httpx: HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/usdc?template=sbt_metadata "HTTP/1.1 200 "
-2026-04-21T14:30:43.366290385Z [error] 2026-04-21 14:30:40,970 [INFO] httpx: HTTP Request: POST https://api.resend.com/emails "HTTP/1.1 200 OK"
-2026-04-21T14:30:43.366293971Z [error] 2026-04-21 14:30:40,970 [INFO] app.ops.tools.alerter: Email alert sent to shlok@basisprotocol.xyz
-2026-04-21T14:30:47.909745093Z [info] INFO:     100.64.0.5:18554 - "GET /api/scores HTTP/1.1" 200 OK
-2026-04-21T14:30:48.210410284Z [info] INFO:     100.64.0.6:20336 - "GET /api/psi/scores HTTP/1.1" 200 OK
-2026-04-21T14:30:50.891076070Z [error] 2026-04-21 14:30:50,731 [WARNING] app.report: _get_holder_concentration_trend(USDC) failed: relation "concentration_snapshots" does not exist
-2026-04-21T14:30:50.891086095Z [error] LINE 4:             FROM concentration_snapshots
-2026-04-21T14:30:50.891097308Z [error]                          ^
-2026-04-21T14:30:50.891104647Z [error] 
-2026-04-21T14:30:51.344176705Z [info] INFO:     100.64.0.7:11856 - "GET /api/reports/stablecoin/USDC?format=json HTTP/1.1" 200 OK
-2026-04-21T14:30:53.907563324Z [error] LINE 4:             FROM concentration_snapshots
-2026-04-21T14:30:53.907573083Z [error]                          ^
-2026-04-21T14:30:53.907578145Z [error] 
-2026-04-21T14:30:53.907638722Z [error] 2026-04-21 14:30:53,794 [WARNING] app.report: _get_holder_concentration_trend(USDT) failed: relation "concentration_snapshots" does not exist
-2026-04-21T14:30:54.412049563Z [info] INFO:     100.64.0.6:20336 - "GET /api/reports/stablecoin/USDT?format=json HTTP/1.1" 200 OK
-2026-04-21T14:30:56.882463134Z [error] 2026-04-21 14:30:56,849 [WARNING] app.report: _get_holder_concentration_trend(USD1) failed: relation "concentration_snapshots" does not exist
-2026-04-21T14:30:56.882468319Z [error] LINE 4:             FROM concentration_snapshots
-2026-04-21T14:30:56.882472996Z [error]                          ^
-2026-04-21T14:30:56.882478998Z [error] 
-2026-04-21T14:30:57.462380010Z [info] INFO:     100.64.0.5:18568 - "GET /api/reports/stablecoin/USD1?format=json HTTP/1.1" 200 OK
-2026-04-21T14:30:59.905603183Z [error] 2026-04-21 14:30:59,904 [WARNING] app.report: _get_holder_concentration_trend(DAI) failed: relation "concentration_snapshots" does not exist
-2026-04-21T14:30:59.905624584Z [error] LINE 4:             FROM concentration_snapshots
-2026-04-21T14:30:59.905628952Z [error]                          ^
-2026-04-21T14:30:59.905632712Z [error] 
-2026-04-21T14:31:00.515877765Z [info] INFO:     100.64.0.8:50218 - "GET /api/reports/stablecoin/DAI?format=json HTTP/1.1" 200 OK
-2026-04-21T14:31:02.962037279Z [error] 2026-04-21 14:31:02,959 [WARNING] app.report: _get_holder_concentration_trend(crvUSD) failed: relation "concentration_snapshots" does not exist
-2026-04-21T14:31:02.962042810Z [error] LINE 4:             FROM concentration_snapshots
-2026-04-21T14:31:02.962046627Z [error]                          ^
-2026-04-21T14:31:02.962050819Z [error] 
-2026-04-21T14:31:03.961289249Z [info] INFO:     100.64.0.7:27628 - "GET /api/reports/stablecoin/crvUSD?format=json HTTP/1.1" 200 OK
-2026-04-21T14:31:06.081562648Z [error] 2026-04-21 14:31:06,080 [WARNING] app.report: _get_holder_concentration_trend(GHO) failed: relation "concentration_snapshots" does not exist
-2026-04-21T14:31:06.081566835Z [error] LINE 4:             FROM concentration_snapshots
-2026-04-21T14:31:06.081570512Z [error]                          ^
-2026-04-21T14:31:06.081574486Z [error] 
-2026-04-21T14:31:06.898705483Z [info] INFO:     100.64.0.9:59816 - "GET /api/reports/stablecoin/GHO?format=json HTTP/1.1" 200 OK
-2026-04-21T14:31:09.179693281Z [error] 2026-04-21 14:31:09,177 [WARNING] app.report: _get_holder_concentration_trend(RLUSD) failed: relation "concentration_snapshots" does not exist
-2026-04-21T14:31:09.179699700Z [error] LINE 4:             FROM concentration_snapshots
-2026-04-21T14:31:09.179704430Z [error]                          ^
-2026-04-21T14:31:09.179709646Z [error] 
-2026-04-21T14:31:09.899718063Z [info] INFO:     100.64.0.5:36528 - "GET /api/reports/stablecoin/RLUSD?format=json HTTP/1.1" 200 OK
-2026-04-21T14:31:12.276943899Z [error] 2026-04-21 14:31:12,275 [WARNING] app.report: _get_holder_concentration_trend(USDS) failed: relation "concentration_snapshots" does not exist
-2026-04-21T14:31:12.276950648Z [error] LINE 4:             FROM concentration_snapshots
-2026-04-21T14:31:12.276954801Z [error]                          ^
-2026-04-21T14:31:12.276959402Z [error] 
-2026-04-21T14:31:12.914441767Z [info] INFO:     100.64.0.4:19004 - "GET /api/reports/stablecoin/USDS?format=json HTTP/1.1" 200 OK
-2026-04-21T14:31:15.334180117Z [error] 2026-04-21 14:31:15,331 [WARNING] app.report: _get_holder_concentration_trend(USDe) failed: relation "concentration_snapshots" does not exist
-2026-04-21T14:31:15.334183376Z [error] LINE 4:             FROM concentration_snapshots
-2026-04-21T14:31:15.334186583Z [error]                          ^
-2026-04-21T14:31:15.334190127Z [error] 
-2026-04-21T14:31:15.903205331Z [info] INFO:     100.64.0.10:42094 - "GET / HTTP/1.1" 200 OK
-2026-04-21T14:31:15.950217910Z [info] INFO:     100.64.0.8:21836 - "GET /api/reports/stablecoin/USDe?format=json HTTP/1.1" 200 OK
-2026-04-21T14:31:18.402720756Z [error] 2026-04-21 14:31:18,399 [WARNING] app.report: _get_holder_concentration_trend(PYUSD) failed: relation "concentration_snapshots" does not exist
-2026-04-21T14:31:18.402725039Z [error] LINE 4:             FROM concentration_snapshots
-2026-04-21T14:31:18.402728929Z [error]                          ^
-2026-04-21T14:31:18.402732830Z [error] 
-2026-04-21T14:31:18.921841164Z [info] INFO:     100.64.0.11:53512 - "POST /api/ops/keeper-cycle/start HTTP/1.1" 200 OK
-2026-04-21T14:31:19.010942569Z [info] INFO:     100.64.0.9:11122 - "GET /api/reports/stablecoin/PYUSD?format=json HTTP/1.1" 200 OK
-2026-04-21T14:31:19.364871252Z [info] INFO:     100.64.0.12:28632 - "GET /api/scores HTTP/1.1" 200 OK
 2026-04-21T14:31:20.211951886Z [info] INFO:     100.64.0.13:30748 - "POST /api/ops/keeper-cycle/336/complete HTTP/1.1" 200 OK
 2026-04-21T14:31:21.456119444Z [error] 2026-04-21 14:31:21,454 [WARNING] app.report: _get_holder_concentration_trend(TUSD) failed: relation "concentration_snapshots" does not exist
 2026-04-21T14:31:21.456125078Z [error] LINE 4:             FROM concentration_snapshots
@@ -1930,6 +1787,7 @@
 2026-04-21T15:34:47.379223175Z [error] 2026-04-21 15:34:47,038 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00614f20ab9b39b85370221161473e611f43d148/token-balances "HTTP/1.1 200 OK"
 2026-04-21T15:34:47.425568087Z [error] 2026-04-21 15:34:47,424 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00615ede49f83c50ed586390173859b346e7309e/token-balances "HTTP/1.1 200 OK"
 2026-04-21T15:34:47.803544004Z [error] 2026-04-21 15:34:47,800 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00617eee00182fd54987f1d5ba48dc7c4bfe3cca/token-balances "HTTP/1.1 200 OK"
+2026-04-21T15:34:47.805469357Z [error] 2026-04-21 15:34:47,803 [INFO] app.indexer.scanner: Batch scan [Blockscout]: 300 wallets with holdings, 33 contracts matched, 71 addresses failed
 2026-04-21T15:34:47.805475867Z [error] 2026-04-21 15:34:47,804 [INFO] app.indexer.scanner: Batch scan complete: 500 API calls, 71 failures, 300 wallets with holdings out of 500 total, 200 wallets deferred for retry
 2026-04-21T15:34:47.805479376Z [error] 2026-04-21 15:34:47,804 [INFO] basis.reindex: Scan complete: 300 wallets with holdings, 71 batch failures, 500 API calls, 200 wallets deferred for retry
 2026-04-21T15:34:47.805482880Z [error] 2026-04-21 15:34:47,804 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
@@ -1940,14 +1798,21 @@
 2026-04-21T15:34:48.876787927Z [error] 2026-04-21 15:34:48,874 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
 2026-04-21T15:34:49.903852757Z [error] 2026-04-21 15:34:49,901 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
 2026-04-21T15:34:49.903858633Z [error] 2026-04-21 15:34:49,901 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-21T15:34:49.903863997Z [error] 2026-04-21 15:34:49,901 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-21T15:34:49.903869412Z [error] 2026-04-21 15:34:49,901 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
 2026-04-21T15:34:49.903869540Z [error] 2026-04-21 15:34:49,901 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-21T15:34:49.903873800Z [error] 2026-04-21 15:34:49,901 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-21T15:34:49.903877364Z [error] 2026-04-21 15:34:49,901 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-21T15:34:49.903880024Z [error] 2026-04-21 15:34:49,901 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
 2026-04-21T15:34:49.903886335Z [error] 2026-04-21 15:34:49,901 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
 2026-04-21T15:34:49.903890392Z [error] 2026-04-21 15:34:49,901 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-21T15:34:49.903893968Z [error] 2026-04-21 15:34:49,901 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
 2026-04-21T15:34:49.903897848Z [error] 2026-04-21 15:34:49,901 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
 2026-04-21T15:34:49.903901664Z [error] 2026-04-21 15:34:49,901 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
 2026-04-21T15:34:51.924199516Z [error] 2026-04-21 15:34:51,922 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
 2026-04-21T15:34:51.924207494Z [error] 2026-04-21 15:34:51,922 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
 2026-04-21T15:34:51.924211989Z [error] 2026-04-21 15:34:51,922 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-21T15:34:51.924215517Z [error] 2026-04-21 15:34:51,922 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
 2026-04-21T15:34:51.924219799Z [error] 2026-04-21 15:34:51,922 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
 2026-04-21T15:34:51.924223381Z [error] 2026-04-21 15:34:51,922 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
 2026-04-21T15:34:51.924226906Z [error] 2026-04-21 15:34:51,922 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
@@ -1958,15 +1823,19 @@
 2026-04-21T15:34:52.934106252Z [error] 2026-04-21 15:34:52,932 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
 2026-04-21T15:34:53.943579827Z [error] 2026-04-21 15:34:53,941 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
 2026-04-21T15:34:53.943586171Z [error] 2026-04-21 15:34:53,941 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-21T15:34:57.983961641Z [error] 2026-04-21 15:34:57,980 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
 2026-04-21T15:34:57.983968615Z [error] 2026-04-21 15:34:57,980 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
 2026-04-21T15:34:57.983972620Z [error] 2026-04-21 15:34:57,980 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
 2026-04-21T15:34:57.983976575Z [error] 2026-04-21 15:34:57,980 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
 2026-04-21T15:34:57.983980174Z [error] 2026-04-21 15:34:57,980 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-21T15:34:57.983983883Z [error] 2026-04-21 15:34:57,980 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
 2026-04-21T15:34:57.983987398Z [error] 2026-04-21 15:34:57,980 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
 2026-04-21T15:34:57.983992009Z [error] 2026-04-21 15:34:57,980 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
 2026-04-21T15:34:57.983995371Z [error] 2026-04-21 15:34:57,980 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
 2026-04-21T15:35:03.415247660Z [error] 2026-04-21 15:35:03,413 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-21T15:35:23.433787054Z [error] 2026-04-21 15:35:17,698 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
 2026-04-21T15:35:30.766557536Z [error] 2026-04-21 15:35:30,764 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-21T15:35:30.766563116Z [error] 2026-04-21 15:35:30,764 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
 2026-04-21T15:35:32.447155570Z [error] 2026-04-21 15:35:32,175 [INFO] basis.reindex: Skipping 0x00000010… — API failed, will retry next cycle
 2026-04-21T15:35:36.448337565Z [error] 2026-04-21 15:35:36,197 [INFO] basis.reindex: Skipping 0x0000007c… — API failed, will retry next cycle
 2026-04-21T15:35:41.626344125Z [error] 2026-04-21 15:35:41,623 [INFO] basis.reindex: Skipping 0x000000fe… — API failed, will retry next cycle
@@ -1976,3 +1845,157 @@
 2026-04-21T15:35:45.049911837Z [error] 2026-04-21 15:35:45,048 [INFO] basis.reindex: Skipping 0x0000141e… — API failed, will retry next cycle
 2026-04-21T15:35:46.459793075Z [error] 2026-04-21 15:35:46,457 [INFO] basis.reindex: Skipping 0x000025c3… — API failed, will retry next cycle
 2026-04-21T15:35:46.459799740Z [error] 2026-04-21 15:35:46,457 [INFO] basis.reindex: Skipping 0x000027c4… — API failed, will retry next cycle
+2026-04-21T15:35:47.867471301Z [error] 2026-04-21 15:35:47,865 [INFO] basis.reindex: Skipping 0x0000428d… — API failed, will retry next cycle
+2026-04-21T15:35:47.867479816Z [error] 2026-04-21 15:35:47,865 [INFO] basis.reindex: Skipping 0x000048d9… — API failed, will retry next cycle
+2026-04-21T15:35:48.877680223Z [error] 2026-04-21 15:35:48,874 [INFO] basis.reindex: Skipping 0x00006984… — API failed, will retry next cycle
+2026-04-21T15:35:50.466000618Z [error] 2026-04-21 15:35:50,283 [INFO] basis.reindex: Skipping 0x00009b30… — API failed, will retry next cycle
+2026-04-21T15:35:50.466005687Z [error] 2026-04-21 15:35:50,283 [INFO] basis.reindex: Skipping 0x0000b064… — API failed, will retry next cycle
+2026-04-21T15:35:54.516049807Z [error] 2026-04-21 15:35:54,512 [INFO] basis.reindex: Skipping 0x0000eb4a… — API failed, will retry next cycle
+2026-04-21T15:35:59.456660503Z [error] 2026-04-21 15:35:59,135 [INFO] basis.reindex: Skipping 0x0001d6e3… — API failed, will retry next cycle
+2026-04-21T15:35:59.456665049Z [error] 2026-04-21 15:35:59,135 [INFO] basis.reindex: Skipping 0x0001e294… — API failed, will retry next cycle
+2026-04-21T15:36:00.545648996Z [error] 2026-04-21 15:36:00,543 [INFO] basis.reindex: Skipping 0x00023d3b… — API failed, will retry next cycle
+2026-04-21T15:36:00.545655271Z [error] 2026-04-21 15:36:00,543 [INFO] basis.reindex: Skipping 0x000241e9… — API failed, will retry next cycle
+2026-04-21T15:36:00.545660227Z [error] 2026-04-21 15:36:00,543 [INFO] basis.reindex: Skipping 0x00024eac… — API failed, will retry next cycle
+2026-04-21T15:36:03.964371350Z [error] 2026-04-21 15:36:03,962 [INFO] basis.reindex: Skipping 0x0002d2b2… — API failed, will retry next cycle
+2026-04-21T15:36:05.484614934Z [error] 2026-04-21 15:36:05,369 [INFO] basis.reindex: Skipping 0x0003354a… — API failed, will retry next cycle
+2026-04-21T15:36:05.484618643Z [error] 2026-04-21 15:36:05,369 [INFO] basis.reindex: Skipping 0x0003d7bf… — API failed, will retry next cycle
+2026-04-21T15:36:06.482885583Z [error] 2026-04-21 15:36:06,384 [INFO] basis.reindex: Skipping 0x00045e86… — API failed, will retry next cycle
+2026-04-21T15:36:09.521854008Z [error] 2026-04-21 15:36:09,199 [INFO] basis.reindex: Skipping 0x00049d51… — API failed, will retry next cycle
+2026-04-21T15:36:09.521862660Z [error] 2026-04-21 15:36:09,199 [INFO] basis.reindex: Skipping 0x000533f5… — API failed, will retry next cycle
+2026-04-21T15:36:09.521866900Z [error] 2026-04-21 15:36:09,199 [INFO] basis.reindex: Skipping 0x00054e86… — API failed, will retry next cycle
+2026-04-21T15:36:10.482938119Z [error] 2026-04-21 15:36:10,208 [INFO] basis.reindex: Skipping 0x0005d9d7… — API failed, will retry next cycle
+2026-04-21T15:36:10.482944171Z [error] 2026-04-21 15:36:10,208 [INFO] basis.reindex: Skipping 0x0005dfe5… — API failed, will retry next cycle
+2026-04-21T15:36:10.482948955Z [error] 2026-04-21 15:36:10,208 [INFO] basis.reindex: Skipping 0x0005fc38… — API failed, will retry next cycle
+2026-04-21T15:36:10.482954795Z [error] 2026-04-21 15:36:10,208 [INFO] basis.reindex: Skipping 0x000697af… — API failed, will retry next cycle
+2026-04-21T15:36:10.482958304Z [error] 2026-04-21 15:36:10,208 [INFO] basis.reindex: Skipping 0x0006a97a… — API failed, will retry next cycle
+2026-04-21T15:36:13.482197060Z [error] 2026-04-21 15:36:13,238 [INFO] basis.reindex: Skipping 0x000789cb… — API failed, will retry next cycle
+2026-04-21T15:36:13.482202869Z [error] 2026-04-21 15:36:13,238 [INFO] basis.reindex: Skipping 0x00079a80… — API failed, will retry next cycle
+2026-04-21T15:36:13.482207547Z [error] 2026-04-21 15:36:13,238 [INFO] basis.reindex: Skipping 0x00079c59… — API failed, will retry next cycle
+2026-04-21T15:36:13.482331199Z [error] 2026-04-21 15:36:13,238 [INFO] basis.reindex: Skipping 0x000781e8… — API failed, will retry next cycle
+2026-04-21T15:36:15.050899201Z [error] 2026-04-21 15:36:15,049 [INFO] basis.reindex: Skipping 0x0007f1b7… — API failed, will retry next cycle
+2026-04-21T15:36:17.064396891Z [error] 2026-04-21 15:36:17,062 [INFO] basis.reindex: Skipping 0x0008bf4d… — API failed, will retry next cycle
+2026-04-21T15:36:17.064403267Z [error] 2026-04-21 15:36:17,062 [INFO] basis.reindex: Skipping 0x0008ce60… — API failed, will retry next cycle
+2026-04-21T15:36:17.064408020Z [error] 2026-04-21 15:36:17,062 [INFO] basis.reindex: Skipping 0x0008d880… — API failed, will retry next cycle
+2026-04-21T15:36:17.064411913Z [error] 2026-04-21 15:36:17,062 [INFO] basis.reindex: Skipping 0x0008e3a7… — API failed, will retry next cycle
+2026-04-21T15:36:17.064416421Z [error] 2026-04-21 15:36:17,062 [INFO] basis.reindex: Skipping 0x00091f3c… — API failed, will retry next cycle
+2026-04-21T15:36:19.077261026Z [error] 2026-04-21 15:36:19,075 [INFO] basis.reindex: Skipping 0x000a6dbe… — API failed, will retry next cycle
+2026-04-21T15:36:19.077266862Z [error] 2026-04-21 15:36:19,075 [INFO] basis.reindex: Skipping 0x000acc80… — API failed, will retry next cycle
+2026-04-21T15:36:19.077270699Z [error] 2026-04-21 15:36:19,075 [INFO] basis.reindex: Skipping 0x000aeb17… — API failed, will retry next cycle
+2026-04-21T15:36:19.077275141Z [error] 2026-04-21 15:36:19,075 [INFO] basis.reindex: Skipping 0x000afa7a… — API failed, will retry next cycle
+2026-04-21T15:36:19.077278805Z [error] 2026-04-21 15:36:19,076 [INFO] basis.reindex: Skipping 0x000b1d6f… — API failed, will retry next cycle
+2026-04-21T15:36:19.077282028Z [error] 2026-04-21 15:36:19,076 [INFO] basis.reindex: Skipping 0x000b77e3… — API failed, will retry next cycle
+2026-04-21T15:36:20.086292600Z [error] 2026-04-21 15:36:20,084 [INFO] basis.reindex: Skipping 0x000bdcea… — API failed, will retry next cycle
+2026-04-21T15:36:20.086301210Z [error] 2026-04-21 15:36:20,084 [INFO] basis.reindex: Skipping 0x000be342… — API failed, will retry next cycle
+2026-04-21T15:36:20.086305906Z [error] 2026-04-21 15:36:20,084 [INFO] basis.reindex: Skipping 0x000bfa64… — API failed, will retry next cycle
+2026-04-21T15:36:21.507413684Z [error] 2026-04-21 15:36:21,493 [INFO] basis.reindex: Skipping 0x000d0555… — API failed, will retry next cycle
+2026-04-21T15:36:21.507417087Z [error] 2026-04-21 15:36:21,493 [INFO] basis.reindex: Skipping 0x000d1070… — API failed, will retry next cycle
+2026-04-21T15:36:22.516811122Z [error] 2026-04-21 15:36:22,500 [INFO] basis.reindex: Skipping 0x000d4fdd… — API failed, will retry next cycle
+2026-04-21T15:36:24.512897141Z [error] 2026-04-21 15:36:24,510 [INFO] basis.reindex: Skipping 0x000dc0d8… — API failed, will retry next cycle
+2026-04-21T15:36:25.519026636Z [error] 2026-04-21 15:36:25,516 [INFO] basis.reindex: Skipping 0x000ddde4… — API failed, will retry next cycle
+2026-04-21T15:36:25.519030696Z [error] 2026-04-21 15:36:25,516 [INFO] basis.reindex: Skipping 0x000e6b9f… — API failed, will retry next cycle
+2026-04-21T15:36:28.545499311Z [error] 2026-04-21 15:36:28,542 [INFO] basis.reindex: Skipping 0x000ee2b0… — API failed, will retry next cycle
+2026-04-21T15:36:28.545503040Z [error] 2026-04-21 15:36:28,542 [INFO] basis.reindex: Skipping 0x000f22ee… — API failed, will retry next cycle
+2026-04-21T15:36:28.545507565Z [error] 2026-04-21 15:36:28,542 [INFO] basis.reindex: Skipping 0x000fb135… — API failed, will retry next cycle
+2026-04-21T15:36:29.552432190Z [error] 2026-04-21 15:36:29,550 [INFO] basis.reindex: Skipping 0x000fb836… — API failed, will retry next cycle
+2026-04-21T15:36:30.556609395Z [error] 2026-04-21 15:36:30,553 [INFO] basis.reindex: Skipping 0x000feb07… — API failed, will retry next cycle
+2026-04-21T15:36:30.556615046Z [error] 2026-04-21 15:36:30,554 [INFO] basis.reindex: Skipping 0x00102136… — API failed, will retry next cycle
+2026-04-21T15:36:30.556621332Z [error] 2026-04-21 15:36:30,554 [INFO] basis.reindex: Skipping 0x0010310c… — API failed, will retry next cycle
+2026-04-21T15:36:30.556624940Z [error] 2026-04-21 15:36:30,554 [INFO] basis.reindex: Skipping 0x001059a4… — API failed, will retry next cycle
+2026-04-21T15:36:30.556628514Z [error] 2026-04-21 15:36:30,554 [INFO] basis.reindex: Skipping 0x00106dd4… — API failed, will retry next cycle
+2026-04-21T15:36:30.556631752Z [error] 2026-04-21 15:36:30,554 [INFO] basis.reindex: Skipping 0x0010b660… — API failed, will retry next cycle
+2026-04-21T15:36:31.564813658Z [error] 2026-04-21 15:36:31,562 [INFO] basis.reindex: Skipping 0x001150c0… — API failed, will retry next cycle
+2026-04-21T15:36:31.564821198Z [error] 2026-04-21 15:36:31,562 [INFO] basis.reindex: Skipping 0x0011588d… — API failed, will retry next cycle
+2026-04-21T15:36:34.586231579Z [error] 2026-04-21 15:36:34,584 [INFO] basis.reindex: Skipping 0x0011f92d… — API failed, will retry next cycle
+2026-04-21T15:36:35.592739295Z [error] 2026-04-21 15:36:35,591 [INFO] basis.reindex: Skipping 0x001380d2… — API failed, will retry next cycle
+2026-04-21T15:36:35.592745448Z [error] 2026-04-21 15:36:35,591 [INFO] basis.reindex: Skipping 0x001384e3… — API failed, will retry next cycle
+2026-04-21T15:36:35.592749778Z [error] 2026-04-21 15:36:35,591 [INFO] basis.reindex: Skipping 0x00139cb8… — API failed, will retry next cycle
+2026-04-21T15:36:35.592754973Z [error] 2026-04-21 15:36:35,591 [INFO] basis.reindex: Skipping 0x00142daf… — API failed, will retry next cycle
+2026-04-21T15:36:35.592758548Z [error] 2026-04-21 15:36:35,591 [INFO] basis.reindex: Skipping 0x0014375b… — API failed, will retry next cycle
+2026-04-21T15:36:37.005280662Z [error] 2026-04-21 15:36:37,003 [INFO] basis.reindex: Skipping 0x00147f21… — API failed, will retry next cycle
+2026-04-21T15:36:37.005288567Z [error] 2026-04-21 15:36:37,003 [INFO] basis.reindex: Skipping 0x0014ea9b… — API failed, will retry next cycle
+2026-04-21T15:36:37.005293049Z [error] 2026-04-21 15:36:37,003 [INFO] basis.reindex: Skipping 0x001534b6… — API failed, will retry next cycle
+2026-04-21T15:36:37.005296761Z [error] 2026-04-21 15:36:37,003 [INFO] basis.reindex: Skipping 0x001534e0… — API failed, will retry next cycle
+2026-04-21T15:36:37.005301124Z [error] 2026-04-21 15:36:37,003 [INFO] basis.reindex: Skipping 0x00157268… — API failed, will retry next cycle
+2026-04-21T15:36:37.005305413Z [error] 2026-04-21 15:36:37,003 [INFO] basis.reindex: Skipping 0x00157b13… — API failed, will retry next cycle
+2026-04-21T15:36:37.005309683Z [error] 2026-04-21 15:36:37,003 [INFO] basis.reindex: Skipping 0x00158a74… — API failed, will retry next cycle
+2026-04-21T15:36:37.005313738Z [error] 2026-04-21 15:36:37,003 [INFO] basis.reindex: Skipping 0x0015ccf4… — API failed, will retry next cycle
+2026-04-21T15:36:38.508304522Z [error] 2026-04-21 15:36:38,412 [INFO] basis.reindex: Skipping 0x0015fbce… — API failed, will retry next cycle
+2026-04-21T15:36:39.557447285Z [error] 2026-04-21 15:36:39,421 [INFO] basis.reindex: Skipping 0x0016c108… — API failed, will retry next cycle
+2026-04-21T15:36:41.523764335Z [error] 2026-04-21 15:36:41,433 [INFO] basis.reindex: Skipping 0x0016fb3b… — API failed, will retry next cycle
+2026-04-21T15:36:42.522555446Z [error] 2026-04-21 15:36:42,440 [INFO] basis.reindex: Skipping 0x00175c79… — API failed, will retry next cycle
+2026-04-21T15:36:43.537257448Z [error] 2026-04-21 15:36:43,450 [INFO] basis.reindex: Skipping 0x0018406e… — API failed, will retry next cycle
+2026-04-21T15:36:43.537264256Z [error] 2026-04-21 15:36:43,450 [INFO] basis.reindex: Skipping 0x00185885… — API failed, will retry next cycle
+2026-04-21T15:36:43.537270667Z [error] 2026-04-21 15:36:43,450 [INFO] basis.reindex: Skipping 0x00181f73… — API failed, will retry next cycle
+2026-04-21T15:36:43.537270825Z [error] 2026-04-21 15:36:43,450 [INFO] basis.reindex: Skipping 0x00188fe8… — API failed, will retry next cycle
+2026-04-21T15:36:43.537276559Z [error] 2026-04-21 15:36:43,450 [INFO] basis.reindex: Skipping 0x001824df… — API failed, will retry next cycle
+2026-04-21T15:36:43.537276980Z [error] 2026-04-21 15:36:43,450 [INFO] basis.reindex: Skipping 0x0018951d… — API failed, will retry next cycle
+2026-04-21T15:36:43.537280793Z [error] 2026-04-21 15:36:43,450 [INFO] basis.reindex: Skipping 0x00183f4d… — API failed, will retry next cycle
+2026-04-21T15:36:44.512551410Z [error] 2026-04-21 15:36:44,458 [INFO] basis.reindex: Skipping 0x0018b733… — API failed, will retry next cycle
+2026-04-21T15:36:44.512556571Z [error] 2026-04-21 15:36:44,458 [INFO] basis.reindex: Skipping 0x0018e89f… — API failed, will retry next cycle
+2026-04-21T15:36:44.512561642Z [error] 2026-04-21 15:36:44,458 [INFO] basis.reindex: Skipping 0x0018ee99… — API failed, will retry next cycle
+2026-04-21T15:36:45.513011104Z [error] 2026-04-21 15:36:45,467 [INFO] basis.reindex: Skipping 0x00193732… — API failed, will retry next cycle
+2026-04-21T15:36:45.513015605Z [error] 2026-04-21 15:36:45,467 [INFO] basis.reindex: Skipping 0x0019545c… — API failed, will retry next cycle
+2026-04-21T15:36:51.543534770Z [error] 2026-04-21 15:36:51,311 [INFO] basis.reindex: Skipping 0x001a43d6… — API failed, will retry next cycle
+2026-04-21T15:36:53.536217359Z [error] 2026-04-21 15:36:53,322 [INFO] basis.reindex: Skipping 0x001a9849… — API failed, will retry next cycle
+2026-04-21T15:36:54.542336172Z [error] 2026-04-21 15:36:54,329 [INFO] basis.reindex: Skipping 0x001addeb… — API failed, will retry next cycle
+2026-04-21T15:36:58.549513983Z [error] 2026-04-21 15:36:58,357 [INFO] basis.reindex: Skipping 0x001ccb4a… — API failed, will retry next cycle
+2026-04-21T15:36:58.549520862Z [error] 2026-04-21 15:36:58,357 [INFO] basis.reindex: Skipping 0x001d0202… — API failed, will retry next cycle
+2026-04-21T15:36:58.549525155Z [error] 2026-04-21 15:36:58,357 [INFO] basis.reindex: Skipping 0x001dc5ac… — API failed, will retry next cycle
+2026-04-21T15:36:58.549581754Z [error] 2026-04-21 15:36:58,357 [INFO] basis.reindex: Skipping 0x001fadb5… — API failed, will retry next cycle
+2026-04-21T15:36:58.549587876Z [error] 2026-04-21 15:36:58,357 [INFO] basis.reindex: Skipping 0x001fbcd3… — API failed, will retry next cycle
+2026-04-21T15:36:58.549587932Z [error] 2026-04-21 15:36:58,357 [INFO] basis.reindex: Skipping 0x001fd983… — API failed, will retry next cycle
+2026-04-21T15:36:58.549589998Z [error] 2026-04-21 15:36:58,357 [INFO] basis.reindex: Skipping 0x001de8cc… — API failed, will retry next cycle
+2026-04-21T15:36:58.549595250Z [error] 2026-04-21 15:36:58,357 [INFO] basis.reindex: Skipping 0x001ec4e8… — API failed, will retry next cycle
+2026-04-21T15:36:58.549598107Z [error] 2026-04-21 15:36:58,357 [INFO] basis.reindex: Skipping 0x001e59ed… — API failed, will retry next cycle
+2026-04-21T15:36:58.549604700Z [error] 2026-04-21 15:36:58,357 [INFO] basis.reindex: Skipping 0x001eb8be… — API failed, will retry next cycle
+2026-04-21T15:36:58.549606892Z [error] 2026-04-21 15:36:58,357 [INFO] basis.reindex: Skipping 0x001f19d2… — API failed, will retry next cycle
+2026-04-21T15:36:58.549612074Z [error] 2026-04-21 15:36:58,357 [INFO] basis.reindex: Skipping 0x001f341c… — API failed, will retry next cycle
+2026-04-21T15:37:00.538559165Z [error] 2026-04-21 15:37:00,371 [INFO] basis.reindex: Skipping 0x00213bd5… — API failed, will retry next cycle
+2026-04-21T15:37:00.538562323Z [error] 2026-04-21 15:37:00,371 [INFO] basis.reindex: Skipping 0x00214fb2… — API failed, will retry next cycle
+2026-04-21T15:37:00.538565554Z [error] 2026-04-21 15:37:00,371 [INFO] basis.reindex: Skipping 0x002156a2… — API failed, will retry next cycle
+2026-04-21T15:37:03.993703735Z [error] 2026-04-21 15:37:03,992 [INFO] basis.reindex: Skipping 0x0024c8a4… — API failed, will retry next cycle
+2026-04-21T15:37:05.813393534Z [error] 2026-04-21 15:37:05,812 [INFO] basis.reindex: Skipping 0x002599da… — API failed, will retry next cycle
+2026-04-21T15:37:06.157451445Z [error] 2026-04-21 15:37:06,155 [WARNING] app.database: Connection failed liveness ping (attempt 1/2) — discarding and replacing: SSL connection has been closed unexpectedly
+2026-04-21T15:37:06.157456751Z [error] 
+2026-04-21T15:37:06.157460465Z [error] 2026-04-21 15:37:06,156 [WARNING] app.database: Connection failed liveness ping (attempt 2/2) — discarding and replacing: SSL connection has been closed unexpectedly
+2026-04-21T15:37:06.157463966Z [error] 
+2026-04-21T15:37:06.669455017Z [info] INFO:     100.64.0.43:60530 - "GET / HTTP/1.1" 200 OK
+2026-04-21T15:37:06.821275642Z [error] 2026-04-21 15:37:06,819 [INFO] basis.reindex: Skipping 0x0027966c… — API failed, will retry next cycle
+2026-04-21T15:37:08.576602779Z [error] 2026-04-21 15:37:08,230 [INFO] basis.reindex: Skipping 0x0028aa1e… — API failed, will retry next cycle
+2026-04-21T15:37:08.576608116Z [error] 2026-04-21 15:37:08,230 [INFO] basis.reindex: Skipping 0x002bb03b… — API failed, will retry next cycle
+2026-04-21T15:37:10.645429476Z [error] 2026-04-21 15:37:10,644 [INFO] basis.reindex: Skipping 0x002fca26… — API failed, will retry next cycle
+2026-04-21T15:37:12.664764606Z [error] 2026-04-21 15:37:12,661 [INFO] basis.reindex: Skipping 0x00323246… — API failed, will retry next cycle
+2026-04-21T15:37:12.664769901Z [error] 2026-04-21 15:37:12,662 [INFO] basis.reindex: Skipping 0x0033a5c0… — API failed, will retry next cycle
+2026-04-21T15:37:12.664774130Z [error] 2026-04-21 15:37:12,662 [INFO] basis.reindex: Skipping 0x003470c9… — API failed, will retry next cycle
+2026-04-21T15:37:19.598992802Z [error] 2026-04-21 15:37:19,301 [INFO] basis.reindex: Skipping 0x0036a966… — API failed, will retry next cycle
+2026-04-21T15:37:23.752700288Z [error] 2026-04-21 15:37:23,749 [INFO] basis.reindex: Skipping 0x003f60d4… — API failed, will retry next cycle
+2026-04-21T15:37:23.752707248Z [error] 2026-04-21 15:37:23,749 [INFO] basis.reindex: Skipping 0x00402adc… — API failed, will retry next cycle
+2026-04-21T15:37:23.752712949Z [error] 2026-04-21 15:37:23,749 [INFO] basis.reindex: Skipping 0x0040ea67… — API failed, will retry next cycle
+2026-04-21T15:37:23.752717721Z [error] 2026-04-21 15:37:23,749 [INFO] basis.reindex: Skipping 0x00415455… — API failed, will retry next cycle
+2026-04-21T15:37:26.166726818Z [error] 2026-04-21 15:37:26,164 [INFO] basis.reindex: Skipping 0x00446f19… — API failed, will retry next cycle
+2026-04-21T15:37:26.166733041Z [error] 2026-04-21 15:37:26,164 [INFO] basis.reindex: Skipping 0x0044E424… — API failed, will retry next cycle
+2026-04-21T15:37:27.173127450Z [error] 2026-04-21 15:37:27,170 [INFO] basis.reindex: Skipping 0x0045c351… — API failed, will retry next cycle
+2026-04-21T15:37:30.991850310Z [error] 2026-04-21 15:37:30,990 [INFO] basis.reindex: Skipping 0x0046f88e… — API failed, will retry next cycle
+2026-04-21T15:37:30.991856540Z [error] 2026-04-21 15:37:30,990 [INFO] basis.reindex: Skipping 0x004744f9… — API failed, will retry next cycle
+2026-04-21T15:37:30.991860917Z [error] 2026-04-21 15:37:30,990 [INFO] basis.reindex: Skipping 0x00479651… — API failed, will retry next cycle
+2026-04-21T15:37:33.577995875Z [error] 2026-04-21 15:37:33,422 [INFO] basis.reindex: Skipping 0x0048da56… — API failed, will retry next cycle
+2026-04-21T15:37:34.833111169Z [error] 2026-04-21 15:37:34,830 [INFO] basis.reindex: Skipping 0x004c9c3b… — API failed, will retry next cycle
+2026-04-21T15:37:35.841381345Z [error] 2026-04-21 15:37:35,837 [INFO] basis.reindex: Skipping 0x004dce64… — API failed, will retry next cycle
+2026-04-21T15:37:36.846487508Z [error] 2026-04-21 15:37:36,844 [INFO] basis.reindex: Skipping 0x0051242a… — API failed, will retry next cycle
+2026-04-21T15:37:40.879533671Z [error] 2026-04-21 15:37:40,878 [INFO] basis.reindex: Skipping 0x00544ea7… — API failed, will retry next cycle
+2026-04-21T15:37:40.879538761Z [error] 2026-04-21 15:37:40,878 [INFO] basis.reindex: Skipping 0x005452f2… — API failed, will retry next cycle
+2026-04-21T15:37:40.879542684Z [error] 2026-04-21 15:37:40,878 [INFO] basis.reindex: Skipping 0x005495a1… — API failed, will retry next cycle
+2026-04-21T15:37:41.885738118Z [error] 2026-04-21 15:37:41,884 [INFO] basis.reindex: Skipping 0x0055F421… — API failed, will retry next cycle
+2026-04-21T15:37:41.885744555Z [error] 2026-04-21 15:37:41,884 [INFO] basis.reindex: Skipping 0x005608ee… — API failed, will retry next cycle
+2026-04-21T15:37:41.885749644Z [error] 2026-04-21 15:37:41,884 [INFO] basis.reindex: Skipping 0x0056d4e5… — API failed, will retry next cycle
+2026-04-21T15:38:11.888914234Z [error] 2026-04-21 15:38:06,600 [INFO] basis.reindex: Skipping 0x00588e81… — API failed, will retry next cycle
+2026-04-21T15:38:13.843782092Z [error] 2026-04-21 15:38:13,841 [INFO] basis.reindex: Skipping 0x005923c6… — API failed, will retry next cycle
+2026-04-21T15:38:33.844592716Z [error] 2026-04-21 15:38:32,133 [INFO] basis.reindex: Skipping 0x005a4fe8… — API failed, will retry next cycle
+2026-04-21T15:38:53.844407579Z [error] 2026-04-21 15:38:47,199 [INFO] basis.reindex: Skipping 0x005ae9d3… — API failed, will retry next cycle
+2026-04-21T15:39:13.845432517Z [error] 2026-04-21 15:39:11,109 [INFO] basis.reindex: Skipping 0x005c27b6… — API failed, will retry next cycle
+2026-04-21T15:39:18.686270061Z [error] 2026-04-21 15:39:18,543 [INFO] basis.reindex: Skipping 0x005c6a60… — API failed, will retry next cycle
+2026-04-21T15:40:08.344142081Z [info] INFO:     100.64.0.19:48766 - "GET / HTTP/1.1" 200 OK
+2026-04-21T15:40:28.344653365Z [error] 2026-04-21 15:40:22,060 [INFO] basis.reindex: Skipping 0x005f0837… — API failed, will retry next cycle
+2026-04-21T15:41:18.350283993Z [error] 2026-04-21 15:41:10,887 [INFO] basis.reindex: === Batch Re-index Complete === indexed=300, scored=300, balances_updated=502, errors=200, batch_failures=71, elapsed=668s, remaining=34491
+2026-04-21T15:41:18.350289599Z [error] 2026-04-21 15:41:11,116 [INFO] app.state_attestation: State attested: domain=wallets entity=None records=1 hash=6cf6c9cc979c371d...
+2026-04-21T15:43:08.363187199Z [info] INFO:     100.64.0.16:16996 - "GET / HTTP/1.1" 200 OK
