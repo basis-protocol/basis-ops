@@ -1,1 +1,279 @@
-{"data":{"deploymentLogs":[]}}
+2026-04-22T16:04:23.350424046Z [error] 2026-04-22 16:04:22,805 [INFO] main: Initializing database pool...
+2026-04-22T16:04:23.350431066Z [error] 2026-04-22 16:04:22,805 [INFO] app.database: Database URL prefix: postgresql://neondb_owner:npg_ZQ7pTvYVNE1U@ep-soft...
+2026-04-22T16:04:23.350438174Z [error] 2026-04-22 16:04:22,757 [WARNING] app.server: x402 not installed — paid endpoints disabled. Run: pip install x402
+2026-04-22T16:04:23.469967710Z [error] 2026-04-22 16:04:23,462 [INFO] app.database: Database pool initialized (min=2, max=10, keepalives=on)
+2026-04-22T16:04:23.670967104Z [error] 2026-04-22 16:04:23,667 [INFO] main: Database connected ✓
+2026-04-22T16:04:23.876911810Z [error] 2026-04-22 16:04:23,873 [INFO] main: Migration 001_initial_schema already applied ✓
+2026-04-22T16:04:24.368137597Z [error] 2026-04-22 16:04:24,078 [INFO] main: Migration 002_import_governance already applied ✓
+2026-04-22T16:04:24.368141534Z [error] 2026-04-22 16:04:24,282 [INFO] main: Migration 006_add_usd1 already applied ✓
+2026-04-22T16:04:28.461711448Z [error] 2026-04-22 16:04:24,692 [INFO] main: Migration 011_token_type_column already applied ✓
+2026-04-22T16:04:28.461807384Z [error] 2026-04-22 16:04:24,487 [INFO] main: Migration 007_wallet_graph already applied ✓
+2026-04-22T16:04:28.463920733Z [error] 2026-04-22 16:04:24,897 [INFO] main: Migration 012_widen_symbol_columns already applied ✓
+2026-04-22T16:04:28.464550106Z [error] 2026-04-22 16:04:25,102 [INFO] main: Migration 013_api_usage already applied ✓
+2026-04-22T16:04:28.464554298Z [error] 2026-04-22 16:04:25,307 [INFO] main: Migration 014_assessment_events already applied ✓
+2026-04-22T16:04:31.064171870Z [info] Starting Container
+2026-04-22T16:04:53.551110195Z [error] 2026-04-22 16:04:44,843 [INFO] main: Database ready: 36 stablecoins registered ✓
+2026-04-22T16:04:53.551116151Z [error] 2026-04-22 16:04:44,843 [INFO] main: Worker disabled (set WORKER_ENABLED=true to enable)
+2026-04-22T16:04:53.551120595Z [error] 2026-04-22 16:04:44,013 [INFO] main: Applying migration: 097_alert_rate_limit...
+2026-04-22T16:04:53.551121770Z [error] 2026-04-22 16:04:44,854 [INFO] main: Starting API on port 8000
+2026-04-22T16:04:53.551124970Z [error] 2026-04-22 16:04:44,228 [INFO] app.database: Migration applied: /app/migrations/097_alert_rate_limit.sql
+2026-04-22T16:04:53.551128924Z [error] 2026-04-22 16:04:45,186 [WARNING] app.server: x402 not installed — paid endpoints disabled. Run: pip install x402
+2026-04-22T16:04:53.551131924Z [error] INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-04-22T16:04:53.551132763Z [error] 2026-04-22 16:04:44,843 [INFO] main: Keeper disabled (KEEPER_PRIVATE_KEY not set)
+2026-04-22T16:04:53.551138130Z [error] INFO:     Started parent process [1]
+2026-04-22T16:04:53.551139401Z [error] 2026-04-22 16:04:45,191 [WARNING] app.server: x402 not installed — paid endpoints disabled. Run: pip install x402
+2026-04-22T16:04:53.551142982Z [error] 2026-04-22 16:04:44,433 [INFO] main: Migration 097_alert_rate_limit applied ✓
+2026-04-22T16:04:53.551148182Z [error] INFO:     Started server process [5]
+2026-04-22T16:04:53.551150839Z [error] 2026-04-22 16:04:44,638 [ERROR] main: [migrations] 104 migration files, 99 recorded in DB
+2026-04-22T16:04:53.551183769Z [error] INFO:     Waiting for application startup.
+2026-04-22T16:04:53.551189095Z [error] INFO:     Started server process [4]
+2026-04-22T16:04:53.551273618Z [error] INFO:     Waiting for application startup.
+2026-04-22T16:04:53.551278324Z [error] 2026-04-22 16:04:45,262 [INFO] app.database: Database URL prefix: postgresql://neondb_owner:npg_ZQ7pTvYVNE1U@ep-soft...
+2026-04-22T16:04:53.551283027Z [error] 2026-04-22 16:04:45,262 [INFO] app.database: Database URL prefix: postgresql://neondb_owner:npg_ZQ7pTvYVNE1U@ep-soft...
+2026-04-22T16:04:53.553883207Z [error] 2026-04-22 16:04:45,890 [INFO] app.database: Database pool initialized (min=2, max=10, keepalives=on)
+2026-04-22T16:04:53.553887588Z [error] 2026-04-22 16:04:45,891 [INFO] app.database: Database pool initialized (min=2, max=10, keepalives=on)
+2026-04-22T16:05:16.489452021Z [error] 2026-04-22 16:04:47,950 [INFO] app.server: CDA issuer registry seeded (10 upserts attempted)
+2026-04-22T16:05:16.489522549Z [error] 2026-04-22 16:04:48,003 [INFO] app.server: CDA issuer registry seeded (10 upserts attempted)
+2026-04-22T16:05:16.491239744Z [error] 2026-04-22 16:04:48,427 [INFO] app.governance: Governance tables ready
+2026-04-22T16:05:16.491244043Z [error] 2026-04-22 16:04:48,427 [INFO] app.governance: Governance tables ready
+2026-04-22T16:05:16.491248476Z [error] 2026-04-22 16:04:48,429 [INFO] app.server: Governance intelligence routes registered
+2026-04-22T16:05:16.491252689Z [error] 2026-04-22 16:04:48,429 [INFO] app.server: Governance intelligence routes registered
+2026-04-22T16:05:16.491256886Z [error] 2026-04-22 16:04:48,436 [INFO] app.server: Content engine routes registered
+2026-04-22T16:05:16.491261320Z [error] 2026-04-22 16:04:48,436 [INFO] app.server: Content engine routes registered
+2026-04-22T16:05:16.491265569Z [error] 2026-04-22 16:04:48,459 [INFO] app.server: Wallet indexer routes registered
+2026-04-22T16:05:16.491269485Z [error] 2026-04-22 16:04:48,460 [INFO] app.server: Wallet indexer routes registered
+2026-04-22T16:05:16.492003210Z [error] 2026-04-22 16:04:48,664 [INFO] app.server: Cleared stale temporal reconstruction cache entries
+2026-04-22T16:05:16.492007329Z [error] 2026-04-22 16:04:48,665 [INFO] app.server: Cleared stale temporal reconstruction cache entries
+2026-04-22T16:05:16.492415670Z [error] 2026-04-22 16:04:49,296 [INFO] app.publisher.page_renderer: Page routes registered: /terms, /wallet, /asset, /assessment, /pulse, /sitemap.xml, /robots.txt
+2026-04-22T16:05:16.492421023Z [error] 2026-04-22 16:04:49,296 [INFO] app.server: Publisher page routes registered
+2026-04-22T16:05:16.492425104Z [error] 2026-04-22 16:04:49,298 [INFO] app.publisher.page_renderer: Page routes registered: /terms, /wallet, /asset, /assessment, /pulse, /sitemap.xml, /robots.txt
+2026-04-22T16:05:16.492429172Z [error] 2026-04-22 16:04:49,298 [INFO] app.server: Publisher page routes registered
+2026-04-22T16:05:16.492436264Z [error] 2026-04-22 16:04:49,351 [INFO] app.ops.routes: Operations Hub routes registered
+2026-04-22T16:05:16.492667231Z [error] 2026-04-22 16:04:49,361 [INFO] app.ops.entity_routes: Entity view routes registered
+2026-04-22T16:05:16.492672817Z [error] 2026-04-22 16:04:49,361 [INFO] app.server: Operations Hub routes registered
+2026-04-22T16:05:16.492678213Z [error] 2026-04-22 16:04:49,361 [WARNING] app.server: Squads Guard not available: No module named 'squads_guard'
+2026-04-22T16:05:16.492681886Z [error] 2026-04-22 16:04:49,364 [INFO] app.ops.routes: Operations Hub routes registered
+2026-04-22T16:05:16.492686213Z [error] 2026-04-22 16:04:49,367 [INFO] app.ops.entity_routes: Entity view routes registered
+2026-04-22T16:05:16.492690007Z [error] 2026-04-22 16:04:49,367 [INFO] app.server: Operations Hub routes registered
+2026-04-22T16:05:16.492693132Z [error] 2026-04-22 16:04:49,367 [WARNING] app.server: Squads Guard not available: No module named 'squads_guard'
+2026-04-22T16:05:16.492727551Z [error] 2026-04-22 16:04:49,581 [INFO] app.server: MCP HTTP endpoint registered at /mcp
+2026-04-22T16:05:16.492731235Z [error] 2026-04-22 16:04:49,584 [INFO] app.server: Incident routes registered (/api/incident/*, /api/incident-notify)
+2026-04-22T16:05:16.492734870Z [error] 2026-04-22 16:04:49,585 [INFO] app.server: Mounted /share from /app/public/share
+2026-04-22T16:05:16.492738600Z [error] 2026-04-22 16:04:49,585 [INFO] app.server: Basis Protocol API started
+2026-04-22T16:05:16.492755191Z [error] 2026-04-22 16:04:49,607 [INFO] app.server: MCP HTTP endpoint registered at /mcp
+2026-04-22T16:05:16.492760046Z [error] 2026-04-22 16:04:49,611 [INFO] app.server: Incident routes registered (/api/incident/*, /api/incident-notify)
+2026-04-22T16:05:16.492763833Z [error] 2026-04-22 16:04:49,611 [INFO] app.server: Mounted /share from /app/public/share
+2026-04-22T16:05:16.492767138Z [error] 2026-04-22 16:04:49,612 [INFO] app.server: Basis Protocol API started
+2026-04-22T16:05:16.492820596Z [error] 2026-04-22 16:04:49,282 [INFO] app.server: historical_protocol_data: 23845 rows
+2026-04-22T16:05:16.492824738Z [error] 2026-04-22 16:04:49,284 [INFO] app.server: historical_protocol_data: 23845 rows
+2026-04-22T16:05:16.492829223Z [error] 2026-04-22 16:04:49,289 [INFO] app.agent.api: Agent API routes registered: /api/assessments, /api/pulse
+2026-04-22T16:05:16.492832914Z [error] 2026-04-22 16:04:49,289 [INFO] app.server: Verification agent routes registered
+2026-04-22T16:05:16.492836732Z [error] 2026-04-22 16:04:49,290 [INFO] app.agent.api: Agent API routes registered: /api/assessments, /api/pulse
+2026-04-22T16:05:16.492840495Z [error] 2026-04-22 16:04:49,290 [INFO] app.server: Verification agent routes registered
+2026-04-22T16:05:16.493747429Z [error] 2026-04-22 16:04:50,021 [INFO] mcp.server.streamable_http_manager: StreamableHTTP session manager started
+2026-04-22T16:05:16.493767419Z [error] 2026-04-22 16:04:50,040 [INFO] mcp.server.streamable_http_manager: StreamableHTTP session manager started
+2026-04-22T16:05:16.494903200Z [error] 2026-04-22 16:04:50,176 [INFO] httpx: HTTP Request: POST https://api.resend.com/emails "HTTP/1.1 429 Too Many Requests"
+2026-04-22T16:05:16.494909873Z [error] 2026-04-22 16:04:50,176 [ERROR] app.ops.tools.alerter: Resend send failed: 429 {"statusCode":429,"message":"You have reached your daily email sending quota.","name":"daily_quota_exceeded"}
+2026-04-22T16:05:16.494914321Z [error] 2026-04-22 16:04:50,322 [INFO] httpx: HTTP Request: POST https://api.resend.com/emails "HTTP/1.1 429 Too Many Requests"
+2026-04-22T16:05:16.494917963Z [error] 2026-04-22 16:04:50,323 [ERROR] app.ops.tools.alerter: Resend send failed: 429 {"statusCode":429,"message":"You have reached your daily email sending quota.","name":"daily_quota_exceeded"}
+2026-04-22T16:05:16.495827923Z [error] INFO:     Application startup complete.
+2026-04-22T16:05:16.496119023Z [error] INFO:     Application startup complete.
+2026-04-22T16:06:41.497175589Z [info] INFO:     100.64.0.8:34716 - "POST /api/ops/keeper-cycle/start HTTP/1.1" 200 OK
+2026-04-22T16:06:41.497179615Z [info] INFO:     100.64.0.9:52932 - "GET /api/scores HTTP/1.1" 200 OK
+2026-04-22T16:06:41.497184626Z [info] INFO:     100.64.0.10:59816 - "GET /api/psi/scores HTTP/1.1" 200 OK
+2026-04-22T16:06:43.485109456Z [info] INFO:     100.64.0.2:34942 - "GET /api/state-root/latest HTTP/1.1" 200 OK
+2026-04-22T16:06:43.728351483Z [info] INFO:     100.64.0.2:34942 - "POST /api/ops/keeper-cycle/429/complete HTTP/1.1" 200 OK
+2026-04-22T16:07:03.728946678Z [info] INFO:     100.64.0.11:54322 - "GET /api/reports/lenses HTTP/1.1" 200 OK
+2026-04-22T16:07:03.728950176Z [info] INFO:     100.64.0.12:23664 - "GET /api/scores HTTP/1.1" 200 OK
+2026-04-22T16:07:03.728953184Z [error] 2026-04-22 16:06:59,336 [WARNING] app.report: _get_holder_concentration_trend(usdt) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:07:03.728956294Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:07:03.728959285Z [error]                          ^
+2026-04-22T16:07:03.728962522Z [error] 
+2026-04-22T16:07:03.728965604Z [info] INFO:     100.64.0.13:52568 - "GET /api/reports/stablecoin/usdt?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:07:03.728968307Z [error] 2026-04-22 16:07:02,659 [WARNING] app.report: _get_holder_concentration_trend(usd1) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:07:03.728971140Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:07:03.728974002Z [error]                          ^
+2026-04-22T16:07:03.728976844Z [error] 
+2026-04-22T16:07:03.728979559Z [info] INFO:     100.64.0.14:56108 - "GET /api/reports/stablecoin/usd1?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:07:05.972779140Z [error] 2026-04-22 16:07:05,971 [WARNING] app.report: _get_holder_concentration_trend(usdc) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:07:05.972786397Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:07:05.972792079Z [error]                          ^
+2026-04-22T16:07:05.972796084Z [error] 
+2026-04-22T16:07:06.732525313Z [info] INFO:     100.64.0.13:52568 - "GET /api/reports/stablecoin/usdc?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:07:09.236593523Z [error] 2026-04-22 16:07:09,235 [WARNING] app.report: _get_holder_concentration_trend(rlusd) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:07:09.236600859Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:07:09.236604398Z [error]                          ^
+2026-04-22T16:07:09.236607228Z [error] 
+2026-04-22T16:07:09.865592541Z [info] INFO:     100.64.0.15:26434 - "GET /api/reports/stablecoin/rlusd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:07:12.811715402Z [error] 2026-04-22 16:07:12,567 [WARNING] app.report: _get_holder_concentration_trend(dai) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:07:12.811721188Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:07:12.811725770Z [error]                          ^
+2026-04-22T16:07:12.811730784Z [error] 
+2026-04-22T16:07:13.214780313Z [info] INFO:     100.64.0.11:44144 - "GET /api/reports/stablecoin/dai?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:07:14.796169641Z [info] INFO:     100.64.0.17:14954 - "GET / HTTP/1.1" 200 OK
+2026-04-22T16:07:15.919330088Z [error] 2026-04-22 16:07:15,895 [WARNING] app.report: _get_holder_concentration_trend(usds) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:07:15.919333203Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:07:15.919335991Z [error]                          ^
+2026-04-22T16:07:15.919338793Z [error] 
+2026-04-22T16:07:16.810788047Z [info] INFO:     100.64.0.16:36554 - "GET /api/reports/stablecoin/usds?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:07:19.172247502Z [error] 2026-04-22 16:07:19,170 [WARNING] app.report: _get_holder_concentration_trend(usdp) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:07:19.172253209Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:07:19.172257107Z [error]                          ^
+2026-04-22T16:07:19.172261096Z [error] 
+2026-04-22T16:07:19.825038506Z [info] INFO:     100.64.0.18:23868 - "GET /api/reports/stablecoin/usdp?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:07:22.384623154Z [error] 2026-04-22 16:07:22,383 [WARNING] app.report: _get_holder_concentration_trend(pyusd) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:07:22.384629734Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:07:22.384635654Z [error]                          ^
+2026-04-22T16:07:22.384639946Z [error] 
+2026-04-22T16:07:23.009881632Z [info] INFO:     100.64.0.18:23868 - "GET /api/reports/stablecoin/pyusd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:07:25.864965468Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:07:25.864972959Z [error]                          ^
+2026-04-22T16:07:25.864977044Z [error] 
+2026-04-22T16:07:25.865047089Z [error] 2026-04-22 16:07:25,707 [WARNING] app.report: _get_holder_concentration_trend(gho) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:07:26.334833888Z [info] INFO:     100.64.0.19:20924 - "GET /api/reports/stablecoin/gho?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:07:29.023551505Z [error] 2026-04-22 16:07:29,022 [WARNING] app.report: _get_holder_concentration_trend(usdtb) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:07:29.023557470Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:07:29.023560485Z [error]                          ^
+2026-04-22T16:07:29.023563553Z [error] 
+2026-04-22T16:07:29.893351117Z [info] INFO:     100.64.0.9:37114 - "GET /api/reports/stablecoin/usdtb?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:07:29.893354700Z [info] INFO:     100.64.0.15:46480 - "GET /api/reports/stablecoin/usdd?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-04-22T16:07:32.945024354Z [error] 2026-04-22 16:07:32,512 [WARNING] app.report: _get_holder_concentration_trend(tusd) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:07:32.945029388Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:07:32.945034804Z [error]                          ^
+2026-04-22T16:07:32.945040150Z [error] 
+2026-04-22T16:07:33.150581645Z [info] INFO:     100.64.0.20:26712 - "GET /api/reports/stablecoin/tusd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:07:35.931576989Z [error] 2026-04-22 16:07:35,831 [WARNING] app.report: _get_holder_concentration_trend(musd) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:07:35.931580775Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:07:35.931584324Z [error]                          ^
+2026-04-22T16:07:35.931588258Z [error] 
+2026-04-22T16:07:36.521864716Z [info] INFO:     100.64.0.16:46526 - "GET /api/reports/stablecoin/musd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:07:36.929493139Z [info] INFO:     100.64.0.21:57074 - "GET /api/reports/stablecoin/fdusd?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-04-22T16:07:36.929500372Z [info] INFO:     100.64.0.15:46494 - "GET /api/reports/stablecoin/usde?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-04-22T16:07:36.929505042Z [info] INFO:     100.64.0.15:46494 - "GET /api/reports/stablecoin/gusd?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-04-22T16:07:39.996382448Z [error] 2026-04-22 16:07:39,569 [WARNING] app.report: _get_holder_concentration_trend(mim) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:07:39.996385731Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:07:39.996388582Z [error]                          ^
+2026-04-22T16:07:39.996391917Z [error] 
+2026-04-22T16:07:40.199339996Z [info] INFO:     100.64.0.19:47500 - "GET /api/reports/stablecoin/mim?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:07:43.022118453Z [error] 
+2026-04-22T16:07:43.022159648Z [error] 2026-04-22 16:07:42,886 [WARNING] app.report: _get_holder_concentration_trend(lusd) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:07:43.022163624Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:07:43.022167820Z [error]                          ^
+2026-04-22T16:07:43.523502654Z [info] INFO:     100.64.0.14:17008 - "GET /api/reports/stablecoin/lusd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:07:46.293549426Z [error] 2026-04-22 16:07:46,291 [WARNING] app.report: _get_holder_concentration_trend(ousd) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:07:46.293555542Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:07:46.293558606Z [error]                          ^
+2026-04-22T16:07:46.293561638Z [error] 
+2026-04-22T16:07:47.024747915Z [info] INFO:     100.64.0.21:12018 - "GET /api/reports/stablecoin/ousd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:07:49.614333401Z [error] 2026-04-22 16:07:49,602 [WARNING] app.report: _get_holder_concentration_trend(euri) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:07:49.614337387Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:07:49.614340335Z [error]                          ^
+2026-04-22T16:07:49.614343323Z [error] 
+2026-04-22T16:07:50.231519304Z [info] INFO:     100.64.0.20:33220 - "GET /api/reports/stablecoin/euri?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:09:00.895954601Z [info] INFO:     100.64.0.20:55548 - "POST /api/ops/keeper-cycle/430/complete HTTP/1.1" 200 OK
+2026-04-22T16:09:00.895985918Z [info] INFO:     100.64.0.21:18236 - "GET /api/state-root/latest HTTP/1.1" 200 OK
+2026-04-22T16:09:30.602436459Z [info] INFO:     100.64.0.14:50496 - "POST /api/ops/keeper-cycle/start HTTP/1.1" 200 OK
+2026-04-22T16:09:30.602442273Z [info] INFO:     100.64.0.14:50496 - "GET /api/scores HTTP/1.1" 200 OK
+2026-04-22T16:09:30.602446952Z [info] INFO:     100.64.0.9:36666 - "GET /api/psi/scores HTTP/1.1" 200 OK
+2026-04-22T16:09:50.569095957Z [info] INFO:     100.64.0.9:29026 - "GET /api/reports/lenses HTTP/1.1" 200 OK
+2026-04-22T16:09:50.569102523Z [info] INFO:     100.64.0.16:10954 - "GET /api/scores HTTP/1.1" 200 OK
+2026-04-22T16:09:52.693044919Z [error] 2026-04-22 16:09:52,642 [WARNING] app.report: _get_holder_concentration_trend(usdt) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:09:52.693048584Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:09:52.693052192Z [error]                          ^
+2026-04-22T16:09:52.693056045Z [error] 
+2026-04-22T16:09:53.415917935Z [info] INFO:     100.64.0.11:41538 - "GET /api/reports/stablecoin/usdt?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:09:56.481988462Z [error] 2026-04-22 16:09:56,229 [WARNING] app.report: _get_holder_concentration_trend(usd1) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:09:56.481991918Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:09:56.481994882Z [error]                          ^
+2026-04-22T16:09:56.481998676Z [error] 
+2026-04-22T16:09:56.857452578Z [info] INFO:     100.64.0.9:29026 - "GET /api/reports/stablecoin/usd1?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:09:59.574449243Z [error] 2026-04-22 16:09:59,569 [WARNING] app.report: _get_holder_concentration_trend(usdc) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:09:59.574452719Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:09:59.574458021Z [error]                          ^
+2026-04-22T16:09:59.574461302Z [error] 
+2026-04-22T16:10:00.491841292Z [info] INFO:     100.64.0.8:47140 - "GET /api/reports/stablecoin/usdc?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:10:02.841007249Z [error] 2026-04-22 16:10:02,834 [WARNING] app.report: _get_holder_concentration_trend(rlusd) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:10:02.841011294Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:10:02.841014776Z [error]                          ^
+2026-04-22T16:10:02.841018407Z [error] 
+2026-04-22T16:10:03.524597162Z [info] INFO:     100.64.0.10:48430 - "GET /api/reports/stablecoin/rlusd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:10:06.118957359Z [error] 2026-04-22 16:10:06,112 [WARNING] app.report: _get_holder_concentration_trend(dai) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:10:06.118961833Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:10:06.118964917Z [error]                          ^
+2026-04-22T16:10:06.118967874Z [error] 
+2026-04-22T16:10:06.737642547Z [info] INFO:     100.64.0.21:59420 - "GET /api/reports/stablecoin/dai?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:10:09.605046964Z [error] 2026-04-22 16:10:09,377 [WARNING] app.report: _get_holder_concentration_trend(usds) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:10:09.605051643Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:10:09.605056223Z [error]                          ^
+2026-04-22T16:10:09.605060710Z [error] 
+2026-04-22T16:10:10.002262730Z [info] INFO:     100.64.0.9:12994 - "GET /api/reports/stablecoin/usds?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:10:10.603021981Z [info] INFO:     100.64.0.22:22702 - "GET / HTTP/1.1" 200 OK
+2026-04-22T16:10:12.687444151Z [error] 2026-04-22 16:10:12,685 [WARNING] app.report: _get_holder_concentration_trend(usdp) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:10:12.687447885Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:10:12.687451220Z [error]                          ^
+2026-04-22T16:10:12.687454772Z [error] 
+2026-04-22T16:10:13.611202546Z [info] INFO:     100.64.0.15:46576 - "GET /api/reports/stablecoin/usdp?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:10:16.016861834Z [error] 2026-04-22 16:10:16,014 [WARNING] app.report: _get_holder_concentration_trend(pyusd) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:10:16.016870584Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:10:16.016876751Z [error]                          ^
+2026-04-22T16:10:16.016882881Z [error] 
+2026-04-22T16:10:16.640755392Z [info] INFO:     100.64.0.20:32462 - "GET /api/reports/stablecoin/pyusd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:10:19.666446533Z [error] 2026-04-22 16:10:19,662 [WARNING] app.report: _get_holder_concentration_trend(gho) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:10:19.666449438Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:10:19.666452222Z [error]                          ^
+2026-04-22T16:10:19.666455298Z [error] 
+2026-04-22T16:10:20.661210445Z [info] INFO:     100.64.0.13:43382 - "GET /api/reports/stablecoin/gho?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:10:23.030848000Z [error] 2026-04-22 16:10:22,965 [WARNING] app.report: _get_holder_concentration_trend(usdtb) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:10:23.030853424Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:10:23.030857211Z [error]                          ^
+2026-04-22T16:10:23.030860746Z [error] 
+2026-04-22T16:10:23.716100151Z [info] INFO:     100.64.0.9:24666 - "GET /api/reports/stablecoin/usdtb?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:10:26.286611471Z [error] 2026-04-22 16:10:26,283 [WARNING] app.report: _get_holder_concentration_trend(usdd) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:10:26.286617959Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:10:26.286622396Z [error]                          ^
+2026-04-22T16:10:26.286626776Z [error] 
+2026-04-22T16:10:26.909282580Z [info] INFO:     100.64.0.23:36630 - "GET /api/reports/stablecoin/usdd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:10:29.806124109Z [error] 2026-04-22 16:10:29,543 [WARNING] app.report: _get_holder_concentration_trend(tusd) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:10:29.806127121Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:10:29.806130176Z [error]                          ^
+2026-04-22T16:10:29.806133458Z [error] 
+2026-04-22T16:10:30.170582601Z [info] INFO:     100.64.0.10:27798 - "GET /api/reports/stablecoin/tusd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:10:32.861000762Z [error] 2026-04-22 16:10:32,860 [WARNING] app.report: _get_holder_concentration_trend(musd) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:10:32.861007420Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:10:32.861012338Z [error]                          ^
+2026-04-22T16:10:32.861016868Z [error] 
+2026-04-22T16:10:33.731503753Z [info] INFO:     100.64.0.21:59666 - "GET /api/reports/stablecoin/musd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:10:36.187357344Z [error] 2026-04-22 16:10:36,175 [WARNING] app.report: _get_holder_concentration_trend(fdusd) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:10:36.187363140Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:10:36.187367525Z [error]                          ^
+2026-04-22T16:10:36.187371686Z [error] 
+2026-04-22T16:10:36.836772729Z [info] INFO:     100.64.0.16:45066 - "GET /api/reports/stablecoin/fdusd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:10:39.867961006Z [error] 2026-04-22 16:10:39,563 [WARNING] app.report: _get_holder_concentration_trend(usde) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:10:39.867964443Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:10:39.867967614Z [error]                          ^
+2026-04-22T16:10:39.867971958Z [error] 
+2026-04-22T16:10:40.202836638Z [info] INFO:     100.64.0.12:29408 - "GET /api/reports/stablecoin/usde?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:10:42.948979556Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:10:42.948989771Z [error]                          ^
+2026-04-22T16:10:42.948995302Z [error] 
+2026-04-22T16:10:42.949006038Z [error] 2026-04-22 16:10:42,901 [WARNING] app.report: _get_holder_concentration_trend(gusd) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:10:43.867203740Z [info] INFO:     100.64.0.9:23250 - "GET /api/reports/stablecoin/gusd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:10:43.867207243Z [info] INFO:     100.64.0.12:29408 - "GET /api/reports/stablecoin/mim?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-04-22T16:10:46.331093086Z [error] 2026-04-22 16:10:46,328 [WARNING] app.report: _get_holder_concentration_trend(lusd) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:10:46.331096218Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:10:46.331099353Z [error]                          ^
+2026-04-22T16:10:46.331102166Z [error] 
+2026-04-22T16:10:46.952746372Z [info] INFO:     100.64.0.16:52606 - "GET /api/reports/stablecoin/lusd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:10:49.890674208Z [error] 2026-04-22 16:10:49,645 [WARNING] app.report: _get_holder_concentration_trend(ousd) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:10:49.890679900Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:10:49.890683705Z [error]                          ^
+2026-04-22T16:10:49.890688170Z [error] 
+2026-04-22T16:10:50.288462898Z [info] INFO:     100.64.0.20:33852 - "GET /api/reports/stablecoin/ousd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:10:52.959156488Z [error] 2026-04-22 16:10:52,955 [WARNING] app.report: _get_holder_concentration_trend(euri) failed: relation "concentration_snapshots" does not exist
+2026-04-22T16:10:52.959161322Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T16:10:52.959164163Z [error]                          ^
+2026-04-22T16:10:52.959166796Z [error] 
+2026-04-22T16:10:53.939051428Z [info] INFO:     100.64.0.24:17264 - "GET /api/reports/stablecoin/euri?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T16:12:24.432998747Z [info] INFO:     100.64.0.20:53506 - "GET /api/state-root/latest HTTP/1.1" 200 OK
+2026-04-22T16:12:24.433003607Z [info] INFO:     100.64.0.23:52800 - "POST /api/ops/keeper-cycle/431/complete HTTP/1.1" 200 OK
+2026-04-22T16:13:24.121694706Z [info] INFO:     100.64.0.25:31412 - "GET / HTTP/1.1" 200 OK
