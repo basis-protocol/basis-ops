@@ -1,120 +1,1100 @@
-2026-04-22T16:08:47.403375854Z [error] 2026-04-22 16:08:46,957 [ERROR] worker: [startup] worker main() entered — initializing pool
-2026-04-22T16:08:47.403379633Z [error] 2026-04-22 16:08:46,958 [INFO] app.database: Database URL prefix: postgresql://neondb_owner:npg_ZQ7pTvYVNE1U@ep-soft...
-2026-04-22T16:08:47.582746475Z [error] 2026-04-22 16:08:47,582 [INFO] app.database: Database pool initialized (min=2, max=10, keepalives=on)
-2026-04-22T16:08:47.582752156Z [error] 2026-04-22 16:08:47,582 [ERROR] worker: [startup] pool initialized — running schema fixes
-2026-04-22T16:08:47.593126810Z [error] 2026-04-22 16:08:47,587 [ERROR] worker: [startup] httpx monkey-patched for API tracking
-2026-04-22T16:08:49.399517605Z [info] Starting Container
-2026-04-22T16:09:17.599474047Z [error] 2026-04-22 16:09:07,726 [ERROR] worker: [startup] VACUUM ANALYZE complete
-2026-04-22T16:09:17.599477670Z [error] 2026-04-22 16:09:08,710 [ERROR] worker: [bridges] collector disabled — DeFiLlama paywalled all endpoints. See constitution v9.3 for deferral rationale.
-2026-04-22T16:09:17.599481033Z [error] 2026-04-22 16:09:08,916 [ERROR] worker: [schema] governance_proposals: ['id', 'protocol_slug', 'proposal_id', 'source', 'title', 'body_excerpt', 'is_risk_related', 'risk_keywords', 'budget_amount_usd', 'vote_for', 'vote_against', 'vote_abstain', 'quorum_reached', 'participation_rate', 'proposal_state', 'created_at', 'closed_at', 'scraped_at', 'protocol_id', 'proposal_source', 'body', 'body_hash', 'author_address', 'author_ens', 'state', 'vote_start', 'vote_end', 'scores_total', 'scores_for', 'scores_against', 'scores_abstain', 'quorum', 'choices', 'votes', 'ipfs_hash', 'discussion_url', 'captured_at', 'body_changed', 'first_capture_body_hash', 'content_hash', 'attested_at', 'protocol', 'author', 'start_at', 'end_at', 'votes_for', 'votes_against', 'votes_abstain', 'voter_count', 'scores', 'raw_data', 'collected_at']
-2026-04-22T16:09:17.599484599Z [error] 2026-04-22 16:09:09,114 [ERROR] worker: [schema] psi_scores: ['id', 'protocol_slug', 'protocol_name', 'overall_score', 'grade', 'category_scores', 'component_scores', 'raw_values', 'formula_version', 'computed_at', 'scored_date', 'inputs_hash', 'scored_at', 'backfilled', 'backfill_source', 'aggregation_method', 'aggregation_params', 'aggregation_formula_version', 'effective_category_weights', 'coverage', 'withheld', 'confidence', 'confidence_tag', 'component_coverage', 'components_populated', 'components_total', 'missing_categories']
-2026-04-22T16:09:17.599488730Z [error] 2026-04-22 16:09:09,312 [ERROR] worker: [schema] scores: ['stablecoin_id', 'overall_score', 'grade', 'peg_score', 'liquidity_score', 'mint_burn_score', 'distribution_score', 'structural_score', 'reserves_score', 'contract_score', 'oracle_score', 'governance_score', 'network_score', 'component_count', 'formula_version', 'data_freshness_pct', 'current_price', 'market_cap', 'volume_24h', 'daily_change', 'weekly_change', 'computed_at', 'updated_at', 'aggregation_method', 'aggregation_params', 'aggregation_formula_version', 'effective_category_weights', 'coverage', 'withheld', 'confidence', 'confidence_tag', 'component_coverage', 'components_populated', 'components_total', 'missing_categories']
-2026-04-22T16:09:17.601838433Z [error] 2026-04-22 16:09:09,510 [ERROR] worker: [schema] oracle_registry: ['id', 'oracle_address', 'oracle_name', 'oracle_provider', 'chain', 'asset_symbol', 'quote_symbol', 'decimals', 'read_function', 'is_active', 'entity_type', 'entity_slug', 'added_at']
-2026-04-22T16:09:17.601844431Z [error] 2026-04-22 16:09:16,998 [ERROR] worker: [schema_fix] psi_scores.scored_at column ensured
-2026-04-22T16:09:17.601848410Z [error] 2026-04-22 16:09:17,396 [ERROR] worker: [schema_after] governance_proposals: ['id', 'protocol_slug', 'proposal_id', 'source', 'title', 'body_excerpt', 'is_risk_related', 'risk_keywords', 'budget_amount_usd', 'vote_for', 'vote_against', 'vote_abstain', 'quorum_reached', 'participation_rate', 'proposal_state', 'created_at', 'closed_at', 'scraped_at', 'protocol_id', 'proposal_source', 'body', 'body_hash', 'author_address', 'author_ens', 'state', 'vote_start', 'vote_end', 'scores_total', 'scores_for', 'scores_against', 'scores_abstain', 'quorum', 'choices', 'votes', 'ipfs_hash', 'discussion_url', 'captured_at', 'body_changed', 'first_capture_body_hash', 'content_hash', 'attested_at', 'protocol', 'author', 'start_at', 'end_at', 'votes_for', 'votes_against', 'votes_abstain', 'voter_count', 'scores', 'raw_data', 'collected_at']
-2026-04-22T16:09:17.601853010Z [error] 2026-04-22 16:09:17,594 [ERROR] worker: [schema_after] psi_scores: ['id', 'protocol_slug', 'protocol_name', 'overall_score', 'grade', 'category_scores', 'component_scores', 'raw_values', 'formula_version', 'computed_at', 'scored_date', 'inputs_hash', 'scored_at', 'backfilled', 'backfill_source', 'aggregation_method', 'aggregation_params', 'aggregation_formula_version', 'effective_category_weights', 'coverage', 'withheld', 'confidence', 'confidence_tag', 'component_coverage', 'components_populated', 'components_total', 'missing_categories']
-2026-04-22T16:09:17.843885667Z [error] 2026-04-22 16:09:17,841 [INFO] app.db_schema_validator: [schema_validator] governance_proposals: OK (40 columns)
-2026-04-22T16:09:18.050814886Z [error] 2026-04-22 16:09:18,039 [INFO] app.db_schema_validator: [schema_validator] oracle_registry: OK (13 columns)
-2026-04-22T16:09:18.479580053Z [error] 2026-04-22 16:09:18,434 [INFO] app.db_schema_validator: [schema_validator] oracle_stress_events: OK (19 columns)
-2026-04-22T16:09:18.479608785Z [error] 2026-04-22 16:09:18,237 [INFO] app.db_schema_validator: [schema_validator] oracle_price_readings: OK (21 columns)
-2026-04-22T16:09:18.642978776Z [error] 2026-04-22 16:09:18,632 [INFO] app.db_schema_validator: [schema_validator] psi_scores: OK (13 columns)
-2026-04-22T16:09:18.837500587Z [error] 2026-04-22 16:09:18,830 [INFO] app.db_schema_validator: [schema_validator] scores: OK (23 columns)
-2026-04-22T16:09:19.028497216Z [error] 2026-04-22 16:09:19,027 [INFO] app.db_schema_validator: [schema_validator] generic_index_scores: OK (16 columns)
-2026-04-22T16:09:19.481090570Z [error] 2026-04-22 16:09:19,225 [INFO] app.db_schema_validator: [schema_validator] governance_voters: OK (9 columns)
-2026-04-22T16:09:19.481094193Z [error] 2026-04-22 16:09:19,423 [INFO] app.db_schema_validator: [schema_validator] mint_burn_events: OK (11 columns)
-2026-04-22T16:09:19.673694841Z [error] 2026-04-22 16:09:19,668 [INFO] app.db_schema_validator: [schema_validator] liquidity_depth: OK (18 columns)
-2026-04-22T16:09:19.867038067Z [error] 2026-04-22 16:09:19,866 [INFO] app.db_schema_validator: [schema_validator] contract_surveillance: OK (13 columns)
-2026-04-22T16:09:20.066483758Z [error] 2026-04-22 16:09:20,064 [INFO] app.db_schema_validator: [schema_validator] protocol_parameter_changes: OK (17 columns)
-2026-04-22T16:09:20.462484594Z [error] 2026-04-22 16:09:20,261 [INFO] app.db_schema_validator: [schema_validator] yield_snapshots: OK (11 columns)
-2026-04-22T16:09:20.462491369Z [error] 2026-04-22 16:09:20,459 [INFO] app.db_schema_validator: [schema_validator] peg_snapshots_5m: OK (5 columns)
-2026-04-22T16:09:20.659581348Z [error] 2026-04-22 16:09:20,657 [INFO] app.db_schema_validator: [schema_validator] entity_snapshots_hourly: OK (10 columns)
-2026-04-22T16:09:20.857546805Z [error] 2026-04-22 16:09:20,855 [INFO] app.db_schema_validator: [schema_validator] exchange_snapshots: OK (10 columns)
-2026-04-22T16:09:21.054817157Z [error] 2026-04-22 16:09:21,053 [INFO] app.db_schema_validator: [schema_validator] incident_events: OK (11 columns)
-2026-04-22T16:09:21.474920707Z [error] 2026-04-22 16:09:21,251 [INFO] app.db_schema_validator: [schema_validator] wallet_graph.wallets: OK (9 columns)
-2026-04-22T16:09:21.474927524Z [error] 2026-04-22 16:09:21,455 [INFO] app.db_schema_validator: [schema_validator] correlation_matrices: OK (6 columns)
-2026-04-22T16:09:21.654115921Z [error] 2026-04-22 16:09:21,652 [INFO] app.db_schema_validator: [schema_validator] wallet_behavior_tags: OK (6 columns)
-2026-04-22T16:09:21.852243081Z [error] 2026-04-22 16:09:21,850 [INFO] app.db_schema_validator: [schema_validator] dex_pool_ohlcv: OK (12 columns)
-2026-04-22T16:09:22.048779620Z [error] 2026-04-22 16:09:22,047 [INFO] app.db_schema_validator: [schema_validator] component_readings: OK (7 columns)
-2026-04-22T16:09:22.484240948Z [error] 2026-04-22 16:09:22,246 [INFO] app.db_schema_validator: [schema_validator] score_history: OK (18 columns)
-2026-04-22T16:09:22.484248657Z [error] 2026-04-22 16:09:22,443 [INFO] app.db_schema_validator: [schema_validator] data_provenance: OK (8 columns)
-2026-04-22T16:09:22.643288744Z [error] 2026-04-22 16:09:22,641 [INFO] app.db_schema_validator: [schema_validator] collector_cycle_stats: OK (6 columns)
-2026-04-22T16:09:22.843175494Z [error] 2026-04-22 16:09:22,838 [INFO] app.db_schema_validator: [schema_validator] state_attestations: OK (6 columns)
-2026-04-22T16:09:23.037973876Z [error] 2026-04-22 16:09:23,036 [INFO] app.db_schema_validator: [schema_validator] daily_pulses: OK (3 columns)
-2026-04-22T16:09:23.513113512Z [error] 2026-04-22 16:09:23,431 [INFO] app.db_schema_validator: [schema_validator] volatility_surfaces: OK (10 columns)
-2026-04-22T16:09:23.513186746Z [error] 2026-04-22 16:09:23,234 [INFO] app.db_schema_validator: [schema_validator] market_chart_history: OK (7 columns)
-2026-04-22T16:09:23.631198122Z [error] 2026-04-22 16:09:23,629 [INFO] app.db_schema_validator: [schema_validator] discovery_signals: OK (11 columns)
-2026-04-22T16:09:23.834643018Z [error] 2026-04-22 16:09:23,827 [INFO] app.db_schema_validator: [schema_validator] rpi_scores: OK (8 columns)
-2026-04-22T16:09:24.027850344Z [error] 2026-04-22 16:09:24,025 [INFO] app.db_schema_validator: [schema_validator] score_events: OK (6 columns)
-2026-04-22T16:09:24.493824383Z [error] 2026-04-22 16:09:24,222 [INFO] app.db_schema_validator: [schema_validator] governance_events: OK (10 columns)
-2026-04-22T16:09:24.493828466Z [error] 2026-04-22 16:09:24,419 [INFO] app.db_schema_validator: [schema_validator] protocol_pool_wallets: OK (7 columns)
-2026-04-22T16:09:24.620422127Z [error] 2026-04-22 16:09:24,617 [INFO] app.db_schema_validator: [schema_validator] protocol_trace_observations: OK (12 columns)
-2026-04-22T16:09:24.817597479Z [error] 2026-04-22 16:09:24,815 [INFO] app.db_schema_validator: [schema_validator] token_approval_snapshots: OK (9 columns)
-2026-04-22T16:09:25.018367120Z [error] 2026-04-22 16:09:25,015 [INFO] app.db_schema_validator: [schema_validator] oracle_update_cadence: OK (9 columns)
-2026-04-22T16:09:25.502416281Z [error] 2026-04-22 16:09:25,212 [INFO] app.db_schema_validator: [schema_validator] wallet_holder_discovery: OK (11 columns)
-2026-04-22T16:09:25.502420366Z [error] 2026-04-22 16:09:25,409 [INFO] app.db_schema_validator: [schema_validator] wallet_chain_presence: OK (12 columns)
-2026-04-22T16:09:25.502424449Z [error] 2026-04-22 16:09:25,410 [ERROR] app.db_schema_validator: [schema_validator] all schemas aligned — 39 tables, 453 columns verified
-2026-04-22T16:09:25.502427732Z [error] 2026-04-22 16:09:25,410 [ERROR] worker: [startup] schema fixes complete, diagnostics will fire in 60s via independent loop
-2026-04-22T16:09:25.502431141Z [error] 2026-04-22 16:09:25,412 [ERROR] worker: [startup] running Dwellir capability probe
-2026-04-22T16:09:25.590563836Z [error] 2026-04-22 16:09:25,588 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
-2026-04-22T16:09:25.590566703Z [error] 2026-04-22 16:09:25,589 [ERROR] worker: [api_tracker] recorded: alchemy /v2/AyH5JAFcthHka4uBiciLg → 200
-2026-04-22T16:09:25.614787786Z [error] 2026-04-22 16:09:25,612 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
-2026-04-22T16:09:25.614790543Z [error] 2026-04-22 16:09:25,613 [ERROR] worker: [api_tracker] recorded: alchemy /v2/AyH5JAFcthHka4uBiciLg → 200
-2026-04-22T16:09:26.488197186Z [error] 2026-04-22 16:09:26,301 [ERROR] worker: [api_tracker] recorded: dwellir /ebce64a9-6da4-4451-808d-aa0e82b1da55 → 200
-2026-04-22T16:09:26.488266782Z [error] 2026-04-22 16:09:26,300 [INFO] httpx: HTTP Request: POST https://api-ethereum-mainnet.n.dwellir.com/ebce64a9-6da4-4451-808d-aa0e82b1da55 "HTTP/1.1 200 OK"
-2026-04-22T16:09:26.501717465Z [error] 2026-04-22 16:09:26,500 [ERROR] app.utils.rpc_provider: [rpc_probe] dwellir eth_blockNumber (connectivity): OK
-2026-04-22T16:09:26.663957720Z [error] 2026-04-22 16:09:26,661 [INFO] httpx: HTTP Request: POST https://api-ethereum-mainnet.n.dwellir.com/ebce64a9-6da4-4451-808d-aa0e82b1da55 "HTTP/1.1 200 OK"
-2026-04-22T16:09:26.862210277Z [error] 2026-04-22 16:09:26,858 [ERROR] app.utils.rpc_provider: [rpc_probe] dwellir eth_call @latest (current state): OK
-2026-04-22T16:09:27.022558301Z [error] 2026-04-22 16:09:27,019 [INFO] httpx: HTTP Request: POST https://api-ethereum-mainnet.n.dwellir.com/ebce64a9-6da4-4451-808d-aa0e82b1da55 "HTTP/1.1 200 OK"
-2026-04-22T16:09:27.511929689Z [error] 2026-04-22 16:09:27,378 [INFO] httpx: HTTP Request: POST https://api-ethereum-mainnet.n.dwellir.com/ebce64a9-6da4-4451-808d-aa0e82b1da55 "HTTP/1.1 403 Forbidden"
-2026-04-22T16:09:27.511956017Z [error] 2026-04-22 16:09:27,217 [ERROR] app.utils.rpc_provider: [rpc_probe] dwellir eth_call @0x17c7f7a (archive read): OK
-2026-04-22T16:09:27.577657485Z [error] 2026-04-22 16:09:27,575 [ERROR] app.utils.rpc_provider: [rpc_probe] dwellir debug_traceTransaction (callTracer): FAIL HTTP 403: Your current plan does not support trace or debug methods. Please upgrade to a paid plan a
-2026-04-22T16:09:27.752584343Z [error] 2026-04-22 16:09:27,738 [INFO] httpx: HTTP Request: POST https://api-ethereum-mainnet.n.dwellir.com/ebce64a9-6da4-4451-808d-aa0e82b1da55 "HTTP/1.1 403 Forbidden"
-2026-04-22T16:09:27.940021437Z [error] 2026-04-22 16:09:27,936 [ERROR] app.utils.rpc_provider: [rpc_probe] dwellir trace_transaction: FAIL HTTP 403: Your current plan does not support trace or debug methods. Please upgrade to a paid plan a
-2026-04-22T16:09:27.940026095Z [error] 2026-04-22 16:09:27,937 [ERROR] app.utils.rpc_provider: [rpc_probe] SUMMARY chain=ethereum trace=False archive=True (see rpc_capabilities table for per-method details)
-2026-04-22T16:09:27.946971858Z [error] 2026-04-22 16:09:27,943 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] background tasks scheduled
-2026-04-22T16:09:29.587976303Z [error] 2026-04-22 16:09:29,583 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] watchlist: stablecoins=36, pool_wallets=11, deduped_total=47, limit=100
-2026-04-22T16:09:29.955778743Z [error] 2026-04-22 16:09:29,952 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
-2026-04-22T16:09:30.508662162Z [error] 2026-04-22 16:09:30,353 [INFO] httpx: HTTP Request: POST https://api.resend.com/emails "HTTP/1.1 429 Too Many Requests"
-2026-04-22T16:09:30.508665618Z [error] 2026-04-22 16:09:30,354 [ERROR] app.ops.tools.alerter: Resend send failed: 429 {"statusCode":429,"message":"You have reached your daily email sending quota.","name":"daily_quota_exceeded"}
-2026-04-22T16:09:30.753827445Z [error] 2026-04-22 16:09:30,750 [INFO] worker: Starting worker loop (interval: 60 min)
-2026-04-22T16:09:30.753830740Z [error] 2026-04-22 16:09:30,752 [ERROR] worker: [startup] oracle cadence loop launched (5-min sampling)
-2026-04-22T16:09:30.753833544Z [error] 2026-04-22 16:09:30,752 [ERROR] app.data_layer.oracle_cadence_collector: [oracle_cadence] loop started, sampling every 300s
-2026-04-22T16:09:30.753836515Z [error] 2026-04-22 16:09:30,752 [INFO] worker: === Fast cycle start ===
-2026-04-22T16:09:33.714134436Z [error] 2026-04-22 16:09:33,711 [INFO] app.collectors.registry: Synced 15 provenance sources to DB
-2026-04-22T16:09:36.864101912Z [error] 2026-04-22 16:09:36,861 [INFO] worker: Starting scoring cycle for 36 stablecoins
-2026-04-22T16:09:37.672520518Z [error] 2026-04-22 16:09:37,666 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] SUBSCRIBED chain=ethereum addresses=47 subscription_id=0x6908fab956b5d4daaac0354ab219ce35
-2026-04-22T16:11:07.826853948Z [error] 2026-04-22 16:11:03,681 [WARNING] app.collectors.registry: market timed out for busd0
-2026-04-22T16:11:07.826858591Z [error] 2026-04-22 16:11:03,681 [WARNING] app.collectors.registry: defillama timed out for busd0
-2026-04-22T16:11:07.826862240Z [error] 2026-04-22 16:11:03,681 [WARNING] app.collectors.registry: flows timed out for busd0
-2026-04-22T16:11:07.826876280Z [error] 2026-04-22 16:11:03,681 [WARNING] app.collectors.registry: peg timed out for busd0
-2026-04-22T16:11:07.826879386Z [error] 2026-04-22 16:11:03,681 [WARNING] app.collectors.registry: smart_contract timed out for busd0
-2026-04-22T16:11:07.826881883Z [error] 2026-04-22 16:11:03,681 [WARNING] app.collectors.registry: liquidity timed out for busd0
-2026-04-22T16:11:07.826885728Z [error] 2026-04-22 16:11:03,685 [ERROR] app.data_layer.oracle_cadence_collector: [oracle_cadence] sample failed for Chainlink USDC/USD: 
-2026-04-22T16:12:47.543626588Z [error] 2026-04-22 16:12:40,826 [ERROR] worker: [stale_diagnostic] stale=5: liquidity_depth (age=5.2h, threshold=3h), exchange_snapshots (age=5.3h, threshold=3h), entity_snapshots_hourly (age=5.3h, threshold=3h), governance_proposals (age=41.3h, threshold=26h), dex_pool_ohlcv (age=95.7h, threshold=6h)
-2026-04-22T16:12:47.543630431Z [error] 2026-04-22 16:12:41,220 [ERROR] worker: [provenance_gap] hourly: 11/12 producing, weekly: 3, missing_hourly=['tally_governance']
-2026-04-22T16:12:47.543633370Z [error] 2026-04-22 16:12:41,220 [ERROR] worker: [provenance_gap] weekly sources (not expected in 24h): ['defillama_bridges']
-2026-04-22T16:12:47.543636513Z [error] 2026-04-22 16:12:41,220 [ERROR] worker: [api_budget] alchemy=6, dwellir=5, resend=1
-2026-04-22T16:12:47.543640160Z [error] 2026-04-22 16:12:41,418 [ERROR] worker: [api_usage_7d] alchemy: 2026-04-22: 12 calls (0 err, p95=4302ms) | 2026-04-21: 168 calls (0 err, p95=5440ms) | 2026-04-20: 12 calls (0 err, p95=4848ms)
-2026-04-22T16:12:47.543643035Z [error] 2026-04-22 16:12:41,418 [ERROR] worker: [api_usage_7d] blockscout: 2026-04-22: 20 calls (0 err, p95=630ms) — 0% | 2026-04-21: 20 calls (0 err, p95=780ms) — 0%
-2026-04-22T16:12:47.543645775Z [error] 2026-04-22 16:12:41,418 [ERROR] worker: [api_usage_7d] coingecko: 2026-04-22: 362 calls (1 err, p95=1611ms) — 2% | 2026-04-21: 5,068 calls (14 err, p95=2060ms) — 31% | 2026-04-20: 362 calls (1 err, p95=1580ms) — 2%
-2026-04-22T16:12:47.543651129Z [error] 2026-04-22 16:12:41,418 [ERROR] worker: [api_usage_7d] etherscan: 2026-04-22: 442 calls (0 err, p95=1372ms) — 0% | 2026-04-21: 6,259 calls (2 err, p95=2636ms) — 3% | 2026-04-20: 442 calls (0 err, p95=1383ms) — 0%
-2026-04-22T16:12:47.545959171Z [error]   helius/unknown: 6
-2026-04-22T16:12:47.545965641Z [error]   coingecko/coins: 6
-2026-04-22T16:12:47.545973800Z [error]   coingecko/coins/gho: 5
-2026-04-22T16:12:47.545976560Z [error] 2026-04-22 16:12:41,418 [ERROR] worker: [api_usage_7d] helius-rpc: 2026-04-22: 10 calls (0 err, p95=8301ms) | 2026-04-21: 140 calls (0 err, p95=8611ms) | 2026-04-20: 10 calls (0 err, p95=8351ms)
-2026-04-22T16:12:47.545982509Z [error] 2026-04-22 16:12:41,418 [ERROR] worker: [api_usage_7d] llama: 2026-04-22: 73 calls (0 err, p95=1348ms) | 2026-04-21: 1,022 calls (1 err, p95=5215ms) | 2026-04-20: 73 calls (0 err, p95=1579ms)
-2026-04-22T16:12:47.545985932Z [error] 2026-04-22 16:12:41,814 [ERROR] worker: [rpc_usage_7d] alchemy: 125 eth_getTransactionByHash (0 fallback, 76 err)
-2026-04-22T16:12:47.545990474Z [error] 2026-04-22 16:12:41,418 [ERROR] worker: [api_usage_7d] snapshot: 2026-04-22: 12 calls (0 err, p95=247ms) — 0% | 2026-04-21: 72 calls (0 err, p95=2413ms) — 1%
-2026-04-22T16:12:47.545993542Z [error] 2026-04-22 16:12:41,617 [ERROR] worker: [api_hotspots_24h]
-2026-04-22T16:12:47.545996511Z [error]   etherscan/unknown: 1,768
-2026-04-22T16:12:47.545999406Z [error]   coingecko/unknown: 1,086
-2026-04-22T16:12:47.546002493Z [error]   llama/unknown: 219
-2026-04-22T16:12:47.546008084Z [error]   helius-rpc/unknown: 40
-2026-04-22T16:12:47.546010861Z [error]   llama/pools: 37
-2026-04-22T16:12:47.546013808Z [error]   llama/stablecoins: 36
-2026-04-22T16:12:47.546016701Z [error]   blockscout/unknown: 20
-2026-04-22T16:12:47.546022687Z [error]   curve/unknown: 9
-2026-04-22T16:12:47.547942834Z [error] 2026-04-22 16:12:41,815 [ERROR] worker: [rpc_usage_7d] dwellir: no calls
-2026-04-22T16:12:47.547954823Z [error]   dwellir/ethereum/eth_call: ok
-2026-04-22T16:12:47.547960153Z [error] 2026-04-22 16:12:43,008 [ERROR] app.data_layer.mempool_watcher: [mempool_observations] 24h SUMMARY: captured=16265 confirmed=125 dropped=0 avg_confirmation_latency_ms=8670362 alchemy_cu_rolling24h=60 top_to=[0xdac17f95=11308, 0xa0b86991=4707, 0x6b175474=53, 0x6c3ea903=52, 0x4c9edd58=52] top_selectors=[0xa9059cbb=15156, 0x23b872dd=685, 0x095ea7b3=363, 0xe3ee160e=17, 0x40c10f19=15]
-2026-04-22T16:12:47.547963055Z [error] 2026-04-22 16:12:43,400 [ERROR] worker: [api_usage_verify] hourly: 129 rows, latest=2026-04-22 11:00:00+00:00 | tracker: 0 rows, latest=None
+2026-04-22T16:33:58.403491150Z [error] 2026-04-22 16:33:57,764 [ERROR] worker: [startup] worker main() entered — initializing pool
+2026-04-22T16:33:58.403495073Z [error] 2026-04-22 16:33:57,764 [INFO] app.database: Database URL prefix: postgresql://neondb_owner:npg_ZQ7pTvYVNE1U@ep-soft...
+2026-04-22T16:33:58.433040068Z [error] 2026-04-22 16:33:58,432 [INFO] app.database: Database pool initialized (min=2, max=10, keepalives=on)
+2026-04-22T16:33:58.433050836Z [error] 2026-04-22 16:33:58,432 [ERROR] worker: [startup] pool initialized — running schema fixes
+2026-04-22T16:33:58.440442066Z [error] 2026-04-22 16:33:58,436 [ERROR] worker: [startup] httpx monkey-patched for API tracking
+2026-04-22T16:33:59.425467099Z [info] Starting Container
+2026-04-22T16:34:28.125141950Z [error] 2026-04-22 16:34:18,182 [ERROR] worker: [startup] VACUUM ANALYZE complete
+2026-04-22T16:34:28.125146597Z [error] 2026-04-22 16:34:19,164 [ERROR] worker: [bridges] collector disabled — DeFiLlama paywalled all endpoints. See constitution v9.3 for deferral rationale.
+2026-04-22T16:34:28.125150604Z [error] 2026-04-22 16:34:19,369 [ERROR] worker: [schema] governance_proposals: ['id', 'protocol_slug', 'proposal_id', 'source', 'title', 'body_excerpt', 'is_risk_related', 'risk_keywords', 'budget_amount_usd', 'vote_for', 'vote_against', 'vote_abstain', 'quorum_reached', 'participation_rate', 'proposal_state', 'created_at', 'closed_at', 'scraped_at', 'protocol_id', 'proposal_source', 'body', 'body_hash', 'author_address', 'author_ens', 'state', 'vote_start', 'vote_end', 'scores_total', 'scores_for', 'scores_against', 'scores_abstain', 'quorum', 'choices', 'votes', 'ipfs_hash', 'discussion_url', 'captured_at', 'body_changed', 'first_capture_body_hash', 'content_hash', 'attested_at', 'protocol', 'author', 'start_at', 'end_at', 'votes_for', 'votes_against', 'votes_abstain', 'voter_count', 'scores', 'raw_data', 'collected_at']
+2026-04-22T16:34:28.125154137Z [error] 2026-04-22 16:34:19,567 [ERROR] worker: [schema] psi_scores: ['id', 'protocol_slug', 'protocol_name', 'overall_score', 'grade', 'category_scores', 'component_scores', 'raw_values', 'formula_version', 'computed_at', 'scored_date', 'inputs_hash', 'scored_at', 'backfilled', 'backfill_source', 'aggregation_method', 'aggregation_params', 'aggregation_formula_version', 'effective_category_weights', 'coverage', 'withheld', 'confidence', 'confidence_tag', 'component_coverage', 'components_populated', 'components_total', 'missing_categories']
+2026-04-22T16:34:28.125157068Z [error] 2026-04-22 16:34:19,766 [ERROR] worker: [schema] scores: ['stablecoin_id', 'overall_score', 'grade', 'peg_score', 'liquidity_score', 'mint_burn_score', 'distribution_score', 'structural_score', 'reserves_score', 'contract_score', 'oracle_score', 'governance_score', 'network_score', 'component_count', 'formula_version', 'data_freshness_pct', 'current_price', 'market_cap', 'volume_24h', 'daily_change', 'weekly_change', 'computed_at', 'updated_at', 'aggregation_method', 'aggregation_params', 'aggregation_formula_version', 'effective_category_weights', 'coverage', 'withheld', 'confidence', 'confidence_tag', 'component_coverage', 'components_populated', 'components_total', 'missing_categories']
+2026-04-22T16:34:28.127064927Z [error] 2026-04-22 16:34:19,965 [ERROR] worker: [schema] oracle_registry: ['id', 'oracle_address', 'oracle_name', 'oracle_provider', 'chain', 'asset_symbol', 'quote_symbol', 'decimals', 'read_function', 'is_active', 'entity_type', 'entity_slug', 'added_at']
+2026-04-22T16:34:28.127070970Z [error] 2026-04-22 16:34:27,461 [ERROR] worker: [schema_fix] psi_scores.scored_at column ensured
+2026-04-22T16:34:28.127074255Z [error] 2026-04-22 16:34:27,856 [ERROR] worker: [schema_after] governance_proposals: ['id', 'protocol_slug', 'proposal_id', 'source', 'title', 'body_excerpt', 'is_risk_related', 'risk_keywords', 'budget_amount_usd', 'vote_for', 'vote_against', 'vote_abstain', 'quorum_reached', 'participation_rate', 'proposal_state', 'created_at', 'closed_at', 'scraped_at', 'protocol_id', 'proposal_source', 'body', 'body_hash', 'author_address', 'author_ens', 'state', 'vote_start', 'vote_end', 'scores_total', 'scores_for', 'scores_against', 'scores_abstain', 'quorum', 'choices', 'votes', 'ipfs_hash', 'discussion_url', 'captured_at', 'body_changed', 'first_capture_body_hash', 'content_hash', 'attested_at', 'protocol', 'author', 'start_at', 'end_at', 'votes_for', 'votes_against', 'votes_abstain', 'voter_count', 'scores', 'raw_data', 'collected_at']
+2026-04-22T16:34:28.127077519Z [error] 2026-04-22 16:34:28,053 [ERROR] worker: [schema_after] psi_scores: ['id', 'protocol_slug', 'protocol_name', 'overall_score', 'grade', 'category_scores', 'component_scores', 'raw_values', 'formula_version', 'computed_at', 'scored_date', 'inputs_hash', 'scored_at', 'backfilled', 'backfill_source', 'aggregation_method', 'aggregation_params', 'aggregation_formula_version', 'effective_category_weights', 'coverage', 'withheld', 'confidence', 'confidence_tag', 'component_coverage', 'components_populated', 'components_total', 'missing_categories']
+2026-04-22T16:34:28.362067386Z [error] 2026-04-22 16:34:28,302 [INFO] app.db_schema_validator: [schema_validator] governance_proposals: OK (40 columns)
+2026-04-22T16:34:28.552625960Z [error] 2026-04-22 16:34:28,500 [INFO] app.db_schema_validator: [schema_validator] oracle_registry: OK (13 columns)
+2026-04-22T16:34:29.003411185Z [error] 2026-04-22 16:34:28,895 [INFO] app.db_schema_validator: [schema_validator] oracle_stress_events: OK (19 columns)
+2026-04-22T16:34:29.003444283Z [error] 2026-04-22 16:34:28,698 [INFO] app.db_schema_validator: [schema_validator] oracle_price_readings: OK (21 columns)
+2026-04-22T16:34:29.101380632Z [error] 2026-04-22 16:34:29,094 [INFO] app.db_schema_validator: [schema_validator] psi_scores: OK (13 columns)
+2026-04-22T16:34:29.292749237Z [error] 2026-04-22 16:34:29,292 [INFO] app.db_schema_validator: [schema_validator] scores: OK (23 columns)
+2026-04-22T16:34:29.500308254Z [error] 2026-04-22 16:34:29,490 [INFO] app.db_schema_validator: [schema_validator] generic_index_scores: OK (16 columns)
+2026-04-22T16:34:30.013567547Z [error] 2026-04-22 16:34:29,688 [INFO] app.db_schema_validator: [schema_validator] governance_voters: OK (9 columns)
+2026-04-22T16:34:30.013570759Z [error] 2026-04-22 16:34:29,886 [INFO] app.db_schema_validator: [schema_validator] mint_burn_events: OK (11 columns)
+2026-04-22T16:34:30.137318662Z [error] 2026-04-22 16:34:30,132 [INFO] app.db_schema_validator: [schema_validator] liquidity_depth: OK (18 columns)
+2026-04-22T16:34:30.337255165Z [error] 2026-04-22 16:34:30,330 [INFO] app.db_schema_validator: [schema_validator] contract_surveillance: OK (13 columns)
+2026-04-22T16:34:30.655469558Z [error] 2026-04-22 16:34:30,529 [INFO] app.db_schema_validator: [schema_validator] protocol_parameter_changes: OK (17 columns)
+2026-04-22T16:34:31.039827871Z [error] 2026-04-22 16:34:30,727 [INFO] app.db_schema_validator: [schema_validator] yield_snapshots: OK (11 columns)
+2026-04-22T16:34:31.039831716Z [error] 2026-04-22 16:34:30,925 [INFO] app.db_schema_validator: [schema_validator] peg_snapshots_5m: OK (5 columns)
+2026-04-22T16:34:31.124222415Z [error] 2026-04-22 16:34:31,123 [INFO] app.db_schema_validator: [schema_validator] entity_snapshots_hourly: OK (10 columns)
+2026-04-22T16:34:31.334685748Z [error] 2026-04-22 16:34:31,321 [INFO] app.db_schema_validator: [schema_validator] exchange_snapshots: OK (10 columns)
+2026-04-22T16:34:31.587144504Z [error] 2026-04-22 16:34:31,519 [INFO] app.db_schema_validator: [schema_validator] incident_events: OK (11 columns)
+2026-04-22T16:34:32.046825092Z [error] 2026-04-22 16:34:31,718 [INFO] app.db_schema_validator: [schema_validator] wallet_graph.wallets: OK (9 columns)
+2026-04-22T16:34:32.046828237Z [error] 2026-04-22 16:34:31,916 [INFO] app.db_schema_validator: [schema_validator] correlation_matrices: OK (6 columns)
+2026-04-22T16:34:32.135055860Z [error] 2026-04-22 16:34:32,114 [INFO] app.db_schema_validator: [schema_validator] wallet_behavior_tags: OK (6 columns)
+2026-04-22T16:34:32.318871924Z [error] 2026-04-22 16:34:32,312 [INFO] app.db_schema_validator: [schema_validator] dex_pool_ohlcv: OK (12 columns)
+2026-04-22T16:34:32.518760363Z [error] 2026-04-22 16:34:32,510 [INFO] app.db_schema_validator: [schema_validator] component_readings: OK (7 columns)
+2026-04-22T16:34:33.054940922Z [error] 2026-04-22 16:34:32,709 [INFO] app.db_schema_validator: [schema_validator] score_history: OK (18 columns)
+2026-04-22T16:34:33.054944866Z [error] 2026-04-22 16:34:32,907 [INFO] app.db_schema_validator: [schema_validator] data_provenance: OK (8 columns)
+2026-04-22T16:34:33.136251463Z [error] 2026-04-22 16:34:33,105 [INFO] app.db_schema_validator: [schema_validator] collector_cycle_stats: OK (6 columns)
+2026-04-22T16:34:33.306088212Z [error] 2026-04-22 16:34:33,303 [INFO] app.db_schema_validator: [schema_validator] state_attestations: OK (6 columns)
+2026-04-22T16:34:33.532797617Z [error] 2026-04-22 16:34:33,501 [INFO] app.db_schema_validator: [schema_validator] daily_pulses: OK (3 columns)
+2026-04-22T16:34:34.116988776Z [error] 2026-04-22 16:34:33,902 [INFO] app.db_schema_validator: [schema_validator] volatility_surfaces: OK (10 columns)
+2026-04-22T16:34:34.117000495Z [error] 2026-04-22 16:34:34,100 [INFO] app.db_schema_validator: [schema_validator] discovery_signals: OK (11 columns)
+2026-04-22T16:34:34.117121156Z [error] 2026-04-22 16:34:33,705 [INFO] app.db_schema_validator: [schema_validator] market_chart_history: OK (7 columns)
+2026-04-22T16:34:34.307241202Z [error] 2026-04-22 16:34:34,298 [INFO] app.db_schema_validator: [schema_validator] rpi_scores: OK (8 columns)
+2026-04-22T16:34:34.550810512Z [error] 2026-04-22 16:34:34,496 [INFO] app.db_schema_validator: [schema_validator] score_events: OK (6 columns)
+2026-04-22T16:34:34.718073325Z [error] 2026-04-22 16:34:34,694 [INFO] app.db_schema_validator: [schema_validator] governance_events: OK (10 columns)
+2026-04-22T16:34:35.104642946Z [error] 2026-04-22 16:34:34,892 [INFO] app.db_schema_validator: [schema_validator] protocol_pool_wallets: OK (7 columns)
+2026-04-22T16:34:35.104650507Z [error] 2026-04-22 16:34:35,090 [INFO] app.db_schema_validator: [schema_validator] protocol_trace_observations: OK (12 columns)
+2026-04-22T16:34:35.289634702Z [error] 2026-04-22 16:34:35,288 [INFO] app.db_schema_validator: [schema_validator] token_approval_snapshots: OK (9 columns)
+2026-04-22T16:34:35.494495283Z [error] 2026-04-22 16:34:35,485 [INFO] app.db_schema_validator: [schema_validator] oracle_update_cadence: OK (9 columns)
+2026-04-22T16:34:35.706196609Z [error] 2026-04-22 16:34:35,683 [INFO] app.db_schema_validator: [schema_validator] wallet_holder_discovery: OK (11 columns)
+2026-04-22T16:34:36.114857149Z [error] 2026-04-22 16:34:35,882 [INFO] app.db_schema_validator: [schema_validator] wallet_chain_presence: OK (12 columns)
+2026-04-22T16:34:36.114862313Z [error] 2026-04-22 16:34:35,882 [ERROR] app.db_schema_validator: [schema_validator] all schemas aligned — 39 tables, 453 columns verified
+2026-04-22T16:34:36.114867614Z [error] 2026-04-22 16:34:35,882 [ERROR] worker: [startup] schema fixes complete, diagnostics will fire in 60s via independent loop
+2026-04-22T16:34:36.114872656Z [error] 2026-04-22 16:34:35,885 [ERROR] worker: [startup] running Dwellir capability probe
+2026-04-22T16:34:36.114877690Z [error] 2026-04-22 16:34:36,037 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:34:36.114883019Z [error] 2026-04-22 16:34:36,038 [ERROR] worker: [api_tracker] recorded: alchemy /v2/AyH5JAFcthHka4uBiciLg → 200
+2026-04-22T16:34:36.114887567Z [error] 2026-04-22 16:34:36,071 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:34:36.114891609Z [error] 2026-04-22 16:34:36,071 [ERROR] worker: [api_tracker] recorded: alchemy /v2/AyH5JAFcthHka4uBiciLg → 200
+2026-04-22T16:34:37.130945514Z [error] 2026-04-22 16:34:36,766 [ERROR] worker: [api_tracker] recorded: dwellir /ebce64a9-6da4-4451-808d-aa0e82b1da55 → 200
+2026-04-22T16:34:37.130954593Z [error] 2026-04-22 16:34:36,965 [ERROR] app.utils.rpc_provider: [rpc_probe] dwellir eth_blockNumber (connectivity): OK
+2026-04-22T16:34:37.130960655Z [error] 2026-04-22 16:34:37,125 [INFO] httpx: HTTP Request: POST https://api-ethereum-mainnet.n.dwellir.com/ebce64a9-6da4-4451-808d-aa0e82b1da55 "HTTP/1.1 200 OK"
+2026-04-22T16:34:37.130989832Z [error] 2026-04-22 16:34:36,765 [INFO] httpx: HTTP Request: POST https://api-ethereum-mainnet.n.dwellir.com/ebce64a9-6da4-4451-808d-aa0e82b1da55 "HTTP/1.1 200 OK"
+2026-04-22T16:34:37.341770329Z [error] 2026-04-22 16:34:37,323 [ERROR] app.utils.rpc_provider: [rpc_probe] dwellir eth_call @latest (current state): OK
+2026-04-22T16:34:37.488413284Z [error] 2026-04-22 16:34:37,483 [INFO] httpx: HTTP Request: POST https://api-ethereum-mainnet.n.dwellir.com/ebce64a9-6da4-4451-808d-aa0e82b1da55 "HTTP/1.1 200 OK"
+2026-04-22T16:34:37.697058958Z [error] 2026-04-22 16:34:37,681 [ERROR] app.utils.rpc_provider: [rpc_probe] dwellir eth_call @0x17c7ff7 (archive read): OK
+2026-04-22T16:34:38.115109421Z [error] 2026-04-22 16:34:37,841 [INFO] httpx: HTTP Request: POST https://api-ethereum-mainnet.n.dwellir.com/ebce64a9-6da4-4451-808d-aa0e82b1da55 "HTTP/1.1 403 Forbidden"
+2026-04-22T16:34:38.115112227Z [error] 2026-04-22 16:34:38,038 [ERROR] app.utils.rpc_provider: [rpc_probe] dwellir debug_traceTransaction (callTracer): FAIL HTTP 403: Your current plan does not support trace or debug methods. Please upgrade to a paid plan a
+2026-04-22T16:34:38.229633006Z [error] 2026-04-22 16:34:38,198 [INFO] httpx: HTTP Request: POST https://api-ethereum-mainnet.n.dwellir.com/ebce64a9-6da4-4451-808d-aa0e82b1da55 "HTTP/1.1 403 Forbidden"
+2026-04-22T16:34:38.398828925Z [error] 2026-04-22 16:34:38,396 [ERROR] app.utils.rpc_provider: [rpc_probe] dwellir trace_transaction: FAIL HTTP 403: Your current plan does not support trace or debug methods. Please upgrade to a paid plan a
+2026-04-22T16:34:38.398834014Z [error] 2026-04-22 16:34:38,397 [ERROR] app.utils.rpc_provider: [rpc_probe] SUMMARY chain=ethereum trace=False archive=True (see rpc_capabilities table for per-method details)
+2026-04-22T16:34:38.441645870Z [error] 2026-04-22 16:34:38,426 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] background tasks scheduled
+2026-04-22T16:34:40.128586519Z [error] 2026-04-22 16:34:40,073 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] watchlist: stablecoins=36, pool_wallets=11, deduped_total=47, limit=100
+2026-04-22T16:34:40.462702330Z [error] 2026-04-22 16:34:40,460 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:34:41.143632701Z [error] 2026-04-22 16:34:40,862 [INFO] httpx: HTTP Request: POST https://api.resend.com/emails "HTTP/1.1 429 Too Many Requests"
+2026-04-22T16:34:41.143635304Z [error] 2026-04-22 16:34:40,863 [ERROR] app.ops.tools.alerter: Resend send failed: 429 {"statusCode":429,"message":"You have reached your daily email sending quota.","name":"daily_quota_exceeded"}
+2026-04-22T16:34:41.279497077Z [error] 2026-04-22 16:34:41,259 [INFO] worker: Starting worker loop (interval: 60 min)
+2026-04-22T16:34:41.279499769Z [error] 2026-04-22 16:34:41,261 [ERROR] worker: [startup] oracle cadence loop launched (5-min sampling)
+2026-04-22T16:34:41.279502507Z [error] 2026-04-22 16:34:41,261 [ERROR] app.data_layer.oracle_cadence_collector: [oracle_cadence] loop started, sampling every 300s
+2026-04-22T16:34:41.279505037Z [error] 2026-04-22 16:34:41,261 [INFO] worker: === Fast cycle start ===
+2026-04-22T16:34:44.225643020Z [error] 2026-04-22 16:34:44,221 [INFO] app.collectors.registry: Synced 15 provenance sources to DB
+2026-04-22T16:34:47.372271496Z [error] 2026-04-22 16:34:47,368 [INFO] worker: Starting scoring cycle for 36 stablecoins
+2026-04-22T16:34:48.203952929Z [error] 2026-04-22 16:34:48,184 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] SUBSCRIBED chain=ethereum addresses=47 subscription_id=0x597ca8be7cf3fd557cce1a4413322aa2
+2026-04-22T16:36:07.963460725Z [error] 2026-04-22 16:35:59,536 [ERROR] app.collectors.coingecko: CoinGecko current data error for usd0-liquid-bond: 
+2026-04-22T16:36:07.963464932Z [error] 2026-04-22 16:35:59,537 [ERROR] app.collectors.coingecko: CoinGecko current data error for usd0-liquid-bond: 
+2026-04-22T16:36:07.963467886Z [error] 2026-04-22 16:35:59,537 [ERROR] app.collectors.coingecko: CoinGecko current data error for usd0-liquid-bond: 
+2026-04-22T16:36:07.963470821Z [error] 2026-04-22 16:35:59,537 [ERROR] app.collectors.defillama: DeFiLlama stablecoin error for usd0-liquid-bond: 
+2026-04-22T16:36:07.963474126Z [error] 2026-04-22 16:35:59,538 [ERROR] app.collectors.flows: Etherscan tokentx error for 0x35d8949372d46b7a3d5a56006ae77b215fc69bc0: 
+2026-04-22T16:36:07.963478200Z [error] 2026-04-22 16:35:59,538 [WARNING] app.collectors.smart_contract: ABI check failed for 0x35d8949372d46b7a3d5a56006ae77b215fc69bc0: 
+2026-04-22T16:37:08.249253674Z [error] 2026-04-22 16:37:00,549 [ERROR] worker: [api_usage_7d] coingecko: 2026-04-22: 362 calls (1 err, p95=1611ms) — 2% | 2026-04-21: 5,068 calls (14 err, p95=2060ms) — 31% | 2026-04-20: 362 calls (1 err, p95=1580ms) — 2%
+2026-04-22T16:37:08.249260620Z [error] 2026-04-22 16:37:00,549 [ERROR] worker: [api_usage_7d] curve: 2026-04-22: 3 calls (0 err, p95=1398ms) | 2026-04-21: 42 calls (0 err, p95=1550ms) | 2026-04-20: 3 calls (0 err, p95=1636ms)
+2026-04-22T16:37:08.249265786Z [error] 2026-04-22 16:37:00,549 [ERROR] worker: [api_usage_7d] etherscan: 2026-04-22: 442 calls (0 err, p95=1372ms) — 0% | 2026-04-21: 6,259 calls (2 err, p95=2636ms) — 3% | 2026-04-20: 442 calls (0 err, p95=1383ms) — 0%
+2026-04-22T16:37:08.249267584Z [error] 2026-04-22 16:37:00,349 [ERROR] worker: [provenance_gap] weekly sources (not expected in 24h): ['defillama_bridges']
+2026-04-22T16:37:08.249276909Z [error] 2026-04-22 16:37:00,549 [ERROR] worker: [api_usage_7d] alchemy: 2026-04-22: 12 calls (0 err, p95=4302ms) | 2026-04-21: 168 calls (0 err, p95=5440ms) | 2026-04-20: 12 calls (0 err, p95=4848ms)
+2026-04-22T16:37:08.249280154Z [error] 2026-04-22 16:37:00,549 [ERROR] worker: [api_usage_7d] blockscout: 2026-04-22: 20 calls (0 err, p95=630ms) — 0% | 2026-04-21: 20 calls (0 err, p95=780ms) — 0%
+2026-04-22T16:37:08.249282734Z [error] 2026-04-22 16:37:00,349 [ERROR] worker: [api_budget] alchemy=5, coingecko=3/16,600 (0%), dwellir=5, etherscan=2/200,000 (0%), llama=1, resend=1
+2026-04-22T16:37:08.249309012Z [error] 2026-04-22 16:36:59,950 [ERROR] worker: [stale_diagnostic] stale=5: liquidity_depth (age=5.7h, threshold=3h), exchange_snapshots (age=5.7h, threshold=3h), entity_snapshots_hourly (age=5.7h, threshold=3h), governance_proposals (age=41.7h, threshold=26h), dex_pool_ohlcv (age=96.1h, threshold=6h)
+2026-04-22T16:37:08.249318019Z [error] 2026-04-22 16:37:00,349 [ERROR] worker: [provenance_gap] hourly: 11/12 producing, weekly: 3, missing_hourly=['tally_governance']
+2026-04-22T16:37:08.250712033Z [error]   helius/unknown: 6
+2026-04-22T16:37:08.250720627Z [error]   coingecko/coins: 6
+2026-04-22T16:37:08.250721407Z [error] 2026-04-22 16:37:00,549 [ERROR] worker: [api_usage_7d] helius: 2026-04-22: 2 calls (0 err, p95=1196ms) | 2026-04-21: 28 calls (0 err, p95=2658ms) | 2026-04-20: 2 calls (0 err, p95=1497ms)
+2026-04-22T16:37:08.250724238Z [error]   alchemy/unknown: 48
+2026-04-22T16:37:08.250727949Z [error]   coingecko/coins/dai: 5
+2026-04-22T16:37:08.250734268Z [error]   blockscout/unknown: 20
+2026-04-22T16:37:08.250735009Z [error] 2026-04-22 16:37:00,549 [ERROR] worker: [api_usage_7d] helius-rpc: 2026-04-22: 10 calls (0 err, p95=8301ms) | 2026-04-21: 140 calls (0 err, p95=8611ms) | 2026-04-20: 10 calls (0 err, p95=8351ms)
+2026-04-22T16:37:08.250735485Z [error]   helius-rpc/unknown: 40
+2026-04-22T16:37:08.250741916Z [error]   snapshot/graphql: 12
+2026-04-22T16:37:08.250744085Z [error] 2026-04-22 16:37:00,549 [ERROR] worker: [api_usage_7d] llama: 2026-04-22: 73 calls (0 err, p95=1348ms) | 2026-04-21: 1,022 calls (1 err, p95=5215ms) | 2026-04-20: 73 calls (0 err, p95=1579ms)
+2026-04-22T16:37:08.250744211Z [error] 2026-04-22 16:37:00,746 [ERROR] worker: [api_hotspots_24h]
+2026-04-22T16:37:08.250745362Z [error]   llama/pools: 37
+2026-04-22T16:37:08.250749705Z [error]   curve/unknown: 9
+2026-04-22T16:37:08.250752479Z [error] 2026-04-22 16:37:00,549 [ERROR] worker: [api_usage_7d] resend: 2026-04-22: 1 calls (1 err, p95=119ms) | 2026-04-21: 15 calls (0 err, p95=351ms) | 2026-04-20: 1 calls (0 err, p95=219ms)
+2026-04-22T16:37:08.250754703Z [error]   llama/stablecoins: 36
+2026-04-22T16:37:08.250757540Z [error]   etherscan/unknown: 1,768
+2026-04-22T16:37:08.250759077Z [error] 2026-04-22 16:37:00,549 [ERROR] worker: [api_usage_7d] snapshot: 2026-04-22: 12 calls (0 err, p95=247ms) — 0% | 2026-04-21: 72 calls (0 err, p95=2413ms) — 1%
+2026-04-22T16:37:08.250765022Z [error]   coingecko/unknown: 1,086
+2026-04-22T16:37:08.250769505Z [error]   llama/unknown: 219
+2026-04-22T16:37:08.252383469Z [error]   coingecko/coins/gho: 5
+2026-04-22T16:37:08.252387334Z [error]   coingecko/coins/rai: 5
+2026-04-22T16:37:08.252390526Z [error] 2026-04-22 16:37:00,943 [ERROR] worker: [rpc_usage_7d] alchemy: 150 eth_getTransactionByHash (0 fallback, 89 err)
+2026-04-22T16:37:08.252394038Z [error] 2026-04-22 16:37:00,943 [ERROR] worker: [rpc_usage_7d] dwellir: no calls
+2026-04-22T16:37:08.252397656Z [error] 2026-04-22 16:37:01,336 [ERROR] worker: [rpc_capabilities]
+2026-04-22T16:37:08.252401776Z [error]   dwellir/ethereum/debug_traceTransaction: fail (HTTP 403: Your current plan does not support trace or debug )
+2026-04-22T16:37:08.252405731Z [error]   dwellir/ethereum/eth_blockNumber: ok
+2026-04-22T16:37:08.252408597Z [error]   dwellir/ethereum/eth_call: ok
+2026-04-22T16:37:08.252411862Z [error]   dwellir/ethereum/trace_transaction: fail (HTTP 403: Your current plan does not support trace or debug )
+2026-04-22T16:37:08.252414733Z [error] 2026-04-22 16:37:02,141 [ERROR] app.data_layer.mempool_watcher: [mempool_observations] 24h SUMMARY: captured=19563 confirmed=150 dropped=0 avg_confirmation_latency_ms=10076274 alchemy_cu_rolling24h=60 top_to=[0xdac17f95=13640, 0xa0b86991=5622, 0x6b175474=67, 0x6c3ea903=64, 0x4c9edd58=58] top_selectors=[0xa9059cbb=18273, 0x23b872dd=780, 0x095ea7b3=439, 0xe3ee160e=21, 0x40c10f19=16]
+2026-04-22T16:37:08.252417769Z [error] 2026-04-22 16:37:02,534 [ERROR] worker: [api_usage_verify] hourly: 129 rows, latest=2026-04-22 11:00:00+00:00 | tracker: 0 rows, latest=None
+2026-04-22T16:38:57.216272004Z [error] 2026-04-22 16:38:43,805 [INFO] app.state_attestation: State attested: domain=smart_contracts entity=busd0 records=6 hash=09fffde26c1ab1d8...
+2026-04-22T16:40:59.430105601Z [error] 2026-04-22 16:40:52,843 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] connection error after 372s: ConnectionClosedError: no close frame received or sent
+2026-04-22T16:40:59.430107151Z [error] 2026-04-22 16:40:55,760 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] watchlist: stablecoins=36, pool_wallets=11, deduped_total=47, limit=100
+2026-04-22T16:40:59.430112210Z [error] 2026-04-22 16:40:54,149 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:40:59.430113080Z [error] 2026-04-22 16:40:55,763 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/crvusd/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-22T16:40:59.430118079Z [error] 2026-04-22 16:40:55,775 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/crvusd?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-22T16:40:59.430120859Z [error] 2026-04-22 16:40:54,351 [INFO] httpx: HTTP Request: GET https://stablecoins.llama.fi/stablecoins "HTTP/1.1 200 OK"
+2026-04-22T16:40:59.430122301Z [error] 2026-04-22 16:40:54,354 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/crvusd?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-22T16:40:59.430126922Z [error] 2026-04-22 16:40:55,792 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:40:59.430128046Z [error] 2026-04-22 16:40:56,651 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:40:59.430129050Z [error] 2026-04-22 16:40:54,353 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:40:59.430132540Z [error] 2026-04-22 16:40:55,992 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:40:59.430137883Z [error] 2026-04-22 16:40:57,050 [INFO] app.state_attestation: State attested: domain=data_layer:oracle_cadence entity=None records=1 hash=42063b4ad3ab0ec1...
+2026-04-22T16:40:59.430138926Z [error] 2026-04-22 16:40:51,654 [ERROR] app.data_layer.oracle_cadence_collector: [oracle_cadence] sample failed for Chainlink USDC/USD: 
+2026-04-22T16:40:59.430139685Z [error] 2026-04-22 16:40:54,767 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:40:59.430141961Z [error] 2026-04-22 16:40:55,994 [INFO] httpx: HTTP Request: GET https://yields.llama.fi/pools "HTTP/1.1 200 OK"
+2026-04-22T16:40:59.430146166Z [error] 2026-04-22 16:40:56,606 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] SUBSCRIBED chain=ethereum addresses=47 subscription_id=0x5634d0c7edbcd1d98b6cb11277458050
+2026-04-22T16:40:59.430147708Z [error] 2026-04-22 16:40:51,655 [ERROR] app.collectors.defillama: DeFiLlama yields error for busd0: 
+2026-04-22T16:40:59.430149655Z [error] 2026-04-22 16:40:54,970 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/crvusd?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-22T16:40:59.430150674Z [error] 2026-04-22 16:40:55,996 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/crvusd/market_chart?vs_currency=usd&days=7 "HTTP/1.1 200 OK"
+2026-04-22T16:40:59.430155650Z [error] 2026-04-22 16:40:56,607 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=contract&action=getabi&address=0xf939e0a03fb07f59a73314e73794be0e57ac1b4e&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-22T16:40:59.430159513Z [error] 2026-04-22 16:40:51,655 [WARNING] worker: Timeout scoring busd0 (>120s) — skipping
+2026-04-22T16:40:59.430161614Z [error] 2026-04-22 16:40:56,405 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:40:59.430163749Z [error] 2026-04-22 16:40:56,607 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/crvusd/market_chart?vs_currency=usd&days=30 "HTTP/1.1 200 OK"
+2026-04-22T16:40:59.430204754Z [error] 2026-04-22 16:40:57,050 [ERROR] app.data_layer.oracle_cadence_collector: [oracle_cadence] sample #1: new_rounds=5, unchanged=0, errors=1
+2026-04-22T16:40:59.430211746Z [error] 2026-04-22 16:40:57,052 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:40:59.430218868Z [error] 2026-04-22 16:40:57,052 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&contractaddress=0xf939e0a03fb07f59a73314e73794be0e57ac1b4e&page=1&offset=200&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-22T16:40:59.430223091Z [error] 2026-04-22 16:40:57,646 [INFO] app.state_attestation: State attested: domain=smart_contracts entity=crvusd records=6 hash=3babcd55dd2f52a4...
+2026-04-22T16:40:59.430228228Z [error] 2026-04-22 16:40:58,645 [INFO] app.state_attestation: State attested: domain=flows entity=crvusd records=5 hash=bc22d881f259c25f...
+2026-04-22T16:41:18.478918657Z [error] 2026-04-22 16:41:09,686 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/crvusd?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-22T16:41:48.778392730Z [error] 2026-04-22 16:41:47,095 [INFO] app.state_attestation: State attested: domain=sii_components entity=crvusd records=45 hash=0a42584048cbfdd8...
+2026-04-22T16:41:48.778396187Z [error] 2026-04-22 16:41:47,095 [INFO] worker: crvusd: 80.38 - 45 components in 54.4s
+2026-04-22T16:42:18.118330459Z [error] 2026-04-22 16:42:14,835 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:42:18.118338354Z [error] 2026-04-22 16:42:15,237 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/dai?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-22T16:42:18.118341994Z [error] 2026-04-22 16:42:15,239 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/dai?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-22T16:42:18.118344852Z [error] 2026-04-22 16:42:15,240 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/dai?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-22T16:42:18.118374665Z [error] 2026-04-22 16:42:10,787 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] connection error after 75s: ConnectionClosedError: sent 1011 (internal error) keepalive ping timeout; no close frame received
+2026-04-22T16:42:18.118377929Z [error] 2026-04-22 16:42:10,899 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:42:18.118391591Z [error] 2026-04-22 16:42:11,369 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:42:18.118396071Z [error] 2026-04-22 16:42:11,829 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:42:18.118399857Z [error] 2026-04-22 16:42:12,298 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:42:18.118403077Z [error] 2026-04-22 16:42:14,773 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] watchlist: stablecoins=36, pool_wallets=11, deduped_total=47, limit=100
+2026-04-22T16:42:18.118406794Z [error] 2026-04-22 16:42:14,817 [INFO] httpx: HTTP Request: GET https://stablecoins.llama.fi/stablecoins "HTTP/1.1 200 OK"
+2026-04-22T16:42:18.120162179Z [error] 2026-04-22 16:42:15,255 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] SUBSCRIBED chain=ethereum addresses=47 subscription_id=0x48d1ebdfd8b04ea7d5275171c2c320e7
+2026-04-22T16:42:18.120171831Z [error] 2026-04-22 16:42:15,279 [INFO] httpx: HTTP Request: GET https://yields.llama.fi/pools "HTTP/1.1 200 OK"
+2026-04-22T16:42:18.120175721Z [error] 2026-04-22 16:42:15,316 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:42:18.120179575Z [error] 2026-04-22 16:42:15,718 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/dai/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-22T16:42:18.120182816Z [error] 2026-04-22 16:42:15,724 [INFO] httpx: HTTP Request: GET https://api.curve.finance/v1/getPools/ethereum/main "HTTP/1.1 200 OK"
+2026-04-22T16:42:18.120186495Z [error] 2026-04-22 16:42:15,784 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:42:18.120189793Z [error] 2026-04-22 16:42:17,765 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/dai/market_chart?vs_currency=usd&days=7 "HTTP/1.1 200 OK"
+2026-04-22T16:42:38.117972357Z [error] 2026-04-22 16:42:33,567 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=contract&action=getabi&address=0x6b175474e89094c44da98b954eedeac495271d0f&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-22T16:42:38.117976953Z [error] 2026-04-22 16:42:33,568 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokenbalance&contractaddress=0x6b175474e89094c44da98b954eedeac495271d0f&address=0x28C6c06298d514Db089934071355E5743bf21d60&tag=latest&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-22T16:42:38.117979868Z [error] 2026-04-22 16:42:33,569 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&contractaddress=0x6b175474e89094c44da98b954eedeac495271d0f&page=1&offset=200&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-22T16:42:38.117982777Z [error] 2026-04-22 16:42:33,576 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/dai/market_chart?vs_currency=usd&days=30 "HTTP/1.1 200 OK"
+2026-04-22T16:43:27.844759521Z [error] 2026-04-22 16:43:23,720 [WARNING] app.collectors.registry: smart_contract timed out for dai
+2026-04-22T16:43:27.844762568Z [error] 2026-04-22 16:43:23,721 [WARNING] app.collectors.registry: peg timed out for dai
+2026-04-22T16:43:27.844765486Z [error] 2026-04-22 16:43:23,721 [WARNING] app.collectors.registry: etherscan timed out for dai
+2026-04-22T16:43:27.844768513Z [error] 2026-04-22 16:43:23,721 [WARNING] app.collectors.registry: flows timed out for dai
+2026-04-22T16:44:17.903265289Z [error] 2026-04-22 16:44:15,884 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] SUBSCRIBED chain=ethereum addresses=47 subscription_id=0xac890311180f755656e923c78f5cd0b1
+2026-04-22T16:44:17.903273376Z [error] 2026-04-22 16:44:15,929 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:44:17.903277740Z [error] 2026-04-22 16:44:16,393 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:44:17.903373379Z [error] 2026-04-22 16:44:07,916 [WARNING] app.collectors.registry: defillama timed out for dai
+2026-04-22T16:44:17.903378778Z [error] 2026-04-22 16:44:07,917 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] connection error after 113s: ConnectionClosedError: sent 1011 (internal error) keepalive ping timeout; no close frame received
+2026-04-22T16:44:17.903382798Z [error] 2026-04-22 16:44:09,365 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:44:17.903387893Z [error] 2026-04-22 16:44:09,765 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/dai?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-22T16:44:17.903391909Z [error] 2026-04-22 16:44:14,619 [INFO] app.state_attestation: State attested: domain=sii_components entity=dai records=36 hash=b241a3a9f264af9f...
+2026-04-22T16:44:17.903395845Z [error] 2026-04-22 16:44:14,619 [INFO] worker: dai: 67.26 - 36 components in 121.9s
+2026-04-22T16:44:17.903400131Z [error] 2026-04-22 16:44:15,407 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] watchlist: stablecoins=36, pool_wallets=11, deduped_total=47, limit=100
+2026-04-22T16:44:17.903404336Z [error] 2026-04-22 16:44:15,464 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:46:48.790642815Z [error] 2026-04-22 16:46:45,383 [ERROR] app.collectors.coingecko: CoinGecko current data error for dola-usd: 
+2026-04-22T16:46:48.790647455Z [error] 2026-04-22 16:46:45,383 [ERROR] app.collectors.coingecko: CoinGecko current data error for dola-usd: 
+2026-04-22T16:46:48.790659866Z [error] 2026-04-22 16:46:45,384 [ERROR] app.collectors.defillama: DeFiLlama stablecoin error for dola-usd: 
+2026-04-22T16:49:09.505424387Z [error] 2026-04-22 16:49:03,288 [WARNING] app.collectors.smart_contract: ABI check failed for 0x865377367054516e17014ccded1e7d814edc9ce4: 
+2026-04-22T16:49:09.505432013Z [error] 2026-04-22 16:49:03,288 [ERROR] app.collectors.flows: Etherscan tokentx error for 0x865377367054516e17014ccded1e7d814edc9ce4: 
+2026-04-22T16:49:09.505483179Z [error] 2026-04-22 16:49:03,284 [ERROR] app.collectors.coingecko: CoinGecko current data error for dola-usd: 
+2026-04-22T16:51:20.219621024Z [error] 2026-04-22 16:51:20,110 [ERROR] worker: [api_usage_7d] coingecko: 2026-04-22: 362 calls (1 err, p95=1611ms) — 2% | 2026-04-21: 5,068 calls (14 err, p95=2060ms) — 31% | 2026-04-20: 362 calls (1 err, p95=1580ms) — 2%
+2026-04-22T16:51:20.219629749Z [error] 2026-04-22 16:51:20,110 [ERROR] worker: [api_usage_7d] curve: 2026-04-22: 3 calls (0 err, p95=1398ms) | 2026-04-21: 42 calls (0 err, p95=1550ms) | 2026-04-20: 3 calls (0 err, p95=1636ms)
+2026-04-22T16:51:20.219633526Z [error] 2026-04-22 16:51:20,110 [ERROR] worker: [api_usage_7d] etherscan: 2026-04-22: 442 calls (0 err, p95=1372ms) — 0% | 2026-04-21: 6,259 calls (2 err, p95=2636ms) — 3% | 2026-04-20: 442 calls (0 err, p95=1383ms) — 0%
+2026-04-22T16:51:20.219682004Z [error] 2026-04-22 16:51:19,516 [ERROR] worker: [stale_diagnostic] stale=5: liquidity_depth (age=5.9h, threshold=3h), exchange_snapshots (age=5.9h, threshold=3h), entity_snapshots_hourly (age=5.9h, threshold=3h), governance_proposals (age=42.0h, threshold=26h), dex_pool_ohlcv (age=96.4h, threshold=6h)
+2026-04-22T16:51:20.219684949Z [error] 2026-04-22 16:51:19,910 [ERROR] worker: [provenance_gap] hourly: 11/12 producing, weekly: 3, missing_hourly=['tally_governance']
+2026-04-22T16:51:20.219688115Z [error] 2026-04-22 16:51:19,911 [ERROR] worker: [provenance_gap] weekly sources (not expected in 24h): ['defillama_bridges']
+2026-04-22T16:51:20.219691243Z [error] 2026-04-22 16:51:19,911 [ERROR] worker: [api_budget] alchemy=31, coingecko=19/16,600 (0%), curve=1, dwellir=5, etherscan=8/200,000 (0%), llama=6, resend=1
+2026-04-22T16:51:20.219694260Z [error] 2026-04-22 16:51:20,110 [ERROR] worker: [api_usage_7d] alchemy: 2026-04-22: 12 calls (0 err, p95=4302ms) | 2026-04-21: 168 calls (0 err, p95=5440ms) | 2026-04-20: 12 calls (0 err, p95=4848ms)
+2026-04-22T16:51:20.219697525Z [error] 2026-04-22 16:51:20,110 [ERROR] worker: [api_usage_7d] blockscout: 2026-04-22: 20 calls (0 err, p95=630ms) — 0% | 2026-04-21: 20 calls (0 err, p95=780ms) — 0%
+2026-04-22T16:51:20.220521152Z [error] 2026-04-22 16:51:20,110 [ERROR] worker: [api_usage_7d] helius: 2026-04-22: 2 calls (0 err, p95=1196ms) | 2026-04-21: 28 calls (0 err, p95=2658ms) | 2026-04-20: 2 calls (0 err, p95=1497ms)
+2026-04-22T16:51:20.220525077Z [error] 2026-04-22 16:51:20,110 [ERROR] worker: [api_usage_7d] helius-rpc: 2026-04-22: 10 calls (0 err, p95=8301ms) | 2026-04-21: 140 calls (0 err, p95=8611ms) | 2026-04-20: 10 calls (0 err, p95=8351ms)
+2026-04-22T16:51:20.220528999Z [error] 2026-04-22 16:51:20,110 [ERROR] worker: [api_usage_7d] llama: 2026-04-22: 73 calls (0 err, p95=1348ms) | 2026-04-21: 1,022 calls (1 err, p95=5215ms) | 2026-04-20: 73 calls (0 err, p95=1579ms)
+2026-04-22T16:51:20.220532697Z [error] 2026-04-22 16:51:20,110 [ERROR] worker: [api_usage_7d] resend: 2026-04-22: 1 calls (1 err, p95=119ms) | 2026-04-21: 15 calls (0 err, p95=351ms) | 2026-04-20: 1 calls (0 err, p95=219ms)
+2026-04-22T16:51:20.220536669Z [error] 2026-04-22 16:51:20,110 [ERROR] worker: [api_usage_7d] snapshot: 2026-04-22: 12 calls (0 err, p95=247ms) — 0% | 2026-04-21: 72 calls (0 err, p95=2413ms) — 1%
+2026-04-22T16:51:20.342594180Z [error] 2026-04-22 16:51:20,307 [ERROR] worker: [api_hotspots_24h]
+2026-04-22T16:51:20.342597214Z [error]   etherscan/unknown: 1,768
+2026-04-22T16:51:20.342599967Z [error]   coingecko/unknown: 1,086
+2026-04-22T16:51:20.342602780Z [error]   llama/unknown: 219
+2026-04-22T16:51:20.342605826Z [error]   alchemy/unknown: 48
+2026-04-22T16:51:20.342608815Z [error]   helius-rpc/unknown: 40
+2026-04-22T16:51:20.342611649Z [error]   llama/pools: 37
+2026-04-22T16:51:20.342614380Z [error]   llama/stablecoins: 36
+2026-04-22T16:51:20.342617263Z [error]   blockscout/unknown: 20
+2026-04-22T16:51:20.342620169Z [error]   snapshot/graphql: 12
+2026-04-22T16:51:20.342622856Z [error]   curve/unknown: 9
+2026-04-22T16:51:20.342625915Z [error]   helius/unknown: 6
+2026-04-22T16:51:20.342628991Z [error]   coingecko/coins: 6
+2026-04-22T16:51:20.342632202Z [error]   coingecko/coins/dai: 5
+2026-04-22T16:51:20.342635081Z [error]   coingecko/coins/gho: 5
+2026-04-22T16:51:20.342638083Z [error]   coingecko/coins/rai: 5
+2026-04-22T16:51:20.507733905Z [error] 2026-04-22 16:51:20,503 [ERROR] worker: [rpc_usage_7d] alchemy: 164 eth_getTransactionByHash (0 fallback, 95 err)
+2026-04-22T16:51:20.507736914Z [error] 2026-04-22 16:51:20,504 [ERROR] worker: [rpc_usage_7d] dwellir: no calls
+2026-04-22T16:51:21.250530616Z [error]   dwellir/ethereum/trace_transaction: fail (HTTP 403: Your current plan does not support trace or debug )
+2026-04-22T16:51:21.250552882Z [error] 2026-04-22 16:51:20,897 [ERROR] worker: [rpc_capabilities]
+2026-04-22T16:51:21.250557962Z [error]   dwellir/ethereum/debug_traceTransaction: fail (HTTP 403: Your current plan does not support trace or debug )
+2026-04-22T16:51:21.250566387Z [error]   dwellir/ethereum/eth_blockNumber: ok
+2026-04-22T16:51:21.250570857Z [error]   dwellir/ethereum/eth_call: ok
+2026-04-22T16:51:21.734332032Z [error] 2026-04-22 16:51:21,722 [ERROR] app.data_layer.mempool_watcher: [mempool_observations] 24h SUMMARY: captured=21470 confirmed=164 dropped=0 avg_confirmation_latency_ms=10794578 alchemy_cu_rolling24h=60 top_to=[0xdac17f95=14939, 0xa0b86991=6182, 0x6b175474=79, 0x6c3ea903=75, 0x4c9edd58=61] top_selectors=[0xa9059cbb=20053, 0x23b872dd=856, 0x095ea7b3=479, 0xe3ee160e=23, 0x40c10f19=19]
+2026-04-22T16:51:22.219213041Z [error] 2026-04-22 16:51:22,114 [ERROR] worker: [api_usage_verify] hourly: 129 rows, latest=2026-04-22 11:00:00+00:00 | tracker: 0 rows, latest=None
+2026-04-22T16:51:22.323428599Z [error] 2026-04-22 16:51:22,318 [INFO] app.state_attestation: State attested: domain=smart_contracts entity=dola records=6 hash=567532b0409897e2...
+2026-04-22T16:51:22.323432944Z [error] 2026-04-22 16:51:22,318 [WARNING] worker: Timeout scoring dola (>120s) — skipping
+2026-04-22T16:51:22.732278929Z [error] 2026-04-22 16:51:22,711 [ERROR] app.collectors.defillama: DeFiLlama yields error for dola: 
+2026-04-22T16:51:22.732282020Z [error] 2026-04-22 16:51:22,711 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] connection error after 427s: ConnectionClosedError: sent 1011 (internal error) keepalive ping timeout; no close frame received
+2026-04-22T16:51:23.517512054Z [error] 2026-04-22 16:51:23,506 [ERROR] app.data_layer.oracle_cadence_collector: [oracle_cadence] sample failed for Chainlink USDC/USD: 
+2026-04-22T16:51:26.410242155Z [error] 2026-04-22 16:51:26,406 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] watchlist: stablecoins=36, pool_wallets=11, deduped_total=47, limit=100
+2026-04-22T16:51:26.487708246Z [error] 2026-04-22 16:51:26,453 [INFO] httpx: HTTP Request: GET https://stablecoins.llama.fi/stablecoins "HTTP/1.1 200 OK"
+2026-04-22T16:51:26.487712107Z [error] 2026-04-22 16:51:26,481 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:51:26.487716302Z [error] 2026-04-22 16:51:26,482 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:51:27.265963585Z [error] 2026-04-22 16:51:26,884 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:51:27.265967927Z [error] 2026-04-22 16:51:26,885 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/euro-coin?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-22T16:51:27.265971757Z [error] 2026-04-22 16:51:26,886 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/euro-coin?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-22T16:51:27.265975021Z [error] 2026-04-22 16:51:26,887 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/euro-coin?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-22T16:51:27.265978640Z [error] 2026-04-22 16:51:26,908 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] SUBSCRIBED chain=ethereum addresses=47 subscription_id=0x2b44a03d5019562f94ac6735ba095550
+2026-04-22T16:51:27.265982042Z [error] 2026-04-22 16:51:26,919 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:51:27.265985487Z [error] 2026-04-22 16:51:26,952 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:51:28.538583157Z [error] 2026-04-22 16:51:28,536 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:51:28.540578612Z [error] 2026-04-22 16:51:28,538 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:51:28.540585473Z [error] 2026-04-22 16:51:28,538 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/euro-coin/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-22T16:51:28.540590339Z [error] 2026-04-22 16:51:28,539 [INFO] httpx: HTTP Request: GET https://yields.llama.fi/pools "HTTP/1.1 200 OK"
+2026-04-22T16:51:31.349887110Z [error] 2026-04-22 16:51:31,327 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=contract&action=getabi&address=0x1abaea1f7c830bd89acc67ec4af516284b1bc33c&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-22T16:51:31.349891275Z [error] 2026-04-22 16:51:31,328 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/euro-coin/market_chart?vs_currency=usd&days=7 "HTTP/1.1 200 OK"
+2026-04-22T16:51:31.349894718Z [error] 2026-04-22 16:51:31,329 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&contractaddress=0x1abaea1f7c830bd89acc67ec4af516284b1bc33c&page=1&offset=200&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-22T16:51:50.982957310Z [error] 2026-04-22 16:51:41,800 [INFO] app.state_attestation: State attested: domain=flows entity=eurc records=5 hash=a8fd0bf2e70e26b3...
+2026-04-22T16:51:50.982963536Z [error] 2026-04-22 16:51:48,513 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/euro-coin/market_chart?vs_currency=usd&days=30 "HTTP/1.1 200 OK"
+2026-04-22T16:51:50.982967651Z [error] 2026-04-22 16:51:48,712 [INFO] app.state_attestation: State attested: domain=smart_contracts entity=eurc records=6 hash=3b1662aa90cd2917...
+2026-04-22T16:51:58.839483220Z [error] 2026-04-22 16:51:58,569 [WARNING] app.collectors.registry: peg timed out for eurc
+2026-04-22T16:52:04.103439048Z [error] 2026-04-22 16:52:04,101 [WARNING] app.collectors.registry: defillama timed out for eurc
+2026-04-22T16:52:54.813933947Z [error] 2026-04-22 16:52:50,104 [ERROR] app.collectors.coingecko: CoinGecko current data error for euro-coin: 
+2026-04-22T16:52:54.813937946Z [error] 2026-04-22 16:52:54,746 [INFO] app.state_attestation: State attested: domain=sii_components entity=eurc records=34 hash=9d8a7cdc7833bd42...
+2026-04-22T16:52:54.813942611Z [error] 2026-04-22 16:52:54,746 [INFO] worker: eurc: 69.43 - 34 components in 91.8s
+2026-04-22T16:53:57.217974617Z [error] 2026-04-22 16:53:38,776 [INFO] httpx: HTTP Request: GET https://yields.llama.fi/pools "HTTP/1.1 200 OK"
+2026-04-22T16:53:57.217981977Z [error] 2026-04-22 16:53:36,583 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] connection error after 130s: ConnectionClosedError: sent 1011 (internal error) keepalive ping timeout; no close frame received
+2026-04-22T16:53:57.217986787Z [error] 2026-04-22 16:53:37,887 [INFO] httpx: HTTP Request: GET https://stablecoins.llama.fi/stablecoins "HTTP/1.1 200 OK"
+2026-04-22T16:53:57.217993295Z [error] 2026-04-22 16:53:37,897 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:53:57.217993681Z [error] 2026-04-22 16:53:38,778 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/monerium-eur-money-2/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-22T16:53:57.217998280Z [error] 2026-04-22 16:53:38,299 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/monerium-eur-money-2?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-22T16:53:57.218001553Z [error] 2026-04-22 16:53:39,617 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] watchlist: stablecoins=36, pool_wallets=11, deduped_total=47, limit=100
+2026-04-22T16:53:57.218003786Z [error] 2026-04-22 16:53:38,300 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/monerium-eur-money-2?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-22T16:53:57.218007281Z [error] 2026-04-22 16:53:38,301 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/monerium-eur-money-2?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-22T16:53:57.218010895Z [error] 2026-04-22 16:53:38,373 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:53:57.218037053Z [error] 2026-04-22 16:53:39,685 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:53:57.218101728Z [error] 2026-04-22 16:53:42,049 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] SUBSCRIBED chain=ethereum addresses=47 subscription_id=0x56c64096043f30ddd00d1f987176ac90
+2026-04-22T16:53:57.218105449Z [error] 2026-04-22 16:53:42,839 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:53:57.218108861Z [error] 2026-04-22 16:53:43,241 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/monerium-eur-money-2?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-22T16:53:57.218127976Z [error] 2026-04-22 16:53:40,087 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=contract&action=getabi&address=0x39b8b6385416f4ca36a20319f70d28621895279d&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-22T16:53:57.218135662Z [error] 2026-04-22 16:53:40,088 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/monerium-eur-money-2/market_chart?vs_currency=usd&days=7 "HTTP/1.1 200 OK"
+2026-04-22T16:53:57.218139559Z [error] 2026-04-22 16:53:40,089 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&contractaddress=0x39b8b6385416f4ca36a20319f70d28621895279d&page=1&offset=200&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-22T16:53:57.218148411Z [error] 2026-04-22 16:53:40,258 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/monerium-eur-money-2/market_chart?vs_currency=usd&days=30 "HTTP/1.1 200 OK"
+2026-04-22T16:53:57.218152829Z [error] 2026-04-22 16:53:40,458 [INFO] app.state_attestation: State attested: domain=smart_contracts entity=eure records=6 hash=3b1662aa90cd2917...
+2026-04-22T16:53:57.218156824Z [error] 2026-04-22 16:53:41,050 [INFO] app.state_attestation: State attested: domain=flows entity=eure records=5 hash=782076fff3019b43...
+2026-04-22T16:54:02.632448253Z [error] 2026-04-22 16:53:51,630 [INFO] app.state_attestation: State attested: domain=sii_components entity=eure records=48 hash=b99e4d92b466f290...
+2026-04-22T16:54:02.632451935Z [error] 2026-04-22 16:53:51,630 [INFO] worker: eure: 42.17 - 48 components in 15.2s
+2026-04-22T16:55:11.904577933Z [error] 2026-04-22 16:55:05,521 [WARNING] app.collectors.registry: peg timed out for euri
+2026-04-22T16:55:51.643808660Z [error] 2026-04-22 16:55:45,987 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] connection error after 126s: ConnectionClosedError: sent 1011 (internal error) keepalive ping timeout; no close frame received
+2026-04-22T16:55:51.643816326Z [error] 2026-04-22 16:55:46,108 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:55:51.643820714Z [error] 2026-04-22 16:55:46,578 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:55:51.643824326Z [error] 2026-04-22 16:55:47,044 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:55:51.643827922Z [error] 2026-04-22 16:55:47,514 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:55:51.643833714Z [error] 2026-04-22 16:55:47,981 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:55:51.643837855Z [error] 2026-04-22 16:55:44,106 [WARNING] app.collectors.registry: liquidity timed out for euri
+2026-04-22T16:55:51.643841034Z [error] 2026-04-22 16:55:49,561 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] watchlist: stablecoins=36, pool_wallets=11, deduped_total=47, limit=100
+2026-04-22T16:55:51.643844251Z [error] 2026-04-22 16:55:44,107 [WARNING] app.collectors.registry: market timed out for euri
+2026-04-22T16:55:51.643849356Z [error] 2026-04-22 16:55:44,107 [WARNING] app.collectors.registry: defillama timed out for euri
+2026-04-22T16:55:51.643853025Z [error] 2026-04-22 16:55:44,107 [WARNING] app.collectors.registry: flows timed out for euri
+2026-04-22T16:55:51.643856523Z [error] 2026-04-22 16:55:44,107 [WARNING] app.collectors.registry: smart_contract timed out for euri
+2026-04-22T16:55:51.643859772Z [error] 2026-04-22 16:55:45,586 [INFO] worker: euri: SKIPPED (category-incomplete) — missing: mint_burn_dynamics — 7 components collected in 101.5s
+2026-04-22T16:55:51.645573470Z [error] 2026-04-22 16:55:51,258 [INFO] httpx: HTTP Request: GET https://stablecoins.llama.fi/stablecoins "HTTP/1.1 200 OK"
+2026-04-22T16:55:51.645577936Z [error] 2026-04-22 16:55:51,267 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:55:51.670583794Z [error] 2026-04-22 16:55:51,667 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/stasis-eurs?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-22T16:55:51.670588810Z [error] 2026-04-22 16:55:51,669 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/stasis-eurs?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-22T16:55:51.670592321Z [error] 2026-04-22 16:55:51,670 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/stasis-eurs?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-22T16:55:51.695960232Z [error] 2026-04-22 16:55:51,689 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] SUBSCRIBED chain=ethereum addresses=47 subscription_id=0x9c0b45a15a9e261e6e955ee2f7c5447d
+2026-04-22T16:55:51.737813520Z [error] 2026-04-22 16:55:51,731 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:55:52.450021406Z [error] 2026-04-22 16:55:52,134 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/stasis-eurs/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-22T16:55:52.450045829Z [error] 2026-04-22 16:55:52,132 [INFO] httpx: HTTP Request: GET https://yields.llama.fi/pools "HTTP/1.1 200 OK"
+2026-04-22T16:55:52.605258577Z [error] 2026-04-22 16:55:52,604 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:55:53.033702349Z [error] 2026-04-22 16:55:53,008 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&contractaddress=0xdb25f211ab05b1c97d595516f45d248390d6bfa5&page=1&offset=200&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-22T16:55:53.033705877Z [error] 2026-04-22 16:55:53,008 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=contract&action=getabi&address=0xdb25f211ab05b1c97d595516f45d248390d6bfa5&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-22T16:55:53.033710541Z [error] 2026-04-22 16:55:53,009 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/stasis-eurs/market_chart?vs_currency=usd&days=7 "HTTP/1.1 200 OK"
+2026-04-22T16:55:53.782630178Z [error] 2026-04-22 16:55:53,773 [INFO] app.state_attestation: State attested: domain=smart_contracts entity=eurs records=6 hash=09fffde26c1ab1d8...
+2026-04-22T16:55:53.782634331Z [error] 2026-04-22 16:55:53,774 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/stasis-eurs/market_chart?vs_currency=usd&days=30 "HTTP/1.1 200 OK"
+2026-04-22T16:55:54.999863363Z [error] 2026-04-22 16:55:54,767 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:55:59.522414603Z [error] 2026-04-22 16:55:59,521 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/stasis-eurs?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-22T16:56:29.196145082Z [error] 2026-04-22 16:56:20,041 [INFO] app.state_attestation: State attested: domain=sii_components entity=eurs records=43 hash=202bb73a8f2ef585...
+2026-04-22T16:56:29.196153813Z [error] 2026-04-22 16:56:20,041 [INFO] worker: eurs: 24.9 - 43 components in 30.3s
+2026-04-22T16:57:29.234661854Z [error] 2026-04-22 16:57:27,786 [ERROR] app.data_layer.oracle_cadence_collector: [oracle_cadence] sample failed for Chainlink USDC/USD: 
+2026-04-22T16:57:29.234668036Z [error] 2026-04-22 16:57:28,188 [WARNING] app.collectors.registry: peg timed out for fdusd
+2026-04-22T16:57:29.234671686Z [error] 2026-04-22 16:57:28,188 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] connection error after 98s: ConnectionClosedError: sent 1011 (internal error) keepalive ping timeout; no close frame received
+2026-04-22T16:57:29.234674668Z [error] 2026-04-22 16:57:28,189 [WARNING] app.collectors.registry: liquidity timed out for fdusd
+2026-04-22T16:57:29.234678281Z [error] 2026-04-22 16:57:28,189 [WARNING] app.collectors.registry: market timed out for fdusd
+2026-04-22T16:57:29.234681621Z [error] 2026-04-22 16:57:28,189 [WARNING] app.collectors.registry: defillama timed out for fdusd
+2026-04-22T16:57:29.234684856Z [error] 2026-04-22 16:57:28,189 [WARNING] app.collectors.registry: etherscan timed out for fdusd
+2026-04-22T16:57:29.234688141Z [error] 2026-04-22 16:57:28,189 [WARNING] app.collectors.registry: flows timed out for fdusd
+2026-04-22T16:57:29.234692375Z [error] 2026-04-22 16:57:28,189 [WARNING] app.collectors.registry: smart_contract timed out for fdusd
+2026-04-22T16:57:29.234695395Z [error] 2026-04-22 16:57:29,191 [INFO] app.services.cda_scores: CDA: fdusd — 4 components from reducto_pdf (confidence: 0.97)
+2026-04-22T16:57:30.388816725Z [error] 2026-04-22 16:57:30,385 [INFO] worker: fdusd: SKIPPED (category-incomplete) — missing: mint_burn_dynamics — 21 components collected in 42.5s
+2026-04-22T16:57:31.189959697Z [error] 2026-04-22 16:57:31,173 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] watchlist: stablecoins=36, pool_wallets=11, deduped_total=47, limit=100
+2026-04-22T16:57:31.225622392Z [error] 2026-04-22 16:57:31,223 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:57:31.233518382Z [error] 2026-04-22 16:57:31,231 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:57:31.689642813Z [error] 2026-04-22 16:57:31,633 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:57:31.689647652Z [error] 2026-04-22 16:57:31,653 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] SUBSCRIBED chain=ethereum addresses=47 subscription_id=0x6ca3c5b22b1bd8056424631c11b1dfe4
+2026-04-22T16:57:31.689651590Z [error] 2026-04-22 16:57:31,657 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:57:31.691091117Z [error] 2026-04-22 16:57:31,689 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:57:31.704369814Z [error] 2026-04-22 16:57:31,702 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:57:32.163318670Z [error] 2026-04-22 16:57:32,103 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T16:58:02.009440699Z [error] 2026-04-22 16:57:55,081 [ERROR] app.collectors.coingecko: CoinGecko current data error for frax: 
+2026-04-22T16:58:02.009444216Z [error] 2026-04-22 16:57:55,082 [ERROR] app.collectors.defillama: DeFiLlama stablecoin error for frax: 
+2026-04-22T16:58:02.009447488Z [error] 2026-04-22 16:57:55,082 [ERROR] app.collectors.coingecko: CoinGecko current data error for frax: 
+2026-04-22T16:58:02.009450622Z [error] 2026-04-22 16:57:55,082 [ERROR] app.collectors.coingecko: CoinGecko current data error for frax: 
+2026-04-22T16:58:02.009453574Z [error] 2026-04-22 16:57:57,058 [WARNING] app.collectors.registry: flows timed out for frax
+2026-04-22T16:58:02.009456608Z [error] 2026-04-22 16:57:57,058 [WARNING] app.collectors.registry: smart_contract timed out for frax
+2026-04-22T16:58:02.009460106Z [error] 2026-04-22 16:57:57,058 [WARNING] app.collectors.registry: defillama timed out for frax
+2026-04-22T16:58:02.009463355Z [error] 2026-04-22 16:57:57,058 [WARNING] app.collectors.registry: etherscan timed out for frax
+2026-04-22T16:58:02.009466650Z [error] 2026-04-22 16:57:59,038 [INFO] worker: frax: SKIPPED (category-incomplete) — missing: mint_burn_dynamics — 17 components collected in 22.2s
+2026-04-22T16:59:22.153632191Z [error] 2026-04-22 16:59:20,392 [ERROR] app.collectors.flows: Etherscan tokentx error for 0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0: 
+2026-04-22T16:59:22.153635762Z [error] 2026-04-22 16:59:20,393 [WARNING] app.collectors.smart_contract: ABI check failed for 0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0: 
+2026-04-22T17:00:37.210678828Z [error] 2026-04-22 17:00:26,606 [INFO] app.state_attestation: State attested: domain=smart_contracts entity=frax_64d0 records=6 hash=09fffde26c1ab1d8...
+2026-04-22T17:00:37.210684315Z [error] 2026-04-22 17:00:33,241 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=contract&action=getabi&address=0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-22T17:00:37.210686827Z [error] 2026-04-22 17:00:26,606 [WARNING] app.collectors.registry: peg timed out for frax_64d0
+2026-04-22T17:00:37.210692784Z [error] 2026-04-22 17:00:26,606 [WARNING] app.collectors.registry: liquidity timed out for frax_64d0
+2026-04-22T17:00:37.210698471Z [error] 2026-04-22 17:00:33,242 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&contractaddress=0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f&page=1&offset=200&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-22T17:00:37.210699609Z [error] 2026-04-22 17:00:26,606 [WARNING] app.collectors.registry: market timed out for frax_64d0
+2026-04-22T17:00:37.210706694Z [error] 2026-04-22 17:00:26,606 [WARNING] app.collectors.registry: defillama timed out for frax_64d0
+2026-04-22T17:00:37.210713382Z [error] 2026-04-22 17:00:26,607 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] connection error after 175s: ConnectionClosedError: sent 1011 (internal error) keepalive ping timeout; no close frame received
+2026-04-22T17:00:37.210718218Z [error] 2026-04-22 17:00:27,011 [WARNING] worker: Timeout scoring frax_64d0 (>120s) — skipping
+2026-04-22T17:00:37.210723047Z [error] 2026-04-22 17:00:29,851 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] watchlist: stablecoins=36, pool_wallets=11, deduped_total=47, limit=100
+2026-04-22T17:00:37.210727604Z [error] 2026-04-22 17:00:29,906 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T17:00:37.210731711Z [error] 2026-04-22 17:00:30,308 [INFO] httpx: HTTP Request: GET https://stablecoins.llama.fi/stablecoins "HTTP/1.1 200 OK"
+2026-04-22T17:00:37.210737673Z [error] 2026-04-22 17:00:30,310 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/gho?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-22T17:00:37.210742572Z [error] 2026-04-22 17:00:30,311 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/gho?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-22T17:00:37.210747373Z [error] 2026-04-22 17:00:30,312 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/gho?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-22T17:00:37.210752233Z [error] 2026-04-22 17:00:30,333 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] SUBSCRIBED chain=ethereum addresses=47 subscription_id=0xdcbfa9bb061885e0bc90b1b600408dcf
+2026-04-22T17:00:37.210756800Z [error] 2026-04-22 17:00:30,380 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T17:00:37.210762495Z [error] 2026-04-22 17:00:30,782 [INFO] httpx: HTTP Request: GET https://yields.llama.fi/pools "HTTP/1.1 200 OK"
+2026-04-22T17:00:37.210766944Z [error] 2026-04-22 17:00:30,785 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/gho/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-22T17:00:37.210771927Z [error] 2026-04-22 17:00:30,853 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T17:00:37.210776179Z [error] 2026-04-22 17:00:31,259 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/gho/market_chart?vs_currency=usd&days=7 "HTTP/1.1 200 OK"
+2026-04-22T17:00:37.213102473Z [error] 2026-04-22 17:00:35,615 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/gho/market_chart?vs_currency=usd&days=30 "HTTP/1.1 200 OK"
+2026-04-22T17:00:59.567153826Z [error] 2026-04-22 17:00:46,480 [INFO] app.state_attestation: State attested: domain=flows entity=gho records=5 hash=61bf17dbd89978bf...
+2026-04-22T17:00:59.568589042Z [error] 2026-04-22 17:00:57,763 [INFO] app.state_attestation: State attested: domain=smart_contracts entity=gho records=6 hash=3babcd55dd2f52a4...
+2026-04-22T17:02:34.319107543Z [error]   blockscout/unknown: 20
+2026-04-22T17:02:34.319115134Z [error] 2026-04-22 17:02:05,459 [ERROR] worker: [rpc_usage_7d] dwellir: no calls
+2026-04-22T17:02:34.319115175Z [error]   snapshot/graphql: 12
+2026-04-22T17:02:34.319116778Z [error]   coingecko/coins/frax: 5
+2026-04-22T17:02:34.319119310Z [error]   dwellir/ethereum/debug_traceTransaction: fail (HTTP 403: Your current plan does not support trace or debug )
+2026-04-22T17:02:34.319122341Z [error] 2026-04-22 17:02:05,851 [ERROR] worker: [rpc_capabilities]
+2026-04-22T17:02:34.319123329Z [error] 2026-04-22 17:02:04,473 [ERROR] worker: [stale_diagnostic] stale=5: liquidity_depth (age=6.1h, threshold=3h), exchange_snapshots (age=6.1h, threshold=3h), entity_snapshots_hourly (age=6.1h, threshold=3h), governance_proposals (age=42.1h, threshold=26h), dex_pool_ohlcv (age=96.6h, threshold=6h)
+2026-04-22T17:02:34.319127309Z [error]   curve/unknown: 6
+2026-04-22T17:02:34.319130945Z [error]   coingecko/coins/dai: 5
+2026-04-22T17:02:34.319131513Z [error] 2026-04-22 17:02:04,867 [ERROR] worker: [provenance_gap] hourly: 11/12 producing, weekly: 3, missing_hourly=['tally_governance']
+2026-04-22T17:02:34.319131661Z [error]   dwellir/ethereum/eth_call: ok
+2026-04-22T17:02:34.319137000Z [error]   coingecko/coins: 6
+2026-04-22T17:02:34.319140058Z [error] 2026-04-22 17:02:04,867 [ERROR] worker: [provenance_gap] weekly sources (not expected in 24h): ['defillama_bridges']
+2026-04-22T17:02:34.319141804Z [error] 2026-04-22 17:02:05,459 [ERROR] worker: [rpc_usage_7d] alchemy: 184 eth_getTransactionByHash (0 fallback, 112 err)
+2026-04-22T17:02:34.319142382Z [error] 2026-04-22 17:02:07,064 [WARNING] app.collectors.registry: defillama timed out for gho
+2026-04-22T17:02:34.319143298Z [error]   coingecko/coins/gho: 5
+2026-04-22T17:02:34.319146008Z [error] 2026-04-22 17:02:06,670 [ERROR] app.data_layer.mempool_watcher: [mempool_observations] 24h SUMMARY: captured=22870 confirmed=184 dropped=0 avg_confirmation_latency_ms=11628903 alchemy_cu_rolling24h=48 top_to=[0xdac17f95=15878, 0xa0b86991=6613, 0x6c3ea903=85, 0x6b175474=83, 0x4c9edd58=67] top_selectors=[0xa9059cbb=21333, 0x23b872dd=923, 0x095ea7b3=522, 0xe3ee160e=27, 0x40c10f19=20]
+2026-04-22T17:02:34.319147785Z [error]   dwellir/ethereum/eth_blockNumber: ok
+2026-04-22T17:02:34.319148950Z [error] 2026-04-22 17:02:04,867 [ERROR] worker: [api_budget] alchemy=80, coingecko=48/16,600 (0%), curve=1, dwellir=5, etherscan=19/200,000 (0%), llama=14, resend=1
+2026-04-22T17:02:34.319151973Z [error] 2026-04-22 17:02:07,064 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] connection error after 97s: ConnectionClosedError: sent 1011 (internal error) keepalive ping timeout; no close frame received
+2026-04-22T17:02:34.319155444Z [error] 2026-04-22 17:02:08,100 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T17:02:34.319156605Z [error] 2026-04-22 17:02:05,065 [ERROR] worker: [api_usage_7d] alchemy: 2026-04-22: 12 calls (0 err, p95=4302ms) | 2026-04-21: 168 calls (0 err, p95=5440ms) | 2026-04-20: 12 calls (0 err, p95=4848ms)
+2026-04-22T17:02:34.319157942Z [error] 2026-04-22 17:02:07,063 [ERROR] worker: [api_usage_verify] hourly: 129 rows, latest=2026-04-22 11:00:00+00:00 | tracker: 0 rows, latest=None
+2026-04-22T17:02:34.319163237Z [error] 2026-04-22 17:02:05,065 [ERROR] worker: [api_usage_7d] blockscout: 2026-04-22: 20 calls (0 err, p95=630ms) — 0% | 2026-04-21: 20 calls (0 err, p95=780ms) — 0%
+2026-04-22T17:02:34.319164491Z [error]   coingecko/coins/rai: 5
+2026-04-22T17:02:34.319167954Z [error] 2026-04-22 17:02:05,065 [ERROR] worker: [api_usage_7d] coingecko: 2026-04-22: 362 calls (1 err, p95=1611ms) — 2% | 2026-04-21: 5,068 calls (14 err, p95=2060ms) — 31% | 2026-04-20: 362 calls (1 err, p95=1580ms) — 2%
+2026-04-22T17:02:34.319171120Z [error] 2026-04-22 17:02:05,065 [ERROR] worker: [api_usage_7d] curve: 2026-04-22: 3 calls (0 err, p95=1398ms) | 2026-04-21: 42 calls (0 err, p95=1550ms) | 2026-04-20: 3 calls (0 err, p95=1636ms)
+2026-04-22T17:02:34.319174553Z [error] 2026-04-22 17:02:05,065 [ERROR] worker: [api_usage_7d] etherscan: 2026-04-22: 442 calls (0 err, p95=1372ms) — 0% | 2026-04-21: 6,259 calls (2 err, p95=2636ms) — 3% | 2026-04-20: 442 calls (0 err, p95=1383ms) — 0%
+2026-04-22T17:02:34.319188663Z [error] 2026-04-22 17:02:05,065 [ERROR] worker: [api_usage_7d] helius: 2026-04-22: 2 calls (0 err, p95=1196ms) | 2026-04-21: 28 calls (0 err, p95=2658ms) | 2026-04-20: 2 calls (0 err, p95=1497ms)
+2026-04-22T17:02:34.319189297Z [error]   dwellir/ethereum/trace_transaction: fail (HTTP 403: Your current plan does not support trace or debug )
+2026-04-22T17:02:34.319192326Z [error] 2026-04-22 17:02:05,065 [ERROR] worker: [api_usage_7d] helius-rpc: 2026-04-22: 10 calls (0 err, p95=8301ms) | 2026-04-21: 140 calls (0 err, p95=8611ms) | 2026-04-20: 10 calls (0 err, p95=8351ms)
+2026-04-22T17:02:34.319195654Z [error] 2026-04-22 17:02:05,065 [ERROR] worker: [api_usage_7d] llama: 2026-04-22: 73 calls (0 err, p95=1348ms) | 2026-04-21: 1,022 calls (1 err, p95=5215ms) | 2026-04-20: 73 calls (0 err, p95=1579ms)
+2026-04-22T17:02:34.319199769Z [error] 2026-04-22 17:02:05,065 [ERROR] worker: [api_usage_7d] resend: 2026-04-22: 1 calls (1 err, p95=119ms) | 2026-04-21: 15 calls (0 err, p95=351ms) | 2026-04-20: 1 calls (0 err, p95=219ms)
+2026-04-22T17:02:34.319205178Z [error] 2026-04-22 17:02:05,065 [ERROR] worker: [api_usage_7d] snapshot: 2026-04-22: 12 calls (0 err, p95=247ms) — 0% | 2026-04-21: 72 calls (0 err, p95=2413ms) — 1%
+2026-04-22T17:02:34.319209255Z [error] 2026-04-22 17:02:05,262 [ERROR] worker: [api_hotspots_24h]
+2026-04-22T17:02:34.319213520Z [error]   etherscan/unknown: 1,326
+2026-04-22T17:02:34.319217566Z [error]   coingecko/unknown: 724
+2026-04-22T17:02:34.319221643Z [error]   llama/unknown: 146
+2026-04-22T17:02:34.319225904Z [error]   llama/pools: 37
+2026-04-22T17:02:34.319228763Z [error]   alchemy/unknown: 36
+2026-04-22T17:02:34.319233533Z [error]   llama/stablecoins: 36
+2026-04-22T17:02:34.319237951Z [error]   helius-rpc/unknown: 30
+2026-04-22T17:02:34.319450742Z [error] 2026-04-22 17:02:08,503 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/gho?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-22T17:02:34.322499346Z [error] 2026-04-22 17:02:15,317 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] watchlist: stablecoins=36, pool_wallets=11, deduped_total=47, limit=100
+2026-04-22T17:02:34.322512524Z [error] 2026-04-22 17:02:15,375 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T17:02:34.322514392Z [error] 2026-04-22 17:02:14,134 [INFO] app.state_attestation: State attested: domain=sii_components entity=gho records=44 hash=caaeb50d4d0391e7...
+2026-04-22T17:02:34.322517331Z [error] 2026-04-22 17:02:14,135 [INFO] worker: gho: 80.67 - 44 components in 106.5s
+2026-04-22T17:02:34.323360874Z [error] 2026-04-22 17:02:15,796 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] SUBSCRIBED chain=ethereum addresses=47 subscription_id=0xdf5cd219d8eb5f05fb6fa13fb8322fb7
+2026-04-22T17:02:34.323371046Z [error] 2026-04-22 17:02:15,843 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T17:12:06.183217759Z [error] 2026-04-22 17:02:56,068 [ERROR] app.collectors.coingecko: CoinGecko current data error for gemini-dollar: 
+2026-04-22T17:12:25.415668252Z [error] 2026-04-22 17:03:23,733 [ERROR] app.collectors.coingecko: CoinGecko current data error for gemini-dollar: 
+2026-04-22T17:12:25.415675598Z [error] 2026-04-22 17:03:23,734 [ERROR] app.collectors.coingecko: CoinGecko current data error for gemini-dollar: 
+2026-04-22T17:12:25.415682005Z [error] 2026-04-22 17:03:23,734 [ERROR] app.collectors.defillama: DeFiLlama stablecoin error for gemini-dollar: 
+2026-04-22T17:12:25.415688310Z [error] 2026-04-22 17:03:23,736 [ERROR] app.collectors.flows: Etherscan tokentx error for 0x056fd409e1d7a124bd7017459dfea2f387b6d5cd: 
+2026-04-22T17:12:25.415696990Z [error] 2026-04-22 17:03:23,736 [WARNING] app.collectors.smart_contract: ABI check failed for 0x056fd409e1d7a124bd7017459dfea2f387b6d5cd: 
+2026-04-22T17:12:25.430820799Z [error] 2026-04-22 17:03:55,763 [ERROR] app.data_layer.oracle_cadence_collector: [oracle_cadence] sample failed for Chainlink USDC/USD: 
+2026-04-22T17:13:06.817964939Z [error] 2026-04-22 17:04:38,217 [INFO] app.state_attestation: State attested: domain=smart_contracts entity=gusd records=6 hash=09fffde26c1ab1d8...
+2026-04-22T17:13:45.604203610Z [error] 2026-04-22 17:05:46,378 [ERROR] app.collectors.defillama: DeFiLlama yields error for gusd: 
+2026-04-22T17:13:45.604960613Z [error] 2026-04-22 17:05:46,781 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] connection error after 211s: ConnectionClosedError: sent 1011 (internal error) keepalive ping timeout; no close frame received
+2026-04-22T17:13:45.604961648Z [error] 2026-04-22 17:05:46,782 [ERROR] worker: === Starting enrichment (cycle 1) ===
+2026-04-22T17:13:45.604970448Z [error] 2026-04-22 17:05:46,782 [ERROR] app.data_layer.oracle_cadence_collector: [oracle_cadence] sample failed for Chainlink USDT/USD: 
+2026-04-22T17:13:45.604970498Z [error] 2026-04-22 17:05:46,782 [INFO] worker: === Parallel slow cycle start ===
+2026-04-22T17:13:45.604976023Z [error] 2026-04-22 17:05:46,782 [ERROR] worker: Fast cycle exceeded 30-minute timeout
+2026-04-22T17:13:45.605020176Z [error] 2026-04-22 17:05:46,788 [ERROR] app.enrichment_worker: [enrichment] run_enrichment_pipeline() ENTERED — building task list
+2026-04-22T17:13:45.605026679Z [error] 2026-04-22 17:05:46,788 [ERROR] app.enrichment_worker: [enrichment] pipeline built: 43 tasks: lsti_scoring, bri_scoring, vsri_scoring, cxri_scoring, tti_scoring, dohi_scoring, rpi_scoring, dex_pool_collection, onchain_governance_reads, web_research, governance_events, wallet_reindex, wallet_expansion, cda_collection, treasury_flows, edge_building, divergence_detection, psi_expansion, liquidity_depth, yield_data, governance_activity, exchange_data, correlation_matrices, peg_5m_monitoring, dex_pool_ohlcv, market_chart_backfill, circle7_5min_pulls, mint_burn_events, holder_discovery, contract_surveillance, entity_snapshots, wallet_behavior, wallet_graph_expansion, entity_discovery, holder_ingestion, multichain_holders, wallet_presence_scan, protocol_traces, token_approvals, incident_detection, materialized_compositions, provenance_update, data_catalog_update
+2026-04-22T17:13:45.605032888Z [error] 2026-04-22 17:05:46,788 [ERROR] app.enrichment_worker: [enrichment] [wallet_expansion] starting...
+2026-04-22T17:13:45.605322582Z [error] 2026-04-22 17:05:47,184 [ERROR] app.enrichment_worker: [enrichment] [yield_data] GATED (skipped)
+2026-04-22T17:13:45.605356858Z [error] 2026-04-22 17:05:47,381 [ERROR] app.enrichment_worker: [enrichment] [peg_5m_monitoring] GATED (skipped)
+2026-04-22T17:13:45.605397473Z [error] 2026-04-22 17:05:47,775 [ERROR] app.enrichment_worker: [enrichment] [exchange_data] gate OPEN, will run
+2026-04-22T17:13:45.605401739Z [error] 2026-04-22 17:05:47,775 [ERROR] app.enrichment_worker: [enrichment] [exchange_data] starting...
+2026-04-22T17:13:45.605419917Z [error] 2026-04-22 17:05:46,985 [ERROR] app.enrichment_worker: [enrichment] [edge_building] gate OPEN, will run
+2026-04-22T17:13:45.605420948Z [error] 2026-04-22 17:05:47,578 [ERROR] app.enrichment_worker: [enrichment] [governance_activity] gate OPEN, will run
+2026-04-22T17:13:45.605426019Z [error] 2026-04-22 17:05:46,985 [ERROR] app.enrichment_worker: [enrichment] [edge_building] starting...
+2026-04-22T17:13:45.605426230Z [error] 2026-04-22 17:05:47,578 [ERROR] app.enrichment_worker: [enrichment] [governance_activity] starting...
+2026-04-22T17:13:45.605430540Z [error] 2026-04-22 17:05:46,985 [ERROR] app.enrichment_worker: [enrichment] [wallet_reindex] starting...
+2026-04-22T17:13:45.605434114Z [error] 2026-04-22 17:05:46,985 [ERROR] app.enrichment_worker: [enrichment] [liquidity_depth] starting...
+2026-04-22T17:13:45.605774482Z [error] 2026-04-22 17:05:47,971 [ERROR] app.enrichment_worker: [enrichment] [dex_pool_ohlcv] gate OPEN, will run
+2026-04-22T17:13:45.605825443Z [error] 2026-04-22 17:05:48,174 [ERROR] app.enrichment_worker: [enrichment] [market_chart_backfill] GATED (skipped)
+2026-04-22T17:13:45.605829095Z [error] 2026-04-22 17:05:48,374 [ERROR] app.enrichment_worker: [enrichment] [circle7_5min_pulls] GATED (skipped)
+2026-04-22T17:13:52.536223996Z [error] 2026-04-22 17:05:48,570 [ERROR] app.enrichment_worker: [enrichment] [mint_burn_events] GATED (skipped)
+2026-04-22T17:13:52.536251661Z [error] 2026-04-22 17:05:49,164 [ERROR] app.enrichment_worker: [enrichment] [token_approvals] gate OPEN, will run
+2026-04-22T17:13:52.536256486Z [error] 2026-04-22 17:05:49,360 [ERROR] app.enrichment_worker: [enrichment] [contract_surveillance] GATED (skipped)
+2026-04-22T17:13:52.536271559Z [error] 2026-04-22 17:05:48,767 [ERROR] app.enrichment_worker: [enrichment] [entity_snapshots] gate OPEN, will run
+2026-04-22T17:13:52.536274441Z [error] 2026-04-22 17:05:49,556 [ERROR] app.enrichment_worker: [enrichment] [dohi_scoring] gate OPEN, will run
+2026-04-22T17:13:52.536310666Z [error] 2026-04-22 17:05:49,754 [ERROR] app.enrichment_worker: [enrichment] [rpi_scoring] gate OPEN, will run
+2026-04-22T17:13:52.536324846Z [error] 2026-04-22 17:05:50,000 [ERROR] app.enrichment_worker: [enrichment] [dex_pool_collection] gate OPEN, will run
+2026-04-22T17:13:52.536409299Z [error] 2026-04-22 17:05:50,198 [ERROR] app.enrichment_worker: [enrichment] [governance_events] gate OPEN, will run
+2026-04-22T17:13:52.536414330Z [error] 2026-04-22 17:05:50,395 [ERROR] app.enrichment_worker: [enrichment] [cda_collection] gate OPEN, will run
+2026-04-22T17:13:52.536496952Z [error] 2026-04-22 17:05:48,964 [ERROR] app.enrichment_worker: [enrichment] [protocol_traces] gate OPEN, will run
+2026-04-22T17:13:52.537064992Z [error] 2026-04-22 17:05:50,598 [ERROR] app.enrichment_worker: [enrichment] [web_research] gate OPEN, will run
+2026-04-22T17:13:52.537131579Z [error] 2026-04-22 17:05:50,999 [ERROR] app.enrichment_worker: [enrichment] [holder_ingestion] gate OPEN, will run
+2026-04-22T17:13:52.537161768Z [error] 2026-04-22 17:05:50,802 [ERROR] app.enrichment_worker: [enrichment] [holder_discovery] gate OPEN, will run
+2026-04-22T17:13:52.537334326Z [error] 2026-04-22 17:05:51,195 [ERROR] app.enrichment_worker: [enrichment] [multichain_holders] gate OPEN, will run
+2026-04-22T17:13:52.537337741Z [error] 2026-04-22 17:05:51,396 [ERROR] app.enrichment_worker: [enrichment] [wallet_graph_expansion] gate OPEN, will run
+2026-04-22T17:13:52.537378706Z [error] 2026-04-22 17:05:51,594 [ERROR] app.enrichment_worker: [enrichment] [entity_discovery] gate OPEN, will run
+2026-04-22T17:13:52.537405036Z [error] 2026-04-22 17:05:51,988 [ERROR] app.enrichment_worker: [enrichment] [wallet_presence_scan] gate OPEN, will run
+2026-04-22T17:13:52.537422493Z [error] 2026-04-22 17:05:51,791 [ERROR] app.enrichment_worker: [enrichment] [psi_expansion] GATED (skipped)
+2026-04-22T17:13:52.537768100Z [error] 2026-04-22 17:05:52,189 [ERROR] app.enrichment_worker: [enrichment] [incident_detection] gate OPEN, will run
+2026-04-22T17:13:52.537771687Z [error] 2026-04-22 17:05:52,389 [ERROR] app.enrichment_worker: [enrichment] [correlation_matrices] gate OPEN, will run
+2026-04-22T17:13:52.538375182Z [error] 2026-04-22 17:05:52,588 [ERROR] app.enrichment_worker: [enrichment] [wallet_behavior] gate OPEN, will run
+2026-04-22T17:13:52.538380510Z [error] 2026-04-22 17:05:52,588 [ERROR] app.enrichment_worker: === [wallet_expansion] ENTERED _run_wallet_expansion ===
+2026-04-22T17:13:57.558700551Z [error] 2026-04-22 17:05:53,112 [ERROR] app.data_layer.wallet_expansion: [wallet_seeding] governance_voters: source=309, overlap=309, expected_new=0
+2026-04-22T17:13:57.558704057Z [error] 2026-04-22 17:05:53,345 [ERROR] app.data_layer.wallet_expansion: [wallet_seeding] governance_voters: inserted=0
+2026-04-22T17:13:57.558968828Z [error] 2026-04-22 17:05:53,857 [ERROR] app.data_layer.wallet_expansion: [wallet_seeding] mint_burn: source=149, overlap=149, expected_new=0
+2026-04-22T17:13:57.575018921Z [error] 2026-04-22 17:05:56,638 [ERROR] app.data_layer.liquidity_collector: [liquidity_depth] starting: 36 stablecoins to collect
+2026-04-22T17:13:57.575023602Z [error] 2026-04-22 17:05:57,342 [ERROR] app.indexer.edges: [edge_builder] ethereum: 500 candidates (unbuilt=44673, stale_7d=1426)
+2026-04-22T17:13:57.575027568Z [error] 2026-04-22 17:05:58,332 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] watchlist: stablecoins=36, pool_wallets=11, deduped_total=47, limit=100
+2026-04-22T17:13:57.575032574Z [error] 2026-04-22 17:05:58,791 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T17:13:57.575045902Z [error] 2026-04-22 17:05:54,090 [ERROR] app.data_layer.wallet_expansion: [wallet_seeding] mint_burn: inserted=0
+2026-04-22T17:13:57.575049417Z [error] 2026-04-22 17:05:54,604 [ERROR] app.data_layer.wallet_expansion: [wallet_seeding] pool_wallets: source=741, overlap=741, expected_new=0
+2026-04-22T17:13:57.575052925Z [error] 2026-04-22 17:05:54,836 [ERROR] app.data_layer.wallet_expansion: [wallet_seeding] pool_wallets: inserted=0
+2026-04-22T17:13:57.575056133Z [error] 2026-04-22 17:05:55,038 [ERROR] app.enrichment_worker: === [edge_building] ENTERED _run_edges ===
+2026-04-22T17:13:57.575059888Z [error] 2026-04-22 17:05:55,047 [ERROR] app.enrichment_worker: === [edge_building] starting chain=ethereum ===
+2026-04-22T17:13:57.575063223Z [error] 2026-04-22 17:05:55,062 [INFO] basis.reindex: === Wallet Batch Re-index Starting === batch_size=5000, provider=blockscout, etherscan_key=set (SWCSHQ...)
+2026-04-22T17:13:57.575066691Z [error] 2026-04-22 17:05:55,990 [INFO] basis.reindex: Batch: 5000 wallets queued, 35153 total stale
+2026-04-22T17:13:57.575069688Z [error] 2026-04-22 17:05:56,192 [INFO] basis.reindex: Starting batch_scan_all_holdings...
+2026-04-22T17:13:57.575073410Z [error] 2026-04-22 17:05:56,390 [INFO] app.indexer.scanner: Batch scan [Blockscout]: 5000 wallets, concurrency=10
+2026-04-22T17:14:38.617572512Z [error]     yield cur
+2026-04-22T17:14:38.617585606Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:14:38.617589805Z [error]     cur.execute(
+2026-04-22T17:14:38.617595107Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:14:38.617914525Z [error] 2026-04-22 17:05:58,811 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T17:14:38.617918061Z [error] 2026-04-22 17:05:59,213 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T17:14:38.617923088Z [error] 2026-04-22 17:05:59,213 [INFO] httpx: HTTP Request: POST https://hub.snapshot.org/graphql "HTTP/1.1 200 OK"
+2026-04-22T17:14:38.617926780Z [error] 2026-04-22 17:05:59,217 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/exchanges/binance "HTTP/1.1 200 OK"
+2026-04-22T17:14:38.617929496Z [error] 2026-04-22 17:05:59,218 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usd-coin/tickers?include_exchange_logo=false&depth=true "HTTP/1.1 200 OK"
+2026-04-22T17:14:38.617933043Z [error] 2026-04-22 17:05:59,371 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:14:38.617936892Z [error] DETAIL:  Failing row contains (1198, usdc, binance, null, null, null, null, null, 1.1, {"base": "USDC", "last": 0.99957, "target": "USDT", "is_stale": ..., 2026-04-22 17:05:59.246391+00, cex, null, 54897147.92586357, 126898309.09893267, null, null, 3122737474, null, null, null, null).
+2026-04-22T17:14:38.617939853Z [error] Traceback (most recent call last):
+2026-04-22T17:14:38.617942718Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:14:38.617945546Z [error]     yield conn
+2026-04-22T17:14:38.617948434Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:14:38.623375414Z [error] DETAIL:  Failing row contains (1199, usdc, bybit_spot, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9995, "target": "USDT", "is_stale": f..., 2026-04-22 17:05:59.446589+00, cex, null, 24514910.104816474, 25892757.449479166, null, null, 212914909, null, null, null, null).
+2026-04-22T17:14:38.623379701Z [error] Traceback (most recent call last):
+2026-04-22T17:14:38.623383316Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:14:38.623386441Z [error]     yield conn
+2026-04-22T17:14:38.623390062Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:14:38.623394993Z [error]     yield cur
+2026-04-22T17:14:38.623409965Z [error] DETAIL:  Failing row contains (1198, usdc, binance, null, null, null, null, null, 1.1, {"base": "USDC", "last": 0.99957, "target": "USDT", "is_stale": ..., 2026-04-22 17:05:59.246391+00, cex, null, 54897147.92586357, 126898309.09893267, null, null, 3122737474, null, null, null, null).
+2026-04-22T17:14:38.623417334Z [error] 
+2026-04-22T17:14:38.623423914Z [error] 2026-04-22 17:05:59,421 [ERROR] app.data_layer.liquidity_collector: liquidity_depth row FAILED: usdc:binance: NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:14:38.623424877Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:14:38.623432334Z [error] DETAIL:  Failing row contains (1198, usdc, binance, null, null, null, null, null, 1.1, {"base": "USDC", "last": 0.99957, "target": "USDT", "is_stale": ..., 2026-04-22 17:05:59.246391+00, cex, null, 54897147.92586357, 126898309.09893267, null, null, 3122737474, null, null, null, null).
+2026-04-22T17:14:38.623440260Z [error] 
+2026-04-22T17:14:38.623444508Z [error] 2026-04-22 17:05:59,571 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:14:38.634496200Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:14:38.634516249Z [error] DETAIL:  Failing row contains (1199, usdc, bybit_spot, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9995, "target": "USDT", "is_stale": f..., 2026-04-22 17:05:59.446589+00, cex, null, 24514910.104816474, 25892757.449479166, null, null, 212914909, null, null, null, null).
+2026-04-22T17:14:38.634520791Z [error] 
+2026-04-22T17:14:38.634524960Z [error] 2026-04-22 17:05:59,621 [ERROR] app.data_layer.liquidity_collector: liquidity_depth row FAILED: usdc:bybit_spot: NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:14:38.634529689Z [error] DETAIL:  Failing row contains (1199, usdc, bybit_spot, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9995, "target": "USDT", "is_stale": f..., 2026-04-22 17:05:59.446589+00, cex, null, 24514910.104816474, 25892757.449479166, null, null, 212914909, null, null, null, null).
+2026-04-22T17:14:38.634533558Z [error] 
+2026-04-22T17:14:38.634539157Z [error]     cur.execute(
+2026-04-22T17:14:38.634539460Z [error] 2026-04-22 17:05:59,769 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:14:38.634545197Z [error] DETAIL:  Failing row contains (1200, usdc, binance, null, null, null, null, null, 1.0, {"base": "BTC", "last": 78889.68, "target": "USDC", "is_stale": ..., 2026-04-22 17:05:59.646015+00, cex, null, 7068611.1736377105, 18119441.736595884, null, null, 696265791, null, null, null, null).
+2026-04-22T17:14:38.634545351Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:14:38.634549735Z [error] Traceback (most recent call last):
+2026-04-22T17:14:38.634553186Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:14:38.634558192Z [error]     yield conn
+2026-04-22T17:14:44.083244584Z [error]     yield cur
+2026-04-22T17:14:44.083249378Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:14:44.083254721Z [error]     cur.execute(
+2026-04-22T17:14:44.083257795Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:14:44.083260751Z [error] DETAIL:  Failing row contains (1200, usdc, binance, null, null, null, null, null, 1.0, {"base": "BTC", "last": 78889.68, "target": "USDC", "is_stale": ..., 2026-04-22 17:05:59.646015+00, cex, null, 7068611.1736377105, 18119441.736595884, null, null, 696265791, null, null, null, null).
+2026-04-22T17:14:44.083263686Z [error] 
+2026-04-22T17:14:44.083267161Z [error] 2026-04-22 17:05:59,818 [ERROR] app.data_layer.liquidity_collector: liquidity_depth row FAILED: usdc:binance: NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:14:44.083270280Z [error] DETAIL:  Failing row contains (1200, usdc, binance, null, null, null, null, null, 1.0, {"base": "BTC", "last": 78889.68, "target": "USDC", "is_stale": ..., 2026-04-22 17:05:59.646015+00, cex, null, 7068611.1736377105, 18119441.736595884, null, null, 696265791, null, null, null, null).
+2026-04-22T17:14:44.083273431Z [error] 
+2026-04-22T17:14:44.083276442Z [error] 2026-04-22 17:05:59,966 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:14:44.083279486Z [error] DETAIL:  Failing row contains (1201, usdc, okex, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9996, "target": "USDT", "is_stale": f..., 2026-04-22 17:05:59.843492+00, cex, null, 11153789.548142094, 16091139.013330078, null, null, 98759326, null, null, null, null).
+2026-04-22T17:14:44.083282556Z [error] Traceback (most recent call last):
+2026-04-22T17:14:44.083286577Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:15:03.003891568Z [error]     yield conn
+2026-04-22T17:15:03.003894586Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:15:03.003897587Z [error]     yield cur
+2026-04-22T17:15:03.003900403Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:15:03.003903197Z [error]     cur.execute(
+2026-04-22T17:15:03.003906307Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:03.003909606Z [error] DETAIL:  Failing row contains (1201, usdc, okex, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9996, "target": "USDT", "is_stale": f..., 2026-04-22 17:05:59.843492+00, cex, null, 11153789.548142094, 16091139.013330078, null, null, 98759326, null, null, null, null).
+2026-04-22T17:15:03.003912697Z [error] 
+2026-04-22T17:15:03.003916538Z [error] 2026-04-22 17:06:00,162 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:03.003919268Z [error] DETAIL:  Failing row contains (1202, usdc, bullish_com, null, null, null, null, null, 1.01, {"base": "BTC", "last": 78922.5992, "target": "USDC", "is_stale"..., 2026-04-22 17:06:00.039958+00, cex, null, 10017574.847972501, 11408178.333216848, null, null, 602772196, null, null, null, null).
+2026-04-22T17:15:03.003923275Z [error] Traceback (most recent call last):
+2026-04-22T17:15:03.003926290Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:15:03.003929224Z [error]     yield conn
+2026-04-22T17:15:03.003932115Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:15:03.003935074Z [error]     yield cur
+2026-04-22T17:15:03.003937953Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:15:03.003941074Z [error]     cur.execute(
+2026-04-22T17:15:11.222979884Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:11.222982733Z [error] DETAIL:  Failing row contains (1202, usdc, bullish_com, null, null, null, null, null, 1.01, {"base": "BTC", "last": 78922.5992, "target": "USDC", "is_stale"..., 2026-04-22 17:06:00.039958+00, cex, null, 10017574.847972501, 11408178.333216848, null, null, 602772196, null, null, null, null).
+2026-04-22T17:15:11.222985668Z [error] 
+2026-04-22T17:15:11.223136808Z [error] 2026-04-22 17:06:00,368 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:11.223141841Z [error] DETAIL:  Failing row contains (1203, usdc, mxc, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9995, "target": "USDT", "is_stale": f..., 2026-04-22 17:06:00.24413+00, cex, null, 61448950.72200917, 63708152.80775653, null, null, 50082522, null, null, null, null).
+2026-04-22T17:15:11.223146343Z [error] Traceback (most recent call last):
+2026-04-22T17:15:11.223151709Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:15:11.223156071Z [error]     yield conn
+2026-04-22T17:15:11.223160521Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:15:11.223164504Z [error]     yield cur
+2026-04-22T17:15:11.223171589Z [error]     cur.execute(
+2026-04-22T17:15:11.223176304Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:11.223181907Z [error] DETAIL:  Failing row contains (1203, usdc, mxc, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9995, "target": "USDT", "is_stale": f..., 2026-04-22 17:06:00.24413+00, cex, null, 61448950.72200917, 63708152.80775653, null, null, 50082522, null, null, null, null).
+2026-04-22T17:15:11.223183871Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:15:11.226520045Z [error] 
+2026-04-22T17:15:11.226525214Z [error] 2026-04-22 17:06:00,565 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:11.226529699Z [error] DETAIL:  Failing row contains (1204, usdc, bingx, null, null, null, null, null, 1.2, {"base": "USDC", "last": 0.99947, "target": "USDT", "is_stale": ..., 2026-04-22 17:06:00.442138+00, cex, null, 38036731.58256757, 121554431.24317221, null, null, 112446001, null, null, null, null).
+2026-04-22T17:15:11.226533788Z [error] Traceback (most recent call last):
+2026-04-22T17:15:11.226536974Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:15:11.226540417Z [error]     yield conn
+2026-04-22T17:15:11.226543964Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:15:11.226547429Z [error]     yield cur
+2026-04-22T17:15:11.226550551Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:15:11.226553881Z [error]     cur.execute(
+2026-04-22T17:15:11.226557955Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:11.227303356Z [error] DETAIL:  Failing row contains (1204, usdc, bingx, null, null, null, null, null, 1.2, {"base": "USDC", "last": 0.99947, "target": "USDT", "is_stale": ..., 2026-04-22 17:06:00.442138+00, cex, null, 38036731.58256757, 121554431.24317221, null, null, 112446001, null, null, null, null).
+2026-04-22T17:15:11.227308513Z [error] 
+2026-04-22T17:15:11.227312940Z [error] 2026-04-22 17:06:00,761 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:11.227316285Z [error] DETAIL:  Failing row contains (1205, usdc, bitget, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9996, "target": "USDT", "is_stale": f..., 2026-04-22 17:06:00.638933+00, cex, null, 24670310.411991224, 24889299.649551824, null, null, 27397964, null, null, null, null).
+2026-04-22T17:15:11.229740235Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:15:11.229747085Z [error] Traceback (most recent call last):
+2026-04-22T17:15:11.229748938Z [error]     yield conn
+2026-04-22T17:15:11.229752539Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:15:11.229758549Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:15:11.229758582Z [error]     yield conn
+2026-04-22T17:15:11.229763719Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:15:11.229766890Z [error]     yield cur
+2026-04-22T17:15:11.229769600Z [error]     yield cur
+2026-04-22T17:15:11.229773696Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:15:11.229777127Z [error]     cur.execute(
+2026-04-22T17:15:11.229780533Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:11.229784013Z [error] DETAIL:  Failing row contains (1205, usdc, bitget, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9996, "target": "USDT", "is_stale": f..., 2026-04-22 17:06:00.638933+00, cex, null, 24670310.411991224, 24889299.649551824, null, null, 27397964, null, null, null, null).
+2026-04-22T17:15:11.229788685Z [error] 
+2026-04-22T17:15:11.229792118Z [error] 2026-04-22 17:06:00,958 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:11.229794992Z [error] DETAIL:  Failing row contains (1206, usdc, digifinex, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9995, "target": "USDT", "is_stale": f..., 2026-04-22 17:06:00.835604+00, cex, null, 39942541.1614275, 52629967.97392009, null, null, 129986775, null, null, null, null).
+2026-04-22T17:15:11.229798110Z [error] Traceback (most recent call last):
+2026-04-22T17:15:11.232411284Z [error] DETAIL:  Failing row contains (1206, usdc, digifinex, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9995, "target": "USDT", "is_stale": f..., 2026-04-22 17:06:00.835604+00, cex, null, 39942541.1614275, 52629967.97392009, null, null, 129986775, null, null, null, null).
+2026-04-22T17:15:11.232413079Z [error] Traceback (most recent call last):
+2026-04-22T17:15:11.232413991Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:15:11.232419429Z [error] 
+2026-04-22T17:15:11.232422110Z [error]     cur.execute(
+2026-04-22T17:15:11.232422784Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:15:11.232424575Z [error]     yield cur
+2026-04-22T17:15:11.232427456Z [error] 2026-04-22 17:06:01,155 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:11.232431944Z [error]     yield conn
+2026-04-22T17:15:11.232433397Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:15:11.232433620Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:11.232435832Z [error] DETAIL:  Failing row contains (1207, usdc, gate, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9995, "target": "USDT", "is_stale": f..., 2026-04-22 17:06:01.032599+00, cex, null, 8842539.03017109, 6219544.171342518, null, null, 16593208, null, null, null, null).
+2026-04-22T17:15:11.232444065Z [error] DETAIL:  Failing row contains (1207, usdc, gate, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9995, "target": "USDT", "is_stale": f..., 2026-04-22 17:06:01.032599+00, cex, null, 8842539.03017109, 6219544.171342518, null, null, 16593208, null, null, null, null).
+2026-04-22T17:15:11.232458077Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:15:11.232461199Z [error]     cur.execute(
+2026-04-22T17:15:11.232467197Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:11.236938951Z [error] 
+2026-04-22T17:15:11.236943536Z [error] 2026-04-22 17:06:01,352 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:11.236947784Z [error] DETAIL:  Failing row contains (1208, usdc, lbank, null, null, null, null, null, 1.2, {"base": "USDC", "last": 0.99956, "target": "USDT", "is_stale": ..., 2026-04-22 17:06:01.229514+00, cex, null, 54793012.62814314, 134140072.773669, null, null, 311451851, null, null, null, null).
+2026-04-22T17:15:11.236952062Z [error] Traceback (most recent call last):
+2026-04-22T17:15:11.236956205Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:15:11.236960560Z [error]     yield conn
+2026-04-22T17:15:11.236965137Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:15:11.236969522Z [error]     yield cur
+2026-04-22T17:15:11.236974110Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:15:11.236978741Z [error]     cur.execute(
+2026-04-22T17:15:11.236983186Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:11.236988658Z [error] DETAIL:  Failing row contains (1208, usdc, lbank, null, null, null, null, null, 1.2, {"base": "USDC", "last": 0.99956, "target": "USDT", "is_stale": ..., 2026-04-22 17:06:01.229514+00, cex, null, 54793012.62814314, 134140072.773669, null, null, 311451851, null, null, null, null).
+2026-04-22T17:15:11.236993246Z [error] 
+2026-04-22T17:15:11.236997792Z [error] 2026-04-22 17:06:01,549 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:11.237002253Z [error] DETAIL:  Failing row contains (1209, usdc, binance, null, null, null, null, null, 1.04, {"base": "ETH", "last": 2392.73, "target": "USDC", "is_stale": f..., 2026-04-22 17:06:01.426146+00, cex, null, 2462344.255955111, 2901335.5268416526, null, null, 368042925, null, null, null, null).
+2026-04-22T17:15:11.239948100Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:15:11.239955798Z [error]     yield conn
+2026-04-22T17:15:11.239957010Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:11.239962179Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:15:11.239965109Z [error] DETAIL:  Failing row contains (1209, usdc, binance, null, null, null, null, null, 1.04, {"base": "ETH", "last": 2392.73, "target": "USDC", "is_stale": f..., 2026-04-22 17:06:01.426146+00, cex, null, 2462344.255955111, 2901335.5268416526, null, null, 368042925, null, null, null, null).
+2026-04-22T17:15:11.239968624Z [error]     yield cur
+2026-04-22T17:15:11.239975186Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:15:11.239980362Z [error]     cur.execute(
+2026-04-22T17:15:11.239996772Z [error] Traceback (most recent call last):
+2026-04-22T17:15:11.240012034Z [error] Traceback (most recent call last):
+2026-04-22T17:15:11.240022152Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:15:11.240025786Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:15:11.240026312Z [error]     yield conn
+2026-04-22T17:15:11.240031680Z [error] 
+2026-04-22T17:15:11.240032399Z [error]     yield cur
+2026-04-22T17:15:11.240039961Z [error] 2026-04-22 17:06:01,746 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:11.240044027Z [error] DETAIL:  Failing row contains (1210, usdc, kraken, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9998, "target": "USD", "is_stale": fa..., 2026-04-22 17:06:01.623665+00, cex, null, 12383960.4063909, 18357338.53724559, null, null, 31994999, null, null, null, null).
+2026-04-22T17:15:17.186544235Z [error]     yield cur
+2026-04-22T17:15:17.186549174Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:15:17.186551274Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:15:17.186557066Z [error]     cur.execute(
+2026-04-22T17:15:17.186557194Z [error]     cur.execute(
+2026-04-22T17:15:17.186563323Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:17.186563523Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:17.186569841Z [error] DETAIL:  Failing row contains (1210, usdc, kraken, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9998, "target": "USD", "is_stale": fa..., 2026-04-22 17:06:01.623665+00, cex, null, 12383960.4063909, 18357338.53724559, null, null, 31994999, null, null, null, null).
+2026-04-22T17:15:17.186570106Z [error] DETAIL:  Failing row contains (1211, usdc, ourbit, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9996, "target": "USDT", "is_stale": f..., 2026-04-22 17:06:01.820622+00, cex, null, 17177129.450003356, 27053858.41923396, null, null, 114112858, null, null, null, null).
+2026-04-22T17:15:17.186575364Z [error] 
+2026-04-22T17:15:17.186579046Z [error] 2026-04-22 17:06:01,943 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:17.186582434Z [error] DETAIL:  Failing row contains (1211, usdc, ourbit, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9996, "target": "USDT", "is_stale": f..., 2026-04-22 17:06:01.820622+00, cex, null, 17177129.450003356, 27053858.41923396, null, null, 114112858, null, null, null, null).
+2026-04-22T17:15:17.186585968Z [error] Traceback (most recent call last):
+2026-04-22T17:15:17.186589206Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:15:17.186592713Z [error]     yield conn
+2026-04-22T17:15:17.186596501Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:15:32.548990632Z [error] 
+2026-04-22T17:15:32.548994306Z [error] 2026-04-22 17:06:02,142 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:32.548997473Z [error] DETAIL:  Failing row contains (1212, usdc, xt, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9995, "target": "USDT", "is_stale": f..., 2026-04-22 17:06:02.019886+00, cex, null, 3934165.076431028, 4134657.4407260423, null, null, 202052915, null, null, null, null).
+2026-04-22T17:15:32.549001254Z [error] Traceback (most recent call last):
+2026-04-22T17:15:32.549004338Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:15:32.549007691Z [error]     yield conn
+2026-04-22T17:15:32.549010787Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:15:32.549013521Z [error]     yield cur
+2026-04-22T17:15:32.549016322Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:15:32.549019288Z [error]     cur.execute(
+2026-04-22T17:15:32.549022190Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:32.549028324Z [error] DETAIL:  Failing row contains (1212, usdc, xt, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9995, "target": "USDT", "is_stale": f..., 2026-04-22 17:06:02.019886+00, cex, null, 3934165.076431028, 4134657.4407260423, null, null, 202052915, null, null, null, null).
+2026-04-22T17:15:32.549031168Z [error] 
+2026-04-22T17:15:32.549034295Z [error] 2026-04-22 17:06:02,339 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:32.549038119Z [error] DETAIL:  Failing row contains (1213, usdc, bybit_spot, null, null, null, null, null, 1.01, {"base": "BTC", "last": 78879.1, "target": "USDC", "is_stale": f..., 2026-04-22 17:06:02.216716+00, cex, null, 3228447.830017983, 3110767.6103945286, null, null, 50515539, null, null, null, null).
+2026-04-22T17:15:38.261757308Z [error] Traceback (most recent call last):
+2026-04-22T17:15:38.261759958Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:15:38.261762991Z [error]     yield conn
+2026-04-22T17:15:38.261766157Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:15:38.261769047Z [error]     yield cur
+2026-04-22T17:15:38.261771650Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:15:38.261774671Z [error]     cur.execute(
+2026-04-22T17:15:38.261777826Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:38.261780654Z [error] DETAIL:  Failing row contains (1213, usdc, bybit_spot, null, null, null, null, null, 1.01, {"base": "BTC", "last": 78879.1, "target": "USDC", "is_stale": f..., 2026-04-22 17:06:02.216716+00, cex, null, 3228447.830017983, 3110767.6103945286, null, null, 50515539, null, null, null, null).
+2026-04-22T17:15:38.261783710Z [error] 
+2026-04-22T17:15:38.261786850Z [error] 2026-04-22 17:06:02,537 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:38.261789861Z [error] DETAIL:  Failing row contains (1214, usdc, huobi, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9995, "target": "USDT", "is_stale": f..., 2026-04-22 17:06:02.413887+00, cex, null, 3587684.345838871, 1985154.416075136, null, null, 25134431, null, null, null, null).
+2026-04-22T17:15:38.261792588Z [error] Traceback (most recent call last):
+2026-04-22T17:15:38.261796423Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:15:38.261799431Z [error]     yield conn
+2026-04-22T17:15:38.261802246Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:15:38.261806580Z [error]     yield cur
+2026-04-22T17:15:44.646744592Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:44.646747848Z [error] DETAIL:  Failing row contains (1215, usdc, bullish_com, null, null, null, null, null, 1.04, {"base": "ETH", "last": 2393.8964, "target": "USDC", "is_stale":..., 2026-04-22 17:06:02.611039+00, cex, null, 1733531.648375253, 1852105.3773099445, null, null, 179543170, null, null, null, null).
+2026-04-22T17:15:44.646756957Z [error] DETAIL:  Failing row contains (1215, usdc, bullish_com, null, null, null, null, null, 1.04, {"base": "ETH", "last": 2393.8964, "target": "USDC", "is_stale":..., 2026-04-22 17:06:02.611039+00, cex, null, 1733531.648375253, 1852105.3773099445, null, null, 179543170, null, null, null, null).
+2026-04-22T17:15:44.646761787Z [error]     yield cur
+2026-04-22T17:15:44.646763147Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:15:44.646769299Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:15:44.646773536Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:15:44.646774600Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:44.646775708Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:15:44.646777046Z [error]     cur.execute(
+2026-04-22T17:15:44.646780509Z [error] DETAIL:  Failing row contains (1214, usdc, huobi, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9995, "target": "USDT", "is_stale": f..., 2026-04-22 17:06:02.413887+00, cex, null, 3587684.345838871, 1985154.416075136, null, null, 25134431, null, null, null, null).
+2026-04-22T17:15:44.646785500Z [error]     cur.execute(
+2026-04-22T17:15:44.646786461Z [error] 
+2026-04-22T17:15:44.646790170Z [error] 2026-04-22 17:06:02,733 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:44.649036453Z [error]     yield conn
+2026-04-22T17:15:44.649036631Z [error] DETAIL:  Failing row contains (1216, usdc, kucoin, null, null, null, null, null, 1.01, {"base": "BTC", "last": 78923.3, "target": "USDC", "is_stale": f..., 2026-04-22 17:06:02.807568+00, cex, null, 601098.133347665, 351947.26895322616, null, null, 65538555, null, null, null, null).
+2026-04-22T17:15:44.649044897Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:15:44.649047663Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:15:44.649051661Z [error]     yield cur
+2026-04-22T17:15:44.649065151Z [error] 2026-04-22 17:06:02,930 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:44.649087465Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:15:44.649092889Z [error]     cur.execute(
+2026-04-22T17:15:44.649097059Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:44.649108247Z [error] 
+2026-04-22T17:15:44.651643298Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:15:44.651645983Z [error] Traceback (most recent call last):
+2026-04-22T17:15:44.651650800Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:15:44.651652283Z [error]     yield cur
+2026-04-22T17:15:44.651655066Z [error] DETAIL:  Failing row contains (1217, usdc, phemex, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9995, "target": "USDT", "is_stale": f..., 2026-04-22 17:06:03.004387+00, cex, null, 1962414.7169219072, 1560837.9790625619, null, null, 107520369, null, null, null, null).
+2026-04-22T17:15:44.651659072Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:15:44.651670369Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:15:44.651673561Z [error]     cur.execute(
+2026-04-22T17:15:44.651678611Z [error] DETAIL:  Failing row contains (1218, usdc, bitkan, null, null, null, null, null, 1.1, {"base": "USDC", "last": 0.99957, "target": "USDT", "is_stale": ..., 2026-04-22 17:06:03.201207+00, cex, null, 46421234.13802324, 84611685.51968057, null, null, 20774967, null, null, null, null).
+2026-04-22T17:15:44.651686540Z [error] Traceback (most recent call last):
+2026-04-22T17:15:44.651690667Z [error]     yield cur
+2026-04-22T17:15:44.654173807Z [error] 2026-04-22 17:06:03,520 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:44.654174234Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:15:44.654188925Z [error]     cur.execute(
+2026-04-22T17:15:44.654189873Z [error] Traceback (most recent call last):
+2026-04-22T17:15:44.654193733Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:44.654198492Z [error] DETAIL:  Failing row contains (1219, usdc, hyperliquid-spot, null, null, null, null, null, 1.13, {"base": "UBTC", "last": 78915.0, "target": "USDC", "is_stale": ..., 2026-04-22 17:06:03.397455+00, cex, null, 653249.4105495287, 409634.9281919564, null, null, 44548942, null, null, null, null).
+2026-04-22T17:15:44.654200906Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:15:44.654208531Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:15:44.656355430Z [error] Traceback (most recent call last):
+2026-04-22T17:15:44.656361520Z [error]     yield conn
+2026-04-22T17:15:44.656364390Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:15:44.656367660Z [error]     yield cur
+2026-04-22T17:15:44.656370990Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:15:44.656376810Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:44.656382825Z [error] 
+2026-04-22T17:15:44.656385851Z [error] 2026-04-22 17:06:03,914 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:44.656388660Z [error] DETAIL:  Failing row contains (1221, usdc, bitvenus_spot, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9996, "target": "USDT", "is_stale": f..., 2026-04-22 17:06:03.791869+00, cex, null, 726998606.6363698, 710165348.0543652, null, null, 30372312, null, null, null, null).
+2026-04-22T17:15:44.657996195Z [error]     cur.execute(
+2026-04-22T17:15:44.658021666Z [error]     yield conn
+2026-04-22T17:15:44.658021899Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:15:44.658033703Z [error]     yield cur
+2026-04-22T17:15:44.658038901Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:15:44.658244581Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:15:44.658249164Z [error]     yield cur
+2026-04-22T17:15:44.658276559Z [error] DETAIL:  Failing row contains (1222, usdc, bitget, null, null, null, null, null, 1.04, {"base": "ETH", "last": 2393.8, "target": "USDC", "is_stale": fa..., 2026-04-22 17:06:03.988481+00, cex, null, 1689022.194103852, 1835729.8258203596, null, null, 19156631, null, null, null, null).
+2026-04-22T17:15:44.658279950Z [error] Traceback (most recent call last):
+2026-04-22T17:15:44.658283822Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:15:44.658287290Z [error]     yield conn
+2026-04-22T17:15:44.660602409Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:44.660628275Z [error]     yield conn
+2026-04-22T17:15:44.660631551Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:44.660637687Z [error] DETAIL:  Failing row contains (1222, usdc, bitget, null, null, null, null, null, 1.04, {"base": "ETH", "last": 2393.8, "target": "USDC", "is_stale": fa..., 2026-04-22 17:06:03.988481+00, cex, null, 1689022.194103852, 1835729.8258203596, null, null, 19156631, null, null, null, null).
+2026-04-22T17:15:44.660643825Z [error]     yield cur
+2026-04-22T17:15:44.660644335Z [error] 
+2026-04-22T17:15:44.660657808Z [error] 2026-04-22 17:06:04,308 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:44.660661381Z [error] DETAIL:  Failing row contains (1223, usdc, hyperliquid-spot, null, null, null, null, null, 1.49, {"base": "HYPE", "last": 41.037, "target": "USDC", "is_stale": f..., 2026-04-22 17:06:04.185449+00, cex, null, 59600.91797270612, 50085.88480007891, null, null, 57914711, null, null, null, null).
+2026-04-22T17:15:44.662714254Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:15:44.662716489Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:44.662719672Z [error]     yield conn
+2026-04-22T17:15:44.662725581Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:15:44.662731634Z [error] 
+2026-04-22T17:15:44.662736747Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:15:44.662739983Z [error] 2026-04-22 17:06:04,702 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:44.662740618Z [error] 
+2026-04-22T17:15:44.662744594Z [error]     cur.execute(
+2026-04-22T17:15:44.662751883Z [error] DETAIL:  Failing row contains (1224, usdc, bingx, null, null, null, null, null, 1.0, {"base": "BTC", "last": 78920.09, "target": "USDC", "is_stale": ..., 2026-04-22 17:06:04.381904+00, cex, null, 5421737.80286705, 11710178.86624274, null, null, 22859124, null, null, null, null).
+2026-04-22T17:15:56.214947746Z [error] DETAIL:  Failing row contains (1226, usdc, zoomex, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9996, "target": "USDT", "is_stale": f..., 2026-04-22 17:06:04.776228+00, cex, null, 24533693.83104464, 25423071.878410455, null, null, 63875682, null, null, null, null).
+2026-04-22T17:15:56.214957369Z [error] Traceback (most recent call last):
+2026-04-22T17:15:56.214961347Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:15:56.214964747Z [error]     yield conn
+2026-04-22T17:15:56.214968075Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:15:56.215067941Z [error] Traceback (most recent call last):
+2026-04-22T17:15:56.215071060Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:15:56.215074029Z [error]     yield conn
+2026-04-22T17:15:56.215076901Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:15:56.215079928Z [error]     yield cur
+2026-04-22T17:15:56.215082967Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:15:56.215086028Z [error]     cur.execute(
+2026-04-22T17:15:56.215089025Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:15:56.215091810Z [error] DETAIL:  Failing row contains (1225, usdc, weex, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9995, "target": "USDT", "is_stale": f..., 2026-04-22 17:06:04.578601+00, cex, null, 16316768.945233205, 16354504.938197352, null, null, 50093752, null, null, null, null).
+2026-04-22T17:15:56.215094767Z [error] 
+2026-04-22T17:16:25.178888775Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:16:25.178893362Z [error]     cur.execute(
+2026-04-22T17:16:25.178903450Z [error] DETAIL:  Failing row contains (1226, usdc, zoomex, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9996, "target": "USDT", "is_stale": f..., 2026-04-22 17:06:04.776228+00, cex, null, 24533693.83104464, 25423071.878410455, null, null, 63875682, null, null, null, null).
+2026-04-22T17:16:25.178913643Z [error] 2026-04-22 17:06:05,097 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:25.178929811Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:16:25.178939237Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:16:25.178943955Z [error]     yield cur
+2026-04-22T17:16:25.178950807Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:16:25.178955591Z [error]     cur.execute(
+2026-04-22T17:16:25.178959878Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:25.178964542Z [error] DETAIL:  Failing row contains (1227, usdc, bitget, null, null, null, null, null, 1.0, {"base": "BTC", "last": 78918.31, "target": "USDC", "is_stale": ..., 2026-04-22 17:06:04.973175+00, cex, null, 2069728.6494822234, 3798187.909242204, null, null, 17269968, null, null, null, null).
+2026-04-22T17:16:25.179947712Z [error] 
+2026-04-22T17:16:25.179954711Z [error] 2026-04-22 17:06:05,294 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:25.179955035Z [error] Traceback (most recent call last):
+2026-04-22T17:16:25.179959329Z [error] DETAIL:  Failing row contains (1228, usdc, kraken, null, null, null, null, null, 1.22, {"base": "XBT", "last": 78875.07, "target": "USDC", "is_stale": ..., 2026-04-22 17:06:05.171479+00, cex, null, 2681478.1901724506, 13137669.654233899, null, null, 28333257, null, null, null, null).
+2026-04-22T17:16:25.179968169Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:16:25.179974014Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:16:25.179981050Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:16:25.179981267Z [error]     cur.execute(
+2026-04-22T17:16:25.179986245Z [error]     yield cur
+2026-04-22T17:16:25.179988735Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:25.179992446Z [error] DETAIL:  Failing row contains (1228, usdc, kraken, null, null, null, null, null, 1.22, {"base": "XBT", "last": 78875.07, "target": "USDC", "is_stale": ..., 2026-04-22 17:06:05.171479+00, cex, null, 2681478.1901724506, 13137669.654233899, null, null, 28333257, null, null, null, null).
+2026-04-22T17:16:25.179995686Z [error] 
+2026-04-22T17:16:25.179999280Z [error] 2026-04-22 17:06:05,491 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:25.180002522Z [error] DETAIL:  Failing row contains (1229, usdc, tapbit, null, null, null, null, null, 3.0, {"base": "USDC", "last": 0.9995, "target": "USDT", "is_stale": f..., 2026-04-22 17:06:05.368275+00, cex, null, 1182919.9814099895, 1330885.9061390993, null, null, 836708613, null, null, null, null).
+2026-04-22T17:16:29.275446739Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:16:29.275453702Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:16:29.275455459Z [error] 2026-04-22 17:06:05,687 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:29.275456221Z [error]     yield conn
+2026-04-22T17:16:29.275465373Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:16:29.275465597Z [error]     yield conn
+2026-04-22T17:16:29.275472688Z [error]     yield cur
+2026-04-22T17:16:29.275475031Z [error]     yield cur
+2026-04-22T17:16:29.275479272Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:16:29.277088237Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:29.277106892Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:16:29.277107197Z [error] 2026-04-22 17:06:05,884 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:29.277112730Z [error] DETAIL:  Failing row contains (1231, usdc, digifinex, null, null, null, null, null, 1.0, {"base": "BTC", "last": 78913.8, "target": "USDC", "is_stale": f..., 2026-04-22 17:06:05.761541+00, cex, null, 7099924.219187921, 6897762.845052856, null, null, 41171017, null, null, null, null).
+2026-04-22T17:16:29.277113403Z [error]     cur.execute(
+2026-04-22T17:16:29.277117146Z [error] Traceback (most recent call last):
+2026-04-22T17:16:29.277119360Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:29.277122935Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:16:29.277127876Z [error]     yield conn
+2026-04-22T17:16:29.277131620Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:16:29.279016399Z [error]     yield cur
+2026-04-22T17:16:29.279029538Z [error] 
+2026-04-22T17:16:29.279032727Z [error] 
+2026-04-22T17:16:29.279037380Z [error] 2026-04-22 17:06:06,081 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:29.279039047Z [error] DETAIL:  Failing row contains (1232, usdc, bybit_spot, null, null, null, null, null, 1.04, {"base": "ETH", "last": 2392.11, "target": "USDC", "is_stale": f..., 2026-04-22 17:06:05.958096+00, cex, null, 2320908.7196571007, 2597049.4709257493, null, null, 19605485, null, null, null, null).
+2026-04-22T17:16:29.280704328Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:29.280712631Z [error] DETAIL:  Failing row contains (1233, usdc, binance, null, null, null, null, null, 2.0, {"base": "USD1", "last": 1.0002, "target": "USDC", "is_stale": f..., 2026-04-22 17:06:06.155086+00, cex, null, 9556566.502526477, 31879420.135887966, null, null, 67567298, null, null, null, null).
+2026-04-22T17:16:29.280718163Z [error]     yield cur
+2026-04-22T17:16:29.280720510Z [error] 
+2026-04-22T17:16:29.280724375Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:16:29.280726857Z [error]     yield conn
+2026-04-22T17:16:29.280732268Z [error] 2026-04-22 17:06:06,475 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:29.280733975Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:16:29.280742132Z [error]     yield cur
+2026-04-22T17:16:29.280749221Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:16:29.282153588Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:16:29.282159229Z [error]     cur.execute(
+2026-04-22T17:16:29.282183515Z [error] DETAIL:  Failing row contains (1234, usdc, bullish_com, null, null, null, null, null, 2.0, {"base": "USDT", "last": 1.0004, "target": "USDC", "is_stale": f..., 2026-04-22 17:06:06.352267+00, cex, null, 11763563.9189708, 6058897.538338757, null, null, 124324588, null, null, null, null).
+2026-04-22T17:16:29.282190690Z [error] 
+2026-04-22T17:16:29.282202665Z [error]     cur.execute(
+2026-04-22T17:16:29.282216582Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:16:29.282220917Z [error] DETAIL:  Failing row contains (1235, usdc, p2pb2b, null, null, null, null, null, 1.15, {"base": "BTC", "last": 78945.6, "target": "USDC", "is_stale": f..., 2026-04-22 17:06:06.549332+00, cex, null, 1272405.361965188, 1334530.3646165992, null, null, 141004371, null, null, null, null).
+2026-04-22T17:16:29.282224028Z [error]     yield conn
+2026-04-22T17:16:29.284580651Z [error] DETAIL:  Failing row contains (1237, usdc, backpack_exchange, null, null, null, null, null, 1.01, {"base": "BTC", "last": 78868.4, "target": "USDC", "is_stale": f..., 2026-04-22 17:06:06.943497+00, cex, null, 846968.9315103774, 1365698.9170932164, null, null, 5632850, null, null, null, null).
+2026-04-22T17:16:29.284750601Z [error] DETAIL:  Failing row contains (1236, usdc, aivora-exchange, null, null, null, null, null, 1.1, {"base": "USDC", "last": 0.99957, "target": "USDT", "is_stale": ..., 2026-04-22 17:06:06.746118+00, cex, null, 281731.152485122, 267279.84314734436, null, null, 270811081, null, null, null, null).
+2026-04-22T17:16:29.284753516Z [error] Traceback (most recent call last):
+2026-04-22T17:16:29.284756496Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:16:29.284759276Z [error]     yield conn
+2026-04-22T17:16:29.284775523Z [error] DETAIL:  Failing row contains (1236, usdc, aivora-exchange, null, null, null, null, null, 1.1, {"base": "USDC", "last": 0.99957, "target": "USDT", "is_stale": ..., 2026-04-22 17:06:06.746118+00, cex, null, 281731.152485122, 267279.84314734436, null, null, 270811081, null, null, null, null).
+2026-04-22T17:16:29.284778168Z [error] 
+2026-04-22T17:16:29.286081709Z [error]     yield cur
+2026-04-22T17:16:29.286093084Z [error]     cur.execute(
+2026-04-22T17:16:29.286094831Z [error] 
+2026-04-22T17:16:29.286110052Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:29.286110161Z [error] Traceback (most recent call last):
+2026-04-22T17:16:29.286125185Z [error]     yield conn
+2026-04-22T17:16:29.287612092Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:29.287625139Z [error]     yield cur
+2026-04-22T17:16:29.288847238Z [error] DETAIL:  Failing row contains (1240, usdc, grovex, null, null, null, null, null, -0.1, {"base": "USDC", "last": 0.99956, "target": "USDT", "is_stale": ..., 2026-04-22 17:06:07.535099+00, cex, null, 61475.85221472278, 52197.09943938962, null, null, 92482901, null, null, null, null).
+2026-04-22T17:16:29.288850579Z [error] 
+2026-04-22T17:16:29.288860004Z [error]     yield cur
+2026-04-22T17:16:29.288937258Z [error] 2026-04-22 17:06:07,860 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:29.290324966Z [error]     yield cur
+2026-04-22T17:16:29.290338405Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:29.290348452Z [error] 
+2026-04-22T17:16:29.290381542Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:16:29.291644063Z [error] DETAIL:  Failing row contains (1243, usdc, levex, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9995, "target": "USDT", "is_stale": f..., 2026-04-22 17:06:08.132735+00, cex, null, 6654820.5442614565, 5358568.973278329, null, null, 6171655, null, null, null, null).
+2026-04-22T17:16:29.291647568Z [error] DETAIL:  Failing row contains (1242, usdc, gate, null, null, null, null, null, 1.01, {"base": "BTC", "last": 78910.51, "target": "USDC", "is_stale": ..., 2026-04-22 17:06:07.93504+00, cex, null, 549909.9052892778, 579208.000288625, null, null, 4004336, null, null, null, null).
+2026-04-22T17:16:29.291652799Z [error] 
+2026-04-22T17:16:29.291660026Z [error] 2026-04-22 17:06:08,255 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:29.291671351Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:16:29.291676336Z [error]     yield conn
+2026-04-22T17:16:29.291680464Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:16:29.291684669Z [error]     yield cur
+2026-04-22T17:16:29.291689059Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:16:29.291695483Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:29.291718244Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:29.293227789Z [error] DETAIL:  Failing row contains (1244, usdc, kucoin, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9996, "target": "USDT", "is_stale": f..., 2026-04-22 17:06:08.329649+00, cex, null, 1597905.8870494792, 2882782.1562514934, null, null, 17128350, null, null, null, null).
+2026-04-22T17:16:29.293230359Z [error]     yield conn
+2026-04-22T17:16:29.293233683Z [error] Traceback (most recent call last):
+2026-04-22T17:16:29.293237732Z [error]     yield cur
+2026-04-22T17:16:29.293241113Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:16:29.293243522Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:16:29.293246219Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:16:29.293247296Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:29.293254608Z [error] 2026-04-22 17:06:08,650 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:29.293260341Z [error] DETAIL:  Failing row contains (1244, usdc, kucoin, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9996, "target": "USDT", "is_stale": f..., 2026-04-22 17:06:08.329649+00, cex, null, 1597905.8870494792, 2882782.1562514934, null, null, 17128350, null, null, null, null).
+2026-04-22T17:16:29.293264068Z [error] DETAIL:  Failing row contains (1245, usdc, xt, null, null, null, null, null, 1.0, {"base": "BTC", "last": 78863.59, "target": "USDC", "is_stale": ..., 2026-04-22 17:06:08.526973+00, cex, null, 2812233.753646076, 3001068.9329128056, null, null, 20254313, null, null, null, null).
+2026-04-22T17:16:29.293268079Z [error] 
+2026-04-22T17:16:29.293277187Z [error] 
+2026-04-22T17:16:29.294270661Z [error]     yield conn
+2026-04-22T17:16:29.294275866Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:16:29.294281215Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:29.294290950Z [error] DETAIL:  Failing row contains (1245, usdc, xt, null, null, null, null, null, 1.0, {"base": "BTC", "last": 78863.59, "target": "USDC", "is_stale": ..., 2026-04-22 17:06:08.526973+00, cex, null, 2812233.753646076, 3001068.9329128056, null, null, 20254313, null, null, null, null).
+2026-04-22T17:16:29.294292276Z [error] Traceback (most recent call last):
+2026-04-22T17:16:29.294301230Z [error]     cur.execute(
+2026-04-22T17:16:29.294302332Z [error]     yield conn
+2026-04-22T17:16:29.294302459Z [error] 
+2026-04-22T17:16:29.294310730Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:16:29.294311441Z [error] 2026-04-22 17:06:08,847 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:29.294319511Z [error]     yield cur
+2026-04-22T17:16:29.294326436Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:16:29.294327982Z [error] Traceback (most recent call last):
+2026-04-22T17:16:29.296323999Z [error] 
+2026-04-22T17:16:29.296327668Z [error] 2026-04-22 17:06:09,044 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:29.296331619Z [error] DETAIL:  Failing row contains (1247, usdc, kraken, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9996, "target": "USDT", "is_stale": f..., 2026-04-22 17:06:08.921717+00, cex, null, 2239066.2023089696, 3818004.828782529, null, null, 13557933, null, null, null, null).
+2026-04-22T17:16:29.296335222Z [error] Traceback (most recent call last):
+2026-04-22T17:16:29.296338421Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:16:29.296349934Z [error]     yield cur
+2026-04-22T17:16:29.296359913Z [error]     cur.execute(
+2026-04-22T17:16:29.296368086Z [error] DETAIL:  Failing row contains (1247, usdc, kraken, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9996, "target": "USDT", "is_stale": f..., 2026-04-22 17:06:08.921717+00, cex, null, 2239066.2023089696, 3818004.828782529, null, null, 13557933, null, null, null, null).
+2026-04-22T17:16:29.298179548Z [error] 
+2026-04-22T17:16:29.298187341Z [error] 2026-04-22 17:06:09,241 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:29.298190991Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:16:29.298195314Z [error] DETAIL:  Failing row contains (1248, usdc, o2, null, null, null, null, null, 1.1, {"base": "USDT", "last": 1.00045, "target": "USDC", "is_stale": ..., 2026-04-22 17:06:09.118532+00, cex, null, 4793.261019897403, 23768.124739398787, null, null, 7400395, null, null, null, null).
+2026-04-22T17:16:29.298197299Z [error]     yield cur
+2026-04-22T17:16:29.298202464Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:16:29.298206064Z [error]     cur.execute(
+2026-04-22T17:16:29.298216730Z [error]     yield conn
+2026-04-22T17:16:36.399739306Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:36.399766313Z [error] 
+2026-04-22T17:16:36.399775392Z [error] DETAIL:  Failing row contains (1249, usdc, binance, null, null, null, null, null, 1.14, {"base": "SOL", "last": 87.76, "target": "USDC", "is_stale": fal..., 2026-04-22 17:06:09.315303+00, cex, null, 1878874.5111526346, 1396328.3331571643, null, null, 52693192, null, null, null, null).
+2026-04-22T17:16:36.400003616Z [error]     yield conn
+2026-04-22T17:16:36.400009039Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:16:36.400018581Z [error] Traceback (most recent call last):
+2026-04-22T17:16:36.400082575Z [error] DETAIL:  Failing row contains (1249, usdc, binance, null, null, null, null, null, 1.14, {"base": "SOL", "last": 87.76, "target": "USDC", "is_stale": fal..., 2026-04-22 17:06:09.315303+00, cex, null, 1878874.5111526346, 1396328.3331571643, null, null, 52693192, null, null, null, null).
+2026-04-22T17:16:36.400095362Z [error] 2026-04-22 17:06:09,635 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:36.400111398Z [error]     yield conn
+2026-04-22T17:16:36.400114759Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:16:36.400118028Z [error]     yield cur
+2026-04-22T17:16:36.401472039Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:16:36.401476083Z [error]     yield conn
+2026-04-22T17:16:36.401480103Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:16:36.401487414Z [error]     cur.execute(
+2026-04-22T17:16:36.401495552Z [error] DETAIL:  Failing row contains (1251, usdc, cex, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9995, "target": "USDT", "is_stale": f..., 2026-04-22 17:06:09.709016+00, cex, null, 8698922.790327404, 12048012.903699245, null, null, 7356484, null, null, null, null).
+2026-04-22T17:16:36.401506198Z [error] 
+2026-04-22T17:16:36.401518533Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:36.401524021Z [error]     yield cur
+2026-04-22T17:16:36.401525238Z [error] DETAIL:  Failing row contains (1251, usdc, cex, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9995, "target": "USDT", "is_stale": f..., 2026-04-22 17:06:09.709016+00, cex, null, 8698922.790327404, 12048012.903699245, null, null, 7356484, null, null, null, null).
+2026-04-22T17:16:36.401538630Z [error]     cur.execute(
+2026-04-22T17:16:46.194778937Z [error]     yield cur
+2026-04-22T17:16:46.194816852Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:46.194836363Z [error] 
+2026-04-22T17:16:46.196249799Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:16:46.196285096Z [error] Traceback (most recent call last):
+2026-04-22T17:16:46.196304201Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:16:46.196307324Z [error] 2026-04-22 17:06:10,426 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:46.196313342Z [error] DETAIL:  Failing row contains (1254, usdc, hotcoin_global, null, null, null, null, null, 1.04, {"base": "ETH", "last": 2393.61, "target": "USDC", "is_stale": f..., 2026-04-22 17:06:10.30233+00, cex, null, 6653726.968048299, 7114582.855580045, null, null, 40883857, null, null, null, null).
+2026-04-22T17:16:46.196323356Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:16:46.196333394Z [error]     yield cur
+2026-04-22T17:16:46.437154401Z [error] 
+2026-04-22T17:16:46.437155347Z [error] DETAIL:  Failing row contains (1255, usdc, mxc, null, null, null, null, null, 2.9, {"base": "BTC", "last": 78926.21, "target": "USDC", "is_stale": ..., 2026-04-22 17:06:10.502023+00, cex, null, 1272708.1126848487, 989402.3761567823, null, null, 15785873, null, null, null, null).
+2026-04-22T17:16:46.437180946Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:16:46.438550009Z [error] 
+2026-04-22T17:16:46.438564616Z [error] Traceback (most recent call last):
+2026-04-22T17:16:46.438592147Z [error]     cur.execute(
+2026-04-22T17:16:52.895740114Z [error]     yield conn
+2026-04-22T17:16:52.895742707Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:16:52.895753531Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:52.895766884Z [error] DETAIL:  Failing row contains (1258, usdc, gdax, null, null, null, null, null, 1.85, {"base": "EURC", "last": 1.1717, "target": "USDC", "is_stale": f..., 2026-04-22 17:06:11.093999+00, cex, null, 632244.1398077018, 635238.0043617807, null, null, 6655447, null, null, null, null).
+2026-04-22T17:16:52.895769774Z [error] Traceback (most recent call last):
+2026-04-22T17:16:52.895778265Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:16:52.896364222Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:16:52.896368675Z [error]     cur.execute(
+2026-04-22T17:16:52.896377861Z [error] DETAIL:  Failing row contains (1258, usdc, gdax, null, null, null, null, null, 1.85, {"base": "EURC", "last": 1.1717, "target": "USDC", "is_stale": f..., 2026-04-22 17:06:11.093999+00, cex, null, 632244.1398077018, 635238.0043617807, null, null, 6655447, null, null, null, null).
+2026-04-22T17:16:52.896438186Z [error]     yield cur
+2026-04-22T17:16:52.896492181Z [error] DETAIL:  Failing row contains (1259, usdc, bitfinex, null, null, null, null, null, 2.0, {"base": "UDC", "last": 0.99961, "target": "USDT", "is_stale": f..., 2026-04-22 17:06:11.290929+00, cex, null, 381608.69578022003, 1636404.1815566425, null, null, 6368930, null, null, null, null).
+2026-04-22T17:16:52.897374423Z [error] 
+2026-04-22T17:16:52.897383389Z [error] DETAIL:  Failing row contains (1260, usdc, bingx, null, null, null, null, null, 1.04, {"base": "ETH", "last": 2393.6, "target": "USDC", "is_stale": fa..., 2026-04-22 17:06:11.487485+00, cex, null, 2063314.6655854615, 1745785.6437340553, null, null, 11551748, null, null, null, null).
+2026-04-22T17:16:52.897385094Z [error] 2026-04-22 17:06:11,807 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:52.897385892Z [error]     cur.execute(
+2026-04-22T17:16:52.897395465Z [error]     yield cur
+2026-04-22T17:16:52.898770713Z [error]     yield conn
+2026-04-22T17:16:52.898774407Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:16:52.898778172Z [error]     yield cur
+2026-04-22T17:16:52.898788638Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:52.898806938Z [error] DETAIL:  Failing row contains (1262, usdc, weex, null, null, null, null, null, 1.04, {"base": "ETH", "last": 2393.9, "target": "USDC", "is_stale": fa..., 2026-04-22 17:06:11.881175+00, cex, null, 1712996.5064479266, 1528796.0226996609, null, null, 44231321, null, null, null, null).
+2026-04-22T17:16:52.898820593Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:16:52.900115876Z [error] 2026-04-22 17:06:12,200 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:52.900121494Z [error] DETAIL:  Failing row contains (1263, usdc, cointr, null, null, null, null, null, 5.0, {"base": "USDC", "last": 0.9996, "target": "USDT", "is_stale": f..., 2026-04-22 17:06:12.077872+00, cex, null, 5810291.778414578, 11273643.834984584, null, null, 47651928, null, null, null, null).
+2026-04-22T17:16:52.900127027Z [error] Traceback (most recent call last):
+2026-04-22T17:16:52.900128225Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:52.900136184Z [error] DETAIL:  Failing row contains (1262, usdc, weex, null, null, null, null, null, 1.04, {"base": "ETH", "last": 2393.9, "target": "USDC", "is_stale": fa..., 2026-04-22 17:06:11.881175+00, cex, null, 1712996.5064479266, 1528796.0226996609, null, null, 44231321, null, null, null, null).
+2026-04-22T17:16:52.900136966Z [error]     yield conn
+2026-04-22T17:16:52.900195674Z [error] DETAIL:  Failing row contains (1263, usdc, cointr, null, null, null, null, null, 5.0, {"base": "USDC", "last": 0.9996, "target": "USDT", "is_stale": f..., 2026-04-22 17:06:12.077872+00, cex, null, 5810291.778414578, 11273643.834984584, null, null, 47651928, null, null, null, null).
+2026-04-22T17:16:52.901431325Z [error] 
+2026-04-22T17:16:52.901434443Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:16:52.903131965Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:16:52.903144460Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:16:52.903150342Z [error]     cur.execute(
+2026-04-22T17:16:52.903168328Z [error] 
+2026-04-22T17:16:52.903174024Z [error] 2026-04-22 17:06:12,792 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:52.903177752Z [error]     yield conn
+2026-04-22T17:16:52.904429511Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:52.904433168Z [error] DETAIL:  Failing row contains (1267, usdc, hotcoin_global, null, null, null, null, null, 1.3, {"base": "USDC", "last": 0.99958, "target": "USDT", "is_stale": ..., 2026-04-22 17:06:12.866424+00, cex, null, 58145783.775085084, 60873062.578562595, null, null, 26967667, null, null, null, null).
+2026-04-22T17:16:52.904509255Z [error] DETAIL:  Failing row contains (1266, usdc, okex, null, null, null, null, null, 1.01, {"base": "BTC", "last": 78899.8, "target": "USDC", "is_stale": f..., 2026-04-22 17:06:12.669675+00, cex, null, 511043.0809686478, 671177.4742868297, null, null, 1482654, null, null, null, null).
+2026-04-22T17:16:52.904518263Z [error] DETAIL:  Failing row contains (1267, usdc, hotcoin_global, null, null, null, null, null, 1.3, {"base": "USDC", "last": 0.99958, "target": "USDT", "is_stale": ..., 2026-04-22 17:06:12.866424+00, cex, null, 58145783.775085084, 60873062.578562595, null, null, 26967667, null, null, null, null).
+2026-04-22T17:16:52.904521045Z [error] Traceback (most recent call last):
+2026-04-22T17:16:52.904526681Z [error]     yield conn
+2026-04-22T17:16:52.904529522Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:16:52.904536117Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:16:52.905335924Z [error] 
+2026-04-22T17:16:52.905339951Z [error] 2026-04-22 17:06:13,187 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:52.905353679Z [error]     yield conn
+2026-04-22T17:16:52.905360162Z [error]     yield cur
+2026-04-22T17:16:52.905363688Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:16:52.905366861Z [error]     cur.execute(
+2026-04-22T17:16:52.905383180Z [error] DETAIL:  Failing row contains (1269, usdc, azbit, null, null, null, null, null, 1.04, {"base": "ETH", "last": 2388.92, "target": "USDC", "is_stale": f..., 2026-04-22 17:06:13.261283+00, cex, null, 1173447.7834713093, 1164774.394813766, null, null, 63911646, null, null, null, null).
+2026-04-22T17:16:52.906481314Z [error]     yield conn
+2026-04-22T17:16:52.906488319Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:16:52.906488484Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:16:52.906493113Z [error]     cur.execute(
+2026-04-22T17:16:52.906500355Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:16:52.906536806Z [error] DETAIL:  Failing row contains (1269, usdc, azbit, null, null, null, null, null, 1.04, {"base": "ETH", "last": 2388.92, "target": "USDC", "is_stale": f..., 2026-04-22 17:06:13.261283+00, cex, null, 1173447.7834713093, 1164774.394813766, null, null, 63911646, null, null, null, null).
+2026-04-22T17:16:52.906541443Z [error] 
+2026-04-22T17:16:52.906545863Z [error] 2026-04-22 17:06:13,581 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:52.906681009Z [error] Traceback (most recent call last):
+2026-04-22T17:16:52.906685841Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:16:52.906699954Z [error]     yield cur
+2026-04-22T17:16:52.910242322Z [error] DETAIL:  Failing row contains (1270, usdc, bitcastle, null, null, null, null, null, 1.0, {"base": "BTC", "last": 78935.47, "target": "USDC", "is_stale": ..., 2026-04-22 17:06:13.457903+00, cex, null, 230530.6171156775, 236579.96939785086, null, null, 19262500, null, null, null, null).
+2026-04-22T17:16:52.910244103Z [error] 
+2026-04-22T17:16:52.910246180Z [error] Traceback (most recent call last):
+2026-04-22T17:16:52.910249145Z [error]     cur.execute(
+2026-04-22T17:16:52.910252930Z [error] 2026-04-22 17:06:13,778 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:52.910253552Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:16:52.910256412Z [error] DETAIL:  Failing row contains (1271, usdc, coinw, null, null, null, null, null, 4.05, {"base": "ETH", "last": 2394.12, "target": "USDC", "is_stale": f..., 2026-04-22 17:06:13.655063+00, cex, null, 514188.05483365746, 430150.18670276855, null, null, 97582571, null, null, null, null).
+2026-04-22T17:16:52.910259498Z [error] DETAIL:  Failing row contains (1271, usdc, coinw, null, null, null, null, null, 4.05, {"base": "ETH", "last": 2394.12, "target": "USDC", "is_stale": f..., 2026-04-22 17:06:13.655063+00, cex, null, 514188.05483365746, 430150.18670276855, null, null, 97582571, null, null, null, null).
+2026-04-22T17:16:52.910260797Z [error]     yield conn
+2026-04-22T17:16:52.910272029Z [error]     yield cur
+2026-04-22T17:16:52.910289422Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:16:52.911634300Z [error] 
+2026-04-22T17:16:52.911645668Z [error] DETAIL:  Failing row contains (1272, usdc, coinw, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9994, "target": "USDT", "is_stale": f..., 2026-04-22 17:06:13.852996+00, cex, null, 384481.1908146427, 394322.40699109185, null, null, 26089202, null, null, null, null).
+2026-04-22T17:16:52.911650553Z [error] Traceback (most recent call last):
+2026-04-22T17:16:52.911655582Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:16:52.911669421Z [error]     yield cur
+2026-04-22T17:16:52.911673365Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:16:52.911677654Z [error]     cur.execute(
+2026-04-22T17:16:52.911686251Z [error] DETAIL:  Failing row contains (1272, usdc, coinw, null, null, null, null, null, 1.0, {"base": "USDC", "last": 0.9994, "target": "USDT", "is_stale": f..., 2026-04-22 17:06:13.852996+00, cex, null, 384481.1908146427, 394322.40699109185, null, null, 26089202, null, null, null, null).
+2026-04-22T17:17:01.643088466Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:17:01.643099124Z [error]     yield cur
+2026-04-22T17:17:01.643123728Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:17:01.643134929Z [error] 2026-04-22 17:06:15,358 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:17:01.643135526Z [error] 
+2026-04-22T17:17:01.643143073Z [error] DETAIL:  Failing row contains (1279, usdc, gemini, null, null, null, null, null, 1.1, {"base": "USDC", "last": 0.99979, "target": "USD", "is_stale": f..., 2026-04-22 17:06:15.235421+00, cex, null, 1340112.175755286, 1365917.089781853, null, null, 2159227, null, null, null, null).
+2026-04-22T17:17:01.643154288Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:17:01.643158138Z [error]     yield conn
+2026-04-22T17:17:01.643208224Z [error]     cur.execute(
+2026-04-22T17:17:01.643218568Z [error] psycopg2.errors.NotNullViolation: null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:17:01.643224277Z [error] DETAIL:  Failing row contains (1279, usdc, gemini, null, null, null, null, null, 1.1, {"base": "USDC", "last": 0.99979, "target": "USD", "is_stale": f..., 2026-04-22 17:06:15.235421+00, cex, null, 1340112.175755286, 1365917.089781853, null, null, 2159227, null, null, null, null).
+2026-04-22T17:17:01.644081941Z [error] 
+2026-04-22T17:17:01.644084550Z [error] 2026-04-22 17:06:15,555 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
+2026-04-22T17:17:01.644087225Z [error] DETAIL:  Failing row contains (1280, usdc, biconomy, null, null, null, null, null, 1.04, {"base": "ETH", "last": 2393.6, "target": "USDC", "is_stale": fa..., 2026-04-22 17:06:15.432906+00, cex, null, 355917.20232802146, 343133.2140736189, null, null, 90970202, null, null, null, null).
+2026-04-22T17:17:01.644089896Z [error] Traceback (most recent call last):
+2026-04-22T17:17:01.644097725Z [error]     yield conn
+2026-04-22T17:17:01.644100831Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:17:01.644103719Z [error]     yield cur
+2026-04-22T17:17:01.644118380Z [error] 
+2026-04-22T17:17:01.644808638Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:17:01.644817061Z [error] Traceback (most recent call last):
+2026-04-22T17:17:01.644823006Z [error]   File "/app/app/database.py", line 107, in get_conn
+2026-04-22T17:17:01.644835665Z [error] Traceback (most recent call last):
+2026-04-22T17:17:01.644839326Z [error]   File "/app/app/database.py", line 139, in get_cursor
+2026-04-22T17:17:01.644855013Z [error]   File "/app/app/data_layer/liquidity_collector.py", line 272, in _store_liquidity_records
+2026-04-22T17:17:01.644861926Z [error]     cur.execute(
+2026-04-22T17:17:01.644880965Z [error] 2026-04-22 17:06:15,950 [ERROR] app.database: Database error in get_conn(): null value in column "chain" of relation "liquidity_depth" violates not-null constraint
