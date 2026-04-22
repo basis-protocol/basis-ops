@@ -1031,3 +1031,31 @@
 2026-04-22T19:35:53.648430898Z [error] 2026-04-22 19:35:43,886 [INFO] basis.reindex: Skipping 0x0077e518… — API failed, will retry next cycle
 2026-04-22T19:36:23.861529188Z [error] 2026-04-22 19:36:16,752 [INFO] basis.reindex: Skipping 0x007948e9… — API failed, will retry next cycle
 2026-04-22T19:36:23.861550216Z [error] 2026-04-22 19:36:15,203 [INFO] basis.reindex: Skipping 0x0079452c… — API failed, will retry next cycle
+2026-04-22T19:37:14.582504230Z [info] INFO:     100.64.0.19:19798 - "GET / HTTP/1.1" 200 OK
+2026-04-22T19:38:04.121372507Z [error] 2026-04-22 19:38:00,208 [INFO] basis.reindex: Skipping 0x007d1c91… — API failed, will retry next cycle
+2026-04-22T19:39:24.187174006Z [error] 2026-04-22 19:39:20,559 [INFO] basis.reindex: Skipping 0x0080547d… — API failed, will retry next cycle
+2026-04-22T19:40:13.620630095Z [error] 2026-04-22 19:40:08,006 [INFO] basis.reindex: Skipping 0x008217d0… — API failed, will retry next cycle
+2026-04-22T19:40:13.620635831Z [info] INFO:     100.64.0.16:21426 - "GET / HTTP/1.1" 200 OK
+2026-04-22T19:40:17.378955828Z [error] 2026-04-22 19:40:16,928 [INFO] basis.reindex: Skipping 0x00827e4d… — API failed, will retry next cycle
+2026-04-22T19:40:21.366876532Z [error] 2026-04-22 19:40:21,011 [INFO] basis.reindex: Skipping 0x0082a3De… — API failed, will retry next cycle
+2026-04-22T19:40:41.045710323Z [error] 2026-04-22 19:40:35,309 [INFO] basis.reindex: === Batch Re-index Complete === indexed=268, scored=268, balances_updated=406, errors=232, batch_failures=85, elapsed=633s, remaining=35143
+2026-04-22T19:40:41.045713346Z [error] 2026-04-22 19:40:33,111 [INFO] basis.reindex: Skipping 0x0083123a… — API failed, will retry next cycle
+2026-04-22T19:40:41.045719793Z [error] 2026-04-22 19:40:35,532 [INFO] app.state_attestation: State attested: domain=wallets entity=None records=1 hash=aeedcee6b419c5d8...
+2026-04-22T19:40:41.045722476Z [error] 2026-04-22 19:40:33,111 [INFO] basis.reindex: Skipping 0x00831493… — API failed, will retry next cycle
+2026-04-22T19:40:41.045729504Z [error] 2026-04-22 19:40:33,111 [INFO] basis.reindex: Skipping 0x00831997… — API failed, will retry next cycle
+2026-04-22T19:43:21.620073356Z [info] INFO:     100.64.0.30:42000 - "GET / HTTP/1.1" 200 OK
+2026-04-22T19:45:11.950277812Z [info] INFO:     100.64.0.32:56234 - "POST /api/ops/health/check HTTP/1.1" 200 OK
+2026-04-22T19:45:19.890033304Z [info] INFO:     100.64.0.2:51360 - "GET /api/health HTTP/1.1" 200 OK
+2026-04-22T19:45:19.890039886Z [error] 2026-04-22 19:45:19,886 [INFO] httpx: HTTP Request: GET https://basisprotocol.xyz/api/health "HTTP/1.1 200 "
+2026-04-22T19:45:39.243421340Z [error] 2026-04-22 19:45:38,632 [INFO] httpx: HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/usdc?template=sbt_metadata "HTTP/1.1 200 "
+2026-04-22T19:45:39.243495946Z [error] 2026-04-22 19:45:37,964 [WARNING] app.report: _get_holder_concentration_trend(usdc) failed: relation "concentration_snapshots" does not exist
+2026-04-22T19:45:39.243504080Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-22T19:45:39.243511880Z [error]                          ^
+2026-04-22T19:45:39.243525860Z [error] 
+2026-04-22T19:45:39.243533893Z [info] INFO:     100.64.0.33:39252 - "GET /api/reports/stablecoin/usdc?template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-22T19:46:19.478376236Z [info] INFO:     100.64.0.34:44778 - "GET / HTTP/1.1" 200 OK
+2026-04-22T19:48:30.455097311Z [info] INFO:     100.64.0.13:44690 - "GET /robots.txt HTTP/1.1" 200 OK
+2026-04-22T19:48:30.455103135Z [info] INFO:     100.64.0.16:14150 - "GET /sitemap.xml HTTP/1.1" 200 OK
+2026-04-22T19:49:20.895382711Z [info] INFO:     100.64.0.27:27004 - "GET / HTTP/1.1" 200 OK
+2026-04-22T19:50:00.324422887Z [info] INFO:     100.64.0.14:31992 - "GET /sitemap-markdown.xml HTTP/1.1" 200 OK
+2026-04-22T19:52:12.368927903Z [info] INFO:     100.64.0.14:43826 - "GET / HTTP/1.1" 200 OK
