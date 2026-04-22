@@ -1,7 +1,3 @@
-2026-04-22T09:39:54.928837325Z [info] [2m2026-04-22T09:39:54.922214Z[0m [32m INFO[0m [2mbasis_provenance::notarize[0m[2m:[0m Sending MPC-TLS request to api.etherscan.io
-2026-04-22T09:39:54.928842556Z [info] [2m2026-04-22T09:39:54.922224Z[0m [32m INFO[0m [1mprover[0m[2m:[0m [2mtlsn::prover[0m[2m:[0m starting MPC-TLS
-2026-04-22T09:39:55.004208295Z [info] [2m2026-04-22T09:39:55.002571Z[0m [33m WARN[0m [1mprover[0m[2m:[0m [2mmpc_tls::leader[0m[2m:[0m record layer is not ready, skipping flush
-2026-04-22T09:39:55.836818050Z [info] [2m2026-04-22T09:39:55.461073Z[0m [32m INFO[0m [1mverifier[0m[2m:[0m[1mrun[0m[2m:[0m [2mtlsn::verifier[0m[2m:[0m finished MPC-TLS
 2026-04-22T09:39:55.836821029Z [info] [2m2026-04-22T09:39:55.461153Z[0m [32m INFO[0m [2mbasis_provenance::notarize[0m[2m:[0m Response status: 200 OK
 2026-04-22T09:39:55.836824289Z [info] [2m2026-04-22T09:39:55.461209Z[0m [32m INFO[0m [1mprover[0m[2m:[0m [2mtlsn::prover[0m[2m:[0m finished MPC-TLS
 2026-04-22T09:39:55.836827631Z [info] [2m2026-04-22T09:39:55.485965Z[0m [32m INFO[0m [2mbasis_provenance::notarize[0m[2m:[0m Response body: 7348 bytes from api.etherscan.io
@@ -1946,6 +1942,7 @@
 2026-04-22T14:48:56.917447481Z [info] [2m2026-04-22T14:48:56.915200Z[0m [32m INFO[0m [1mverifier[0m[2m:[0m[1mrun[0m[2m:[0m [2mtlsn::verifier[0m[2m:[0m finished MPC-TLS
 2026-04-22T14:48:56.917454638Z [info] [2m2026-04-22T14:48:56.915314Z[0m [32m INFO[0m [2mbasis_provenance::notarize[0m[2m:[0m Response status: 200 OK
 2026-04-22T14:48:56.917468727Z [info] [2m2026-04-22T14:48:56.915323Z[0m [32m INFO[0m [1mprover[0m[2m:[0m [2mtlsn::prover[0m[2m:[0m finished MPC-TLS
+2026-04-22T14:48:57.364599820Z [info] [2m2026-04-22T14:48:56.971332Z[0m [32m INFO[0m [2mbasis_provenance::notarize[0m[2m:[0m Response body: 19763 bytes from api.github.com
 2026-04-22T14:49:00.398482304Z [info] [2m2026-04-22T14:48:59.936507Z[0m [32m INFO[0m [2mbasis_provenance::notarize[0m[2m:[0m Notarization complete for api.github.com
 2026-04-22T14:49:00.398486052Z [info] [2m2026-04-22T14:48:59.936626Z[0m [32m INFO[0m [2mbasis_provenance[0m[2m:[0m OK [static/compound] https://api.github.com/repos/compound-finance/compound-protocol/contents/README.md — response_hash=a37d2b861f92765df7f1e2d5800cf5a3d1ec1916cbcf58d20645537850728be3 attestation_hash=756dbc935682bf39a233d54de8609d469fe857e03156eafd6785d7e95f2b46a3 (3.6s)
 2026-04-22T14:49:00.543774724Z [info] [2m2026-04-22T14:49:00.502156Z[0m [32m INFO[0m [2mbasis_provenance::storage[0m[2m:[0m Uploaded static proof to R2: https://4b6283d039bc8534d9d1816385b355d0.r2.cloudflarestorage.com/proofs/static/bri/compound/bridge_audit_count/2026-04-22T144859Z
@@ -1963,8 +1960,10 @@
 2026-04-22T14:49:02.925632277Z [info] [2m2026-04-22T14:49:02.922990Z[0m [32m INFO[0m [2mbasis_provenance::notarize[0m[2m:[0m Notarization complete for api.github.com
 2026-04-22T14:49:02.925639549Z [info] [2m2026-04-22T14:49:02.923098Z[0m [32m INFO[0m [2mbasis_provenance[0m[2m:[0m OK [static/makerdao] https://api.github.com/repositories/135169042/contents/README.md — response_hash=bc28a3994d8c66de3f502cf6dd05308e89f4563732060c7142909327d1b0bb02 attestation_hash=a80ab10ae6888cedaaf268869e9699461360f9b847b29e13a09a39f076a5cc9f (1.6s)
 2026-04-22T14:49:03.544377348Z [info] [2m2026-04-22T14:49:03.537294Z[0m [32m INFO[0m [2mbasis_provenance::storage[0m[2m:[0m Uploaded static proof to R2: https://4b6283d039bc8534d9d1816385b355d0.r2.cloudflarestorage.com/proofs/static/bri/makerdao/bridge_audit_count/2026-04-22T144902Z
+2026-04-22T14:49:03.544382311Z [info] [2m2026-04-22T14:49:03.537380Z[0m [32m INFO[0m [2mbasis_provenance[0m[2m:[0m R2: uploaded 1 component proofs for makerdao/bridge_audit_count
 2026-04-22T14:49:03.580950342Z [info] [2m2026-04-22T14:49:03.572365Z[0m [33m WARN[0m [2mbasis_provenance[0m[2m:[0m Hub static registration failed for bri/makerdao/bridge_audit_count: Hub static registration failed (405 Method Not Allowed): {"detail":"Method Not Allowed"}
 2026-04-22T14:49:04.376142641Z [info] [2m2026-04-22T14:49:04.077896Z[0m [32m INFO[0m [2mbasis_provenance[0m[2m:[0m Notarizing static [github_api] uniswap/bridge_audit_count: https://api.github.com/repos/Uniswap/v3-core/contents/README.md
+2026-04-22T14:49:04.376150393Z [info] [2m2026-04-22T14:49:04.312727Z[0m [32m INFO[0m [2mbasis_provenance[0m[2m:[0m Preflight OK: https://api.github.com/repos/Uniswap/v3-core/contents/README.md (Content-Length: 0)
 2026-04-22T14:49:04.627284834Z [info] [2m2026-04-22T14:49:04.617477Z[0m [32m INFO[0m [1mverifier[0m[2m:[0m[1mrun[0m[2m:[0m [2mtlsn::verifier[0m[2m:[0m starting MPC-TLS
 2026-04-22T14:49:04.647893032Z [info] [2m2026-04-22T14:49:04.642917Z[0m [32m INFO[0m [2mbasis_provenance::notarize[0m[2m:[0m Sending MPC-TLS request to api.github.com
 2026-04-22T14:49:04.647898544Z [info] [2m2026-04-22T14:49:04.642929Z[0m [32m INFO[0m [1mprover[0m[2m:[0m [2mtlsn::prover[0m[2m:[0m starting MPC-TLS
@@ -1975,6 +1974,7 @@
 2026-04-22T14:49:05.858728199Z [info] [2m2026-04-22T14:49:05.855800Z[0m [32m INFO[0m [2mbasis_provenance::notarize[0m[2m:[0m Notarization complete for api.github.com
 2026-04-22T14:49:05.858734981Z [info] [2m2026-04-22T14:49:05.855886Z[0m [32m INFO[0m [2mbasis_provenance[0m[2m:[0m OK [static/uniswap] https://api.github.com/repos/Uniswap/v3-core/contents/README.md — response_hash=2355c0554d763b03bc5c4e891e3cc3a97a7eef0d041f4a40f6d5fc2e28380fea attestation_hash=3d20071eff5400b4b72f6f8b2af59b36b3437e73f90a4217737749f9a24517ce (1.5s)
 2026-04-22T14:49:06.412248079Z [info] [2m2026-04-22T14:49:06.375623Z[0m [32m INFO[0m [2mbasis_provenance::storage[0m[2m:[0m Uploaded static proof to R2: https://4b6283d039bc8534d9d1816385b355d0.r2.cloudflarestorage.com/proofs/static/bri/uniswap/bridge_audit_count/2026-04-22T144905Z
+2026-04-22T14:49:06.412251501Z [info] [2m2026-04-22T14:49:06.375747Z[0m [32m INFO[0m [2mbasis_provenance[0m[2m:[0m R2: uploaded 1 component proofs for uniswap/bridge_audit_count
 2026-04-22T14:49:06.419267800Z [info] [2m2026-04-22T14:49:06.415906Z[0m [33m WARN[0m [2mbasis_provenance[0m[2m:[0m Hub static registration failed for bri/uniswap/bridge_audit_count: Hub static registration failed (405 Method Not Allowed): {"detail":"Method Not Allowed"}
 2026-04-22T14:49:06.923717895Z [info] [2m2026-04-22T14:49:06.920916Z[0m [32m INFO[0m [2mbasis_provenance[0m[2m:[0m Notarizing static [github_api] uniswap/bug_bounty_size: https://api.github.com/repos/Uniswap/v3-core/contents/bug-bounty.md
 2026-04-22T14:49:07.388464322Z [info] [2m2026-04-22T14:49:07.148012Z[0m [32m INFO[0m [2mbasis_provenance[0m[2m:[0m Preflight OK: https://api.github.com/repos/Uniswap/v3-core/contents/bug-bounty.md (Content-Length: 0)
