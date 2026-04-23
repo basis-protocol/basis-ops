@@ -1,5 +1,3 @@
-2026-04-21T03:16:18.829345193Z [error] 2026-04-21 03:16:18,827 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-21T03:16:18.829349473Z [error] 2026-04-21 03:16:18,827 WARNING [basis_state] Failed to fetch history for stablecoin:STEAKUSDC
 2026-04-21T03:16:18.829353359Z [error] 2026-04-21 03:16:18,827 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/FRAX params={'format': 'json'}
 2026-04-21T03:16:18.862414989Z [error] 2026-04-21 03:16:18,859 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/FRAX?format=json "HTTP/1.1 429 "
 2026-04-21T03:16:18.862421715Z [error] 2026-04-21 03:16:18,859 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/FRAX 429 (56 bytes)
@@ -1999,3 +1997,5 @@
 2026-04-23T13:15:27.562355935Z [info] INFO:     100.64.0.36:54490 - "GET /wordpress/wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
 2026-04-23T13:18:07.575122286Z [info] INFO:     100.64.0.12:43788 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
 2026-04-23T14:07:50.134869018Z [info] INFO:     100.64.0.22:40226 - "GET / HTTP/1.1" 200 OK
+2026-04-23T16:13:37.198088866Z [info] INFO:     100.64.0.53:35240 - "GET / HTTP/1.1" 200 OK
+2026-04-23T16:13:37.198095954Z [info] INFO:     100.64.0.55:10682 - "GET / HTTP/1.1" 200 OK
