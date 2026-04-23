@@ -1,204 +1,238 @@
-2026-04-22T23:25:50.687954791Z [error] 2026-04-22 23:25:50,316 [ERROR] worker: [startup] worker main() entered — initializing pool
-2026-04-22T23:25:50.687960475Z [error] 2026-04-22 23:25:50,316 [INFO] app.database: Database URL prefix: postgresql://neondb_owner:npg_ZQ7pTvYVNE1U@ep-soft...
-2026-04-22T23:25:50.787165381Z [info] Starting Container
-2026-04-22T23:25:51.693894241Z [error] 2026-04-22 23:25:51,006 [INFO] app.database: Database pool initialized (min=2, max=10, keepalives=on)
-2026-04-22T23:25:51.693900457Z [error] 2026-04-22 23:25:51,006 [ERROR] worker: [startup] pool initialized — running schema fixes
-2026-04-22T23:25:51.693906006Z [error] 2026-04-22 23:25:51,084 [ERROR] worker: [startup] httpx monkey-patched for API tracking
-2026-04-22T23:26:21.008083672Z [error] 2026-04-22 23:26:14,101 [ERROR] worker: [startup] VACUUM ANALYZE complete
-2026-04-22T23:26:21.008087214Z [error] 2026-04-22 23:26:15,176 [ERROR] worker: [bridges] collector disabled — DeFiLlama paywalled all endpoints. See constitution v9.3 for deferral rationale.
-2026-04-22T23:26:21.008091901Z [error] 2026-04-22 23:26:15,411 [ERROR] worker: [schema] governance_proposals: ['id', 'protocol_slug', 'proposal_id', 'source', 'title', 'body_excerpt', 'is_risk_related', 'risk_keywords', 'budget_amount_usd', 'vote_for', 'vote_against', 'vote_abstain', 'quorum_reached', 'participation_rate', 'proposal_state', 'created_at', 'closed_at', 'scraped_at', 'protocol_id', 'proposal_source', 'body', 'body_hash', 'author_address', 'author_ens', 'state', 'vote_start', 'vote_end', 'scores_total', 'scores_for', 'scores_against', 'scores_abstain', 'quorum', 'choices', 'votes', 'ipfs_hash', 'discussion_url', 'captured_at', 'body_changed', 'first_capture_body_hash', 'content_hash', 'attested_at', 'protocol', 'author', 'start_at', 'end_at', 'votes_for', 'votes_against', 'votes_abstain', 'voter_count', 'scores', 'raw_data', 'collected_at']
-2026-04-22T23:26:21.008095921Z [error] 2026-04-22 23:26:15,628 [ERROR] worker: [schema] psi_scores: ['id', 'protocol_slug', 'protocol_name', 'overall_score', 'grade', 'category_scores', 'component_scores', 'raw_values', 'formula_version', 'computed_at', 'scored_date', 'inputs_hash', 'scored_at', 'backfilled', 'backfill_source', 'aggregation_method', 'aggregation_params', 'aggregation_formula_version', 'effective_category_weights', 'coverage', 'withheld', 'confidence', 'confidence_tag', 'component_coverage', 'components_populated', 'components_total', 'missing_categories']
-2026-04-22T23:26:21.008101797Z [error] 2026-04-22 23:26:15,845 [ERROR] worker: [schema] scores: ['stablecoin_id', 'overall_score', 'grade', 'peg_score', 'liquidity_score', 'mint_burn_score', 'distribution_score', 'structural_score', 'reserves_score', 'contract_score', 'oracle_score', 'governance_score', 'network_score', 'component_count', 'formula_version', 'data_freshness_pct', 'current_price', 'market_cap', 'volume_24h', 'daily_change', 'weekly_change', 'computed_at', 'updated_at', 'aggregation_method', 'aggregation_params', 'aggregation_formula_version', 'effective_category_weights', 'coverage', 'withheld', 'confidence', 'confidence_tag', 'component_coverage', 'components_populated', 'components_total', 'missing_categories']
-2026-04-22T23:26:21.010579399Z [error] 2026-04-22 23:26:16,061 [ERROR] worker: [schema] oracle_registry: ['id', 'oracle_address', 'oracle_name', 'oracle_provider', 'chain', 'asset_symbol', 'quote_symbol', 'decimals', 'read_function', 'is_active', 'entity_type', 'entity_slug', 'added_at']
-2026-04-22T23:26:24.782394102Z [error] 2026-04-22 23:26:24,213 [ERROR] worker: [schema_fix] psi_scores.scored_at column ensured
-2026-04-22T23:26:24.782400291Z [error] 2026-04-22 23:26:24,642 [ERROR] worker: [schema_after] governance_proposals: ['id', 'protocol_slug', 'proposal_id', 'source', 'title', 'body_excerpt', 'is_risk_related', 'risk_keywords', 'budget_amount_usd', 'vote_for', 'vote_against', 'vote_abstain', 'quorum_reached', 'participation_rate', 'proposal_state', 'created_at', 'closed_at', 'scraped_at', 'protocol_id', 'proposal_source', 'body', 'body_hash', 'author_address', 'author_ens', 'state', 'vote_start', 'vote_end', 'scores_total', 'scores_for', 'scores_against', 'scores_abstain', 'quorum', 'choices', 'votes', 'ipfs_hash', 'discussion_url', 'captured_at', 'body_changed', 'first_capture_body_hash', 'content_hash', 'attested_at', 'protocol', 'author', 'start_at', 'end_at', 'votes_for', 'votes_against', 'votes_abstain', 'voter_count', 'scores', 'raw_data', 'collected_at']
-2026-04-22T23:26:24.861047151Z [error] 2026-04-22 23:26:24,858 [ERROR] worker: [schema_after] psi_scores: ['id', 'protocol_slug', 'protocol_name', 'overall_score', 'grade', 'category_scores', 'component_scores', 'raw_values', 'formula_version', 'computed_at', 'scored_date', 'inputs_hash', 'scored_at', 'backfilled', 'backfill_source', 'aggregation_method', 'aggregation_params', 'aggregation_formula_version', 'effective_category_weights', 'coverage', 'withheld', 'confidence', 'confidence_tag', 'component_coverage', 'components_populated', 'components_total', 'missing_categories']
-2026-04-22T23:26:25.631596691Z [error] 2026-04-22 23:26:25,350 [INFO] app.db_schema_validator: [schema_validator] oracle_registry: OK (13 columns)
-2026-04-22T23:26:25.631605092Z [error] 2026-04-22 23:26:25,565 [INFO] app.db_schema_validator: [schema_validator] oracle_price_readings: OK (21 columns)
-2026-04-22T23:26:25.631697924Z [error] 2026-04-22 23:26:25,132 [INFO] app.db_schema_validator: [schema_validator] governance_proposals: OK (40 columns)
-2026-04-22T23:26:25.783837416Z [error] 2026-04-22 23:26:25,781 [INFO] app.db_schema_validator: [schema_validator] oracle_stress_events: OK (19 columns)
-2026-04-22T23:26:26.001896746Z [error] 2026-04-22 23:26:25,996 [INFO] app.db_schema_validator: [schema_validator] psi_scores: OK (13 columns)
-2026-04-22T23:26:26.609351689Z [error] 2026-04-22 23:26:26,212 [INFO] app.db_schema_validator: [schema_validator] scores: OK (23 columns)
-2026-04-22T23:26:26.609355667Z [error] 2026-04-22 23:26:26,428 [INFO] app.db_schema_validator: [schema_validator] generic_index_scores: OK (16 columns)
-2026-04-22T23:26:26.708528334Z [error] 2026-04-22 23:26:26,643 [INFO] app.db_schema_validator: [schema_validator] governance_voters: OK (9 columns)
-2026-04-22T23:26:26.861537368Z [error] 2026-04-22 23:26:26,858 [INFO] app.db_schema_validator: [schema_validator] mint_burn_events: OK (11 columns)
-2026-04-22T23:26:27.690822712Z [error] 2026-04-22 23:26:27,138 [INFO] app.db_schema_validator: [schema_validator] liquidity_depth: OK (18 columns)
-2026-04-22T23:26:27.690826349Z [error] 2026-04-22 23:26:27,353 [INFO] app.db_schema_validator: [schema_validator] contract_surveillance: OK (13 columns)
-2026-04-22T23:26:27.690831246Z [error] 2026-04-22 23:26:27,569 [INFO] app.db_schema_validator: [schema_validator] protocol_parameter_changes: OK (17 columns)
-2026-04-22T23:26:27.817635312Z [error] 2026-04-22 23:26:27,785 [INFO] app.db_schema_validator: [schema_validator] yield_snapshots: OK (11 columns)
-2026-04-22T23:26:28.003531507Z [error] 2026-04-22 23:26:28,001 [INFO] app.db_schema_validator: [schema_validator] peg_snapshots_5m: OK (5 columns)
-2026-04-22T23:26:28.752453793Z [error] 2026-04-22 23:26:28,218 [INFO] app.db_schema_validator: [schema_validator] entity_snapshots_hourly: OK (10 columns)
-2026-04-22T23:26:28.752462510Z [error] 2026-04-22 23:26:28,436 [INFO] app.db_schema_validator: [schema_validator] exchange_snapshots: OK (10 columns)
-2026-04-22T23:26:28.752469714Z [error] 2026-04-22 23:26:28,651 [INFO] app.db_schema_validator: [schema_validator] incident_events: OK (11 columns)
-2026-04-22T23:26:28.871732133Z [error] 2026-04-22 23:26:28,867 [INFO] app.db_schema_validator: [schema_validator] wallet_graph.wallets: OK (9 columns)
-2026-04-22T23:26:29.086219927Z [error] 2026-04-22 23:26:29,083 [INFO] app.db_schema_validator: [schema_validator] correlation_matrices: OK (6 columns)
-2026-04-22T23:26:29.886615030Z [error] 2026-04-22 23:26:29,298 [INFO] app.db_schema_validator: [schema_validator] wallet_behavior_tags: OK (6 columns)
-2026-04-22T23:26:29.886619558Z [error] 2026-04-22 23:26:29,514 [INFO] app.db_schema_validator: [schema_validator] dex_pool_ohlcv: OK (12 columns)
-2026-04-22T23:26:29.886623878Z [error] 2026-04-22 23:26:29,735 [INFO] app.db_schema_validator: [schema_validator] component_readings: OK (7 columns)
-2026-04-22T23:26:29.955700708Z [error] 2026-04-22 23:26:29,950 [INFO] app.db_schema_validator: [schema_validator] score_history: OK (18 columns)
-2026-04-22T23:26:31.039761053Z [error] 2026-04-22 23:26:30,164 [INFO] app.db_schema_validator: [schema_validator] data_provenance: OK (8 columns)
-2026-04-22T23:26:31.039778385Z [error] 2026-04-22 23:26:30,380 [INFO] app.db_schema_validator: [schema_validator] collector_cycle_stats: OK (6 columns)
-2026-04-22T23:26:31.039788405Z [error] 2026-04-22 23:26:30,597 [INFO] app.db_schema_validator: [schema_validator] state_attestations: OK (6 columns)
-2026-04-22T23:26:31.039793196Z [error] 2026-04-22 23:26:30,812 [INFO] app.db_schema_validator: [schema_validator] daily_pulses: OK (3 columns)
-2026-04-22T23:26:31.039797016Z [error] 2026-04-22 23:26:31,028 [INFO] app.db_schema_validator: [schema_validator] market_chart_history: OK (7 columns)
-2026-04-22T23:26:31.838812874Z [error] 2026-04-22 23:26:31,244 [INFO] app.db_schema_validator: [schema_validator] volatility_surfaces: OK (10 columns)
-2026-04-22T23:26:31.838818032Z [error] 2026-04-22 23:26:31,460 [INFO] app.db_schema_validator: [schema_validator] discovery_signals: OK (11 columns)
-2026-04-22T23:26:31.838825247Z [error] 2026-04-22 23:26:31,676 [INFO] app.db_schema_validator: [schema_validator] rpi_scores: OK (8 columns)
-2026-04-22T23:26:31.929203884Z [error] 2026-04-22 23:26:31,892 [INFO] app.db_schema_validator: [schema_validator] score_events: OK (6 columns)
-2026-04-22T23:26:32.804950180Z [error] 2026-04-22 23:26:32,112 [INFO] app.db_schema_validator: [schema_validator] governance_events: OK (10 columns)
-2026-04-22T23:26:32.804955184Z [error] 2026-04-22 23:26:32,329 [INFO] app.db_schema_validator: [schema_validator] protocol_pool_wallets: OK (7 columns)
-2026-04-22T23:26:32.804960765Z [error] 2026-04-22 23:26:32,545 [INFO] app.db_schema_validator: [schema_validator] protocol_trace_observations: OK (12 columns)
-2026-04-22T23:26:32.804965769Z [error] 2026-04-22 23:26:32,760 [INFO] app.db_schema_validator: [schema_validator] token_approval_snapshots: OK (9 columns)
-2026-04-22T23:26:32.978678096Z [error] 2026-04-22 23:26:32,976 [INFO] app.db_schema_validator: [schema_validator] oracle_update_cadence: OK (9 columns)
-2026-04-22T23:26:33.894832565Z [error] 2026-04-22 23:26:33,561 [ERROR] worker: [api_tracker] recorded: alchemy /v2/AyH5JAFcthHka4uBiciLg → 200
-2026-04-22T23:26:33.894844213Z [error] 2026-04-22 23:26:33,593 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
-2026-04-22T23:26:33.894851407Z [error] 2026-04-22 23:26:33,194 [INFO] app.db_schema_validator: [schema_validator] wallet_holder_discovery: OK (11 columns)
-2026-04-22T23:26:33.894853131Z [error] 2026-04-22 23:26:33,593 [ERROR] worker: [api_tracker] recorded: alchemy /v2/AyH5JAFcthHka4uBiciLg → 200
-2026-04-22T23:26:33.894857025Z [error] 2026-04-22 23:26:33,409 [INFO] app.db_schema_validator: [schema_validator] wallet_chain_presence: OK (12 columns)
-2026-04-22T23:26:33.894861091Z [error] 2026-04-22 23:26:33,409 [ERROR] app.db_schema_validator: [schema_validator] all schemas aligned — 39 tables, 453 columns verified
-2026-04-22T23:26:33.894865668Z [error] 2026-04-22 23:26:33,409 [ERROR] worker: [startup] schema fixes complete, diagnostics will fire in 60s via independent loop
-2026-04-22T23:26:33.894869722Z [error] 2026-04-22 23:26:33,413 [ERROR] worker: [startup] running Dwellir capability probe
-2026-04-22T23:26:33.894878520Z [error] 2026-04-22 23:26:33,559 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
-2026-04-22T23:26:35.114154679Z [error] 2026-04-22 23:26:34,259 [INFO] httpx: HTTP Request: POST https://api-ethereum-mainnet.n.dwellir.com/ebce64a9-6da4-4451-808d-aa0e82b1da55 "HTTP/1.1 200 OK"
-2026-04-22T23:26:35.114163200Z [error] 2026-04-22 23:26:34,260 [ERROR] worker: [api_tracker] recorded: dwellir /ebce64a9-6da4-4451-808d-aa0e82b1da55 → 200
-2026-04-22T23:26:35.114173829Z [error] 2026-04-22 23:26:34,478 [ERROR] app.utils.rpc_provider: [rpc_probe] dwellir eth_blockNumber (connectivity): OK
-2026-04-22T23:26:35.114181234Z [error] 2026-04-22 23:26:34,640 [INFO] httpx: HTTP Request: POST https://api-ethereum-mainnet.n.dwellir.com/ebce64a9-6da4-4451-808d-aa0e82b1da55 "HTTP/1.1 200 OK"
-2026-04-22T23:26:35.114188564Z [error] 2026-04-22 23:26:34,858 [ERROR] app.utils.rpc_provider: [rpc_probe] dwellir eth_call @latest (current state): OK
-2026-04-22T23:26:35.114195671Z [error] 2026-04-22 23:26:35,022 [INFO] httpx: HTTP Request: POST https://api-ethereum-mainnet.n.dwellir.com/ebce64a9-6da4-4451-808d-aa0e82b1da55 "HTTP/1.1 200 OK"
-2026-04-22T23:26:35.850277741Z [error] 2026-04-22 23:26:35,239 [ERROR] app.utils.rpc_provider: [rpc_probe] dwellir eth_call @0x17c87f7 (archive read): OK
-2026-04-22T23:26:35.850283278Z [error] 2026-04-22 23:26:35,400 [INFO] httpx: HTTP Request: POST https://api-ethereum-mainnet.n.dwellir.com/ebce64a9-6da4-4451-808d-aa0e82b1da55 "HTTP/1.1 403 Forbidden"
-2026-04-22T23:26:35.850290029Z [error] 2026-04-22 23:26:35,615 [ERROR] app.utils.rpc_provider: [rpc_probe] dwellir debug_traceTransaction (callTracer): FAIL HTTP 403: Your current plan does not support trace or debug methods. Please upgrade to a paid plan a
-2026-04-22T23:26:35.850296171Z [error] 2026-04-22 23:26:35,778 [INFO] httpx: HTTP Request: POST https://api-ethereum-mainnet.n.dwellir.com/ebce64a9-6da4-4451-808d-aa0e82b1da55 "HTTP/1.1 403 Forbidden"
-2026-04-22T23:26:36.001230635Z [error] 2026-04-22 23:26:35,994 [ERROR] app.utils.rpc_provider: [rpc_probe] dwellir trace_transaction: FAIL HTTP 403: Your current plan does not support trace or debug methods. Please upgrade to a paid plan a
-2026-04-22T23:26:36.001242903Z [error] 2026-04-22 23:26:35,995 [ERROR] app.utils.rpc_provider: [rpc_probe] SUMMARY chain=ethereum trace=False archive=True (see rpc_capabilities table for per-method details)
-2026-04-22T23:26:36.010017634Z [error] 2026-04-22 23:26:36,007 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] background tasks scheduled
-2026-04-22T23:26:36.852123650Z [error] 2026-04-22 23:26:36,655 [INFO] worker: Starting worker loop (interval: 60 min)
-2026-04-22T23:26:36.852135043Z [error] 2026-04-22 23:26:36,658 [ERROR] worker: [startup] oracle cadence loop launched (5-min sampling)
-2026-04-22T23:26:36.852142104Z [error] 2026-04-22 23:26:36,670 [ERROR] worker: [startup] holder_ingestion background loop launched (weekly)
-2026-04-22T23:26:36.852149037Z [error] 2026-04-22 23:26:36,688 [ERROR] worker: [startup] multichain_holder background loop launched (weekly)
-2026-04-22T23:26:36.852156216Z [error] 2026-04-22 23:26:36,698 [ERROR] worker: [startup] wallet_presence background loop launched (daily)
-2026-04-22T23:26:36.852258705Z [error] 2026-04-22 23:26:36,655 [WARNING] app.ops.tools.alerter: [alerter] daily cap reached (20/20), dropping info: service_restart
-2026-04-22T23:26:37.829876502Z [error] 2026-04-22 23:26:37,619 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] watchlist: stablecoins=36, pool_wallets=11, deduped_total=47, limit=100
-2026-04-22T23:26:37.985272394Z [error] 2026-04-22 23:26:37,979 [ERROR] app.data_layer.oracle_cadence_collector: [oracle_cadence] loop started, sampling every 300s
-2026-04-22T23:26:37.985278096Z [error] 2026-04-22 23:26:37,979 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion_bg] background loop started
-2026-04-22T23:26:37.985283736Z [error] 2026-04-22 23:26:37,979 [ERROR] app.data_layer.multichain_holder_collector: [multichain_bg] background loop started
-2026-04-22T23:26:37.985289452Z [error] 2026-04-22 23:26:37,979 [ERROR] app.data_layer.wallet_presence_scanner: [presence_bg] background loop started
-2026-04-22T23:26:37.985295168Z [error] 2026-04-22 23:26:37,979 [INFO] worker: === Fast cycle start ===
-2026-04-22T23:26:41.807516749Z [error] 2026-04-22 23:26:41,201 [INFO] app.collectors.registry: Synced 15 provenance sources to DB
-2026-04-22T23:26:44.826542014Z [error] 2026-04-22 23:26:44,625 [INFO] worker: Starting scoring cycle for 36 stablecoins
-2026-04-22T23:26:46.956203276Z [error] 2026-04-22 23:26:46,954 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
-2026-04-22T23:26:47.734013658Z [error] 2026-04-22 23:26:47,407 [INFO] httpx: HTTP Request: GET https://stablecoins.llama.fi/stablecoins "HTTP/1.1 200 OK"
-2026-04-22T23:26:47.734058454Z [error] 2026-04-22 23:26:47,415 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usd0-liquid-bond?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
-2026-04-22T23:26:47.734069417Z [error] 2026-04-22 23:26:47,417 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usd0-liquid-bond?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
-2026-04-22T23:26:47.734076988Z [error] 2026-04-22 23:26:47,420 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usd0-liquid-bond?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
-2026-04-22T23:26:47.734084154Z [error] 2026-04-22 23:26:47,456 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] SUBSCRIBED chain=ethereum addresses=47 subscription_id=0xc9a5ddf861097251679c0a0e0bad4323
-2026-04-22T23:26:47.734091750Z [error] 2026-04-22 23:26:47,495 [INFO] httpx: HTTP Request: GET https://yields.llama.fi/pools "HTTP/1.1 200 OK"
-2026-04-22T23:26:47.734099412Z [error] 2026-04-22 23:26:47,498 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
-2026-04-22T23:26:47.961339877Z [error] 2026-04-22 23:26:47,947 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usd0-liquid-bond/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
-2026-04-22T23:26:48.017131440Z [error] 2026-04-22 23:26:48,014 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
-2026-04-22T23:26:48.740046740Z [error] 2026-04-22 23:26:48,460 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usd0-liquid-bond/market_chart?vs_currency=usd&days=7 "HTTP/1.1 200 OK"
-2026-04-22T23:26:51.988003945Z [error] 2026-04-22 23:26:51,486 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=contract&action=getabi&address=0x35d8949372d46b7a3d5a56006ae77b215fc69bc0&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
-2026-04-22T23:26:51.988009939Z [error] 2026-04-22 23:26:51,487 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&contractaddress=0x35d8949372d46b7a3d5a56006ae77b215fc69bc0&page=1&offset=200&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
-2026-04-22T23:26:51.988015595Z [error] 2026-04-22 23:26:51,497 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usd0-liquid-bond/market_chart?vs_currency=usd&days=30 "HTTP/1.1 200 OK"
-2026-04-22T23:27:22.612337793Z [error] 2026-04-22 23:27:19,695 [INFO] app.state_attestation: State attested: domain=smart_contracts entity=busd0 records=6 hash=3b1662aa90cd2917...
-2026-04-22T23:27:22.612343641Z [error] 2026-04-22 23:27:20,339 [INFO] app.state_attestation: State attested: domain=flows entity=busd0 records=4 hash=fb3c2f7b0dc326f7...
-2026-04-22T23:27:52.672584368Z [error] 2026-04-22 23:27:49,765 [WARNING] app.collectors.registry: peg timed out for busd0
-2026-04-22T23:27:52.806671348Z [error] 2026-04-22 23:27:52,800 [ERROR] worker: [stale_diagnostic] stale=4: liquidity_depth (age=12.5h, threshold=3h), exchange_snapshots (age=12.5h, threshold=3h), entity_snapshots_hourly (age=12.5h, threshold=3h), dex_pool_ohlcv (age=103.0h, threshold=6h)
-2026-04-22T23:27:53.614336108Z [error] 2026-04-22 23:27:53,447 [ERROR] worker: [api_usage_7d] helius-rpc: 2026-04-22: 10 calls (0 err, p95=8301ms) | 2026-04-21: 140 calls (0 err, p95=8611ms) | 2026-04-20: 10 calls (0 err, p95=8351ms)
-2026-04-22T23:27:53.614460866Z [error] 2026-04-22 23:27:53,232 [ERROR] worker: [provenance_gap] hourly: 11/12 producing, weekly: 3, missing_hourly=['tally_governance']
-2026-04-22T23:27:53.614465931Z [error] 2026-04-22 23:27:53,232 [ERROR] worker: [provenance_gap] weekly sources (not expected in 24h): ['defillama_bridges']
-2026-04-22T23:27:53.614471006Z [error] 2026-04-22 23:27:53,232 [ERROR] worker: [api_budget] alchemy=7, coingecko=5/16,600 (0%), dwellir=5, etherscan=2/200,000 (0%), llama=1
-2026-04-22T23:27:53.614480294Z [error] 2026-04-22 23:27:53,446 [ERROR] worker: [api_usage_7d] alchemy: 2026-04-22: 12 calls (0 err, p95=4302ms) | 2026-04-21: 168 calls (0 err, p95=5440ms) | 2026-04-20: 12 calls (0 err, p95=4848ms)
-2026-04-22T23:27:53.614486440Z [error] 2026-04-22 23:27:53,446 [ERROR] worker: [api_usage_7d] blockscout: 2026-04-22: 20 calls (0 err, p95=630ms) — 0% | 2026-04-21: 20 calls (0 err, p95=780ms) — 0%
-2026-04-22T23:27:53.614491487Z [error] 2026-04-22 23:27:53,446 [ERROR] worker: [api_usage_7d] coingecko: 2026-04-22: 362 calls (1 err, p95=1611ms) — 2% | 2026-04-21: 5,068 calls (14 err, p95=2060ms) — 31% | 2026-04-20: 362 calls (1 err, p95=1580ms) — 2%
-2026-04-22T23:27:53.614496255Z [error] 2026-04-22 23:27:53,446 [ERROR] worker: [api_usage_7d] curve: 2026-04-22: 3 calls (0 err, p95=1398ms) | 2026-04-21: 42 calls (0 err, p95=1550ms) | 2026-04-20: 3 calls (0 err, p95=1636ms)
-2026-04-22T23:27:53.614501353Z [error] 2026-04-22 23:27:53,446 [ERROR] worker: [api_usage_7d] etherscan: 2026-04-22: 442 calls (0 err, p95=1372ms) — 0% | 2026-04-21: 6,259 calls (2 err, p95=2636ms) — 3% | 2026-04-20: 442 calls (0 err, p95=1383ms) — 0%
-2026-04-22T23:27:53.614506940Z [error] 2026-04-22 23:27:53,447 [ERROR] worker: [api_usage_7d] helius: 2026-04-22: 2 calls (0 err, p95=1196ms) | 2026-04-21: 28 calls (0 err, p95=2658ms) | 2026-04-20: 2 calls (0 err, p95=1497ms)
-2026-04-22T23:27:53.615269840Z [error] 2026-04-22 23:27:53,447 [ERROR] worker: [api_usage_7d] llama: 2026-04-22: 73 calls (0 err, p95=1348ms) | 2026-04-21: 1,022 calls (1 err, p95=5215ms) | 2026-04-20: 73 calls (0 err, p95=1579ms)
-2026-04-22T23:27:53.615282622Z [error] 2026-04-22 23:27:53,447 [ERROR] worker: [api_usage_7d] resend: 2026-04-22: 1 calls (1 err, p95=119ms) | 2026-04-21: 15 calls (0 err, p95=351ms) | 2026-04-20: 1 calls (0 err, p95=219ms)
-2026-04-22T23:27:53.615291211Z [error] 2026-04-22 23:27:53,447 [ERROR] worker: [api_usage_7d] snapshot: 2026-04-22: 12 calls (0 err, p95=247ms) — 0% | 2026-04-21: 72 calls (0 err, p95=2413ms) — 1%
-2026-04-22T23:27:53.664559873Z [error] 2026-04-22 23:27:53,661 [ERROR] worker: [api_hotspots_24h]
-2026-04-22T23:27:53.664566145Z [error]   etherscan/unknown: 442
-2026-04-22T23:27:53.664571985Z [error]   llama/pools: 37
-2026-04-22T23:27:53.664576022Z [error]   llama/stablecoins: 36
-2026-04-22T23:27:53.664580422Z [error]   blockscout/unknown: 20
-2026-04-22T23:27:53.664584614Z [error]   snapshot/graphql: 12
-2026-04-22T23:27:53.664589159Z [error]   alchemy/unknown: 12
-2026-04-22T23:27:53.664593464Z [error]   helius-rpc/unknown: 10
-2026-04-22T23:27:53.664597417Z [error]   coingecko/coins: 6
-2026-04-22T23:27:53.664601477Z [error]   coingecko/coins/dai: 5
-2026-04-22T23:27:53.664606105Z [error]   coingecko/coins/gho: 5
-2026-04-22T23:27:53.664610137Z [error]   coingecko/coins/rai: 5
-2026-04-22T23:27:53.664614144Z [error]   coingecko/coins/frax: 5
-2026-04-22T23:27:53.664618201Z [error]   coingecko/coins/nusd: 5
-2026-04-22T23:27:53.664622613Z [error]   coingecko/coins/usdd: 5
-2026-04-22T23:27:53.664626820Z [error]   coingecko/coins/usds: 5
-2026-04-22T23:27:54.651646955Z [error]   dwellir/ethereum/debug_traceTransaction: fail (HTTP 403: Your current plan does not support trace or debug )
-2026-04-22T23:27:54.651660366Z [error]   dwellir/ethereum/eth_blockNumber: ok
-2026-04-22T23:27:54.651660704Z [error] 2026-04-22 23:27:53,876 [ERROR] worker: [rpc_usage_7d] alchemy: 405 eth_getTransactionByHash (0 fallback, 247 err)
-2026-04-22T23:27:54.651670376Z [error]   dwellir/ethereum/eth_call: ok
-2026-04-22T23:27:54.651680505Z [error]   dwellir/ethereum/trace_transaction: fail (HTTP 403: Your current plan does not support trace or debug )
-2026-04-22T23:27:54.651683161Z [error] 2026-04-22 23:27:53,876 [ERROR] worker: [rpc_usage_7d] dwellir: no calls
-2026-04-22T23:27:54.651694261Z [error] 2026-04-22 23:27:54,304 [ERROR] worker: [rpc_capabilities]
-2026-04-22T23:27:55.513743244Z [error] 2026-04-22 23:27:55,197 [ERROR] app.data_layer.mempool_watcher: [mempool_observations] 24h SUMMARY: captured=44628 confirmed=405 dropped=0 avg_confirmation_latency_ms=23078791 alchemy_cu_rolling24h=12 top_to=[0xdac17f95=30504, 0xa0b86991=13369, 0x6c3ea903=223, 0x6b175474=172, 0x4c9edd58=110] top_selectors=[0xa9059cbb=41535, 0x23b872dd=1811, 0x095ea7b3=1061, 0xe3ee160e=68, 0xd505accf=37]
-2026-04-22T23:27:55.625652487Z [error] 2026-04-22 23:27:55,624 [ERROR] worker: [api_usage_verify] hourly: 129 rows, latest=2026-04-22 11:00:00+00:00 | tracker: 0 rows, latest=None
-2026-04-22T23:27:55.625659292Z [error] 2026-04-22 23:27:55,624 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion_bg] loop tick, checking gate
-2026-04-22T23:27:56.638286010Z [error] 2026-04-22 23:27:56,058 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] step B.0: usdc contract=0xa0b86991c6... chain=ethereum
-2026-04-22T23:27:56.638301023Z [error] 2026-04-22 23:27:56,058 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] step C.0: acquiring etherscan rate limit
-2026-04-22T23:27:56.638308591Z [error] 2026-04-22 23:27:56,059 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] _fetch_etherscan: acquiring rate limiter for 0xa0b86991c6...
-2026-04-22T23:27:56.638314540Z [error] 2026-04-22 23:27:56,059 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] _fetch_etherscan: rate limiter acquired, making HTTP GET
-2026-04-22T23:27:56.638320508Z [error] 2026-04-22 23:27:56,061 [WARNING] app.collectors.registry: defillama timed out for busd0
-2026-04-22T23:27:56.638329078Z [error] 2026-04-22 23:27:56,061 [ERROR] app.data_layer.oracle_cadence_collector: [oracle_cadence] sample failed for Chainlink USDC/USD: 
-2026-04-22T23:27:56.638335394Z [error] 2026-04-22 23:27:56,062 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] connection error after 78s: ConnectionClosedError: sent 1011 (internal error) keepalive ping timeout; no close frame received
-2026-04-22T23:27:56.638614010Z [error] 2026-04-22 23:27:55,840 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion_bg] gate open, running scan
-2026-04-22T23:27:56.638618214Z [error] 2026-04-22 23:27:55,840 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] ENTRY — function called
-2026-04-22T23:27:56.638623795Z [error] 2026-04-22 23:27:56,058 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] starting: 67 entities to scan
-2026-04-22T23:27:56.638627759Z [error] 2026-04-22 23:27:56,058 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] step A: entering entity loop
-2026-04-22T23:27:57.678668814Z [error] 2026-04-22 23:27:57,234 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
-2026-04-22T23:27:57.678679686Z [error] 2026-04-22 23:27:57,452 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
-2026-04-22T23:27:57.678697996Z [error] 2026-04-22 23:27:57,668 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usd0-liquid-bond?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
-2026-04-22T23:28:03.008077562Z [error] 2026-04-22 23:28:02,519 [INFO] app.state_attestation: State attested: domain=sii_components entity=busd0 records=30 hash=d0c04acdbf81e0bf...
-2026-04-22T23:28:03.008083305Z [error] 2026-04-22 23:28:02,519 [INFO] worker: busd0: 46.93 - 30 components in 77.2s
-2026-04-22T23:28:04.022670282Z [error] 2026-04-22 23:28:03,806 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] watchlist: stablecoins=36, pool_wallets=11, deduped_total=47, limit=100
-2026-04-22T23:28:04.022678492Z [error] 2026-04-22 23:28:03,809 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
-2026-04-22T23:28:05.021671426Z [error] 2026-04-22 23:28:04,942 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/api?module=token&action=tokenholderlist&contractaddress=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&page=1&offset=10000&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
-2026-04-22T23:28:05.021675239Z [error] 2026-04-22 23:28:04,724 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
-2026-04-22T23:28:05.021680373Z [error] 2026-04-22 23:28:04,943 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] _fetch_etherscan: HTTP 200, parsing JSON
-2026-04-22T23:28:05.021687972Z [error] 2026-04-22 23:28:04,943 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] step D.0: etherscan returned 0 holders
-2026-04-22T23:28:05.021695960Z [error] 2026-04-22 23:28:04,943 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] step C.0: falling back to blockscout
-2026-04-22T23:28:05.021711101Z [error] 2026-04-22 23:28:04,060 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
-2026-04-22T23:28:05.021715051Z [error] 2026-04-22 23:28:04,283 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
-2026-04-22T23:28:05.021722398Z [error] 2026-04-22 23:28:04,723 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] SUBSCRIBED chain=ethereum addresses=47 subscription_id=0x0728074726e52d653058ba3d777a25c6
-2026-04-22T23:28:05.951641701Z [error] 2026-04-22 23:28:05,809 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
-2026-04-22T23:28:09.906677715Z [error] 2026-04-22 23:28:09,738 [INFO] app.state_attestation: State attested: domain=data_layer:oracle_cadence entity=None records=1 hash=42063b4ad3ab0ec1...
-2026-04-22T23:28:09.906687076Z [error] 2026-04-22 23:28:09,738 [ERROR] app.data_layer.oracle_cadence_collector: [oracle_cadence] sample #1: new_rounds=5, unchanged=0, errors=1
-2026-04-22T23:28:29.607996193Z [error] 2026-04-22 23:28:26,938 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
-2026-04-22T23:28:29.607999988Z [error] 2026-04-22 23:28:27,155 [ERROR] app.collectors.coingecko: CoinGecko current data error for crvusd: 
-2026-04-22T23:28:29.608003651Z [error] 2026-04-22 23:28:27,156 [ERROR] app.collectors.coingecko: CoinGecko current data error for crvusd: 
-2026-04-22T23:28:29.608007715Z [error] 2026-04-22 23:28:27,156 [ERROR] app.collectors.defillama: DeFiLlama stablecoin error for crvusd: 
-2026-04-22T23:28:29.608011457Z [error] 2026-04-22 23:28:28,675 [WARNING] app.collectors.registry: flows timed out for crvusd
-2026-04-22T23:28:29.608015441Z [error] 2026-04-22 23:28:28,675 [WARNING] app.collectors.registry: smart_contract timed out for crvusd
-2026-04-22T23:28:35.900839581Z [error] 2026-04-22 23:28:35,149 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] usdc: FAIL 
-2026-04-22T23:28:45.188121317Z [error] 2026-04-22 23:28:44,605 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/crvusd?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
-2026-04-22T23:28:45.188128222Z [error] 2026-04-22 23:28:44,607 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] step B.1: usdt contract=0xdac17f958d... chain=ethereum
-2026-04-22T23:28:45.188133079Z [error] 2026-04-22 23:28:44,607 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] step C.1: acquiring etherscan rate limit
-2026-04-22T23:28:45.188137505Z [error] 2026-04-22 23:28:44,607 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] _fetch_etherscan: acquiring rate limiter for 0xdac17f958d...
-2026-04-22T23:28:45.188141902Z [error] 2026-04-22 23:28:44,607 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] _fetch_etherscan: rate limiter acquired, making HTTP GET
-2026-04-22T23:28:45.188146438Z [error] 2026-04-22 23:28:44,608 [ERROR] app.data_layer.multichain_holder_collector: [multichain_bg] loop tick, checking gate
-2026-04-22T23:28:45.188151948Z [error] 2026-04-22 23:28:44,826 [ERROR] app.data_layer.multichain_holder_collector: [multichain_bg] gate open, running scan
-2026-04-22T23:28:45.188156588Z [error] 2026-04-22 23:28:44,827 [ERROR] app.data_layer.multichain_holder_collector: [multichain_holder] ENTRY — function called
-2026-04-22T23:28:45.188161354Z [error] 2026-04-22 23:28:45,040 [ERROR] app.data_layer.multichain_holder_collector: [multichain_holder] starting: 23 non-ethereum holder scans across 10 entities
-2026-04-22T23:28:49.894219462Z [error] 2026-04-22 23:28:49,779 [ERROR] app.collectors.defillama: DeFiLlama yields error for crvusd: 
-2026-04-22T23:28:49.894225998Z [error] 2026-04-22 23:28:49,780 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/crvusd/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
-2026-04-22T23:28:56.957299222Z [error] 2026-04-22 23:28:56,224 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/crvusd/market_chart?vs_currency=usd&days=7 "HTTP/1.1 200 OK"
-2026-04-22T23:29:00.063070908Z [error] 2026-04-22 23:28:59,676 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/crvusd/market_chart?vs_currency=usd&days=30 "HTTP/1.1 200 OK"
-2026-04-22T23:29:02.025312558Z [error] 2026-04-22 23:29:01,839 [INFO] httpx: HTTP Request: GET https://base.blockscout.com/api/v2/tokens/0x833589fcd6edb6e08f4c7c32d4f71b54bda02913/holders?limit=50 "HTTP/1.1 422 Unprocessable Entity"
-2026-04-22T23:29:06.941363369Z [error] 2026-04-22 23:29:06,618 [INFO] worker: crvusd: SKIPPED (category-incomplete) — missing: mint_burn_dynamics — 18 components collected in 61.0s
-2026-04-22T23:29:13.064020712Z [error] 2026-04-22 23:29:13,061 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/api?module=token&action=tokenholderlist&contractaddress=0xdac17f958d2ee523a2206206994597c13d831ec7&page=1&offset=10000&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
-2026-04-22T23:29:17.883299246Z [error] 2026-04-22 23:29:17,359 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] step D.1: etherscan returned 0 holders
-2026-04-22T23:29:17.883309798Z [error] 2026-04-22 23:29:17,359 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] step C.1: falling back to blockscout
-2026-04-22T23:29:17.883482535Z [error] 2026-04-22 23:29:17,359 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] _fetch_etherscan: HTTP 200, parsing JSON
-2026-04-22T23:30:28.140614604Z [error] 2026-04-22 23:30:27,433 [ERROR] app.data_layer.wallet_presence_scanner: [presence_bg] loop tick, checking gate
-2026-04-22T23:30:28.140622443Z [error] 2026-04-22 23:30:27,648 [ERROR] app.data_layer.wallet_presence_scanner: [presence_bg] gate closed, last run 1h ago
-2026-04-22T23:31:08.546193250Z [error] 2026-04-22 23:31:04,851 [ERROR] app.data_layer.multichain_holder_collector: [multichain_holder] USDC/arbitrum: FAIL 
-2026-04-22T23:31:08.546197801Z [error] 2026-04-22 23:31:04,859 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] usdt: FAIL 
+2026-04-22T23:50:31.447296011Z [info] Starting Container
+2026-04-22T23:50:31.830511616Z [error] 2026-04-22 23:50:30,754 [ERROR] worker: [startup] worker main() entered — initializing pool
+2026-04-22T23:50:31.830517842Z [error] 2026-04-22 23:50:30,754 [INFO] app.database: Database URL prefix: postgresql://neondb_owner:npg_ZQ7pTvYVNE1U@ep-soft...
+2026-04-22T23:50:31.830524465Z [error] 2026-04-22 23:50:31,492 [INFO] app.database: Database pool initialized (min=2, max=10, keepalives=on)
+2026-04-22T23:50:31.830531480Z [error] 2026-04-22 23:50:31,492 [ERROR] worker: [startup] pool initialized — running schema fixes
+2026-04-22T23:50:31.830537804Z [error] 2026-04-22 23:50:31,497 [ERROR] worker: [startup] httpx monkey-patched for API tracking
+2026-04-22T23:51:02.817428507Z [error] 2026-04-22 23:50:55,756 [ERROR] worker: [startup] VACUUM ANALYZE complete
+2026-04-22T23:51:02.817434371Z [error] 2026-04-22 23:50:56,907 [ERROR] worker: [bridges] collector disabled — DeFiLlama paywalled all endpoints. See constitution v9.3 for deferral rationale.
+2026-04-22T23:51:02.817442936Z [error] 2026-04-22 23:50:57,184 [ERROR] worker: [schema] governance_proposals: ['id', 'protocol_slug', 'proposal_id', 'source', 'title', 'body_excerpt', 'is_risk_related', 'risk_keywords', 'budget_amount_usd', 'vote_for', 'vote_against', 'vote_abstain', 'quorum_reached', 'participation_rate', 'proposal_state', 'created_at', 'closed_at', 'scraped_at', 'protocol_id', 'proposal_source', 'body', 'body_hash', 'author_address', 'author_ens', 'state', 'vote_start', 'vote_end', 'scores_total', 'scores_for', 'scores_against', 'scores_abstain', 'quorum', 'choices', 'votes', 'ipfs_hash', 'discussion_url', 'captured_at', 'body_changed', 'first_capture_body_hash', 'content_hash', 'attested_at', 'protocol', 'author', 'start_at', 'end_at', 'votes_for', 'votes_against', 'votes_abstain', 'voter_count', 'scores', 'raw_data', 'collected_at']
+2026-04-22T23:51:02.817448187Z [error] 2026-04-22 23:50:57,418 [ERROR] worker: [schema] psi_scores: ['id', 'protocol_slug', 'protocol_name', 'overall_score', 'grade', 'category_scores', 'component_scores', 'raw_values', 'formula_version', 'computed_at', 'scored_date', 'inputs_hash', 'scored_at', 'backfilled', 'backfill_source', 'aggregation_method', 'aggregation_params', 'aggregation_formula_version', 'effective_category_weights', 'coverage', 'withheld', 'confidence', 'confidence_tag', 'component_coverage', 'components_populated', 'components_total', 'missing_categories']
+2026-04-22T23:51:02.817454123Z [error] 2026-04-22 23:50:57,653 [ERROR] worker: [schema] scores: ['stablecoin_id', 'overall_score', 'grade', 'peg_score', 'liquidity_score', 'mint_burn_score', 'distribution_score', 'structural_score', 'reserves_score', 'contract_score', 'oracle_score', 'governance_score', 'network_score', 'component_count', 'formula_version', 'data_freshness_pct', 'current_price', 'market_cap', 'volume_24h', 'daily_change', 'weekly_change', 'computed_at', 'updated_at', 'aggregation_method', 'aggregation_params', 'aggregation_formula_version', 'effective_category_weights', 'coverage', 'withheld', 'confidence', 'confidence_tag', 'component_coverage', 'components_populated', 'components_total', 'missing_categories']
+2026-04-22T23:51:02.817723579Z [error] 2026-04-22 23:50:57,886 [ERROR] worker: [schema] oracle_registry: ['id', 'oracle_address', 'oracle_name', 'oracle_provider', 'chain', 'asset_symbol', 'quote_symbol', 'decimals', 'read_function', 'is_active', 'entity_type', 'entity_slug', 'added_at']
+2026-04-22T23:51:06.701207683Z [error] 2026-04-22 23:51:06,699 [ERROR] worker: [schema_fix] psi_scores.scored_at column ensured
+2026-04-22T23:51:07.740430848Z [error] 2026-04-22 23:51:07,161 [ERROR] worker: [schema_after] governance_proposals: ['id', 'protocol_slug', 'proposal_id', 'source', 'title', 'body_excerpt', 'is_risk_related', 'risk_keywords', 'budget_amount_usd', 'vote_for', 'vote_against', 'vote_abstain', 'quorum_reached', 'participation_rate', 'proposal_state', 'created_at', 'closed_at', 'scraped_at', 'protocol_id', 'proposal_source', 'body', 'body_hash', 'author_address', 'author_ens', 'state', 'vote_start', 'vote_end', 'scores_total', 'scores_for', 'scores_against', 'scores_abstain', 'quorum', 'choices', 'votes', 'ipfs_hash', 'discussion_url', 'captured_at', 'body_changed', 'first_capture_body_hash', 'content_hash', 'attested_at', 'protocol', 'author', 'start_at', 'end_at', 'votes_for', 'votes_against', 'votes_abstain', 'voter_count', 'scores', 'raw_data', 'collected_at']
+2026-04-22T23:51:07.740439912Z [error] 2026-04-22 23:51:07,393 [ERROR] worker: [schema_after] psi_scores: ['id', 'protocol_slug', 'protocol_name', 'overall_score', 'grade', 'category_scores', 'component_scores', 'raw_values', 'formula_version', 'computed_at', 'scored_date', 'inputs_hash', 'scored_at', 'backfilled', 'backfill_source', 'aggregation_method', 'aggregation_params', 'aggregation_formula_version', 'effective_category_weights', 'coverage', 'withheld', 'confidence', 'confidence_tag', 'component_coverage', 'components_populated', 'components_total', 'missing_categories']
+2026-04-22T23:51:07.740445884Z [error] 2026-04-22 23:51:07,685 [INFO] app.db_schema_validator: [schema_validator] governance_proposals: OK (40 columns)
+2026-04-22T23:51:07.923056464Z [error] 2026-04-22 23:51:07,917 [INFO] app.db_schema_validator: [schema_validator] oracle_registry: OK (13 columns)
+2026-04-22T23:51:08.655931318Z [error] 2026-04-22 23:51:08,149 [INFO] app.db_schema_validator: [schema_validator] oracle_price_readings: OK (21 columns)
+2026-04-22T23:51:08.655937862Z [error] 2026-04-22 23:51:08,385 [INFO] app.db_schema_validator: [schema_validator] oracle_stress_events: OK (19 columns)
+2026-04-22T23:51:08.655947842Z [error] 2026-04-22 23:51:08,616 [INFO] app.db_schema_validator: [schema_validator] psi_scores: OK (13 columns)
+2026-04-22T23:51:08.851681095Z [error] 2026-04-22 23:51:08,848 [INFO] app.db_schema_validator: [schema_validator] scores: OK (23 columns)
+2026-04-22T23:51:09.683372778Z [error] 2026-04-22 23:51:09,081 [INFO] app.db_schema_validator: [schema_validator] generic_index_scores: OK (16 columns)
+2026-04-22T23:51:09.683385240Z [error] 2026-04-22 23:51:09,314 [INFO] app.db_schema_validator: [schema_validator] governance_voters: OK (9 columns)
+2026-04-22T23:51:09.683392933Z [error] 2026-04-22 23:51:09,545 [INFO] app.db_schema_validator: [schema_validator] mint_burn_events: OK (11 columns)
+2026-04-22T23:51:09.865031631Z [error] 2026-04-22 23:51:09,833 [INFO] app.db_schema_validator: [schema_validator] liquidity_depth: OK (18 columns)
+2026-04-22T23:51:10.798275198Z [error] 2026-04-22 23:51:10,762 [INFO] app.db_schema_validator: [schema_validator] peg_snapshots_5m: OK (5 columns)
+2026-04-22T23:51:10.798319842Z [error] 2026-04-22 23:51:10,065 [INFO] app.db_schema_validator: [schema_validator] contract_surveillance: OK (13 columns)
+2026-04-22T23:51:10.798325593Z [error] 2026-04-22 23:51:10,297 [INFO] app.db_schema_validator: [schema_validator] protocol_parameter_changes: OK (17 columns)
+2026-04-22T23:51:10.798331522Z [error] 2026-04-22 23:51:10,529 [INFO] app.db_schema_validator: [schema_validator] yield_snapshots: OK (11 columns)
+2026-04-22T23:51:11.910153810Z [error] 2026-04-22 23:51:10,994 [INFO] app.db_schema_validator: [schema_validator] entity_snapshots_hourly: OK (10 columns)
+2026-04-22T23:51:11.910160682Z [error] 2026-04-22 23:51:11,226 [INFO] app.db_schema_validator: [schema_validator] exchange_snapshots: OK (10 columns)
+2026-04-22T23:51:11.910166756Z [error] 2026-04-22 23:51:11,458 [INFO] app.db_schema_validator: [schema_validator] incident_events: OK (11 columns)
+2026-04-22T23:51:11.910173890Z [error] 2026-04-22 23:51:11,690 [INFO] app.db_schema_validator: [schema_validator] wallet_graph.wallets: OK (9 columns)
+2026-04-22T23:51:11.930539221Z [error] 2026-04-22 23:51:11,924 [INFO] app.db_schema_validator: [schema_validator] correlation_matrices: OK (6 columns)
+2026-04-22T23:51:13.109376771Z [error] 2026-04-22 23:51:12,389 [INFO] app.db_schema_validator: [schema_validator] dex_pool_ohlcv: OK (12 columns)
+2026-04-22T23:51:13.109380199Z [error] 2026-04-22 23:51:12,156 [INFO] app.db_schema_validator: [schema_validator] wallet_behavior_tags: OK (6 columns)
+2026-04-22T23:51:13.109386003Z [error] 2026-04-22 23:51:12,622 [INFO] app.db_schema_validator: [schema_validator] component_readings: OK (7 columns)
+2026-04-22T23:51:13.109392115Z [error] 2026-04-22 23:51:12,855 [INFO] app.db_schema_validator: [schema_validator] score_history: OK (18 columns)
+2026-04-22T23:51:13.109398458Z [error] 2026-04-22 23:51:13,087 [INFO] app.db_schema_validator: [schema_validator] data_provenance: OK (8 columns)
+2026-04-22T23:51:14.479841333Z [error] 2026-04-22 23:51:13,320 [INFO] app.db_schema_validator: [schema_validator] collector_cycle_stats: OK (6 columns)
+2026-04-22T23:51:14.479851849Z [error] 2026-04-22 23:51:13,554 [INFO] app.db_schema_validator: [schema_validator] state_attestations: OK (6 columns)
+2026-04-22T23:51:14.479857216Z [error] 2026-04-22 23:51:13,787 [INFO] app.db_schema_validator: [schema_validator] daily_pulses: OK (3 columns)
+2026-04-22T23:51:14.479863803Z [error] 2026-04-22 23:51:14,023 [INFO] app.db_schema_validator: [schema_validator] market_chart_history: OK (7 columns)
+2026-04-22T23:51:14.479868988Z [error] 2026-04-22 23:51:14,255 [INFO] app.db_schema_validator: [schema_validator] volatility_surfaces: OK (10 columns)
+2026-04-22T23:51:15.491607711Z [error] 2026-04-22 23:51:14,490 [INFO] app.db_schema_validator: [schema_validator] discovery_signals: OK (11 columns)
+2026-04-22T23:51:15.491616225Z [error] 2026-04-22 23:51:14,724 [INFO] app.db_schema_validator: [schema_validator] rpi_scores: OK (8 columns)
+2026-04-22T23:51:15.491624099Z [error] 2026-04-22 23:51:14,956 [INFO] app.db_schema_validator: [schema_validator] score_events: OK (6 columns)
+2026-04-22T23:51:15.491631613Z [error] 2026-04-22 23:51:15,189 [INFO] app.db_schema_validator: [schema_validator] governance_events: OK (10 columns)
+2026-04-22T23:51:15.491638738Z [error] 2026-04-22 23:51:15,422 [INFO] app.db_schema_validator: [schema_validator] protocol_pool_wallets: OK (7 columns)
+2026-04-22T23:51:16.306852899Z [error] 2026-04-22 23:51:15,654 [INFO] app.db_schema_validator: [schema_validator] protocol_trace_observations: OK (12 columns)
+2026-04-22T23:51:16.306858338Z [error] 2026-04-22 23:51:15,886 [INFO] app.db_schema_validator: [schema_validator] token_approval_snapshots: OK (9 columns)
+2026-04-22T23:51:16.306864057Z [error] 2026-04-22 23:51:16,117 [INFO] app.db_schema_validator: [schema_validator] oracle_update_cadence: OK (9 columns)
+2026-04-22T23:51:16.353945824Z [error] 2026-04-22 23:51:16,349 [INFO] app.db_schema_validator: [schema_validator] wallet_holder_discovery: OK (11 columns)
+2026-04-22T23:51:17.172973601Z [error] 2026-04-22 23:51:16,583 [ERROR] app.db_schema_validator: [schema_validator] all schemas aligned — 39 tables, 453 columns verified
+2026-04-22T23:51:17.172979279Z [error] 2026-04-22 23:51:16,583 [ERROR] worker: [startup] schema fixes complete, diagnostics will fire in 60s via independent loop
+2026-04-22T23:51:17.172987844Z [error] 2026-04-22 23:51:16,587 [ERROR] worker: [startup] running Dwellir capability probe
+2026-04-22T23:51:17.172998364Z [error] 2026-04-22 23:51:16,760 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T23:51:17.173008699Z [error] 2026-04-22 23:51:16,787 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T23:51:17.173012405Z [error] 2026-04-22 23:51:16,762 [ERROR] worker: [api_tracker] recorded: alchemy /v2/AyH5JAFcthHka4uBiciLg → 200
+2026-04-22T23:51:17.173015557Z [error] 2026-04-22 23:51:16,789 [ERROR] worker: [api_tracker] recorded: alchemy /v2/AyH5JAFcthHka4uBiciLg → 200
+2026-04-22T23:51:17.173023015Z [error] 2026-04-22 23:51:16,582 [INFO] app.db_schema_validator: [schema_validator] wallet_chain_presence: OK (12 columns)
+2026-04-22T23:51:17.474719550Z [error] 2026-04-22 23:51:17,471 [INFO] httpx: HTTP Request: POST https://api-ethereum-mainnet.n.dwellir.com/ebce64a9-6da4-4451-808d-aa0e82b1da55 "HTTP/1.1 200 OK"
+2026-04-22T23:51:17.474725576Z [error] 2026-04-22 23:51:17,472 [ERROR] worker: [api_tracker] recorded: dwellir /ebce64a9-6da4-4451-808d-aa0e82b1da55 → 200
+2026-04-22T23:51:18.292015820Z [error] 2026-04-22 23:51:18,106 [ERROR] app.utils.rpc_provider: [rpc_probe] dwellir eth_call @latest (current state): OK
+2026-04-22T23:51:18.292026960Z [error] 2026-04-22 23:51:18,273 [INFO] httpx: HTTP Request: POST https://api-ethereum-mainnet.n.dwellir.com/ebce64a9-6da4-4451-808d-aa0e82b1da55 "HTTP/1.1 200 OK"
+2026-04-22T23:51:18.292067614Z [error] 2026-04-22 23:51:17,708 [ERROR] app.utils.rpc_provider: [rpc_probe] dwellir eth_blockNumber (connectivity): OK
+2026-04-22T23:51:18.292072861Z [error] 2026-04-22 23:51:17,873 [INFO] httpx: HTTP Request: POST https://api-ethereum-mainnet.n.dwellir.com/ebce64a9-6da4-4451-808d-aa0e82b1da55 "HTTP/1.1 200 OK"
+2026-04-22T23:51:18.515528387Z [error] 2026-04-22 23:51:18,506 [ERROR] app.utils.rpc_provider: [rpc_probe] dwellir eth_call @0x17c8872 (archive read): OK
+2026-04-22T23:51:19.395610118Z [error] 2026-04-22 23:51:18,670 [INFO] httpx: HTTP Request: POST https://api-ethereum-mainnet.n.dwellir.com/ebce64a9-6da4-4451-808d-aa0e82b1da55 "HTTP/1.1 403 Forbidden"
+2026-04-22T23:51:19.395617468Z [error] 2026-04-22 23:51:18,902 [ERROR] app.utils.rpc_provider: [rpc_probe] dwellir debug_traceTransaction (callTracer): FAIL HTTP 403: Your current plan does not support trace or debug methods. Please upgrade to a paid plan a
+2026-04-22T23:51:19.395624108Z [error] 2026-04-22 23:51:19,066 [INFO] httpx: HTTP Request: POST https://api-ethereum-mainnet.n.dwellir.com/ebce64a9-6da4-4451-808d-aa0e82b1da55 "HTTP/1.1 403 Forbidden"
+2026-04-22T23:51:19.395631262Z [error] 2026-04-22 23:51:19,298 [ERROR] app.utils.rpc_provider: [rpc_probe] dwellir trace_transaction: FAIL HTTP 403: Your current plan does not support trace or debug methods. Please upgrade to a paid plan a
+2026-04-22T23:51:19.395637816Z [error] 2026-04-22 23:51:19,299 [ERROR] app.utils.rpc_provider: [rpc_probe] SUMMARY chain=ethereum trace=False archive=True (see rpc_capabilities table for per-method details)
+2026-04-22T23:51:19.395645129Z [error] 2026-04-22 23:51:19,319 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] background tasks scheduled
+2026-04-22T23:51:20.378758316Z [error] 2026-04-22 23:51:20,051 [ERROR] worker: [startup] holder_ingestion background loop launched (weekly)
+2026-04-22T23:51:20.378766056Z [error] 2026-04-22 23:51:20,072 [ERROR] worker: [startup] multichain_holder background loop launched (weekly)
+2026-04-22T23:51:20.378773365Z [error] 2026-04-22 23:51:20,088 [ERROR] worker: [startup] wallet_presence background loop launched (daily)
+2026-04-22T23:51:20.378949740Z [error] 2026-04-22 23:51:20,028 [WARNING] app.ops.tools.alerter: [alerter] daily cap reached (20/20), dropping info: service_restart
+2026-04-22T23:51:20.378957988Z [error] 2026-04-22 23:51:20,028 [INFO] worker: Starting worker loop (interval: 60 min)
+2026-04-22T23:51:20.378964198Z [error] 2026-04-22 23:51:20,032 [ERROR] worker: [startup] oracle cadence loop launched (5-min sampling)
+2026-04-22T23:51:21.549026698Z [error] 2026-04-22 23:51:21,483 [INFO] worker: === Fast cycle start ===
+2026-04-22T23:51:21.549049749Z [error] 2026-04-22 23:51:21,483 [ERROR] app.data_layer.oracle_cadence_collector: [oracle_cadence] loop started, sampling every 300s
+2026-04-22T23:51:21.549057250Z [error] 2026-04-22 23:51:21,483 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion_bg] background loop started
+2026-04-22T23:51:21.549064316Z [error] 2026-04-22 23:51:21,483 [ERROR] app.data_layer.multichain_holder_collector: [multichain_bg] background loop started
+2026-04-22T23:51:21.549070982Z [error] 2026-04-22 23:51:21,483 [ERROR] app.data_layer.wallet_presence_scanner: [presence_bg] background loop started
+2026-04-22T23:51:21.549096692Z [error] 2026-04-22 23:51:21,087 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] watchlist: stablecoins=36, pool_wallets=11, deduped_total=47, limit=100
+2026-04-22T23:51:25.299493434Z [error] 2026-04-22 23:51:24,970 [INFO] app.collectors.registry: Synced 15 provenance sources to DB
+2026-04-22T23:51:28.838251593Z [error] 2026-04-22 23:51:28,677 [INFO] worker: Starting scoring cycle for 36 stablecoins
+2026-04-22T23:51:31.234280953Z [error] 2026-04-22 23:51:31,136 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] connection error after 10s: TimeoutError: timed out during opening handshake
+2026-04-22T23:51:31.234286262Z [error] 2026-04-22 23:51:31,182 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T23:51:32.395113507Z [error] 2026-04-22 23:51:31,662 [INFO] httpx: HTTP Request: GET https://stablecoins.llama.fi/stablecoins "HTTP/1.1 200 OK"
+2026-04-22T23:51:32.395119954Z [error] 2026-04-22 23:51:31,668 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usd0-liquid-bond?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-22T23:51:32.395126068Z [error] 2026-04-22 23:51:31,670 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usd0-liquid-bond?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-22T23:51:32.395131908Z [error] 2026-04-22 23:51:31,671 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usd0-liquid-bond?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-22T23:51:32.395137199Z [error] 2026-04-22 23:51:31,746 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T23:51:32.395142883Z [error] 2026-04-22 23:51:32,226 [INFO] httpx: HTTP Request: GET https://yields.llama.fi/pools "HTTP/1.1 200 OK"
+2026-04-22T23:51:32.395148791Z [error] 2026-04-22 23:51:32,230 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usd0-liquid-bond/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-22T23:51:32.395155572Z [error] 2026-04-22 23:51:32,295 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T23:51:33.271579135Z [error] 2026-04-22 23:51:32,777 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usd0-liquid-bond/market_chart?vs_currency=usd&days=7 "HTTP/1.1 200 OK"
+2026-04-22T23:51:33.271584686Z [error] 2026-04-22 23:51:33,092 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T23:51:33.271589802Z [error] 2026-04-22 23:51:33,093 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=contract&action=getabi&address=0x35d8949372d46b7a3d5a56006ae77b215fc69bc0&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-22T23:51:33.271595512Z [error] 2026-04-22 23:51:33,094 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usd0-liquid-bond/market_chart?vs_currency=usd&days=30 "HTTP/1.1 200 OK"
+2026-04-22T23:51:33.271600847Z [error] 2026-04-22 23:51:33,095 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&contractaddress=0x35d8949372d46b7a3d5a56006ae77b215fc69bc0&page=1&offset=200&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-22T23:51:35.047967511Z [error] 2026-04-22 23:51:34,514 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] watchlist: stablecoins=36, pool_wallets=11, deduped_total=47, limit=100
+2026-04-22T23:51:35.047973201Z [error] 2026-04-22 23:51:34,750 [INFO] app.state_attestation: State attested: domain=smart_contracts entity=busd0 records=6 hash=3b1662aa90cd2917...
+2026-04-22T23:51:35.988964869Z [error] 2026-04-22 23:51:35,441 [INFO] app.state_attestation: State attested: domain=flows entity=busd0 records=4 hash=fb3c2f7b0dc326f7...
+2026-04-22T23:51:37.358815040Z [error] 2026-04-22 23:51:36,656 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/usd0-liquid-bond?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-22T23:51:43.258644100Z [error] 2026-04-22 23:51:42,906 [INFO] app.state_attestation: State attested: domain=sii_components entity=busd0 records=41 hash=b4652b2af74b1b71...
+2026-04-22T23:51:43.258651919Z [error] 2026-04-22 23:51:42,907 [INFO] worker: busd0: 42.08 - 41 components in 13.5s
+2026-04-22T23:51:43.434058710Z [error] 2026-04-22 23:51:43,396 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T23:51:44.229523231Z [error] 2026-04-22 23:51:43,893 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] SUBSCRIBED chain=ethereum addresses=47 subscription_id=0x617507d4cb91ce63a1294f6d813d28ba
+2026-04-22T23:51:44.229537527Z [error] 2026-04-22 23:51:43,934 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T23:51:44.490660932Z [error] 2026-04-22 23:51:44,475 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T23:52:45.700782723Z [error] 2026-04-22 23:52:37,706 [ERROR] worker: [stale_diagnostic] stale=4: liquidity_depth (age=12.9h, threshold=3h), exchange_snapshots (age=12.9h, threshold=3h), entity_snapshots_hourly (age=12.9h, threshold=3h), dex_pool_ohlcv (age=103.4h, threshold=6h)
+2026-04-22T23:52:45.700786892Z [error] 2026-04-22 23:52:38,172 [ERROR] worker: [provenance_gap] hourly: 11/12 producing, weekly: 3, missing_hourly=['tally_governance']
+2026-04-22T23:52:45.700790823Z [error] 2026-04-22 23:52:38,172 [ERROR] worker: [provenance_gap] weekly sources (not expected in 24h): ['defillama_bridges']
+2026-04-22T23:52:45.700794796Z [error] 2026-04-22 23:52:38,172 [ERROR] worker: [api_budget] alchemy=10, coingecko=7/16,600 (0%), dwellir=5, etherscan=2/200,000 (0%), llama=2
+2026-04-22T23:52:45.700798875Z [error] 2026-04-22 23:52:38,408 [ERROR] worker: [api_usage_7d] alchemy: 2026-04-22: 12 calls (0 err, p95=4302ms) | 2026-04-21: 168 calls (0 err, p95=5440ms) | 2026-04-20: 12 calls (0 err, p95=4848ms)
+2026-04-22T23:52:45.700803318Z [error] 2026-04-22 23:52:38,408 [ERROR] worker: [api_usage_7d] blockscout: 2026-04-22: 20 calls (0 err, p95=630ms) — 0% | 2026-04-21: 20 calls (0 err, p95=780ms) — 0%
+2026-04-22T23:52:45.700807910Z [error] 2026-04-22 23:52:38,408 [ERROR] worker: [api_usage_7d] coingecko: 2026-04-22: 362 calls (1 err, p95=1611ms) — 2% | 2026-04-21: 5,068 calls (14 err, p95=2060ms) — 31% | 2026-04-20: 362 calls (1 err, p95=1580ms) — 2%
+2026-04-22T23:52:45.700812101Z [error] 2026-04-22 23:52:38,408 [ERROR] worker: [api_usage_7d] curve: 2026-04-22: 3 calls (0 err, p95=1398ms) | 2026-04-21: 42 calls (0 err, p95=1550ms) | 2026-04-20: 3 calls (0 err, p95=1636ms)
+2026-04-22T23:52:45.700816029Z [error] 2026-04-22 23:52:38,408 [ERROR] worker: [api_usage_7d] etherscan: 2026-04-22: 442 calls (0 err, p95=1372ms) — 0% | 2026-04-21: 6,259 calls (2 err, p95=2636ms) — 3% | 2026-04-20: 442 calls (0 err, p95=1383ms) — 0%
+2026-04-22T23:52:45.700820340Z [error] 2026-04-22 23:52:38,408 [ERROR] worker: [api_usage_7d] helius: 2026-04-22: 2 calls (0 err, p95=1196ms) | 2026-04-21: 28 calls (0 err, p95=2658ms) | 2026-04-20: 2 calls (0 err, p95=1497ms)
+2026-04-22T23:52:45.703819463Z [error] 2026-04-22 23:52:38,408 [ERROR] worker: [api_usage_7d] helius-rpc: 2026-04-22: 10 calls (0 err, p95=8301ms) | 2026-04-21: 140 calls (0 err, p95=8611ms) | 2026-04-20: 10 calls (0 err, p95=8351ms)
+2026-04-22T23:52:45.703826855Z [error] 2026-04-22 23:52:38,408 [ERROR] worker: [api_usage_7d] llama: 2026-04-22: 73 calls (0 err, p95=1348ms) | 2026-04-21: 1,022 calls (1 err, p95=5215ms) | 2026-04-20: 73 calls (0 err, p95=1579ms)
+2026-04-22T23:52:45.703833626Z [error] 2026-04-22 23:52:38,408 [ERROR] worker: [api_usage_7d] resend: 2026-04-22: 1 calls (1 err, p95=119ms) | 2026-04-21: 15 calls (0 err, p95=351ms) | 2026-04-20: 1 calls (0 err, p95=219ms)
+2026-04-22T23:52:45.703839208Z [error] 2026-04-22 23:52:38,408 [ERROR] worker: [api_usage_7d] snapshot: 2026-04-22: 12 calls (0 err, p95=247ms) — 0% | 2026-04-21: 72 calls (0 err, p95=2413ms) — 1%
+2026-04-22T23:52:45.703845162Z [error] 2026-04-22 23:52:38,639 [ERROR] worker: [api_hotspots_24h]
+2026-04-22T23:52:45.703851560Z [error]   etherscan/unknown: 442
+2026-04-22T23:52:45.703858068Z [error]   llama/pools: 37
+2026-04-22T23:52:45.703864510Z [error]   llama/stablecoins: 36
+2026-04-22T23:52:45.703870542Z [error]   blockscout/unknown: 20
+2026-04-22T23:52:45.703876893Z [error]   snapshot/graphql: 12
+2026-04-22T23:52:45.703882993Z [error]   alchemy/unknown: 12
+2026-04-22T23:52:45.703888090Z [error]   helius-rpc/unknown: 10
+2026-04-22T23:52:45.703892969Z [error]   coingecko/coins: 6
+2026-04-22T23:52:45.703897851Z [error]   coingecko/coins/dai: 5
+2026-04-22T23:52:45.703903714Z [error]   coingecko/coins/gho: 5
+2026-04-22T23:52:45.703909779Z [error]   coingecko/coins/rai: 5
+2026-04-22T23:52:45.703919095Z [error]   coingecko/coins/frax: 5
+2026-04-22T23:52:45.703925462Z [error]   coingecko/coins/nusd: 5
+2026-04-22T23:52:45.703930943Z [error]   coingecko/coins/usdd: 5
+2026-04-22T23:52:45.703936991Z [error]   coingecko/coins/usds: 5
+2026-04-22T23:52:45.703943583Z [error] 2026-04-22 23:52:38,871 [ERROR] worker: [rpc_usage_7d] alchemy: 441 eth_getTransactionByHash (0 fallback, 261 err)
+2026-04-22T23:52:45.705107398Z [error] 2026-04-22 23:52:40,761 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion_bg] loop tick, checking gate
+2026-04-22T23:52:45.705116686Z [error] 2026-04-22 23:52:40,995 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion_bg] gate open, running scan
+2026-04-22T23:52:45.705123502Z [error] 2026-04-22 23:52:40,995 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] ENTRY — function called
+2026-04-22T23:52:45.705260149Z [error] 2026-04-22 23:52:38,871 [ERROR] worker: [rpc_usage_7d] dwellir: no calls
+2026-04-22T23:52:45.705265895Z [error] 2026-04-22 23:52:39,335 [ERROR] worker: [rpc_capabilities]
+2026-04-22T23:52:45.705272103Z [error]   dwellir/ethereum/debug_traceTransaction: fail (HTTP 403: Your current plan does not support trace or debug )
+2026-04-22T23:52:45.705278427Z [error]   dwellir/ethereum/eth_blockNumber: ok
+2026-04-22T23:52:45.705293370Z [error]   dwellir/ethereum/eth_call: ok
+2026-04-22T23:52:45.705299775Z [error]   dwellir/ethereum/trace_transaction: fail (HTTP 403: Your current plan does not support trace or debug )
+2026-04-22T23:52:45.705307878Z [error] 2026-04-22 23:52:40,297 [ERROR] app.data_layer.mempool_watcher: [mempool_observations] 24h SUMMARY: captured=47652 confirmed=441 dropped=0 avg_confirmation_latency_ms=24733639 alchemy_cu_rolling24h=12 top_to=[0xdac17f95=32671, 0xa0b86991=14175, 0x6c3ea903=240, 0x6b175474=179, 0x4c9edd58=113] top_selectors=[0xa9059cbb=44369, 0x23b872dd=1906, 0x095ea7b3=1138, 0xe3ee160e=78, 0xd505accf=39]
+2026-04-22T23:52:45.705313670Z [error] 2026-04-22 23:52:40,760 [ERROR] worker: [api_usage_verify] hourly: 129 rows, latest=2026-04-22 11:00:00+00:00 | tracker: 0 rows, latest=None
+2026-04-22T23:52:45.705358303Z [error] 2026-04-22 23:52:41,230 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] starting: 67 entities to scan
+2026-04-22T23:52:45.705364742Z [error] 2026-04-22 23:52:41,230 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] step A: entering entity loop
+2026-04-22T23:52:45.708202529Z [error] 2026-04-22 23:52:41,230 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] step B.0: usdc contract=0xa0b86991c6... chain=ethereum
+2026-04-22T23:52:45.708208138Z [error] 2026-04-22 23:52:41,230 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] step C.0: acquiring etherscan rate limit
+2026-04-22T23:52:45.708213869Z [error] 2026-04-22 23:52:41,230 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] _fetch_etherscan: acquiring rate limiter for 0xa0b86991c6...
+2026-04-22T23:52:45.708219259Z [error] 2026-04-22 23:52:41,230 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] _fetch_etherscan: rate limiter acquired, making HTTP GET
+2026-04-22T23:52:45.708225171Z [error] 2026-04-22 23:52:41,234 [WARNING] app.collectors.registry: peg timed out for crvusd
+2026-04-22T23:52:45.708232010Z [error] 2026-04-22 23:52:41,236 [ERROR] app.data_layer.oracle_cadence_collector: [oracle_cadence] sample failed for Chainlink USDC/USD: 
+2026-04-22T23:52:45.708239671Z [error] 2026-04-22 23:52:41,238 [WARNING] app.collectors.registry: liquidity timed out for crvusd
+2026-04-22T23:52:45.708245066Z [error] 2026-04-22 23:52:41,238 [WARNING] app.collectors.registry: defillama timed out for crvusd
+2026-04-22T23:52:45.708250969Z [error] 2026-04-22 23:52:41,238 [WARNING] app.collectors.registry: market timed out for crvusd
+2026-04-22T23:52:45.708256453Z [error] 2026-04-22 23:52:41,238 [WARNING] app.collectors.registry: flows timed out for crvusd
+2026-04-22T23:52:45.708262075Z [error] 2026-04-22 23:52:41,238 [WARNING] app.collectors.registry: smart_contract timed out for crvusd
+2026-04-22T23:52:45.708267442Z [error] 2026-04-22 23:52:41,239 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] connection error after 66s: ConnectionClosedError: sent 1011 (internal error) keepalive ping timeout; no close frame received
+2026-04-22T23:52:45.708272921Z [error] 2026-04-22 23:52:43,447 [INFO] worker: crvusd: SKIPPED (category-incomplete) — missing: mint_burn_dynamics — 7 components collected in 44.4s
+2026-04-22T23:52:45.709397845Z [error] 2026-04-22 23:52:44,390 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] watchlist: stablecoins=36, pool_wallets=11, deduped_total=47, limit=100
+2026-04-22T23:52:45.709403752Z [error] 2026-04-22 23:52:44,444 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T23:52:45.709410702Z [error] 2026-04-22 23:52:44,679 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T23:52:45.709418057Z [error] 2026-04-22 23:52:45,159 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] SUBSCRIBED chain=ethereum addresses=47 subscription_id=0x60b96d5931cd077e87136c11aeedadc2
+2026-04-22T23:52:45.709424404Z [error] 2026-04-22 23:52:45,160 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T23:52:45.709430083Z [error] 2026-04-22 23:52:45,417 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T23:52:47.967068195Z [error] 2026-04-22 23:52:47,151 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T23:52:51.113045803Z [error] 2026-04-22 23:52:50,394 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=token&action=tokenholderlist&contractaddress=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&page=1&offset=10000&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-22T23:52:51.113049404Z [error] 2026-04-22 23:52:50,631 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T23:53:10.170293001Z [error] 2026-04-22 23:53:07,357 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T23:53:16.517130395Z [error] 2026-04-22 23:53:16,177 [WARNING] app.collectors.smart_contract: ABI check failed for 0x6b175474e89094c44da98b954eedeac495271d0f: 
+2026-04-22T23:53:16.517144866Z [error] 2026-04-22 23:53:16,177 [ERROR] app.collectors.flows: Etherscan tokentx error for 0x6b175474e89094c44da98b954eedeac495271d0f: 
+2026-04-22T23:53:17.421861613Z [error] 2026-04-22 23:53:16,642 [INFO] app.state_attestation: State attested: domain=data_layer:oracle_cadence entity=None records=1 hash=42063b4ad3ab0ec1...
+2026-04-22T23:53:17.421867033Z [error] 2026-04-22 23:53:16,643 [ERROR] app.data_layer.oracle_cadence_collector: [oracle_cadence] sample #1: new_rounds=5, unchanged=0, errors=1
+2026-04-22T23:53:17.421872563Z [error] 2026-04-22 23:53:16,643 [ERROR] app.collectors.coingecko: CoinGecko current data error for dai: 
+2026-04-22T23:53:17.421878520Z [error] 2026-04-22 23:53:16,644 [ERROR] app.collectors.coingecko: CoinGecko current data error for dai: 
+2026-04-22T23:53:17.421884669Z [error] 2026-04-22 23:53:16,644 [ERROR] app.collectors.coingecko: CoinGecko current data error for dai: 
+2026-04-22T23:53:17.421890927Z [error] 2026-04-22 23:53:16,645 [ERROR] app.collectors.defillama: DeFiLlama stablecoin error for dai: 
+2026-04-22T23:53:17.421895851Z [error] 2026-04-22 23:53:16,646 [ERROR] app.collectors.curve: Curve 3pool error: 
+2026-04-22T23:53:37.192877865Z [error] 2026-04-22 23:53:27,777 [WARNING] app.collectors.registry: etherscan timed out for dai
+2026-04-22T23:53:37.192888314Z [error] 2026-04-22 23:53:27,778 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] _fetch_etherscan: HTTP 200, parsing JSON
+2026-04-22T23:53:37.192900240Z [error] 2026-04-22 23:53:27,785 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] step D.0: etherscan returned 10000 holders
+2026-04-22T23:54:07.681799539Z [error] 2026-04-22 23:54:05,206 [INFO] app.state_attestation: State attested: domain=smart_contracts entity=dai records=6 hash=5fa645516403758a...
+2026-04-22T23:54:47.729773448Z [error] 2026-04-22 23:54:46,011 [ERROR] app.data_layer.multichain_holder_collector: [multichain_bg] loop tick, checking gate
+2026-04-22T23:54:47.729780756Z [error] 2026-04-22 23:54:46,244 [ERROR] app.data_layer.multichain_holder_collector: [multichain_bg] gate open, running scan
+2026-04-22T23:54:47.729786166Z [error] 2026-04-22 23:54:46,244 [ERROR] app.data_layer.multichain_holder_collector: [multichain_holder] ENTRY — function called
+2026-04-22T23:54:47.729790558Z [error] 2026-04-22 23:54:46,476 [ERROR] app.data_layer.multichain_holder_collector: [multichain_holder] starting: 23 non-ethereum holder scans across 10 entities
+2026-04-22T23:56:10.106988186Z [error] 2026-04-22 23:56:08,448 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] step B.1: usdt contract=0xdac17f958d... chain=ethereum
+2026-04-22T23:56:10.106994320Z [error] 2026-04-22 23:56:08,448 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] step C.1: acquiring etherscan rate limit
+2026-04-22T23:56:10.107000163Z [error] 2026-04-22 23:56:08,448 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] _fetch_etherscan: acquiring rate limiter for 0xdac17f958d...
+2026-04-22T23:56:10.107021069Z [error] 2026-04-22 23:56:08,449 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] _fetch_etherscan: rate limiter acquired, making HTTP GET
+2026-04-22T23:56:10.107027420Z [error] 2026-04-22 23:56:08,449 [ERROR] app.data_layer.wallet_presence_scanner: [presence_bg] loop tick, checking gate
+2026-04-22T23:56:10.107033751Z [error] 2026-04-22 23:56:08,681 [ERROR] app.data_layer.wallet_presence_scanner: [presence_bg] gate closed, last run 2h ago
+2026-04-22T23:56:10.107040187Z [error] 2026-04-22 23:56:08,682 [ERROR] app.collectors.defillama: DeFiLlama yields error for dai: 
+2026-04-22T23:57:22.534744443Z [error] 2026-04-22 23:57:22,025 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] _fetch_etherscan: rate limiter acquired, making HTTP GET
+2026-04-22T23:57:22.534755232Z [error] 2026-04-22 23:57:22,088 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T23:57:22.534795211Z [error] 2026-04-22 23:57:19,165 [ERROR] app.data_layer.multichain_holder_collector: [multichain_holder] USDC/base: FAIL 
+2026-04-22T23:57:22.534800281Z [error] 2026-04-22 23:57:19,166 [WARNING] worker: Timeout scoring dai (>120s) — skipping
+2026-04-22T23:57:22.534805047Z [error] 2026-04-22 23:57:20,569 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] connection error after 276s: ConnectionClosedError: sent 1011 (internal error) keepalive ping timeout; no close frame received
+2026-04-22T23:57:22.534844941Z [error] 2026-04-22 23:57:20,569 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] usdt: FAIL 
+2026-04-22T23:57:22.534857620Z [error] 2026-04-22 23:57:22,025 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] step B.2: dai contract=0x6b175474e8... chain=ethereum
+2026-04-22T23:57:22.534865242Z [error] 2026-04-22 23:57:22,025 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] step C.2: acquiring etherscan rate limit
+2026-04-22T23:57:22.534872019Z [error] 2026-04-22 23:57:22,025 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] _fetch_etherscan: acquiring rate limiter for 0x6b175474e8...
+2026-04-22T23:57:22.569486636Z [error] 2026-04-22 23:57:22,565 [INFO] httpx: HTTP Request: GET https://stablecoins.llama.fi/stablecoins "HTTP/1.1 200 OK"
+2026-04-22T23:57:22.573532792Z [error] 2026-04-22 23:57:22,569 [INFO] httpx: HTTP Request: GET https://arbitrum.blockscout.com/api/v2/tokens/0xaf88d065e77c8cc2239327c5edb3a432268e5831/holders?limit=50 "HTTP/1.1 422 Unprocessable Entity"
+2026-04-22T23:57:22.573540618Z [error] 2026-04-22 23:57:22,570 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/dola-usd?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-22T23:57:22.573546865Z [error] 2026-04-22 23:57:22,571 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/dola-usd?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-22T23:57:22.577638432Z [error] 2026-04-22 23:57:22,573 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/dola-usd?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false "HTTP/1.1 200 OK"
+2026-04-22T23:57:23.808602334Z [error] 2026-04-22 23:57:23,574 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T23:57:23.808693620Z [error] 2026-04-22 23:57:23,513 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] watchlist: stablecoins=36, pool_wallets=11, deduped_total=47, limit=100
+2026-04-22T23:57:24.751672901Z [error] 2026-04-22 23:57:24,056 [INFO] httpx: HTTP Request: GET https://yields.llama.fi/pools "HTTP/1.1 200 OK"
+2026-04-22T23:57:24.751681196Z [error] 2026-04-22 23:57:24,061 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/dola-usd/market_chart?vs_currency=usd&days=1 "HTTP/1.1 200 OK"
+2026-04-22T23:57:24.751688286Z [error] 2026-04-22 23:57:24,081 [ERROR] app.data_layer.mempool_watcher: [mempool_watcher] SUBSCRIBED chain=ethereum addresses=47 subscription_id=0x5b35a10381a0c889359148d2443fb664
+2026-04-22T23:57:24.751700580Z [error] 2026-04-22 23:57:24,098 [INFO] httpx: HTTP Request: GET https://optimism.blockscout.com/api/v2/tokens/0x0b2c639c533813f4aa9d7837caf62653d097ff85/holders?limit=50 "HTTP/1.1 301 Moved Permanently"
+2026-04-22T23:57:24.751704927Z [error] 2026-04-22 23:57:24,126 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T23:57:24.751710378Z [error] 2026-04-22 23:57:24,614 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/dola-usd/market_chart?vs_currency=usd&days=7 "HTTP/1.1 200 OK"
+2026-04-22T23:57:24.751715015Z [error] 2026-04-22 23:57:24,616 [INFO] httpx: HTTP Request: GET https://polygon.blockscout.com/api/v2/tokens/0x3c499c542cef5e3811e1192ce70d8cc03d5c3359/holders?limit=50 "HTTP/1.1 422 Unprocessable Entity"
+2026-04-22T23:57:25.743962718Z [error] 2026-04-22 23:57:24,914 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-22T23:57:25.744037402Z [error] 2026-04-22 23:57:24,915 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=contract&action=getabi&address=0x865377367054516e17014ccded1e7d814edc9ce4&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-22T23:57:25.744043989Z [error] 2026-04-22 23:57:24,915 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&contractaddress=0x865377367054516e17014ccded1e7d814edc9ce4&page=1&offset=200&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-22T23:57:25.744051286Z [error] 2026-04-22 23:57:24,916 [INFO] httpx: HTTP Request: GET https://arbitrum.blockscout.com/api/v2/tokens/0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9/holders?limit=50 "HTTP/1.1 422 Unprocessable Entity"
+2026-04-22T23:57:26.799644281Z [error] 2026-04-22 23:57:26,788 [INFO] httpx: HTTP Request: GET https://pro-api.coingecko.com/api/v3/coins/dola-usd/market_chart?vs_currency=usd&days=30 "HTTP/1.1 200 OK"
+2026-04-22T23:57:26.799653640Z [error] 2026-04-22 23:57:26,790 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=token&action=tokenholderlist&contractaddress=0x6b175474e89094c44da98b954eedeac495271d0f&page=1&offset=10000&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-22T23:57:30.215030079Z [error] 2026-04-22 23:57:29,369 [INFO] app.state_attestation: State attested: domain=smart_contracts entity=dola records=6 hash=328782bb0333250e...
+2026-04-22T23:57:30.215036557Z [error] 2026-04-22 23:57:30,066 [INFO] app.state_attestation: State attested: domain=flows entity=dola records=5 hash=67fe96ed3f7dbb97...
+2026-04-22T23:57:30.215043593Z [error] 2026-04-22 23:57:30,070 [INFO] httpx: HTTP Request: GET https://optimism.blockscout.com/api/v2/tokens/0x94b008aa00579c1307b0ef2c499ad98a8ce58e58/holders?limit=50 "HTTP/1.1 301 Moved Permanently"
+2026-04-23T00:00:48.237036405Z [error] 2026-04-23 00:00:44,074 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] _fetch_etherscan: HTTP 200, parsing JSON
+2026-04-23T00:00:48.237042244Z [error] 2026-04-23 00:00:44,082 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] step D.2: etherscan returned 10000 holders
