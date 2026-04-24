@@ -1,171 +1,3 @@
-2026-04-21T04:31:43.401551332Z [error] 2026-04-21 04:31:43,399 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-21T04:31:43.401555298Z [error] 2026-04-21 04:31:43,399 WARNING [basis_state] Failed to fetch history for stablecoin:FRAX
-2026-04-21T04:31:43.401559548Z [error] 2026-04-21 04:31:43,399 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/EURE params={'format': 'json'}
-2026-04-21T04:31:43.426476821Z [error] 2026-04-21 04:31:43,422 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/EURE?format=json "HTTP/1.1 429 "
-2026-04-21T04:31:43.426481024Z [error] 2026-04-21 04:31:43,423 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/EURE 429 (56 bytes)
-2026-04-21T04:31:43.426484189Z [error] 2026-04-21 04:31:43,423 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-21T04:31:43.426487225Z [error] 2026-04-21 04:31:43,423 WARNING [basis_state] Failed to fetch history for stablecoin:EURE
-2026-04-21T04:31:43.426490007Z [error] 2026-04-21 04:31:43,423 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/STKGHO params={'format': 'json'}
-2026-04-21T04:31:46.830572636Z [error] 2026-04-21 04:31:46,779 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/STKGHO?format=json "HTTP/1.1 200 "
-2026-04-21T04:31:46.830577689Z [error] 2026-04-21 04:31:46,780 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/STKGHO 200 (9357 bytes)
-2026-04-21T04:31:46.830581606Z [error] 2026-04-21 04:31:46,780 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/SDOLA params={'format': 'json'}
-2026-04-21T04:31:46.830585358Z [error] 2026-04-21 04:31:46,804 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/SDOLA?format=json "HTTP/1.1 429 "
-2026-04-21T04:31:46.830589806Z [error] 2026-04-21 04:31:46,805 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/SDOLA 429 (56 bytes)
-2026-04-21T04:31:46.830593687Z [error] 2026-04-21 04:31:46,805 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-21T04:31:46.830597548Z [error] 2026-04-21 04:31:46,805 WARNING [basis_state] Failed to fetch history for stablecoin:SDOLA
-2026-04-21T04:31:46.830601367Z [error] 2026-04-21 04:31:46,805 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDD (BTTC bridge) params={'format': 'json'}
-2026-04-21T04:31:46.846974673Z [error] 2026-04-21 04:31:46,843 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDD%20(BTTC%20bridge)?format=json "HTTP/1.1 429 "
-2026-04-21T04:31:46.846980543Z [error] 2026-04-21 04:31:46,843 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDD (BTTC bridge) 429 (56 bytes)
-2026-04-21T04:31:46.846984363Z [error] 2026-04-21 04:31:46,844 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-21T04:31:46.846987670Z [error] 2026-04-21 04:31:46,844 WARNING [basis_state] Failed to fetch history for stablecoin:USDD (BTTC bridge)
-2026-04-21T04:31:46.846990561Z [error] 2026-04-21 04:31:46,844 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/BUSD0 params={'format': 'json'}
-2026-04-21T04:31:50.212566327Z [error] 2026-04-21 04:31:50,208 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/BUSD0?format=json "HTTP/1.1 200 "
-2026-04-21T04:31:50.212571902Z [error] 2026-04-21 04:31:50,209 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/BUSD0 200 (9994 bytes)
-2026-04-21T04:31:50.212576004Z [error] 2026-04-21 04:31:50,209 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/RAI params={'format': 'json'}
-2026-04-21T04:31:50.238413024Z [error] 2026-04-21 04:31:50,236 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/RAI?format=json "HTTP/1.1 429 "
-2026-04-21T04:31:50.238418566Z [error] 2026-04-21 04:31:50,236 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/RAI 429 (56 bytes)
-2026-04-21T04:31:50.238422012Z [error] 2026-04-21 04:31:50,236 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-21T04:31:50.240021094Z [error] 2026-04-21 04:31:50,236 WARNING [basis_state] Failed to fetch history for stablecoin:RAI
-2026-04-21T04:31:50.240024686Z [error] 2026-04-21 04:31:50,236 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/sUSD params={'format': 'json'}
-2026-04-21T04:31:50.269882743Z [error] 2026-04-21 04:31:50,265 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/sUSD?format=json "HTTP/1.1 429 "
-2026-04-21T04:31:50.269889073Z [error] 2026-04-21 04:31:50,266 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/sUSD 429 (56 bytes)
-2026-04-21T04:31:50.269892718Z [error] 2026-04-21 04:31:50,266 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-21T04:31:50.269895941Z [error] 2026-04-21 04:31:50,266 WARNING [basis_state] Failed to fetch history for stablecoin:sUSD
-2026-04-21T04:31:50.269900603Z [error] 2026-04-21 04:31:50,266 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/EURS params={'format': 'json'}
-2026-04-21T04:31:53.842319731Z [error] 2026-04-21 04:31:53,641 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/EURS?format=json "HTTP/1.1 200 "
-2026-04-21T04:31:53.842323622Z [error] 2026-04-21 04:31:53,642 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/EURS 200 (10852 bytes)
-2026-04-21T04:31:53.842326849Z [error] 2026-04-21 04:31:53,643 INFO [basis_state] 7d changes computed for 35 entities
-2026-04-21T04:55:55.513097702Z [info] INFO:     100.64.0.43:61404 - "GET /lenses HTTP/1.1" 200 OK
-2026-04-21T04:55:55.513102866Z [error] 2026-04-21 04:55:50,593 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/scores "HTTP/1.1 200 "
-2026-04-21T04:55:55.513106791Z [error] 2026-04-21 04:55:50,945 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/psi/scores "HTTP/1.1 200 "
-2026-04-21T04:55:55.513112979Z [error] 2026-04-21 04:55:54,622 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDC?format=json "HTTP/1.1 200 "
-2026-04-21T04:55:57.935567510Z [error] 2026-04-21 04:55:57,931 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDC "HTTP/1.1 200 "
-2026-04-21T04:55:59.130859101Z [error] 2026-04-21 04:55:59,126 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/wallets/0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c/profile?format=json "HTTP/1.1 200 "
-2026-04-21T04:55:59.536286149Z [error] 2026-04-21 04:55:59,158 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/abc123/verify "HTTP/1.1 400 "
-2026-04-21T04:55:59.624160241Z [error] 2026-04-21 04:55:59,621 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/scores/USDC "HTTP/1.1 404 "
-2026-04-21T04:55:59.626338658Z [info] INFO:     100.64.0.47:22456 - "GET /api/health HTTP/1.1" 200 OK
-2026-04-21T05:09:40.455984573Z [info] INFO:     100.64.0.43:37492 - "GET /robots.txt HTTP/1.1" 404 Not Found
-2026-04-21T05:09:40.455992460Z [info] INFO:     100.64.0.54:25810 - "GET /robots.txt HTTP/1.1" 404 Not Found
-2026-04-21T05:20:41.205057310Z [info] INFO:     100.64.0.44:33826 - "GET /terms HTTP/1.1" 200 OK
-2026-04-21T05:22:50.857544459Z [info] INFO:     100.64.0.30:54408 - "GET / HTTP/1.1" 200 OK
-2026-04-21T05:33:51.080904736Z [info] INFO:     100.64.0.33:18848 - "GET /robots.txt HTTP/1.1" 404 Not Found
-2026-04-21T05:33:51.080910153Z [info] INFO:     100.64.0.32:14464 - "GET / HTTP/1.1" 200 OK
-2026-04-21T05:51:11.978141286Z [info] INFO:     100.64.0.10:13078 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
-2026-04-21T05:51:51.588573340Z [info] INFO:     100.64.0.9:10420 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
-2026-04-21T05:52:21.589664791Z [info] INFO:     100.64.0.7:35708 - "GET /wp-admin/setup-config.php HTTP/1.1" 404 Not Found
-2026-04-21T05:52:51.590848343Z [info] INFO:     100.64.0.4:21634 - "GET /wordpress/wp-admin/setup-config.php HTTP/1.1" 404 Not Found
-2026-04-21T05:59:01.630271920Z [info] INFO:     100.64.0.44:38560 - "GET / HTTP/1.1" 200 OK
-2026-04-21T05:59:01.632321987Z [error] 2026-04-21 05:59:01,629 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/scores params=None
-2026-04-21T05:59:01.685328253Z [info] INFO:     100.64.0.46:49520 - "GET /favicon.ico HTTP/1.1" 404 Not Found
-2026-04-21T05:59:02.521642093Z [error] 2026-04-21 05:59:02,198 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/scores "HTTP/1.1 200 "
-2026-04-21T05:59:02.521646347Z [error] 2026-04-21 05:59:02,200 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/scores 200 (25219 bytes)
-2026-04-21T05:59:02.521650842Z [error] 2026-04-21 05:59:02,200 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/psi/scores params=None
-2026-04-21T05:59:02.569880837Z [error] 2026-04-21 05:59:02,567 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/psi/scores "HTTP/1.1 200 "
-2026-04-21T05:59:02.571563235Z [error] 2026-04-21 05:59:02,568 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/psi/scores 200 (5818 bytes)
-2026-04-21T05:59:02.571567881Z [error] 2026-04-21 05:59:02,568 INFO [basis_state] Returning 49 entities to client (caching)
-2026-04-21T05:59:02.571571301Z [error] 2026-04-21 05:59:02,568 INFO [basis_state] Computing 7d changes for 36 entities
-2026-04-21T05:59:02.571574647Z [error] 2026-04-21 05:59:02,568 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDC params={'format': 'json'}
-2026-04-21T05:59:02.583322167Z [info] INFO:     100.64.0.43:24346 - "GET /api/entities HTTP/1.1" 200 OK
-2026-04-21T05:59:05.481688464Z [info] INFO:     100.64.0.43:24346 - "GET /favicon.ico HTTP/1.1" 404 Not Found
-2026-04-21T05:59:06.472172856Z [error] 2026-04-21 05:59:06,165 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDC?format=json "HTTP/1.1 200 "
-2026-04-21T05:59:06.472178263Z [error] 2026-04-21 05:59:06,170 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDC 200 (47383 bytes)
-2026-04-21T05:59:06.472183446Z [error] 2026-04-21 05:59:06,171 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDT params={'format': 'json'}
-2026-04-21T05:59:09.476418765Z [error] 2026-04-21 05:59:09,462 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDT?format=json "HTTP/1.1 200 "
-2026-04-21T05:59:09.476423358Z [error] 2026-04-21 05:59:09,463 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDT 200 (20647 bytes)
-2026-04-21T05:59:09.476427951Z [error] 2026-04-21 05:59:09,464 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USD1 params={'format': 'json'}
-2026-04-21T05:59:12.951811573Z [error] 2026-04-21 05:59:12,947 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USD1?format=json "HTTP/1.1 200 "
-2026-04-21T05:59:12.951816229Z [error] 2026-04-21 05:59:12,949 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USD1 200 (15534 bytes)
-2026-04-21T05:59:12.951819686Z [error] 2026-04-21 05:59:12,949 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/DAI params={'format': 'json'}
-2026-04-21T05:59:16.488604947Z [error] 2026-04-21 05:59:16,277 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/DAI?format=json "HTTP/1.1 200 "
-2026-04-21T05:59:16.488609502Z [error] 2026-04-21 05:59:16,278 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/DAI 200 (16014 bytes)
-2026-04-21T05:59:16.488613942Z [error] 2026-04-21 05:59:16,279 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/RLUSD params={'format': 'json'}
-2026-04-21T05:59:19.598192813Z [error] 2026-04-21 05:59:19,594 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/RLUSD?format=json "HTTP/1.1 200 "
-2026-04-21T05:59:19.598198365Z [error] 2026-04-21 05:59:19,595 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/RLUSD 200 (11861 bytes)
-2026-04-21T05:59:19.598202609Z [error] 2026-04-21 05:59:19,595 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/crvUSD params={'format': 'json'}
-2026-04-21T05:59:22.901822270Z [error] 2026-04-21 05:59:22,897 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/crvUSD?format=json "HTTP/1.1 200 "
-2026-04-21T05:59:22.904011028Z [error] 2026-04-21 05:59:22,901 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/crvUSD 200 (11636 bytes)
-2026-04-21T05:59:22.904017368Z [error] 2026-04-21 05:59:22,902 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/GHO params={'format': 'json'}
-2026-04-21T05:59:26.537847829Z [error] 2026-04-21 05:59:26,192 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/GHO?format=json "HTTP/1.1 200 "
-2026-04-21T05:59:26.537854251Z [error] 2026-04-21 05:59:26,195 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/GHO 200 (12202 bytes)
-2026-04-21T05:59:26.537859217Z [error] 2026-04-21 05:59:26,195 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDe params={'format': 'json'}
-2026-04-21T05:59:29.496538949Z [error] 2026-04-21 05:59:29,492 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDe?format=json "HTTP/1.1 200 "
-2026-04-21T05:59:29.498518694Z [error] 2026-04-21 05:59:29,494 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDe 200 (18136 bytes)
-2026-04-21T05:59:29.498522513Z [error] 2026-04-21 05:59:29,494 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/PYUSD params={'format': 'json'}
-2026-04-21T05:59:29.534253682Z [error] 2026-04-21 05:59:29,531 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/PYUSD?format=json "HTTP/1.1 429 "
-2026-04-21T05:59:29.536457640Z [error] 2026-04-21 05:59:29,532 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/PYUSD 429 (56 bytes)
-2026-04-21T05:59:29.536464580Z [error] 2026-04-21 05:59:29,532 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-21T05:59:29.536469715Z [error] 2026-04-21 05:59:29,532 WARNING [basis_state] Failed to fetch history for stablecoin:PYUSD
-2026-04-21T05:59:29.536473351Z [error] 2026-04-21 05:59:29,532 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDS params={'format': 'json'}
-2026-04-21T05:59:29.565347270Z [error] 2026-04-21 05:59:29,560 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDS?format=json "HTTP/1.1 429 "
-2026-04-21T05:59:29.565355288Z [error] 2026-04-21 05:59:29,561 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDS 429 (56 bytes)
-2026-04-21T05:59:29.565360624Z [error] 2026-04-21 05:59:29,561 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-21T05:59:29.565365193Z [error] 2026-04-21 05:59:29,561 WARNING [basis_state] Failed to fetch history for stablecoin:USDS
-2026-04-21T05:59:29.565369440Z [error] 2026-04-21 05:59:29,561 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDP params={'format': 'json'}
-2026-04-21T05:59:29.605876198Z [error] 2026-04-21 05:59:29,591 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDP?format=json "HTTP/1.1 429 "
-2026-04-21T05:59:29.605883613Z [error] 2026-04-21 05:59:29,592 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDP 429 (56 bytes)
-2026-04-21T05:59:29.605888207Z [error] 2026-04-21 05:59:29,592 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-21T05:59:29.605894253Z [error] 2026-04-21 05:59:29,592 WARNING [basis_state] Failed to fetch history for stablecoin:USDP
-2026-04-21T05:59:29.605898013Z [error] 2026-04-21 05:59:29,592 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/FDUSD params={'format': 'json'}
-2026-04-21T05:59:29.630802836Z [error] 2026-04-21 05:59:29,627 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/FDUSD?format=json "HTTP/1.1 429 "
-2026-04-21T05:59:29.630809695Z [error] 2026-04-21 05:59:29,627 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/FDUSD 429 (56 bytes)
-2026-04-21T05:59:29.630813712Z [error] 2026-04-21 05:59:29,627 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-21T05:59:29.630817281Z [error] 2026-04-21 05:59:29,627 WARNING [basis_state] Failed to fetch history for stablecoin:FDUSD
-2026-04-21T05:59:29.630820728Z [error] 2026-04-21 05:59:29,627 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/TUSD params={'format': 'json'}
-2026-04-21T05:59:29.655464884Z [error] 2026-04-21 05:59:29,653 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/TUSD?format=json "HTTP/1.1 429 "
-2026-04-21T05:59:29.657487363Z [error] 2026-04-21 05:59:29,653 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/TUSD 429 (56 bytes)
-2026-04-21T05:59:29.657493744Z [error] 2026-04-21 05:59:29,653 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-21T05:59:29.657497978Z [error] 2026-04-21 05:59:29,654 WARNING [basis_state] Failed to fetch history for stablecoin:TUSD
-2026-04-21T05:59:29.657501558Z [error] 2026-04-21 05:59:29,654 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDTB params={'format': 'json'}
-2026-04-21T05:59:29.685642145Z [error] 2026-04-21 05:59:29,683 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDTB?format=json "HTTP/1.1 429 "
-2026-04-21T05:59:29.685648482Z [error] 2026-04-21 05:59:29,683 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDTB 429 (56 bytes)
-2026-04-21T05:59:29.687888350Z [error] 2026-04-21 05:59:29,683 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-21T05:59:29.687895472Z [error] 2026-04-21 05:59:29,683 WARNING [basis_state] Failed to fetch history for stablecoin:USDTB
-2026-04-21T05:59:29.687899866Z [error] 2026-04-21 05:59:29,683 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDD params={'format': 'json'}
-2026-04-21T05:59:29.715988900Z [error] 2026-04-21 05:59:29,714 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDD?format=json "HTTP/1.1 429 "
-2026-04-21T05:59:29.718223954Z [error] 2026-04-21 05:59:29,714 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDD 429 (56 bytes)
-2026-04-21T05:59:29.718228815Z [error] 2026-04-21 05:59:29,714 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-21T05:59:29.718232120Z [error] 2026-04-21 05:59:29,714 WARNING [basis_state] Failed to fetch history for stablecoin:USDD
-2026-04-21T05:59:29.718234894Z [error] 2026-04-21 05:59:29,714 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/MUSD params={'format': 'json'}
-2026-04-21T05:59:29.749169808Z [error] 2026-04-21 05:59:29,746 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/MUSD?format=json "HTTP/1.1 429 "
-2026-04-21T05:59:29.751404538Z [error] 2026-04-21 05:59:29,747 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/MUSD 429 (56 bytes)
-2026-04-21T05:59:29.751410054Z [error] 2026-04-21 05:59:29,747 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-21T05:59:29.751413626Z [error] 2026-04-21 05:59:29,747 WARNING [basis_state] Failed to fetch history for stablecoin:MUSD
-2026-04-21T05:59:29.751416897Z [error] 2026-04-21 05:59:29,747 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/GUSD params={'format': 'json'}
-2026-04-21T05:59:29.776395885Z [error] 2026-04-21 05:59:29,773 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/GUSD?format=json "HTTP/1.1 429 "
-2026-04-21T05:59:29.776401336Z [error] 2026-04-21 05:59:29,773 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/GUSD 429 (56 bytes)
-2026-04-21T05:59:29.776407325Z [error] 2026-04-21 05:59:29,773 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-21T05:59:29.776411391Z [error] 2026-04-21 05:59:29,774 WARNING [basis_state] Failed to fetch history for stablecoin:GUSD
-2026-04-21T05:59:29.776415296Z [error] 2026-04-21 05:59:29,774 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/FRAX params={'format': 'json'}
-2026-04-21T05:59:29.802267583Z [error] 2026-04-21 05:59:29,799 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/FRAX?format=json "HTTP/1.1 429 "
-2026-04-21T05:59:29.802274643Z [error] 2026-04-21 05:59:29,799 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/FRAX 429 (56 bytes)
-2026-04-21T05:59:29.802278899Z [error] 2026-04-21 05:59:29,799 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-21T05:59:29.802282946Z [error] 2026-04-21 05:59:29,800 WARNING [basis_state] Failed to fetch history for stablecoin:FRAX
-2026-04-21T05:59:29.802288080Z [error] 2026-04-21 05:59:29,800 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/LUSD params={'format': 'json'}
-2026-04-21T05:59:29.848527406Z [error] 2026-04-21 05:59:29,843 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/LUSD?format=json "HTTP/1.1 429 "
-2026-04-21T05:59:29.848549137Z [error] 2026-04-21 05:59:29,844 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/LUSD 429 (56 bytes)
-2026-04-21T05:59:29.848553253Z [error] 2026-04-21 05:59:29,844 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-21T05:59:29.848556441Z [error] 2026-04-21 05:59:29,844 WARNING [basis_state] Failed to fetch history for stablecoin:LUSD
-2026-04-21T05:59:29.848560007Z [error] 2026-04-21 05:59:29,844 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/DOLA params={'format': 'json'}
-2026-04-21T05:59:29.875665212Z [error] 2026-04-21 05:59:29,872 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/DOLA?format=json "HTTP/1.1 429 "
-2026-04-21T05:59:29.875670571Z [error] 2026-04-21 05:59:29,873 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/DOLA 429 (56 bytes)
-2026-04-21T05:59:29.875674158Z [error] 2026-04-21 05:59:29,873 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-21T05:59:29.875677802Z [error] 2026-04-21 05:59:29,873 WARNING [basis_state] Failed to fetch history for stablecoin:DOLA
-2026-04-21T05:59:29.875681425Z [error] 2026-04-21 05:59:29,873 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/EURC params={'format': 'json'}
-2026-04-21T05:59:29.902666028Z [error] 2026-04-21 05:59:29,900 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/EURC?format=json "HTTP/1.1 429 "
-2026-04-21T05:59:29.904837961Z [error] 2026-04-21 05:59:29,901 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/EURC 429 (56 bytes)
-2026-04-21T05:59:29.904843498Z [error] 2026-04-21 05:59:29,901 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-21T05:59:29.904848710Z [error] 2026-04-21 05:59:29,901 WARNING [basis_state] Failed to fetch history for stablecoin:EURC
-2026-04-21T05:59:29.904853801Z [error] 2026-04-21 05:59:29,901 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/OUSD params={'format': 'json'}
-2026-04-21T05:59:29.927388879Z [error] 2026-04-21 05:59:29,923 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/OUSD?format=json "HTTP/1.1 429 "
-2026-04-21T05:59:29.927395559Z [error] 2026-04-21 05:59:29,924 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/OUSD 429 (56 bytes)
-2026-04-21T05:59:29.927399172Z [error] 2026-04-21 05:59:29,924 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-21T05:59:29.927402444Z [error] 2026-04-21 05:59:29,924 WARNING [basis_state] Failed to fetch history for stablecoin:OUSD
-2026-04-21T05:59:29.927405607Z [error] 2026-04-21 05:59:29,924 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/MIM params={'format': 'json'}
-2026-04-21T05:59:29.953706762Z [error] 2026-04-21 05:59:29,950 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/MIM?format=json "HTTP/1.1 429 "
-2026-04-21T05:59:29.953713287Z [error] 2026-04-21 05:59:29,951 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/MIM 429 (56 bytes)
-2026-04-21T05:59:29.953719130Z [error] 2026-04-21 05:59:29,951 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-21T05:59:29.953722839Z [error] 2026-04-21 05:59:29,951 WARNING [basis_state] Failed to fetch history for stablecoin:MIM
-2026-04-21T05:59:29.953725996Z [error] 2026-04-21 05:59:29,951 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/SUSDE params={'format': 'json'}
 2026-04-21T05:59:29.984028247Z [error] 2026-04-21 05:59:29,981 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/SUSDE?format=json "HTTP/1.1 429 "
 2026-04-21T05:59:29.984034396Z [error] 2026-04-21 05:59:29,981 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/SUSDE 429 (56 bytes)
 2026-04-21T05:59:29.984037743Z [error] 2026-04-21 05:59:29,981 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
@@ -1999,3 +1831,171 @@
 2026-04-23T21:39:19.357622804Z [info] INFO:     100.64.0.23:50084 - "GET /sitemap.xml HTTP/1.1" 404 Not Found
 2026-04-23T22:30:56.688099209Z [info] INFO:     100.64.0.12:29456 - "GET /.git/config HTTP/1.1" 404 Not Found
 2026-04-23T23:15:30.946476163Z [info] INFO:     100.64.0.48:50522 - "GET / HTTP/1.1" 200 OK
+2026-04-24T00:12:33.322156703Z [info] INFO:     100.64.0.6:11528 - "GET / HTTP/1.1" 200 OK
+2026-04-24T01:06:55.556466005Z [info] INFO:     100.64.0.55:34898 - "GET /robots.txt HTTP/1.1" 404 Not Found
+2026-04-24T01:06:55.556469118Z [info] INFO:     100.64.0.55:34898 - "GET /robots.txt HTTP/1.1" 404 Not Found
+2026-04-24T01:10:15.208474208Z [info] INFO:     100.64.0.11:28912 - "GET / HTTP/1.1" 200 OK
+2026-04-24T01:11:05.213127997Z [info] INFO:     100.64.0.34:31438 - "GET / HTTP/1.1" 200 OK
+2026-04-24T01:11:06.377358015Z [info] INFO:     100.64.0.56:26374 - "GET / HTTP/1.1" 200 OK
+2026-04-24T01:30:16.869833918Z [info] INFO:     100.64.0.34:33582 - "GET / HTTP/1.1" 200 OK
+2026-04-24T01:30:16.869844206Z [info] INFO:     100.64.0.9:27588 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+2026-04-24T01:56:27.481599590Z [info] INFO:     100.64.0.49:48742 - "GET / HTTP/1.1" 200 OK
+2026-04-24T02:05:17.992522799Z [info] INFO:     100.64.0.45:52406 - "GET / HTTP/1.1" 200 OK
+2026-04-24T02:05:17.992528836Z [info] INFO:     100.64.0.45:52406 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+2026-04-24T02:05:17.992533025Z [info] INFO:     100.64.0.46:54556 - "GET /favicon.png HTTP/1.1" 404 Not Found
+2026-04-24T02:06:17.639199797Z [info] INFO:     100.64.0.46:44586 - "GET / HTTP/1.1" 200 OK
+2026-04-24T02:06:17.639208124Z [error] 2026-04-24 02:06:09,509 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/scores params=None
+2026-04-24T02:06:17.639213596Z [error] 2026-04-24 02:06:10,090 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/scores "HTTP/1.1 200 "
+2026-04-24T02:06:17.639218010Z [error] 2026-04-24 02:06:10,091 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/scores 200 (38092 bytes)
+2026-04-24T02:06:17.639222139Z [error] 2026-04-24 02:06:10,091 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/psi/scores params=None
+2026-04-24T02:06:17.639226873Z [error] 2026-04-24 02:06:10,349 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/psi/scores "HTTP/1.1 200 "
+2026-04-24T02:06:17.639232627Z [error] 2026-04-24 02:06:10,350 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/psi/scores 200 (6934 bytes)
+2026-04-24T02:06:17.639237508Z [error] 2026-04-24 02:06:10,350 INFO [basis_state] Returning 51 entities to client (caching)
+2026-04-24T02:06:17.639242290Z [error] 2026-04-24 02:06:10,351 INFO [basis_state] Computing 7d changes for 36 entities
+2026-04-24T02:06:17.639246625Z [error] 2026-04-24 02:06:10,351 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDT params={'format': 'json'}
+2026-04-24T02:06:17.639250358Z [info] INFO:     100.64.0.31:31858 - "GET /api/entities HTTP/1.1" 200 OK
+2026-04-24T02:06:17.639253999Z [info] INFO:     100.64.0.55:61086 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+2026-04-24T02:06:17.639257972Z [error] 2026-04-24 02:06:13,557 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDT?format=json "HTTP/1.1 200 "
+2026-04-24T02:06:17.639262443Z [error] 2026-04-24 02:06:13,558 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDT 200 (20755 bytes)
+2026-04-24T02:06:17.640556033Z [error] 2026-04-24 02:06:13,558 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USD1 params={'format': 'json'}
+2026-04-24T02:06:17.640560025Z [error] 2026-04-24 02:06:16,640 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USD1?format=json "HTTP/1.1 200 "
+2026-04-24T02:06:17.640563466Z [error] 2026-04-24 02:06:16,642 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USD1 200 (15822 bytes)
+2026-04-24T02:06:17.640566621Z [error] 2026-04-24 02:06:16,646 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDC params={'format': 'json'}
+2026-04-24T02:06:20.041565833Z [error] 2026-04-24 02:06:19,778 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDC?format=json "HTTP/1.1 200 "
+2026-04-24T02:06:20.041572947Z [error] 2026-04-24 02:06:19,797 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDC 200 (47498 bytes)
+2026-04-24T02:06:20.041577476Z [error] 2026-04-24 02:06:19,797 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/RLUSD params={'format': 'json'}
+2026-04-24T02:06:23.051801311Z [error] 2026-04-24 02:06:22,976 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/RLUSD?format=json "HTTP/1.1 200 "
+2026-04-24T02:06:23.051805580Z [error] 2026-04-24 02:06:22,977 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/RLUSD 200 (12002 bytes)
+2026-04-24T02:06:23.051811687Z [error] 2026-04-24 02:06:22,977 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDS params={'format': 'json'}
+2026-04-24T02:06:26.122864625Z [error] 2026-04-24 02:06:26,120 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDS?format=json "HTTP/1.1 200 "
+2026-04-24T02:06:26.128454861Z [error] 2026-04-24 02:06:26,125 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDS 200 (11980 bytes)
+2026-04-24T02:06:26.128483210Z [error] 2026-04-24 02:06:26,125 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDP params={'format': 'json'}
+2026-04-24T02:06:29.220668839Z [error] 2026-04-24 02:06:29,217 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDP?format=json "HTTP/1.1 200 "
+2026-04-24T02:06:29.222546657Z [error] 2026-04-24 02:06:29,219 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDP 200 (11789 bytes)
+2026-04-24T02:06:29.222552241Z [error] 2026-04-24 02:06:29,219 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/DAI params={'format': 'json'}
+2026-04-24T02:06:32.317529189Z [error] 2026-04-24 02:06:32,315 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/DAI?format=json "HTTP/1.1 200 "
+2026-04-24T02:06:32.319484803Z [error] 2026-04-24 02:06:32,317 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/DAI 200 (16117 bytes)
+2026-04-24T02:06:32.319490963Z [error] 2026-04-24 02:06:32,317 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/crvUSD params={'format': 'json'}
+2026-04-24T02:06:35.404635020Z [error] 2026-04-24 02:06:35,402 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/crvUSD?format=json "HTTP/1.1 200 "
+2026-04-24T02:06:35.406610608Z [error] 2026-04-24 02:06:35,403 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/crvUSD 200 (11818 bytes)
+2026-04-24T02:06:35.406615584Z [error] 2026-04-24 02:06:35,403 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/PYUSD params={'format': 'json'}
+2026-04-24T02:06:38.611153463Z [error] 2026-04-24 02:06:38,609 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/PYUSD?format=json "HTTP/1.1 200 "
+2026-04-24T02:06:38.612727002Z [error] 2026-04-24 02:06:38,610 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/PYUSD 200 (16837 bytes)
+2026-04-24T02:06:38.612730797Z [error] 2026-04-24 02:06:38,611 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/GHO params={'format': 'json'}
+2026-04-24T02:06:42.072771559Z [error] 2026-04-24 02:06:41,748 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/GHO?format=json "HTTP/1.1 200 "
+2026-04-24T02:06:42.072779488Z [error] 2026-04-24 02:06:41,749 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/GHO 200 (12335 bytes)
+2026-04-24T02:06:42.072784693Z [error] 2026-04-24 02:06:41,749 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/FDUSD params={'format': 'json'}
+2026-04-24T02:06:45.069420723Z [error] 2026-04-24 02:06:44,943 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/FDUSD?format=json "HTTP/1.1 200 "
+2026-04-24T02:06:45.069426878Z [error] 2026-04-24 02:06:44,945 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/FDUSD 200 (41157 bytes)
+2026-04-24T02:06:45.069429993Z [error] 2026-04-24 02:06:44,953 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDTB params={'format': 'json'}
+2026-04-24T02:06:48.111813675Z [error] 2026-04-24 02:06:48,107 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDTB?format=json "HTTP/1.1 200 "
+2026-04-24T02:06:48.111822138Z [error] 2026-04-24 02:06:48,109 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDTB 200 (11659 bytes)
+2026-04-24T02:06:48.111827478Z [error] 2026-04-24 02:06:48,109 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDD params={'format': 'json'}
+2026-04-24T02:06:51.241108700Z [error] 2026-04-24 02:06:51,238 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDD?format=json "HTTP/1.1 200 "
+2026-04-24T02:06:51.241113384Z [error] 2026-04-24 02:06:51,239 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDD 200 (14242 bytes)
+2026-04-24T02:06:51.242716210Z [error] 2026-04-24 02:06:51,239 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/TUSD params={'format': 'json'}
+2026-04-24T02:06:54.393777923Z [error] 2026-04-24 02:06:54,391 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/TUSD?format=json "HTTP/1.1 200 "
+2026-04-24T02:06:54.395451098Z [error] 2026-04-24 02:06:54,392 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/TUSD 200 (16107 bytes)
+2026-04-24T02:06:54.395454992Z [error] 2026-04-24 02:06:54,392 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDe params={'format': 'json'}
+2026-04-24T02:06:57.607495914Z [error] 2026-04-24 02:06:57,604 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDe?format=json "HTTP/1.1 200 "
+2026-04-24T02:06:57.607501937Z [error] 2026-04-24 02:06:57,605 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDe 200 (18244 bytes)
+2026-04-24T02:06:57.607506114Z [error] 2026-04-24 02:06:57,606 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/MUSD params={'format': 'json'}
+2026-04-24T02:06:57.640607904Z [error] 2026-04-24 02:06:57,637 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/MUSD?format=json "HTTP/1.1 429 "
+2026-04-24T02:06:57.640618499Z [error] 2026-04-24 02:06:57,638 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/MUSD 429 (56 bytes)
+2026-04-24T02:06:57.640623704Z [error] 2026-04-24 02:06:57,638 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
+2026-04-24T02:06:57.640628184Z [error] 2026-04-24 02:06:57,638 WARNING [basis_state] Failed to fetch history for stablecoin:MUSD
+2026-04-24T02:06:57.640632459Z [error] 2026-04-24 02:06:57,638 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/MIM params={'format': 'json'}
+2026-04-24T02:06:57.672449669Z [error] 2026-04-24 02:06:57,670 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/MIM?format=json "HTTP/1.1 429 "
+2026-04-24T02:06:57.672455352Z [error] 2026-04-24 02:06:57,670 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/MIM 429 (56 bytes)
+2026-04-24T02:06:57.672459126Z [error] 2026-04-24 02:06:57,670 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
+2026-04-24T02:06:57.672462762Z [error] 2026-04-24 02:06:57,670 WARNING [basis_state] Failed to fetch history for stablecoin:MIM
+2026-04-24T02:06:57.672466395Z [error] 2026-04-24 02:06:57,670 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/LUSD params={'format': 'json'}
+2026-04-24T02:06:57.721499580Z [error] 2026-04-24 02:06:57,719 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/LUSD?format=json "HTTP/1.1 429 "
+2026-04-24T02:06:57.721503034Z [error] 2026-04-24 02:06:57,719 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/LUSD 429 (56 bytes)
+2026-04-24T02:06:57.721506020Z [error] 2026-04-24 02:06:57,720 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
+2026-04-24T02:06:57.723459076Z [error] 2026-04-24 02:06:57,720 WARNING [basis_state] Failed to fetch history for stablecoin:LUSD
+2026-04-24T02:06:57.723463248Z [error] 2026-04-24 02:06:57,720 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/DOLA params={'format': 'json'}
+2026-04-24T02:06:58.077891490Z [error] 2026-04-24 02:06:57,745 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/DOLA?format=json "HTTP/1.1 429 "
+2026-04-24T02:06:58.077901967Z [error] 2026-04-24 02:06:57,745 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/DOLA 429 (56 bytes)
+2026-04-24T02:06:58.077907805Z [error] 2026-04-24 02:06:57,745 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
+2026-04-24T02:06:58.077913978Z [error] 2026-04-24 02:06:57,745 WARNING [basis_state] Failed to fetch history for stablecoin:DOLA
+2026-04-24T02:06:58.077919150Z [error] 2026-04-24 02:06:57,745 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/FRAX params={'format': 'json'}
+2026-04-24T02:06:58.077924362Z [error] 2026-04-24 02:06:57,774 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/FRAX?format=json "HTTP/1.1 429 "
+2026-04-24T02:06:58.077928777Z [error] 2026-04-24 02:06:57,775 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/FRAX 429 (56 bytes)
+2026-04-24T02:06:58.077934093Z [error] 2026-04-24 02:06:57,775 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
+2026-04-24T02:06:58.077938417Z [error] 2026-04-24 02:06:57,775 WARNING [basis_state] Failed to fetch history for stablecoin:FRAX
+2026-04-24T02:06:58.077942777Z [error] 2026-04-24 02:06:57,775 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/SUSDS params={'format': 'json'}
+2026-04-24T02:07:01.120723115Z [error] 2026-04-24 02:07:00,927 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/SUSDS?format=json "HTTP/1.1 200 "
+2026-04-24T02:07:01.120728070Z [error] 2026-04-24 02:07:00,928 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/SUSDS 200 (11812 bytes)
+2026-04-24T02:07:01.120731126Z [error] 2026-04-24 02:07:00,928 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/EURC params={'format': 'json'}
+2026-04-24T02:07:04.092211998Z [error] 2026-04-24 02:07:04,071 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/EURC?format=json "HTTP/1.1 200 "
+2026-04-24T02:07:04.092220547Z [error] 2026-04-24 02:07:04,073 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/EURC 200 (12154 bytes)
+2026-04-24T02:07:04.092225629Z [error] 2026-04-24 02:07:04,074 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/GUSD params={'format': 'json'}
+2026-04-24T02:07:07.184252233Z [error] 2026-04-24 02:07:07,180 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/GUSD?format=json "HTTP/1.1 200 "
+2026-04-24T02:07:07.184256630Z [error] 2026-04-24 02:07:07,181 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/GUSD 200 (11591 bytes)
+2026-04-24T02:07:07.184260626Z [error] 2026-04-24 02:07:07,182 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/SUSDE params={'format': 'json'}
+2026-04-24T02:07:07.214571836Z [error] 2026-04-24 02:07:07,212 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/SUSDE?format=json "HTTP/1.1 429 "
+2026-04-24T02:07:07.216676448Z [error] 2026-04-24 02:07:07,213 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/SUSDE 429 (56 bytes)
+2026-04-24T02:07:07.216683591Z [error] 2026-04-24 02:07:07,213 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
+2026-04-24T02:07:07.216687466Z [error] 2026-04-24 02:07:07,213 WARNING [basis_state] Failed to fetch history for stablecoin:SUSDE
+2026-04-24T02:07:07.216692175Z [error] 2026-04-24 02:07:07,213 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/EURI params={'format': 'json'}
+2026-04-24T02:07:07.402295558Z [error] 2026-04-24 02:07:07,399 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/EURI?format=json "HTTP/1.1 429 "
+2026-04-24T02:07:07.402300269Z [error] 2026-04-24 02:07:07,399 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/EURI 429 (56 bytes)
+2026-04-24T02:07:07.402304091Z [error] 2026-04-24 02:07:07,399 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
+2026-04-24T02:07:07.402307132Z [error] 2026-04-24 02:07:07,399 WARNING [basis_state] Failed to fetch history for stablecoin:EURI
+2026-04-24T02:07:07.402310441Z [error] 2026-04-24 02:07:07,400 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/STKGHO params={'format': 'json'}
+2026-04-24T02:07:07.457144091Z [error] 2026-04-24 02:07:07,455 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/STKGHO?format=json "HTTP/1.1 429 "
+2026-04-24T02:07:07.459583840Z [error] 2026-04-24 02:07:07,455 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/STKGHO 429 (56 bytes)
+2026-04-24T02:07:07.459588735Z [error] 2026-04-24 02:07:07,455 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
+2026-04-24T02:07:07.459592331Z [error] 2026-04-24 02:07:07,455 WARNING [basis_state] Failed to fetch history for stablecoin:STKGHO
+2026-04-24T02:07:07.459595357Z [error] 2026-04-24 02:07:07,455 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/STEAKUSDC params={'format': 'json'}
+2026-04-24T02:07:07.487426967Z [error] 2026-04-24 02:07:07,482 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/STEAKUSDC?format=json "HTTP/1.1 429 "
+2026-04-24T02:07:07.487434498Z [error] 2026-04-24 02:07:07,483 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/STEAKUSDC 429 (56 bytes)
+2026-04-24T02:07:07.487438764Z [error] 2026-04-24 02:07:07,483 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
+2026-04-24T02:07:07.487442430Z [error] 2026-04-24 02:07:07,483 WARNING [basis_state] Failed to fetch history for stablecoin:STEAKUSDC
+2026-04-24T02:07:07.487445839Z [error] 2026-04-24 02:07:07,483 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/SDOLA params={'format': 'json'}
+2026-04-24T02:07:07.517489963Z [error] 2026-04-24 02:07:07,514 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/SDOLA?format=json "HTTP/1.1 429 "
+2026-04-24T02:07:07.517496304Z [error] 2026-04-24 02:07:07,514 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/SDOLA 429 (56 bytes)
+2026-04-24T02:07:07.517501083Z [error] 2026-04-24 02:07:07,514 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
+2026-04-24T02:07:07.517504588Z [error] 2026-04-24 02:07:07,514 WARNING [basis_state] Failed to fetch history for stablecoin:SDOLA
+2026-04-24T02:07:07.517507675Z [error] 2026-04-24 02:07:07,514 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/BUSD0 params={'format': 'json'}
+2026-04-24T02:07:07.548845680Z [error] 2026-04-24 02:07:07,545 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/BUSD0?format=json "HTTP/1.1 429 "
+2026-04-24T02:07:07.548850131Z [error] 2026-04-24 02:07:07,546 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/BUSD0 429 (56 bytes)
+2026-04-24T02:07:07.548853285Z [error] 2026-04-24 02:07:07,546 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
+2026-04-24T02:07:07.548856074Z [error] 2026-04-24 02:07:07,546 WARNING [basis_state] Failed to fetch history for stablecoin:BUSD0
+2026-04-24T02:07:07.548859991Z [error] 2026-04-24 02:07:07,546 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/FRAX params={'format': 'json'}
+2026-04-24T02:07:07.579890912Z [error] 2026-04-24 02:07:07,575 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/FRAX?format=json "HTTP/1.1 429 "
+2026-04-24T02:07:07.579897263Z [error] 2026-04-24 02:07:07,576 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/FRAX 429 (56 bytes)
+2026-04-24T02:07:07.579901041Z [error] 2026-04-24 02:07:07,576 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
+2026-04-24T02:07:07.579906118Z [error] 2026-04-24 02:07:07,576 WARNING [basis_state] Failed to fetch history for stablecoin:FRAX
+2026-04-24T02:07:07.579910450Z [error] 2026-04-24 02:07:07,576 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/sUSD params={'format': 'json'}
+2026-04-24T02:07:07.619438344Z [error] 2026-04-24 02:07:07,616 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/sUSD?format=json "HTTP/1.1 429 "
+2026-04-24T02:07:07.619445973Z [error] 2026-04-24 02:07:07,617 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/sUSD 429 (56 bytes)
+2026-04-24T02:07:07.619450021Z [error] 2026-04-24 02:07:07,617 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
+2026-04-24T02:07:07.619453263Z [error] 2026-04-24 02:07:07,617 WARNING [basis_state] Failed to fetch history for stablecoin:sUSD
+2026-04-24T02:07:07.619456556Z [error] 2026-04-24 02:07:07,617 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/EURS params={'format': 'json'}
+2026-04-24T02:07:07.652295448Z [error] 2026-04-24 02:07:07,648 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/EURS?format=json "HTTP/1.1 429 "
+2026-04-24T02:07:07.652302985Z [error] 2026-04-24 02:07:07,649 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/EURS 429 (56 bytes)
+2026-04-24T02:07:07.652306571Z [error] 2026-04-24 02:07:07,649 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
+2026-04-24T02:07:07.652309880Z [error] 2026-04-24 02:07:07,649 WARNING [basis_state] Failed to fetch history for stablecoin:EURS
+2026-04-24T02:07:07.652312856Z [error] 2026-04-24 02:07:07,649 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/OUSD params={'format': 'json'}
+2026-04-24T02:07:07.679006964Z [error] 2026-04-24 02:07:07,675 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/OUSD?format=json "HTTP/1.1 429 "
+2026-04-24T02:07:07.679012553Z [error] 2026-04-24 02:07:07,675 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/OUSD 429 (56 bytes)
+2026-04-24T02:07:07.679016347Z [error] 2026-04-24 02:07:07,676 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
+2026-04-24T02:07:07.679019925Z [error] 2026-04-24 02:07:07,676 WARNING [basis_state] Failed to fetch history for stablecoin:OUSD
+2026-04-24T02:07:07.679023613Z [error] 2026-04-24 02:07:07,676 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDD (BTTC bridge) params={'format': 'json'}
+2026-04-24T02:07:07.706642197Z [error] 2026-04-24 02:07:07,703 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDD%20(BTTC%20bridge)?format=json "HTTP/1.1 429 "
+2026-04-24T02:07:07.706649177Z [error] 2026-04-24 02:07:07,704 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDD (BTTC bridge) 429 (56 bytes)
+2026-04-24T02:07:07.706654524Z [error] 2026-04-24 02:07:07,704 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
+2026-04-24T02:07:07.706658547Z [error] 2026-04-24 02:07:07,704 WARNING [basis_state] Failed to fetch history for stablecoin:USDD (BTTC bridge)
+2026-04-24T02:07:07.706663166Z [error] 2026-04-24 02:07:07,704 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/RAI params={'format': 'json'}
+2026-04-24T02:07:07.731310981Z [error] 2026-04-24 02:07:07,728 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/RAI?format=json "HTTP/1.1 429 "
+2026-04-24T02:07:07.731317546Z [error] 2026-04-24 02:07:07,729 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/RAI 429 (56 bytes)
+2026-04-24T02:07:07.731322127Z [error] 2026-04-24 02:07:07,729 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
+2026-04-24T02:07:07.731326380Z [error] 2026-04-24 02:07:07,729 WARNING [basis_state] Failed to fetch history for stablecoin:RAI
+2026-04-24T02:07:07.731329948Z [error] 2026-04-24 02:07:07,729 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/EURE params={'format': 'json'}
+2026-04-24T02:07:08.077579213Z [error] 2026-04-24 02:07:07,766 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/EURE?format=json "HTTP/1.1 429 "
+2026-04-24T02:07:08.077587512Z [error] 2026-04-24 02:07:07,767 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/EURE 429 (56 bytes)
+2026-04-24T02:07:08.077591957Z [error] 2026-04-24 02:07:07,767 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
+2026-04-24T02:07:08.077595564Z [error] 2026-04-24 02:07:07,767 WARNING [basis_state] Failed to fetch history for stablecoin:EURE
+2026-04-24T02:07:08.077598952Z [error] 2026-04-24 02:07:07,767 INFO [basis_state] 7d changes computed for 35 entities
