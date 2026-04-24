@@ -1,10 +1,3 @@
-2026-04-21T14:31:32.195543334Z [error] 2026-04-21 14:31:31,807 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/STEAKUSDC 429 (56 bytes)
-2026-04-21T14:31:32.195547738Z [error] 2026-04-21 14:31:31,807 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-21T14:31:32.195551475Z [error] 2026-04-21 14:31:31,807 WARNING [basis_state] Failed to fetch history for stablecoin:STEAKUSDC
-2026-04-21T14:31:32.195555092Z [error] 2026-04-21 14:31:31,807 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/EURE params={'format': 'json'}
-2026-04-21T14:31:32.195559176Z [error] 2026-04-21 14:31:31,830 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/EURE?format=json "HTTP/1.1 429 "
-2026-04-21T14:31:32.195563330Z [error] 2026-04-21 14:31:31,831 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/EURE 429 (56 bytes)
-2026-04-21T14:31:32.195566980Z [error] 2026-04-21 14:31:31,831 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
 2026-04-21T14:31:32.195570974Z [error] 2026-04-21 14:31:31,831 WARNING [basis_state] Failed to fetch history for stablecoin:EURE
 2026-04-21T14:31:32.195574772Z [error] 2026-04-21 14:31:31,831 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/STKGHO params={'format': 'json'}
 2026-04-21T14:31:32.195578820Z [error] 2026-04-21 14:31:31,853 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/STKGHO?format=json "HTTP/1.1 429 "
@@ -1999,3 +1992,10 @@
 2026-04-24T22:17:05.741219441Z [info] INFO:     100.64.0.46:39150 - "GET /robots.txt HTTP/1.1" 404 Not Found
 2026-04-24T22:17:05.741229575Z [info] INFO:     100.64.0.55:11080 - "GET / HTTP/1.1" 200 OK
 2026-04-24T22:20:45.986229208Z [info] INFO:     100.64.0.13:29498 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
+2026-04-24T23:07:28.219911139Z [info] INFO:     100.64.0.56:42494 - "GET /robots.txt HTTP/1.1" 404 Not Found
+2026-04-24T23:07:28.219917161Z [info] INFO:     100.64.0.57:53134 - "HEAD / HTTP/1.1" 405 Method Not Allowed
+2026-04-24T23:07:28.219920714Z [info] INFO:     100.64.0.30:10576 - "GET /robots.txt HTTP/1.1" 404 Not Found
+2026-04-24T23:07:28.219923957Z [info] INFO:     100.64.0.57:53144 - "GET / HTTP/1.1" 200 OK
+2026-04-24T23:19:09.021437310Z [info] INFO:     100.64.0.20:29968 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
+2026-04-24T23:29:38.720319755Z [info] INFO:     100.64.0.44:62124 - "GET /robots.txt HTTP/1.1" 404 Not Found
+2026-04-24T23:29:38.720323525Z [info] INFO:     100.64.0.32:23416 - "GET /robots.txt HTTP/1.1" 404 Not Found
