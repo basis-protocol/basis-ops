@@ -1,28 +1,3 @@
-2026-04-21T05:59:29.984028247Z [error] 2026-04-21 05:59:29,981 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/SUSDE?format=json "HTTP/1.1 429 "
-2026-04-21T05:59:29.984034396Z [error] 2026-04-21 05:59:29,981 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/SUSDE 429 (56 bytes)
-2026-04-21T05:59:29.984037743Z [error] 2026-04-21 05:59:29,981 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-21T05:59:29.984040445Z [error] 2026-04-21 05:59:29,982 WARNING [basis_state] Failed to fetch history for stablecoin:SUSDE
-2026-04-21T05:59:29.984043172Z [error] 2026-04-21 05:59:29,982 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/SUSDS params={'format': 'json'}
-2026-04-21T05:59:30.014524780Z [error] 2026-04-21 05:59:30,009 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/SUSDS?format=json "HTTP/1.1 429 "
-2026-04-21T05:59:30.014530087Z [error] 2026-04-21 05:59:30,010 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/SUSDS 429 (56 bytes)
-2026-04-21T05:59:30.014533328Z [error] 2026-04-21 05:59:30,010 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-21T05:59:30.014536634Z [error] 2026-04-21 05:59:30,010 WARNING [basis_state] Failed to fetch history for stablecoin:SUSDS
-2026-04-21T05:59:30.014539643Z [error] 2026-04-21 05:59:30,010 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/EURI params={'format': 'json'}
-2026-04-21T05:59:30.041679897Z [error] 2026-04-21 05:59:30,039 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/EURI?format=json "HTTP/1.1 429 "
-2026-04-21T05:59:30.043426340Z [error] 2026-04-21 05:59:30,039 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/EURI 429 (56 bytes)
-2026-04-21T05:59:30.043430466Z [error] 2026-04-21 05:59:30,039 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-21T05:59:30.043433435Z [error] 2026-04-21 05:59:30,040 WARNING [basis_state] Failed to fetch history for stablecoin:EURI
-2026-04-21T05:59:30.043436431Z [error] 2026-04-21 05:59:30,040 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/STEAKUSDC params={'format': 'json'}
-2026-04-21T05:59:30.068756681Z [error] 2026-04-21 05:59:30,066 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/STEAKUSDC?format=json "HTTP/1.1 429 "
-2026-04-21T05:59:30.071096474Z [error] 2026-04-21 05:59:30,067 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/STEAKUSDC 429 (56 bytes)
-2026-04-21T05:59:30.071111973Z [error] 2026-04-21 05:59:30,067 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-21T05:59:30.071115476Z [error] 2026-04-21 05:59:30,067 WARNING [basis_state] Failed to fetch history for stablecoin:STEAKUSDC
-2026-04-21T05:59:30.071118466Z [error] 2026-04-21 05:59:30,067 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/FRAX params={'format': 'json'}
-2026-04-21T05:59:30.092813973Z [error] 2026-04-21 05:59:30,090 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/FRAX?format=json "HTTP/1.1 429 "
-2026-04-21T05:59:30.092819119Z [error] 2026-04-21 05:59:30,090 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/FRAX 429 (56 bytes)
-2026-04-21T05:59:30.092822742Z [error] 2026-04-21 05:59:30,090 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-21T05:59:30.094785934Z [error] 2026-04-21 05:59:30,090 WARNING [basis_state] Failed to fetch history for stablecoin:FRAX
-2026-04-21T05:59:30.094790404Z [error] 2026-04-21 05:59:30,090 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/EURE params={'format': 'json'}
 2026-04-21T05:59:30.501958701Z [error] 2026-04-21 05:59:30,140 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/EURE?format=json "HTTP/1.1 429 "
 2026-04-21T05:59:30.501963994Z [error] 2026-04-21 05:59:30,141 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/EURE 429 (56 bytes)
 2026-04-21T05:59:30.501969283Z [error] 2026-04-21 05:59:30,141 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
@@ -1999,3 +1974,28 @@
 2026-04-24T02:07:08.077591957Z [error] 2026-04-24 02:07:07,767 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
 2026-04-24T02:07:08.077595564Z [error] 2026-04-24 02:07:07,767 WARNING [basis_state] Failed to fetch history for stablecoin:EURE
 2026-04-24T02:07:08.077598952Z [error] 2026-04-24 02:07:07,767 INFO [basis_state] 7d changes computed for 35 entities
+2026-04-24T02:12:47.775456724Z [info] INFO:     100.64.0.33:48552 - "GET / HTTP/1.1" 200 OK
+2026-04-24T02:13:37.777147538Z [info] INFO:     100.64.0.8:60334 - "GET / HTTP/1.1" 200 OK
+2026-04-24T02:17:47.803748239Z [info] INFO:     100.64.0.26:11098 - "GET / HTTP/1.1" 200 OK
+2026-04-24T02:18:47.803149210Z [info] INFO:     100.64.0.37:24564 - "GET /apple-touch-icon.png HTTP/1.1" 404 Not Found
+2026-04-24T02:18:47.803155782Z [info] INFO:     100.64.0.29:35896 - "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 Not Found
+2026-04-24T02:18:47.803159808Z [info] INFO:     100.64.0.56:17450 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+2026-04-24T02:18:47.803163479Z [error] 2026-04-24 02:18:44,245 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/scores params=None
+2026-04-24T02:18:47.803167385Z [error] 2026-04-24 02:18:44,752 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/scores "HTTP/1.1 200 "
+2026-04-24T02:18:47.803171405Z [error] 2026-04-24 02:18:44,764 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/scores 200 (38102 bytes)
+2026-04-24T02:18:47.803181456Z [error] 2026-04-24 02:18:44,764 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/psi/scores params=None
+2026-04-24T02:18:47.803185425Z [error] 2026-04-24 02:18:45,059 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/psi/scores "HTTP/1.1 200 "
+2026-04-24T02:18:47.803189601Z [error] 2026-04-24 02:18:45,060 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/psi/scores 200 (6934 bytes)
+2026-04-24T02:18:47.803192732Z [error] 2026-04-24 02:18:45,060 INFO [basis_state] Returning 51 entities to client (caching)
+2026-04-24T02:18:47.803196436Z [info] INFO:     100.64.0.16:42164 - "GET /api/entities HTTP/1.1" 200 OK
+2026-04-24T02:18:47.803201529Z [info] INFO:     100.64.0.16:42164 - "GET / HTTP/1.1" 200 OK
+2026-04-24T02:18:47.803205676Z [error] 2026-04-24 02:18:45,212 INFO [basis_state] Returning 51 cached entities
+2026-04-24T02:18:47.803216960Z [info] INFO:     100.64.0.37:24564 - "GET /api/entities HTTP/1.1" 200 OK
+2026-04-24T02:18:47.803224303Z [info] INFO:     100.64.0.56:17450 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+2026-04-24T02:18:47.804682405Z [info] INFO:     100.64.0.57:24752 - "GET /apple-touch-icon.png HTTP/1.1" 404 Not Found
+2026-04-24T02:18:47.804689007Z [info] INFO:     100.64.0.28:17778 - "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 Not Found
+2026-04-24T02:18:50.346010578Z [info] INFO:     100.64.0.37:24578 - "GET /ops HTTP/1.1" 404 Not Found
+2026-04-24T02:18:58.922547769Z [info] INFO:     100.64.0.57:44656 - "GET / HTTP/1.1" 200 OK
+2026-04-24T02:18:59.026310976Z [error] 2026-04-24 02:18:59,022 INFO [basis_state] Returning 51 cached entities
+2026-04-24T02:18:59.033562354Z [info] INFO:     100.64.0.16:57560 - "GET /api/entities HTTP/1.1" 200 OK
+2026-04-24T03:21:52.606534203Z [info] INFO:     100.64.0.17:39508 - "GET / HTTP/1.1" 200 OK
