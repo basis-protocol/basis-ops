@@ -1,87 +1,1015 @@
-2026-04-26T21:43:40.119311978Z [info] Starting Container
-2026-04-26T21:43:41.898840957Z [error] 2026-04-26 21:43:40,621 [WARNING] app.server: x402 not installed — paid endpoints disabled. Run: pip install x402
-2026-04-26T21:43:41.898846963Z [error] 2026-04-26 21:43:40,699 [INFO] main: Initializing database pool...
-2026-04-26T21:43:41.898852567Z [error] 2026-04-26 21:43:40,699 [INFO] app.database: Database URL prefix: postgresql://neondb_owner:npg_ZQ7pTvYVNE1U@ep-soft...
-2026-04-26T21:43:41.898858387Z [error] 2026-04-26 21:43:41,360 [INFO] app.database: Database pool initialized (min=2, max=10, keepalives=on)
-2026-04-26T21:43:41.898864389Z [error] 2026-04-26 21:43:41,571 [INFO] main: Database connected ✓
-2026-04-26T21:43:41.898870397Z [error] 2026-04-26 21:43:41,783 [INFO] main: Migration 001_initial_schema already applied ✓
-2026-04-26T21:43:42.006968179Z [error] 2026-04-26 21:43:41,994 [INFO] main: Migration 002_import_governance already applied ✓
-2026-04-26T21:43:42.206413270Z [error] 2026-04-26 21:43:42,205 [INFO] main: Migration 006_add_usd1 already applied ✓
-2026-04-26T21:43:42.418100928Z [error] 2026-04-26 21:43:42,417 [INFO] main: Migration 007_wallet_graph already applied ✓
-2026-04-26T21:43:43.085455897Z [error] 2026-04-26 21:43:42,628 [INFO] main: Migration 011_token_type_column already applied ✓
-2026-04-26T21:43:43.085459718Z [error] 2026-04-26 21:43:42,840 [INFO] main: Migration 012_widen_symbol_columns already applied ✓
-2026-04-26T21:43:43.085463781Z [error] 2026-04-26 21:43:43,051 [INFO] main: Migration 013_api_usage already applied ✓
-2026-04-26T21:43:43.264391250Z [error] 2026-04-26 21:43:43,262 [INFO] main: Migration 014_assessment_events already applied ✓
-2026-04-26T21:44:03.265542026Z [error] 2026-04-26 21:44:03,118 [ERROR] main: [migrations] 106 migration files, 101 recorded in DB
-2026-04-26T21:44:03.333473565Z [error] 2026-04-26 21:44:03,330 [INFO] main: Database ready: 36 stablecoins registered ✓
-2026-04-26T21:44:03.333477571Z [error] 2026-04-26 21:44:03,330 [INFO] main: Worker disabled (set WORKER_ENABLED=true to enable)
-2026-04-26T21:44:03.333481719Z [error] 2026-04-26 21:44:03,330 [INFO] main: Keeper disabled (KEEPER_PRIVATE_KEY not set)
-2026-04-26T21:44:03.348998729Z [error] 2026-04-26 21:44:03,346 [INFO] main: Starting API on port 8000
-2026-04-26T21:44:03.349011055Z [error] INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-2026-04-26T21:44:03.349017826Z [error] INFO:     Started parent process [1]
-2026-04-26T21:44:04.123996656Z [error] INFO:     Started server process [4]
-2026-04-26T21:44:04.124006487Z [error] INFO:     Waiting for application startup.
-2026-04-26T21:44:04.124012884Z [error] 2026-04-26 21:44:03,977 [INFO] app.database: Database URL prefix: postgresql://neondb_owner:npg_ZQ7pTvYVNE1U@ep-soft...
-2026-04-26T21:44:04.124071904Z [error] 2026-04-26 21:44:03,837 [WARNING] app.server: x402 not installed — paid endpoints disabled. Run: pip install x402
-2026-04-26T21:44:04.124078470Z [error] 2026-04-26 21:44:03,868 [WARNING] app.server: x402 not installed — paid endpoints disabled. Run: pip install x402
-2026-04-26T21:44:04.124084376Z [error] INFO:     Started server process [5]
-2026-04-26T21:44:04.124092288Z [error] INFO:     Waiting for application startup.
-2026-04-26T21:44:04.124099206Z [error] 2026-04-26 21:44:03,968 [INFO] app.database: Database URL prefix: postgresql://neondb_owner:npg_ZQ7pTvYVNE1U@ep-soft...
-2026-04-26T21:44:05.041005580Z [error] 2026-04-26 21:44:04,613 [INFO] app.database: Database pool initialized (min=2, max=10, keepalives=on)
-2026-04-26T21:44:05.041012204Z [error] 2026-04-26 21:44:04,623 [INFO] app.database: Database pool initialized (min=2, max=10, keepalives=on)
-2026-04-26T21:44:07.280071680Z [error] 2026-04-26 21:44:07,219 [INFO] app.governance: Governance tables ready
-2026-04-26T21:44:07.280328033Z [error] 2026-04-26 21:44:06,726 [INFO] app.server: CDA issuer registry seeded (10 upserts attempted)
-2026-04-26T21:44:07.280335262Z [error] 2026-04-26 21:44:06,779 [INFO] app.server: CDA issuer registry seeded (10 upserts attempted)
-2026-04-26T21:44:07.280493838Z [error] 2026-04-26 21:44:07,223 [INFO] app.server: Governance intelligence routes registered
-2026-04-26T21:44:07.280503563Z [error] 2026-04-26 21:44:07,229 [INFO] app.governance: Governance tables ready
-2026-04-26T21:44:07.280511655Z [error] 2026-04-26 21:44:07,232 [INFO] app.server: Governance intelligence routes registered
-2026-04-26T21:44:07.280517773Z [error] 2026-04-26 21:44:07,238 [INFO] app.server: Content engine routes registered
-2026-04-26T21:44:07.280523852Z [error] 2026-04-26 21:44:07,243 [INFO] app.server: Content engine routes registered
-2026-04-26T21:44:07.280529605Z [error] 2026-04-26 21:44:07,271 [INFO] app.server: Wallet indexer routes registered
-2026-04-26T21:44:07.280535384Z [error] 2026-04-26 21:44:07,274 [INFO] app.server: Wallet indexer routes registered
-2026-04-26T21:44:07.486857566Z [error] 2026-04-26 21:44:07,482 [INFO] app.server: Cleared stale temporal reconstruction cache entries
-2026-04-26T21:44:07.486865063Z [error] 2026-04-26 21:44:07,482 [INFO] app.server: Cleared stale temporal reconstruction cache entries
-2026-04-26T21:44:08.115944482Z [error] 2026-04-26 21:44:08,113 [INFO] app.server: historical_protocol_data: 23845 rows
-2026-04-26T21:44:08.115955292Z [error] 2026-04-26 21:44:08,115 [INFO] app.server: historical_protocol_data: 23845 rows
-2026-04-26T21:44:08.127750632Z [error] 2026-04-26 21:44:08,120 [INFO] app.agent.api: Agent API routes registered: /api/assessments, /api/pulse
-2026-04-26T21:44:08.127755772Z [error] 2026-04-26 21:44:08,120 [INFO] app.server: Verification agent routes registered
-2026-04-26T21:44:08.127760043Z [error] 2026-04-26 21:44:08,121 [INFO] app.agent.api: Agent API routes registered: /api/assessments, /api/pulse
-2026-04-26T21:44:08.127766257Z [error] 2026-04-26 21:44:08,121 [INFO] app.server: Verification agent routes registered
-2026-04-26T21:44:08.133679896Z [error] 2026-04-26 21:44:08,130 [INFO] app.publisher.page_renderer: Page routes registered: /terms, /wallet, /asset, /assessment, /pulse, /sitemap.xml, /robots.txt
-2026-04-26T21:44:08.133687295Z [error] 2026-04-26 21:44:08,130 [INFO] app.server: Publisher page routes registered
-2026-04-26T21:44:08.133692055Z [error] 2026-04-26 21:44:08,131 [INFO] app.publisher.page_renderer: Page routes registered: /terms, /wallet, /asset, /assessment, /pulse, /sitemap.xml, /robots.txt
-2026-04-26T21:44:08.133696091Z [error] 2026-04-26 21:44:08,131 [INFO] app.server: Publisher page routes registered
-2026-04-26T21:44:08.229991575Z [error] 2026-04-26 21:44:08,227 [INFO] app.ops.routes: Operations Hub routes registered
-2026-04-26T21:44:08.240979576Z [error] 2026-04-26 21:44:08,239 [INFO] app.ops.routes: Operations Hub routes registered
-2026-04-26T21:44:08.249796202Z [error] 2026-04-26 21:44:08,248 [INFO] app.ops.entity_routes: Entity view routes registered
-2026-04-26T21:44:08.249806257Z [error] 2026-04-26 21:44:08,248 [INFO] app.server: Operations Hub routes registered
-2026-04-26T21:44:08.249811926Z [error] 2026-04-26 21:44:08,248 [WARNING] app.server: Squads Guard not available: No module named 'squads_guard'
-2026-04-26T21:44:08.256120553Z [error] 2026-04-26 21:44:08,252 [INFO] app.ops.entity_routes: Entity view routes registered
-2026-04-26T21:44:08.256127080Z [error] 2026-04-26 21:44:08,252 [INFO] app.server: Operations Hub routes registered
-2026-04-26T21:44:08.256131330Z [error] 2026-04-26 21:44:08,252 [WARNING] app.server: Squads Guard not available: No module named 'squads_guard'
-2026-04-26T21:44:08.591600668Z [error] 2026-04-26 21:44:08,590 [INFO] app.server: MCP HTTP endpoint registered at /mcp
-2026-04-26T21:44:09.187334586Z [error] 2026-04-26 21:44:08,596 [INFO] app.server: Incident routes registered (/api/incident/*, /api/incident-notify)
-2026-04-26T21:44:09.187342218Z [error] 2026-04-26 21:44:08,626 [INFO] app.server: MCP HTTP endpoint registered at /mcp
-2026-04-26T21:44:09.187347724Z [error] 2026-04-26 21:44:08,630 [INFO] app.server: Incident routes registered (/api/incident/*, /api/incident-notify)
-2026-04-26T21:44:09.187354781Z [error] 2026-04-26 21:44:08,643 [INFO] app.server: Engine routes registered (/api/engine/*)
-2026-04-26T21:44:09.187358473Z [error] INFO:     Application startup complete.
-2026-04-26T21:44:09.187370014Z [error] 2026-04-26 21:44:08,674 [INFO] app.server: Mounted /share from /app/public/share
-2026-04-26T21:44:09.187373971Z [error] 2026-04-26 21:44:08,886 [INFO] mcp.server.streamable_http_manager: StreamableHTTP session manager started
-2026-04-26T21:44:09.187384244Z [error] 2026-04-26 21:44:08,644 [INFO] app.server: Mounted /share from /app/public/share
-2026-04-26T21:44:09.187386021Z [error] 2026-04-26 21:44:08,674 [INFO] app.server: Basis Protocol API started
-2026-04-26T21:44:09.187398139Z [error] 2026-04-26 21:44:08,644 [INFO] app.server: Basis Protocol API started
-2026-04-26T21:44:09.187400104Z [error] 2026-04-26 21:44:08,859 [WARNING] app.ops.tools.alerter: [alerter] daily cap reached (20/20), dropping info: service_restart
-2026-04-26T21:44:09.187400141Z [error] INFO:     Application startup complete.
-2026-04-26T21:44:09.187408022Z [error] 2026-04-26 21:44:08,673 [INFO] app.server: Engine routes registered (/api/engine/*)
-2026-04-26T21:44:09.187414680Z [error] 2026-04-26 21:44:08,859 [INFO] mcp.server.streamable_http_manager: StreamableHTTP session manager started
-2026-04-26T21:44:09.187420841Z [error] 2026-04-26 21:44:08,885 [WARNING] app.ops.tools.alerter: [alerter] daily cap reached (20/20), dropping info: service_restart
-2026-04-26T21:45:09.429989543Z [info] INFO:     100.64.0.8:19666 - "POST /api/ops/health/check HTTP/1.1" 200 OK
-2026-04-26T21:45:19.399218062Z [info] INFO:     100.64.0.2:48818 - "GET /api/health HTTP/1.1" 200 OK
-2026-04-26T21:45:19.399227375Z [error] 2026-04-26 21:45:19,341 [INFO] httpx: HTTP Request: GET https://basisprotocol.xyz/api/health "HTTP/1.1 200 "
-2026-04-26T21:45:38.980100348Z [error] 2026-04-26 21:45:36,374 [WARNING] app.report: _get_holder_concentration_trend(usdc) failed: relation "concentration_snapshots" does not exist
-2026-04-26T21:45:38.980104903Z [error] LINE 4:             FROM concentration_snapshots
-2026-04-26T21:45:38.980109209Z [error]                          ^
-2026-04-26T21:45:38.980113473Z [error] 
-2026-04-26T21:45:38.980118962Z [info] INFO:     100.64.0.6:14316 - "GET /api/reports/stablecoin/usdc?template=sbt_metadata HTTP/1.1" 200 OK
-2026-04-26T21:45:38.980123548Z [error] 2026-04-26 21:45:37,019 [INFO] httpx: HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/usdc?template=sbt_metadata "HTTP/1.1 200 "
-2026-04-26T21:46:28.985416816Z [info] INFO:     100.64.0.9:24566 - "GET / HTTP/1.1" 200 OK
+2026-04-26T22:27:55.571827201Z [info] Starting Container
+2026-04-26T22:27:56.183457627Z [error] 2026-04-26 22:27:56,076 [INFO] app.database: Database pool initialized (min=2, max=10, keepalives=on)
+2026-04-26T22:27:56.183464006Z [error] 2026-04-26 22:27:55,383 [INFO] main: Initializing database pool...
+2026-04-26T22:27:56.183469502Z [error] 2026-04-26 22:27:55,327 [WARNING] app.server: x402 not installed — paid endpoints disabled. Run: pip install x402
+2026-04-26T22:27:56.183473089Z [error] 2026-04-26 22:27:55,383 [INFO] app.database: Database URL prefix: postgresql://neondb_owner:npg_ZQ7pTvYVNE1U@ep-soft...
+2026-04-26T22:27:56.280939302Z [error] 2026-04-26 22:27:56,273 [INFO] main: Database connected ✓
+2026-04-26T22:27:56.483022598Z [error] 2026-04-26 22:27:56,478 [INFO] main: Migration 001_initial_schema already applied ✓
+2026-04-26T22:27:56.679447683Z [error] 2026-04-26 22:27:56,675 [INFO] main: Migration 002_import_governance already applied ✓
+2026-04-26T22:27:56.875114826Z [error] 2026-04-26 22:27:56,871 [INFO] main: Migration 006_add_usd1 already applied ✓
+2026-04-26T22:27:57.176426537Z [error] 2026-04-26 22:27:57,067 [INFO] main: Migration 007_wallet_graph already applied ✓
+2026-04-26T22:27:57.274735121Z [error] 2026-04-26 22:27:57,265 [INFO] main: Migration 011_token_type_column already applied ✓
+2026-04-26T22:27:57.465717057Z [error] 2026-04-26 22:27:57,462 [INFO] main: Migration 012_widen_symbol_columns already applied ✓
+2026-04-26T22:27:57.664207488Z [error] 2026-04-26 22:27:57,659 [INFO] main: Migration 013_api_usage already applied ✓
+2026-04-26T22:27:57.860215507Z [error] 2026-04-26 22:27:57,856 [INFO] main: Migration 014_assessment_events already applied ✓
+2026-04-26T22:28:17.861351338Z [error] 2026-04-26 22:28:16,393 [ERROR] main: [migrations] 106 migration files, 101 recorded in DB
+2026-04-26T22:28:17.861355182Z [error] 2026-04-26 22:28:16,589 [INFO] main: Database ready: 36 stablecoins registered ✓
+2026-04-26T22:28:17.861358897Z [error] 2026-04-26 22:28:16,589 [INFO] main: Worker disabled (set WORKER_ENABLED=true to enable)
+2026-04-26T22:28:17.861362590Z [error] 2026-04-26 22:28:16,589 [INFO] main: Keeper disabled (KEEPER_PRIVATE_KEY not set)
+2026-04-26T22:28:17.861365616Z [error] 2026-04-26 22:28:16,599 [INFO] main: Starting API on port 8000
+2026-04-26T22:28:17.861368773Z [error] INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-04-26T22:28:17.861371832Z [error] INFO:     Started parent process [1]
+2026-04-26T22:28:17.861375025Z [error] 2026-04-26 22:28:16,952 [WARNING] app.server: x402 not installed — paid endpoints disabled. Run: pip install x402
+2026-04-26T22:28:17.861378280Z [error] 2026-04-26 22:28:16,954 [WARNING] app.server: x402 not installed — paid endpoints disabled. Run: pip install x402
+2026-04-26T22:28:17.861381424Z [error] INFO:     Started server process [5]
+2026-04-26T22:28:17.861385012Z [error] INFO:     Waiting for application startup.
+2026-04-26T22:28:17.861388072Z [error] 2026-04-26 22:28:17,025 [INFO] app.database: Database URL prefix: postgresql://neondb_owner:npg_ZQ7pTvYVNE1U@ep-soft...
+2026-04-26T22:28:17.861391419Z [error] INFO:     Started server process [4]
+2026-04-26T22:28:17.861396839Z [error] INFO:     Waiting for application startup.
+2026-04-26T22:28:17.861399840Z [error] 2026-04-26 22:28:17,026 [INFO] app.database: Database URL prefix: postgresql://neondb_owner:npg_ZQ7pTvYVNE1U@ep-soft...
+2026-04-26T22:28:17.861403029Z [error] 2026-04-26 22:28:17,703 [INFO] app.database: Database pool initialized (min=2, max=10, keepalives=on)
+2026-04-26T22:28:17.861406779Z [error] 2026-04-26 22:28:17,705 [INFO] app.database: Database pool initialized (min=2, max=10, keepalives=on)
+2026-04-26T22:28:19.685395370Z [error] 2026-04-26 22:28:19,680 [INFO] app.server: CDA issuer registry seeded (10 upserts attempted)
+2026-04-26T22:28:19.780614936Z [error] 2026-04-26 22:28:19,776 [INFO] app.server: CDA issuer registry seeded (10 upserts attempted)
+2026-04-26T22:28:20.229802712Z [error] 2026-04-26 22:28:20,143 [INFO] app.server: Governance intelligence routes registered
+2026-04-26T22:28:20.229810163Z [error] 2026-04-26 22:28:20,150 [INFO] app.server: Content engine routes registered
+2026-04-26T22:28:20.229816479Z [error] 2026-04-26 22:28:20,172 [INFO] app.server: Wallet indexer routes registered
+2026-04-26T22:28:20.229835668Z [error] 2026-04-26 22:28:20,141 [INFO] app.governance: Governance tables ready
+2026-04-26T22:28:20.235246528Z [error] 2026-04-26 22:28:20,231 [INFO] app.governance: Governance tables ready
+2026-04-26T22:28:20.237530054Z [error] 2026-04-26 22:28:20,234 [INFO] app.server: Governance intelligence routes registered
+2026-04-26T22:28:20.241526111Z [error] 2026-04-26 22:28:20,237 [INFO] app.server: Content engine routes registered
+2026-04-26T22:28:20.251418780Z [error] 2026-04-26 22:28:20,247 [INFO] app.server: Wallet indexer routes registered
+2026-04-26T22:28:20.378049767Z [error] 2026-04-26 22:28:20,373 [INFO] app.server: Cleared stale temporal reconstruction cache entries
+2026-04-26T22:28:20.447575295Z [error] 2026-04-26 22:28:20,444 [INFO] app.server: Cleared stale temporal reconstruction cache entries
+2026-04-26T22:28:21.234159329Z [error] 2026-04-26 22:28:20,995 [INFO] app.server: historical_protocol_data: 23845 rows
+2026-04-26T22:28:21.234166221Z [error] 2026-04-26 22:28:21,002 [INFO] app.agent.api: Agent API routes registered: /api/assessments, /api/pulse
+2026-04-26T22:28:21.234601928Z [error] 2026-04-26 22:28:21,002 [INFO] app.server: Verification agent routes registered
+2026-04-26T22:28:21.234610101Z [error] 2026-04-26 22:28:21,010 [INFO] app.publisher.page_renderer: Page routes registered: /terms, /wallet, /asset, /assessment, /pulse, /sitemap.xml, /robots.txt
+2026-04-26T22:28:21.234616818Z [error] 2026-04-26 22:28:21,010 [INFO] app.server: Publisher page routes registered
+2026-04-26T22:28:21.234624716Z [error] 2026-04-26 22:28:21,033 [INFO] app.server: historical_protocol_data: 23845 rows
+2026-04-26T22:28:21.234630880Z [error] 2026-04-26 22:28:21,037 [INFO] app.agent.api: Agent API routes registered: /api/assessments, /api/pulse
+2026-04-26T22:28:21.234637360Z [error] 2026-04-26 22:28:21,037 [INFO] app.server: Verification agent routes registered
+2026-04-26T22:28:21.234643200Z [error] 2026-04-26 22:28:21,039 [INFO] app.publisher.page_renderer: Page routes registered: /terms, /wallet, /asset, /assessment, /pulse, /sitemap.xml, /robots.txt
+2026-04-26T22:28:21.234648126Z [error] 2026-04-26 22:28:21,039 [INFO] app.server: Publisher page routes registered
+2026-04-26T22:28:21.234653229Z [error] 2026-04-26 22:28:21,074 [INFO] app.ops.routes: Operations Hub routes registered
+2026-04-26T22:28:21.234658766Z [error] 2026-04-26 22:28:21,085 [INFO] app.ops.entity_routes: Entity view routes registered
+2026-04-26T22:28:21.234664799Z [error] 2026-04-26 22:28:21,085 [INFO] app.server: Operations Hub routes registered
+2026-04-26T22:28:21.234669942Z [error] 2026-04-26 22:28:21,085 [WARNING] app.server: Squads Guard not available: No module named 'squads_guard'
+2026-04-26T22:28:21.234675509Z [error] 2026-04-26 22:28:21,092 [INFO] app.ops.routes: Operations Hub routes registered
+2026-04-26T22:28:21.236136389Z [error] 2026-04-26 22:28:21,096 [INFO] app.ops.entity_routes: Entity view routes registered
+2026-04-26T22:28:21.236141169Z [error] 2026-04-26 22:28:21,096 [INFO] app.server: Operations Hub routes registered
+2026-04-26T22:28:21.236146181Z [error] 2026-04-26 22:28:21,096 [WARNING] app.server: Squads Guard not available: No module named 'squads_guard'
+2026-04-26T22:28:21.308650965Z [error] 2026-04-26 22:28:21,303 [INFO] app.server: MCP HTTP endpoint registered at /mcp
+2026-04-26T22:28:21.310211282Z [error] 2026-04-26 22:28:21,307 [INFO] app.server: Incident routes registered (/api/incident/*, /api/incident-notify)
+2026-04-26T22:28:21.325601858Z [error] 2026-04-26 22:28:21,322 [INFO] app.server: MCP HTTP endpoint registered at /mcp
+2026-04-26T22:28:21.327813270Z [error] 2026-04-26 22:28:21,324 [INFO] app.server: Incident routes registered (/api/incident/*, /api/incident-notify)
+2026-04-26T22:28:21.349108300Z [error] 2026-04-26 22:28:21,343 [INFO] app.server: Engine routes registered (/api/engine/*)
+2026-04-26T22:28:21.349115000Z [error] 2026-04-26 22:28:21,343 [INFO] app.server: Mounted /share from /app/public/share
+2026-04-26T22:28:21.349120274Z [error] 2026-04-26 22:28:21,344 [INFO] app.server: Basis Protocol API started
+2026-04-26T22:28:21.353804860Z [error] 2026-04-26 22:28:21,349 [INFO] app.server: Engine routes registered (/api/engine/*)
+2026-04-26T22:28:21.353808727Z [error] 2026-04-26 22:28:21,349 [INFO] app.server: Mounted /share from /app/public/share
+2026-04-26T22:28:21.353812176Z [error] 2026-04-26 22:28:21,349 [INFO] app.server: Basis Protocol API started
+2026-04-26T22:28:21.552125131Z [error] 2026-04-26 22:28:21,549 [WARNING] app.ops.tools.alerter: [alerter] daily cap reached (20/20), dropping info: service_restart
+2026-04-26T22:28:21.552130117Z [error] 2026-04-26 22:28:21,549 [WARNING] app.ops.tools.alerter: [alerter] daily cap reached (20/20), dropping info: service_restart
+2026-04-26T22:28:21.554279247Z [error] INFO:     Application startup complete.
+2026-04-26T22:28:21.554283005Z [error] INFO:     Application startup complete.
+2026-04-26T22:28:21.554286371Z [error] 2026-04-26 22:28:21,549 [INFO] mcp.server.streamable_http_manager: StreamableHTTP session manager started
+2026-04-26T22:28:21.554290246Z [error] 2026-04-26 22:28:21,549 [INFO] mcp.server.streamable_http_manager: StreamableHTTP session manager started
+2026-04-26T22:28:22.231293093Z [info] INFO:     100.64.0.11:52340 - "GET / HTTP/1.1" 200 OK
+2026-04-26T22:28:22.527057456Z [info] INFO:     100.64.0.11:52340 - "GET /favicon.ico HTTP/1.1" 200 OK
+2026-04-26T22:29:32.528440804Z [info] INFO:     100.64.0.12:55244 - "GET / HTTP/1.1" 200 OK
+2026-04-26T22:30:02.530908217Z [info] INFO:     100.64.0.7:39278 - "GET /api/engine/coverage/drift HTTP/1.1" 200 OK
+2026-04-26T22:30:02.530916550Z [info] INFO:     100.64.0.13:34192 - "POST /api/admin/reindex?batch_size=500 HTTP/1.1" 200 OK
+2026-04-26T22:30:02.530920729Z [error] 2026-04-26 22:30:02,363 [INFO] basis.reindex: === Wallet Batch Re-index Starting === batch_size=500, provider=blockscout, etherscan_key=set (SWCSHQ...)
+2026-04-26T22:30:02.978713176Z [error] 2026-04-26 22:30:02,973 [INFO] basis.reindex: Batch: 500 wallets queued, 40234 total stale
+2026-04-26T22:30:03.326150289Z [error] 2026-04-26 22:30:03,195 [INFO] basis.reindex: Starting batch_scan_all_holdings...
+2026-04-26T22:30:03.375350212Z [info] INFO:     100.64.0.14:19012 - "POST /api/ops/health/check HTTP/1.1" 200 OK
+2026-04-26T22:30:03.396077778Z [error] 2026-04-26 22:30:03,392 [INFO] app.indexer.scanner: Batch scan [Blockscout]: 500 wallets, concurrency=10
+2026-04-26T22:30:23.398309261Z [error] 2026-04-26 22:30:19,950 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000000000000/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:23.398314727Z [info] INFO:     100.64.0.15:35690 - "GET /api/health HTTP/1.1" 200 OK
+2026-04-26T22:30:23.398318540Z [error] 2026-04-26 22:30:19,961 [INFO] httpx: HTTP Request: GET https://basisprotocol.xyz/api/health "HTTP/1.1 200 "
+2026-04-26T22:30:23.398322041Z [error] 2026-04-26 22:30:20,834 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000000000008/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:23.398325180Z [error] 2026-04-26 22:30:21,403 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000000000000000000000000000000000000000d/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:23.398328541Z [error] 2026-04-26 22:30:21,800 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000000000000000000000000000000000000000f/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:23.398331751Z [error] 2026-04-26 22:30:22,214 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000000000031/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:23.398334847Z [error] 2026-04-26 22:30:22,747 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000000000000000000000000000000000000003b/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:23.398338148Z [error] 2026-04-26 22:30:23,141 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000000000077/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:23.533134122Z [error] 2026-04-26 22:30:23,528 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000000000105/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:23.928051594Z [error] 2026-04-26 22:30:23,923 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000000000111/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:24.358368901Z [error] 2026-04-26 22:30:24,303 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000000000000000000000000000000000000012c/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:24.698944495Z [error] 2026-04-26 22:30:24,694 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000000000150/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:25.350640024Z [error] 2026-04-26 22:30:25,081 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000000000155/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:25.525211191Z [error] 2026-04-26 22:30:25,521 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000000000194/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:25.911531552Z [error] 2026-04-26 22:30:25,907 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000000000000000000000000000000000000029a/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:26.362264008Z [error] 2026-04-26 22:30:26,304 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000000000555/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:26.691553448Z [error] 2026-04-26 22:30:26,686 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000000000837/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:27.368037720Z [error] 2026-04-26 22:30:27,073 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000000001002/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:27.464160098Z [error] 2026-04-26 22:30:27,460 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000000001051/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:27.853940228Z [error] 2026-04-26 22:30:27,849 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000000002ac2/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:28.343935199Z [error] 2026-04-26 22:30:28,235 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000000005454/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:36.087773859Z [error] 2026-04-26 22:30:36,083 [WARNING] app.report: _get_holder_concentration_trend(usdc) failed: relation "concentration_snapshots" does not exist
+2026-04-26T22:30:36.087780275Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-26T22:30:36.087785223Z [error]                          ^
+2026-04-26T22:30:36.087790104Z [error] 
+2026-04-26T22:30:36.689421625Z [info] INFO:     100.64.0.6:35814 - "GET /api/reports/stablecoin/usdc?template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-26T22:30:36.736699909Z [error] 2026-04-26 22:30:36,730 [INFO] httpx: HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/usdc?template=sbt_metadata "HTTP/1.1 200 "
+2026-04-26T22:30:43.851110958Z [error] 2026-04-26 22:30:43,846 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000000013010/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:44.385580439Z [error] 2026-04-26 22:30:44,216 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000000000000000000000000000000000001311a/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:44.610306967Z [error] 2026-04-26 22:30:44,606 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000000108175/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:44.992022449Z [error] 2026-04-26 22:30:44,987 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000000123123/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:45.383473891Z [error] 2026-04-26 22:30:45,366 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000000312027/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:45.745465155Z [error] 2026-04-26 22:30:45,742 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000000313122/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:46.386234440Z [error] 2026-04-26 22:30:46,110 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000000324096/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:46.491499607Z [error] 2026-04-26 22:30:46,487 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00000000000000000000000000000000003670c5/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:46.871331565Z [error] 2026-04-26 22:30:46,867 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000000423d85/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:47.394901120Z [error] 2026-04-26 22:30:47,246 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000000538229/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:47.620420912Z [error] 2026-04-26 22:30:47,615 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000000646580/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:48.047426823Z [error] 2026-04-26 22:30:47,992 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000000712698/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:48.392165111Z [error] 2026-04-26 22:30:48,373 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000000731460/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:48.755544393Z [error] 2026-04-26 22:30:48,750 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000000938971/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:49.535569798Z [error] 2026-04-26 22:30:49,531 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000000a98ac7/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:49.912802523Z [error] 2026-04-26 22:30:49,910 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000001000000/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:50.391502975Z [error] 2026-04-26 22:30:50,293 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000001111111/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:50.669568182Z [error] 2026-04-26 22:30:50,664 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000001321313/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:51.043522129Z [error] 2026-04-26 22:30:51,040 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000007abd467/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:51.423334198Z [error] 2026-04-26 22:30:51,419 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000000000000000000000000000000000b123456/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:51.795938513Z [error] 2026-04-26 22:30:51,792 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000136841090/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:52.395227458Z [error] 2026-04-26 22:30:52,169 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000138593803/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:52.561646551Z [error] 2026-04-26 22:30:52,549 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000139624719/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:52.934296284Z [error] 2026-04-26 22:30:52,930 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000147785893/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:53.407184403Z [error] 2026-04-26 22:30:53,310 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000000968233821/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:53.702924917Z [error] 2026-04-26 22:30:53,699 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000000000000000000000000000000e8d4a51000/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:54.080393062Z [error] 2026-04-26 22:30:54,077 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000013026393229/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:54.473158469Z [error] 2026-04-26 22:30:54,466 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000013129359017/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:54.853049687Z [error] 2026-04-26 22:30:54,848 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000013451193987/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:55.389056432Z [error] 2026-04-26 22:30:55,226 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000013593073952/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:55.604010433Z [error] 2026-04-26 22:30:55,600 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000013752728002/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:55.985837239Z [error] 2026-04-26 22:30:55,982 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000013881025097/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:56.402841834Z [error] 2026-04-26 22:30:56,370 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000013914937220/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:56.755591379Z [error] 2026-04-26 22:30:56,751 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000015015540205/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:57.401879438Z [error] 2026-04-26 22:30:57,125 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000000000000000000000000000004d3b571ac46/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:57.511756901Z [error] 2026-04-26 22:30:57,508 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000000428540910216/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:57.970184281Z [error] 2026-04-26 22:30:57,899 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000000001667876254827/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:58.400352866Z [error] 2026-04-26 22:30:58,305 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000000000000000000000000f8b5ef66b85233b9/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:58.689734943Z [error] 2026-04-26 22:30:58,686 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000024cb3846e391970e0/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:59.070344990Z [error] 2026-04-26 22:30:59,065 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000000000000000000000002ab2a864dd54c608f/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:59.465726500Z [error] 2026-04-26 22:30:59,462 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000000000000000000000002bb2a22d49ed4fc42/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:30:59.851531424Z [error] 2026-04-26 22:30:59,847 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000000000000000000000002be37ccbbed1163ba/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:00.415832139Z [error] 2026-04-26 22:31:00,223 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000000000000000000000002c3dda3cc2050ff21/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:00.603070617Z [error] 2026-04-26 22:31:00,600 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000240640085935169661/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:01.034907025Z [error] 2026-04-26 22:31:01,028 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000270639241941864840/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:01.455458224Z [error] 2026-04-26 22:31:01,448 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000300639694723410310/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:01.837380976Z [error] 2026-04-26 22:31:01,832 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000400640002058342622/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:02.400494475Z [error] 2026-04-26 22:31:02,214 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000450640005285350232/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:02.609615340Z [error] 2026-04-26 22:31:02,606 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000590640091517333750/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:03.054636450Z [error] 2026-04-26 22:31:03,050 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000000910639122865925192/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:03.439994443Z [error] 2026-04-26 22:31:03,435 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000006222081102005290044/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:03.811572259Z [error] 2026-04-26 22:31:03,807 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000000000006228480316122902760/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:04.415866992Z [error] 2026-04-26 22:31:04,181 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000000000000000000000d000e736497bd00000f/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:04.571312665Z [error] 2026-04-26 22:31:04,567 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00000000000001c10323ba5b17eba85ec38422a4/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:04.961364307Z [error] 2026-04-26 22:31:04,955 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00000000000006020a0000000ef90b0800de0e00/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:05.408946581Z [error] 2026-04-26 22:31:05,343 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000000b00000300000c020c00000d0600/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:05.719721074Z [error] 2026-04-26 22:31:05,715 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000003fdce7bd9d152822f34ee9179aec/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:06.060759220Z [info] INFO:     100.64.0.16:38138 - "GET / HTTP/1.1" 200 OK
+2026-04-26T22:31:06.095406021Z [error] 2026-04-26 22:31:06,092 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000005e5ea32f577000677c0963279be4/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:06.527503852Z [error] 2026-04-26 22:31:06,522 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00000000000096228d26f46bd83b619556433dcb/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:07.012182645Z [error] 2026-04-26 22:31:07,005 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000000036414940324055c43e75f56b7d016/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:07.524750370Z [error] 2026-04-26 22:31:07,519 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00000000004e87c3954dad6ca8867cd96385668d/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:07.904416629Z [error] 2026-04-26 22:31:07,899 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000001f3723e32d4822353c5b13df4f8f555/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:08.614526263Z [error] 2026-04-26 22:31:08,280 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000000000a39ee92084ca6dabed2bc02004d0e17/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:08.686201373Z [error] 2026-04-26 22:31:08,682 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000000009bb6453f06c274c6f71537044de926a8/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:10.560408821Z [info] INFO:     100.64.0.17:46134 - "GET / HTTP/1.1" 200 OK
+2026-04-26T22:31:10.560417479Z [info] INFO:     100.64.0.18:52324 - "GET / HTTP/1.1" 200 OK
+2026-04-26T22:31:10.560422209Z [info] INFO:     100.64.0.19:50692 - "GET / HTTP/1.1" 200 OK
+2026-04-26T22:31:30.560399851Z [error] 2026-04-26 22:31:24,787 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00000000f2708738d4886bc4aedefd8dd04818b0/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:30.560405174Z [error] 2026-04-26 22:31:25,309 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000000045232fe75a3c7db3e5b03b0ab6166f425/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:30.560408906Z [error] 2026-04-26 22:31:25,692 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000699a8e0363e0fc21d327873ac26b9e17e/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:30.560412483Z [error] 2026-04-26 22:31:26,082 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000cab6b6342b82070a25eb78bfc2aa924e4/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:30.560415865Z [error] 2026-04-26 22:31:26,615 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000000fb90be3c82a70291ffac63c583a7cc561/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:30.560419205Z [error] 2026-04-26 22:31:27,087 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000000104551469868bb70b231d6cfff35e43826/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:30.560422925Z [error] 2026-04-26 22:31:27,596 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00000047d802fc1d98450ddc3c892ebf08d1cc47/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:30.560426455Z [error] 2026-04-26 22:31:27,987 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00000069abbb0b1ad6975bcf753eee15d318a0bf/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:30.560429578Z [error] 2026-04-26 22:31:28,379 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000007ca619ae568b42cde96625c28a827a832d/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:30.560432781Z [error] 2026-04-26 22:31:28,764 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000008ef3c825b6c33534b243c5e0993adb2cde/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:30.562145423Z [error] 2026-04-26 22:31:29,150 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000000abce1bff9ae30e7e4542b44970ac6745e4/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:50.562131848Z [error] 2026-04-26 22:31:44,760 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000001e667dfa76399e8f69714edfbaec20731bf/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:50.562138308Z [error] 2026-04-26 22:31:45,137 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000001fbd11f1cb988f790c4ef5c180091986211/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:50.562141823Z [error] 2026-04-26 22:31:45,512 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00000718d5cfc31287aa36a16bd1ca9be612caae/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:50.562145250Z [error] 2026-04-26 22:31:45,892 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00000a6f02c8d982dd0a646db1b9d9b1354a8c75/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:50.562148933Z [error] 2026-04-26 22:31:46,272 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00000a80958c447df3530d42600bb0f5a2ded48c/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:50.562152226Z [error] 2026-04-26 22:31:46,659 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00000c5567dd1fa095e264ef4df8796d05895bfd/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:50.562155597Z [error] 2026-04-26 22:31:47,055 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00000c771f6176268d5a9846e0956c3ef58597a1/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:50.562158922Z [error] 2026-04-26 22:31:47,569 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00000c7f0833b4fdab273df238a0f3a4ab6ea43d/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:50.562162310Z [error] 2026-04-26 22:31:47,949 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00000ded6ea33195bc4bbd909bcdae59799c3910/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:50.562165607Z [error] 2026-04-26 22:31:48,388 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000011b84b11b7c40bd3f37856dd699d1a311eef/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:50.563742008Z [error] 2026-04-26 22:31:48,778 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000141eae0fd6d577e3c1702d19cb83c1943806/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:50.563745832Z [error] 2026-04-26 22:31:49,168 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000025c3226c00b2cdc200005a1600509f4e00c0/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:50.563752940Z [error] 2026-04-26 22:31:49,555 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00002dc8c91179232a443679e46c767ee3cd361d/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:50.563757913Z [error] 2026-04-26 22:31:50,370 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000033d7bfdc85e99cadce2263aaf5f6f15d651f/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:50.773353868Z [error] 2026-04-26 22:31:50,770 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00003c408bf043ffa4db4147a3706239acce0000/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:51.161909197Z [error] 2026-04-26 22:31:51,152 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00003d7f7c82f71b285616103ccfb2eec0477f34/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:51.571144640Z [error] 2026-04-26 22:31:51,566 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000428df605f2485fb48d0101eb8f2a909b9bc7/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:51.959778577Z [error] 2026-04-26 22:31:51,955 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000048d95883fc0e299ca09530b8b664a3632cfd/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:52.470845052Z [error] 2026-04-26 22:31:52,442 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00004b4a7334f69fcc02746c15efe67ada955661/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:52.840139361Z [error] 2026-04-26 22:31:52,836 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000501be9ce55bcaca8ec019c325ef31746066e/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:53.460644483Z [error] 2026-04-26 22:31:53,229 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000534b8d827f30afd7519098f3799e0d2b1c69/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:53.617458797Z [error] 2026-04-26 22:31:53,613 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00006984195e5cb02497b2d2bf0a807ef69c0000/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:53.998754055Z [error] 2026-04-26 22:31:53,995 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00006a64107d96a98f384583ed8832404bdd32f3/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:54.472761372Z [error] 2026-04-26 22:31:54,378 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000078dc2198fa5f0a4fb2551bb73582bd7298a9/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:54.766335321Z [error] 2026-04-26 22:31:54,760 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000078e45ce1d7e95071603a39314e1b679651f0/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:55.149058736Z [error] 2026-04-26 22:31:55,144 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000080f9ee2ddcbefa93ae2f54c4ba495902f9a8/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:55.534586655Z [error] 2026-04-26 22:31:55,527 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00008c7f580f6cf458479958228fcf099183fad4/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:55.944680083Z [error] 2026-04-26 22:31:55,940 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00008f4c459cc8ffd3f3fe937437dce98ccf2057/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:56.450489965Z [error] 2026-04-26 22:31:56,337 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00009b30097b18ad52511e469cd6d626bd3503ae/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:56.729152429Z [error] 2026-04-26 22:31:56,722 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00009c615785f4f3ee12779fdaee93396ded0e49/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:57.114018220Z [error] 2026-04-26 22:31:57,106 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00009d82d37d9f731b2f8b1cc10080b0dae3bfd9/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:57.492982956Z [error] 2026-04-26 22:31:57,488 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00009d84f6fb891a2694f3e6568faf47028ab1c6/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:57.880831101Z [error] 2026-04-26 22:31:57,877 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000b06460777398083cb501793a4d6393900000/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:58.481691008Z [error] 2026-04-26 22:31:58,273 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000b784ff1c51af37a18b206ce2b631d5d84c02/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:31:59.472729632Z [error] 2026-04-26 22:31:59,213 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000b81c6c9ac666804e00d638391691b9900000/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:00.467941422Z [error] 2026-04-26 22:32:00,300 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000bbeac1d9499e654c73cdf690f67bea660728/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:00.702866673Z [error] 2026-04-26 22:32:00,700 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000c16a54724cf8c73469ea6bdd763bfb6dabc7/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:01.098406192Z [error] 2026-04-26 22:32:01,094 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000e2f524c3d12f68122ee664d42b0ce0482012/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:01.493122574Z [error] 2026-04-26 22:32:01,489 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000e4802a4f6d44a555b907050c7ab4dbeec9b3/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:01.923812538Z [error] 2026-04-26 22:32:01,918 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000e629ce8aa84ac09b88391cbbaaed7687133c/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:02.491648534Z [error] 2026-04-26 22:32:02,304 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000eb4a88efcb623aa2e3959bfc8a3b1e6d0000/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:02.706245842Z [error] 2026-04-26 22:32:02,702 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000f4f0556ea1f2e5570d8d3eb531d2a0235bfd/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:03.097403805Z [error] 2026-04-26 22:32:03,093 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000f6e1e9e711ad2f74d63ff56715c8a522b920/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:03.478606640Z [error] 2026-04-26 22:32:03,475 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0000fabc7d52beb032578dd04f5f6d66a35912c2/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:03.892070187Z [error] 2026-04-26 22:32:03,888 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000100abaad02f1cfc8bbe32bd5a564817339e72/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:04.484316931Z [error] 2026-04-26 22:32:04,276 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000101402c168b00faf05f5f70d2ee9170d246ac/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:04.661805029Z [error] 2026-04-26 22:32:04,657 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000123685d15ce53a6dab5b4c9227d115dfc7366/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:05.049416063Z [error] 2026-04-26 22:32:05,046 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000155a46de81e88ab8591cdc77556264dd1dcdd/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:05.473199359Z [error] 2026-04-26 22:32:05,426 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0001670d89334ee765b1f05e8337b8e4966c7734/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:05.814545962Z [error] 2026-04-26 22:32:05,809 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000188c29ab23ef1cc8938c707155c07402bc5ba/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:06.472412356Z [error] 2026-04-26 22:32:06,188 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0001aaa4c2a5aa46ee38f37b36d09ad21ea3e95e/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:06.575482383Z [error] 2026-04-26 22:32:06,572 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0001bbf664d496e6d24e127c1d16061c15867f6f/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:06.966129527Z [error] 2026-04-26 22:32:06,962 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0001c3482a6c31b8db7957ec32416b9b8d76e694/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:07.484354594Z [error] 2026-04-26 22:32:07,346 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0001d6e359da883d29ab67d56f25c74af5706687/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:07.725489986Z [error] 2026-04-26 22:32:07,720 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0001e2942393eb0df9113488f41ecb1e822f1820/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:08.105192724Z [error] 2026-04-26 22:32:08,101 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0002112fe416afd37cb7ed27c7321a8ae4516712/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:08.492574840Z [error] 2026-04-26 22:32:08,487 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00023d3ba9b0da5907db691cfd8163fcaf43d717/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:08.866553533Z [error] 2026-04-26 22:32:08,862 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000241e9801882ec6b460a9204d3185edb64bf6a/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:09.473148344Z [error] 2026-04-26 22:32:09,239 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000261abf17d29ec817004f869c921b12bb25de9/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:09.622966520Z [error] 2026-04-26 22:32:09,619 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0002bd67af5b5161cec326bbdbd3e1d7df805aff/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:10.028241412Z [error] 2026-04-26 22:32:09,993 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0002d2b2143a03869fcfa74356dee3989120c372/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:10.484206751Z [error] 2026-04-26 22:32:10,371 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0002d610603f5a5b47a2d1943778073bdf04cd69/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:10.758871334Z [error] 2026-04-26 22:32:10,754 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000329b357559ecc6aac489a7d084e29e38b3965/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:11.146834140Z [error] 2026-04-26 22:32:11,142 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00032ee89a098292250eb7dc04d27991c2a537d2/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:11.521505702Z [error] 2026-04-26 22:32:11,517 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0003316155f38eb404e2913d45bac3e3fefc49a8/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:11.909629271Z [error] 2026-04-26 22:32:11,904 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0003354a0e3f65e366b34dad4bcf77561310afaf/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:12.499296798Z [error] 2026-04-26 22:32:12,281 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000367d5159bbed81acdcbc9321de25970fb01d1/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:12.662401934Z [error] 2026-04-26 22:32:12,656 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00037e27618a45320866354002d58060351e68ec/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:13.036665467Z [error] 2026-04-26 22:32:13,033 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00039b8c11bb5f1a3de5e7d84a707013fb4658da/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:13.492391270Z [error] 2026-04-26 22:32:13,413 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0003c351deb334bd3c55887cd2f59801ad491945/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:13.802414249Z [error] 2026-04-26 22:32:13,798 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0003d7bf094b6b4db60d41aa2b41d2b70be0c3b5/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:14.178569252Z [error] 2026-04-26 22:32:14,175 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0004280d7ddf86317a069aa6eb6de1e464d16a85/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:14.570352255Z [error] 2026-04-26 22:32:14,565 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00042a6d544e57ac524ef1d26e870e2fb75a58e3/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:14.947394322Z [error] 2026-04-26 22:32:14,944 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00045e466c128e68efde0233b1ae63794de8c994/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:15.501629491Z [error] 2026-04-26 22:32:15,321 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00045e861b7db03b9e41f7fabca9f6ab08708047/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:15.706767691Z [error] 2026-04-26 22:32:15,702 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00046205963884d835170a228a5dfb253888fb4d/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:16.095118465Z [error] 2026-04-26 22:32:16,091 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000469f3f9cf8f58c2f1796f94a58cddeae8dc2e/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:16.489309184Z [error] 2026-04-26 22:32:16,475 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00049d5121fb468474c17941d7fd19084e3ce7a0/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:16.862297431Z [error] 2026-04-26 22:32:16,857 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0004b0971250d73298f86bcff96e1cec6e9e0eef/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:17.495739556Z [error] 2026-04-26 22:32:17,236 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0004d285e0169fe81a110ec8d384c31f238ba49b/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:17.616604473Z [error] 2026-04-26 22:32:17,611 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0004e37a0e0022de0167e9785e8a6b4cbc7bc8b5/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:17.996271764Z [error] 2026-04-26 22:32:17,991 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0004fe5c9b8157407b617f6a89da812b93cb91a2/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:18.491178072Z [error] 2026-04-26 22:32:18,373 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000501659487618b12ae0a5388f36cc1b9274442/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:18.753829147Z [error] 2026-04-26 22:32:18,750 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00050c62388246bb684e6f95dc86142dfcc8b6a7/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:19.511194886Z [error] 2026-04-26 22:32:19,314 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000533f50ddd7f2fc4efd06137b0c1a12cfb7bb9/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:19.992572683Z [error] 2026-04-26 22:32:19,988 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0005393db58e0c8e83692d89c747ea05391e2136/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:20.512774871Z [error] 2026-04-26 22:32:20,376 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00055000b7b022f60b94880347da3b345f198901/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:20.786654668Z [error] 2026-04-26 22:32:20,782 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0005672bb8f09655b820a111ce4dcdb7f2374064/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:21.486262043Z [error] 2026-04-26 22:32:21,296 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0005a3bc9e63634e3e781b10c2d71a4abe0b23bb/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:21.685928246Z [error] 2026-04-26 22:32:21,683 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0005a9ad8bbe72c54dd00c155fde430140fac6c2/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:22.075184169Z [error] 2026-04-26 22:32:22,068 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0005c1f96ab62c0cde7633100612eaf7bacbd6ef/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:22.506799327Z [error] 2026-04-26 22:32:22,466 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0005c6451c531722171cbbed49642f5f2d943611/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:22.852592567Z [error] 2026-04-26 22:32:22,848 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0005d08ad6144f070885088c664bcec2a8cd7bb9/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:23.502855409Z [error] 2026-04-26 22:32:23,237 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0005d28dda10c4283e40caa75f00dccf6b985672/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:23.630765213Z [error] 2026-04-26 22:32:23,625 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0005d9d796c7e21479244375d90825964d83f524/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:24.038556668Z [error] 2026-04-26 22:32:24,033 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0005dfe5d08b59c43f68ef514438351a66ca9a75/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:24.507202235Z [error] 2026-04-26 22:32:24,417 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0005fc384e5bed76b9bd7636e042d57867e127e1/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:24.807151761Z [error] 2026-04-26 22:32:24,803 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0006145146672534ecb668e26ac6c8678edd119d/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:25.188761552Z [error] 2026-04-26 22:32:25,185 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00061697d8fd75320f3088e928463feb42492ee3/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:25.619253380Z [error] 2026-04-26 22:32:25,616 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0006388dcad9f3b6fc1064c3dd38ae379c10aee1/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:26.149241906Z [error] 2026-04-26 22:32:26,144 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00064e4394572952e2943bc0a0906e470499137b/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:26.540732063Z [error] 2026-04-26 22:32:26,536 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00065108fd4130830b244ba7a65ae26d343f1c0d/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:26.926234597Z [error] 2026-04-26 22:32:26,921 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0006611af8c532bf8754a80bdc6dd24feda7380a/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:27.509435112Z [error] 2026-04-26 22:32:27,304 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000664c8be860835ccb4b771795d175e5340697e/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:27.709296354Z [error] 2026-04-26 22:32:27,704 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0006738efc0c0c50fc46e237d553347959e802b0/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:28.083407768Z [error] 2026-04-26 22:32:28,079 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00069302cc246ebf521f06477f7cc28c0ebde0fb/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:28.499760649Z [error] 2026-04-26 22:32:28,462 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000697afa7409e7bf9b0e452c12108498befbd51/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:28.851151658Z [error] 2026-04-26 22:32:28,847 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0006a17d5e4fea39e308e0b2cd0d15ba2d71d092/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:29.495799304Z [error] 2026-04-26 22:32:29,224 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0006a847d0cd7c39f62292b6060ca2622d3c8eb4/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:29.618650275Z [error] 2026-04-26 22:32:29,613 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0006a97af9be317a7e60ea1f0f0b74aaf82442ce/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:29.998345817Z [error] 2026-04-26 22:32:29,992 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0006d822611f857f8bedeedefa3c154d1d250e1b/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:30.514454238Z [error] 2026-04-26 22:32:30,367 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0006d8bfbd5de44685728a96db394c4c75ad7c4a/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:30.751343137Z [error] 2026-04-26 22:32:30,747 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0006fb19cde20fd4499380203f3793a8ab1d4a25/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:31.133013384Z [error] 2026-04-26 22:32:31,128 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0007026deab27aaeb15885797c2d8f0fc872e245/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:31.521876749Z [error] 2026-04-26 22:32:31,517 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00070be300927724912aba217b7ebcdc520fea90/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:31.908207574Z [error] 2026-04-26 22:32:31,891 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00071a6f90e1d778cf4b9a800c22a8ecf7fd4164/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:32.507475650Z [error] 2026-04-26 22:32:32,337 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000752ee9ef313dc2899153b816f23c0b4c78f06/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:32.775805500Z [error] 2026-04-26 22:32:32,771 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00075a676cb85f227e792de119834042f661dae5/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:33.206115374Z [error] 2026-04-26 22:32:33,202 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00077b2485f5ae7b05204ad20ad031ac520fea90/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:33.601279809Z [error] 2026-04-26 22:32:33,596 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000781e89218696efdba00a3f01c3acd486f65a5/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:33.977546659Z [error] 2026-04-26 22:32:33,972 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000789cb721897af86de321ce35cae252ac6cc28/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:34.509487169Z [error] 2026-04-26 22:32:34,349 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00079a80b5a0e44163b1d43a70c7d70a6b1ee44d/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:34.729118002Z [error] 2026-04-26 22:32:34,723 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00079b78bcc8ce8ecc9b007a38dcf7796c68010d/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:35.105246567Z [error] 2026-04-26 22:32:35,102 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00079c5914c8c0dc4728a55b0840955ade1965a5/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:35.500490791Z [error] 2026-04-26 22:32:35,480 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0007eac44358f34876bf0ecb20c79255fe35e3da/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:35.869202198Z [error] 2026-04-26 22:32:35,864 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0007f1b7a16b8a91e4cef15ecd122cb4cf2b1f38/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:36.556131830Z [error] 2026-04-26 22:32:36,253 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00080d7455f9c2a4e1f5a3846373cc275e75fc19/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:36.648240876Z [error] 2026-04-26 22:32:36,644 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000814f58378c630cfaa2c6ffb8791897c5e93f0/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:37.543187114Z [error] 2026-04-26 22:32:37,465 [WARNING] app.engine.observation_builder: observation_builder: measure 'unique_tokens' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:32:37.543191808Z [error] 2026-04-26 22:32:37,465 [WARNING] app.engine.observation_builder: observation_builder: measure 'concentration_top3' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:32:37.543196800Z [error] 2026-04-26 22:32:37,465 [WARNING] app.engine.observation_builder: observation_builder: measure 'has_stablecoin_exposure' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:32:37.543209132Z [error] 2026-04-26 22:32:37,465 [WARNING] app.engine.observation_builder: observation_builder: measure 'collateral_diversity' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:32:37.543214897Z [error] 2026-04-26 22:32:37,465 [WARNING] app.engine.observation_builder: observation_builder: measure 'score' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:32:37.863572098Z [error] 2026-04-26 22:32:37,859 [WARNING] app.engine.observation_builder: observation_builder: measure 'governance' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:32:37.863576524Z [error] 2026-04-26 22:32:37,859 [WARNING] app.engine.observation_builder: observation_builder: measure 'meeting_cadence' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:32:37.863580520Z [error] 2026-04-26 22:32:37,859 [WARNING] app.engine.observation_builder: observation_builder: measure 'compensation_transparency' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:32:38.519163195Z [error] 2026-04-26 22:32:38,354 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00081e288838b723b49095b7bea5b173f57c80bc/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:38.618607864Z [info] INFO:     100.64.0.20:21822 - "POST /api/engine/analyze HTTP/1.1" 202 Accepted
+2026-04-26T22:32:38.732279086Z [error] 2026-04-26 22:32:38,727 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0008249d8fb3de6ca02bf3caf37c6b78fa23dd75/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:38.907858853Z [info] INFO:     100.64.0.20:21822 - "GET /api/engine/analyses/ad0b8858-3142-4c12-acca-7fb678b1fea2 HTTP/1.1" 200 OK
+2026-04-26T22:32:39.115771058Z [error] 2026-04-26 22:32:39,110 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00087542d569834ca2001e6d505563b3559edd52/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:39.528305226Z [error] 2026-04-26 22:32:39,490 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00087f40d197b1801a3e1f347883f2c99756c18e/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:39.873121487Z [error] 2026-04-26 22:32:39,869 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0008bf4dfbe46365a2915bdf992909f77d16c9d3/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:39.875099716Z [info] INFO:     100.64.0.21:49418 - "GET /api/engine/analyses/ad0b8858-3142-4c12-acca-7fb678b1fea2 HTTP/1.1" 200 OK
+2026-04-26T22:32:40.534275038Z [error] 2026-04-26 22:32:40,248 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0008ce60392bc5df88ca49506457e922f6d5943c/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:40.636791830Z [error] 2026-04-26 22:32:40,632 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0008d88010e0433aa11fb8b7d2c44bdb1c3bf8fd/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:40.784124819Z [info] INFO:     100.64.0.21:49418 - "GET /api/engine/analyses/ad0b8858-3142-4c12-acca-7fb678b1fea2 HTTP/1.1" 200 OK
+2026-04-26T22:32:41.018876608Z [error] 2026-04-26 22:32:41,009 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0008e36eba20b1af5a66df8898c68005d9dec7ed/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:41.693878378Z [error] 2026-04-26 22:32:41,389 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0008e3a7984bb6f5072e07ac1bc034e72edae13b/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:41.695163050Z [info] INFO:     100.64.0.20:21822 - "GET /api/engine/analyses/ad0b8858-3142-4c12-acca-7fb678b1fea2 HTTP/1.1" 200 OK
+2026-04-26T22:32:41.770350378Z [error] 2026-04-26 22:32:41,766 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00091f3c52ca3de4f3f9a7a9149feb949bb7bd10/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:42.148522092Z [error] 2026-04-26 22:32:42,143 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00091ff4e6a0f652c6f19dda39cfdac1ae45f7e7/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:42.525796041Z [error] 2026-04-26 22:32:42,522 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000944f05519e9c1881ddc43d9357ae32b65b324/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:42.907162738Z [error] 2026-04-26 22:32:42,903 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00095f4ad92ec8331ec08f707b25163dbc3fb12e/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:43.508957869Z [error] 2026-04-26 22:32:43,484 [WARNING] app.engine.observation_builder: observation_builder: measure 'peg_stability' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:32:43.508965276Z [error] 2026-04-26 22:32:43,484 [WARNING] app.engine.observation_builder: observation_builder: measure 'smart_contract' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:32:43.508988332Z [error] 2026-04-26 22:32:43,484 [WARNING] app.engine.observation_builder: observation_builder: measure 'network_withdrawal' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:32:43.508990948Z [error] 2026-04-26 22:32:43,484 [WARNING] app.engine.observation_builder: observation_builder: measure 'distribution' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:32:43.508995590Z [error] 2026-04-26 22:32:43,484 [WARNING] app.engine.observation_builder: observation_builder: measure 'validator_operator' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:32:43.508998595Z [error] 2026-04-26 22:32:43,487 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0009c83287d2df39b7bc840f42711acae1d8118e/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:43.509001118Z [error] 2026-04-26 22:32:43,485 [WARNING] app.engine.observation_builder: observation_builder: measure 'exchange_price_variance' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:32:43.788176811Z [info] INFO:     100.64.0.20:21822 - "POST /api/engine/analyze HTTP/1.1" 202 Accepted
+2026-04-26T22:32:43.927940710Z [error] 2026-04-26 22:32:43,924 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000a10df27529d6f5f3c6a02fa2b6e23329d9026/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:44.208753102Z [info] INFO:     100.64.0.22:54010 - "GET /api/engine/analyses/db1c8480-fd05-4676-96bb-ddb48a4dafb4 HTTP/1.1" 200 OK
+2026-04-26T22:32:44.528480028Z [error] 2026-04-26 22:32:44,309 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000a1371c7bbd06fdefbaa5b786a4f19927ed40a/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:44.697098012Z [error] 2026-04-26 22:32:44,691 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000a22d2ea942be565226344963896d0bc8efd6b/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:45.080904228Z [error] 2026-04-26 22:32:45,076 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000a4af6e6c3fad69f1f395126637513056824a5/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:45.536042520Z [info] INFO:     100.64.0.23:44420 - "GET /api/engine/analyses/db1c8480-fd05-4676-96bb-ddb48a4dafb4 HTTP/1.1" 200 OK
+2026-04-26T22:32:45.536046727Z [error] 2026-04-26 22:32:45,456 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000a6dbeb6a9b8983b0dc6445fdb6bb15dbfb15a/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:45.851823801Z [error] 2026-04-26 22:32:45,847 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000abd4e8446ae52eacb2f110540434f941a538a/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:46.236149300Z [error] 2026-04-26 22:32:46,232 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000acc8042ea362149ce2b2709fc497b6505634e/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:46.511100005Z [info] INFO:     100.64.0.20:21822 - "GET /api/engine/analyses/db1c8480-fd05-4676-96bb-ddb48a4dafb4 HTTP/1.1" 200 OK
+2026-04-26T22:32:46.622047902Z [error] 2026-04-26 22:32:46,610 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000ad7ef544cf4b4cdf9925cc61b91c1bd65ebd5/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:47.623267011Z [error] 2026-04-26 22:32:47,619 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000aeb178efc07d1dc6ff8e7bd6f59a88cfbc330/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:47.871951310Z [info] INFO:     100.64.0.21:49434 - "POST /api/engine/analyze HTTP/1.1" 202 Accepted
+2026-04-26T22:32:48.000935818Z [error] 2026-04-26 22:32:47,995 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000afdafb6f6dc5b391e9db6143055948668dca0/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:48.172143490Z [info] INFO:     100.64.0.20:21822 - "GET /api/engine/analyses/0597c120-9a8a-41ce-900b-6c8f21224556 HTTP/1.1" 200 OK
+2026-04-26T22:32:48.537260946Z [error] 2026-04-26 22:32:48,388 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000b1d6ff6036f3b602edb9517e018b5a35f683f/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:48.773264930Z [error] 2026-04-26 22:32:48,769 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000b2bb091f133e9f35f1154583fe33fccae206e/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:49.076946157Z [info] INFO:     100.64.0.20:21822 - "GET /api/engine/analyses/0597c120-9a8a-41ce-900b-6c8f21224556 HTTP/1.1" 200 OK
+2026-04-26T22:32:49.154630431Z [error] 2026-04-26 22:32:49,150 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000b77e3cc72916387bba084bafe2eae1262dbf6/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:49.559782809Z [error] 2026-04-26 22:32:49,553 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000ba8c03b36cd730fd00b8862352b407283c25f/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:49.942979794Z [error] 2026-04-26 22:32:49,934 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000bb47ed59357d61d8e6dc882f3ae297a8b04ff/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:50.024542072Z [info] INFO:     100.64.0.20:21822 - "GET /api/engine/analyses/0597c120-9a8a-41ce-900b-6c8f21224556 HTTP/1.1" 200 OK
+2026-04-26T22:32:50.530632270Z [error] 2026-04-26 22:32:50,314 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000bdcea8a057f9293cbdac464efab5b16cf81c8/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:50.707725021Z [error] 2026-04-26 22:32:50,704 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000be2d2db863a06490809614f9af4b4c10d6aaa/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:51.004981366Z [info] INFO:     100.64.0.24:25168 - "GET /api/engine/analyses/0597c120-9a8a-41ce-900b-6c8f21224556 HTTP/1.1" 200 OK
+2026-04-26T22:32:51.083022385Z [error] 2026-04-26 22:32:51,077 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000be3425a52501e18d8a9e473c28439fad300c2/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:51.529770847Z [error] 2026-04-26 22:32:51,456 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000bf2c85b5172fd50fc495280119bcaa4d1f6aa/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:53.087012560Z [error] 2026-04-26 22:32:53,083 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000bfa64cf0e7e68468addbf25259e5a001af685/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:53.509143888Z [info] INFO:     100.64.0.18:53274 - "POST /api/engine/analyze HTTP/1.1" 202 Accepted
+2026-04-26T22:32:53.509150220Z [error] 2026-04-26 22:32:53,466 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000c4d8d8e5c5b5d20833d5a44c86a4322484dfc/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:54.092487111Z [error] 2026-04-26 22:32:54,088 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000c9acd15a3fe3a7010fa2021906b71cc13a173/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:54.539017320Z [info] INFO:     100.64.0.20:21822 - "POST /api/engine/analyze HTTP/1.1" 202 Accepted
+2026-04-26T22:32:54.539023205Z [error] 2026-04-26 22:32:54,470 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000ca9daf14ebc8ba40b785150c9c82359fd00b1/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:54.865277366Z [error] 2026-04-26 22:32:54,860 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000cc634eabc3acad0568701377db51ebf0b4a0f/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:55.252236334Z [error] 2026-04-26 22:32:55,248 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000cc8b8db82dd014ae45771b9517004fc4d1588/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:55.659711892Z [error] 2026-04-26 22:32:55,656 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000d05551830d174bf3e3b7c5febb6dda67b7f84/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:56.058018454Z [error] 2026-04-26 22:32:56,053 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000d1070e26894b9ec7644a8738ea126e2ae8e36/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:56.537965821Z [error] 2026-04-26 22:32:56,440 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000d1fa1d7cb077d8fabc2f2b34a8fff41b42796/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:56.844224593Z [error] 2026-04-26 22:32:56,838 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000d4fdd11b99abd59a9463027f55897ae6523b2/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:57.539294068Z [error] 2026-04-26 22:32:57,316 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000db803a70511e09da650d4c0506d0000100000/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:58.131535699Z [error] 2026-04-26 22:32:58,126 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000dc0d8fc9b0088623f730ebe17234c937649e9/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:58.530501829Z [info] INFO:     100.64.0.25:46660 - "GET /api/engine/analyses/cfdc0535-8111-4444-8ce5-88c7ab4de0cc HTTP/1.1" 200 OK
+2026-04-26T22:32:58.530507557Z [error] 2026-04-26 22:32:58,517 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000ddde462bea49de4a599de2389e68ad27be3b1/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:58.816121585Z [info] INFO:     100.64.0.20:44962 - "POST /api/engine/analyze HTTP/1.1" 422 Unprocessable Entity
+2026-04-26T22:32:58.901788429Z [error] 2026-04-26 22:32:58,898 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000df8921b2f62749795aa9d017922e322a5388b/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:59.181183138Z [info] INFO:     100.64.0.21:61898 - "POST /api/engine/analyze HTTP/1.1" 404 Not Found
+2026-04-26T22:32:59.544777350Z [error] 2026-04-26 22:32:59,278 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000dfbcfa88e99f4f6f5c520ced289dbc7a9a78a/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:59.675284614Z [error] 2026-04-26 22:32:59,669 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000e52a0cda84bea2c0b22ca0862fd77e6f9ceec/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:32:59.933274020Z [error] 2026-04-26 22:32:59,928 [WARNING] app.engine.observation_builder: observation_builder: measure 'collateral_diversity' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:32:59.933280514Z [error] 2026-04-26 22:32:59,928 [WARNING] app.engine.observation_builder: observation_builder: measure 'score' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:32:59.933284692Z [error] 2026-04-26 22:32:59,928 [WARNING] app.engine.observation_builder: observation_builder: measure 'unique_tokens' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:32:59.933287981Z [error] 2026-04-26 22:32:59,928 [WARNING] app.engine.observation_builder: observation_builder: measure 'concentration_top3' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:32:59.933300189Z [error] 2026-04-26 22:32:59,928 [WARNING] app.engine.observation_builder: observation_builder: measure 'has_stablecoin_exposure' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:33:00.122075345Z [error] 2026-04-26 22:33:00,117 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000e6b9f2d8df1cbfeed9f1826fd6480bdeaf945/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:00.549630778Z [error] 2026-04-26 22:33:00,321 [WARNING] app.engine.observation_builder: observation_builder: measure 'governance' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:33:00.549637023Z [error] 2026-04-26 22:33:00,321 [WARNING] app.engine.observation_builder: observation_builder: measure 'meeting_cadence' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:33:00.549643672Z [error] 2026-04-26 22:33:00,321 [WARNING] app.engine.observation_builder: observation_builder: measure 'compensation_transparency' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:33:00.549649154Z [error] 2026-04-26 22:33:00,534 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000e7be03f9adbc5065396a09e1b6ddc9da5a8bf/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:01.068036784Z [info] INFO:     100.64.0.22:38000 - "POST /api/engine/analyze HTTP/1.1" 202 Accepted
+2026-04-26T22:33:01.197268334Z [error] 2026-04-26 22:33:01,194 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000e990e3b1478bb3d0442f15d333e6efbd40d95/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:01.545892319Z [info] INFO:     100.64.0.20:44962 - "POST /api/engine/analyze HTTP/1.1" 409 Conflict
+2026-04-26T22:33:01.609714202Z [error] 2026-04-26 22:33:01,606 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000ea6df3b680cb96f66a42041235d1ed776ef4f/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:03.245538842Z [error] 2026-04-26 22:33:03,240 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000ee2b0433f3de41563a57a7747a5f9752d28ca/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:03.560184216Z [info] INFO:     100.64.0.26:31810 - "POST /api/engine/analyze HTTP/1.1" 202 Accepted
+2026-04-26T22:33:03.617825121Z [error] 2026-04-26 22:33:03,613 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000f09c4740eb47e3130344c49074638b5fede32/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:03.997608655Z [error] 2026-04-26 22:33:03,993 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000f22eedf58cd5cf6e5fcbf015f4fba28aa5c91/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:04.542506876Z [error] 2026-04-26 22:33:04,374 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000f4b9f5073a11187a1c3cfb1ff60075bf718b5/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:04.764096909Z [error] 2026-04-26 22:33:04,761 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000f5f7d5f2f1a05123fdf1f4f5c74b2082f6801/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:05.154658694Z [error] 2026-04-26 22:33:05,151 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000fb13571a183f6cac0aca0744e54c47a1c0f98/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:05.603649886Z [error] 2026-04-26 22:33:05,599 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000fb8369677b3065de5821a86bc9551d5e5eab9/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:05.642463315Z [error] 2026-04-26 22:33:05,636 [ERROR] app.database: Database error in get_conn(): duplicate key value violates unique constraint "idx_engine_analyses_active_unique"
+2026-04-26T22:33:05.642471674Z [error] DETAIL:  Key (entity, event_date)=(drift, 2026-04-03) already exists.
+2026-04-26T22:33:05.642475531Z [error] Traceback (most recent call last):
+2026-04-26T22:33:05.642479443Z [error]   File "/app/app/database.py", line 121, in get_conn
+2026-04-26T22:33:05.642483643Z [error]     yield conn
+2026-04-26T22:33:05.642487261Z [error]   File "/app/app/database.py", line 153, in get_cursor
+2026-04-26T22:33:05.642490499Z [error]     yield cur
+2026-04-26T22:33:05.642493904Z [error]   File "/app/app/engine/analysis_persistence.py", line 296, in _update_analysis_status_sync
+2026-04-26T22:33:05.642497320Z [error]     cur.execute(
+2026-04-26T22:33:05.642500977Z [error] psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "idx_engine_analyses_active_unique"
+2026-04-26T22:33:05.642504243Z [error] DETAIL:  Key (entity, event_date)=(drift, 2026-04-03) already exists.
+2026-04-26T22:33:05.642509373Z [error] 
+2026-04-26T22:33:05.691546149Z [error] 2026-04-26 22:33:05,686 [ERROR] app.engine.background_tasks: finalize_stub_analysis failed for id=86a3c4e7-3726-435e-8bdf-e496857cc48f: duplicate key value violates unique constraint "idx_engine_analyses_active_unique"
+2026-04-26T22:33:05.691553198Z [error] DETAIL:  Key (entity, event_date)=(drift, 2026-04-03) already exists.
+2026-04-26T22:33:05.691557279Z [error] NoneType: None
+2026-04-26T22:33:05.713771184Z [info] INFO:     100.64.0.22:38000 - "POST /api/engine/analyze HTTP/1.1" 202 Accepted
+2026-04-26T22:33:06.123696667Z [error] 2026-04-26 22:33:06,117 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000fbfbabaafd4b5573cdb235a7f6bd4411dc45a/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:06.125317057Z [info] INFO:     100.64.0.18:35182 - "GET /api/engine/analyses/86a3c4e7-3726-435e-8bdf-e496857cc48f HTTP/1.1" 200 OK
+2026-04-26T22:33:06.504228691Z [error] 2026-04-26 22:33:06,500 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x000feb072fbf7b96e3c4459b34d21969ef6fb37c/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:06.533262442Z [info] INFO:     100.64.0.18:35182 - "GET /api/engine/analyses/dd3ba39d-141b-474e-8000-3970df91081c HTTP/1.1" 200 OK
+2026-04-26T22:33:06.888369351Z [error] 2026-04-26 22:33:06,883 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0010183b2fec38806f535e9080e8c38d31ef7436/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:07.262048933Z [error] 2026-04-26 22:33:07,257 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0010213664496c8e4f92f22888d4037f535c0076/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:07.647733463Z [error] 2026-04-26 22:33:07,644 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0010310ca7fd11f4e470be22fcc855dcccd5cde8/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:08.025789811Z [error] 2026-04-26 22:33:08,022 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00104f544b3116df80307de2694081ab14abdf7b/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:08.564804506Z [error] 2026-04-26 22:33:08,561 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001059a47f31a2b6294b78a54802dafeca532987/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:08.640611006Z [info] INFO:     100.64.0.27:62194 - "POST /api/engine/analyze HTTP/1.1" 202 Accepted
+2026-04-26T22:33:08.984778469Z [error] 2026-04-26 22:33:08,981 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00106dd46cbd809d4fd127bb7fdae8cd4cb00d3d/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:09.595198019Z [error] 2026-04-26 22:33:09,592 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0010b6605a3643a8ce428c12b583046484daf445/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:09.798655299Z [info] INFO:     100.64.0.20:50902 - "POST /api/engine/analyze HTTP/1.1" 202 Accepted
+2026-04-26T22:33:10.030416942Z [error] 2026-04-26 22:33:10,026 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0010dcadbdc821868592cfc9da73c97f1f2412e0/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:10.696900182Z [error] 2026-04-26 22:33:10,482 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0011385f132149680aad79685baaeba477100ded/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:10.930450499Z [error] 2026-04-26 22:33:10,925 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001150c030b04af71c2f2b7a96993e42bc5d420a/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:11.566989499Z [error] 2026-04-26 22:33:11,316 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0011588dcec89b619d0fe4ac598c1b1d05355807/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:11.588629959Z [error] 2026-04-26 22:33:11,585 [WARNING] app.engine.observation_builder: observation_builder: measure 'guardian_count' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:33:11.588636598Z [error] 2026-04-26 22:33:11,585 [WARNING] app.engine.observation_builder: observation_builder: measure 'token_coverage' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:33:11.588641479Z [error] 2026-04-26 22:33:11,585 [WARNING] app.engine.observation_builder: observation_builder: measure 'bug_bounty_size' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:33:11.588647411Z [error] 2026-04-26 22:33:11,585 [WARNING] app.engine.observation_builder: observation_builder: measure 'code_complexity' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:33:11.588650825Z [error] 2026-04-26 22:33:11,585 [WARNING] app.engine.observation_builder: observation_builder: measure 'incident_history' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:33:11.588654800Z [error] 2026-04-26 22:33:11,585 [WARNING] app.engine.observation_builder: observation_builder: measure 'contract_age_days' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:33:11.588658552Z [error] 2026-04-26 22:33:11,585 [WARNING] app.engine.observation_builder: observation_builder: measure 'guardian_diversity' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:33:11.588662620Z [error] 2026-04-26 22:33:11,585 [WARNING] app.engine.observation_builder: observation_builder: measure 'slashing_mechanism' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:33:11.590317123Z [error] 2026-04-26 22:33:11,585 [WARNING] app.engine.observation_builder: observation_builder: measure 'validator_rotation' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:33:11.590325687Z [error] 2026-04-26 22:33:11,585 [WARNING] app.engine.observation_builder: observation_builder: measure 'bridge_dependency_risk' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:33:11.590330078Z [error] 2026-04-26 22:33:11,585 [WARNING] app.engine.observation_builder: observation_builder: measure 'verification_mechanism' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:33:11.590333740Z [error] 2026-04-26 22:33:11,585 [WARNING] app.engine.observation_builder: observation_builder: measure 'bridge_upgrade_mechanism' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:33:11.590337429Z [error] 2026-04-26 22:33:11,585 [WARNING] app.engine.observation_builder: observation_builder: measure 'time_since_incident_days' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:33:11.590341041Z [error] 2026-04-26 22:33:11,585 [WARNING] app.engine.observation_builder: observation_builder: measure 'token_holder_concentration' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:33:11.590344910Z [error] 2026-04-26 22:33:11,585 [WARNING] app.engine.observation_builder: observation_builder: measure 'bridge_governance_mechanism' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:33:11.590348474Z [error] 2026-04-26 22:33:11,585 [WARNING] app.engine.observation_builder: observation_builder: measure 'operator_geographic_diversity' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:33:11.787541063Z [error] 2026-04-26 22:33:11,784 [WARNING] app.engine.observation_builder: observation_builder: measure 'bridge_audit_research' not in MEASURE_UNITS; defaulting to 'unknown'. Add it to MEASURE_UNITS in app/engine/observation_builder.py to silence this.
+2026-04-26T22:33:11.987505446Z [info] INFO:     100.64.0.28:40084 - "POST /api/engine/analyze HTTP/1.1" 202 Accepted
+2026-04-26T22:33:12.019565230Z [error] 2026-04-26 22:33:12,017 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001172bcca8a6094cc6909bce461e0f56271b984/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:12.565495815Z [info] INFO:     100.64.0.20:50902 - "GET /api/engine/analyses?entity=layerzero&limit=50 HTTP/1.1" 200 OK
+2026-04-26T22:33:12.565500025Z [error] 2026-04-26 22:33:12,431 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00117623305dae01ad90be97d4ad4536e3b57cea/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:12.811833030Z [info] INFO:     100.64.0.20:50902 - "GET /api/engine/analyses/7f060761-bcba-48ef-8367-a63b2ae36ea0 HTTP/1.1" 404 Not Found
+2026-04-26T22:33:12.822520364Z [error] 2026-04-26 22:33:12,818 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00117d3474ce24552d6db301e8e42fda49765838/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:12.914098707Z [info] INFO:     100.64.0.20:50902 - "GET /api/engine/coverage/drift HTTP/1.1" 200 OK
+2026-04-26T22:33:13.202815634Z [error] 2026-04-26 22:33:13,199 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0011866c340701a94d8768b48ebaf2080443d119/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:13.588974702Z [error] 2026-04-26 22:33:13,584 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0011a408f441e83d7a0113834c1a442b7faf26f0/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:13.970840822Z [error] 2026-04-26 22:33:13,967 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0011b11dcff54d4ef1a110acd4c95f2be7be9da3/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:14.064356994Z [info] INFO:     100.64.0.18:35240 - "GET /api/engine/coverage/kelp-rseth HTTP/1.1" 200 OK
+2026-04-26T22:33:14.167421626Z [info] INFO:     100.64.0.20:50902 - "GET /api/engine/coverage/usdc HTTP/1.1" 200 OK
+2026-04-26T22:33:14.562531544Z [error] 2026-04-26 22:33:14,346 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0011c80546d4a2e2fb49cb76fffabc0b0f57caec/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:14.824336275Z [error] 2026-04-26 22:33:14,821 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0011f92de175b593658b0d55d862d6f5d0166ae6/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:15.560785135Z [info] INFO:     100.64.0.21:59458 - "GET /api/engine/coverage/jupiter-perpetual-exchange HTTP/1.1" 200 OK
+2026-04-26T22:33:15.560791995Z [error] 2026-04-26 22:33:15,350 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001250e47f8792ab5cba4d501fefb301358b0105/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:15.560797008Z [info] INFO:     100.64.0.20:50902 - "GET /api/engine/coverage/layerzero HTTP/1.1" 200 OK
+2026-04-26T22:33:15.728050524Z [info] INFO:     100.64.0.20:50902 - "GET /api/engine/coverage/this-entity-does-not-exist-xyz HTTP/1.1" 404 Not Found
+2026-04-26T22:33:15.741346741Z [error] 2026-04-26 22:33:15,737 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00125451aae4d5a454e99a15ed805ca42be7dd2d/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:16.122251211Z [error] 2026-04-26 22:33:16,117 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00132a3853a9f47ee26104dd109140b30dc82503/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:16.577024740Z [error] 2026-04-26 22:33:16,501 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001338dd652aa4febe8ff820ac93a29a1ae7f0e7/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:16.887332500Z [info] INFO:     100.64.0.20:50902 - "GET /api/engine/coverage/rseth HTTP/1.1" 200 OK
+2026-04-26T22:33:16.934287455Z [error] 2026-04-26 22:33:16,884 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00136005c1852b8bc7e68110d91f5ba21ab22862/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:17.272089690Z [error] 2026-04-26 22:33:17,267 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001380d2bc71b6f1bbe9ccd525e6cafc8e733033/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:17.660940195Z [error] 2026-04-26 22:33:17,656 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001384e3f7d783b70e058bcc96ba5043c3735da8/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:17.982793720Z [info] INFO:     100.64.0.23:14738 - "GET /api/engine/coverage/dai HTTP/1.1" 200 OK
+2026-04-26T22:33:18.050259763Z [error] 2026-04-26 22:33:18,044 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00139cb8a1acabe47559483e60f43b01cda73d75/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:18.083559191Z [info] INFO:     100.64.0.23:14738 - "GET /api/engine/coverage/drift HTTP/1.1" 200 OK
+2026-04-26T22:33:18.244393520Z [info] INFO:     100.64.0.22:40162 - "GET /api/engine/coverage/drift HTTP/1.1" 200 OK
+2026-04-26T22:33:18.569012111Z [error] 2026-04-26 22:33:18,429 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0013a398d1772299a3f947df5b1a8a9c9e109d5c/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:18.816545453Z [error] 2026-04-26 22:33:18,813 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0013c4e2621e00e642064c99ee560d0391ab6335/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:19.200118054Z [error] 2026-04-26 22:33:19,195 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0013e3751b34b1a11488fb512a6571288d912894/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:19.578623337Z [error] 2026-04-26 22:33:19,573 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0014150cbe1b89b668d70597c22c85c5a066ce17/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:19.957917140Z [error] 2026-04-26 22:33:19,955 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0014262a2639cfb36afbee4c293eeb30d7329b5c/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:20.574886942Z [error] 2026-04-26 22:33:20,335 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00142dafefecf4df3af10ac1833eb2d89fc28d92/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:20.767658740Z [error] 2026-04-26 22:33:20,763 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0014375b5147dfccfb01646f48d207dd3aa8bac3/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:21.176359063Z [error] 2026-04-26 22:33:21,173 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00147f213d818270dc8114e14a670ae2818e3c8a/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:21.802155335Z [error] 2026-04-26 22:33:21,798 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0014ea9bbe130c8af7f00c8e61fc07368bdaaf7d/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:22.584514574Z [error] 2026-04-26 22:33:22,309 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0014f1f08b5d57fec913cc5cad4606e40ccd9e68/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:22.690691751Z [error] 2026-04-26 22:33:22,687 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0015307450d2caf80195ff1d689bbd47eff3eaae/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:23.107799715Z [error] 2026-04-26 22:33:23,103 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001534e08b36c2329e6f7d1db1ec2c0ce2bf2303/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:23.570874386Z [error] 2026-04-26 22:33:23,482 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0015461224817bc66976a537082ed47719226725/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:23.875912140Z [error] 2026-04-26 22:33:23,871 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001555e3e73528ebbace3d00c00ce5e0f550603e/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:25.605018665Z [error] 2026-04-26 22:33:25,522 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001572686de59508c8f7e35c55e6b39256e9a0bb/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:25.605023836Z [info] INFO:     100.64.0.27:44934 - "POST /api/engine/analyze HTTP/1.1" 202 Accepted
+2026-04-26T22:33:25.906865127Z [error] 2026-04-26 22:33:25,902 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00157b13abe804f8f876ba3071219687e9f87819/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:26.640430861Z [info] INFO:     100.64.0.18:43672 - "POST /api/engine/analyze HTTP/1.1" 202 Accepted
+2026-04-26T22:33:26.640436504Z [error] 2026-04-26 22:33:26,527 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00158a74921620b39e5c3afe4dca79feb2c2c143/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:27.631200387Z [error] 2026-04-26 22:33:27,485 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0015ccf4e4635da2ae1e37cbf971f8ced29b3b53/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:27.631205769Z [info] INFO:     100.64.0.27:44934 - "POST /api/engine/analyze HTTP/1.1" 202 Accepted
+2026-04-26T22:33:27.895831788Z [error] 2026-04-26 22:33:27,867 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0015fbce72b141a85988d09cc223159921da5ad2/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:28.251698783Z [error] 2026-04-26 22:33:28,244 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00161a441ae1493ae8c4e996ad5789640f5fb420/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:28.631750284Z [error] 2026-04-26 22:33:28,623 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00164d5b44fc187ba9d8cfc6403b45510b7dbd82/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:29.024802199Z [error] 2026-04-26 22:33:29,021 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00169219376146760298417404949075285cab72/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:29.588432535Z [error] 2026-04-26 22:33:29,398 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0016c108ab94e93413923ff11b7939b4dc74cd09/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:29.783908284Z [error] 2026-04-26 22:33:29,780 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0016e3fbf6cd17107d51077f793d87cc0f9b3661/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:30.163249118Z [error] 2026-04-26 22:33:30,160 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0016fb3bd66edb19b868c0e1f266140c109f026e/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:30.585538971Z [info] INFO:     100.64.0.4:13124 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-04-26T22:33:30.585548995Z [error] 2026-04-26 22:33:30,546 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001724184cb6f1704ec93252cbb8fe3343dc8f63/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:30.928692535Z [error] 2026-04-26 22:33:30,925 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00175c79c1f5b57831e4c42eefef3f1be6034b4b/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:31.592391405Z [error] 2026-04-26 22:33:31,335 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00181f733b2624dd87c2264d8df138dd2389eed7/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:31.731995260Z [error] 2026-04-26 22:33:31,728 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001824df677275134b4eb8ff81b347a2f186d82e/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:32.118916597Z [error] 2026-04-26 22:33:32,115 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00183f4d23c1166dc64c0c01aeb4a4238cee8265/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:32.589222412Z [error] 2026-04-26 22:33:32,495 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0018406e46ac5269524f4d23c201179f212b3ffb/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:32.876245441Z [error] 2026-04-26 22:33:32,873 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001858857703f44148076e1b4c66a3e08522587b/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:32.925324773Z [info] INFO:     100.64.0.22:44280 - "GET /api/engine/analyses?entity=drift&limit=1 HTTP/1.1" 200 OK
+2026-04-26T22:33:33.254240229Z [error] 2026-04-26 22:33:33,250 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001883f1215108d6960a703b7d197554b23ba435/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:33.599192798Z [info] INFO:     100.64.0.20:53426 - "GET /api/engine/analyses/d8cbf844-2927-4abb-be7d-f6cba4b55cb5 HTTP/1.1" 200 OK
+2026-04-26T22:33:33.625574299Z [error] 2026-04-26 22:33:33,621 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00188fe8c33b56a9b00c8533d43c7261b4ffd6ef/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:34.011828496Z [error] 2026-04-26 22:33:34,007 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0018951d399eafa471af3cb7e14eed3694b23ccd/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:34.592197950Z [error] 2026-04-26 22:33:34,391 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0018b733e59f0fe0d7861f79d1c41cd5d33a02b5/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:34.776046666Z [error] 2026-04-26 22:33:34,771 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0018d95b9a559e72dc8ef381119446beaa81210a/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:35.152766980Z [error] 2026-04-26 22:33:35,148 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0018e89fb406fa9c1d39adbdc15f56967f4a7a49/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:35.582355605Z [error] 2026-04-26 22:33:35,532 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0018ee99c50faf800dab61e2c03038f130f88c46/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:35.995993487Z [error] 2026-04-26 22:33:35,991 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001930b5c1080fd295765cbe78fcab5209ce123b/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:36.588376777Z [error] 2026-04-26 22:33:36,555 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0019373201b88a435bb56ae9b6bd5aeb79f73548/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:37.024005717Z [error] 2026-04-26 22:33:37,019 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0019545c100c3441c4e9d40f24478fbffa53fd8a/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:37.591669541Z [error] 2026-04-26 22:33:37,544 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0019569b74dc8786403a8902448b140d04e5936c/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:37.937070981Z [error] 2026-04-26 22:33:37,934 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0019984f340f6efdc92a662f6affa86add0df3da/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:38.591104275Z [error] 2026-04-26 22:33:38,330 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00199ff1e9a0ebb2ab1f2f47093467e1536c9e7a/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:38.854657323Z [error] 2026-04-26 22:33:38,850 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0019ba933e5fdba13fffb2085360c9196e8b473c/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:38.854662770Z [info] INFO:     100.64.0.15:54928 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-04-26T22:33:39.237445145Z [error] 2026-04-26 22:33:39,232 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0019df5990a01ac16057ad313d566014ee8ce1d4/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:39.613606661Z [error] 2026-04-26 22:33:39,609 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0019e3dfdcb3e8e59227474cf0d923c713e25c26/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:39.995937031Z [error] 2026-04-26 22:33:39,992 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001a14fad51cf753c071cc82cde18b8434999ece/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:40.596177142Z [error] 2026-04-26 22:33:40,381 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001a2f803b5b97b8bc4fdaa06d50024c86bfa40d/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:40.772232790Z [error] 2026-04-26 22:33:40,769 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001a43d6cc3cef98b764c367bb20d48ddd957dc9/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:41.181275402Z [error] 2026-04-26 22:33:41,178 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001a5f5a246a99dc403ace5e6e1d91d872a4fcba/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:41.593620848Z [error] 2026-04-26 22:33:41,561 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001a718fb649962b417075747ded135c0f411a50/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:41.982285041Z [error] 2026-04-26 22:33:41,974 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001a98492ac5f1fb01a2525cfd1e875de7cfd352/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:42.610397276Z [error] 2026-04-26 22:33:42,483 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001aa3d1fcd698ccc063f2e692f0fc02e4f3dd15/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:42.868082069Z [error] 2026-04-26 22:33:42,863 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001ab4e8f3af994695db58b94a5c5971bbb1fef6/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:43.244824514Z [error] 2026-04-26 22:33:43,240 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001abf194181f90cbb470713c5c0d550a5ce9bc3/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:43.624837255Z [error] 2026-04-26 22:33:43,621 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001addeb05d5607dd44a0011a47d806e0456efe2/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:44.003045237Z [error] 2026-04-26 22:33:43,998 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001b10f43aebcdb4b179828b72b31bb6540330df/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:44.606058368Z [error] 2026-04-26 22:33:44,380 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001b30e7c8f7ba32ad30fdc12558c791edd988bb/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:44.767791323Z [error] 2026-04-26 22:33:44,763 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001b64582a0b7d6a6be6055c9fd6107be80b16b7/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:45.146593024Z [error] 2026-04-26 22:33:45,143 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001bbcb874685b4f15199ba5f2ecbe73e8eb4a14/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:45.605230171Z [error] 2026-04-26 22:33:45,557 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001bc3cfc3eed892dd6de07807333f2b05c5b4e9/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:45.939687665Z [error] 2026-04-26 22:33:45,935 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001c254bae23235de8d893abc14936551a491af9/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:46.644571655Z [error] 2026-04-26 22:33:46,395 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001ccb4aee11e54217dc4b02b7bd252f5d420d1f/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:46.803946358Z [error] 2026-04-26 22:33:46,800 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001cf8499d50bdaa07edb3aa9990ed6830fb723a/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:47.190827525Z [error] 2026-04-26 22:33:47,186 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001d020276d08b7364179faa405b9c4c4dad6993/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:47.617079365Z [error] 2026-04-26 22:33:47,567 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001d0af6f6e5af7625e15dde2c1b80d4eb284bf7/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:47.956183564Z [error] 2026-04-26 22:33:47,952 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001d7e3bbeca47442896d55feeaddf7f80b618af/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:48.612112147Z [error] 2026-04-26 22:33:48,331 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001d9bd55cde25ab9dc9c9a3045074c7ea0a1170/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:48.802130127Z [error] 2026-04-26 22:33:48,798 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001db7bf572c3fe423d5868664b64a1689d26fef/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:48.802137803Z [info] INFO:     100.64.0.15:49846 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-04-26T22:33:49.185642726Z [error] 2026-04-26 22:33:49,182 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001dc5ac541cfff367ecb932e204d0cc8ad94284/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:49.612480269Z [error] 2026-04-26 22:33:49,563 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001de21fca8debf94f02c24c5a503e6cd5c85073/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:49.948918264Z [error] 2026-04-26 22:33:49,943 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001de8cc4a8f17eee1a5000dd99e03dbe46b70ea/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:50.607138053Z [error] 2026-04-26 22:33:50,356 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001e2bcc5c1bfc3131d33ba074b12c2f1237fb04/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:50.751481090Z [error] 2026-04-26 22:33:50,744 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001e5288fcf81a71dc5f59737aa5f9c71ea46ddd/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:51.128723828Z [error] 2026-04-26 22:33:51,123 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001e59ed5588836b71dbafa0a39daa5a887a7d5f/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:51.615513462Z [error] 2026-04-26 22:33:51,542 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001e705d937ace03b6b8ba7d4bdf4320fc7852b6/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:51.930345346Z [error] 2026-04-26 22:33:51,925 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001e89fb67cade1b498c6809b4f9ccc60e05b7f7/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:52.310056166Z [error] 2026-04-26 22:33:52,306 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001e99613dbd42705e4665104f4d6e80f7e52d79/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:52.700041003Z [error] 2026-04-26 22:33:52,695 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001eb8be61b1bc144707f45a9314d0b53f33b66f/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:53.101676302Z [error] 2026-04-26 22:33:53,097 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001ec154610ceed51af523dfa0c84b6d6a273fd0/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:53.619679632Z [info] INFO:     100.64.0.29:37992 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-04-26T22:33:53.619683711Z [error] 2026-04-26 22:33:53,541 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001ec4e80873fc7709b67d65566c3471083d1f1a/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:53.941842825Z [error] 2026-04-26 22:33:53,931 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001ef9bd10fc19f16f13894e696a8f0fd66477b4/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:54.330298474Z [error] 2026-04-26 22:33:54,326 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001f100258e6d4e930db3d2463e6bb23a9a614ab/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:54.720329809Z [error] 2026-04-26 22:33:54,716 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001f19d29d71947031766b4b57a5821e75c4850a/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:54.978699173Z [info] INFO:     100.64.0.2:40702 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-04-26T22:33:55.108801763Z [error] 2026-04-26 22:33:55,105 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001f2b57ac8b882ffd76cd34efed97ad119d170f/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:55.627155323Z [error] 2026-04-26 22:33:55,507 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001f341cae4e6e2e81ed5a100a1770bdf46235fa/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:55.894443477Z [error] 2026-04-26 22:33:55,890 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001fadb51dbe787e55ea7e65ef15a145a22370ee/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:56.623939574Z [error] 2026-04-26 22:33:56,386 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001fbcd3ca9720bc35762eabf82821f05d4d3b02/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:56.960468597Z [error] 2026-04-26 22:33:56,950 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001fd9833769ad66accf63ff844ad63315218888/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:57.611585678Z [error] 2026-04-26 22:33:57,347 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001ff10e5a5f660510510d343bd9bb95bef3cf7c/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:57.611591410Z [info] INFO:     100.64.0.2:40702 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-04-26T22:33:57.746044278Z [error] 2026-04-26 22:33:57,741 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001ffeba260f765a1f472fe3a8de684ad92b8e66/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:58.137619430Z [error] 2026-04-26 22:33:58,134 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00205dd74714ac420921baac86054159984ec0af/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:58.622898065Z [error] 2026-04-26 22:33:58,550 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x002080bdf8e8db063899663620b16c451bec6cbc/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:58.944570360Z [error] 2026-04-26 22:33:58,936 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0020f73e10f50fc94e63fa5a0a337102bd6a4c82/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:59.321826965Z [error] 2026-04-26 22:33:59,318 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x002107b475efe280e79ea5d44dbbf84fdd4b2818/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:59.720850886Z [error] 2026-04-26 22:33:59,716 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00213bd599a69690c8a0d693d58a557a146f3b7b/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:33:59.851030999Z [info] INFO:     100.64.0.30:57054 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-04-26T22:34:00.108066755Z [error] 2026-04-26 22:34:00,104 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00214fb2089db8143314e974b5bdc13abb0d825e/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:00.616336871Z [error] 2026-04-26 22:34:00,484 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x002156a2378b73ab4d9cd4c0e24f4e580a5cc12b/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:00.866360754Z [error] 2026-04-26 22:34:00,862 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00215f6efb1d4acd17af3cb867fb1cda10e5087c/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:01.260304511Z [error] 2026-04-26 22:34:01,256 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0021775de263c4b4ca4888d5167a14dadf71a5e0/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:01.663583330Z [error] 2026-04-26 22:34:01,660 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0021ce9f58c05cd52c32c9fb9058478f13d1c066/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:02.042850216Z [error] 2026-04-26 22:34:02,039 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00234465763420be885b911cb7fdc4c24d746d0a/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:02.622899908Z [error] 2026-04-26 22:34:02,435 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0024c8a49230d2b18566448d65d7b3a9fab2cfd9/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:02.825888804Z [error] 2026-04-26 22:34:02,821 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00250f5a7a53aef87a05778e3af205df36c7b5e7/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:03.202630348Z [error] 2026-04-26 22:34:03,200 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x002599da153fe296c88aef4420ece1441ae95224/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:03.613883662Z [error] 2026-04-26 22:34:03,586 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x002658645b5f59dd6799323e1d9359b234740971/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:03.967253421Z [error] 2026-04-26 22:34:03,963 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00270571ec7033374a5026c47241719df6d62e4a/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:04.625836569Z [error] 2026-04-26 22:34:04,348 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00272a9011d4077bf89495cdfcf1c61c5f9ce84a/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:04.625844402Z [info] INFO:     100.64.0.4:22602 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-04-26T22:34:04.739486315Z [error] 2026-04-26 22:34:04,736 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0027966ca7cb694bd5dbd856c6dadebe3274eb61/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:05.150629383Z [error] 2026-04-26 22:34:05,145 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0027e6b8f1ef815a2ab64cc5b4f799cdeb2e4cc8/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:05.625858520Z [error] 2026-04-26 22:34:05,530 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0028aa1eed34be46233868269c03d9dee6e3a563/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:05.917089983Z [error] 2026-04-26 22:34:05,913 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0028abbe7eb7380a0e246cc6efe63b8fef2fabaf/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:06.299749188Z [error] 2026-04-26 22:34:06,295 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0028f37a82198072ef6fa8712ce6081d46672901/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:06.689690786Z [error] 2026-04-26 22:34:06,685 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x002b73efef8cb2f01c50ce92674e51d737821bfe/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:07.086972582Z [error] 2026-04-26 22:34:07,082 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x002bb03b7d726357b6b317affc5bfdba5bb5d0fa/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:07.607668880Z [info] INFO:     100.64.0.4:22602 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-04-26T22:34:07.647301289Z [error] 2026-04-26 22:34:07,642 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x002cdae07e0d84b2c2a5ba8363cb5b31e3c74ff5/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:08.021982764Z [error] 2026-04-26 22:34:08,019 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x002d92aee3a97698e6f8498128286ee2f551d583/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:08.638823621Z [error] 2026-04-26 22:34:08,401 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x002eb018f07197b07e139badc88c1a076d858fb0/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:08.785541875Z [error] 2026-04-26 22:34:08,779 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x002fca26ec0eb8cf28bfc26e0fb5f318ed93eb53/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:09.159636304Z [error] 2026-04-26 22:34:09,155 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00300939fa8391d9642cb2accf39a473073cc7ea/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:09.736833060Z [error] 2026-04-26 22:34:09,537 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00314a84117689947753ec669e77a25af1aec0d6/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:09.921142023Z [error] 2026-04-26 22:34:09,916 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x003178913970cf124587e8fe235eb66064c4a8f6/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:10.296198944Z [error] 2026-04-26 22:34:10,293 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x003190a4b84e07d3d43890c21f133760c1e2c4b6/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:10.660822740Z [info] INFO:     100.64.0.31:59254 - "GET / HTTP/1.1" 200 OK
+2026-04-26T22:34:10.888023767Z [error] 2026-04-26 22:34:10,868 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0031c5a77471aa5225909772aa7b76bf0ca172a7/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:10.888040204Z [info] INFO:     100.64.0.6:35296 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-04-26T22:34:11.256274422Z [error] 2026-04-26 22:34:11,250 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00323246902dc6b1b025e9a27904ba14f47cd976/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:11.636038688Z [error] 2026-04-26 22:34:11,628 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0033a5c0b3797f42e546981f692ef5a1ac333365/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:12.011034470Z [error] 2026-04-26 22:34:12,006 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x003470c9d2275c809995be91a78c673419883f7e/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:12.660465230Z [error] 2026-04-26 22:34:12,382 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00359f8c24f006d91344eea7f8480bb10734aecf/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:12.781592345Z [error] 2026-04-26 22:34:12,778 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0036534c48a754163f0f446601f36bcfda840f57/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:13.345324851Z [error] 2026-04-26 22:34:13,340 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0036a966ae7354b71ffece341509bacd68f2b788/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:13.744519899Z [error] 2026-04-26 22:34:13,740 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0036f645abc5dd446bef60a014e6c0ce42fe0731/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:14.255975427Z [error] 2026-04-26 22:34:14,252 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0037181b4c3c780caa1c9f58a78df413583946ca/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:14.647867081Z [info] INFO:     100.64.0.32:25284 - "GET / HTTP/1.1" 200 OK
+2026-04-26T22:34:14.798716364Z [error] 2026-04-26 22:34:14,794 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00377bc37b60f4a21ebf199c6b92cff1e1a27cd7/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:14.937347925Z [info] INFO:     100.64.0.9:14152 - "GET / HTTP/1.1" 200 OK
+2026-04-26T22:34:15.185498469Z [error] 2026-04-26 22:34:15,181 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00378d6aeba9df5349732d2bc27732b3e599055a/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:15.634087785Z [info] INFO:     100.64.0.4:32034 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-04-26T22:34:15.641915455Z [error] 2026-04-26 22:34:15,636 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00387c3e70361caf365a7bcd5b433c757f2c5b44/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:16.017387653Z [error] 2026-04-26 22:34:16,013 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0038a283c375a40384ca023c015f306dcd0a0fb2/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:16.640802657Z [error] 2026-04-26 22:34:16,428 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x003a1bed20c0ec41acbb22ee08cdfe1928d2b437/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:16.831500975Z [error] 2026-04-26 22:34:16,828 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x003df61aa894d482067c256d512c6980b7c567f2/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:17.284238224Z [error] 2026-04-26 22:34:17,280 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x003e36550908907c2a2da960fd19a419b9a774b7/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:18.061268848Z [error] 2026-04-26 22:34:18,058 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x003e5e8bc7172cbfac88f843f62d42418a752619/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:18.645791335Z [error] 2026-04-26 22:34:18,430 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x003f60d4a041cb82156e97cfd31e14ea45482398/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:18.818866239Z [error] 2026-04-26 22:34:18,814 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x003fb668f3420deca0f326894b02f4ba6ea6933e/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:19.206913439Z [error] 2026-04-26 22:34:19,203 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00402adcc4bc91eb1d912409de17a74f731cf927/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:19.652170946Z [error] 2026-04-26 22:34:19,605 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00408f63225606c36b80e831bce3b5cc3861d501/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:20.130767296Z [error] 2026-04-26 22:34:20,128 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0040e422002b4e02383b192c9c53b03b61a9526f/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:20.648852184Z [error] 2026-04-26 22:34:20,509 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0040e7588c1ada204b736958e8b0263667c4c1ae/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:20.905459531Z [error] 2026-04-26 22:34:20,902 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0040ea67f203be2f2626b2d60498e0144cae006c/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:21.304477780Z [error] 2026-04-26 22:34:21,300 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x004154553fbca7759d5df5e0232f17a67f5b8b9d/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:21.680491094Z [error] 2026-04-26 22:34:21,674 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0041ea262865b14a6f7b46781d0b7841fef440a1/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:22.179800063Z [error] 2026-04-26 22:34:22,175 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x004298d4f4388967d39562832d36be6b68203116/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:22.179805753Z [info] INFO:     100.64.0.4:33382 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-04-26T22:34:22.714352483Z [error] 2026-04-26 22:34:22,710 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00446f19566fd3b1291ce83e43fef3be8ae6753b/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:23.222801965Z [error] 2026-04-26 22:34:23,219 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0044e42466fe60fef6432aae36b8d6648e7d1ec3/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:23.651859758Z [error] 2026-04-26 22:34:23,628 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0045c3514fc5876b58a220e10eb1da49c5b72d74/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:24.076020689Z [error] 2026-04-26 22:34:24,073 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0046f88e25a5c273ae25ca04d4cb4721297f1d61/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:24.077967611Z [info] INFO:     100.64.0.30:45098 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-04-26T22:34:24.658629947Z [info] INFO:     100.64.0.26:60566 - "GET / HTTP/1.1" 200 OK
+2026-04-26T22:34:24.658636865Z [error] 2026-04-26 22:34:24,468 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x004744f94a3488cb50f5622c10ad11965980184b/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:24.820320013Z [info] INFO:     100.64.0.15:53394 - "GET /api/provenance/cda-sources HTTP/1.1" 200 OK
+2026-04-26T22:34:24.978242380Z [error] 2026-04-26 22:34:24,974 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00479651cf5adac6d10f8592cc0023a516ddad32/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:25.810934944Z [error] 2026-04-26 22:34:25,376 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00488f6b3729fc6fbffdf453baa9e68aefbb917a/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:25.810940587Z [error] 2026-04-26 22:34:25,779 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0048d40addc5c05fb35ea808b68cce71a32511ea/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:26.180714451Z [error] 2026-04-26 22:34:26,176 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0048efc87a7e2feaec8c2f80ed74a8ab1bb92d3e/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:26.646994229Z [error] 2026-04-26 22:34:26,553 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00491a72c0756cfa15d2c0635f6c2c0897137ef3/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:26.761227420Z [info] INFO:     100.64.0.29:59182 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-04-26T22:34:26.940481381Z [error] 2026-04-26 22:34:26,933 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x004a3eaf70bfff75a4bff6a3430c865d4c90a4f4/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:27.318574738Z [error] 2026-04-26 22:34:27,313 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x004c9c3ba2b6a739d4bf9e43e87901563119e75e/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:27.702544392Z [error] 2026-04-26 22:34:27,698 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x004d5c89f9cae77e2da237c36f57a7b2a299aa18/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:28.081086841Z [error] 2026-04-26 22:34:28,077 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x004d661a458cd4533c23ae6223f6d56cffd10073/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:28.652217290Z [error] 2026-04-26 22:34:28,475 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x004dc86e81e92fe4596f62d85fd6d652df70c0d5/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:28.898784600Z [error] 2026-04-26 22:34:28,894 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x004dce64676eb3f0f23bd397a270209071535b74/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:29.191763113Z [info] INFO:     100.64.0.30:45112 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-04-26T22:34:29.364878289Z [error] 2026-04-26 22:34:29,361 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x004e77d7bc843d4ffe3a53dba40aeeddc8e5491b/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:29.753114077Z [error] 2026-04-26 22:34:29,750 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00504d25182b7dfd515b51fc4e720062bf41deb7/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:30.132051541Z [error] 2026-04-26 22:34:30,128 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x005092d433e45fe6faffa202bd13e301dcb3b54c/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:30.649562178Z [error] 2026-04-26 22:34:30,517 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0051242a78811278fdbf7b8fa64022b0cd4b1766/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:30.900722805Z [error] 2026-04-26 22:34:30,896 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00544ea7a57ea21db6e4a413da3cf2a1b31d7edf/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:31.288982153Z [error] 2026-04-26 22:34:31,285 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x005452f26e67fff24ca2fdcd591c86f964bca99b/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:31.673416071Z [error] 2026-04-26 22:34:31,669 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x005495a17a11092b39cffea404f867f975384975/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:32.070162541Z [error] 2026-04-26 22:34:32,066 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0055f4213cfd17269e68786bd5067253232a0414/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:32.660796385Z [error] 2026-04-26 22:34:32,450 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x005608ee35c1e6285f04844a1df41dd3f5d5572e/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:32.839944810Z [error] 2026-04-26 22:34:32,836 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0056d4e5a55c73bedcf6c7054f4af899c49b231f/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:33.227888481Z [error] 2026-04-26 22:34:33,223 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x0057e5f11545e2791ebca54981d38141add5acd6/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:33.645612774Z [error] 2026-04-26 22:34:33,620 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00588e8190f2685b1c953f4f585894692d208fc9/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:33.935355572Z [info] INFO:     100.64.0.4:53490 - "POST /api/provenance/static/register HTTP/1.1" 405 Method Not Allowed
+2026-04-26T22:34:34.049753582Z [error] 2026-04-26 22:34:34,046 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x005923c6c3646ccf2c09e132435cb6b90e7690fe/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:34.656369828Z [error] 2026-04-26 22:34:34,465 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x005ae9d38f2df944731bd9420955ac6fa26a5110/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:34.973281287Z [error] 2026-04-26 22:34:34,969 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x005b0743d8b2ed646499dc48b64b95e71b8afa43/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:35.660240612Z [error] 2026-04-26 22:34:35,629 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x005bf8e731da6e9c6c92341946cca4ce54affe4c/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:36.013676192Z [error] 2026-04-26 22:34:36,010 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x005c27b62e469d80f3433a2c3d9019b2bcbbae3a/token-balances "HTTP/1.1 200 OK"
+2026-04-26T22:34:36.015640070Z [error] 2026-04-26 22:34:36,012 [INFO] app.indexer.scanner: Batch scan [Blockscout]: 288 wallets with holdings, 23 contracts matched, 75 addresses failed
+2026-04-26T22:34:36.015646774Z [error] 2026-04-26 22:34:36,012 [INFO] app.indexer.scanner: Batch scan complete: 500 API calls, 75 failures, 288 wallets with holdings out of 500 total, 212 wallets deferred for retry
+2026-04-26T22:34:36.015651258Z [error] 2026-04-26 22:34:36,012 [INFO] basis.reindex: Scan complete: 288 wallets with holdings, 75 batch failures, 500 API calls, 212 wallets deferred for retry
+2026-04-26T22:34:36.015656298Z [error] 2026-04-26 22:34:36,012 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:34:36.015661520Z [error] 2026-04-26 22:34:36,012 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:34:36.319359062Z [info] INFO:     100.64.0.5:38868 - "POST /api/provenance/static/register HTTP/1.1" 405 Method Not Allowed
+2026-04-26T22:34:38.860362339Z [info] INFO:     100.64.0.2:23352 - "POST /api/provenance/static/register HTTP/1.1" 405 Method Not Allowed
+2026-04-26T22:34:39.199777115Z [error] 2026-04-26 22:34:39,194 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:34:39.199785454Z [error] 2026-04-26 22:34:39,194 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:34:39.199791412Z [error] 2026-04-26 22:34:39,194 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:34:39.199796405Z [error] 2026-04-26 22:34:39,194 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:34:41.696441131Z [info] INFO:     100.64.0.30:54944 - "POST /api/provenance/static/register HTTP/1.1" 405 Method Not Allowed
+2026-04-26T22:34:41.966505003Z [error] 2026-04-26 22:34:41,961 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:34:41.966510400Z [error] 2026-04-26 22:34:41,961 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:34:42.954633192Z [error] 2026-04-26 22:34:42,951 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:34:42.954640364Z [error] 2026-04-26 22:34:42,951 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:34:44.995284273Z [error] 2026-04-26 22:34:44,991 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:34:46.682640302Z [info] INFO:     100.64.0.6:33544 - "POST /api/provenance/static/register HTTP/1.1" 405 Method Not Allowed
+2026-04-26T22:34:47.765439236Z [error] 2026-04-26 22:34:47,761 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:34:47.765442977Z [error] 2026-04-26 22:34:47,761 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:34:47.765446251Z [error] 2026-04-26 22:34:47,761 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:34:49.348107450Z [info] INFO:     100.64.0.4:40938 - "POST /api/provenance/static/register HTTP/1.1" 405 Method Not Allowed
+2026-04-26T22:34:49.743359824Z [error] 2026-04-26 22:34:49,740 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:34:49.743366311Z [error] 2026-04-26 22:34:49,740 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:34:49.743376810Z [error] 2026-04-26 22:34:49,740 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:34:51.728273151Z [error] 2026-04-26 22:34:51,723 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:34:51.728277909Z [error] 2026-04-26 22:34:51,723 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:34:52.175740433Z [info] INFO:     100.64.0.6:51904 - "POST /api/provenance/static/register HTTP/1.1" 405 Method Not Allowed
+2026-04-26T22:34:53.713546412Z [error] 2026-04-26 22:34:53,708 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:34:53.713552703Z [error] 2026-04-26 22:34:53,708 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:34:53.713556738Z [error] 2026-04-26 22:34:53,708 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:34:53.713560682Z [error] 2026-04-26 22:34:53,708 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:34:53.713563936Z [error] 2026-04-26 22:34:53,708 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:34:55.324711083Z [info] INFO:     100.64.0.2:20674 - "POST /api/provenance/static/register HTTP/1.1" 405 Method Not Allowed
+2026-04-26T22:34:56.092579646Z [error] 2026-04-26 22:34:56,087 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:34:56.092586412Z [error] 2026-04-26 22:34:56,087 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:34:56.092590037Z [error] 2026-04-26 22:34:56,087 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:34:56.092595572Z [error] 2026-04-26 22:34:56,087 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:34:56.092598997Z [error] 2026-04-26 22:34:56,087 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:34:57.702125382Z [error] 2026-04-26 22:34:57,471 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:35:00.700595875Z [error] 2026-04-26 22:35:00,440 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:35:02.712524680Z [error] 2026-04-26 22:35:02,417 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:35:02.712530632Z [error] 2026-04-26 22:35:02,417 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:35:11.341050651Z [error] 2026-04-26 22:35:11,336 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:35:11.341054365Z [error] 2026-04-26 22:35:11,337 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:35:11.341057912Z [error] 2026-04-26 22:35:11,337 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:35:12.333310419Z [error] 2026-04-26 22:35:12,328 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:35:12.333316965Z [error] 2026-04-26 22:35:12,328 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:35:12.333320882Z [error] 2026-04-26 22:35:12,329 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:35:14.707786612Z [error] 2026-04-26 22:35:14,701 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:35:20.052871814Z [error] 2026-04-26 22:35:20,049 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:35:23.260602262Z [error] 2026-04-26 22:35:23,256 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:35:23.260608176Z [error] 2026-04-26 22:35:23,256 [INFO] basis.reindex: Skipping 0x00000000… — API failed, will retry next cycle
+2026-04-26T22:35:28.720127392Z [error] 2026-04-26 22:35:28,602 [INFO] basis.reindex: Skipping 0x00000010… — API failed, will retry next cycle
+2026-04-26T22:35:31.376642272Z [error] 2026-04-26 22:35:31,372 [INFO] basis.reindex: Skipping 0x0000007c… — API failed, will retry next cycle
+2026-04-26T22:35:33.757199864Z [error] 2026-04-26 22:35:33,752 [INFO] basis.reindex: Skipping 0x000000fe… — API failed, will retry next cycle
+2026-04-26T22:35:36.740869400Z [error] 2026-04-26 22:35:36,721 [INFO] basis.reindex: Skipping 0x00000a6f… — API failed, will retry next cycle
+2026-04-26T22:35:37.896846088Z [error] 2026-04-26 22:35:37,717 [INFO] basis.reindex: Skipping 0x00000c55… — API failed, will retry next cycle
+2026-04-26T22:35:40.760612118Z [error] 2026-04-26 22:35:40,484 [INFO] basis.reindex: Skipping 0x00000ded… — API failed, will retry next cycle
+2026-04-26T22:35:41.789636987Z [error] 2026-04-26 22:35:41,473 [INFO] basis.reindex: Skipping 0x0000141e… — API failed, will retry next cycle
+2026-04-26T22:35:41.789641564Z [error] 2026-04-26 22:35:41,473 [INFO] basis.reindex: Skipping 0x000025c3… — API failed, will retry next cycle
+2026-04-26T22:35:46.221216523Z [error] 2026-04-26 22:35:46,217 [INFO] basis.reindex: Skipping 0x0000428d… — API failed, will retry next cycle
+2026-04-26T22:35:46.221224490Z [error] 2026-04-26 22:35:46,217 [INFO] basis.reindex: Skipping 0x000048d9… — API failed, will retry next cycle
+2026-04-26T22:35:50.392690225Z [error] 2026-04-26 22:35:50,388 [INFO] basis.reindex: Skipping 0x00006984… — API failed, will retry next cycle
+2026-04-26T22:35:56.933962263Z [error] 2026-04-26 22:35:56,706 [INFO] basis.reindex: Skipping 0x00009b30… — API failed, will retry next cycle
+2026-04-26T22:35:59.778970745Z [error] 2026-04-26 22:35:59,674 [INFO] basis.reindex: Skipping 0x0000b064… — API failed, will retry next cycle
+2026-04-26T22:36:08.985831247Z [error] 2026-04-26 22:36:08,980 [INFO] basis.reindex: Skipping 0x0000eb4a… — API failed, will retry next cycle
+2026-04-26T22:36:10.780882285Z [error] 2026-04-26 22:36:10,760 [INFO] basis.reindex: Skipping 0x0000f6e1… — API failed, will retry next cycle
+2026-04-26T22:36:30.516612507Z [error] 2026-04-26 22:36:20,735 [INFO] basis.reindex: Skipping 0x0001d6e3… — API failed, will retry next cycle
+2026-04-26T22:36:30.516617888Z [error] 2026-04-26 22:36:20,735 [INFO] basis.reindex: Skipping 0x0001e294… — API failed, will retry next cycle
+2026-04-26T22:36:30.516621785Z [error] 2026-04-26 22:36:21,724 [INFO] basis.reindex: Skipping 0x00023d3b… — API failed, will retry next cycle
+2026-04-26T22:36:30.516625854Z [error] 2026-04-26 22:36:21,724 [INFO] basis.reindex: Skipping 0x000241e9… — API failed, will retry next cycle
+2026-04-26T22:36:30.516629653Z [error] 2026-04-26 22:36:23,702 [INFO] basis.reindex: Skipping 0x0002d2b2… — API failed, will retry next cycle
+2026-04-26T22:36:30.516632781Z [error] 2026-04-26 22:36:28,185 [INFO] basis.reindex: Skipping 0x0003354a… — API failed, will retry next cycle
+2026-04-26T22:36:32.150721021Z [error] 2026-04-26 22:36:32,147 [INFO] basis.reindex: Skipping 0x0003d7bf… — API failed, will retry next cycle
+2026-04-26T22:36:34.125279679Z [error] 2026-04-26 22:36:34,121 [INFO] basis.reindex: Skipping 0x00045e46… — API failed, will retry next cycle
+2026-04-26T22:36:34.125286323Z [error] 2026-04-26 22:36:34,121 [INFO] basis.reindex: Skipping 0x00045e86… — API failed, will retry next cycle
+2026-04-26T22:36:36.109593393Z [error] 2026-04-26 22:36:36,105 [INFO] basis.reindex: Skipping 0x00049d51… — API failed, will retry next cycle
+2026-04-26T22:36:42.444254852Z [error] 2026-04-26 22:36:42,440 [INFO] basis.reindex: Skipping 0x000533f5… — API failed, will retry next cycle
+2026-04-26T22:37:02.443467384Z [error] 2026-04-26 22:36:52,538 [INFO] basis.reindex: Skipping 0x0005d9d7… — API failed, will retry next cycle
+2026-04-26T22:37:02.443474417Z [error] 2026-04-26 22:36:52,538 [INFO] basis.reindex: Skipping 0x0005dfe5… — API failed, will retry next cycle
+2026-04-26T22:37:02.443478668Z [error] 2026-04-26 22:36:52,538 [INFO] basis.reindex: Skipping 0x0005fc38… — API failed, will retry next cycle
+2026-04-26T22:37:04.832623883Z [error] 2026-04-26 22:37:04,595 [INFO] basis.reindex: Skipping 0x000697af… — API failed, will retry next cycle
+2026-04-26T22:37:06.850330515Z [error] 2026-04-26 22:37:06,576 [INFO] basis.reindex: Skipping 0x0006a97a… — API failed, will retry next cycle
+2026-04-26T22:37:13.415747557Z [info] INFO:     100.64.0.33:52530 - "GET / HTTP/1.1" 200 OK
+2026-04-26T22:37:17.454792141Z [error] 2026-04-26 22:37:17,452 [INFO] basis.reindex: Skipping 0x000781e8… — API failed, will retry next cycle
+2026-04-26T22:37:17.454798219Z [error] 2026-04-26 22:37:17,452 [INFO] basis.reindex: Skipping 0x000789cb… — API failed, will retry next cycle
+2026-04-26T22:37:17.454802012Z [error] 2026-04-26 22:37:17,452 [INFO] basis.reindex: Skipping 0x00079a80… — API failed, will retry next cycle
+2026-04-26T22:37:18.445674624Z [error] 2026-04-26 22:37:18,442 [INFO] basis.reindex: Skipping 0x00079c59… — API failed, will retry next cycle
+2026-04-26T22:37:18.445682010Z [error] 2026-04-26 22:37:18,442 [INFO] basis.reindex: Skipping 0x0007eac4… — API failed, will retry next cycle
+2026-04-26T22:37:18.445686402Z [error] 2026-04-26 22:37:18,442 [INFO] basis.reindex: Skipping 0x0007f1b7… — API failed, will retry next cycle
+2026-04-26T22:37:18.445690199Z [error] 2026-04-26 22:37:18,442 [INFO] basis.reindex: Skipping 0x00080d74… — API failed, will retry next cycle
+2026-04-26T22:37:23.848299884Z [error] 2026-04-26 22:37:23,647 [INFO] basis.reindex: Skipping 0x0008bf4d… — API failed, will retry next cycle
+2026-04-26T22:37:23.848307925Z [error] 2026-04-26 22:37:23,647 [INFO] basis.reindex: Skipping 0x0008ce60… — API failed, will retry next cycle
+2026-04-26T22:37:23.848314804Z [error] 2026-04-26 22:37:23,647 [INFO] basis.reindex: Skipping 0x0008d880… — API failed, will retry next cycle
+2026-04-26T22:37:24.857182009Z [error] 2026-04-26 22:37:24,637 [INFO] basis.reindex: Skipping 0x0008e3a7… — API failed, will retry next cycle
+2026-04-26T22:37:24.857186359Z [error] 2026-04-26 22:37:24,637 [INFO] basis.reindex: Skipping 0x00091f3c… — API failed, will retry next cycle
+2026-04-26T22:37:29.857937320Z [info] INFO:     100.64.0.27:51102 - "GET /api/engine/analyses?entity=drift&limit=1 HTTP/1.1" 200 OK
+2026-04-26T22:37:30.231054200Z [info] INFO:     100.64.0.34:53942 - "GET /api/engine/analyses/d8cbf844-2927-4abb-be7d-f6cba4b55cb5 HTTP/1.1" 200 OK
+2026-04-26T22:37:33.367933789Z [error] 2026-04-26 22:37:33,365 [INFO] basis.reindex: Skipping 0x000a6dbe… — API failed, will retry next cycle
+2026-04-26T22:37:34.870531158Z [error] 2026-04-26 22:37:34,749 [INFO] basis.reindex: Skipping 0x000acc80… — API failed, will retry next cycle
+2026-04-26T22:37:35.883540856Z [error] 2026-04-26 22:37:35,740 [INFO] basis.reindex: Skipping 0x000aeb17… — API failed, will retry next cycle
+2026-04-26T22:37:36.869534194Z [error] 2026-04-26 22:37:36,733 [INFO] basis.reindex: Skipping 0x000b1d6f… — API failed, will retry next cycle
+2026-04-26T22:37:37.880787616Z [error] 2026-04-26 22:37:37,728 [INFO] basis.reindex: Skipping 0x000b77e3… — API failed, will retry next cycle
+2026-04-26T22:37:39.880111226Z [error] 2026-04-26 22:37:39,714 [INFO] basis.reindex: Skipping 0x000bdcea… — API failed, will retry next cycle
+2026-04-26T22:37:41.103032875Z [error] 2026-04-26 22:37:41,097 [INFO] basis.reindex: Skipping 0x000be342… — API failed, will retry next cycle
+2026-04-26T22:37:42.092596844Z [error] 2026-04-26 22:37:42,088 [INFO] basis.reindex: Skipping 0x000bfa64… — API failed, will retry next cycle
+2026-04-26T22:37:44.079150435Z [error] 2026-04-26 22:37:44,076 [INFO] basis.reindex: Skipping 0x000ca9da… — API failed, will retry next cycle
+2026-04-26T22:37:46.453747884Z [error] 2026-04-26 22:37:46,449 [INFO] basis.reindex: Skipping 0x000d0555… — API failed, will retry next cycle
+2026-04-26T22:37:46.453756098Z [error] 2026-04-26 22:37:46,449 [INFO] basis.reindex: Skipping 0x000d1070… — API failed, will retry next cycle
+2026-04-26T22:37:47.446853082Z [error] 2026-04-26 22:37:47,442 [INFO] basis.reindex: Skipping 0x000d4fdd… — API failed, will retry next cycle
+2026-04-26T22:37:53.179484239Z [error] 2026-04-26 22:37:53,176 [INFO] basis.reindex: Skipping 0x000dc0d8… — API failed, will retry next cycle
+2026-04-26T22:37:53.179491850Z [error] 2026-04-26 22:37:53,176 [INFO] basis.reindex: Skipping 0x000ddde4… — API failed, will retry next cycle
+2026-04-26T22:37:56.146735742Z [error] 2026-04-26 22:37:56,142 [INFO] basis.reindex: Skipping 0x000e6b9f… — API failed, will retry next cycle
+2026-04-26T22:37:59.905153809Z [error] 2026-04-26 22:37:59,900 [INFO] basis.reindex: Skipping 0x000ee2b0… — API failed, will retry next cycle
+2026-04-26T22:38:00.903551975Z [error] 2026-04-26 22:38:00,891 [INFO] basis.reindex: Skipping 0x000f22ee… — API failed, will retry next cycle
+2026-04-26T22:38:02.909555376Z [error] 2026-04-26 22:38:02,869 [INFO] basis.reindex: Skipping 0x000fb135… — API failed, will retry next cycle
+2026-04-26T22:38:02.909562125Z [error] 2026-04-26 22:38:02,869 [INFO] basis.reindex: Skipping 0x000fb836… — API failed, will retry next cycle
+2026-04-26T22:38:03.907322246Z [error] 2026-04-26 22:38:03,857 [INFO] basis.reindex: Skipping 0x000feb07… — API failed, will retry next cycle
+2026-04-26T22:38:04.909644106Z [error] 2026-04-26 22:38:04,847 [INFO] basis.reindex: Skipping 0x00102136… — API failed, will retry next cycle
+2026-04-26T22:38:04.909649505Z [error] 2026-04-26 22:38:04,847 [INFO] basis.reindex: Skipping 0x0010310c… — API failed, will retry next cycle
+2026-04-26T22:38:05.901115863Z [error] 2026-04-26 22:38:05,837 [INFO] basis.reindex: Skipping 0x00106dd4… — API failed, will retry next cycle
+2026-04-26T22:38:05.901125077Z [error] 2026-04-26 22:38:05,837 [INFO] basis.reindex: Skipping 0x0010b660… — API failed, will retry next cycle
+2026-04-26T22:38:05.901133152Z [error] 2026-04-26 22:38:05,837 [INFO] basis.reindex: Skipping 0x0010dcad… — API failed, will retry next cycle
+2026-04-26T22:38:05.901175840Z [error] 2026-04-26 22:38:05,837 [INFO] basis.reindex: Skipping 0x001059a4… — API failed, will retry next cycle
+2026-04-26T22:38:06.911979092Z [error] 2026-04-26 22:38:06,908 [INFO] basis.reindex: Skipping 0x001150c0… — API failed, will retry next cycle
+2026-04-26T22:38:06.911983000Z [error] 2026-04-26 22:38:06,909 [INFO] basis.reindex: Skipping 0x0011588d… — API failed, will retry next cycle
+2026-04-26T22:38:13.920729929Z [error] 2026-04-26 22:38:13,846 [INFO] basis.reindex: Skipping 0x0011f92d… — API failed, will retry next cycle
+2026-04-26T22:38:19.990521703Z [error] 2026-04-26 22:38:19,987 [INFO] basis.reindex: Skipping 0x001380d2… — API failed, will retry next cycle
+2026-04-26T22:38:19.990526083Z [error] 2026-04-26 22:38:19,987 [INFO] basis.reindex: Skipping 0x001384e3… — API failed, will retry next cycle
+2026-04-26T22:38:19.990529958Z [error] 2026-04-26 22:38:19,987 [INFO] basis.reindex: Skipping 0x00139cb8… — API failed, will retry next cycle
+2026-04-26T22:38:24.935446216Z [error] 2026-04-26 22:38:24,931 [INFO] basis.reindex: Skipping 0x00142daf… — API failed, will retry next cycle
+2026-04-26T22:38:24.935452117Z [error] 2026-04-26 22:38:24,931 [INFO] basis.reindex: Skipping 0x0014375b… — API failed, will retry next cycle
+2026-04-26T22:38:24.935455847Z [error] 2026-04-26 22:38:24,931 [INFO] basis.reindex: Skipping 0x00147f21… — API failed, will retry next cycle
+2026-04-26T22:38:24.935459767Z [error] 2026-04-26 22:38:24,931 [INFO] basis.reindex: Skipping 0x0014ea9b… — API failed, will retry next cycle
+2026-04-26T22:38:27.012160956Z [error] 2026-04-26 22:38:26,910 [INFO] basis.reindex: Skipping 0x001534e0… — API failed, will retry next cycle
+2026-04-26T22:38:27.934462671Z [error] 2026-04-26 22:38:27,899 [INFO] basis.reindex: Skipping 0x00157b13… — API failed, will retry next cycle
+2026-04-26T22:38:27.934471318Z [error] 2026-04-26 22:38:27,899 [INFO] basis.reindex: Skipping 0x00158a74… — API failed, will retry next cycle
+2026-04-26T22:38:27.934476201Z [error] 2026-04-26 22:38:27,899 [INFO] basis.reindex: Skipping 0x0015ccf4… — API failed, will retry next cycle
+2026-04-26T22:38:27.934481130Z [error] 2026-04-26 22:38:27,899 [INFO] basis.reindex: Skipping 0x0015fbce… — API failed, will retry next cycle
+2026-04-26T22:38:27.934493525Z [error] 2026-04-26 22:38:27,899 [INFO] basis.reindex: Skipping 0x001555e3… — API failed, will retry next cycle
+2026-04-26T22:38:27.934497971Z [error] 2026-04-26 22:38:27,899 [INFO] basis.reindex: Skipping 0x00157268… — API failed, will retry next cycle
+2026-04-26T22:38:29.936733076Z [error] 2026-04-26 22:38:29,882 [INFO] basis.reindex: Skipping 0x00169219… — API failed, will retry next cycle
+2026-04-26T22:38:29.936736748Z [error] 2026-04-26 22:38:29,882 [INFO] basis.reindex: Skipping 0x0016c108… — API failed, will retry next cycle
+2026-04-26T22:38:30.924243448Z [error] 2026-04-26 22:38:30,872 [INFO] basis.reindex: Skipping 0x0016fb3b… — API failed, will retry next cycle
+2026-04-26T22:38:31.924665280Z [error] 2026-04-26 22:38:31,862 [INFO] basis.reindex: Skipping 0x00175c79… — API failed, will retry next cycle
+2026-04-26T22:38:31.924670541Z [error] 2026-04-26 22:38:31,862 [INFO] basis.reindex: Skipping 0x00181f73… — API failed, will retry next cycle
+2026-04-26T22:38:31.924676471Z [error] 2026-04-26 22:38:31,862 [INFO] basis.reindex: Skipping 0x001824df… — API failed, will retry next cycle
+2026-04-26T22:38:31.924682600Z [error] 2026-04-26 22:38:31,862 [INFO] basis.reindex: Skipping 0x00183f4d… — API failed, will retry next cycle
+2026-04-26T22:38:31.924689598Z [error] 2026-04-26 22:38:31,862 [INFO] basis.reindex: Skipping 0x0018406e… — API failed, will retry next cycle
+2026-04-26T22:38:31.924695094Z [error] 2026-04-26 22:38:31,862 [INFO] basis.reindex: Skipping 0x00185885… — API failed, will retry next cycle
+2026-04-26T22:38:33.928269864Z [error] 2026-04-26 22:38:33,643 [INFO] basis.reindex: Skipping 0x00188fe8… — API failed, will retry next cycle
+2026-04-26T22:38:33.928279131Z [error] 2026-04-26 22:38:33,643 [INFO] basis.reindex: Skipping 0x0018951d… — API failed, will retry next cycle
+2026-04-26T22:38:33.928286251Z [error] 2026-04-26 22:38:33,643 [INFO] basis.reindex: Skipping 0x0018b733… — API failed, will retry next cycle
+2026-04-26T22:38:34.637261803Z [error] 2026-04-26 22:38:34,634 [INFO] basis.reindex: Skipping 0x0018e89f… — API failed, will retry next cycle
+2026-04-26T22:38:34.637268903Z [error] 2026-04-26 22:38:34,634 [INFO] basis.reindex: Skipping 0x0018ee99… — API failed, will retry next cycle
+2026-04-26T22:38:35.627725910Z [error] 2026-04-26 22:38:35,623 [INFO] basis.reindex: Skipping 0x00193732… — API failed, will retry next cycle
+2026-04-26T22:38:35.627729118Z [error] 2026-04-26 22:38:35,623 [INFO] basis.reindex: Skipping 0x0019545c… — API failed, will retry next cycle
+2026-04-26T22:38:41.362990258Z [error] 2026-04-26 22:38:41,359 [INFO] basis.reindex: Skipping 0x0019e3df… — API failed, will retry next cycle
+2026-04-26T22:38:44.130338774Z [error] 2026-04-26 22:38:44,126 [INFO] basis.reindex: Skipping 0x001a43d6… — API failed, will retry next cycle
+2026-04-26T22:38:46.112575600Z [error] 2026-04-26 22:38:46,108 [INFO] basis.reindex: Skipping 0x001a9849… — API failed, will retry next cycle
+2026-04-26T22:38:46.112581285Z [error] 2026-04-26 22:38:46,108 [INFO] basis.reindex: Skipping 0x001aa3d1… — API failed, will retry next cycle
+2026-04-26T22:38:48.091954461Z [error] 2026-04-26 22:38:48,087 [INFO] basis.reindex: Skipping 0x001addeb… — API failed, will retry next cycle
+2026-04-26T22:38:53.038633233Z [error] 2026-04-26 22:38:53,033 [INFO] basis.reindex: Skipping 0x001c254b… — API failed, will retry next cycle
+2026-04-26T22:38:53.038639337Z [error] 2026-04-26 22:38:53,034 [INFO] basis.reindex: Skipping 0x001ccb4a… — API failed, will retry next cycle
+2026-04-26T22:38:54.029477366Z [error] 2026-04-26 22:38:54,024 [INFO] basis.reindex: Skipping 0x001d0202… — API failed, will retry next cycle
+2026-04-26T22:38:57.989395288Z [error] 2026-04-26 22:38:57,986 [INFO] basis.reindex: Skipping 0x001dc5ac… — API failed, will retry next cycle
+2026-04-26T22:38:57.989403015Z [error] 2026-04-26 22:38:57,986 [INFO] basis.reindex: Skipping 0x001de21f… — API failed, will retry next cycle
+2026-04-26T22:38:57.989407129Z [error] 2026-04-26 22:38:57,986 [INFO] basis.reindex: Skipping 0x001de8cc… — API failed, will retry next cycle
+2026-04-26T22:38:57.989412402Z [error] 2026-04-26 22:38:57,986 [INFO] basis.reindex: Skipping 0x001e2bcc… — API failed, will retry next cycle
+2026-04-26T22:38:58.980276426Z [error] 2026-04-26 22:38:58,976 [INFO] basis.reindex: Skipping 0x001e59ed… — API failed, will retry next cycle
+2026-04-26T22:39:01.958166322Z [error] 2026-04-26 22:39:01,947 [INFO] basis.reindex: Skipping 0x001eb8be… — API failed, will retry next cycle
+2026-04-26T22:39:02.952817571Z [error] 2026-04-26 22:39:02,944 [INFO] basis.reindex: Skipping 0x001ec4e8… — API failed, will retry next cycle
+2026-04-26T22:39:03.953105953Z [error] 2026-04-26 22:39:03,933 [INFO] basis.reindex: Skipping 0x001f1002… — API failed, will retry next cycle
+2026-04-26T22:39:03.953109998Z [error] 2026-04-26 22:39:03,933 [INFO] basis.reindex: Skipping 0x001f19d2… — API failed, will retry next cycle
+2026-04-26T22:39:05.040541693Z [error] 2026-04-26 22:39:04,922 [INFO] basis.reindex: Skipping 0x001fbcd3… — API failed, will retry next cycle
+2026-04-26T22:39:05.040549241Z [error] 2026-04-26 22:39:04,923 [INFO] basis.reindex: Skipping 0x001fd983… — API failed, will retry next cycle
+2026-04-26T22:39:05.040662109Z [error] 2026-04-26 22:39:04,922 [INFO] basis.reindex: Skipping 0x001f341c… — API failed, will retry next cycle
+2026-04-26T22:39:05.040665669Z [error] 2026-04-26 22:39:04,922 [INFO] basis.reindex: Skipping 0x001fadb5… — API failed, will retry next cycle
+2026-04-26T22:39:11.045078273Z [error] 2026-04-26 22:39:10,863 [INFO] basis.reindex: Skipping 0x00213bd5… — API failed, will retry next cycle
+2026-04-26T22:39:11.045085871Z [error] 2026-04-26 22:39:10,863 [INFO] basis.reindex: Skipping 0x00214fb2… — API failed, will retry next cycle
+2026-04-26T22:39:11.045091309Z [error] 2026-04-26 22:39:10,863 [INFO] basis.reindex: Skipping 0x002156a2… — API failed, will retry next cycle
+2026-04-26T22:39:15.217908376Z [error] 2026-04-26 22:39:15,214 [INFO] basis.reindex: Skipping 0x0024c8a4… — API failed, will retry next cycle
+2026-04-26T22:39:16.602319069Z [error] 2026-04-26 22:39:16,597 [INFO] basis.reindex: Skipping 0x002599da… — API failed, will retry next cycle
+2026-04-26T22:39:17.590365236Z [error] 2026-04-26 22:39:17,586 [INFO] basis.reindex: Skipping 0x00270571… — API failed, will retry next cycle
+2026-04-26T22:39:18.579038879Z [error] 2026-04-26 22:39:18,574 [INFO] basis.reindex: Skipping 0x0027966c… — API failed, will retry next cycle
+2026-04-26T22:39:19.565777135Z [error] 2026-04-26 22:39:19,562 [INFO] basis.reindex: Skipping 0x0028aa1e… — API failed, will retry next cycle
+2026-04-26T22:39:20.060282734Z [info] INFO:     100.64.0.35:49644 - "POST /api/ops/keeper-cycle/start HTTP/1.1" 200 OK
+2026-04-26T22:39:20.438741336Z [info] INFO:     100.64.0.34:13612 - "GET /api/scores HTTP/1.1" 200 OK
+2026-04-26T22:39:21.176886901Z [info] INFO:     100.64.0.7:44454 - "GET /api/psi/scores HTTP/1.1" 200 OK
+2026-04-26T22:39:23.319710347Z [error] 2026-04-26 22:39:23,316 [INFO] basis.reindex: Skipping 0x002bb03b… — API failed, will retry next cycle
+2026-04-26T22:39:26.287511303Z [error] 2026-04-26 22:39:26,283 [INFO] basis.reindex: Skipping 0x002fca26… — API failed, will retry next cycle
+2026-04-26T22:39:32.020643105Z [error] 2026-04-26 22:39:32,016 [INFO] basis.reindex: Skipping 0x00323246… — API failed, will retry next cycle
+2026-04-26T22:39:32.020648970Z [error] 2026-04-26 22:39:32,016 [INFO] basis.reindex: Skipping 0x0033a5c0… — API failed, will retry next cycle
+2026-04-26T22:39:32.020656268Z [error] 2026-04-26 22:39:32,016 [INFO] basis.reindex: Skipping 0x003470c9… — API failed, will retry next cycle
+2026-04-26T22:39:34.392993234Z [error] 2026-04-26 22:39:34,389 [INFO] basis.reindex: Skipping 0x0036a966… — API failed, will retry next cycle
+2026-04-26T22:39:36.380229212Z [error] 2026-04-26 22:39:36,376 [INFO] basis.reindex: Skipping 0x00377bc3… — API failed, will retry next cycle
+2026-04-26T22:39:37.527213714Z [info] INFO:     100.64.0.20:19086 - "GET /api/reports/lenses HTTP/1.1" 200 OK
+2026-04-26T22:39:38.086950204Z [info] INFO:     100.64.0.27:50676 - "GET /api/scores HTTP/1.1" 200 OK
+2026-04-26T22:39:40.509070942Z [error] 2026-04-26 22:39:40,504 [WARNING] app.report: _get_holder_concentration_trend(usdt) failed: relation "concentration_snapshots" does not exist
+2026-04-26T22:39:40.509077556Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-26T22:39:40.509083190Z [error]                          ^
+2026-04-26T22:39:40.509088427Z [error] 
+2026-04-26T22:39:41.107272866Z [info] INFO:     100.64.0.34:40580 - "GET /api/reports/stablecoin/usdt?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-26T22:39:42.308799565Z [error] 2026-04-26 22:39:42,306 [INFO] basis.reindex: Skipping 0x003df61a… — API failed, will retry next cycle
+2026-04-26T22:39:43.635254869Z [error] 2026-04-26 22:39:43,632 [WARNING] app.report: _get_holder_concentration_trend(usd1) failed: relation "concentration_snapshots" does not exist
+2026-04-26T22:39:43.635261672Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-26T22:39:43.635265178Z [error]                          ^
+2026-04-26T22:39:43.635269161Z [error] 
+2026-04-26T22:39:44.233233174Z [info] INFO:     100.64.0.36:24672 - "GET /api/reports/stablecoin/usd1?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-26T22:39:46.266974795Z [error] 2026-04-26 22:39:46,259 [INFO] basis.reindex: Skipping 0x003f60d4… — API failed, will retry next cycle
+2026-04-26T22:39:47.030050401Z [error] 2026-04-26 22:39:46,817 [WARNING] app.report: _get_holder_concentration_trend(usdc) failed: relation "concentration_snapshots" does not exist
+2026-04-26T22:39:47.030055024Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-26T22:39:47.030059109Z [error]                          ^
+2026-04-26T22:39:47.030063012Z [error] 
+2026-04-26T22:39:47.420279918Z [info] INFO:     100.64.0.18:10774 - "GET /api/reports/stablecoin/usdc?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-26T22:39:47.651007407Z [error] 2026-04-26 22:39:47,647 [INFO] basis.reindex: Skipping 0x00402adc… — API failed, will retry next cycle
+2026-04-26T22:39:48.640161432Z [error] 2026-04-26 22:39:48,636 [INFO] basis.reindex: Skipping 0x0040e422… — API failed, will retry next cycle
+2026-04-26T22:39:49.060664874Z [info] INFO:     100.64.0.5:57058 - "GET /api/state-root/latest HTTP/1.1" 200 OK
+2026-04-26T22:39:49.629898203Z [error] 2026-04-26 22:39:49,626 [INFO] basis.reindex: Skipping 0x0040ea67… — API failed, will retry next cycle
+2026-04-26T22:39:49.629904125Z [error] 2026-04-26 22:39:49,626 [INFO] basis.reindex: Skipping 0x00415455… — API failed, will retry next cycle
+2026-04-26T22:39:50.034667196Z [info] INFO:     100.64.0.30:49092 - "POST /api/ops/keeper-cycle/690/complete HTTP/1.1" 200 OK
+2026-04-26T22:39:50.160591681Z [error] 2026-04-26 22:39:50,157 [WARNING] app.report: _get_holder_concentration_trend(usds) failed: relation "concentration_snapshots" does not exist
+2026-04-26T22:39:50.160602710Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-26T22:39:50.160607990Z [error]                          ^
+2026-04-26T22:39:50.160613487Z [error] 
+2026-04-26T22:39:51.038817693Z [info] INFO:     100.64.0.27:49382 - "GET /api/reports/stablecoin/usds?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-26T22:39:53.021863392Z [error] 2026-04-26 22:39:52,791 [INFO] basis.reindex: Skipping 0x00446f19… — API failed, will retry next cycle
+2026-04-26T22:39:53.021868455Z [error] 2026-04-26 22:39:52,791 [INFO] basis.reindex: Skipping 0x0044E424… — API failed, will retry next cycle
+2026-04-26T22:39:53.021873945Z [error] 2026-04-26 22:39:52,791 [INFO] basis.reindex: Skipping 0x0045c351… — API failed, will retry next cycle
+2026-04-26T22:39:53.021879195Z [error] 2026-04-26 22:39:52,791 [INFO] basis.reindex: Skipping 0x0046f88e… — API failed, will retry next cycle
+2026-04-26T22:39:53.021884281Z [error] 2026-04-26 22:39:52,791 [INFO] basis.reindex: Skipping 0x004744f9… — API failed, will retry next cycle
+2026-04-26T22:39:53.021890056Z [error] 2026-04-26 22:39:52,791 [INFO] basis.reindex: Skipping 0x00479651… — API failed, will retry next cycle
+2026-04-26T22:39:53.332139126Z [error] 2026-04-26 22:39:53,328 [WARNING] app.report: _get_holder_concentration_trend(rlusd) failed: relation "concentration_snapshots" does not exist
+2026-04-26T22:39:53.332145914Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-26T22:39:53.332151022Z [error]                          ^
+2026-04-26T22:39:53.332156924Z [error] 
+2026-04-26T22:39:54.038932858Z [error] 2026-04-26 22:39:53,782 [INFO] basis.reindex: Skipping 0x0048d40a… — API failed, will retry next cycle
+2026-04-26T22:39:54.038937130Z [info] INFO:     100.64.0.18:10774 - "GET /api/reports/stablecoin/rlusd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-26T22:39:56.586044221Z [error] 2026-04-26 22:39:56,582 [WARNING] app.report: _get_holder_concentration_trend(usdp) failed: relation "concentration_snapshots" does not exist
+2026-04-26T22:39:56.586050979Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-26T22:39:56.586055590Z [error]                          ^
+2026-04-26T22:39:56.586059292Z [error] 
+2026-04-26T22:39:56.752560418Z [error] 2026-04-26 22:39:56,748 [INFO] basis.reindex: Skipping 0x004c9c3b… — API failed, will retry next cycle
+2026-04-26T22:39:57.200506922Z [info] INFO:     100.64.0.28:31730 - "GET /api/reports/stablecoin/usdp?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-26T22:39:57.362109906Z [info] INFO:     100.64.0.34:26326 - "GET /api/reports/stablecoin/dai?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-04-26T22:39:57.523788304Z [info] INFO:     100.64.0.24:57740 - "GET /api/reports/stablecoin/fdusd?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-04-26T22:39:57.624278806Z [info] INFO:     100.64.0.18:10774 - "GET /api/reports/stablecoin/usdtb?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-04-26T22:39:58.048038894Z [info] INFO:     100.64.0.18:10774 - "GET /api/reports/stablecoin/gho?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-04-26T22:39:58.048114983Z [info] INFO:     100.64.0.37:45826 - "GET /api/reports/stablecoin/usdd?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-04-26T22:39:58.048121890Z [info] INFO:     100.64.0.18:10774 - "GET /api/reports/stablecoin/tusd?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-04-26T22:39:58.156185281Z [info] INFO:     100.64.0.22:56402 - "GET /api/reports/stablecoin/pyusd?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-04-26T22:39:58.261895844Z [info] INFO:     100.64.0.28:31730 - "GET /api/reports/stablecoin/usde?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-04-26T22:39:58.365716355Z [info] INFO:     100.64.0.18:10774 - "GET /api/reports/stablecoin/musd?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-04-26T22:39:58.528454189Z [info] INFO:     100.64.0.26:23382 - "GET /api/reports/stablecoin/frax?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-04-26T22:39:58.688272668Z [info] INFO:     100.64.0.21:57568 - "GET /api/reports/stablecoin/lusd?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-04-26T22:39:59.034025533Z [info] INFO:     100.64.0.24:57740 - "GET /api/reports/stablecoin/dola?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-04-26T22:39:59.034029330Z [info] INFO:     100.64.0.18:10774 - "GET /api/reports/stablecoin/crvusd?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-04-26T22:39:59.059085290Z [info] INFO:     100.64.0.36:19914 - "GET /api/reports/stablecoin/susds?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-04-26T22:40:00.503842060Z [error] 2026-04-26 22:40:00,500 [INFO] basis.reindex: Skipping 0x004dce64… — API failed, will retry next cycle
+2026-04-26T22:40:01.494256374Z [error] 2026-04-26 22:40:01,489 [INFO] basis.reindex: Skipping 0x00504d25… — API failed, will retry next cycle
+2026-04-26T22:40:02.577576434Z [error] 2026-04-26 22:40:02,481 [INFO] basis.reindex: Skipping 0x0051242a… — API failed, will retry next cycle
+2026-04-26T22:40:02.577581273Z [error] 2026-04-26 22:40:02,481 [INFO] basis.reindex: Skipping 0x00544ea7… — API failed, will retry next cycle
+2026-04-26T22:40:02.577585534Z [error] 2026-04-26 22:40:02,481 [INFO] basis.reindex: Skipping 0x005452f2… — API failed, will retry next cycle
+2026-04-26T22:40:02.577589607Z [error] 2026-04-26 22:40:02,481 [INFO] basis.reindex: Skipping 0x005495a1… — API failed, will retry next cycle
+2026-04-26T22:40:02.577593508Z [error] 2026-04-26 22:40:02,481 [INFO] basis.reindex: Skipping 0x0055F421… — API failed, will retry next cycle
+2026-04-26T22:40:02.577599146Z [error] 2026-04-26 22:40:02,481 [INFO] basis.reindex: Skipping 0x005608ee… — API failed, will retry next cycle
+2026-04-26T22:40:02.577603036Z [error] 2026-04-26 22:40:02,481 [INFO] basis.reindex: Skipping 0x0056d4e5… — API failed, will retry next cycle
+2026-04-26T22:40:02.577606941Z [error] 2026-04-26 22:40:02,481 [INFO] basis.reindex: Skipping 0x0057e5f1… — API failed, will retry next cycle
+2026-04-26T22:40:02.577610969Z [error] 2026-04-26 22:40:02,481 [INFO] basis.reindex: Skipping 0x00588e81… — API failed, will retry next cycle
+2026-04-26T22:40:02.577614967Z [error] 2026-04-26 22:40:02,481 [INFO] basis.reindex: Skipping 0x005923c6… — API failed, will retry next cycle
+2026-04-26T22:40:02.577618743Z [error] 2026-04-26 22:40:02,481 [INFO] basis.reindex: Skipping 0x005ae9d3… — API failed, will retry next cycle
+2026-04-26T22:40:03.576448604Z [info] INFO:     100.64.0.18:34682 - "GET / HTTP/1.1" 200 OK
+2026-04-26T22:40:06.056515496Z [error] 2026-04-26 22:40:06,038 [INFO] basis.reindex: Skipping 0x005c27b6… — API failed, will retry next cycle
+2026-04-26T22:40:06.056524509Z [error] 2026-04-26 22:40:06,039 [INFO] basis.reindex: === Batch Re-index Complete === indexed=288, scored=288, balances_updated=400, errors=212, batch_failures=75, elapsed=604s, remaining=39946
+2026-04-26T22:40:06.247750948Z [error] 2026-04-26 22:40:06,243 [INFO] app.state_attestation: State attested: domain=wallets entity=None records=1 hash=6abdb49bca6dd729...
+2026-04-26T22:40:36.249796988Z [info] INFO:     100.64.0.18:18872 - "GET /api/state-root/latest HTTP/1.1" 200 OK
+2026-04-26T22:40:36.249805931Z [info] INFO:     100.64.0.28:46320 - "POST /api/ops/keeper-cycle/691/complete HTTP/1.1" 200 OK
+2026-04-26T22:43:16.457519929Z [error] 2026-04-26 22:43:14,282 [ERROR] app.database: Connection failed liveness ping (attempt 1/3) — discarding and replacing: SSL connection has been closed unexpectedly
+2026-04-26T22:43:16.457529433Z [error] 
+2026-04-26T22:43:16.457534176Z [error] 2026-04-26 22:43:14,283 [ERROR] app.database: Connection failed liveness ping (attempt 2/3) — discarding and replacing: SSL connection has been closed unexpectedly
+2026-04-26T22:43:16.457538395Z [error] 
+2026-04-26T22:43:16.457542696Z [info] INFO:     100.64.0.16:46684 - "GET / HTTP/1.1" 200 OK
+2026-04-26T22:45:06.177826380Z [info] INFO:     100.64.0.38:30794 - "POST /api/ops/health/check HTTP/1.1" 200 OK
+2026-04-26T22:45:06.177832317Z [error] 2026-04-26 22:45:02,318 [ERROR] app.database: Connection failed liveness ping (attempt 1/3) — discarding and replacing: SSL connection has been closed unexpectedly
+2026-04-26T22:45:06.177836907Z [error] 
+2026-04-26T22:45:06.177840596Z [error] 2026-04-26 22:45:02,318 [ERROR] app.database: Connection failed liveness ping (attempt 2/3) — discarding and replacing: SSL connection has been closed unexpectedly
+2026-04-26T22:45:06.177844253Z [error] 
+2026-04-26T22:45:10.684634905Z [error] 2026-04-26 22:45:10,679 [ERROR] app.database: Connection failed liveness ping (attempt 1/3) — discarding and replacing: SSL connection has been closed unexpectedly
+2026-04-26T22:45:10.684642571Z [error] 
+2026-04-26T22:45:30.685450869Z [info] INFO:     100.64.0.3:49306 - "GET /api/health HTTP/1.1" 200 OK
+2026-04-26T22:45:30.685455388Z [error] 2026-04-26 22:45:27,163 [INFO] httpx: HTTP Request: GET https://basisprotocol.xyz/api/health "HTTP/1.1 200 "
+2026-04-26T22:45:50.684919504Z [error] 2026-04-26 22:45:43,545 [WARNING] app.report: _get_holder_concentration_trend(usdc) failed: relation "concentration_snapshots" does not exist
+2026-04-26T22:45:50.684923640Z [error] LINE 4:             FROM concentration_snapshots
+2026-04-26T22:45:50.684926971Z [error]                          ^
+2026-04-26T22:45:50.684930656Z [error] 
+2026-04-26T22:45:50.684934172Z [info] INFO:     100.64.0.30:42920 - "GET /api/reports/stablecoin/usdc?template=sbt_metadata HTTP/1.1" 200 OK
+2026-04-26T22:45:50.684937927Z [error] 2026-04-26 22:45:44,163 [INFO] httpx: HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/usdc?template=sbt_metadata "HTTP/1.1 200 "
+2026-04-26T22:46:10.685458909Z [info] INFO:     100.64.0.39:25194 - "GET / HTTP/1.1" 200 OK
