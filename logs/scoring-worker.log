@@ -1,66 +1,66 @@
-2026-04-27T17:06:16.328560155Z [info] Starting Container
-2026-04-27T17:06:17.056720955Z [error] 2026-04-27 17:06:16,494 [ERROR] worker: [startup] httpx monkey-patched for API tracking
-2026-04-27T17:06:17.056737373Z [error] 2026-04-27 17:06:15,768 [ERROR] worker: [startup] worker main() entered — initializing pool
-2026-04-27T17:06:17.056744147Z [error] 2026-04-27 17:06:15,768 [INFO] app.database: Database URL prefix: postgresql://neondb_owner:npg_ZQ7pTvYVNE1U@ep-soft...
-2026-04-27T17:06:17.056750400Z [error] 2026-04-27 17:06:16,490 [INFO] app.database: Database pool initialized (min=2, max=10, keepalives=on)
-2026-04-27T17:06:17.056755447Z [error] 2026-04-27 17:06:16,490 [ERROR] worker: [startup] pool initialized — running schema fixes
-2026-04-27T17:06:46.293408821Z [error] 2026-04-27 17:06:42,718 [ERROR] worker: [schema] governance_proposals: ['id', 'protocol_slug', 'proposal_id', 'source', 'title', 'body_excerpt', 'is_risk_related', 'risk_keywords', 'budget_amount_usd', 'vote_for', 'vote_against', 'vote_abstain', 'quorum_reached', 'participation_rate', 'proposal_state', 'created_at', 'closed_at', 'scraped_at', 'protocol_id', 'proposal_source', 'body', 'body_hash', 'author_address', 'author_ens', 'state', 'vote_start', 'vote_end', 'scores_total', 'scores_for', 'scores_against', 'scores_abstain', 'quorum', 'choices', 'votes', 'ipfs_hash', 'discussion_url', 'captured_at', 'body_changed', 'first_capture_body_hash', 'content_hash', 'attested_at', 'protocol', 'author', 'start_at', 'end_at', 'votes_for', 'votes_against', 'votes_abstain', 'voter_count', 'scores', 'raw_data', 'collected_at']
-2026-04-27T17:06:46.293419228Z [error] 2026-04-27 17:06:42,951 [ERROR] worker: [schema] psi_scores: ['id', 'protocol_slug', 'protocol_name', 'overall_score', 'grade', 'category_scores', 'component_scores', 'raw_values', 'formula_version', 'computed_at', 'scored_date', 'inputs_hash', 'scored_at', 'backfilled', 'backfill_source', 'aggregation_method', 'aggregation_params', 'aggregation_formula_version', 'effective_category_weights', 'coverage', 'withheld', 'confidence', 'confidence_tag', 'component_coverage', 'components_populated', 'components_total', 'missing_categories']
-2026-04-27T17:06:46.293426389Z [error] 2026-04-27 17:06:43,240 [ERROR] worker: [schema] scores: ['stablecoin_id', 'overall_score', 'grade', 'peg_score', 'liquidity_score', 'mint_burn_score', 'distribution_score', 'structural_score', 'reserves_score', 'contract_score', 'oracle_score', 'governance_score', 'network_score', 'component_count', 'formula_version', 'data_freshness_pct', 'current_price', 'market_cap', 'volume_24h', 'daily_change', 'weekly_change', 'computed_at', 'updated_at', 'aggregation_method', 'aggregation_params', 'aggregation_formula_version', 'effective_category_weights', 'coverage', 'withheld', 'confidence', 'confidence_tag', 'component_coverage', 'components_populated', 'components_total', 'missing_categories']
-2026-04-27T17:06:46.293451441Z [error] 2026-04-27 17:06:41,243 [ERROR] worker: [startup] VACUUM ANALYZE complete
-2026-04-27T17:06:46.293456746Z [error] 2026-04-27 17:06:42,397 [ERROR] worker: [bridges] collector disabled — DeFiLlama paywalled all endpoints. See constitution v9.3 for deferral rationale.
-2026-04-27T17:06:46.296345965Z [error] 2026-04-27 17:06:43,472 [ERROR] worker: [schema] oracle_registry: ['id', 'oracle_address', 'oracle_name', 'oracle_provider', 'chain', 'asset_symbol', 'quote_symbol', 'decimals', 'read_function', 'is_active', 'entity_type', 'entity_slug', 'added_at']
-2026-04-27T17:06:52.245338195Z [error] 2026-04-27 17:06:52,241 [ERROR] worker: [schema_fix] psi_scores.scored_at column ensured
-2026-04-27T17:06:52.959286926Z [error] 2026-04-27 17:06:52,707 [ERROR] worker: [schema_after] governance_proposals: ['id', 'protocol_slug', 'proposal_id', 'source', 'title', 'body_excerpt', 'is_risk_related', 'risk_keywords', 'budget_amount_usd', 'vote_for', 'vote_against', 'vote_abstain', 'quorum_reached', 'participation_rate', 'proposal_state', 'created_at', 'closed_at', 'scraped_at', 'protocol_id', 'proposal_source', 'body', 'body_hash', 'author_address', 'author_ens', 'state', 'vote_start', 'vote_end', 'scores_total', 'scores_for', 'scores_against', 'scores_abstain', 'quorum', 'choices', 'votes', 'ipfs_hash', 'discussion_url', 'captured_at', 'body_changed', 'first_capture_body_hash', 'content_hash', 'attested_at', 'protocol', 'author', 'start_at', 'end_at', 'votes_for', 'votes_against', 'votes_abstain', 'voter_count', 'scores', 'raw_data', 'collected_at']
-2026-04-27T17:06:52.959292794Z [error] 2026-04-27 17:06:52,938 [ERROR] worker: [schema_after] psi_scores: ['id', 'protocol_slug', 'protocol_name', 'overall_score', 'grade', 'category_scores', 'component_scores', 'raw_values', 'formula_version', 'computed_at', 'scored_date', 'inputs_hash', 'scored_at', 'backfilled', 'backfill_source', 'aggregation_method', 'aggregation_params', 'aggregation_formula_version', 'effective_category_weights', 'coverage', 'withheld', 'confidence', 'confidence_tag', 'component_coverage', 'components_populated', 'components_total', 'missing_categories']
-2026-04-27T17:06:53.232497496Z [error] 2026-04-27 17:06:53,229 [INFO] app.db_schema_validator: [schema_validator] governance_proposals: OK (40 columns)
-2026-04-27T17:06:53.999324383Z [error] 2026-04-27 17:06:53,922 [INFO] app.db_schema_validator: [schema_validator] oracle_stress_events: OK (19 columns)
-2026-04-27T17:06:53.999379055Z [error] 2026-04-27 17:06:53,460 [INFO] app.db_schema_validator: [schema_validator] oracle_registry: OK (13 columns)
-2026-04-27T17:06:53.999384243Z [error] 2026-04-27 17:06:53,690 [INFO] app.db_schema_validator: [schema_validator] oracle_price_readings: OK (21 columns)
-2026-04-27T17:06:54.156867899Z [error] 2026-04-27 17:06:54,153 [INFO] app.db_schema_validator: [schema_validator] psi_scores: OK (13 columns)
-2026-04-27T17:06:54.967024814Z [error] 2026-04-27 17:06:54,384 [INFO] app.db_schema_validator: [schema_validator] scores: OK (23 columns)
-2026-04-27T17:06:54.967034635Z [error] 2026-04-27 17:06:54,616 [INFO] app.db_schema_validator: [schema_validator] generic_index_scores: OK (16 columns)
-2026-04-27T17:06:54.967040568Z [error] 2026-04-27 17:06:54,849 [INFO] app.db_schema_validator: [schema_validator] governance_voters: OK (9 columns)
-2026-04-27T17:06:55.081469027Z [error] 2026-04-27 17:06:55,080 [INFO] app.db_schema_validator: [schema_validator] mint_burn_events: OK (11 columns)
-2026-04-27T17:06:55.311800832Z [error] 2026-04-27 17:06:55,310 [INFO] app.db_schema_validator: [schema_validator] liquidity_depth: OK (18 columns)
-2026-04-27T17:06:55.868722761Z [error] 2026-04-27 17:06:55,541 [INFO] app.db_schema_validator: [schema_validator] contract_surveillance: OK (13 columns)
-2026-04-27T17:06:55.868729216Z [error] 2026-04-27 17:06:55,773 [INFO] app.db_schema_validator: [schema_validator] protocol_parameter_changes: OK (17 columns)
-2026-04-27T17:06:56.008517465Z [error] 2026-04-27 17:06:56,004 [INFO] app.db_schema_validator: [schema_validator] yield_snapshots: OK (11 columns)
-2026-04-27T17:06:56.238316444Z [error] 2026-04-27 17:06:56,235 [INFO] app.db_schema_validator: [schema_validator] peg_snapshots_5m: OK (5 columns)
-2026-04-27T17:06:56.935749368Z [error] 2026-04-27 17:06:56,697 [INFO] app.db_schema_validator: [schema_validator] exchange_snapshots: OK (10 columns)
-2026-04-27T17:06:56.935762408Z [error] 2026-04-27 17:06:56,928 [INFO] app.db_schema_validator: [schema_validator] incident_events: OK (11 columns)
-2026-04-27T17:06:56.935802331Z [error] 2026-04-27 17:06:56,466 [INFO] app.db_schema_validator: [schema_validator] entity_snapshots_hourly: OK (10 columns)
-2026-04-27T17:06:57.163458279Z [error] 2026-04-27 17:06:57,160 [INFO] app.db_schema_validator: [schema_validator] wallet_graph.wallets: OK (9 columns)
-2026-04-27T17:06:58.023279446Z [error] 2026-04-27 17:06:57,855 [INFO] app.db_schema_validator: [schema_validator] dex_pool_ohlcv: OK (12 columns)
-2026-04-27T17:06:58.023345577Z [error] 2026-04-27 17:06:57,391 [INFO] app.db_schema_validator: [schema_validator] correlation_matrices: OK (6 columns)
-2026-04-27T17:06:58.023354303Z [error] 2026-04-27 17:06:57,623 [INFO] app.db_schema_validator: [schema_validator] wallet_behavior_tags: OK (6 columns)
-2026-04-27T17:06:58.093019077Z [error] 2026-04-27 17:06:58,089 [INFO] app.db_schema_validator: [schema_validator] component_readings: OK (7 columns)
-2026-04-27T17:06:58.324353753Z [error] 2026-04-27 17:06:58,321 [INFO] app.db_schema_validator: [schema_validator] score_history: OK (18 columns)
-2026-04-27T17:06:59.176054090Z [error] 2026-04-27 17:06:58,552 [INFO] app.db_schema_validator: [schema_validator] data_provenance: OK (8 columns)
-2026-04-27T17:06:59.176063509Z [error] 2026-04-27 17:06:58,785 [INFO] app.db_schema_validator: [schema_validator] collector_cycle_stats: OK (6 columns)
-2026-04-27T17:06:59.176071413Z [error] 2026-04-27 17:06:59,018 [INFO] app.db_schema_validator: [schema_validator] state_attestations: OK (6 columns)
-2026-04-27T17:06:59.257426761Z [error] 2026-04-27 17:06:59,249 [INFO] app.db_schema_validator: [schema_validator] daily_pulses: OK (3 columns)
-2026-04-27T17:07:00.663615241Z [error] 2026-04-27 17:07:00,181 [INFO] app.db_schema_validator: [schema_validator] rpi_scores: OK (8 columns)
-2026-04-27T17:07:00.663624846Z [error] 2026-04-27 17:07:00,419 [INFO] app.db_schema_validator: [schema_validator] score_events: OK (6 columns)
-2026-04-27T17:07:00.663632999Z [error] 2026-04-27 17:07:00,652 [INFO] app.db_schema_validator: [schema_validator] governance_events: OK (10 columns)
-2026-04-27T17:07:00.663730855Z [error] 2026-04-27 17:06:59,482 [INFO] app.db_schema_validator: [schema_validator] market_chart_history: OK (7 columns)
-2026-04-27T17:07:00.663737743Z [error] 2026-04-27 17:06:59,713 [INFO] app.db_schema_validator: [schema_validator] volatility_surfaces: OK (10 columns)
-2026-04-27T17:07:00.663747055Z [error] 2026-04-27 17:06:59,948 [INFO] app.db_schema_validator: [schema_validator] discovery_signals: OK (11 columns)
-2026-04-27T17:07:01.523375539Z [error] 2026-04-27 17:07:00,884 [INFO] app.db_schema_validator: [schema_validator] protocol_pool_wallets: OK (7 columns)
-2026-04-27T17:07:01.523379554Z [error] 2026-04-27 17:07:01,116 [INFO] app.db_schema_validator: [schema_validator] protocol_trace_observations: OK (12 columns)
-2026-04-27T17:07:01.523383296Z [error] 2026-04-27 17:07:01,349 [INFO] app.db_schema_validator: [schema_validator] token_approval_snapshots: OK (9 columns)
-2026-04-27T17:07:01.583711994Z [error] 2026-04-27 17:07:01,581 [INFO] app.db_schema_validator: [schema_validator] oracle_update_cadence: OK (9 columns)
-2026-04-27T17:07:02.595500138Z [error] 2026-04-27 17:07:01,812 [INFO] app.db_schema_validator: [schema_validator] wallet_holder_discovery: OK (11 columns)
-2026-04-27T17:07:02.595509329Z [error] 2026-04-27 17:07:02,044 [INFO] app.db_schema_validator: [schema_validator] wallet_graph.wallet_edges: OK (12 columns)
-2026-04-27T17:07:02.595518878Z [error] 2026-04-27 17:07:02,279 [INFO] app.db_schema_validator: [schema_validator] wallet_graph.edge_build_status: OK (7 columns)
-2026-04-27T17:07:02.595526838Z [error] 2026-04-27 17:07:02,510 [INFO] app.db_schema_validator: [schema_validator] wallet_chain_presence: OK (12 columns)
-2026-04-27T17:07:02.595533541Z [error] 2026-04-27 17:07:02,510 [ERROR] app.db_schema_validator: [schema_validator] all schemas aligned — 41 tables, 472 columns verified
-2026-04-27T17:07:02.595540483Z [error] 2026-04-27 17:07:02,510 [ERROR] worker: [startup] schema fixes complete, diagnostics will fire in 60s via independent loop
-2026-04-27T17:07:02.595547964Z [error] 2026-04-27 17:07:02,511 [ERROR] worker: [startup] methodology seed failed: No module named 'scripts'
-2026-04-27T17:07:02.595555201Z [error] 2026-04-27 17:07:02,516 [ERROR] worker: [startup] running Dwellir capability probe
-2026-04-27T17:07:03.439196886Z [error] 2026-04-27 17:07:02,720 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
-2026-04-27T17:07:03.439201270Z [error] 2026-04-27 17:07:03,387 [INFO] httpx: HTTP Request: POST https://api-ethereum-mainnet.n.dwellir.com/ebce64a9-6da4-4451-808d-aa0e82b1da55 "HTTP/1.1 200 OK"
-2026-04-27T17:07:03.439209636Z [error] 2026-04-27 17:07:02,721 [ERROR] worker: [api_tracker] recorded: alchemy /v2/AyH5JAFcthHka4uBiciLg → 200
-2026-04-27T17:07:03.439214000Z [error] 2026-04-27 17:07:03,388 [ERROR] worker: [api_tracker] recorded: dwellir /ebce64a9-6da4-4451-808d-aa0e82b1da55 → 200
-2026-04-27T17:07:03.439229398Z [error] 2026-04-27 17:07:02,682 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
-2026-04-27T17:07:03.439236981Z [error] 2026-04-27 17:07:02,698 [ERROR] worker: [api_tracker] recorded: alchemy /v2/AyH5JAFcthHka4uBiciLg → 200
+2026-04-27T19:01:09.293730442Z [info] Starting Container
+2026-04-27T19:01:10.159951352Z [error] 2026-04-27 19:01:09,796 [ERROR] worker: [startup] pool initialized — running schema fixes
+2026-04-27T19:01:10.159956975Z [error] 2026-04-27 19:01:09,152 [ERROR] worker: [startup] worker main() entered — initializing pool
+2026-04-27T19:01:10.159959805Z [error] 2026-04-27 19:01:09,801 [ERROR] worker: [startup] httpx monkey-patched for API tracking
+2026-04-27T19:01:10.159963062Z [error] 2026-04-27 19:01:09,152 [INFO] app.database: Database URL prefix: postgresql://neondb_owner:npg_ZQ7pTvYVNE1U@ep-soft...
+2026-04-27T19:01:10.159970272Z [error] 2026-04-27 19:01:09,796 [INFO] app.database: Database pool initialized (min=2, max=10, keepalives=on)
+2026-04-27T19:01:39.953544486Z [error] 2026-04-27 19:01:31,711 [ERROR] worker: [startup] VACUUM ANALYZE complete
+2026-04-27T19:01:39.953549080Z [error] 2026-04-27 19:01:32,711 [ERROR] worker: [bridges] collector disabled — DeFiLlama paywalled all endpoints. See constitution v9.3 for deferral rationale.
+2026-04-27T19:01:39.953552644Z [error] 2026-04-27 19:01:32,994 [ERROR] worker: [schema] governance_proposals: ['id', 'protocol_slug', 'proposal_id', 'source', 'title', 'body_excerpt', 'is_risk_related', 'risk_keywords', 'budget_amount_usd', 'vote_for', 'vote_against', 'vote_abstain', 'quorum_reached', 'participation_rate', 'proposal_state', 'created_at', 'closed_at', 'scraped_at', 'protocol_id', 'proposal_source', 'body', 'body_hash', 'author_address', 'author_ens', 'state', 'vote_start', 'vote_end', 'scores_total', 'scores_for', 'scores_against', 'scores_abstain', 'quorum', 'choices', 'votes', 'ipfs_hash', 'discussion_url', 'captured_at', 'body_changed', 'first_capture_body_hash', 'content_hash', 'attested_at', 'protocol', 'author', 'start_at', 'end_at', 'votes_for', 'votes_against', 'votes_abstain', 'voter_count', 'scores', 'raw_data', 'collected_at']
+2026-04-27T19:01:39.953555930Z [error] 2026-04-27 19:01:33,200 [ERROR] worker: [schema] psi_scores: ['id', 'protocol_slug', 'protocol_name', 'overall_score', 'grade', 'category_scores', 'component_scores', 'raw_values', 'formula_version', 'computed_at', 'scored_date', 'inputs_hash', 'scored_at', 'backfilled', 'backfill_source', 'aggregation_method', 'aggregation_params', 'aggregation_formula_version', 'effective_category_weights', 'coverage', 'withheld', 'confidence', 'confidence_tag', 'component_coverage', 'components_populated', 'components_total', 'missing_categories']
+2026-04-27T19:01:39.953559538Z [error] 2026-04-27 19:01:33,452 [ERROR] worker: [schema] scores: ['stablecoin_id', 'overall_score', 'grade', 'peg_score', 'liquidity_score', 'mint_burn_score', 'distribution_score', 'structural_score', 'reserves_score', 'contract_score', 'oracle_score', 'governance_score', 'network_score', 'component_count', 'formula_version', 'data_freshness_pct', 'current_price', 'market_cap', 'volume_24h', 'daily_change', 'weekly_change', 'computed_at', 'updated_at', 'aggregation_method', 'aggregation_params', 'aggregation_formula_version', 'effective_category_weights', 'coverage', 'withheld', 'confidence', 'confidence_tag', 'component_coverage', 'components_populated', 'components_total', 'missing_categories']
+2026-04-27T19:01:39.955998439Z [error] 2026-04-27 19:01:33,653 [ERROR] worker: [schema] oracle_registry: ['id', 'oracle_address', 'oracle_name', 'oracle_provider', 'chain', 'asset_symbol', 'quote_symbol', 'decimals', 'read_function', 'is_active', 'entity_type', 'entity_slug', 'added_at']
+2026-04-27T19:01:41.369996658Z [error] 2026-04-27 19:01:41,247 [ERROR] worker: [schema_fix] psi_scores.scored_at column ensured
+2026-04-27T19:01:41.651776192Z [error] 2026-04-27 19:01:41,646 [ERROR] worker: [schema_after] governance_proposals: ['id', 'protocol_slug', 'proposal_id', 'source', 'title', 'body_excerpt', 'is_risk_related', 'risk_keywords', 'budget_amount_usd', 'vote_for', 'vote_against', 'vote_abstain', 'quorum_reached', 'participation_rate', 'proposal_state', 'created_at', 'closed_at', 'scraped_at', 'protocol_id', 'proposal_source', 'body', 'body_hash', 'author_address', 'author_ens', 'state', 'vote_start', 'vote_end', 'scores_total', 'scores_for', 'scores_against', 'scores_abstain', 'quorum', 'choices', 'votes', 'ipfs_hash', 'discussion_url', 'captured_at', 'body_changed', 'first_capture_body_hash', 'content_hash', 'attested_at', 'protocol', 'author', 'start_at', 'end_at', 'votes_for', 'votes_against', 'votes_abstain', 'voter_count', 'scores', 'raw_data', 'collected_at']
+2026-04-27T19:01:41.854513805Z [error] 2026-04-27 19:01:41,847 [ERROR] worker: [schema_after] psi_scores: ['id', 'protocol_slug', 'protocol_name', 'overall_score', 'grade', 'category_scores', 'component_scores', 'raw_values', 'formula_version', 'computed_at', 'scored_date', 'inputs_hash', 'scored_at', 'backfilled', 'backfill_source', 'aggregation_method', 'aggregation_params', 'aggregation_formula_version', 'effective_category_weights', 'coverage', 'withheld', 'confidence', 'confidence_tag', 'component_coverage', 'components_populated', 'components_total', 'missing_categories']
+2026-04-27T19:01:42.379018569Z [error] 2026-04-27 19:01:42,098 [INFO] app.db_schema_validator: [schema_validator] governance_proposals: OK (40 columns)
+2026-04-27T19:01:42.379021774Z [error] 2026-04-27 19:01:42,299 [INFO] app.db_schema_validator: [schema_validator] oracle_registry: OK (13 columns)
+2026-04-27T19:01:42.505185316Z [error] 2026-04-27 19:01:42,501 [INFO] app.db_schema_validator: [schema_validator] oracle_price_readings: OK (21 columns)
+2026-04-27T19:01:42.703697645Z [error] 2026-04-27 19:01:42,701 [INFO] app.db_schema_validator: [schema_validator] oracle_stress_events: OK (19 columns)
+2026-04-27T19:01:42.906135199Z [error] 2026-04-27 19:01:42,902 [INFO] app.db_schema_validator: [schema_validator] psi_scores: OK (13 columns)
+2026-04-27T19:01:43.410356233Z [error] 2026-04-27 19:01:43,103 [INFO] app.db_schema_validator: [schema_validator] scores: OK (23 columns)
+2026-04-27T19:01:43.410359647Z [error] 2026-04-27 19:01:43,305 [INFO] app.db_schema_validator: [schema_validator] generic_index_scores: OK (16 columns)
+2026-04-27T19:01:43.527391788Z [error] 2026-04-27 19:01:43,507 [INFO] app.db_schema_validator: [schema_validator] governance_voters: OK (9 columns)
+2026-04-27T19:01:43.711307488Z [error] 2026-04-27 19:01:43,709 [INFO] app.db_schema_validator: [schema_validator] mint_burn_events: OK (11 columns)
+2026-04-27T19:01:43.913405393Z [error] 2026-04-27 19:01:43,909 [INFO] app.db_schema_validator: [schema_validator] liquidity_depth: OK (18 columns)
+2026-04-27T19:01:44.424527114Z [error] 2026-04-27 19:01:44,111 [INFO] app.db_schema_validator: [schema_validator] contract_surveillance: OK (13 columns)
+2026-04-27T19:01:44.424531017Z [error] 2026-04-27 19:01:44,316 [INFO] app.db_schema_validator: [schema_validator] protocol_parameter_changes: OK (17 columns)
+2026-04-27T19:01:44.519596064Z [error] 2026-04-27 19:01:44,518 [INFO] app.db_schema_validator: [schema_validator] yield_snapshots: OK (11 columns)
+2026-04-27T19:01:44.721319201Z [error] 2026-04-27 19:01:44,720 [INFO] app.db_schema_validator: [schema_validator] peg_snapshots_5m: OK (5 columns)
+2026-04-27T19:01:44.924562875Z [error] 2026-04-27 19:01:44,921 [INFO] app.db_schema_validator: [schema_validator] entity_snapshots_hourly: OK (10 columns)
+2026-04-27T19:01:45.409030304Z [error] 2026-04-27 19:01:45,122 [INFO] app.db_schema_validator: [schema_validator] exchange_snapshots: OK (10 columns)
+2026-04-27T19:01:45.409034344Z [error] 2026-04-27 19:01:45,324 [INFO] app.db_schema_validator: [schema_validator] incident_events: OK (11 columns)
+2026-04-27T19:01:45.543975411Z [error] 2026-04-27 19:01:45,525 [INFO] app.db_schema_validator: [schema_validator] wallet_graph.wallets: OK (9 columns)
+2026-04-27T19:01:45.734183270Z [error] 2026-04-27 19:01:45,726 [INFO] app.db_schema_validator: [schema_validator] correlation_matrices: OK (6 columns)
+2026-04-27T19:01:45.933042484Z [error] 2026-04-27 19:01:45,927 [INFO] app.db_schema_validator: [schema_validator] wallet_behavior_tags: OK (6 columns)
+2026-04-27T19:01:46.406112298Z [error] 2026-04-27 19:01:46,332 [INFO] app.db_schema_validator: [schema_validator] component_readings: OK (7 columns)
+2026-04-27T19:01:46.406202007Z [error] 2026-04-27 19:01:46,129 [INFO] app.db_schema_validator: [schema_validator] dex_pool_ohlcv: OK (12 columns)
+2026-04-27T19:01:46.535421326Z [error] 2026-04-27 19:01:46,533 [INFO] app.db_schema_validator: [schema_validator] score_history: OK (18 columns)
+2026-04-27T19:01:46.734586748Z [error] 2026-04-27 19:01:46,733 [INFO] app.db_schema_validator: [schema_validator] data_provenance: OK (8 columns)
+2026-04-27T19:01:46.983555025Z [error] 2026-04-27 19:01:46,937 [INFO] app.db_schema_validator: [schema_validator] collector_cycle_stats: OK (6 columns)
+2026-04-27T19:01:47.429027129Z [error] 2026-04-27 19:01:47,140 [INFO] app.db_schema_validator: [schema_validator] state_attestations: OK (6 columns)
+2026-04-27T19:01:47.429031885Z [error] 2026-04-27 19:01:47,341 [INFO] app.db_schema_validator: [schema_validator] daily_pulses: OK (3 columns)
+2026-04-27T19:01:47.547876376Z [error] 2026-04-27 19:01:47,542 [INFO] app.db_schema_validator: [schema_validator] market_chart_history: OK (7 columns)
+2026-04-27T19:01:47.745964331Z [error] 2026-04-27 19:01:47,743 [INFO] app.db_schema_validator: [schema_validator] volatility_surfaces: OK (10 columns)
+2026-04-27T19:01:47.955289351Z [error] 2026-04-27 19:01:47,950 [INFO] app.db_schema_validator: [schema_validator] discovery_signals: OK (11 columns)
+2026-04-27T19:01:48.477013520Z [error] 2026-04-27 19:01:48,152 [INFO] app.db_schema_validator: [schema_validator] rpi_scores: OK (8 columns)
+2026-04-27T19:01:48.477016179Z [error] 2026-04-27 19:01:48,353 [INFO] app.db_schema_validator: [schema_validator] score_events: OK (6 columns)
+2026-04-27T19:01:48.561807228Z [error] 2026-04-27 19:01:48,555 [INFO] app.db_schema_validator: [schema_validator] governance_events: OK (10 columns)
+2026-04-27T19:01:48.760266891Z [error] 2026-04-27 19:01:48,757 [INFO] app.db_schema_validator: [schema_validator] protocol_pool_wallets: OK (7 columns)
+2026-04-27T19:01:48.962505873Z [error] 2026-04-27 19:01:48,957 [INFO] app.db_schema_validator: [schema_validator] protocol_trace_observations: OK (12 columns)
+2026-04-27T19:01:49.436027795Z [error] 2026-04-27 19:01:49,162 [INFO] app.db_schema_validator: [schema_validator] token_approval_snapshots: OK (9 columns)
+2026-04-27T19:01:49.436031122Z [error] 2026-04-27 19:01:49,363 [INFO] app.db_schema_validator: [schema_validator] oracle_update_cadence: OK (9 columns)
+2026-04-27T19:01:49.569290796Z [error] 2026-04-27 19:01:49,563 [INFO] app.db_schema_validator: [schema_validator] wallet_holder_discovery: OK (11 columns)
+2026-04-27T19:01:49.776017567Z [error] 2026-04-27 19:01:49,765 [INFO] app.db_schema_validator: [schema_validator] wallet_graph.wallet_edges: OK (12 columns)
+2026-04-27T19:01:49.968816178Z [error] 2026-04-27 19:01:49,966 [INFO] app.db_schema_validator: [schema_validator] wallet_graph.edge_build_status: OK (7 columns)
+2026-04-27T19:01:50.442631986Z [error] 2026-04-27 19:01:50,167 [INFO] app.db_schema_validator: [schema_validator] wallet_chain_presence: OK (12 columns)
+2026-04-27T19:01:50.442634730Z [error] 2026-04-27 19:01:50,167 [ERROR] app.db_schema_validator: [schema_validator] all schemas aligned — 41 tables, 472 columns verified
+2026-04-27T19:01:50.442637984Z [error] 2026-04-27 19:01:50,168 [ERROR] worker: [startup] schema fixes complete, diagnostics will fire in 60s via independent loop
+2026-04-27T19:01:50.442641136Z [error] 2026-04-27 19:01:50,168 [ERROR] worker: [startup] methodology seed failed: No module named 'scripts'
+2026-04-27T19:01:50.442644933Z [error] 2026-04-27 19:01:50,172 [ERROR] worker: [startup] running Dwellir capability probe
+2026-04-27T19:01:50.442648038Z [error] 2026-04-27 19:01:50,317 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-27T19:01:50.442651122Z [error] 2026-04-27 19:01:50,334 [ERROR] worker: [api_tracker] recorded: alchemy /v2/AyH5JAFcthHka4uBiciLg → 200
+2026-04-27T19:01:50.442654385Z [error] 2026-04-27 19:01:50,356 [INFO] httpx: HTTP Request: POST https://eth-mainnet.g.alchemy.com/v2/AyH5JAFcthHka4uBiciLg "HTTP/1.1 200 OK"
+2026-04-27T19:01:50.442657301Z [error] 2026-04-27 19:01:50,356 [ERROR] worker: [api_tracker] recorded: alchemy /v2/AyH5JAFcthHka4uBiciLg → 200
+2026-04-27T19:01:51.013600060Z [error] 2026-04-27 19:01:51,007 [INFO] httpx: HTTP Request: POST https://api-ethereum-mainnet.n.dwellir.com/ebce64a9-6da4-4451-808d-aa0e82b1da55 "HTTP/1.1 200 OK"
+2026-04-27T19:01:51.013606016Z [error] 2026-04-27 19:01:51,008 [ERROR] worker: [api_tracker] recorded: dwellir /ebce64a9-6da4-4451-808d-aa0e82b1da55 → 200
