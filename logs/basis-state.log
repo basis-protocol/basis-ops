@@ -1,7 +1,3 @@
-2026-04-23T12:36:15.547118043Z [error] 2026-04-23 12:36:15,244 WARNING [basis_state] Failed to fetch history for stablecoin:TUSD
-2026-04-23T12:36:15.547122529Z [error] 2026-04-23 12:36:15,244 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/FDUSD params={'format': 'json'}
-2026-04-23T12:36:15.547126385Z [error] 2026-04-23 12:36:15,277 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-23T12:36:15.547128140Z [error] 2026-04-23 12:36:15,276 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/FDUSD?format=json "HTTP/1.1 429 "
 2026-04-23T12:36:15.547132959Z [error] 2026-04-23 12:36:15,277 WARNING [basis_state] Failed to fetch history for stablecoin:FDUSD
 2026-04-23T12:36:15.548714190Z [error] 2026-04-23 12:36:15,277 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDe params={'format': 'json'}
 2026-04-23T12:36:15.548719557Z [error] 2026-04-23 12:36:15,299 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDe?format=json "HTTP/1.1 429 "
@@ -1999,3 +1995,7 @@
 2026-04-27T23:43:26.816290872Z [info] INFO:     100.64.0.9:33886 - "GET /.env HTTP/1.1" 404 Not Found
 2026-04-27T23:55:16.515775469Z [info] INFO:     100.64.0.21:49676 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
 2026-04-28T01:12:16.821097690Z [info] INFO:     100.64.0.8:55504 - "GET / HTTP/1.1" 200 OK
+2026-04-28T01:59:18.705041589Z [info] INFO:     100.64.0.4:61480 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
+2026-04-28T03:02:21.668199575Z [info] INFO:     100.64.0.34:52754 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
+2026-04-28T03:51:53.596961130Z [info] INFO:     100.64.0.35:10898 - "GET / HTTP/1.1" 200 OK
+2026-04-28T04:04:43.461832474Z [info] INFO:     100.64.0.18:12616 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
