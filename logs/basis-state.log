@@ -1,10 +1,3 @@
-2026-04-23T19:23:41.663992516Z [error] 2026-04-23 19:23:41,479 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/SUSDE 429 (56 bytes)
-2026-04-23T19:23:41.663995885Z [error] 2026-04-23 19:23:41,479 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-23T19:23:41.664001331Z [error] 2026-04-23 19:23:41,480 WARNING [basis_state] Failed to fetch history for stablecoin:SUSDE
-2026-04-23T19:23:41.665442565Z [error] 2026-04-23 19:23:41,480 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/STKGHO params={'format': 'json'}
-2026-04-23T19:23:44.654604210Z [error] 2026-04-23 19:23:44,578 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/STKGHO?format=json "HTTP/1.1 200 "
-2026-04-23T19:23:44.654611916Z [error] 2026-04-23 19:23:44,578 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/STKGHO 200 (9509 bytes)
-2026-04-23T19:23:44.654615662Z [error] 2026-04-23 19:23:44,579 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/EURI params={'format': 'json'}
 2026-04-23T19:23:44.654619166Z [error] 2026-04-23 19:23:44,603 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/EURI?format=json "HTTP/1.1 429 "
 2026-04-23T19:23:44.654622616Z [error] 2026-04-23 19:23:44,604 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/EURI 429 (56 bytes)
 2026-04-23T19:23:44.654626696Z [error] 2026-04-23 19:23:44,604 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
@@ -1999,3 +1992,10 @@
 2026-04-29T23:31:54.946205702Z [info] INFO:     100.64.0.48:30886 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
 2026-04-30T00:33:34.545837729Z [info] INFO:     100.64.0.21:37834 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
 2026-04-30T01:13:14.886693757Z [info] INFO:     100.64.0.56:22654 - "GET / HTTP/1.1" 200 OK
+2026-04-30T01:35:11.423703492Z [info] INFO:     100.64.0.4:42628 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
+2026-04-30T01:56:03.960077820Z [info] INFO:     100.64.0.58:55540 - "GET / HTTP/1.1" 200 OK
+2026-04-30T02:39:00.270743121Z [info] INFO:     100.64.0.10:33322 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
+2026-04-30T03:44:23.336609552Z [info] INFO:     100.64.0.2:41598 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
+2026-04-30T03:48:55.751449396Z [info] INFO:     100.64.0.20:59878 - "GET /.git/config HTTP/1.1" 404 Not Found
+2026-04-30T04:18:43.923407191Z [info] INFO:     100.64.0.51:51250 - "GET / HTTP/1.1" 200 OK
+2026-04-30T04:49:02.783780238Z [info] INFO:     100.64.0.36:13152 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
