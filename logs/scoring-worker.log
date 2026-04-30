@@ -1,355 +1,3 @@
-2026-04-30T17:44:08.680219739Z [error]     yield cur
-2026-04-30T17:44:08.680223202Z [error]   File "/app/app/data_layer/entity_discovery.py", line 116, in _store_discovered_entities
-2026-04-30T17:44:08.680226508Z [error]     cur.execute(
-2026-04-30T17:44:08.680229482Z [error] psycopg2.errors.UndefinedColumn: column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:08.680232226Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:08.680235040Z [error]                                                      ^
-2026-04-30T17:44:08.680238397Z [error] 
-2026-04-30T17:44:08.680242112Z [error] 2026-04-30 17:44:08,558 [ERROR] app.database: Database error in get_conn(): column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:08.680245825Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:08.680248579Z [error]                                                      ^
-2026-04-30T17:44:08.680252025Z [error] Traceback (most recent call last):
-2026-04-30T17:44:08.680254940Z [error]   File "/app/app/database.py", line 121, in get_conn
-2026-04-30T17:44:08.680257920Z [error]     yield conn
-2026-04-30T17:44:08.680260866Z [error]   File "/app/app/database.py", line 153, in get_cursor
-2026-04-30T17:44:08.681217145Z [error]     yield cur
-2026-04-30T17:44:08.681217943Z [error]                                                      ^
-2026-04-30T17:44:08.681221143Z [error]   File "/app/app/data_layer/entity_discovery.py", line 116, in _store_discovered_entities
-2026-04-30T17:44:08.681226990Z [error]     cur.execute(
-2026-04-30T17:44:08.681231845Z [error] psycopg2.errors.UndefinedColumn: column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:08.681237156Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:08.681239463Z [error] 
-2026-04-30T17:44:08.802440545Z [error] 2026-04-30 17:44:08,766 [ERROR] app.database: Database error in get_conn(): column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:08.802448751Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:08.802452909Z [error]                                                      ^
-2026-04-30T17:44:08.802459946Z [error] Traceback (most recent call last):
-2026-04-30T17:44:08.802465061Z [error]   File "/app/app/database.py", line 121, in get_conn
-2026-04-30T17:44:08.802469792Z [error]     yield conn
-2026-04-30T17:44:08.802475248Z [error]   File "/app/app/database.py", line 153, in get_cursor
-2026-04-30T17:44:08.802478504Z [error]     yield cur
-2026-04-30T17:44:08.802481593Z [error]   File "/app/app/data_layer/entity_discovery.py", line 116, in _store_discovered_entities
-2026-04-30T17:44:08.802485407Z [error]     cur.execute(
-2026-04-30T17:44:08.802489116Z [error] psycopg2.errors.UndefinedColumn: column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:08.802494110Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:08.802497345Z [error]                                                      ^
-2026-04-30T17:44:08.802500915Z [error] 
-2026-04-30T17:44:08.980924383Z [error]                                                      ^
-2026-04-30T17:44:08.980931317Z [error] 
-2026-04-30T17:44:08.980933980Z [error] 2026-04-30 17:44:08,971 [ERROR] app.database: Database error in get_conn(): column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:08.980939060Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:08.980942568Z [error]                                                      ^
-2026-04-30T17:44:08.980945828Z [error] Traceback (most recent call last):
-2026-04-30T17:44:08.980948944Z [error]   File "/app/app/database.py", line 121, in get_conn
-2026-04-30T17:44:08.980952097Z [error]     yield conn
-2026-04-30T17:44:08.980955141Z [error]   File "/app/app/database.py", line 153, in get_cursor
-2026-04-30T17:44:08.980958296Z [error]     yield cur
-2026-04-30T17:44:08.980961558Z [error]   File "/app/app/data_layer/entity_discovery.py", line 116, in _store_discovered_entities
-2026-04-30T17:44:08.980964713Z [error]     cur.execute(
-2026-04-30T17:44:08.980968057Z [error] psycopg2.errors.UndefinedColumn: column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:08.980971134Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:09.197482127Z [error] 2026-04-30 17:44:09,177 [ERROR] app.database: Database error in get_conn(): column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:09.197492460Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:09.197508852Z [error]                                                      ^
-2026-04-30T17:44:09.197515075Z [error] Traceback (most recent call last):
-2026-04-30T17:44:09.197519315Z [error]   File "/app/app/database.py", line 121, in get_conn
-2026-04-30T17:44:09.197523438Z [error]     yield conn
-2026-04-30T17:44:09.197527239Z [error]   File "/app/app/database.py", line 153, in get_cursor
-2026-04-30T17:44:09.197530793Z [error]     yield cur
-2026-04-30T17:44:09.197540347Z [error]   File "/app/app/data_layer/entity_discovery.py", line 116, in _store_discovered_entities
-2026-04-30T17:44:09.197543542Z [error]     cur.execute(
-2026-04-30T17:44:09.197547587Z [error] psycopg2.errors.UndefinedColumn: column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:09.197550729Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:09.197553928Z [error]                                                      ^
-2026-04-30T17:44:09.197557840Z [error] 
-2026-04-30T17:44:09.702348776Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:09.702354099Z [error]                                                      ^
-2026-04-30T17:44:09.702358229Z [error] Traceback (most recent call last):
-2026-04-30T17:44:09.702371097Z [error]   File "/app/app/database.py", line 121, in get_conn
-2026-04-30T17:44:09.702374671Z [error]     yield conn
-2026-04-30T17:44:09.702379857Z [error]   File "/app/app/database.py", line 153, in get_cursor
-2026-04-30T17:44:09.702423041Z [error]   File "/app/app/database.py", line 121, in get_conn
-2026-04-30T17:44:09.702426522Z [error]     yield conn
-2026-04-30T17:44:09.702430043Z [error]   File "/app/app/database.py", line 153, in get_cursor
-2026-04-30T17:44:09.702457578Z [error]     yield cur
-2026-04-30T17:44:09.702461977Z [error]   File "/app/app/data_layer/entity_discovery.py", line 116, in _store_discovered_entities
-2026-04-30T17:44:09.702464229Z [error] 2026-04-30 17:44:09,385 [ERROR] app.database: Database error in get_conn(): column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:09.702467118Z [error]     cur.execute(
-2026-04-30T17:44:09.702471976Z [error] psycopg2.errors.UndefinedColumn: column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:09.702473779Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:09.702479083Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:09.702479226Z [error]                                                      ^
-2026-04-30T17:44:09.702486048Z [error] Traceback (most recent call last):
-2026-04-30T17:44:09.702488622Z [error]                                                      ^
-2026-04-30T17:44:09.702492608Z [error] 
-2026-04-30T17:44:09.702496613Z [error] 2026-04-30 17:44:09,604 [ERROR] app.database: Database error in get_conn(): column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:09.703567204Z [error]     yield cur
-2026-04-30T17:44:09.703574111Z [error]   File "/app/app/data_layer/entity_discovery.py", line 116, in _store_discovered_entities
-2026-04-30T17:44:09.703578523Z [error]     cur.execute(
-2026-04-30T17:44:09.703583054Z [error] psycopg2.errors.UndefinedColumn: column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:09.703587825Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:09.703592011Z [error]                                                      ^
-2026-04-30T17:44:09.703596403Z [error] 
-2026-04-30T17:44:09.814244679Z [error] 2026-04-30 17:44:09,810 [ERROR] app.database: Database error in get_conn(): column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:09.814253304Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:09.814257806Z [error]                                                      ^
-2026-04-30T17:44:09.814262644Z [error] Traceback (most recent call last):
-2026-04-30T17:44:09.814266605Z [error]   File "/app/app/database.py", line 121, in get_conn
-2026-04-30T17:44:09.814270562Z [error]     yield conn
-2026-04-30T17:44:09.814276275Z [error]   File "/app/app/database.py", line 153, in get_cursor
-2026-04-30T17:44:09.814279912Z [error]     yield cur
-2026-04-30T17:44:09.814283721Z [error]   File "/app/app/data_layer/entity_discovery.py", line 116, in _store_discovered_entities
-2026-04-30T17:44:09.814287488Z [error]     cur.execute(
-2026-04-30T17:44:09.814291757Z [error] psycopg2.errors.UndefinedColumn: column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:09.814296026Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:09.814299494Z [error]                                                      ^
-2026-04-30T17:44:09.814303697Z [error] 
-2026-04-30T17:44:10.018492988Z [error] 2026-04-30 17:44:10,015 [ERROR] app.database: Database error in get_conn(): column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:10.018499142Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:10.018502920Z [error]                                                      ^
-2026-04-30T17:44:10.018506636Z [error] Traceback (most recent call last):
-2026-04-30T17:44:10.018510299Z [error]   File "/app/app/database.py", line 121, in get_conn
-2026-04-30T17:44:10.018513949Z [error]     yield conn
-2026-04-30T17:44:10.018517370Z [error]   File "/app/app/database.py", line 153, in get_cursor
-2026-04-30T17:44:10.018521351Z [error]     yield cur
-2026-04-30T17:44:10.018524801Z [error]   File "/app/app/data_layer/entity_discovery.py", line 116, in _store_discovered_entities
-2026-04-30T17:44:10.018528209Z [error]     cur.execute(
-2026-04-30T17:44:10.018531726Z [error] psycopg2.errors.UndefinedColumn: column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:10.018535246Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:10.018540396Z [error]                                                      ^
-2026-04-30T17:44:10.018544368Z [error] 
-2026-04-30T17:44:10.246229195Z [error] 2026-04-30 17:44:10,222 [ERROR] app.database: Database error in get_conn(): column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:10.246232752Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:10.246236284Z [error]                                                      ^
-2026-04-30T17:44:10.246240251Z [error] Traceback (most recent call last):
-2026-04-30T17:44:10.246244179Z [error]   File "/app/app/database.py", line 121, in get_conn
-2026-04-30T17:44:10.246249619Z [error]     yield conn
-2026-04-30T17:44:10.246253720Z [error]   File "/app/app/database.py", line 153, in get_cursor
-2026-04-30T17:44:10.246257137Z [error]     yield cur
-2026-04-30T17:44:10.246260456Z [error]   File "/app/app/data_layer/entity_discovery.py", line 116, in _store_discovered_entities
-2026-04-30T17:44:10.246263828Z [error]     cur.execute(
-2026-04-30T17:44:10.246268209Z [error] psycopg2.errors.UndefinedColumn: column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:10.246271670Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:10.246274859Z [error]                                                      ^
-2026-04-30T17:44:10.246278515Z [error] 
-2026-04-30T17:44:10.739920263Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:10.739929186Z [error]                                                      ^
-2026-04-30T17:44:10.739934435Z [error] Traceback (most recent call last):
-2026-04-30T17:44:10.739937993Z [error]   File "/app/app/database.py", line 121, in get_conn
-2026-04-30T17:44:10.739941531Z [error]     yield conn
-2026-04-30T17:44:10.739945699Z [error]   File "/app/app/database.py", line 153, in get_cursor
-2026-04-30T17:44:10.739949613Z [error] 2026-04-30 17:44:10,427 [ERROR] app.database: Database error in get_conn(): column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:10.739954419Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:10.739957905Z [error]                                                      ^
-2026-04-30T17:44:10.739961536Z [error] Traceback (most recent call last):
-2026-04-30T17:44:10.739965958Z [error]   File "/app/app/database.py", line 121, in get_conn
-2026-04-30T17:44:10.739969281Z [error]     yield conn
-2026-04-30T17:44:10.739973022Z [error]   File "/app/app/database.py", line 153, in get_cursor
-2026-04-30T17:44:10.739977083Z [error]     yield cur
-2026-04-30T17:44:10.739980130Z [error]   File "/app/app/data_layer/entity_discovery.py", line 116, in _store_discovered_entities
-2026-04-30T17:44:10.739983177Z [error]     cur.execute(
-2026-04-30T17:44:10.739986820Z [error] psycopg2.errors.UndefinedColumn: column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:10.739989514Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:10.739993038Z [error]                                                      ^
-2026-04-30T17:44:10.739996532Z [error] 
-2026-04-30T17:44:10.739999987Z [error] 2026-04-30 17:44:10,641 [ERROR] app.database: Database error in get_conn(): column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:10.740934552Z [error]     yield cur
-2026-04-30T17:44:10.740938798Z [error]   File "/app/app/data_layer/entity_discovery.py", line 116, in _store_discovered_entities
-2026-04-30T17:44:10.740942762Z [error]     cur.execute(
-2026-04-30T17:44:10.740946541Z [error] psycopg2.errors.UndefinedColumn: column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:10.740949768Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:10.740953096Z [error]                                                      ^
-2026-04-30T17:44:10.740956328Z [error] 
-2026-04-30T17:44:10.854917259Z [error] 2026-04-30 17:44:10,846 [ERROR] app.database: Database error in get_conn(): column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:10.854921638Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:10.854925768Z [error]                                                      ^
-2026-04-30T17:44:10.854930234Z [error] Traceback (most recent call last):
-2026-04-30T17:44:10.854934591Z [error]   File "/app/app/database.py", line 121, in get_conn
-2026-04-30T17:44:10.854938683Z [error]     yield conn
-2026-04-30T17:44:10.854942123Z [error]   File "/app/app/database.py", line 153, in get_cursor
-2026-04-30T17:44:10.854945419Z [error]     yield cur
-2026-04-30T17:44:10.854948678Z [error]   File "/app/app/data_layer/entity_discovery.py", line 116, in _store_discovered_entities
-2026-04-30T17:44:10.854952201Z [error]     cur.execute(
-2026-04-30T17:44:10.854955382Z [error] psycopg2.errors.UndefinedColumn: column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:10.854958189Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:10.854961569Z [error]                                                      ^
-2026-04-30T17:44:10.854965228Z [error] 
-2026-04-30T17:44:11.058436570Z [error] 2026-04-30 17:44:11,051 [ERROR] app.database: Database error in get_conn(): column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:11.058443587Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:11.058449184Z [error]                                                      ^
-2026-04-30T17:44:11.058454521Z [error] Traceback (most recent call last):
-2026-04-30T17:44:11.058458403Z [error]   File "/app/app/database.py", line 121, in get_conn
-2026-04-30T17:44:11.058462447Z [error]     yield conn
-2026-04-30T17:44:11.058466254Z [error]   File "/app/app/database.py", line 153, in get_cursor
-2026-04-30T17:44:11.058469529Z [error]     yield cur
-2026-04-30T17:44:11.058473170Z [error]   File "/app/app/data_layer/entity_discovery.py", line 116, in _store_discovered_entities
-2026-04-30T17:44:11.058476882Z [error]     cur.execute(
-2026-04-30T17:44:11.058482239Z [error] psycopg2.errors.UndefinedColumn: column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:11.058486034Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:11.058489061Z [error]                                                      ^
-2026-04-30T17:44:11.058492981Z [error] 
-2026-04-30T17:44:11.284459626Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:11.284467591Z [error]                                                      ^
-2026-04-30T17:44:11.284472207Z [error] 
-2026-04-30T17:44:11.284521973Z [error] 2026-04-30 17:44:11,256 [ERROR] app.database: Database error in get_conn(): column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:11.284524931Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:11.284527808Z [error]                                                      ^
-2026-04-30T17:44:11.284530764Z [error] Traceback (most recent call last):
-2026-04-30T17:44:11.284533805Z [error]   File "/app/app/database.py", line 121, in get_conn
-2026-04-30T17:44:11.284536807Z [error]     yield conn
-2026-04-30T17:44:11.284539628Z [error]   File "/app/app/database.py", line 153, in get_cursor
-2026-04-30T17:44:11.284542838Z [error]     yield cur
-2026-04-30T17:44:11.284546063Z [error]   File "/app/app/data_layer/entity_discovery.py", line 116, in _store_discovered_entities
-2026-04-30T17:44:11.284548805Z [error]     cur.execute(
-2026-04-30T17:44:11.284551831Z [error] psycopg2.errors.UndefinedColumn: column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:11.718077833Z [error] 2026-04-30 17:44:11,462 [ERROR] app.database: Database error in get_conn(): column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:11.718080904Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:11.718084004Z [error]                                                      ^
-2026-04-30T17:44:11.718087032Z [error] Traceback (most recent call last):
-2026-04-30T17:44:11.718090056Z [error]   File "/app/app/database.py", line 121, in get_conn
-2026-04-30T17:44:11.718092960Z [error]     yield conn
-2026-04-30T17:44:11.718096032Z [error]   File "/app/app/database.py", line 153, in get_cursor
-2026-04-30T17:44:11.718099319Z [error]     yield cur
-2026-04-30T17:44:11.718102481Z [error]   File "/app/app/data_layer/entity_discovery.py", line 116, in _store_discovered_entities
-2026-04-30T17:44:11.718105322Z [error]     cur.execute(
-2026-04-30T17:44:11.718108322Z [error] psycopg2.errors.UndefinedColumn: column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:11.718111543Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:11.718114445Z [error]                                                      ^
-2026-04-30T17:44:11.718117472Z [error] 
-2026-04-30T17:44:11.718120512Z [error] 2026-04-30 17:44:11,669 [ERROR] app.database: Database error in get_conn(): column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:11.718123362Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:11.718126234Z [error]                                                      ^
-2026-04-30T17:44:11.718129279Z [error] Traceback (most recent call last):
-2026-04-30T17:44:11.718132266Z [error]   File "/app/app/database.py", line 121, in get_conn
-2026-04-30T17:44:11.718135211Z [error]     yield conn
-2026-04-30T17:44:11.718138353Z [error]   File "/app/app/database.py", line 153, in get_cursor
-2026-04-30T17:44:11.719166605Z [error]     yield cur
-2026-04-30T17:44:11.719170979Z [error]   File "/app/app/data_layer/entity_discovery.py", line 116, in _store_discovered_entities
-2026-04-30T17:44:11.719175068Z [error]     cur.execute(
-2026-04-30T17:44:11.719178583Z [error] psycopg2.errors.UndefinedColumn: column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:11.719181701Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:11.719185206Z [error]                                                      ^
-2026-04-30T17:44:11.719188497Z [error] 
-2026-04-30T17:44:11.897363899Z [error] 2026-04-30 17:44:11,881 [ERROR] app.database: Database error in get_conn(): column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:11.897368348Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:11.897372541Z [error]                                                      ^
-2026-04-30T17:44:11.897375999Z [error] Traceback (most recent call last):
-2026-04-30T17:44:11.897379479Z [error]   File "/app/app/database.py", line 121, in get_conn
-2026-04-30T17:44:11.897384127Z [error]     yield conn
-2026-04-30T17:44:11.897387695Z [error]   File "/app/app/database.py", line 153, in get_cursor
-2026-04-30T17:44:11.897392016Z [error]     yield cur
-2026-04-30T17:44:11.897395748Z [error]   File "/app/app/data_layer/entity_discovery.py", line 116, in _store_discovered_entities
-2026-04-30T17:44:11.897399197Z [error]     cur.execute(
-2026-04-30T17:44:11.897402307Z [error] psycopg2.errors.UndefinedColumn: column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:11.897405670Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:11.897409148Z [error]                                                      ^
-2026-04-30T17:44:11.897413385Z [error] 
-2026-04-30T17:44:12.095923834Z [error] 2026-04-30 17:44:12,092 [ERROR] app.database: Database error in get_conn(): column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:12.095924325Z [error]   File "/app/app/database.py", line 153, in get_cursor
-2026-04-30T17:44:12.095934000Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:12.095935305Z [error]     yield cur
-2026-04-30T17:44:12.095941156Z [error]                                                      ^
-2026-04-30T17:44:12.095943617Z [error]   File "/app/app/data_layer/entity_discovery.py", line 116, in _store_discovered_entities
-2026-04-30T17:44:12.095948069Z [error] Traceback (most recent call last):
-2026-04-30T17:44:12.095952041Z [error]     cur.execute(
-2026-04-30T17:44:12.095955564Z [error]   File "/app/app/database.py", line 121, in get_conn
-2026-04-30T17:44:12.095962769Z [error]     yield conn
-2026-04-30T17:44:12.095963251Z [error] psycopg2.errors.UndefinedColumn: column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:12.095969394Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:12.095974411Z [error]                                                      ^
-2026-04-30T17:44:12.095979250Z [error] 
-2026-04-30T17:44:12.723447158Z [error] 2026-04-30 17:44:12,513 [ERROR] app.database: Database error in get_conn(): column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:12.723447532Z [error]   File "/app/app/database.py", line 153, in get_cursor
-2026-04-30T17:44:12.723453087Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:12.723457396Z [error]                                                      ^
-2026-04-30T17:44:12.723467529Z [error] 2026-04-30 17:44:12,300 [ERROR] app.database: Database error in get_conn(): column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:12.723467623Z [error] Traceback (most recent call last):
-2026-04-30T17:44:12.723467784Z [error]     yield cur
-2026-04-30T17:44:12.723472610Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:12.723475475Z [error]   File "/app/app/database.py", line 121, in get_conn
-2026-04-30T17:44:12.723476658Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:12.723478857Z [error]   File "/app/app/data_layer/entity_discovery.py", line 116, in _store_discovered_entities
-2026-04-30T17:44:12.723479409Z [error]                                                      ^
-2026-04-30T17:44:12.723482881Z [error]     yield conn
-2026-04-30T17:44:12.723485244Z [error]                                                      ^
-2026-04-30T17:44:12.723486234Z [error] 
-2026-04-30T17:44:12.723488350Z [error]     cur.execute(
-2026-04-30T17:44:12.723491094Z [error] Traceback (most recent call last):
-2026-04-30T17:44:12.723492762Z [error] psycopg2.errors.UndefinedColumn: column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:12.723495439Z [error]   File "/app/app/database.py", line 121, in get_conn
-2026-04-30T17:44:12.723499296Z [error]     yield conn
-2026-04-30T17:44:12.723587587Z [error]   File "/app/app/database.py", line 153, in get_cursor
-2026-04-30T17:44:12.725255430Z [error]                                                      ^
-2026-04-30T17:44:12.725259787Z [error] 
-2026-04-30T17:44:12.725304065Z [error]     yield cur
-2026-04-30T17:44:12.725307599Z [error]   File "/app/app/data_layer/entity_discovery.py", line 116, in _store_discovered_entities
-2026-04-30T17:44:12.725311317Z [error]     cur.execute(
-2026-04-30T17:44:12.725315152Z [error] psycopg2.errors.UndefinedColumn: column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:12.725318616Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:12.993614722Z [error] 2026-04-30 17:44:12,986 [ERROR] app.database: Database error in get_conn(): column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:12.993621681Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:12.993625394Z [error]                                                      ^
-2026-04-30T17:44:12.993628844Z [error] Traceback (most recent call last):
-2026-04-30T17:44:12.993632893Z [error]   File "/app/app/database.py", line 121, in get_conn
-2026-04-30T17:44:12.993637972Z [error]     yield conn
-2026-04-30T17:44:12.993641418Z [error]   File "/app/app/database.py", line 153, in get_cursor
-2026-04-30T17:44:12.993646361Z [error]     yield cur
-2026-04-30T17:44:12.993649907Z [error]   File "/app/app/data_layer/entity_discovery.py", line 116, in _store_discovered_entities
-2026-04-30T17:44:12.993653716Z [error]     cur.execute(
-2026-04-30T17:44:12.993658071Z [error] psycopg2.errors.UndefinedColumn: column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:12.993661698Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:12.993665455Z [error]                                                      ^
-2026-04-30T17:44:12.993669194Z [error] 
-2026-04-30T17:44:13.198682970Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:13.198686130Z [error]     yield cur
-2026-04-30T17:44:13.198694995Z [error]   File "/app/app/data_layer/entity_discovery.py", line 116, in _store_discovered_entities
-2026-04-30T17:44:13.198697596Z [error]                                                      ^
-2026-04-30T17:44:13.198702685Z [error]     cur.execute(
-2026-04-30T17:44:13.198703570Z [error] 2026-04-30 17:44:13,192 [ERROR] app.database: Database error in get_conn(): column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:13.198707474Z [error] 
-2026-04-30T17:44:13.198710988Z [error] psycopg2.errors.UndefinedColumn: column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:13.198716939Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:13.198722520Z [error]                                                      ^
-2026-04-30T17:44:13.198727591Z [error] Traceback (most recent call last):
-2026-04-30T17:44:13.198732323Z [error]   File "/app/app/database.py", line 121, in get_conn
-2026-04-30T17:44:13.198739943Z [error]     yield conn
-2026-04-30T17:44:13.198744624Z [error]   File "/app/app/database.py", line 153, in get_cursor
-2026-04-30T17:44:13.752404481Z [error] 2026-04-30 17:44:13,413 [ERROR] app.database: Database error in get_conn(): column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:13.752408476Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:13.752412299Z [error]                                                      ^
-2026-04-30T17:44:13.752416043Z [error] Traceback (most recent call last):
-2026-04-30T17:44:13.752419510Z [error]   File "/app/app/database.py", line 121, in get_conn
-2026-04-30T17:44:13.752423537Z [error]     yield conn
-2026-04-30T17:44:13.752427398Z [error]   File "/app/app/database.py", line 153, in get_cursor
-2026-04-30T17:44:13.752432424Z [error]     yield cur
-2026-04-30T17:44:13.752436180Z [error]   File "/app/app/data_layer/entity_discovery.py", line 116, in _store_discovered_entities
-2026-04-30T17:44:13.752439503Z [error]     cur.execute(
-2026-04-30T17:44:13.752442503Z [error] psycopg2.errors.UndefinedColumn: column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:13.752445886Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:13.752449325Z [error]                                                      ^
-2026-04-30T17:44:13.752452760Z [error] 
-2026-04-30T17:44:13.752456283Z [error] 2026-04-30 17:44:13,619 [ERROR] app.database: Database error in get_conn(): column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:13.752461895Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:13.752466565Z [error]                                                      ^
-2026-04-30T17:44:13.752471040Z [error] Traceback (most recent call last):
-2026-04-30T17:44:13.752476785Z [error]   File "/app/app/database.py", line 121, in get_conn
-2026-04-30T17:44:13.752481672Z [error]     yield conn
-2026-04-30T17:44:13.752502880Z [error]   File "/app/app/database.py", line 153, in get_cursor
-2026-04-30T17:44:13.754022067Z [error] 
-2026-04-30T17:44:13.754024181Z [error]     yield cur
-2026-04-30T17:44:13.754031886Z [error]   File "/app/app/data_layer/entity_discovery.py", line 116, in _store_discovered_entities
-2026-04-30T17:44:13.754035773Z [error]     cur.execute(
-2026-04-30T17:44:13.754039867Z [error] psycopg2.errors.UndefinedColumn: column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:13.754044700Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:13.754049008Z [error]                                                      ^
-2026-04-30T17:44:13.829370688Z [error] 2026-04-30 17:44:13,824 [ERROR] app.database: Database error in get_conn(): column "entity_id" of relation "discovery_signals" does not exist
-2026-04-30T17:44:13.829377726Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
-2026-04-30T17:44:13.829382004Z [error]                                                      ^
-2026-04-30T17:44:13.829385174Z [error] Traceback (most recent call last):
-2026-04-30T17:44:13.829388253Z [error]   File "/app/app/database.py", line 121, in get_conn
-2026-04-30T17:44:13.829391593Z [error]     yield conn
-2026-04-30T17:44:13.829395033Z [error]   File "/app/app/database.py", line 153, in get_cursor
-2026-04-30T17:44:13.829398314Z [error]     yield cur
-2026-04-30T17:44:13.829401708Z [error]   File "/app/app/data_layer/entity_discovery.py", line 116, in _store_discovered_entities
 2026-04-30T17:44:13.829405370Z [error]     cur.execute(
 2026-04-30T17:44:13.829409172Z [error] psycopg2.errors.UndefinedColumn: column "entity_id" of relation "discovery_signals" does not exist
 2026-04-30T17:44:13.829412334Z [error] LINE 2:                        (signal_type, domain, entity_id, seve...
@@ -1999,3 +1647,355 @@
 2026-04-30T18:05:46.859400000Z [error] 2026-04-30 18:05:46,842 [WARNING] asyncio: Executing <Task pending name='approval_bg' coro=<approval_collector_background_loop() running at /app/app/data_layer/approval_collector.py:283> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 5.175 seconds
 2026-04-30T18:05:46.866115909Z [error] 2026-04-30 18:05:46,864 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] _fetch_etherscan: HTTP 200, parsing JSON
 2026-04-30T18:05:46.872778529Z [error] 2026-04-30 18:05:46,869 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] step D.2: etherscan returned 10000 holders
+2026-04-30T18:37:43.236295997Z [error] 2026-04-30 18:37:39,611 [ERROR] app.data_layer.trace_collector: [trace_bg] gate closed (last_run=2.5h ago, threshold=6h) — sleeping 1h
+2026-04-30T18:37:43.236306058Z [error] 2026-04-30 18:37:39,611 [WARNING] asyncio: Executing <Task pending name='trace_bg' coro=<trace_collector_background_loop() running at /app/app/data_layer/trace_collector.py:323> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.11/asyncio/base_events.py:428> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 0.219 seconds
+2026-04-30T18:37:43.236308299Z [error] 2026-04-30 18:37:39,382 [WARNING] asyncio: Executing <Task pending name='Task-9' coro=<holder_ingestion_background_loop() running at /app/app/data_layer/holder_ingestion_collector.py:439> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.11/asyncio/base_events.py:428> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 1912.518 seconds
+2026-04-30T18:37:43.236314249Z [error] 2026-04-30 18:37:39,390 [INFO] httpx: HTTP Request: GET https://api.blockscout.com/v2/api?chain_id=8453&module=token&action=tokenholderlist&apikey=proapi_sVUHiHnZyiiVZKeE55f7LEHIvT5VtAg2ZqnkKtYnBtDIBtPXriZABzLQMeOuF1iY_dvna1J&contractaddress=0x2ae3f1ec7f1f5012cfeab0185bfc7aa3cf0dec22&page=1&offset=100 "HTTP/1.1 400 Bad Request"
+2026-04-30T18:37:43.236315437Z [error] 2026-04-30 18:37:42,221 [ERROR] worker: [stale_diagnostic] stale=3: exchange_snapshots (age=16.8h, threshold=3h), entity_snapshots_hourly (age=6.2h, threshold=3h), mint_burn_events (age=199.9h, threshold=26h)
+2026-04-30T18:37:43.236331802Z [error] 2026-04-30 18:37:42,682 [ERROR] worker: [provenance_gap] hourly: 11/12 producing, weekly: 3, missing_hourly=['tally_governance']
+2026-04-30T18:37:43.236335806Z [error] 2026-04-30 18:37:42,682 [ERROR] worker: [provenance_gap] weekly sources (not expected in 24h): ['defillama_bridges']
+2026-04-30T18:37:43.236361039Z [error] 2026-04-30 18:37:42,682 [ERROR] worker: [api_budget] blockscout=1,525/100,000 (2%), coingecko=535/16,600 (3%), curve=4, dwellir=7, etherscan=3,859/200,000 (2%), helius-rpc=4, llama=110, parallel=16, resend=1
+2026-04-30T18:37:43.237271430Z [error] 2026-04-30 18:37:42,889 [ERROR] worker: [api_usage_7d] blockscout: 2026-04-30: 1,757 calls (20 err, p95=295002ms) — 2% | 2026-04-29: 431 calls (0 err, p95=9422ms) — 0%
+2026-04-30T18:37:43.237278378Z [error] 2026-04-30 18:37:42,889 [ERROR] worker: [api_usage_7d] coingecko: 2026-04-30: 3,331 calls (467 err, p95=1389463ms) — 20% | 2026-04-29: 630 calls (118 err, p95=1131019ms) — 4%
+2026-04-30T18:37:43.237285219Z [error] 2026-04-30 18:37:42,889 [ERROR] worker: [api_usage_7d] defillama: 2026-04-30: 646 calls (26 err, p95=1085941ms) — 1% | 2026-04-29: 201 calls (11 err, p95=1774354ms) — 0%
+2026-04-30T18:37:43.237289564Z [error] 2026-04-30 18:37:42,889 [ERROR] worker: [api_usage_7d] etherscan: 2026-04-30: 11,178 calls (31 err, p95=257958ms) — 6% | 2026-04-29: 2,170 calls (3 err, p95=14704ms) — 1%
+2026-04-30T18:37:43.237293652Z [error] 2026-04-30 18:37:42,889 [ERROR] worker: [api_usage_7d] helius: 2026-04-30: 6 calls (0 err, p95=321ms) | 2026-04-29: 6 calls (0 err, p95=257ms)
+2026-04-30T18:37:43.237298311Z [error] 2026-04-30 18:37:42,889 [ERROR] worker: [api_usage_7d] parallel: 2026-04-30: 16 calls (0 err, p95=1634ms) | 2026-04-29: 115 calls (0 err, p95=243711ms)
+2026-04-30T18:37:43.237304188Z [error] 2026-04-30 18:37:42,889 [ERROR] worker: [api_usage_7d] rpc_ethereum: 2026-04-30: 10 calls (4 err, p95=184ms) | 2026-04-29: 5 calls (2 err, p95=160ms)
+2026-04-30T18:37:43.237309006Z [error] 2026-04-30 18:37:42,889 [ERROR] worker: [api_usage_7d] snapshot: 2026-04-30: 31 calls (0 err, p95=150ms) — 0% | 2026-04-29: 11 calls (0 err, p95=182ms) — 0%
+2026-04-30T18:37:43.237312449Z [error] 2026-04-30 18:37:43,149 [ERROR] worker: [api_hotspots_24h]
+2026-04-30T18:37:43.237316677Z [error]   etherscan/wallet_expansion: 54
+2026-04-30T18:37:43.237320690Z [error]   blockscout/data_layer.trace_collector: 45
+2026-04-30T18:37:43.237324987Z [error]   etherscan/data_layer.wallet_expansion: 41
+2026-04-30T18:37:43.237328850Z [error]   etherscan/data_layer.transfer_edge_builder: 32
+2026-04-30T18:37:43.239232689Z [error]   coingecko/exchange_collector: 27
+2026-04-30T18:37:43.239240854Z [error]   coingecko/collectors.coingecko: 20
+2026-04-30T18:37:43.239246603Z [error]   blockscout/data_layer.approval_collector: 17
+2026-04-30T18:37:43.239251238Z [error]   defillama/collectors.defillama: 16
+2026-04-30T18:37:43.239256145Z [error]   coingecko/liquidity_collector: 16
+2026-04-30T18:37:43.239262264Z [error]   defillama/collectors.psi_collector: 14
+2026-04-30T18:37:43.239268483Z [error]   etherscan/collectors.etherscan: 13
+2026-04-30T18:37:43.239274240Z [error]   etherscan/mint_burn_collector: 12
+2026-04-30T18:37:43.239279609Z [error]   helius/collectors.psi_collector: 12
+2026-04-30T18:37:43.239284255Z [error]   coingecko/ohlcv_collector: 12
+2026-04-30T18:37:43.239289635Z [error]   coingecko/entity_snapshots: 12
+2026-04-30T18:37:43.400600268Z [error] 2026-04-30 18:37:43,364 [ERROR] worker: [rpc_usage_7d] alchemy: 401 eth_getTransactionByHash (0 fallback, 250 err)
+2026-04-30T18:37:43.400613681Z [error] 2026-04-30 18:37:43,364 [ERROR] worker: [rpc_usage_7d] dwellir: no calls
+2026-04-30T18:37:43.797671106Z [error] 2026-04-30 18:37:43,776 [ERROR] worker: [rpc_capabilities]
+2026-04-30T18:37:43.797674936Z [error]   dwellir/ethereum/debug_traceTransaction: fail (HTTP 403: Your current plan does not support trace or debug )
+2026-04-30T18:37:43.797678297Z [error]   dwellir/ethereum/eth_blockNumber: ok
+2026-04-30T18:37:43.797681889Z [error]   dwellir/ethereum/eth_call: ok
+2026-04-30T18:37:43.797686016Z [error]   dwellir/ethereum/trace_transaction: fail (HTTP 403: Your current plan does not support trace or debug )
+2026-04-30T18:37:44.243964977Z [error] 2026-04-30 18:37:44,024 [ERROR] app.data_layer.mempool_watcher: [mempool_observations] 24h SUMMARY: no rows yet
+2026-04-30T18:37:44.455923545Z [error] 2026-04-30 18:37:44,444 [ERROR] worker: [api_usage_verify] hourly: 224 rows, latest=2026-04-30 18:00:00+00:00 | tracker: 20545 rows, latest=2026-04-30 18:37:39.382606+00:00
+2026-04-30T18:37:44.455928500Z [error] 2026-04-30 18:37:44,445 [WARNING] asyncio: Executing <Task pending name='Task-7' coro=<main.<locals>._diagnostic_loop() running at /app/app/worker.py:3463> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.11/asyncio/base_events.py:428> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 4.833 seconds
+2026-04-30T18:37:44.455940780Z [error] 2026-04-30 18:37:44,453 [ERROR] app.data_layer.approval_collector: [approval_collector] wallet 0x01f4cd46... failed: 
+2026-04-30T18:37:44.455943891Z [error] 2026-04-30 18:37:44,453 [ERROR] app.data_layer.transfer_edge_builder: [transfer_edge_bg] wallet 0x000fa67520... FAILED: 
+2026-04-30T18:37:44.455947083Z [error] 2026-04-30 18:37:44,454 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] step B.3: frax contract=0x853d955ace... chain=ethereum
+2026-04-30T18:37:44.457988564Z [error] 2026-04-30 18:37:44,455 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] step C.3: acquiring etherscan rate limit
+2026-04-30T18:37:44.457996344Z [error] 2026-04-30 18:37:44,455 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] _fetch_etherscan: acquiring rate limiter for 0x853d955ace...
+2026-04-30T18:37:44.458001685Z [error] 2026-04-30 18:37:44,455 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] _fetch_etherscan: rate limiter acquired, making HTTP GET
+2026-04-30T18:37:45.411216213Z [error] 2026-04-30 18:37:45,406 [INFO] asyncio: Getting address info b'eth.blockscout.com':443, type=<SocketKind.SOCK_STREAM: 1> took 954.481ms: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.26.1.65', 443)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.26.0.65', 443)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('172.67.72.116', 443)), (<AddressFamily.AF_INET6: 10>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('2606:4700:20::681a:41', 443, 0, 0)), (<AddressFamily.AF_INET6: 10>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('2606:4700:20::681a:141', 443, 0, 0)), (<AddressFamily.AF_INET6: 10>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('2606:4700:20::ac43:4874', 443, 0, 0))]
+2026-04-30T18:37:45.562419819Z [error] 2026-04-30 18:37:45,557 [WARNING] asyncio: Executing <Task pending name='Task-12' coro=<edge_builder_background_loop() running at /app/app/indexer/edges.py:495> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 0.885 seconds
+2026-04-30T18:37:45.562424733Z [error] 2026-04-30 18:37:45,561 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0xd6a0382556b58789b090dd2d4179f7294f94360b/token-transfers "HTTP/1.1 200 OK"
+2026-04-30T18:37:47.265688668Z [error] 2026-04-30 18:37:47,008 [WARNING] asyncio: Executing <Task pending name='approval_bg' coro=<approval_collector_background_loop() running at /app/app/data_layer/approval_collector.py:283> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 1.444 seconds
+2026-04-30T18:37:47.265697707Z [error] 2026-04-30 18:37:47,144 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x0007c4c8c482e1a021430457f04f12fc520fea90&page=1&offset=1000&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T18:37:48.394786363Z [error] 2026-04-30 18:37:48,388 [WARNING] asyncio: Executing <Task pending name='Task-13' coro=<transfer_edge_builder_background_loop() running at /app/app/data_layer/transfer_edge_builder.py:239> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.11/asyncio/base_events.py:428> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 1.243 seconds
+2026-04-30T18:37:48.394791982Z [error] 2026-04-30 18:37:48,389 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00158631eed5d966c97b824c69569b5258dfbb7e/token-balances "HTTP/1.1 200 OK"
+2026-04-30T18:37:48.394796966Z [error] 2026-04-30 18:37:48,390 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x00459c8c8aefe9495457ffb7002e8a74dda15c5f&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T18:37:48.394800294Z [error] 2026-04-30 18:37:48,391 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x56Eddb7aa87536c09CCc2793473599fD21A8b17F&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T18:37:48.394803206Z [error] 2026-04-30 18:37:48,391 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=token&action=tokenholderlist&contractaddress=0x853d955acef822db058eb8505911ed77f175b99e&page=1&offset=10000&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T18:37:48.394805898Z [error] 2026-04-30 18:37:48,393 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0xa3fdc58439b4677a11b9b0c49cae0fca9c23ab8a/token-transfers "HTTP/1.1 200 OK"
+2026-04-30T18:37:48.396273024Z [error] 2026-04-30 18:37:48,394 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x55FE002aefF02F77364de339a1292923A15844B8&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T18:37:55.623860162Z [error] 2026-04-30 18:37:55,622 [WARNING] asyncio: Executing <Task pending name='approval_bg' coro=<approval_collector_background_loop() running at /app/app/data_layer/approval_collector.py:283> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 7.226 seconds
+2026-04-30T18:37:55.815309943Z [error] 2026-04-30 18:37:55,800 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001588a1a9cfdcba46125e8ab9e316dc900c12a1/token-balances "HTTP/1.1 200 OK"
+2026-04-30T18:37:55.820990993Z [error] 2026-04-30 18:37:55,819 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x00459c8c8aefe9495457ffb7002e8a74dda15c5f&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T18:37:55.937378495Z [error] 2026-04-30 18:37:55,915 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x00459c8c8aefe9495457ffb7002e8a74dda15c5f&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T18:37:55.957160482Z [error] 2026-04-30 18:37:55,952 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x56Eddb7aa87536c09CCc2793473599fD21A8b17F&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T18:37:55.988389670Z [error] 2026-04-30 18:37:55,982 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x00fbae55454ee118d9dd936cbb900a1f1d20ac58&page=1&offset=1000&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T18:37:59.959830134Z [error] 2026-04-30 18:37:59,930 [WARNING] asyncio: Executing <Task pending name='Task-13' coro=<transfer_edge_builder_background_loop() running at /app/app/data_layer/transfer_edge_builder.py:239> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.11/asyncio/base_events.py:428> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 3.947 seconds
+2026-04-30T18:37:59.959833234Z [error] 2026-04-30 18:37:59,931 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x00459c8c8aefe9495457ffb7002e8a74dda15c5f&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T18:37:59.959835872Z [error] 2026-04-30 18:37:59,932 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0xeea8c1f90d6aa43a2b7adfffb9dda655cbdfb921/token-transfers "HTTP/1.1 200 OK"
+2026-04-30T18:37:59.959838763Z [error] 2026-04-30 18:37:59,934 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x56Eddb7aa87536c09CCc2793473599fD21A8b17F&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T18:37:59.959841471Z [error] 2026-04-30 18:37:59,934 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x55FE002aefF02F77364de339a1292923A15844B8&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T18:38:03.847373281Z [error] 2026-04-30 18:38:03,841 [WARNING] asyncio: Executing <Task pending name='approval_bg' coro=<approval_collector_background_loop() running at /app/app/data_layer/approval_collector.py:283> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 3.904 seconds
+2026-04-30T18:38:03.861018764Z [error] 2026-04-30 18:38:03,855 [ERROR] worker: Enrichment exceeded 60-minute timeout
+2026-04-30T18:38:03.861022845Z [error] 2026-04-30 18:38:03,855 [INFO] worker: Sleeping 60 minutes...
+2026-04-30T18:38:04.013221521Z [error] 2026-04-30 18:38:04,011 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001588cab7a0b727c388174b1ef20b2e3d20d39b/token-balances "HTTP/1.1 200 OK"
+2026-04-30T18:38:04.027327473Z [error] 2026-04-30 18:38:04,022 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x00459c8c8aefe9495457ffb7002e8a74dda15c5f&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T18:38:04.541534338Z [error] 2026-04-30 18:38:04,535 [WARNING] asyncio: Executing <Task pending name='Task-12' coro=<edge_builder_background_loop() running at /app/app/indexer/edges.py:495> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 0.462 seconds
+2026-04-30T18:38:04.541537370Z [error] 2026-04-30 18:38:04,537 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x00459c8c8aefe9495457ffb7002e8a74dda15c5f&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T18:38:04.541540270Z [error] 2026-04-30 18:38:04,539 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x21a31Ee1afC51d94C2eFcCAa2092aD1028285549&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T18:38:04.541544783Z [error] 2026-04-30 18:38:04,539 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00bb866b6c8ebaf3edbc8be4ec7d60c0ce2ff18b/token-transfers "HTTP/1.1 200 OK"
+2026-04-30T18:38:06.022558761Z [error] 2026-04-30 18:38:05,993 [WARNING] asyncio: Executing <Task pending name='approval_bg' coro=<approval_collector_background_loop() running at /app/app/data_layer/approval_collector.py:283> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 1.451 seconds
+2026-04-30T18:38:06.022563633Z [error] 2026-04-30 18:38:05,996 [ERROR] app.data_layer.multichain_holder_collector: [multichain_holder] blockscout unified API error for base/0x04c0599ae5: 
+2026-04-30T18:38:06.022568896Z [error] 2026-04-30 18:38:06,002 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] _fetch_etherscan: HTTP 200, parsing JSON
+2026-04-30T18:38:06.022573155Z [error] 2026-04-30 18:38:06,008 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] step D.3: etherscan returned 9853 holders
+2026-04-30T19:05:47.880062275Z [error] 2026-04-30 19:05:44,632 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x00459c8c8aefe9495457ffb7002e8a74dda15c5f&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:05:47.880070854Z [error] 2026-04-30 19:05:44,633 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x003acea658f77d6df3d9e0b7ad35d57a229d8ec4&page=1&offset=1000&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:05:47.880074533Z [error] 2026-04-30 19:05:44,634 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x01a78a26a9d1b2e9cf8c2413279d36c1c9b5d4fa/token-transfers "HTTP/1.1 200 OK"
+2026-04-30T19:05:47.880078524Z [error] 2026-04-30 19:05:44,634 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x55FE002aefF02F77364de339a1292923A15844B8&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:05:47.880082485Z [error] 2026-04-30 19:05:47,124 [ERROR] worker: [stale_diagnostic] stale=3: exchange_snapshots (age=17.3h, threshold=3h), entity_snapshots_hourly (age=6.7h, threshold=3h), mint_burn_events (age=200.4h, threshold=26h)
+2026-04-30T19:05:47.880085988Z [error] 2026-04-30 19:05:47,588 [ERROR] worker: [provenance_gap] hourly: 11/12 producing, weekly: 3, missing_hourly=['tally_governance']
+2026-04-30T19:05:47.880137810Z [error] 2026-04-30 19:05:44,629 [WARNING] asyncio: Executing <Task pending name='Task-9' coro=<holder_ingestion_background_loop() running at /app/app/data_layer/holder_ingestion_collector.py:439> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.11/asyncio/base_events.py:428> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 1658.628 seconds
+2026-04-30T19:05:47.880980121Z [error] 2026-04-30 19:05:47,588 [ERROR] worker: [provenance_gap] weekly sources (not expected in 24h): ['defillama_bridges']
+2026-04-30T19:05:47.880984076Z [error] 2026-04-30 19:05:47,588 [ERROR] worker: [api_budget] blockscout=1,537/100,000 (2%), coingecko=535/16,600 (3%), curve=4, dwellir=7, etherscan=3,877/200,000 (2%), helius-rpc=4, llama=110, parallel=16, resend=1
+2026-04-30T19:05:47.880987418Z [error] 2026-04-30 19:05:47,794 [ERROR] worker: [api_usage_7d] blockscout: 2026-04-30: 1,764 calls (21 err, p95=295002ms) — 2% | 2026-04-29: 431 calls (0 err, p95=9422ms) — 0%
+2026-04-30T19:05:47.880990855Z [error] 2026-04-30 19:05:47,794 [ERROR] worker: [api_usage_7d] coingecko: 2026-04-30: 3,331 calls (467 err, p95=1389463ms) — 20% | 2026-04-29: 630 calls (118 err, p95=1131019ms) — 4%
+2026-04-30T19:05:47.880993749Z [error] 2026-04-30 19:05:47,794 [ERROR] worker: [api_usage_7d] defillama: 2026-04-30: 646 calls (26 err, p95=1085941ms) — 1% | 2026-04-29: 201 calls (11 err, p95=1774354ms) — 0%
+2026-04-30T19:05:47.880996468Z [error] 2026-04-30 19:05:47,794 [ERROR] worker: [api_usage_7d] etherscan: 2026-04-30: 11,210 calls (31 err, p95=257958ms) — 6% | 2026-04-29: 2,170 calls (3 err, p95=14704ms) — 1%
+2026-04-30T19:05:47.880999076Z [error] 2026-04-30 19:05:47,794 [ERROR] worker: [api_usage_7d] helius: 2026-04-30: 6 calls (0 err, p95=321ms) | 2026-04-29: 6 calls (0 err, p95=257ms)
+2026-04-30T19:05:47.881001681Z [error] 2026-04-30 19:05:47,794 [ERROR] worker: [api_usage_7d] parallel: 2026-04-30: 16 calls (0 err, p95=1634ms) | 2026-04-29: 115 calls (0 err, p95=243711ms)
+2026-04-30T19:05:47.881004910Z [error] 2026-04-30 19:05:47,794 [ERROR] worker: [api_usage_7d] rpc_ethereum: 2026-04-30: 10 calls (4 err, p95=184ms) | 2026-04-29: 5 calls (2 err, p95=160ms)
+2026-04-30T19:05:47.881007903Z [error] 2026-04-30 19:05:47,794 [ERROR] worker: [api_usage_7d] snapshot: 2026-04-30: 31 calls (0 err, p95=150ms) — 0% | 2026-04-29: 11 calls (0 err, p95=182ms) — 0%
+2026-04-30T19:05:48.106439141Z [error] 2026-04-30 19:05:48,105 [ERROR] worker: [api_hotspots_24h]
+2026-04-30T19:05:48.106442636Z [error]   etherscan/wallet_expansion: 58
+2026-04-30T19:05:48.106445765Z [error]   etherscan/data_layer.wallet_expansion: 46
+2026-04-30T19:05:48.106449666Z [error]   blockscout/data_layer.trace_collector: 45
+2026-04-30T19:05:48.106455015Z [error]   etherscan/data_layer.transfer_edge_builder: 30
+2026-04-30T19:05:48.106458176Z [error]   coingecko/exchange_collector: 27
+2026-04-30T19:05:48.106462049Z [error]   coingecko/collectors.coingecko: 20
+2026-04-30T19:05:48.106465991Z [error]   blockscout/data_layer.approval_collector: 18
+2026-04-30T19:05:48.106468915Z [error]   defillama/collectors.defillama: 16
+2026-04-30T19:05:48.106471909Z [error]   coingecko/liquidity_collector: 16
+2026-04-30T19:05:48.106474838Z [error]   defillama/collectors.psi_collector: 14
+2026-04-30T19:05:48.106477902Z [error]   etherscan/collectors.etherscan: 13
+2026-04-30T19:05:48.106481143Z [error]   etherscan/mint_burn_collector: 12
+2026-04-30T19:05:48.106483901Z [error]   helius/collectors.psi_collector: 12
+2026-04-30T19:05:48.106486961Z [error]   coingecko/ohlcv_collector: 12
+2026-04-30T19:05:48.106491044Z [error]   coingecko/entity_snapshots: 12
+2026-04-30T19:05:48.311577278Z [error] 2026-04-30 19:05:48,310 [ERROR] worker: [rpc_usage_7d] alchemy: 335 eth_getTransactionByHash (0 fallback, 218 err)
+2026-04-30T19:05:48.311581133Z [error] 2026-04-30 19:05:48,310 [ERROR] worker: [rpc_usage_7d] dwellir: no calls
+2026-04-30T19:05:48.887981133Z [error] 2026-04-30 19:05:48,720 [ERROR] worker: [rpc_capabilities]
+2026-04-30T19:05:48.887984280Z [error]   dwellir/ethereum/debug_traceTransaction: fail (HTTP 403: Your current plan does not support trace or debug )
+2026-04-30T19:05:48.887987662Z [error]   dwellir/ethereum/eth_blockNumber: ok
+2026-04-30T19:05:48.887991045Z [error]   dwellir/ethereum/eth_call: ok
+2026-04-30T19:05:48.887994007Z [error]   dwellir/ethereum/trace_transaction: fail (HTTP 403: Your current plan does not support trace or debug )
+2026-04-30T19:05:48.973353126Z [error] 2026-04-30 19:05:48,966 [ERROR] app.data_layer.mempool_watcher: [mempool_observations] 24h SUMMARY: no rows yet
+2026-04-30T19:05:49.413883602Z [error] 2026-04-30 19:05:49,381 [ERROR] worker: [api_usage_verify] hourly: 224 rows, latest=2026-04-30 18:00:00+00:00 | tracker: 20583 rows, latest=2026-04-30 18:38:06.008262+00:00
+2026-04-30T19:05:49.413888845Z [error] 2026-04-30 19:05:49,382 [WARNING] asyncio: Executing <Task pending name='Task-7' coro=<main.<locals>._diagnostic_loop() running at /app/app/worker.py:3463> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.11/asyncio/base_events.py:428> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 4.746 seconds
+2026-04-30T19:05:49.413892482Z [error] 2026-04-30 19:05:49,382 [ERROR] app.data_layer.wallet_presence_scanner: [presence_bg] loop tick, checking gate
+2026-04-30T19:05:49.884508841Z [error] 2026-04-30 19:05:49,793 [ERROR] app.data_layer.wallet_presence_scanner: [wallet_presence] ENTRY — function called
+2026-04-30T19:05:49.884570167Z [error] 2026-04-30 19:05:49,793 [ERROR] app.data_layer.wallet_presence_scanner: [presence_bg] gate open: 430 rows, 23h since last run
+2026-04-30T19:05:49.884573569Z [error] 2026-04-30 19:05:49,793 [ERROR] app.data_layer.wallet_presence_scanner: [presence_bg] running scan
+2026-04-30T19:05:52.295560330Z [error] 2026-04-30 19:05:52,289 [ERROR] app.data_layer.wallet_presence_scanner: [wallet_presence] starting: 20000 wallets to check across 4 chains
+2026-04-30T19:05:54.083965760Z [error] 2026-04-30 19:05:53,619 [WARNING] asyncio: Executing <Task pending name='Task-11' coro=<wallet_presence_background_loop() running at /app/app/data_layer/wallet_presence_scanner.py:212> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 4.237 seconds
+2026-04-30T19:05:55.509447309Z [error] 2026-04-30 19:05:55,494 [WARNING] asyncio: Executing <Task pending name='approval_bg' coro=<approval_collector_background_loop() running at /app/app/data_layer/approval_collector.py:283> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 1.874 seconds
+2026-04-30T19:05:59.642879979Z [error] 2026-04-30 19:05:59,639 [WARNING] asyncio: Executing <Task pending name='Task-13' coro=<transfer_edge_builder_background_loop() running at /app/app/data_layer/transfer_edge_builder.py:239> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.11/asyncio/base_events.py:428> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 4.142 seconds
+2026-04-30T19:05:59.642887012Z [error] 2026-04-30 19:05:59,641 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] step B.4: pyusd contract=0x6c3ea90364... chain=ethereum
+2026-04-30T19:05:59.644667265Z [error] 2026-04-30 19:05:59,643 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] step C.4: acquiring etherscan rate limit
+2026-04-30T19:05:59.644672447Z [error] 2026-04-30 19:05:59,643 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] _fetch_etherscan: acquiring rate limiter for 0x6c3ea90364...
+2026-04-30T19:05:59.644675230Z [error] 2026-04-30 19:05:59,643 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] _fetch_etherscan: rate limiter acquired, making HTTP GET
+2026-04-30T19:05:59.646513739Z [error] 2026-04-30 19:05:59,644 [ERROR] app.data_layer.multichain_holder_collector: [multichain_holder] blockscout unified API error for arbitrum/0x35751007a4: 
+2026-04-30T19:05:59.646517642Z [error] 2026-04-30 19:05:59,644 [ERROR] app.data_layer.multichain_holder_collector: [multichain_holder] chain=arbitrum: scanned=8 holders=0 new_wallets=0 new_presences=0 errors=0
+2026-04-30T19:05:59.646521070Z [error] 2026-04-30 19:05:59,644 [ERROR] app.data_layer.multichain_holder_collector: [multichain_holder] chain=base: scanned=6 holders=0 new_wallets=0 new_presences=0 errors=0
+2026-04-30T19:05:59.646525022Z [error] 2026-04-30 19:05:59,644 [ERROR] app.data_layer.multichain_holder_collector: [multichain_holder] chain=optimism: scanned=6 holders=0 new_wallets=0 new_presences=0 errors=0
+2026-04-30T19:05:59.646528889Z [error] 2026-04-30 19:05:59,644 [ERROR] app.data_layer.multichain_holder_collector: [multichain_holder] chain=polygon: scanned=3 holders=0 new_wallets=0 new_presences=0 errors=0
+2026-04-30T19:05:59.646532260Z [error] 2026-04-30 19:05:59,644 [ERROR] app.data_layer.multichain_holder_collector: [multichain_holder] TOTAL: new_wallets=0, new_presences=0, blockscout_calls=23
+2026-04-30T19:05:59.646534907Z [error] 2026-04-30 19:05:59,644 [ERROR] app.data_layer.multichain_holder_collector: [multichain_bg] scan complete: {'by_chain': {'base': {'scanned': 6, 'holders': 0, 'new_wallets': 0, 'new_presences': 0, 'errors': 0}, 'arbitrum': {'scanned': 8, 'holders': 0, 'new_wallets': 0, 'new_presences': 0, 'errors': 0}, 'optimism': {'scanned': 6, 'holders': 0, 'new_wallets': 0, 'new_presences': 0, 'errors': 0}, 'polygon': {'scanned': 3, 'holders': 0, 'new_wallets': 0, 'new_presences': 0, 'errors': 0}}, 'total_new_wallets': 0, 'total_new_presences': 0, 'blockscout_calls': 23}
+2026-04-30T19:06:00.333722128Z [error] 2026-04-30 19:06:00,322 [WARNING] asyncio: Executing <Task pending name='Task-12' coro=<edge_builder_background_loop() running at /app/app/indexer/edges.py:495> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 0.461 seconds
+2026-04-30T19:06:00.333726105Z [error] 2026-04-30 19:06:00,325 [INFO] httpx: HTTP Request: GET https://api.blockscout.com/v2/api?chain_id=8453&module=account&action=balance&apikey=proapi_sVUHiHnZyiiVZKeE55f7LEHIvT5VtAg2ZqnkKtYnBtDIBtPXriZABzLQMeOuF1iY_dvna1J&address=0x01b8697695eab322a339c4bf75740db75dc9375e "HTTP/1.1 200 OK"
+2026-04-30T19:06:00.542733238Z [error] 2026-04-30 19:06:00,539 [WARNING] asyncio: Executing <Task pending name='Task-11' coro=<wallet_presence_background_loop() running at /app/app/data_layer/wallet_presence_scanner.py:212> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 0.213 seconds
+2026-04-30T19:06:00.679104972Z [error] 2026-04-30 19:06:00,664 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x0023d834427800d9e92e27d20cc1e55e473478d5&page=1&offset=1000&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:06:01.150206061Z [error] 2026-04-30 19:06:01,079 [WARNING] asyncio: Executing <Task pending name='Task-13' coro=<transfer_edge_builder_background_loop() running at /app/app/data_layer/transfer_edge_builder.py:239> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.11/asyncio/base_events.py:428> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 0.414 seconds
+2026-04-30T19:06:01.150210030Z [error] 2026-04-30 19:06:01,080 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x00459c8c8aefe9495457ffb7002e8a74dda15c5f&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:06:01.150249569Z [error] 2026-04-30 19:06:01,081 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x001589284327e05d65ec922093fc408cf23da556/token-balances "HTTP/1.1 200 OK"
+2026-04-30T19:06:01.150255070Z [error] 2026-04-30 19:06:01,082 [INFO] httpx: HTTP Request: GET https://api.blockscout.com/v2/api?chain_id=42161&module=account&action=balance&apikey=proapi_sVUHiHnZyiiVZKeE55f7LEHIvT5VtAg2ZqnkKtYnBtDIBtPXriZABzLQMeOuF1iY_dvna1J&address=0x01b8697695eab322a339c4bf75740db75dc9375e "HTTP/1.1 200 OK"
+2026-04-30T19:06:01.150258627Z [error] 2026-04-30 19:06:01,082 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x55FE002aefF02F77364de339a1292923A15844B8&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:06:01.150262116Z [error] 2026-04-30 19:06:01,083 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=token&action=tokenholderlist&contractaddress=0x6c3ea9036406852006290770bedfcaba0e23a0e8&page=1&offset=10000&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:06:01.150265251Z [error] 2026-04-30 19:06:01,084 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?chain_id=1&module=account&action=tokentx&address=0xd13e791c573b4d7cf1e32455f076d7c0b7b1e401&page=1&offset=100&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:06:01.313224532Z [error] 2026-04-30 19:06:01,294 [WARNING] asyncio: Executing <Task pending name='Task-11' coro=<wallet_presence_background_loop() running at /app/app/data_layer/wallet_presence_scanner.py:212> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 0.207 seconds
+2026-04-30T19:06:01.492712339Z [error] 2026-04-30 19:06:01,478 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x00459c8c8aefe9495457ffb7002e8a74dda15c5f&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:06:01.498523853Z [error] 2026-04-30 19:06:01,494 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x56Eddb7aa87536c09CCc2793473599fD21A8b17F&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:06:01.512174816Z [error] 2026-04-30 19:06:01,511 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00158a74921620b39e5c3afe4dca79feb2c2c143/token-balances "HTTP/1.1 200 OK"
+2026-04-30T19:06:01.552066216Z [error] 2026-04-30 19:06:01,543 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] _fetch_etherscan: HTTP 200, parsing JSON
+2026-04-30T19:06:01.552070874Z [error] 2026-04-30 19:06:01,548 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] step D.4: etherscan returned 10000 holders
+2026-04-30T19:06:21.543026843Z [error] 2026-04-30 19:06:11,648 [WARNING] asyncio: Executing <Task pending name='Task-9' coro=<holder_ingestion_background_loop() running at /app/app/data_layer/holder_ingestion_collector.py:439> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.11/asyncio/base_events.py:428> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 10.105 seconds
+2026-04-30T19:06:21.543032708Z [error] 2026-04-30 19:06:11,651 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x00002b503a75998c97508916a74fdb41934fa030&page=1&offset=1000&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:06:21.543037363Z [error] 2026-04-30 19:06:11,653 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x55FE002aefF02F77364de339a1292923A15844B8&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:06:21.543041967Z [error] 2026-04-30 19:06:11,654 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0xad6eaa735d9df3d7696fd03984379dae02ed8862&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:06:21.543046520Z [error] 2026-04-30 19:06:11,654 [INFO] httpx: HTTP Request: GET https://api.blockscout.com/v2/api?chain_id=10&module=account&action=balance&apikey=proapi_sVUHiHnZyiiVZKeE55f7LEHIvT5VtAg2ZqnkKtYnBtDIBtPXriZABzLQMeOuF1iY_dvna1J&address=0x01b8697695eab322a339c4bf75740db75dc9375e "HTTP/1.1 200 OK"
+2026-04-30T19:06:21.543050770Z [error] 2026-04-30 19:06:11,863 [WARNING] asyncio: Executing <Task pending name='Task-11' coro=<wallet_presence_background_loop() running at /app/app/data_layer/wallet_presence_scanner.py:212> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 0.206 seconds
+2026-04-30T19:06:21.545215128Z [error] 2026-04-30 19:06:12,034 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00158a76c53ebdee014f128879701c850cdfc143/token-balances "HTTP/1.1 200 OK"
+2026-04-30T19:06:21.545221780Z [error] 2026-04-30 19:06:12,038 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x00459c8c8aefe9495457ffb7002e8a74dda15c5f&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:06:21.545226448Z [error] 2026-04-30 19:06:12,087 [INFO] httpx: HTTP Request: GET https://api.blockscout.com/v2/api?chain_id=137&module=account&action=balance&apikey=proapi_sVUHiHnZyiiVZKeE55f7LEHIvT5VtAg2ZqnkKtYnBtDIBtPXriZABzLQMeOuF1iY_dvna1J&address=0x01b8697695eab322a339c4bf75740db75dc9375e "HTTP/1.1 200 OK"
+2026-04-30T19:06:21.545230401Z [error] 2026-04-30 19:06:12,294 [WARNING] asyncio: Executing <Task pending name='Task-11' coro=<wallet_presence_background_loop() running at /app/app/data_layer/wallet_presence_scanner.py:212> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 0.206 seconds
+2026-04-30T19:06:21.545234214Z [error] 2026-04-30 19:06:12,295 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x00459c8c8aefe9495457ffb7002e8a74dda15c5f&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:06:21.545237761Z [error] 2026-04-30 19:06:12,296 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x21a31Ee1afC51d94C2eFcCAa2092aD1028285549&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:06:21.545241633Z [error] 2026-04-30 19:06:12,298 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] step C.5: acquiring etherscan rate limit
+2026-04-30T19:06:21.547478073Z [error] 2026-04-30 19:06:12,298 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] _fetch_etherscan: acquiring rate limiter for 0xc5f0f7b667...
+2026-04-30T19:06:21.547485035Z [error] 2026-04-30 19:06:12,298 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] _fetch_etherscan: rate limiter acquired, making HTTP GET
+2026-04-30T19:06:21.547488783Z [error] 2026-04-30 19:06:12,396 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x00459c8c8aefe9495457ffb7002e8a74dda15c5f&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:06:21.547492390Z [error] 2026-04-30 19:06:12,463 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00158e7f3488590e6c4d24270dd1d87618619e0c/token-balances "HTTP/1.1 200 OK"
+2026-04-30T19:06:21.547495641Z [error] 2026-04-30 19:06:12,490 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x00459c8c8aefe9495457ffb7002e8a74dda15c5f&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:06:21.547498844Z [error] 2026-04-30 19:06:12,514 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x56Eddb7aa87536c09CCc2793473599fD21A8b17F&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:06:21.547503985Z [error] 2026-04-30 19:06:12,562 [INFO] httpx: HTTP Request: GET https://api.blockscout.com/v2/api?chain_id=8453&module=account&action=balance&apikey=proapi_sVUHiHnZyiiVZKeE55f7LEHIvT5VtAg2ZqnkKtYnBtDIBtPXriZABzLQMeOuF1iY_dvna1J&address=0x003ca23fd5f0ca87d01f6ec6cd14a8ae60c2b97d "HTTP/1.1 200 OK"
+2026-04-30T19:06:21.547507461Z [error] 2026-04-30 19:06:12,769 [WARNING] asyncio: Executing <Task pending name='Task-11' coro=<wallet_presence_background_loop() running at /app/app/data_layer/wallet_presence_scanner.py:212> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 0.207 seconds
+2026-04-30T19:06:21.549115546Z [error] 2026-04-30 19:06:12,771 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x00459c8c8aefe9495457ffb7002e8a74dda15c5f&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:06:21.549120152Z [error] 2026-04-30 19:06:12,772 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api?chain_id=1&module=account&action=tokentx&address=0xd13e791c573b4d7cf1e32455f076d7c0b7b1e401&page=2&offset=100&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:06:21.549123352Z [error] 2026-04-30 19:06:12,773 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x56Eddb7aa87536c09CCc2793473599fD21A8b17F&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:06:21.549126157Z [error] 2026-04-30 19:06:12,860 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x56Eddb7aa87536c09CCc2793473599fD21A8b17F&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:06:21.549129340Z [error] 2026-04-30 19:06:12,869 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x00459c8c8aefe9495457ffb7002e8a74dda15c5f&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:06:21.549132835Z [error] 2026-04-30 19:06:12,882 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=token&action=tokenholderlist&contractaddress=0xc5f0f7b66764f6ec8c8dff7ba683102295e16409&page=1&offset=10000&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:06:21.549135484Z [error] 2026-04-30 19:06:12,944 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x1AB4973a48dc892Cd9971ECE8e01DcC7688f8F23&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:06:21.551362929Z [error] 2026-04-30 19:06:12,956 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00159370cbe576b765a7fb2e78582e0cb563d445/token-balances "HTTP/1.1 200 OK"
+2026-04-30T19:06:21.551370338Z [error] 2026-04-30 19:06:12,963 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x00459c8c8aefe9495457ffb7002e8a74dda15c5f&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:06:21.551376082Z [error] 2026-04-30 19:06:12,977 [INFO] httpx: HTTP Request: GET https://api.blockscout.com/v2/api?chain_id=42161&module=account&action=balance&apikey=proapi_sVUHiHnZyiiVZKeE55f7LEHIvT5VtAg2ZqnkKtYnBtDIBtPXriZABzLQMeOuF1iY_dvna1J&address=0x003ca23fd5f0ca87d01f6ec6cd14a8ae60c2b97d "HTTP/1.1 200 OK"
+2026-04-30T19:06:21.551382495Z [error] 2026-04-30 19:06:13,184 [WARNING] asyncio: Executing <Task pending name='Task-11' coro=<wallet_presence_background_loop() running at /app/app/data_layer/wallet_presence_scanner.py:212> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 0.206 seconds
+2026-04-30T19:06:21.551388222Z [error] 2026-04-30 19:06:13,187 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x00459c8c8aefe9495457ffb7002e8a74dda15c5f&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:06:21.551394325Z [error] 2026-04-30 19:06:13,191 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] _fetch_etherscan: HTTP 200, parsing JSON
+2026-04-30T19:06:21.551400140Z [error] 2026-04-30 19:06:13,193 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] step D.5: etherscan returned 4007 holders
+2026-04-30T19:19:22.994574769Z [error] 2026-04-30 19:19:13,616 [WARNING] asyncio: Executing <Task pending name='Task-9' coro=<holder_ingestion_background_loop() running at /app/app/data_layer/holder_ingestion_collector.py:439> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.11/asyncio/base_events.py:428> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 780.425 seconds
+2026-04-30T19:19:22.994577485Z [error] 2026-04-30 19:19:13,620 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x0D0707963952f2fBA59dD06f2b425ace40b492Fe&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:19:22.994580165Z [error] 2026-04-30 19:19:13,621 [INFO] httpx: HTTP Request: GET https://api.blockscout.com/v2/api?chain_id=137&module=account&action=balance&apikey=proapi_sVUHiHnZyiiVZKeE55f7LEHIvT5VtAg2ZqnkKtYnBtDIBtPXriZABzLQMeOuF1iY_dvna1J&address=0x625e92624bc2d88619accc1788365a69767f6200 "HTTP/1.1 200 OK"
+2026-04-30T19:19:22.994582895Z [error] 2026-04-30 19:19:16,118 [ERROR] worker: [stale_diagnostic] stale=3: exchange_snapshots (age=17.5h, threshold=3h), entity_snapshots_hourly (age=6.9h, threshold=3h), mint_burn_events (age=200.6h, threshold=26h)
+2026-04-30T19:19:22.994588922Z [error] 2026-04-30 19:19:16,579 [ERROR] worker: [provenance_gap] hourly: 11/12 producing, weekly: 3, missing_hourly=['tally_governance']
+2026-04-30T19:19:22.994591494Z [error] 2026-04-30 19:19:16,580 [ERROR] worker: [provenance_gap] weekly sources (not expected in 24h): ['defillama_bridges']
+2026-04-30T19:19:22.994594417Z [error] 2026-04-30 19:19:16,580 [ERROR] worker: [api_budget] blockscout=1,552/100,000 (2%), coingecko=535/16,600 (3%), curve=4, dwellir=7, etherscan=3,902/200,000 (2%), helius-rpc=4, llama=110, parallel=16, resend=1
+2026-04-30T19:19:22.994597096Z [error] 2026-04-30 19:19:16,786 [ERROR] worker: [api_usage_7d] blockscout: 2026-04-30: 1,772 calls (21 err, p95=295002ms) — 2% | 2026-04-29: 431 calls (0 err, p95=9422ms) — 0%
+2026-04-30T19:19:22.996929151Z [error] 2026-04-30 19:19:16,786 [ERROR] worker: [api_usage_7d] coingecko: 2026-04-30: 3,331 calls (467 err, p95=1389463ms) — 20% | 2026-04-29: 630 calls (118 err, p95=1131019ms) — 4%
+2026-04-30T19:19:22.996932818Z [error] 2026-04-30 19:19:16,786 [ERROR] worker: [api_usage_7d] defillama: 2026-04-30: 646 calls (26 err, p95=1085941ms) — 1% | 2026-04-29: 201 calls (11 err, p95=1774354ms) — 0%
+2026-04-30T19:19:22.996936425Z [error] 2026-04-30 19:19:16,786 [ERROR] worker: [api_usage_7d] etherscan: 2026-04-30: 11,256 calls (31 err, p95=257958ms) — 6% | 2026-04-29: 2,170 calls (3 err, p95=14704ms) — 1%
+2026-04-30T19:19:22.996940602Z [error] 2026-04-30 19:19:16,786 [ERROR] worker: [api_usage_7d] helius: 2026-04-30: 6 calls (0 err, p95=321ms) | 2026-04-29: 6 calls (0 err, p95=257ms)
+2026-04-30T19:19:22.996943841Z [error] 2026-04-30 19:19:16,786 [ERROR] worker: [api_usage_7d] parallel: 2026-04-30: 16 calls (0 err, p95=1634ms) | 2026-04-29: 115 calls (0 err, p95=243711ms)
+2026-04-30T19:19:22.996947259Z [error] 2026-04-30 19:19:16,786 [ERROR] worker: [api_usage_7d] rpc_ethereum: 2026-04-30: 10 calls (4 err, p95=184ms) | 2026-04-29: 5 calls (2 err, p95=160ms)
+2026-04-30T19:19:22.996950580Z [error] 2026-04-30 19:19:16,786 [ERROR] worker: [api_usage_7d] snapshot: 2026-04-30: 31 calls (0 err, p95=150ms) — 0% | 2026-04-29: 11 calls (0 err, p95=182ms) — 0%
+2026-04-30T19:19:22.996954179Z [error] 2026-04-30 19:19:17,041 [ERROR] worker: [api_hotspots_24h]
+2026-04-30T19:19:22.996957783Z [error]   etherscan/wallet_expansion: 73
+2026-04-30T19:19:22.996961287Z [error]   etherscan/data_layer.wallet_expansion: 61
+2026-04-30T19:19:22.996965530Z [error]   blockscout/data_layer.trace_collector: 45
+2026-04-30T19:19:22.996969167Z [error]   etherscan/data_layer.transfer_edge_builder: 31
+2026-04-30T19:19:22.996973531Z [error]   coingecko/exchange_collector: 27
+2026-04-30T19:19:22.996977325Z [error]   coingecko/collectors.coingecko: 20
+2026-04-30T19:19:22.998784364Z [error]   blockscout/data_layer.approval_collector: 19
+2026-04-30T19:19:22.998790758Z [error]   defillama/collectors.defillama: 16
+2026-04-30T19:19:22.998794710Z [error]   coingecko/liquidity_collector: 16
+2026-04-30T19:19:22.998798364Z [error]   defillama/collectors.psi_collector: 14
+2026-04-30T19:19:22.998802139Z [error]   etherscan/collectors.etherscan: 13
+2026-04-30T19:19:22.998807913Z [error]   etherscan/mint_burn_collector: 12
+2026-04-30T19:19:22.998811425Z [error]   helius/collectors.psi_collector: 12
+2026-04-30T19:19:22.998814889Z [error]   coingecko/ohlcv_collector: 12
+2026-04-30T19:19:22.998818543Z [error]   coingecko/entity_snapshots: 12
+2026-04-30T19:19:22.998822265Z [error] 2026-04-30 19:19:17,247 [ERROR] worker: [rpc_usage_7d] alchemy: 335 eth_getTransactionByHash (0 fallback, 218 err)
+2026-04-30T19:19:22.998825508Z [error] 2026-04-30 19:19:17,247 [ERROR] worker: [rpc_usage_7d] dwellir: no calls
+2026-04-30T19:19:22.998828939Z [error] 2026-04-30 19:19:17,658 [ERROR] worker: [rpc_capabilities]
+2026-04-30T19:19:22.998832185Z [error]   dwellir/ethereum/debug_traceTransaction: fail (HTTP 403: Your current plan does not support trace or debug )
+2026-04-30T19:19:22.998837951Z [error]   dwellir/ethereum/eth_blockNumber: ok
+2026-04-30T19:19:22.998841916Z [error]   dwellir/ethereum/eth_call: ok
+2026-04-30T19:19:22.998845112Z [error]   dwellir/ethereum/trace_transaction: fail (HTTP 403: Your current plan does not support trace or debug )
+2026-04-30T19:19:22.998848506Z [error] 2026-04-30 19:19:17,903 [ERROR] app.data_layer.mempool_watcher: [mempool_observations] 24h SUMMARY: no rows yet
+2026-04-30T19:19:22.998852496Z [error] 2026-04-30 19:19:18,316 [ERROR] worker: [api_usage_verify] hourly: 226 rows, latest=2026-04-30 19:00:00+00:00 | tracker: 20637 rows, latest=2026-04-30 19:06:13.193666+00:00
+2026-04-30T19:19:22.998857229Z [error] 2026-04-30 19:19:18,316 [WARNING] asyncio: Executing <Task pending name='Task-7' coro=<main.<locals>._diagnostic_loop() running at /app/app/worker.py:3463> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.11/asyncio/base_events.py:428> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 4.693 seconds
+2026-04-30T19:19:23.000799644Z [error] 2026-04-30 19:19:18,546 [WARNING] asyncio: Executing <Task pending name='Task-11' coro=<wallet_presence_background_loop() running at /app/app/data_layer/wallet_presence_scanner.py:212> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 0.227 seconds
+2026-04-30T19:19:23.000805705Z [error] 2026-04-30 19:19:18,550 [ERROR] app.data_layer.approval_collector: [approval_collector] wallet 0xadba811f... failed: 
+2026-04-30T19:19:23.000809469Z [error] 2026-04-30 19:19:18,551 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] step C.6: acquiring etherscan rate limit
+2026-04-30T19:19:23.000813043Z [error] 2026-04-30 19:19:18,551 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] _fetch_etherscan: acquiring rate limiter for 0x0000000000...
+2026-04-30T19:19:23.000816320Z [error] 2026-04-30 19:19:18,551 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] _fetch_etherscan: rate limiter acquired, making HTTP GET
+2026-04-30T19:19:23.000819960Z [error] 2026-04-30 19:19:19,003 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x00459c8c8aefe9495457ffb7002e8a74dda15c5f&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:19:23.000823490Z [error] 2026-04-30 19:19:19,101 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x00459c8c8aefe9495457ffb7002e8a74dda15c5f&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:19:23.000864816Z [error] 2026-04-30 19:19:19,184 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x011d19410fc79f140c08ffa8301e4153f17f4e27/token-transfers "HTTP/1.1 200 OK"
+2026-04-30T19:19:23.000869928Z [error] 2026-04-30 19:19:19,201 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x00459c8c8aefe9495457ffb7002e8a74dda15c5f&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:19:23.002592793Z [error] 2026-04-30 19:19:19,239 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x0D0707963952f2fBA59dD06f2b425ace40b492Fe&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:19:23.002597151Z [error] 2026-04-30 19:19:19,298 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x00459c8c8aefe9495457ffb7002e8a74dda15c5f&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:19:23.002600006Z [error] 2026-04-30 19:19:19,395 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x00459c8c8aefe9495457ffb7002e8a74dda15c5f&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:19:26.817940383Z [error] 2026-04-30 19:19:26,807 [WARNING] asyncio: Executing <Task pending name='approval_bg' coro=<approval_collector_background_loop() running at /app/app/data_layer/approval_collector.py:283> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 7.360 seconds
+2026-04-30T19:19:26.817944663Z [error] 2026-04-30 19:19:26,809 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x00459c8c8aefe9495457ffb7002e8a74dda15c5f&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:19:26.817949049Z [error] 2026-04-30 19:19:26,810 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x0D0707963952f2fBA59dD06f2b425ace40b492Fe&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:19:26.817951938Z [error] 2026-04-30 19:19:26,811 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=token&action=tokenholderlist&contractaddress=0x0000000000085d4780b73119b644ae5ecd22b376&page=1&offset=10000&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:19:27.005370395Z [error] 2026-04-30 19:19:26,988 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x00459c8c8aefe9495457ffb7002e8a74dda15c5f&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:19:27.092613206Z [error] 2026-04-30 19:19:27,086 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x00459c8c8aefe9495457ffb7002e8a74dda15c5f&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:19:27.106723563Z [error] 2026-04-30 19:19:27,099 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x56Eddb7aa87536c09CCc2793473599fD21A8b17F&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:19:27.184621270Z [error] 2026-04-30 19:19:27,182 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x00459c8c8aefe9495457ffb7002e8a74dda15c5f&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:19:27.220719050Z [error] 2026-04-30 19:19:27,215 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x00bac3e33ec99410a9a24543e62d9b3436ac5bcf/token-transfers "HTTP/1.1 200 OK"
+2026-04-30T19:19:27.279641645Z [error] 2026-04-30 19:19:27,278 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x00459c8c8aefe9495457ffb7002e8a74dda15c5f&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:19:34.808833322Z [error] 2026-04-30 19:19:34,690 [WARNING] asyncio: Executing <Task pending name='approval_bg' coro=<approval_collector_background_loop() running at /app/app/data_layer/approval_collector.py:283> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 7.204 seconds
+2026-04-30T19:19:34.808836411Z [error] 2026-04-30 19:19:34,692 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x0D0707963952f2fBA59dD06f2b425ace40b492Fe&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:19:34.808839644Z [error] 2026-04-30 19:19:34,693 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0xad6eaa735d9df3d7696fd03984379dae02ed8862&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:19:34.889035122Z [error] 2026-04-30 19:19:34,882 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x32d03f46ba2857c8e6a920ab3fed1f24d35d85d1&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:19:44.059552891Z [error] 2026-04-30 19:19:43,882 [WARNING] asyncio: Executing <Task pending name='Task-12' coro=<edge_builder_background_loop() running at /app/app/indexer/edges.py:495> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 8.962 seconds
+2026-04-30T19:19:44.059562197Z [error] 2026-04-30 19:19:43,885 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0xd6a0382556b58789b090dd2d4179f7294f94360b&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:19:44.059569775Z [error] 2026-04-30 19:19:43,886 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x0D0707963952f2fBA59dD06f2b425ace40b492Fe&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:19:44.059574884Z [error] 2026-04-30 19:19:43,887 [INFO] httpx: HTTP Request: GET https://eth.blockscout.com/api/v2/addresses/0x555ce236c0220695b68341bc48c68d52210cc35b/token-transfers "HTTP/1.1 200 OK"
+2026-04-30T19:19:48.125416973Z [error] 2026-04-30 19:19:48,030 [WARNING] asyncio: Executing <Task pending name='approval_bg' coro=<approval_collector_background_loop() running at /app/app/data_layer/approval_collector.py:283> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 4.139 seconds
+2026-04-30T19:19:48.125421215Z [error] 2026-04-30 19:19:48,037 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] _fetch_etherscan: HTTP 200, parsing JSON
+2026-04-30T19:19:48.125426718Z [error] 2026-04-30 19:19:48,042 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] step D.6: etherscan returned 10000 holders
+2026-04-30T19:53:47.453396546Z [error] 2026-04-30 19:53:46,662 [WARNING] asyncio: Executing <Task pending name='Task-9' coro=<holder_ingestion_background_loop() running at /app/app/data_layer/holder_ingestion_collector.py:439> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.11/asyncio/base_events.py:428> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 2038.625 seconds
+2026-04-30T19:53:49.548520540Z [error] 2026-04-30 19:53:49,154 [ERROR] worker: [stale_diagnostic] stale=3: exchange_snapshots (age=18.1h, threshold=3h), entity_snapshots_hourly (age=7.5h, threshold=3h), mint_burn_events (age=201.2h, threshold=26h)
+2026-04-30T19:53:49.638451256Z [error] 2026-04-30 19:53:49,615 [ERROR] worker: [provenance_gap] hourly: 11/12 producing, weekly: 3, missing_hourly=['tally_governance']
+2026-04-30T19:53:49.638458798Z [error] 2026-04-30 19:53:49,615 [ERROR] worker: [provenance_gap] weekly sources (not expected in 24h): ['defillama_bridges']
+2026-04-30T19:53:49.638463164Z [error] 2026-04-30 19:53:49,615 [ERROR] worker: [api_budget] blockscout=1,562/100,000 (2%), coingecko=535/16,600 (3%), curve=4, dwellir=7, etherscan=3,924/200,000 (2%), helius-rpc=4, llama=110, parallel=16, resend=1
+2026-04-30T19:53:49.915430822Z [error] 2026-04-30 19:53:49,820 [ERROR] worker: [api_usage_7d] blockscout: 2026-04-30: 1,778 calls (21 err, p95=295002ms) — 2% | 2026-04-29: 431 calls (0 err, p95=9422ms) — 0%
+2026-04-30T19:53:49.915435827Z [error] 2026-04-30 19:53:49,820 [ERROR] worker: [api_usage_7d] coingecko: 2026-04-30: 3,331 calls (467 err, p95=1389463ms) — 20% | 2026-04-29: 630 calls (118 err, p95=1131019ms) — 4%
+2026-04-30T19:53:49.915439860Z [error] 2026-04-30 19:53:49,821 [ERROR] worker: [api_usage_7d] defillama: 2026-04-30: 646 calls (26 err, p95=1085941ms) — 1% | 2026-04-29: 201 calls (11 err, p95=1774354ms) — 0%
+2026-04-30T19:53:49.915446295Z [error] 2026-04-30 19:53:49,821 [ERROR] worker: [api_usage_7d] etherscan: 2026-04-30: 11,297 calls (31 err, p95=826734ms) — 6% | 2026-04-29: 2,170 calls (3 err, p95=14704ms) — 1%
+2026-04-30T19:53:49.915453704Z [error] 2026-04-30 19:53:49,821 [ERROR] worker: [api_usage_7d] helius: 2026-04-30: 6 calls (0 err, p95=321ms) | 2026-04-29: 6 calls (0 err, p95=257ms)
+2026-04-30T19:53:49.915461165Z [error] 2026-04-30 19:53:49,821 [ERROR] worker: [api_usage_7d] parallel: 2026-04-30: 16 calls (0 err, p95=1634ms) | 2026-04-29: 115 calls (0 err, p95=243711ms)
+2026-04-30T19:53:49.915465750Z [error] 2026-04-30 19:53:49,821 [ERROR] worker: [api_usage_7d] rpc_ethereum: 2026-04-30: 10 calls (4 err, p95=184ms) | 2026-04-29: 5 calls (2 err, p95=160ms)
+2026-04-30T19:53:49.915470260Z [error] 2026-04-30 19:53:49,821 [ERROR] worker: [api_usage_7d] snapshot: 2026-04-30: 31 calls (0 err, p95=150ms) — 0% | 2026-04-29: 11 calls (0 err, p95=182ms) — 0%
+2026-04-30T19:53:50.132491664Z [error] 2026-04-30 19:53:50,126 [ERROR] worker: [api_hotspots_24h]
+2026-04-30T19:53:50.132499390Z [error]   etherscan/wallet_expansion: 60
+2026-04-30T19:53:50.132502817Z [error]   etherscan/data_layer.wallet_expansion: 48
+2026-04-30T19:53:50.132506042Z [error]   blockscout/data_layer.trace_collector: 45
+2026-04-30T19:53:50.132510777Z [error]   etherscan/data_layer.transfer_edge_builder: 31
+2026-04-30T19:53:50.132514541Z [error]   coingecko/exchange_collector: 27
+2026-04-30T19:53:50.132518624Z [error]   coingecko/collectors.coingecko: 20
+2026-04-30T19:53:50.132523389Z [error]   blockscout/data_layer.approval_collector: 19
+2026-04-30T19:53:50.132526236Z [error]   defillama/collectors.defillama: 16
+2026-04-30T19:53:50.132529259Z [error]   coingecko/liquidity_collector: 16
+2026-04-30T19:53:50.132532322Z [error]   defillama/collectors.psi_collector: 14
+2026-04-30T19:53:50.132536065Z [error]   etherscan/collectors.etherscan: 13
+2026-04-30T19:53:50.132538952Z [error]   etherscan/mint_burn_collector: 12
+2026-04-30T19:53:50.132541684Z [error]   helius/collectors.psi_collector: 12
+2026-04-30T19:53:50.132544710Z [error]   coingecko/ohlcv_collector: 12
+2026-04-30T19:53:50.132547935Z [error]   coingecko/entity_snapshots: 12
+2026-04-30T19:53:50.530159104Z [error] 2026-04-30 19:53:50,332 [ERROR] worker: [rpc_usage_7d] alchemy: 335 eth_getTransactionByHash (0 fallback, 218 err)
+2026-04-30T19:53:50.530163864Z [error] 2026-04-30 19:53:50,332 [ERROR] worker: [rpc_usage_7d] dwellir: no calls
+2026-04-30T19:53:50.761627979Z [error] 2026-04-30 19:53:50,744 [ERROR] worker: [rpc_capabilities]
+2026-04-30T19:53:50.761634023Z [error]   dwellir/ethereum/debug_traceTransaction: fail (HTTP 403: Your current plan does not support trace or debug )
+2026-04-30T19:53:50.761639610Z [error]   dwellir/ethereum/eth_blockNumber: ok
+2026-04-30T19:53:50.761685621Z [error]   dwellir/ethereum/eth_call: ok
+2026-04-30T19:53:50.761691313Z [error]   dwellir/ethereum/trace_transaction: fail (HTTP 403: Your current plan does not support trace or debug )
+2026-04-30T19:53:51.007100744Z [error] 2026-04-30 19:53:50,992 [ERROR] app.data_layer.mempool_watcher: [mempool_observations] 24h SUMMARY: no rows yet
+2026-04-30T19:53:51.546856198Z [error] 2026-04-30 19:53:51,406 [ERROR] worker: [api_usage_verify] hourly: 226 rows, latest=2026-04-30 19:00:00+00:00 | tracker: 20684 rows, latest=2026-04-30 19:19:48.042247+00:00
+2026-04-30T19:53:51.546861370Z [error] 2026-04-30 19:53:51,406 [WARNING] asyncio: Executing <Task pending name='Task-7' coro=<main.<locals>._diagnostic_loop() running at /app/app/worker.py:3463> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.11/asyncio/base_events.py:428> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 4.740 seconds
+2026-04-30T19:53:51.627248620Z [error] 2026-04-30 19:53:51,613 [ERROR] app.data_layer.trace_collector: [trace_bg] gate closed (last_run=3.8h ago, threshold=6h) — sleeping 1h
+2026-04-30T19:53:51.627253623Z [error] 2026-04-30 19:53:51,614 [WARNING] asyncio: Executing <Task pending name='trace_bg' coro=<trace_collector_background_loop() running at /app/app/data_layer/trace_collector.py:323> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.11/asyncio/base_events.py:428> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 0.208 seconds
+2026-04-30T19:53:51.627256571Z [error] 2026-04-30 19:53:51,614 [ERROR] worker: [checkpoint 8] cycle 3 starting
+2026-04-30T19:53:51.627259340Z [error] 2026-04-30 19:53:51,614 [ERROR] worker: [checkpoint 9] fast cycle starting
+2026-04-30T19:53:51.627264009Z [error] 2026-04-30 19:53:51,616 [INFO] worker: === Fast cycle start ===
+2026-04-30T19:53:51.627267683Z [error] 2026-04-30 19:53:51,616 [ERROR] worker: [prelude-phase] sync_provenance_sources start
+2026-04-30T19:53:54.720227395Z [error] 2026-04-30 19:53:54,713 [INFO] app.collectors.registry: Synced 15 provenance sources to DB
+2026-04-30T19:53:54.720232723Z [error] 2026-04-30 19:53:54,713 [ERROR] worker: [prelude-phase] sync_provenance_sources end
+2026-04-30T19:53:54.720235990Z [error] 2026-04-30 19:53:54,713 [ERROR] worker: [prelude-phase] seed_from_local_config start
+2026-04-30T19:53:57.801177165Z [error] 2026-04-30 19:53:57,793 [ERROR] worker: [prelude-phase] seed_from_local_config end
+2026-04-30T19:53:57.801181953Z [error] 2026-04-30 19:53:57,793 [ERROR] worker: [prelude-phase] get_scoring_ids_from_db start
+2026-04-30T19:53:58.051894370Z [error] 2026-04-30 19:53:58,048 [ERROR] worker: [prelude-phase] get_scoring_ids_from_db end, n=36
+2026-04-30T19:53:58.051897459Z [error] 2026-04-30 19:53:58,048 [ERROR] worker: [fc-1] entering scoring loop, coins to score: 36
+2026-04-30T19:53:58.057488832Z [error] 2026-04-30 19:53:58,054 [ERROR] worker: [fc-skip] busd0 skipped (blacklisted)
+2026-04-30T19:53:58.057493511Z [error] 2026-04-30 19:53:58,054 [ERROR] worker: [fc-2] starting coin 2/36: crvusd
+2026-04-30T19:53:58.057496792Z [error] 2026-04-30 19:53:58,055 [WARNING] asyncio: Executing <Task pending name='Task-4674' coro=<run_fast_cycle() running at /app/app/worker.py:993> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.11/asyncio/futures.py:387, Task.task_wakeup()] created at /usr/local/lib/python3.11/asyncio/base_events.py:428> cb=[_release_waiter(<Future pendi...events.py:428>)() at /usr/local/lib/python3.11/asyncio/tasks.py:431] created at /usr/local/lib/python3.11/asyncio/tasks.py:680> took 6.438 seconds
+2026-04-30T19:53:58.063477425Z [error] 2026-04-30 19:53:58,059 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] step C.7: acquiring etherscan rate limit
+2026-04-30T19:53:58.063482121Z [error] 2026-04-30 19:53:58,059 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] _fetch_etherscan: acquiring rate limiter for 0x0c10bf8fcb...
+2026-04-30T19:53:58.063485686Z [error] 2026-04-30 19:53:58,059 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] _fetch_etherscan: rate limiter acquired, making HTTP GET
+2026-04-30T19:53:58.743104797Z [error] 2026-04-30 19:53:58,741 [WARNING] asyncio: Executing <Task pending name='Task-12' coro=<edge_builder_background_loop() running at /app/app/indexer/edges.py:495> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 0.462 seconds
+2026-04-30T19:53:58.763298143Z [error] 2026-04-30 19:53:58,761 [INFO] httpx: HTTP Request: GET https://api.blockscout.com/v2/api?chain_id=10&module=account&action=balance&apikey=proapi_sVUHiHnZyiiVZKeE55f7LEHIvT5VtAg2ZqnkKtYnBtDIBtPXriZABzLQMeOuF1iY_dvna1J&address=0x01e2fb8f565d5e3cb9e0e8f0b607a96169b94393 "HTTP/1.1 200 OK"
+2026-04-30T19:53:58.981382664Z [error] 2026-04-30 19:53:58,968 [WARNING] asyncio: Executing <Task pending name='Task-11' coro=<wallet_presence_background_loop() running at /app/app/data_layer/wallet_presence_scanner.py:212> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 0.206 seconds
+2026-04-30T19:53:58.981387451Z [error] 2026-04-30 19:53:58,969 [ERROR] worker: [score-phase] crvusd: collect_all_components start
+2026-04-30T19:53:59.177871251Z [error] 2026-04-30 19:53:59,174 [WARNING] asyncio: Executing <Task pending name='Task-4681' coro=<score_stablecoin() running at /app/app/worker.py:580> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.11/asyncio/tasks.py:709> cb=[_release_waiter(<Future pendi...events.py:428>)() at /usr/local/lib/python3.11/asyncio/tasks.py:431] created at /usr/local/lib/python3.11/asyncio/tasks.py:680> took 0.206 seconds
+2026-04-30T19:53:59.177879364Z [error] 2026-04-30 19:53:59,176 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x01195c502a9bf8b65372455485d7c9e47815c48b&page=1&offset=1000&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:53:59.179716109Z [error] 2026-04-30 19:53:59,177 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0xd6a0382556b58789b090dd2d4179f7294f94360b&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:53:59.179719394Z [error] 2026-04-30 19:53:59,178 [ERROR] app.collectors.registry: [diag-start] peg for crvusd
+2026-04-30T19:53:59.179722076Z [error] 2026-04-30 19:53:59,178 [ERROR] app.collectors.registry: [diag-start] liquidity for crvusd
+2026-04-30T19:53:59.179725644Z [error] 2026-04-30 19:53:59,178 [ERROR] app.collectors.registry: [diag-start] market for crvusd
+2026-04-30T19:53:59.179728296Z [error] 2026-04-30 19:53:59,178 [ERROR] app.collectors.registry: [diag-start] defillama for crvusd
+2026-04-30T19:53:59.179731134Z [error] 2026-04-30 19:53:59,178 [ERROR] app.collectors.registry: [diag-start] curve for crvusd
+2026-04-30T19:53:59.181814017Z [error] 2026-04-30 19:53:59,179 [ERROR] app.collectors.registry: [diag-start] etherscan for crvusd
+2026-04-30T19:53:59.181820501Z [error] 2026-04-30 19:53:59,179 [ERROR] app.collectors.registry: [diag-start] flows for crvusd
+2026-04-30T19:53:59.181825030Z [error] 2026-04-30 19:53:59,179 [ERROR] app.collectors.registry: [diag-start] smart_contract for crvusd
+2026-04-30T19:53:59.181828023Z [error] 2026-04-30 19:53:59,180 [ERROR] app.collectors.registry: [diag-start] solana for crvusd
+2026-04-30T19:53:59.181831200Z [error] 2026-04-30 19:53:59,180 [ERROR] app.collectors.registry: [diag-start] actor_metrics for crvusd
+2026-04-30T19:53:59.666404229Z [error] 2026-04-30 19:53:59,595 [WARNING] asyncio: Executing <Task pending name='Task-13' coro=<transfer_edge_builder_background_loop() running at /app/app/data_layer/transfer_edge_builder.py:239> wait_for=<Future pending cb=[Task.task_wakeup()] created at /usr/local/lib/python3.11/asyncio/base_events.py:428> created at /usr/local/lib/python3.11/asyncio/tasks.py:384> took 0.414 seconds
+2026-04-30T19:53:59.666409952Z [error] 2026-04-30 19:53:59,602 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=0x3154Cf16ccdb4C6d922629664174b904d80F2C35&startblock=0&endblock=99999999&page=1&offset=50&sort=desc&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:53:59.666414806Z [error] 2026-04-30 19:53:59,602 [INFO] httpx: HTTP Request: GET https://api.etherscan.io/v2/api?chainid=1&module=token&action=tokenholderlist&contractaddress=0x0c10bf8fcb7bf5412187a595ab97a3609160b5c6&page=1&offset=10000&apikey=SWCSHQVJY35BT51JWQ6UQK2X3CX6BJ7MT6 "HTTP/1.1 200 OK"
+2026-04-30T19:53:59.666420797Z [error] 2026-04-30 19:53:59,609 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] _fetch_etherscan: HTTP 200, parsing JSON
+2026-04-30T19:53:59.666425841Z [error] 2026-04-30 19:53:59,610 [ERROR] app.data_layer.holder_ingestion_collector: [holder_ingestion] step D.7: etherscan returned 1214 holders
