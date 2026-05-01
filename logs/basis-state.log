@@ -1,60 +1,3 @@
-2026-04-24T16:39:46.363795117Z [error] 2026-04-24 16:39:46,362 WARNING [basis_state] Failed to fetch history for stablecoin:EURI
-2026-04-24T16:39:46.363797959Z [error] 2026-04-24 16:39:46,362 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/STEAKUSDC params={'format': 'json'}
-2026-04-24T16:39:46.391853443Z [error] 2026-04-24 16:39:46,389 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/STEAKUSDC?format=json "HTTP/1.1 502 "
-2026-04-24T16:39:46.394246149Z [error] 2026-04-24 16:39:46,390 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/STEAKUSDC 502 (109 bytes)
-2026-04-24T16:39:46.394251225Z [error] 2026-04-24 16:39:46,390 ERROR [basis_state.api_client] API error response body: {"status":"error","code":502,"message":"Application failed to respond","request_id":"f74XZbj2RV-ytegfn6XIxQ"}
-2026-04-24T16:39:46.394255559Z [error] 2026-04-24 16:39:46,390 WARNING [basis_state] Failed to fetch history for stablecoin:STEAKUSDC
-2026-04-24T16:39:46.394259479Z [error] 2026-04-24 16:39:46,390 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/MIM params={'format': 'json'}
-2026-04-24T16:39:46.423426317Z [error] 2026-04-24 16:39:46,419 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/MIM?format=json "HTTP/1.1 502 "
-2026-04-24T16:39:46.423429966Z [error] 2026-04-24 16:39:46,420 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/MIM 502 (109 bytes)
-2026-04-24T16:39:46.423433443Z [error] 2026-04-24 16:39:46,420 ERROR [basis_state.api_client] API error response body: {"status":"error","code":502,"message":"Application failed to respond","request_id":"FzIUg2-MQBKWB6vy-_9nXA"}
-2026-04-24T16:39:46.423436872Z [error] 2026-04-24 16:39:46,420 WARNING [basis_state] Failed to fetch history for stablecoin:MIM
-2026-04-24T16:39:46.423440319Z [error] 2026-04-24 16:39:46,420 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/BUSD0 params={'format': 'json'}
-2026-04-24T16:39:46.491203913Z [error] 2026-04-24 16:39:46,487 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/BUSD0?format=json "HTTP/1.1 502 "
-2026-04-24T16:39:46.491210078Z [error] 2026-04-24 16:39:46,487 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/BUSD0 502 (109 bytes)
-2026-04-24T16:39:46.491213845Z [error] 2026-04-24 16:39:46,487 ERROR [basis_state.api_client] API error response body: {"status":"error","code":502,"message":"Application failed to respond","request_id":"B2Oj6h-KRMmohTHzLPU1MQ"}
-2026-04-24T16:39:46.491217547Z [error] 2026-04-24 16:39:46,487 WARNING [basis_state] Failed to fetch history for stablecoin:BUSD0
-2026-04-24T16:39:46.491221586Z [error] 2026-04-24 16:39:46,487 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/SDOLA params={'format': 'json'}
-2026-04-24T16:39:46.517470130Z [error] 2026-04-24 16:39:46,513 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/SDOLA?format=json "HTTP/1.1 502 "
-2026-04-24T16:39:46.517476945Z [error] 2026-04-24 16:39:46,513 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/SDOLA 502 (109 bytes)
-2026-04-24T16:39:46.517480816Z [error] 2026-04-24 16:39:46,513 ERROR [basis_state.api_client] API error response body: {"status":"error","code":502,"message":"Application failed to respond","request_id":"2CCxtBFGQa6VtIWK2prcFg"}
-2026-04-24T16:39:46.517484565Z [error] 2026-04-24 16:39:46,513 WARNING [basis_state] Failed to fetch history for stablecoin:SDOLA
-2026-04-24T16:39:46.517488415Z [error] 2026-04-24 16:39:46,513 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/OUSD params={'format': 'json'}
-2026-04-24T16:39:46.548345678Z [error] 2026-04-24 16:39:46,544 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/OUSD?format=json "HTTP/1.1 502 "
-2026-04-24T16:39:46.548351496Z [error] 2026-04-24 16:39:46,544 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/OUSD 502 (109 bytes)
-2026-04-24T16:39:46.548357163Z [error] 2026-04-24 16:39:46,545 ERROR [basis_state.api_client] API error response body: {"status":"error","code":502,"message":"Application failed to respond","request_id":"37saDWd4TPOwKdKJ9I3ezw"}
-2026-04-24T16:39:46.548361121Z [error] 2026-04-24 16:39:46,545 WARNING [basis_state] Failed to fetch history for stablecoin:OUSD
-2026-04-24T16:39:46.548364441Z [error] 2026-04-24 16:39:46,545 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/FRAX params={'format': 'json'}
-2026-04-24T16:39:46.574359371Z [error] 2026-04-24 16:39:46,572 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/FRAX?format=json "HTTP/1.1 502 "
-2026-04-24T16:39:46.576385429Z [error] 2026-04-24 16:39:46,572 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/FRAX 502 (109 bytes)
-2026-04-24T16:39:46.576389591Z [error] 2026-04-24 16:39:46,572 ERROR [basis_state.api_client] API error response body: {"status":"error","code":502,"message":"Application failed to respond","request_id":"qi2G-Wz9SCqOodsl9I3ezw"}
-2026-04-24T16:39:46.576392946Z [error] 2026-04-24 16:39:46,572 WARNING [basis_state] Failed to fetch history for stablecoin:FRAX
-2026-04-24T16:39:46.576396138Z [error] 2026-04-24 16:39:46,572 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/sUSD params={'format': 'json'}
-2026-04-24T16:39:46.610631451Z [error] 2026-04-24 16:39:46,607 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/sUSD?format=json "HTTP/1.1 502 "
-2026-04-24T16:39:46.610638801Z [error] 2026-04-24 16:39:46,607 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/sUSD 502 (109 bytes)
-2026-04-24T16:39:46.610644104Z [error] 2026-04-24 16:39:46,607 ERROR [basis_state.api_client] API error response body: {"status":"error","code":502,"message":"Application failed to respond","request_id":"_Zwif3_3QOS8W8hCn6XIxQ"}
-2026-04-24T16:39:46.610647695Z [error] 2026-04-24 16:39:46,607 WARNING [basis_state] Failed to fetch history for stablecoin:sUSD
-2026-04-24T16:39:46.610650894Z [error] 2026-04-24 16:39:46,607 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDD (BTTC bridge) params={'format': 'json'}
-2026-04-24T16:39:46.642795632Z [error] 2026-04-24 16:39:46,640 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDD%20(BTTC%20bridge)?format=json "HTTP/1.1 502 "
-2026-04-24T16:39:46.645213393Z [error] 2026-04-24 16:39:46,640 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDD (BTTC bridge) 502 (109 bytes)
-2026-04-24T16:39:46.645220482Z [error] 2026-04-24 16:39:46,640 ERROR [basis_state.api_client] API error response body: {"status":"error","code":502,"message":"Application failed to respond","request_id":"OthAH9-JQSKl_8I32prcFg"}
-2026-04-24T16:39:46.645225155Z [error] 2026-04-24 16:39:46,641 WARNING [basis_state] Failed to fetch history for stablecoin:USDD (BTTC bridge)
-2026-04-24T16:39:46.645229139Z [error] 2026-04-24 16:39:46,641 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/RAI params={'format': 'json'}
-2026-04-24T16:39:46.672570568Z [error] 2026-04-24 16:39:46,670 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/RAI?format=json "HTTP/1.1 502 "
-2026-04-24T16:39:46.675223208Z [error] 2026-04-24 16:39:46,670 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/RAI 502 (109 bytes)
-2026-04-24T16:39:46.675229383Z [error] 2026-04-24 16:39:46,670 ERROR [basis_state.api_client] API error response body: {"status":"error","code":502,"message":"Application failed to respond","request_id":"Swm_ctXPS568c4Dx-_9nXA"}
-2026-04-24T16:39:46.675233373Z [error] 2026-04-24 16:39:46,670 WARNING [basis_state] Failed to fetch history for stablecoin:RAI
-2026-04-24T16:39:46.675236782Z [error] 2026-04-24 16:39:46,670 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/EURE params={'format': 'json'}
-2026-04-24T16:39:46.698739410Z [error] 2026-04-24 16:39:46,695 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/EURE?format=json "HTTP/1.1 502 "
-2026-04-24T16:39:46.698745181Z [error] 2026-04-24 16:39:46,696 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/EURE 502 (109 bytes)
-2026-04-24T16:39:46.698758830Z [error] 2026-04-24 16:39:46,696 ERROR [basis_state.api_client] API error response body: {"status":"error","code":502,"message":"Application failed to respond","request_id":"5noirz_hRMe70W3oLPU1MQ"}
-2026-04-24T16:39:46.698762760Z [error] 2026-04-24 16:39:46,696 WARNING [basis_state] Failed to fetch history for stablecoin:EURE
-2026-04-24T16:39:46.698766285Z [error] 2026-04-24 16:39:46,696 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/EURS params={'format': 'json'}
-2026-04-24T16:39:47.081187649Z [error] 2026-04-24 16:39:46,735 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/EURS?format=json "HTTP/1.1 502 "
-2026-04-24T16:39:47.081191247Z [error] 2026-04-24 16:39:46,735 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/EURS 502 (109 bytes)
-2026-04-24T16:39:47.081194334Z [error] 2026-04-24 16:39:46,735 ERROR [basis_state.api_client] API error response body: {"status":"error","code":502,"message":"Application failed to respond","request_id":"8niedA6JQ6eUTMLSLPU1MQ"}
-2026-04-24T16:39:47.081197743Z [error] 2026-04-24 16:39:46,736 WARNING [basis_state] Failed to fetch history for stablecoin:EURS
-2026-04-24T16:39:47.081201236Z [error] 2026-04-24 16:39:46,736 INFO [basis_state] 7d changes computed for 35 entities
 2026-04-24T17:53:41.355434843Z [error] 2026-04-24 17:53:36,824 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/scores params=None
 2026-04-24T17:53:41.355442977Z [error] 2026-04-24 17:53:38,426 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/scores "HTTP/1.1 200 "
 2026-04-24T17:53:41.355446784Z [error] 2026-04-24 17:53:38,428 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/scores 200 (38130 bytes)
@@ -1999,3 +1942,5 @@
 2026-05-01T15:36:44.301969474Z [info] INFO:     100.64.0.7:13942 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
 2026-05-01T15:37:44.311726691Z [info] INFO:     100.64.0.12:28784 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
 2026-05-01T15:47:14.970763433Z [info] INFO:     100.64.0.7:43992 - "GET / HTTP/1.1" 200 OK
+2026-05-01T16:38:19.828529521Z [info] INFO:     100.64.0.11:26560 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
+2026-05-01T17:11:22.627429399Z [info] INFO:     100.64.0.56:27390 - "POST /xmlrpc.php HTTP/1.1" 404 Not Found
