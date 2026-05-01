@@ -1,21 +1,63 @@
-2026-05-01T18:16:52.503786875Z [info] Starting Container
-2026-05-01T18:16:53.088726266Z [info] Keeper wallet address
-2026-05-01T18:16:53.088734210Z [error] ALERT: Keeper started. Interval: 3600s. Wallet: 0x2dF0f62D1861Aa59A4430e3B2b2E7a0D29Cb723b
-2026-05-01T18:16:53.088739876Z [info] Wallet balances
-2026-05-01T18:16:53.088744271Z [error] ALERT: Keeper wallet balance LOW: 0.001000 ETH on Arbitrum
-2026-05-01T18:16:53.088840887Z [info] ◇ injected env (0) from .env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
-2026-05-01T18:16:53.088844041Z [info] Basis Keeper starting
-2026-05-01T18:16:53.513816270Z [info] === Keeper cycle start ===
-2026-05-01T18:16:53.513820598Z [info] Fetching scores from API
-2026-05-01T18:16:53.533391551Z [warn] Failed to fetch API scores — skipping score updates, using static TOKEN_ADDRESSES for staleness check
-2026-05-01T18:16:53.533395982Z [error] ALERT: Basis keeper: API fetch failed — API returned HTTP 502: {"status":"error","code":502,"message":"Application failed to respond","request_id":"1Bguq6h7RtuK3g-un6XIxQ"}
-2026-05-01T18:16:53.589421621Z [info] Diff complete
-2026-05-01T18:16:53.589426300Z [info] No updates to publish
-2026-05-01T18:16:53.589429532Z [info] No updates to publish
-2026-05-01T18:16:53.589432173Z [info] Fetching PSI scores from API
-2026-05-01T18:16:53.619831884Z [warn] PSI score publishing failed (non-blocking)
-2026-05-01T18:16:53.619835975Z [info] No on-chain updates needed this cycle
-2026-05-01T18:16:54.077492953Z [error] ALERT: Keeper wallet balance LOW: 0.001000 ETH on Arbitrum
-2026-05-01T18:16:54.077499908Z [info] Sleeping 3600s until next cycle
-2026-05-01T18:16:54.077529734Z [info] === Keeper cycle complete ===
-2026-05-01T18:16:54.077533263Z [info] Wallet balances
+2026-05-01T19:47:31.392948693Z [info] Starting Container
+2026-05-01T19:47:33.183149371Z [info] Fetching scores from API
+2026-05-01T19:47:33.183261565Z [info] Wallet balances
+2026-05-01T19:47:33.183267290Z [error] ALERT: Keeper wallet balance LOW: 0.000926 ETH on Arbitrum
+2026-05-01T19:47:33.183271574Z [info] === Keeper cycle start ===
+2026-05-01T19:47:33.183276406Z [info] ◇ injected env (0) from .env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-05-01T19:47:33.183287091Z [info] Basis Keeper starting
+2026-05-01T19:47:33.183301861Z [info] Keeper wallet address
+2026-05-01T19:47:33.183310671Z [error] ALERT: Keeper started. Interval: 3600s. Wallet: 0x2dF0f62D1861Aa59A4430e3B2b2E7a0D29Cb723b
+2026-05-01T19:47:34.199208914Z [info] Fetched API scores
+2026-05-01T19:47:34.199215738Z [info] Dynamic token map includes new tokens not in static map
+2026-05-01T19:47:34.199221912Z [info] Diff complete
+2026-05-01T19:47:34.199227042Z [info] No updates to publish
+2026-05-01T19:47:34.199232245Z [info] No updates to publish
+2026-05-01T19:47:34.199237254Z [info] Fetching PSI scores from API
+2026-05-01T19:47:34.199242754Z [info] Fetched PSI scores
+2026-05-01T19:47:34.199247647Z [info] PSI gas estimated
+2026-05-01T19:47:34.295671414Z [info] PSI gas estimated
+2026-05-01T19:47:35.070286653Z [info] PSI transaction submitted
+2026-05-01T19:47:35.070296689Z [info] PSI transaction confirmed
+2026-05-01T19:47:35.070583494Z [info] PSI transaction submitted
+2026-05-01T19:47:38.993960042Z [error] ALERT: STALE SCORE: 0x0000000000085d4780b73119b644ae5ecd22b376 not updated in 7200s
+2026-05-01T19:47:38.994056369Z [info] PSI scores published
+2026-05-01T19:47:38.994059754Z [info] PSI transaction confirmed
+2026-05-01T19:47:38.994063038Z [info] No on-chain updates needed this cycle
+2026-05-01T19:47:38.994068007Z [error] ALERT: STALE SCORE: 0xc5f0f7b66764f6ec8c8dff7ba683102295e16409 not updated in 7200s
+2026-05-01T19:47:38.994073741Z [error] ALERT: STALE SCORE: 0x6c3ea9036406852006290770bedfcaba0e23a0e8 not updated in 7200s
+2026-05-01T19:47:39.041186697Z [error] ALERT: STALE SCORE: 0x056fd409e1d7a124bd7017459dfea2f387b6d5cd not updated in 7200s
+2026-05-01T19:47:39.078313885Z [error] ALERT: STALE SCORE: 0xaca92e438df0b2401ff60da7e4337b687a2435da not updated in 7200s
+2026-05-01T19:47:39.163546581Z [error] ALERT: STALE SCORE: 0x865377367054516e17014ccded1e7d814edc9ce4 not updated in 7200s
+2026-05-01T19:47:39.204588013Z [error] ALERT: STALE SCORE: 0x853d955acef822db058eb8505911ed77f175b99e not updated in 7200s
+2026-05-01T19:47:39.242020231Z [error] ALERT: STALE SCORE: 0x5f98805a4e8be255a32880fdec7f6728c6568ba0 not updated in 7200s
+2026-05-01T19:47:39.279963245Z [error] ALERT: STALE SCORE: 0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3 not updated in 7200s
+2026-05-01T19:47:39.349951673Z [error] ALERT: STALE SCORE: 0x1abaea1f7c830bd89acc67ec4af516284b1bc33c not updated in 7200s
+2026-05-01T19:47:40.035442484Z [error] ALERT: STALE SCORE: 0x03ab458634910aad20ef5f1c8ee96f1d6ac54919 not updated in 7200s
+2026-05-01T19:47:40.035453739Z [error] ALERT: STALE SCORE: 0x3d7975eccfc61a2102b08925cbba0a4d4dbb6555 not updated in 7200s
+2026-05-01T19:47:40.035461643Z [error] ALERT: STALE SCORE: 0xdb25f211ab05b1c97d595516f45d248390d6bfa5 not updated in 7200s
+2026-05-01T19:47:40.035570007Z [error] ALERT: STALE SCORE: 0xbeef01735c132ada46aa9aa4c54623caa92a64cb not updated in 7200s
+2026-05-01T19:47:40.035576873Z [error] ALERT: STALE SCORE: 0x35d8949372d46b7a3d5a56006ae77b215fc69bc0 not updated in 7200s
+2026-05-01T19:48:09.832324345Z [info] Fetched report hashes from hub
+2026-05-01T19:48:09.832331519Z [info] Report hash published
+2026-05-01T19:48:09.857030991Z [info] Report hash published
+2026-05-01T19:48:10.693940265Z [info] Report hash published
+2026-05-01T19:48:10.856940710Z [info] Report hash published
+2026-05-01T19:48:11.710654181Z [info] Report hash published
+2026-05-01T19:48:11.888472799Z [info] Report hash published
+2026-05-01T19:48:12.711934033Z [info] Report hash published
+2026-05-01T19:48:12.888895712Z [info] Report hash published
+2026-05-01T19:48:14.016981934Z [info] Report hash published
+2026-05-01T19:48:14.016988091Z [info] Report hash published
+2026-05-01T19:48:17.964292692Z [info] Report hash published
+2026-05-01T19:48:22.882619784Z [info] Report hash published
+2026-05-01T19:48:26.816117484Z [info] Report hash published
+2026-05-01T19:48:31.158518600Z [info] Report hash published
+2026-05-01T19:48:32.097468607Z [info] Report hash published
+2026-05-01T19:48:36.122879854Z [info] Report hash published
+2026-05-01T19:48:40.984410939Z [info] Report hash published
+2026-05-01T19:48:45.367653019Z [info] Report hash published
+2026-05-01T19:48:45.367660130Z [info] Report hashes published
+2026-05-01T19:48:45.367667913Z [info] === Keeper cycle complete ===
+2026-05-01T19:48:45.367674660Z [info] Wallet balances
+2026-05-01T19:48:45.367681706Z [error] ALERT: Keeper wallet balance LOW: 0.000912 ETH on Arbitrum
+2026-05-01T19:48:45.367687643Z [info] Sleeping 3600s until next cycle
