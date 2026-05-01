@@ -1,79 +1,79 @@
-2026-05-01T19:48:05.761732054Z [info] Starting Container
-2026-05-01T19:48:05.783110368Z [error] 2026-05-01 19:48:05,149 [WARNING] app.server: x402 not installed — paid endpoints disabled. Run: pip install x402
-2026-05-01T19:48:05.783114103Z [error] 2026-05-01 19:48:05,194 [INFO] main: Initializing database pool...
-2026-05-01T19:48:05.783116904Z [error] 2026-05-01 19:48:05,194 [INFO] app.database: Database URL prefix: postgresql://neondb_owner:npg_ZQ7pTvYVNE1U@ep-soft...
-2026-05-01T19:48:05.835765258Z [error] 2026-05-01 19:48:05,816 [INFO] app.database: Database pool initialized (min=2, max=10, keepalives=on)
-2026-05-01T19:48:06.023763922Z [error] 2026-05-01 19:48:06,017 [INFO] main: Database connected ✓
-2026-05-01T19:48:06.306427055Z [error] 2026-05-01 19:48:06,223 [INFO] main: Migration 001_initial_schema already applied ✓
-2026-05-01T19:48:06.453928418Z [error] 2026-05-01 19:48:06,423 [INFO] main: Migration 002_import_governance already applied ✓
-2026-05-01T19:48:06.785541998Z [error] 2026-05-01 19:48:06,624 [INFO] main: Migration 006_add_usd1 already applied ✓
-2026-05-01T19:48:06.828191712Z [error] 2026-05-01 19:48:06,824 [INFO] main: Migration 007_wallet_graph already applied ✓
-2026-05-01T19:48:07.026360554Z [error] 2026-05-01 19:48:07,024 [INFO] main: Migration 011_token_type_column already applied ✓
-2026-05-01T19:48:07.254332057Z [error] 2026-05-01 19:48:07,224 [INFO] main: Migration 012_widen_symbol_columns already applied ✓
-2026-05-01T19:48:07.425375291Z [error] 2026-05-01 19:48:07,424 [INFO] main: Migration 013_api_usage already applied ✓
-2026-05-01T19:48:07.770949954Z [error] 2026-05-01 19:48:07,623 [INFO] main: Migration 014_assessment_events already applied ✓
-2026-05-01T19:48:27.716683242Z [error] 2026-05-01 19:48:27,298 [ERROR] main: [migrations] 110 migration files, 105 recorded in DB
-2026-05-01T19:48:27.716688179Z [error] 2026-05-01 19:48:27,497 [INFO] main: Database ready: 36 stablecoins registered ✓
-2026-05-01T19:48:27.716692743Z [error] 2026-05-01 19:48:27,497 [INFO] main: Worker disabled (set WORKER_ENABLED=true to enable)
-2026-05-01T19:48:27.716696881Z [error] 2026-05-01 19:48:27,497 [INFO] main: Keeper disabled (KEEPER_PRIVATE_KEY not set)
-2026-05-01T19:48:27.716701233Z [error] 2026-05-01 19:48:27,505 [INFO] main: Starting API on port 8000
-2026-05-01T19:48:27.716704954Z [error] INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-2026-05-01T19:48:27.716709031Z [error] INFO:     Started parent process [1]
-2026-05-01T19:48:27.961779345Z [error] 2026-05-01 19:48:27,800 [WARNING] app.server: x402 not installed — paid endpoints disabled. Run: pip install x402
-2026-05-01T19:48:27.961782688Z [error] 2026-05-01 19:48:27,802 [WARNING] app.server: x402 not installed — paid endpoints disabled. Run: pip install x402
-2026-05-01T19:48:27.961786193Z [error] INFO:     Started server process [5]
-2026-05-01T19:48:27.961789417Z [error] INFO:     Started server process [4]
-2026-05-01T19:48:27.961793728Z [error] INFO:     Waiting for application startup.
-2026-05-01T19:48:27.961797035Z [error] INFO:     Waiting for application startup.
-2026-05-01T19:48:27.961800182Z [error] 2026-05-01 19:48:27,865 [INFO] app.database: Database URL prefix: postgresql://neondb_owner:npg_ZQ7pTvYVNE1U@ep-soft...
-2026-05-01T19:48:27.961803335Z [error] 2026-05-01 19:48:27,865 [INFO] app.database: Database URL prefix: postgresql://neondb_owner:npg_ZQ7pTvYVNE1U@ep-soft...
-2026-05-01T19:48:28.484743588Z [error] 2026-05-01 19:48:28,483 [INFO] app.database: Database pool initialized (min=2, max=10, keepalives=on)
-2026-05-01T19:48:28.485657996Z [error] 2026-05-01 19:48:28,484 [INFO] app.database: Database pool initialized (min=2, max=10, keepalives=on)
-2026-05-01T19:48:28.491271675Z [error] 2026-05-01 19:48:28,486 [ERROR] app.database: [sync-in-async] execute called from async context at /app/app/server.py:399 (_seed_cda_issuer_registry)
-2026-05-01T19:48:28.491275988Z [error] 2026-05-01 19:48:28,486 [ERROR] app.database: [sync-in-async] get_cursor called from async context at /usr/local/lib/python3.11/contextlib.py:137 (__enter__)
-2026-05-01T19:48:28.491280352Z [error] 2026-05-01 19:48:28,487 [ERROR] app.database: [sync-in-async] execute called from async context at /app/app/server.py:399 (_seed_cda_issuer_registry)
-2026-05-01T19:48:28.491283287Z [error] 2026-05-01 19:48:28,488 [ERROR] app.database: [sync-in-async] get_cursor called from async context at /usr/local/lib/python3.11/contextlib.py:137 (__enter__)
-2026-05-01T19:48:30.142326083Z [error] 2026-05-01 19:48:30,107 [ERROR] app.database: [sync-in-async] execute called from async context at /app/app/server.py:384 (_seed_cda_issuer_registry)
-2026-05-01T19:48:30.164344656Z [error] 2026-05-01 19:48:30,158 [ERROR] app.database: [sync-in-async] execute called from async context at /app/app/server.py:384 (_seed_cda_issuer_registry)
-2026-05-01T19:48:30.520486665Z [error] 2026-05-01 19:48:30,509 [INFO] app.server: CDA issuer registry seeded (10 upserts attempted)
-2026-05-01T19:48:30.520495783Z [error] 2026-05-01 19:48:30,509 [ERROR] app.database: [sync-in-async] fetch_all called from async context at /app/app/server.py:420 (_seed_cda_issuer_registry)
-2026-05-01T19:48:30.563971281Z [error] 2026-05-01 19:48:30,560 [INFO] app.server: CDA issuer registry seeded (10 upserts attempted)
-2026-05-01T19:48:30.563974520Z [error] 2026-05-01 19:48:30,560 [ERROR] app.database: [sync-in-async] fetch_all called from async context at /app/app/server.py:420 (_seed_cda_issuer_registry)
-2026-05-01T19:48:31.030541153Z [error] 2026-05-01 19:48:30,935 [INFO] app.governance: Governance tables ready
-2026-05-01T19:48:31.030544866Z [error] 2026-05-01 19:48:30,937 [INFO] app.server: Governance intelligence routes registered
-2026-05-01T19:48:31.030548231Z [error] 2026-05-01 19:48:30,943 [INFO] app.server: Content engine routes registered
-2026-05-01T19:48:31.030550945Z [error] 2026-05-01 19:48:30,970 [INFO] app.server: Wallet indexer routes registered
-2026-05-01T19:48:31.030554909Z [error] 2026-05-01 19:48:30,970 [ERROR] app.database: [sync-in-async] execute called from async context at /app/app/server.py:492 (startup)
-2026-05-01T19:48:31.030557530Z [error] 2026-05-01 19:48:30,976 [INFO] app.governance: Governance tables ready
-2026-05-01T19:48:31.030559962Z [error] 2026-05-01 19:48:30,978 [INFO] app.server: Governance intelligence routes registered
-2026-05-01T19:48:31.030562568Z [error] 2026-05-01 19:48:30,980 [INFO] app.server: Content engine routes registered
-2026-05-01T19:48:31.030565343Z [error] 2026-05-01 19:48:30,987 [INFO] app.server: Wallet indexer routes registered
-2026-05-01T19:48:31.030568136Z [error] 2026-05-01 19:48:30,987 [ERROR] app.database: [sync-in-async] execute called from async context at /app/app/server.py:492 (startup)
-2026-05-01T19:48:31.184138310Z [error] 2026-05-01 19:48:31,176 [INFO] app.server: Cleared stale temporal reconstruction cache entries
-2026-05-01T19:48:31.184143381Z [error] 2026-05-01 19:48:31,177 [ERROR] app.database: [sync-in-async] execute called from async context at /app/app/server.py:499 (startup)
-2026-05-01T19:48:31.189937548Z [error] 2026-05-01 19:48:31,189 [INFO] app.server: Cleared stale temporal reconstruction cache entries
-2026-05-01T19:48:31.189943263Z [error] 2026-05-01 19:48:31,189 [ERROR] app.database: [sync-in-async] execute called from async context at /app/app/server.py:499 (startup)
-2026-05-01T19:48:31.381642454Z [error] 2026-05-01 19:48:31,377 [ERROR] app.database: [sync-in-async] execute called from async context at /app/app/server.py:516 (startup)
-2026-05-01T19:48:31.394487777Z [error] 2026-05-01 19:48:31,389 [ERROR] app.database: [sync-in-async] execute called from async context at /app/app/server.py:516 (startup)
-2026-05-01T19:48:31.587801178Z [error] 2026-05-01 19:48:31,578 [ERROR] app.database: [sync-in-async] fetch_one called from async context at /app/app/server.py:520 (startup)
-2026-05-01T19:48:31.594363845Z [error] 2026-05-01 19:48:31,589 [ERROR] app.database: [sync-in-async] fetch_one called from async context at /app/app/server.py:520 (startup)
-2026-05-01T19:48:31.820970760Z [error] 2026-05-01 19:48:31,817 [INFO] app.server: historical_protocol_data: 23845 rows
-2026-05-01T19:48:31.820977152Z [error] 2026-05-01 19:48:31,817 [INFO] app.server: historical_protocol_data: 23845 rows
-2026-05-01T19:48:31.833304788Z [error] 2026-05-01 19:48:31,827 [INFO] app.agent.api: Agent API routes registered: /api/assessments, /api/pulse
-2026-05-01T19:48:31.833310790Z [error] 2026-05-01 19:48:31,827 [INFO] app.server: Verification agent routes registered
-2026-05-01T19:48:31.833315150Z [error] 2026-05-01 19:48:31,827 [INFO] app.agent.api: Agent API routes registered: /api/assessments, /api/pulse
-2026-05-01T19:48:31.833320106Z [error] 2026-05-01 19:48:31,827 [INFO] app.server: Verification agent routes registered
-2026-05-01T19:48:31.840808762Z [error] 2026-05-01 19:48:31,837 [INFO] app.publisher.page_renderer: Page routes registered: /terms, /wallet, /asset, /assessment, /pulse, /sitemap.xml, /robots.txt
-2026-05-01T19:48:31.840811862Z [error] 2026-05-01 19:48:31,837 [INFO] app.server: Publisher page routes registered
-2026-05-01T19:48:31.840816972Z [error] 2026-05-01 19:48:31,837 [INFO] app.publisher.page_renderer: Page routes registered: /terms, /wallet, /asset, /assessment, /pulse, /sitemap.xml, /robots.txt
-2026-05-01T19:48:31.840819737Z [error] 2026-05-01 19:48:31,837 [INFO] app.server: Publisher page routes registered
-2026-05-01T19:48:32.041456003Z [error] 2026-05-01 19:48:31,892 [INFO] app.ops.routes: Operations Hub routes registered
-2026-05-01T19:48:32.041463563Z [error] 2026-05-01 19:48:31,893 [INFO] app.ops.routes: Operations Hub routes registered
-2026-05-01T19:48:32.041467294Z [error] 2026-05-01 19:48:31,901 [INFO] app.ops.entity_routes: Entity view routes registered
-2026-05-01T19:48:32.041470703Z [error] 2026-05-01 19:48:31,901 [INFO] app.server: Operations Hub routes registered
-2026-05-01T19:48:32.041473617Z [error] 2026-05-01 19:48:31,901 [WARNING] app.server: Squads Guard not available: No module named 'squads_guard'
-2026-05-01T19:48:32.041477545Z [error] 2026-05-01 19:48:31,903 [INFO] app.ops.entity_routes: Entity view routes registered
-2026-05-01T19:48:32.041480594Z [error] 2026-05-01 19:48:31,903 [INFO] app.server: Operations Hub routes registered
-2026-05-01T19:48:32.041483943Z [error] 2026-05-01 19:48:31,903 [WARNING] app.server: Squads Guard not available: No module named 'squads_guard'
-2026-05-01T19:48:32.120742808Z [error] 2026-05-01 19:48:32,095 [INFO] mcp.server.streamable_http_manager: StreamableHTTP session manager started
-2026-05-01T19:48:32.120746424Z [error] 2026-05-01 19:48:32,098 [INFO] mcp.server.streamable_http_manager: StreamableHTTP session manager started
+2026-05-01T22:14:53.363342989Z [info] Starting Container
+2026-05-01T22:14:54.106600945Z [error] 2026-05-01 22:14:53,465 [WARNING] app.server: x402 not installed — paid endpoints disabled. Run: pip install x402
+2026-05-01T22:14:54.106605015Z [error] 2026-05-01 22:14:53,510 [INFO] main: Initializing database pool...
+2026-05-01T22:14:54.106608775Z [error] 2026-05-01 22:14:53,510 [INFO] app.database: Database URL prefix: postgresql://neondb_owner:npg_ZQ7pTvYVNE1U@ep-soft...
+2026-05-01T22:14:54.166764068Z [error] 2026-05-01 22:14:54,159 [INFO] app.database: Database pool initialized (min=2, max=10, keepalives=on)
+2026-05-01T22:14:54.370356764Z [error] 2026-05-01 22:14:54,368 [INFO] main: Database connected ✓
+2026-05-01T22:14:54.584131695Z [error] 2026-05-01 22:14:54,582 [INFO] main: Migration 001_initial_schema already applied ✓
+2026-05-01T22:14:54.792655205Z [error] 2026-05-01 22:14:54,790 [INFO] main: Migration 002_import_governance already applied ✓
+2026-05-01T22:14:55.200712289Z [error] 2026-05-01 22:14:54,998 [INFO] main: Migration 006_add_usd1 already applied ✓
+2026-05-01T22:14:55.206879825Z [error] 2026-05-01 22:14:55,205 [INFO] main: Migration 007_wallet_graph already applied ✓
+2026-05-01T22:14:55.414948618Z [error] 2026-05-01 22:14:55,413 [INFO] main: Migration 011_token_type_column already applied ✓
+2026-05-01T22:14:55.638414830Z [error] 2026-05-01 22:14:55,636 [INFO] main: Migration 012_widen_symbol_columns already applied ✓
+2026-05-01T22:14:56.083135859Z [error] 2026-05-01 22:14:55,844 [INFO] main: Migration 013_api_usage already applied ✓
+2026-05-01T22:14:56.083139039Z [error] 2026-05-01 22:14:56,064 [INFO] main: Migration 014_assessment_events already applied ✓
+2026-05-01T22:15:26.195834229Z [error] 2026-05-01 22:15:16,588 [ERROR] main: [migrations] 110 migration files, 105 recorded in DB
+2026-05-01T22:15:26.195838529Z [error] 2026-05-01 22:15:16,796 [INFO] main: Database ready: 36 stablecoins registered ✓
+2026-05-01T22:15:26.195841859Z [error] 2026-05-01 22:15:16,796 [INFO] main: Worker disabled (set WORKER_ENABLED=true to enable)
+2026-05-01T22:15:26.195845848Z [error] 2026-05-01 22:15:16,796 [INFO] main: Keeper disabled (KEEPER_PRIVATE_KEY not set)
+2026-05-01T22:15:26.195848888Z [error] 2026-05-01 22:15:16,810 [INFO] main: Starting API on port 8000
+2026-05-01T22:15:26.195851758Z [error] INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-05-01T22:15:26.195856968Z [error] INFO:     Started parent process [1]
+2026-05-01T22:15:26.195860088Z [error] 2026-05-01 22:15:17,117 [WARNING] app.server: x402 not installed — paid endpoints disabled. Run: pip install x402
+2026-05-01T22:15:26.195863728Z [error] 2026-05-01 22:15:17,131 [WARNING] app.server: x402 not installed — paid endpoints disabled. Run: pip install x402
+2026-05-01T22:15:26.195867348Z [error] INFO:     Started server process [4]
+2026-05-01T22:15:26.195871398Z [error] INFO:     Waiting for application startup.
+2026-05-01T22:15:26.195874238Z [error] 2026-05-01 22:15:17,177 [INFO] app.database: Database URL prefix: postgresql://neondb_owner:npg_ZQ7pTvYVNE1U@ep-soft...
+2026-05-01T22:15:26.195877608Z [error] INFO:     Started server process [5]
+2026-05-01T22:15:26.195881388Z [error] INFO:     Waiting for application startup.
+2026-05-01T22:15:26.195886378Z [error] 2026-05-01 22:15:17,187 [INFO] app.database: Database URL prefix: postgresql://neondb_owner:npg_ZQ7pTvYVNE1U@ep-soft...
+2026-05-01T22:15:26.195889658Z [error] 2026-05-01 22:15:17,844 [INFO] app.database: Database pool initialized (min=2, max=10, keepalives=on)
+2026-05-01T22:15:26.195892698Z [error] 2026-05-01 22:15:17,849 [ERROR] app.database: [sync-in-async] execute called from async context at /app/app/server.py:399 (_seed_cda_issuer_registry)
+2026-05-01T22:15:26.200520104Z [error] 2026-05-01 22:15:17,850 [ERROR] app.database: [sync-in-async] get_cursor called from async context at /usr/local/lib/python3.11/contextlib.py:137 (__enter__)
+2026-05-01T22:15:26.200524204Z [error] 2026-05-01 22:15:17,872 [INFO] app.database: Database pool initialized (min=2, max=10, keepalives=on)
+2026-05-01T22:15:26.200528534Z [error] 2026-05-01 22:15:17,875 [ERROR] app.database: [sync-in-async] execute called from async context at /app/app/server.py:399 (_seed_cda_issuer_registry)
+2026-05-01T22:15:26.200533124Z [error] 2026-05-01 22:15:17,875 [ERROR] app.database: [sync-in-async] get_cursor called from async context at /usr/local/lib/python3.11/contextlib.py:137 (__enter__)
+2026-05-01T22:15:26.200538284Z [error] 2026-05-01 22:15:19,660 [ERROR] app.database: [sync-in-async] execute called from async context at /app/app/server.py:384 (_seed_cda_issuer_registry)
+2026-05-01T22:15:26.200543224Z [error] 2026-05-01 22:15:19,727 [ERROR] app.database: [sync-in-async] execute called from async context at /app/app/server.py:384 (_seed_cda_issuer_registry)
+2026-05-01T22:15:26.200547724Z [error] 2026-05-01 22:15:20,109 [INFO] app.server: CDA issuer registry seeded (10 upserts attempted)
+2026-05-01T22:15:26.200552524Z [error] 2026-05-01 22:15:20,109 [ERROR] app.database: [sync-in-async] fetch_all called from async context at /app/app/server.py:420 (_seed_cda_issuer_registry)
+2026-05-01T22:15:26.200556894Z [error] 2026-05-01 22:15:20,177 [INFO] app.server: CDA issuer registry seeded (10 upserts attempted)
+2026-05-01T22:15:26.200561224Z [error] 2026-05-01 22:15:20,178 [ERROR] app.database: [sync-in-async] fetch_all called from async context at /app/app/server.py:420 (_seed_cda_issuer_registry)
+2026-05-01T22:15:26.200565614Z [error] 2026-05-01 22:15:20,577 [INFO] app.governance: Governance tables ready
+2026-05-01T22:15:26.200569914Z [error] 2026-05-01 22:15:20,582 [INFO] app.server: Governance intelligence routes registered
+2026-05-01T22:15:26.200573874Z [error] 2026-05-01 22:15:20,589 [INFO] app.server: Content engine routes registered
+2026-05-01T22:15:26.205326400Z [error] 2026-05-01 22:15:20,849 [INFO] app.server: Cleared stale temporal reconstruction cache entries
+2026-05-01T22:15:26.205339550Z [error] 2026-05-01 22:15:20,850 [ERROR] app.database: [sync-in-async] execute called from async context at /app/app/server.py:499 (startup)
+2026-05-01T22:15:26.205345770Z [error] 2026-05-01 22:15:20,937 [INFO] app.server: Cleared stale temporal reconstruction cache entries
+2026-05-01T22:15:26.205351360Z [error] 2026-05-01 22:15:20,937 [ERROR] app.database: [sync-in-async] execute called from async context at /app/app/server.py:499 (startup)
+2026-05-01T22:15:26.205356470Z [error] 2026-05-01 22:15:21,073 [ERROR] app.database: [sync-in-async] execute called from async context at /app/app/server.py:516 (startup)
+2026-05-01T22:15:26.205362800Z [error] 2026-05-01 22:15:21,166 [ERROR] app.database: [sync-in-async] execute called from async context at /app/app/server.py:516 (startup)
+2026-05-01T22:15:26.205368100Z [error] 2026-05-01 22:15:21,298 [ERROR] app.database: [sync-in-async] fetch_one called from async context at /app/app/server.py:520 (startup)
+2026-05-01T22:15:26.205383250Z [error] 2026-05-01 22:15:20,613 [INFO] app.server: Wallet indexer routes registered
+2026-05-01T22:15:26.205387560Z [error] 2026-05-01 22:15:20,613 [ERROR] app.database: [sync-in-async] execute called from async context at /app/app/server.py:492 (startup)
+2026-05-01T22:15:26.205391000Z [error] 2026-05-01 22:15:20,699 [INFO] app.governance: Governance tables ready
+2026-05-01T22:15:26.205394730Z [error] 2026-05-01 22:15:20,702 [INFO] app.server: Governance intelligence routes registered
+2026-05-01T22:15:26.205397740Z [error] 2026-05-01 22:15:20,705 [INFO] app.server: Content engine routes registered
+2026-05-01T22:15:26.205401040Z [error] 2026-05-01 22:15:20,712 [INFO] app.server: Wallet indexer routes registered
+2026-05-01T22:15:26.205405200Z [error] 2026-05-01 22:15:20,712 [ERROR] app.database: [sync-in-async] execute called from async context at /app/app/server.py:492 (startup)
+2026-05-01T22:15:26.209214132Z [error] 2026-05-01 22:15:21,390 [ERROR] app.database: [sync-in-async] fetch_one called from async context at /app/app/server.py:520 (startup)
+2026-05-01T22:15:26.209219592Z [error] 2026-05-01 22:15:21,554 [INFO] app.server: historical_protocol_data: 23845 rows
+2026-05-01T22:15:26.209225402Z [error] 2026-05-01 22:15:21,560 [INFO] app.agent.api: Agent API routes registered: /api/assessments, /api/pulse
+2026-05-01T22:15:26.209231062Z [error] 2026-05-01 22:15:21,560 [INFO] app.server: Verification agent routes registered
+2026-05-01T22:15:26.209236132Z [error] 2026-05-01 22:15:21,567 [INFO] app.publisher.page_renderer: Page routes registered: /terms, /wallet, /asset, /assessment, /pulse, /sitemap.xml, /robots.txt
+2026-05-01T22:15:26.209240872Z [error] 2026-05-01 22:15:21,567 [INFO] app.server: Publisher page routes registered
+2026-05-01T22:15:26.209247052Z [error] 2026-05-01 22:15:21,617 [INFO] app.server: historical_protocol_data: 23845 rows
+2026-05-01T22:15:26.209253002Z [error] 2026-05-01 22:15:21,620 [INFO] app.agent.api: Agent API routes registered: /api/assessments, /api/pulse
+2026-05-01T22:15:26.209258312Z [error] 2026-05-01 22:15:21,620 [INFO] app.server: Verification agent routes registered
+2026-05-01T22:15:26.209263762Z [error] 2026-05-01 22:15:21,621 [INFO] app.ops.routes: Operations Hub routes registered
+2026-05-01T22:15:26.209268532Z [error] 2026-05-01 22:15:21,621 [INFO] app.publisher.page_renderer: Page routes registered: /terms, /wallet, /asset, /assessment, /pulse, /sitemap.xml, /robots.txt
+2026-05-01T22:15:26.209273132Z [error] 2026-05-01 22:15:21,621 [INFO] app.server: Publisher page routes registered
+2026-05-01T22:15:26.209278752Z [error] 2026-05-01 22:15:21,632 [INFO] app.ops.entity_routes: Entity view routes registered
+2026-05-01T22:15:26.209283842Z [error] 2026-05-01 22:15:21,632 [INFO] app.server: Operations Hub routes registered
+2026-05-01T22:15:26.209289132Z [error] 2026-05-01 22:15:21,632 [WARNING] app.server: Squads Guard not available: No module named 'squads_guard'
+2026-05-01T22:15:26.212408679Z [error] 2026-05-01 22:15:21,658 [INFO] app.ops.routes: Operations Hub routes registered
+2026-05-01T22:15:26.212411949Z [error] 2026-05-01 22:15:21,662 [INFO] app.ops.entity_routes: Entity view routes registered
+2026-05-01T22:15:26.212415159Z [error] 2026-05-01 22:15:21,662 [INFO] app.server: Operations Hub routes registered
+2026-05-01T22:15:26.212418139Z [error] 2026-05-01 22:15:21,662 [WARNING] app.server: Squads Guard not available: No module named 'squads_guard'
+2026-05-01T22:15:26.212421459Z [error] 2026-05-01 22:15:21,865 [INFO] mcp.server.streamable_http_manager: StreamableHTTP session manager started
+2026-05-01T22:15:26.212424459Z [error] 2026-05-01 22:15:21,880 [INFO] mcp.server.streamable_http_manager: StreamableHTTP session manager started
