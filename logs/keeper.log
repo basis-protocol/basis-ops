@@ -197,3 +197,27 @@
 2026-05-02T09:07:37.802936635Z [info] Wallet balances
 2026-05-02T09:07:37.802945508Z [error] ALERT: Keeper wallet balance LOW: 0.000912 ETH on Arbitrum
 2026-05-02T09:07:37.802948970Z [info] Sleeping 3600s until next cycle
+2026-05-02T10:07:38.682969231Z [info] === Keeper cycle start ===
+2026-05-02T10:07:38.682980641Z [info] Fetching scores from API
+2026-05-02T10:07:38.682983914Z [warn] Failed to fetch API scores — skipping score updates, using static TOKEN_ADDRESSES for staleness check
+2026-05-02T10:07:38.682987085Z [error] ALERT: Basis keeper: API fetch failed — API returned HTTP 502: {"status":"error","code":502,"message":"Application failed to respond","request_id":"vGiJAhaiQeqh8wET0_TJvA"}
+2026-05-02T10:07:38.682990074Z [info] Diff complete
+2026-05-02T10:07:38.682993974Z [info] No updates to publish
+2026-05-02T10:07:38.682997259Z [info] No updates to publish
+2026-05-02T10:07:38.683000696Z [info] Fetching PSI scores from API
+2026-05-02T10:07:38.683003871Z [warn] PSI score publishing failed (non-blocking)
+2026-05-02T10:07:38.683006995Z [info] No on-chain updates needed this cycle
+2026-05-02T10:07:38.684021051Z [error] ALERT: STALE SCORE: 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 not updated in 7200s
+2026-05-02T10:07:38.684026856Z [error] ALERT: STALE SCORE: 0xdac17f958d2ee523a2206206994597c13d831ec7 not updated in 7200s
+2026-05-02T10:07:38.684030766Z [error] ALERT: STALE SCORE: 0x6b175474e89094c44da98b954eedeac495271d0f not updated in 7200s
+2026-05-02T10:07:38.684035550Z [error] ALERT: STALE SCORE: 0x853d955acef822db058eb8505911ed77f175b99e not updated in 7200s
+2026-05-02T10:07:38.684040073Z [error] ALERT: STALE SCORE: 0x6c3ea9036406852006290770bedfcaba0e23a0e8 not updated in 7200s
+2026-05-02T10:07:38.684043518Z [error] ALERT: STALE SCORE: 0xc5f0f7b66764f6ec8c8dff7ba683102295e16409 not updated in 7200s
+2026-05-02T10:07:38.684047087Z [error] ALERT: STALE SCORE: 0x0000000000085d4780b73119b644ae5ecd22b376 not updated in 7200s
+2026-05-02T10:07:38.684050570Z [error] ALERT: STALE SCORE: 0x0c10bf8fcb7bf5412187a595ab97a3609160b5c6 not updated in 7200s
+2026-05-02T10:07:38.684053777Z [error] ALERT: STALE SCORE: 0x4c9edd5852cd905f086c759e8383e09bff1e68b3 not updated in 7200s
+2026-05-02T10:07:38.684057608Z [error] ALERT: STALE SCORE: 0x8d0d000ee44948fc98c9b98a4fa4921476f08b0d not updated in 7200s
+2026-05-02T10:07:38.684060933Z [info] === Keeper cycle complete ===
+2026-05-02T10:07:38.685548162Z [info] Wallet balances
+2026-05-02T10:07:38.685553116Z [error] ALERT: Keeper wallet balance LOW: 0.000912 ETH on Arbitrum
+2026-05-02T10:07:38.685558921Z [info] Sleeping 3600s until next cycle
