@@ -1,6 +1,23 @@
-2026-05-02T14:59:32.077565809Z [info] Starting Container
-2026-05-02T14:59:32.163653508Z [info] ◇ injected env (0) from .env // tip: ⌘ override existing { override: true }
-2026-05-02T14:59:32.163661335Z [info] Basis Keeper starting
-2026-05-02T14:59:32.163665474Z [info] Keeper wallet address
-2026-05-02T14:59:32.163669357Z [error] ALERT: Keeper started. Interval: 3600s. Wallet: 0x2dF0f62D1861Aa59A4430e3B2b2E7a0D29Cb723b
-2026-05-02T14:59:32.163673031Z [info] Recent cycle detected on-chain, deferring first run
+2026-05-02T15:27:19.983458355Z [info] Starting Container
+2026-05-02T15:27:22.018714867Z [info] ◇ injected env (0) from .env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-05-02T15:27:22.018718817Z [info] Basis Keeper starting
+2026-05-02T15:27:22.018723227Z [info] Keeper wallet address
+2026-05-02T15:27:22.018728378Z [error] ALERT: Keeper started. Interval: 3600s. Wallet: 0x2dF0f62D1861Aa59A4430e3B2b2E7a0D29Cb723b
+2026-05-02T15:27:22.018733983Z [info] Recent cycle detected on-chain, deferring first run
+2026-05-02T15:51:29.896063847Z [info] No on-chain updates needed this cycle
+2026-05-02T15:51:29.896077472Z [info] Fetching scores from API
+2026-05-02T15:51:29.896091215Z [warn] Failed to fetch API scores — skipping score updates, using static TOKEN_ADDRESSES for staleness check
+2026-05-02T15:51:29.896099765Z [error] ALERT: Basis keeper: API fetch failed — API returned HTTP 500: Internal Server Error
+2026-05-02T15:51:29.896101949Z [info] Diff complete
+2026-05-02T15:51:29.896115893Z [info] No updates to publish
+2026-05-02T15:51:29.896134272Z [info] No updates to publish
+2026-05-02T15:51:29.896142973Z [info] Fetching PSI scores from API
+2026-05-02T15:51:29.896150745Z [warn] PSI score publishing failed (non-blocking)
+2026-05-02T15:51:29.896180401Z [error] ALERT: Keeper wallet balance LOW: 0.000885 ETH on Arbitrum
+2026-05-02T15:51:29.896190647Z [info] === Keeper cycle start ===
+2026-05-02T15:51:29.896195989Z [info] Wallet balances
+2026-05-02T15:51:30.888221874Z [info] Sleeping 3600s until next cycle
+2026-05-02T15:51:30.888278320Z [error] ALERT: STALE SCORE: 0x853d955acef822db058eb8505911ed77f175b99e not updated in 7200s
+2026-05-02T15:51:30.888283930Z [info] === Keeper cycle complete ===
+2026-05-02T15:51:30.888289085Z [info] Wallet balances
+2026-05-02T15:51:30.888294779Z [error] ALERT: Keeper wallet balance LOW: 0.000885 ETH on Arbitrum
