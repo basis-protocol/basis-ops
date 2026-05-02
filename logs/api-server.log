@@ -1,625 +1,3 @@
-2026-05-02T19:17:08.910792177Z [error] ERROR:    Exception in ASGI application
-2026-05-02T19:17:08.910792944Z [error]     |     result = await app(  # type: ignore[func-returns-value]
-2026-05-02T19:17:08.910798137Z [error]   + Exception Group Traceback (most recent call last):
-2026-05-02T19:17:08.910798643Z [error]     |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:08.910803909Z [error]     |   File "/usr/local/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
-2026-05-02T19:17:08.910804424Z [error]   |   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 76, in collapse_excgroups
-2026-05-02T19:17:08.910809952Z [error]     |     return await self.app(scope, receive, send)
-2026-05-02T19:17:08.910810756Z [error]   |     yield
-2026-05-02T19:17:08.910813580Z [error]     |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:08.910816621Z [error]     |   File "/usr/local/lib/python3.11/site-packages/fastapi/applications.py", line 1054, in __call__
-2026-05-02T19:17:08.913038199Z [error]     |     await super().__call__(scope, receive, send)
-2026-05-02T19:17:08.913042345Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/applications.py", line 113, in __call__
-2026-05-02T19:17:08.913045328Z [error]     |     await self.middleware_stack(scope, receive, send)
-2026-05-02T19:17:08.913048079Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 187, in __call__
-2026-05-02T19:17:08.913051100Z [error]     |     raise exc
-2026-05-02T19:17:08.913054293Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 165, in __call__
-2026-05-02T19:17:08.913057121Z [error]     |     await self.app(scope, receive, _send)
-2026-05-02T19:17:08.913059837Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 185, in __call__
-2026-05-02T19:17:08.913062688Z [error]     |     with collapse_excgroups():
-2026-05-02T19:17:08.913065952Z [error]     |   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
-2026-05-02T19:17:08.913069385Z [error]     |     self.gen.throw(typ, value, traceback)
-2026-05-02T19:17:08.913072300Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 82, in collapse_excgroups
-2026-05-02T19:17:08.913075071Z [error]     |     raise exc
-2026-05-02T19:17:08.913077906Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 187, in __call__
-2026-05-02T19:17:08.913080683Z [error]     |     response = await self.dispatch_func(request, call_next)
-2026-05-02T19:17:08.913083790Z [error]     |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:08.913086562Z [error]     |   File "/app/app/server.py", line 277, in rate_limit_and_track
-2026-05-02T19:17:08.913089597Z [error]     |     response = await call_next(request)
-2026-05-02T19:17:08.913092399Z [error]     |                ^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:08.915258027Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 163, in call_next
-2026-05-02T19:17:08.915263850Z [error]     |     raise app_exc
-2026-05-02T19:17:08.915267627Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 149, in coro
-2026-05-02T19:17:08.915270760Z [error]     |     await self.app(scope, receive_or_disconnect, send_no_error)
-2026-05-02T19:17:08.915273784Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/cors.py", line 85, in __call__
-2026-05-02T19:17:08.915278736Z [error]     |     await self.app(scope, receive, send)
-2026-05-02T19:17:08.915282457Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
-2026-05-02T19:17:08.915285786Z [error]     |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
-2026-05-02T19:17:08.915288876Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-2026-05-02T19:17:08.915292606Z [error]     |     raise exc
-2026-05-02T19:17:08.915296089Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
-2026-05-02T19:17:08.915299608Z [error]     |     await app(scope, receive, sender)
-2026-05-02T19:17:08.915303948Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 715, in __call__
-2026-05-02T19:17:08.915306954Z [error]     |     await self.middleware_stack(scope, receive, send)
-2026-05-02T19:17:08.915310374Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 735, in app
-2026-05-02T19:17:08.915313868Z [error]     |     await route.handle(scope, receive, send)
-2026-05-02T19:17:08.915318175Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 288, in handle
-2026-05-02T19:17:08.917492614Z [error]     |     row = await fetch_one_async(
-2026-05-02T19:17:08.917498325Z [error]     |     await self.app(scope, receive, send)
-2026-05-02T19:17:08.917498623Z [error]     |                 ^^^^^^^^^^^^^^^
-2026-05-02T19:17:08.917503957Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 76, in app
-2026-05-02T19:17:08.917507098Z [error]     |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
-2026-05-02T19:17:08.917509817Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-2026-05-02T19:17:08.917513361Z [error]     |     raise exc
-2026-05-02T19:17:08.917516350Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
-2026-05-02T19:17:08.917519326Z [error]     |     await app(scope, receive, sender)
-2026-05-02T19:17:08.917522018Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 73, in app
-2026-05-02T19:17:08.917525696Z [error]     |     response = await f(request)
-2026-05-02T19:17:08.917528746Z [error]     |                ^^^^^^^^^^^^^^^^
-2026-05-02T19:17:08.917531666Z [error]     |   File "/usr/local/lib/python3.11/site-packages/fastapi/routing.py", line 301, in app
-2026-05-02T19:17:08.917534490Z [error]     |     raw_response = await run_endpoint_function(
-2026-05-02T19:17:08.917537621Z [error]     |                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:08.917541212Z [error]     |   File "/usr/local/lib/python3.11/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
-2026-05-02T19:17:08.917544103Z [error]     |     return await dependant.call(**values)
-2026-05-02T19:17:08.917546951Z [error]     |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:08.917549770Z [error]     |   File "/app/app/server.py", line 8583, in provenance_register
-2026-05-02T19:17:08.919842680Z [error]     | NameError: name 'fetch_one_async' is not defined
-2026-05-02T19:17:08.919843232Z [error]     await self.app(scope, receive, _send)
-2026-05-02T19:17:08.919848962Z [error]     +------------------------------------
-2026-05-02T19:17:08.919853399Z [error] 
-2026-05-02T19:17:08.919857566Z [error]   File "/usr/local/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
-2026-05-02T19:17:08.919857839Z [error] During handling of the above exception, another exception occurred:
-2026-05-02T19:17:08.919862162Z [error] 
-2026-05-02T19:17:08.919866882Z [error] Traceback (most recent call last):
-2026-05-02T19:17:08.919868805Z [error]     return await self.app(scope, receive, send)
-2026-05-02T19:17:08.919872057Z [error]   File "/usr/local/lib/python3.11/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
-2026-05-02T19:17:08.919877471Z [error]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:08.919877598Z [error]     result = await app(  # type: ignore[func-returns-value]
-2026-05-02T19:17:08.919882797Z [error]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:08.919885490Z [error]   File "/usr/local/lib/python3.11/site-packages/fastapi/applications.py", line 1054, in __call__
-2026-05-02T19:17:08.919890919Z [error]     await super().__call__(scope, receive, send)
-2026-05-02T19:17:08.919897463Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/applications.py", line 113, in __call__
-2026-05-02T19:17:08.919901683Z [error]     await self.middleware_stack(scope, receive, send)
-2026-05-02T19:17:08.919905986Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 187, in __call__
-2026-05-02T19:17:08.919913369Z [error]     raise exc
-2026-05-02T19:17:08.919917787Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 165, in __call__
-2026-05-02T19:17:08.921880737Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 185, in __call__
-2026-05-02T19:17:08.921885460Z [error]     with collapse_excgroups():
-2026-05-02T19:17:08.921889035Z [error]   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
-2026-05-02T19:17:08.921892513Z [error]     self.gen.throw(typ, value, traceback)
-2026-05-02T19:17:08.921897775Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 82, in collapse_excgroups
-2026-05-02T19:17:08.921901263Z [error]     raise exc
-2026-05-02T19:17:08.921904673Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 187, in __call__
-2026-05-02T19:17:08.921908136Z [error]     response = await self.dispatch_func(request, call_next)
-2026-05-02T19:17:08.921912041Z [error]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:08.921915364Z [error]   File "/app/app/server.py", line 277, in rate_limit_and_track
-2026-05-02T19:17:08.921918861Z [error]     response = await call_next(request)
-2026-05-02T19:17:08.921922965Z [error]                ^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:08.921926670Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 163, in call_next
-2026-05-02T19:17:08.921930205Z [error]     raise app_exc
-2026-05-02T19:17:08.921933478Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 149, in coro
-2026-05-02T19:17:08.921936776Z [error]     await self.app(scope, receive_or_disconnect, send_no_error)
-2026-05-02T19:17:08.921940367Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/cors.py", line 85, in __call__
-2026-05-02T19:17:08.921943636Z [error]     await self.app(scope, receive, send)
-2026-05-02T19:17:08.921947132Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
-2026-05-02T19:17:08.924041812Z [error]     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
-2026-05-02T19:17:08.924047817Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-2026-05-02T19:17:08.924051675Z [error]     raise exc
-2026-05-02T19:17:08.924056097Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
-2026-05-02T19:17:08.924059697Z [error]     await app(scope, receive, sender)
-2026-05-02T19:17:08.924063295Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 715, in __call__
-2026-05-02T19:17:08.924067020Z [error]     await self.middleware_stack(scope, receive, send)
-2026-05-02T19:17:08.924070403Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 735, in app
-2026-05-02T19:17:08.924074043Z [error]     await route.handle(scope, receive, send)
-2026-05-02T19:17:08.924078771Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 288, in handle
-2026-05-02T19:17:08.924082403Z [error]     await self.app(scope, receive, send)
-2026-05-02T19:17:08.924085884Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 76, in app
-2026-05-02T19:17:08.924091841Z [error]     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
-2026-05-02T19:17:08.924095909Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-2026-05-02T19:17:08.924099775Z [error]     raise exc
-2026-05-02T19:17:08.924103989Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
-2026-05-02T19:17:08.924107459Z [error]     await app(scope, receive, sender)
-2026-05-02T19:17:08.924110811Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 73, in app
-2026-05-02T19:17:08.925983691Z [error]     response = await f(request)
-2026-05-02T19:17:08.925988320Z [error]                ^^^^^^^^^^^^^^^^
-2026-05-02T19:17:08.925991306Z [error]   File "/usr/local/lib/python3.11/site-packages/fastapi/routing.py", line 301, in app
-2026-05-02T19:17:08.925993869Z [error]     raw_response = await run_endpoint_function(
-2026-05-02T19:17:08.925996369Z [error]                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:08.925999707Z [error]   File "/usr/local/lib/python3.11/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
-2026-05-02T19:17:08.926002319Z [error]     return await dependant.call(**values)
-2026-05-02T19:17:08.926006061Z [error]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:08.926008858Z [error]   File "/app/app/server.py", line 8583, in provenance_register
-2026-05-02T19:17:08.926011665Z [error]     row = await fetch_one_async(
-2026-05-02T19:17:08.926014156Z [error]                 ^^^^^^^^^^^^^^^
-2026-05-02T19:17:08.926016822Z [error] NameError: name 'fetch_one_async' is not defined
-2026-05-02T19:17:10.500597843Z [error]   +-+---------------- 1 ----------------
-2026-05-02T19:17:10.500606514Z [error]     | Traceback (most recent call last):
-2026-05-02T19:17:10.500611420Z [error]     |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:10.500618589Z [error]     |   File "/usr/local/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
-2026-05-02T19:17:10.500622126Z [error]   |     async with anyio.create_task_group() as task_group:
-2026-05-02T19:17:10.500626550Z [error]   |   File "/usr/local/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 799, in __aexit__
-2026-05-02T19:17:10.500631245Z [error]   |     raise BaseExceptionGroup(
-2026-05-02T19:17:10.500634902Z [error]     |     result = await app(  # type: ignore[func-returns-value]
-2026-05-02T19:17:10.500636237Z [error]   | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
-2026-05-02T19:17:10.500647124Z [error]     |     return await self.app(scope, receive, send)
-2026-05-02T19:17:10.500647256Z [error]     |   File "/usr/local/lib/python3.11/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
-2026-05-02T19:17:10.500649332Z [info] INFO:     100.64.0.7:38530 - "POST /api/provenance/register HTTP/1.1" 500 Internal Server Error
-2026-05-02T19:17:10.500653058Z [error]     |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:10.500654584Z [error] ERROR:    Exception in ASGI application
-2026-05-02T19:17:10.500658261Z [error]   + Exception Group Traceback (most recent call last):
-2026-05-02T19:17:10.500663284Z [error]   |   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 76, in collapse_excgroups
-2026-05-02T19:17:10.500667052Z [error]   |     yield
-2026-05-02T19:17:10.500670067Z [error]   |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 186, in __call__
-2026-05-02T19:17:10.500678311Z [error]     |   File "/usr/local/lib/python3.11/site-packages/fastapi/applications.py", line 1054, in __call__
-2026-05-02T19:17:10.501996702Z [error]     |   File "/app/app/server.py", line 277, in rate_limit_and_track
-2026-05-02T19:17:10.501999041Z [error]     |     await super().__call__(scope, receive, send)
-2026-05-02T19:17:10.502003172Z [error]     |     response = await call_next(request)
-2026-05-02T19:17:10.502008647Z [error]     |                ^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:10.502009624Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/applications.py", line 113, in __call__
-2026-05-02T19:17:10.502014898Z [error]     |     await self.middleware_stack(scope, receive, send)
-2026-05-02T19:17:10.502021207Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 187, in __call__
-2026-05-02T19:17:10.502026752Z [error]     |     raise exc
-2026-05-02T19:17:10.502031596Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 165, in __call__
-2026-05-02T19:17:10.502036842Z [error]     |     await self.app(scope, receive, _send)
-2026-05-02T19:17:10.502040739Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 185, in __call__
-2026-05-02T19:17:10.502045041Z [error]     |     with collapse_excgroups():
-2026-05-02T19:17:10.502049062Z [error]     |   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
-2026-05-02T19:17:10.502054093Z [error]     |     self.gen.throw(typ, value, traceback)
-2026-05-02T19:17:10.502058273Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 82, in collapse_excgroups
-2026-05-02T19:17:10.502062442Z [error]     |     raise exc
-2026-05-02T19:17:10.502066465Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 187, in __call__
-2026-05-02T19:17:10.502071634Z [error]     |     response = await self.dispatch_func(request, call_next)
-2026-05-02T19:17:10.502078306Z [error]     |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:10.503855000Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 163, in call_next
-2026-05-02T19:17:10.503859605Z [error]     |     raise app_exc
-2026-05-02T19:17:10.503863003Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 149, in coro
-2026-05-02T19:17:10.503866304Z [error]     |     await self.app(scope, receive_or_disconnect, send_no_error)
-2026-05-02T19:17:10.503869877Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/cors.py", line 85, in __call__
-2026-05-02T19:17:10.503874463Z [error]     |     await self.app(scope, receive, send)
-2026-05-02T19:17:10.503877756Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
-2026-05-02T19:17:10.503880940Z [error]     |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
-2026-05-02T19:17:10.503884211Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-2026-05-02T19:17:10.503887790Z [error]     |     raise exc
-2026-05-02T19:17:10.503891167Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
-2026-05-02T19:17:10.503894829Z [error]     |     await app(scope, receive, sender)
-2026-05-02T19:17:10.503898003Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 715, in __call__
-2026-05-02T19:17:10.503903090Z [error]     |     await self.middleware_stack(scope, receive, send)
-2026-05-02T19:17:10.503905975Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 735, in app
-2026-05-02T19:17:10.503908859Z [error]     |     await route.handle(scope, receive, send)
-2026-05-02T19:17:10.503911506Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 288, in handle
-2026-05-02T19:17:10.506143460Z [error]     |                 ^^^^^^^^^^^^^^^
-2026-05-02T19:17:10.506148122Z [error]     |     await self.app(scope, receive, send)
-2026-05-02T19:17:10.506152135Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 76, in app
-2026-05-02T19:17:10.506155172Z [error]     |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
-2026-05-02T19:17:10.506158443Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-2026-05-02T19:17:10.506161513Z [error]     |     raise exc
-2026-05-02T19:17:10.506165189Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
-2026-05-02T19:17:10.506168564Z [error]     |     await app(scope, receive, sender)
-2026-05-02T19:17:10.506171398Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 73, in app
-2026-05-02T19:17:10.506174948Z [error]     |     response = await f(request)
-2026-05-02T19:17:10.506178396Z [error]     |                ^^^^^^^^^^^^^^^^
-2026-05-02T19:17:10.506181756Z [error]     |   File "/usr/local/lib/python3.11/site-packages/fastapi/routing.py", line 301, in app
-2026-05-02T19:17:10.506184854Z [error]     |     raw_response = await run_endpoint_function(
-2026-05-02T19:17:10.506188084Z [error]     |                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:10.506190957Z [error]     |   File "/usr/local/lib/python3.11/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
-2026-05-02T19:17:10.506193590Z [error]     |     return await dependant.call(**values)
-2026-05-02T19:17:10.506196262Z [error]     |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:10.506198974Z [error]     |   File "/app/app/server.py", line 8583, in provenance_register
-2026-05-02T19:17:10.506201753Z [error]     |     row = await fetch_one_async(
-2026-05-02T19:17:10.507978517Z [error]     | NameError: name 'fetch_one_async' is not defined
-2026-05-02T19:17:10.507980476Z [error]     await self.app(scope, receive, _send)
-2026-05-02T19:17:10.507983519Z [error]     +------------------------------------
-2026-05-02T19:17:10.507986986Z [error] 
-2026-05-02T19:17:10.507992494Z [error] During handling of the above exception, another exception occurred:
-2026-05-02T19:17:10.507995157Z [error]   File "/usr/local/lib/python3.11/site-packages/fastapi/applications.py", line 1054, in __call__
-2026-05-02T19:17:10.507998356Z [error] 
-2026-05-02T19:17:10.508001978Z [error]     await super().__call__(scope, receive, send)
-2026-05-02T19:17:10.508003686Z [error] Traceback (most recent call last):
-2026-05-02T19:17:10.508007435Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/applications.py", line 113, in __call__
-2026-05-02T19:17:10.508008972Z [error]   File "/usr/local/lib/python3.11/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
-2026-05-02T19:17:10.508012975Z [error]     await self.middleware_stack(scope, receive, send)
-2026-05-02T19:17:10.508013673Z [error]     result = await app(  # type: ignore[func-returns-value]
-2026-05-02T19:17:10.508017053Z [error]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:10.508020692Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 187, in __call__
-2026-05-02T19:17:10.508022629Z [error]   File "/usr/local/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
-2026-05-02T19:17:10.508026431Z [error]     raise exc
-2026-05-02T19:17:10.508028655Z [error]     return await self.app(scope, receive, send)
-2026-05-02T19:17:10.508032801Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 165, in __call__
-2026-05-02T19:17:10.508033856Z [error]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:10.510246674Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 163, in call_next
-2026-05-02T19:17:10.510249781Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 185, in __call__
-2026-05-02T19:17:10.510251713Z [error]     raise app_exc
-2026-05-02T19:17:10.510257121Z [error]     with collapse_excgroups():
-2026-05-02T19:17:10.510257291Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 149, in coro
-2026-05-02T19:17:10.510262880Z [error]     await self.app(scope, receive_or_disconnect, send_no_error)
-2026-05-02T19:17:10.510264663Z [error]   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
-2026-05-02T19:17:10.510267763Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/cors.py", line 85, in __call__
-2026-05-02T19:17:10.510272228Z [error]     await self.app(scope, receive, send)
-2026-05-02T19:17:10.510272692Z [error]     self.gen.throw(typ, value, traceback)
-2026-05-02T19:17:10.510276940Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
-2026-05-02T19:17:10.510280220Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 82, in collapse_excgroups
-2026-05-02T19:17:10.510284280Z [error]     raise exc
-2026-05-02T19:17:10.510287120Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 187, in __call__
-2026-05-02T19:17:10.510290193Z [error]     response = await self.dispatch_func(request, call_next)
-2026-05-02T19:17:10.510294078Z [error]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:10.510298012Z [error]   File "/app/app/server.py", line 277, in rate_limit_and_track
-2026-05-02T19:17:10.510301415Z [error]     response = await call_next(request)
-2026-05-02T19:17:10.510304466Z [error]                ^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:10.512010398Z [error]     await app(scope, receive, sender)
-2026-05-02T19:17:10.512015342Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 73, in app
-2026-05-02T19:17:10.512017809Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
-2026-05-02T19:17:10.512025890Z [error]     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
-2026-05-02T19:17:10.512031127Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-2026-05-02T19:17:10.512036447Z [error]     raise exc
-2026-05-02T19:17:10.512040867Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
-2026-05-02T19:17:10.512041443Z [error]     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
-2026-05-02T19:17:10.512044811Z [error]     await app(scope, receive, sender)
-2026-05-02T19:17:10.512049993Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 715, in __call__
-2026-05-02T19:17:10.512051392Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-2026-05-02T19:17:10.512055043Z [error]     await self.middleware_stack(scope, receive, send)
-2026-05-02T19:17:10.512057955Z [error]     raise exc
-2026-05-02T19:17:10.512060910Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 735, in app
-2026-05-02T19:17:10.512063763Z [error]     await route.handle(scope, receive, send)
-2026-05-02T19:17:10.512067944Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 288, in handle
-2026-05-02T19:17:10.512070896Z [error]     await self.app(scope, receive, send)
-2026-05-02T19:17:10.512073799Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 76, in app
-2026-05-02T19:17:10.513894684Z [error]     response = await f(request)
-2026-05-02T19:17:10.513900794Z [error]                ^^^^^^^^^^^^^^^^
-2026-05-02T19:17:10.513904398Z [error]   File "/usr/local/lib/python3.11/site-packages/fastapi/routing.py", line 301, in app
-2026-05-02T19:17:10.513907672Z [error]     raw_response = await run_endpoint_function(
-2026-05-02T19:17:10.513911145Z [error]                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:10.513914770Z [error]   File "/usr/local/lib/python3.11/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
-2026-05-02T19:17:10.513917834Z [error]     return await dependant.call(**values)
-2026-05-02T19:17:10.513921009Z [error]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:10.513923836Z [error]   File "/app/app/server.py", line 8583, in provenance_register
-2026-05-02T19:17:10.513927195Z [error]     row = await fetch_one_async(
-2026-05-02T19:17:10.513933248Z [error]                 ^^^^^^^^^^^^^^^
-2026-05-02T19:17:10.513936696Z [error] NameError: name 'fetch_one_async' is not defined
-2026-05-02T19:17:20.138489576Z [info] INFO:     100.64.0.6:33594 - "POST /api/provenance/register HTTP/1.1" 500 Internal Server Error
-2026-05-02T19:17:20.138493365Z [error] ERROR:    Exception in ASGI application
-2026-05-02T19:17:20.138496464Z [error]   + Exception Group Traceback (most recent call last):
-2026-05-02T19:17:20.138499514Z [error]   |   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 76, in collapse_excgroups
-2026-05-02T19:17:20.138502651Z [error]   |     yield
-2026-05-02T19:17:20.138505910Z [error]   |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 186, in __call__
-2026-05-02T19:17:20.138509036Z [error]   |     async with anyio.create_task_group() as task_group:
-2026-05-02T19:17:20.138512094Z [error]   |   File "/usr/local/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 799, in __aexit__
-2026-05-02T19:17:20.138515284Z [error]   |     raise BaseExceptionGroup(
-2026-05-02T19:17:20.138518414Z [error]   | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
-2026-05-02T19:17:20.138521348Z [error]   +-+---------------- 1 ----------------
-2026-05-02T19:17:20.138524185Z [error]     | Traceback (most recent call last):
-2026-05-02T19:17:20.138527544Z [error]     |   File "/usr/local/lib/python3.11/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
-2026-05-02T19:17:20.138531127Z [error]     |     result = await app(  # type: ignore[func-returns-value]
-2026-05-02T19:17:20.138534075Z [error]     |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:20.138537462Z [error]     |   File "/usr/local/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
-2026-05-02T19:17:20.138540437Z [error]     |     return await self.app(scope, receive, send)
-2026-05-02T19:17:20.138543735Z [error]     |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:20.138547171Z [error]     |   File "/usr/local/lib/python3.11/site-packages/fastapi/applications.py", line 1054, in __call__
-2026-05-02T19:17:20.140406556Z [error]     |     await super().__call__(scope, receive, send)
-2026-05-02T19:17:20.140410045Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/applications.py", line 113, in __call__
-2026-05-02T19:17:20.140412877Z [error]     |     await self.middleware_stack(scope, receive, send)
-2026-05-02T19:17:20.140415551Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 187, in __call__
-2026-05-02T19:17:20.140418601Z [error]     |     raise exc
-2026-05-02T19:17:20.140422154Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 165, in __call__
-2026-05-02T19:17:20.140424869Z [error]     |     await self.app(scope, receive, _send)
-2026-05-02T19:17:20.140427574Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 185, in __call__
-2026-05-02T19:17:20.140430298Z [error]     |     with collapse_excgroups():
-2026-05-02T19:17:20.140432941Z [error]     |   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
-2026-05-02T19:17:20.140435474Z [error]     |     self.gen.throw(typ, value, traceback)
-2026-05-02T19:17:20.140438069Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 82, in collapse_excgroups
-2026-05-02T19:17:20.140440831Z [error]     |     raise exc
-2026-05-02T19:17:20.140444368Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 187, in __call__
-2026-05-02T19:17:20.140446970Z [error]     |     response = await self.dispatch_func(request, call_next)
-2026-05-02T19:17:20.140449461Z [error]     |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:20.140452057Z [error]     |   File "/app/app/server.py", line 277, in rate_limit_and_track
-2026-05-02T19:17:20.140454596Z [error]     |     response = await call_next(request)
-2026-05-02T19:17:20.140457190Z [error]     |                ^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:20.142228254Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 163, in call_next
-2026-05-02T19:17:20.142237025Z [error]     |     raise app_exc
-2026-05-02T19:17:20.142243332Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 149, in coro
-2026-05-02T19:17:20.142248250Z [error]     |     await self.app(scope, receive_or_disconnect, send_no_error)
-2026-05-02T19:17:20.142251939Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/cors.py", line 85, in __call__
-2026-05-02T19:17:20.142256777Z [error]     |     await self.app(scope, receive, send)
-2026-05-02T19:17:20.142261192Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
-2026-05-02T19:17:20.142264970Z [error]     |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
-2026-05-02T19:17:20.142268736Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-2026-05-02T19:17:20.142272592Z [error]     |     raise exc
-2026-05-02T19:17:20.142275899Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
-2026-05-02T19:17:20.142279477Z [error]     |     await app(scope, receive, sender)
-2026-05-02T19:17:20.142283114Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 715, in __call__
-2026-05-02T19:17:20.142286305Z [error]     |     await self.middleware_stack(scope, receive, send)
-2026-05-02T19:17:20.142289207Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 735, in app
-2026-05-02T19:17:20.142292631Z [error]     |     await route.handle(scope, receive, send)
-2026-05-02T19:17:20.142295817Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 288, in handle
-2026-05-02T19:17:20.144294667Z [error]     |   File "/usr/local/lib/python3.11/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
-2026-05-02T19:17:20.144300353Z [error]     |     return await dependant.call(**values)
-2026-05-02T19:17:20.144305265Z [error]     |     await self.app(scope, receive, send)
-2026-05-02T19:17:20.144305290Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 73, in app
-2026-05-02T19:17:20.144306133Z [error]     |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:20.144312783Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 76, in app
-2026-05-02T19:17:20.144312897Z [error]     |   File "/app/app/server.py", line 8583, in provenance_register
-2026-05-02T19:17:20.144314783Z [error]     |     response = await f(request)
-2026-05-02T19:17:20.144337438Z [error]     |     row = await fetch_one_async(
-2026-05-02T19:17:20.144339679Z [error]     |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
-2026-05-02T19:17:20.144344519Z [error]     |                 ^^^^^^^^^^^^^^^
-2026-05-02T19:17:20.144344564Z [error]     |                ^^^^^^^^^^^^^^^^
-2026-05-02T19:17:20.144346176Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-2026-05-02T19:17:20.144351761Z [error]     |     raise exc
-2026-05-02T19:17:20.144353535Z [error]     |   File "/usr/local/lib/python3.11/site-packages/fastapi/routing.py", line 301, in app
-2026-05-02T19:17:20.144356635Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
-2026-05-02T19:17:20.144360696Z [error]     |     raw_response = await run_endpoint_function(
-2026-05-02T19:17:20.144363003Z [error]     |     await app(scope, receive, sender)
-2026-05-02T19:17:20.144366345Z [error]     |                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:20.146136942Z [error]     | NameError: name 'fetch_one_async' is not defined
-2026-05-02T19:17:20.146140312Z [error]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:20.146141896Z [error]     +------------------------------------
-2026-05-02T19:17:20.146146673Z [error] 
-2026-05-02T19:17:20.146148586Z [error]   File "/usr/local/lib/python3.11/site-packages/fastapi/applications.py", line 1054, in __call__
-2026-05-02T19:17:20.146151361Z [error] During handling of the above exception, another exception occurred:
-2026-05-02T19:17:20.146153673Z [error]     await super().__call__(scope, receive, send)
-2026-05-02T19:17:20.146156512Z [error] 
-2026-05-02T19:17:20.146161920Z [error] Traceback (most recent call last):
-2026-05-02T19:17:20.146162226Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/applications.py", line 113, in __call__
-2026-05-02T19:17:20.146168254Z [error]   File "/usr/local/lib/python3.11/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
-2026-05-02T19:17:20.146171979Z [error]     await self.middleware_stack(scope, receive, send)
-2026-05-02T19:17:20.146172962Z [error]     result = await app(  # type: ignore[func-returns-value]
-2026-05-02T19:17:20.146178399Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 187, in __call__
-2026-05-02T19:17:20.146179245Z [error]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:20.146185092Z [error]     raise exc
-2026-05-02T19:17:20.146185488Z [error]   File "/usr/local/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
-2026-05-02T19:17:20.146190227Z [error]     return await self.app(scope, receive, send)
-2026-05-02T19:17:20.146193746Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 165, in __call__
-2026-05-02T19:17:20.146198365Z [error]     await self.app(scope, receive, _send)
-2026-05-02T19:17:20.148262372Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 185, in __call__
-2026-05-02T19:17:20.148269732Z [error]     with collapse_excgroups():
-2026-05-02T19:17:20.148273432Z [error]   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
-2026-05-02T19:17:20.148277258Z [error]     self.gen.throw(typ, value, traceback)
-2026-05-02T19:17:20.148280334Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 82, in collapse_excgroups
-2026-05-02T19:17:20.148283778Z [error]     raise exc
-2026-05-02T19:17:20.148287075Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 187, in __call__
-2026-05-02T19:17:20.148290538Z [error]     response = await self.dispatch_func(request, call_next)
-2026-05-02T19:17:20.148295470Z [error]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:20.148298823Z [error]   File "/app/app/server.py", line 277, in rate_limit_and_track
-2026-05-02T19:17:20.148304832Z [error]     response = await call_next(request)
-2026-05-02T19:17:20.148307962Z [error]                ^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:20.148311090Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 163, in call_next
-2026-05-02T19:17:20.148314493Z [error]     raise app_exc
-2026-05-02T19:17:20.148330669Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 149, in coro
-2026-05-02T19:17:20.148334850Z [error]     await self.app(scope, receive_or_disconnect, send_no_error)
-2026-05-02T19:17:20.148338019Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/cors.py", line 85, in __call__
-2026-05-02T19:17:20.148342188Z [error]     await self.app(scope, receive, send)
-2026-05-02T19:17:20.148346258Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
-2026-05-02T19:17:20.150611003Z [error]     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
-2026-05-02T19:17:20.150616908Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-2026-05-02T19:17:20.150620771Z [error]     raise exc
-2026-05-02T19:17:20.150624505Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
-2026-05-02T19:17:20.150628685Z [error]     await app(scope, receive, sender)
-2026-05-02T19:17:20.150632930Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 715, in __call__
-2026-05-02T19:17:20.150636794Z [error]     await self.middleware_stack(scope, receive, send)
-2026-05-02T19:17:20.150640297Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 735, in app
-2026-05-02T19:17:20.150643675Z [error]     await route.handle(scope, receive, send)
-2026-05-02T19:17:20.150647645Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 288, in handle
-2026-05-02T19:17:20.150652568Z [error]     await self.app(scope, receive, send)
-2026-05-02T19:17:20.150656212Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 76, in app
-2026-05-02T19:17:20.150659860Z [error]     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
-2026-05-02T19:17:20.150663586Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-2026-05-02T19:17:20.150667426Z [error]     raise exc
-2026-05-02T19:17:20.150675588Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
-2026-05-02T19:17:20.150679473Z [error]     await app(scope, receive, sender)
-2026-05-02T19:17:20.150683569Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 73, in app
-2026-05-02T19:17:20.152829112Z [error]     response = await f(request)
-2026-05-02T19:17:20.152829525Z [error] NameError: name 'fetch_one_async' is not defined
-2026-05-02T19:17:20.152837520Z [error]                ^^^^^^^^^^^^^^^^
-2026-05-02T19:17:20.152841970Z [error]   File "/usr/local/lib/python3.11/site-packages/fastapi/routing.py", line 301, in app
-2026-05-02T19:17:20.152845223Z [error]     raw_response = await run_endpoint_function(
-2026-05-02T19:17:20.152848536Z [error]                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:20.152862515Z [error]   File "/usr/local/lib/python3.11/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
-2026-05-02T19:17:20.152866110Z [error]     return await dependant.call(**values)
-2026-05-02T19:17:20.152870029Z [error]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:20.152872809Z [error]   File "/app/app/server.py", line 8583, in provenance_register
-2026-05-02T19:17:20.152876861Z [error]     row = await fetch_one_async(
-2026-05-02T19:17:20.152880828Z [error]                 ^^^^^^^^^^^^^^^
-2026-05-02T19:17:24.739651138Z [info] INFO:     100.64.0.6:33608 - "POST /api/provenance/register HTTP/1.1" 500 Internal Server Error
-2026-05-02T19:17:24.741755770Z [error] ERROR:    Exception in ASGI application
-2026-05-02T19:17:24.741762329Z [error]   + Exception Group Traceback (most recent call last):
-2026-05-02T19:17:24.741766355Z [error]   |   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 76, in collapse_excgroups
-2026-05-02T19:17:24.741769592Z [error]   |     yield
-2026-05-02T19:17:24.741772873Z [error]   |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 186, in __call__
-2026-05-02T19:17:24.741776558Z [error]   |     async with anyio.create_task_group() as task_group:
-2026-05-02T19:17:24.741779956Z [error]   |   File "/usr/local/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 799, in __aexit__
-2026-05-02T19:17:24.741783309Z [error]   |     raise BaseExceptionGroup(
-2026-05-02T19:17:24.741787196Z [error]   | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
-2026-05-02T19:17:24.741790712Z [error]   +-+---------------- 1 ----------------
-2026-05-02T19:17:24.741793979Z [error]     | Traceback (most recent call last):
-2026-05-02T19:17:24.741797620Z [error]     |   File "/usr/local/lib/python3.11/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
-2026-05-02T19:17:24.741801386Z [error]     |     result = await app(  # type: ignore[func-returns-value]
-2026-05-02T19:17:24.741804541Z [error]     |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:24.741807640Z [error]     |   File "/usr/local/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
-2026-05-02T19:17:24.741810702Z [error]     |     return await self.app(scope, receive, send)
-2026-05-02T19:17:24.741813902Z [error]     |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:24.741817194Z [error]     |   File "/usr/local/lib/python3.11/site-packages/fastapi/applications.py", line 1054, in __call__
-2026-05-02T19:17:24.741821469Z [error]     |     await super().__call__(scope, receive, send)
-2026-05-02T19:17:24.743371906Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 187, in __call__
-2026-05-02T19:17:24.743372281Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/applications.py", line 113, in __call__
-2026-05-02T19:17:24.743379642Z [error]     |     await self.middleware_stack(scope, receive, send)
-2026-05-02T19:17:24.743381620Z [error]     |     response = await self.dispatch_func(request, call_next)
-2026-05-02T19:17:24.743385717Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 187, in __call__
-2026-05-02T19:17:24.743388119Z [error]     |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:24.743393986Z [error]     |   File "/app/app/server.py", line 277, in rate_limit_and_track
-2026-05-02T19:17:24.743394997Z [error]     |     raise exc
-2026-05-02T19:17:24.743399529Z [error]     |     response = await call_next(request)
-2026-05-02T19:17:24.743401486Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 165, in __call__
-2026-05-02T19:17:24.743404749Z [error]     |                ^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:24.743408006Z [error]     |     await self.app(scope, receive, _send)
-2026-05-02T19:17:24.743410472Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 163, in call_next
-2026-05-02T19:17:24.743413671Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 185, in __call__
-2026-05-02T19:17:24.743417033Z [error]     |     with collapse_excgroups():
-2026-05-02T19:17:24.743420309Z [error]     |   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
-2026-05-02T19:17:24.743423614Z [error]     |     self.gen.throw(typ, value, traceback)
-2026-05-02T19:17:24.743426874Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 82, in collapse_excgroups
-2026-05-02T19:17:24.743430425Z [error]     |     raise exc
-2026-05-02T19:17:24.745102179Z [error]     |     raise app_exc
-2026-05-02T19:17:24.745109737Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 149, in coro
-2026-05-02T19:17:24.745113430Z [error]     |     await self.app(scope, receive_or_disconnect, send_no_error)
-2026-05-02T19:17:24.745116900Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/cors.py", line 85, in __call__
-2026-05-02T19:17:24.745120614Z [error]     |     await self.app(scope, receive, send)
-2026-05-02T19:17:24.745125300Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
-2026-05-02T19:17:24.745128778Z [error]     |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
-2026-05-02T19:17:24.745132309Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-2026-05-02T19:17:24.745135722Z [error]     |     raise exc
-2026-05-02T19:17:24.745139272Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
-2026-05-02T19:17:24.745142549Z [error]     |     await app(scope, receive, sender)
-2026-05-02T19:17:24.745146438Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 715, in __call__
-2026-05-02T19:17:24.745149709Z [error]     |     await self.middleware_stack(scope, receive, send)
-2026-05-02T19:17:24.745152971Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 735, in app
-2026-05-02T19:17:24.745156309Z [error]     |     await route.handle(scope, receive, send)
-2026-05-02T19:17:24.745159376Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 288, in handle
-2026-05-02T19:17:24.745162764Z [error]     |     await self.app(scope, receive, send)
-2026-05-02T19:17:24.745166421Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 76, in app
-2026-05-02T19:17:24.746892144Z [error]     |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
-2026-05-02T19:17:24.746897726Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-2026-05-02T19:17:24.746902693Z [error]     |     raise exc
-2026-05-02T19:17:24.746906973Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
-2026-05-02T19:17:24.746910581Z [error]     |     await app(scope, receive, sender)
-2026-05-02T19:17:24.746914719Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 73, in app
-2026-05-02T19:17:24.746917939Z [error]     |     response = await f(request)
-2026-05-02T19:17:24.746921458Z [error]     |                ^^^^^^^^^^^^^^^^
-2026-05-02T19:17:24.746924790Z [error]     |   File "/usr/local/lib/python3.11/site-packages/fastapi/routing.py", line 301, in app
-2026-05-02T19:17:24.746928373Z [error]     |     raw_response = await run_endpoint_function(
-2026-05-02T19:17:24.746931729Z [error]     |                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:24.746935105Z [error]     |   File "/usr/local/lib/python3.11/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
-2026-05-02T19:17:24.746938793Z [error]     |     return await dependant.call(**values)
-2026-05-02T19:17:24.746942456Z [error]     |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:24.746945705Z [error]     |   File "/app/app/server.py", line 8583, in provenance_register
-2026-05-02T19:17:24.746949727Z [error]     |     row = await fetch_one_async(
-2026-05-02T19:17:24.746952622Z [error]     |                 ^^^^^^^^^^^^^^^
-2026-05-02T19:17:24.746955920Z [error]     | NameError: name 'fetch_one_async' is not defined
-2026-05-02T19:17:24.746959962Z [error]     +------------------------------------
-2026-05-02T19:17:24.746964071Z [error] 
-2026-05-02T19:17:24.748697374Z [error] During handling of the above exception, another exception occurred:
-2026-05-02T19:17:24.748705681Z [error] 
-2026-05-02T19:17:24.748710540Z [error] Traceback (most recent call last):
-2026-05-02T19:17:24.748715043Z [error]   File "/usr/local/lib/python3.11/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
-2026-05-02T19:17:24.748719979Z [error]     result = await app(  # type: ignore[func-returns-value]
-2026-05-02T19:17:24.748726289Z [error]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:24.748730323Z [error]   File "/usr/local/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
-2026-05-02T19:17:24.748733969Z [error]     return await self.app(scope, receive, send)
-2026-05-02T19:17:24.748737698Z [error]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:24.748741115Z [error]   File "/usr/local/lib/python3.11/site-packages/fastapi/applications.py", line 1054, in __call__
-2026-05-02T19:17:24.748744372Z [error]     await super().__call__(scope, receive, send)
-2026-05-02T19:17:24.748748131Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/applications.py", line 113, in __call__
-2026-05-02T19:17:24.748751356Z [error]     await self.middleware_stack(scope, receive, send)
-2026-05-02T19:17:24.748754423Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 187, in __call__
-2026-05-02T19:17:24.748757504Z [error]     raise exc
-2026-05-02T19:17:24.748760429Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 165, in __call__
-2026-05-02T19:17:24.748763809Z [error]     await self.app(scope, receive, _send)
-2026-05-02T19:17:24.748767298Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 185, in __call__
-2026-05-02T19:17:24.748770357Z [error]     with collapse_excgroups():
-2026-05-02T19:17:24.750543965Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 149, in coro
-2026-05-02T19:17:24.750550865Z [error]     await self.app(scope, receive_or_disconnect, send_no_error)
-2026-05-02T19:17:24.750556602Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/cors.py", line 85, in __call__
-2026-05-02T19:17:24.750558100Z [error]   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
-2026-05-02T19:17:24.750561778Z [error]     await self.app(scope, receive, send)
-2026-05-02T19:17:24.750567725Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
-2026-05-02T19:17:24.750568607Z [error]     self.gen.throw(typ, value, traceback)
-2026-05-02T19:17:24.750574283Z [error]     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
-2026-05-02T19:17:24.750576384Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 82, in collapse_excgroups
-2026-05-02T19:17:24.750579067Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-2026-05-02T19:17:24.750581904Z [error]     raise exc
-2026-05-02T19:17:24.750586293Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 187, in __call__
-2026-05-02T19:17:24.750589903Z [error]     response = await self.dispatch_func(request, call_next)
-2026-05-02T19:17:24.750595278Z [error]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:24.750598933Z [error]   File "/app/app/server.py", line 277, in rate_limit_and_track
-2026-05-02T19:17:24.750603754Z [error]     response = await call_next(request)
-2026-05-02T19:17:24.750607262Z [error]                ^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:24.750611607Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 163, in call_next
-2026-05-02T19:17:24.750614828Z [error]     raise app_exc
-2026-05-02T19:17:24.752288954Z [error]     raise exc
-2026-05-02T19:17:24.752294841Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
-2026-05-02T19:17:24.752295617Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 73, in app
-2026-05-02T19:17:24.752298794Z [error]     await app(scope, receive, sender)
-2026-05-02T19:17:24.752303882Z [error]     response = await f(request)
-2026-05-02T19:17:24.752304180Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 715, in __call__
-2026-05-02T19:17:24.752309676Z [error]                ^^^^^^^^^^^^^^^^
-2026-05-02T19:17:24.752311570Z [error]     await self.middleware_stack(scope, receive, send)
-2026-05-02T19:17:24.752330176Z [error]   File "/usr/local/lib/python3.11/site-packages/fastapi/routing.py", line 301, in app
-2026-05-02T19:17:24.752333967Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 735, in app
-2026-05-02T19:17:24.752338912Z [error]     await route.handle(scope, receive, send)
-2026-05-02T19:17:24.752342883Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 288, in handle
-2026-05-02T19:17:24.752346321Z [error]     await self.app(scope, receive, send)
-2026-05-02T19:17:24.752349847Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 76, in app
-2026-05-02T19:17:24.752353319Z [error]     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
-2026-05-02T19:17:24.752356158Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-2026-05-02T19:17:24.752360575Z [error]     raise exc
-2026-05-02T19:17:24.752364163Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
-2026-05-02T19:17:24.752368540Z [error]     await app(scope, receive, sender)
-2026-05-02T19:17:24.753982802Z [error]     raw_response = await run_endpoint_function(
-2026-05-02T19:17:24.753986370Z [error]                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:24.753989240Z [error]   File "/usr/local/lib/python3.11/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
-2026-05-02T19:17:24.753992355Z [error]     return await dependant.call(**values)
-2026-05-02T19:17:24.753995088Z [error]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:24.753998174Z [error]   File "/app/app/server.py", line 8583, in provenance_register
-2026-05-02T19:17:24.754000872Z [error]     row = await fetch_one_async(
-2026-05-02T19:17:24.754003671Z [error]                 ^^^^^^^^^^^^^^^
-2026-05-02T19:17:24.754006437Z [error] NameError: name 'fetch_one_async' is not defined
-2026-05-02T19:17:26.592628927Z [error]     |   File "/usr/local/lib/python3.11/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
-2026-05-02T19:17:26.592638099Z [error]     |     result = await app(  # type: ignore[func-returns-value]
-2026-05-02T19:17:26.592643174Z [error]     |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:26.592647951Z [error]     |   File "/usr/local/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
-2026-05-02T19:17:26.592652939Z [error]     |     return await self.app(scope, receive, send)
-2026-05-02T19:17:26.592658754Z [error]     |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:26.592661665Z [info] INFO:     100.64.0.6:33610 - "POST /api/provenance/register HTTP/1.1" 500 Internal Server Error
-2026-05-02T19:17:26.592667293Z [error]     |   File "/usr/local/lib/python3.11/site-packages/fastapi/applications.py", line 1054, in __call__
-2026-05-02T19:17:26.592668251Z [error] ERROR:    Exception in ASGI application
-2026-05-02T19:17:26.592672977Z [error]   + Exception Group Traceback (most recent call last):
-2026-05-02T19:17:26.592677600Z [error]   |   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 76, in collapse_excgroups
-2026-05-02T19:17:26.592681273Z [error]   |     yield
-2026-05-02T19:17:26.592685149Z [error]   |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 186, in __call__
-2026-05-02T19:17:26.592688934Z [error]   |     async with anyio.create_task_group() as task_group:
-2026-05-02T19:17:26.592692247Z [error]   |   File "/usr/local/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 799, in __aexit__
-2026-05-02T19:17:26.592695849Z [error]   |     raise BaseExceptionGroup(
-2026-05-02T19:17:26.592699703Z [error]   | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
-2026-05-02T19:17:26.592703943Z [error]   +-+---------------- 1 ----------------
-2026-05-02T19:17:26.592707576Z [error]     | Traceback (most recent call last):
-2026-05-02T19:17:26.593352970Z [error]     |     await super().__call__(scope, receive, send)
-2026-05-02T19:17:26.593358362Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/applications.py", line 113, in __call__
-2026-05-02T19:17:26.593362988Z [error]     |     await self.middleware_stack(scope, receive, send)
-2026-05-02T19:17:26.593371065Z [error]     |   File "/app/app/server.py", line 277, in rate_limit_and_track
-2026-05-02T19:17:26.593376309Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 187, in __call__
-2026-05-02T19:17:26.593378425Z [error]     |     response = await call_next(request)
-2026-05-02T19:17:26.593384837Z [error]     |     raise exc
-2026-05-02T19:17:26.593385682Z [error]     |                ^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:26.593391302Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 165, in __call__
-2026-05-02T19:17:26.593398229Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 185, in __call__
-2026-05-02T19:17:26.593399780Z [error]     |     await self.app(scope, receive, _send)
-2026-05-02T19:17:26.593405607Z [error]     |     with collapse_excgroups():
-2026-05-02T19:17:26.593410357Z [error]     |   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
-2026-05-02T19:17:26.593413906Z [error]     |     self.gen.throw(typ, value, traceback)
-2026-05-02T19:17:26.593418435Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 82, in collapse_excgroups
-2026-05-02T19:17:26.593422189Z [error]     |     raise exc
-2026-05-02T19:17:26.593426160Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 187, in __call__
-2026-05-02T19:17:26.593429903Z [error]     |     response = await self.dispatch_func(request, call_next)
-2026-05-02T19:17:26.593433506Z [error]     |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:26.594851777Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 163, in call_next
-2026-05-02T19:17:26.594857553Z [error]     |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
-2026-05-02T19:17:26.594860183Z [error]     |     raise app_exc
-2026-05-02T19:17:26.594866193Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-2026-05-02T19:17:26.594868282Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 149, in coro
-2026-05-02T19:17:26.594874420Z [error]     |     raise exc
-2026-05-02T19:17:26.594875593Z [error]     |     await self.app(scope, receive_or_disconnect, send_no_error)
-2026-05-02T19:17:26.594882658Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/cors.py", line 85, in __call__
-2026-05-02T19:17:26.594883586Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
-2026-05-02T19:17:26.594891008Z [error]     |     await self.app(scope, receive, send)
-2026-05-02T19:17:26.594891512Z [error]     |     await app(scope, receive, sender)
-2026-05-02T19:17:26.594898710Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 715, in __call__
-2026-05-02T19:17:26.594899187Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
-2026-05-02T19:17:26.594905159Z [error]     |     await self.middleware_stack(scope, receive, send)
-2026-05-02T19:17:26.594908954Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 735, in app
-2026-05-02T19:17:26.594912398Z [error]     |     await route.handle(scope, receive, send)
-2026-05-02T19:17:26.594915714Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 288, in handle
-2026-05-02T19:17:26.596776722Z [error]     |     return await dependant.call(**values)
-2026-05-02T19:17:26.596785920Z [error]     |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2026-05-02T19:17:26.596786068Z [error]     |     await self.app(scope, receive, send)
-2026-05-02T19:17:26.596794142Z [error]     |   File "/app/app/server.py", line 8583, in provenance_register
 2026-05-02T19:17:26.596794236Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 76, in app
 2026-05-02T19:17:26.596800916Z [error]     |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
 2026-05-02T19:17:26.596801866Z [error]     |     row = await fetch_one_async(
@@ -1999,3 +1377,625 @@
 2026-05-02T19:18:12.445523102Z [info] INFO:     100.64.0.8:31816 - "POST /api/provenance/static/register HTTP/1.1" 405 Method Not Allowed
 2026-05-02T19:18:15.331799221Z [info] INFO:     100.64.0.6:42402 - "POST /api/provenance/static/register HTTP/1.1" 405 Method Not Allowed
 2026-05-02T19:18:18.398368790Z [info] INFO:     100.64.0.8:31830 - "POST /api/provenance/static/register HTTP/1.1" 405 Method Not Allowed
+2026-05-02T19:19:08.438645205Z [info] INFO:     100.64.0.49:23918 - "GET / HTTP/1.1" 200 OK
+2026-05-02T19:22:18.821012847Z [info] INFO:     100.64.0.52:44956 - "GET / HTTP/1.1" 200 OK
+2026-05-02T19:25:08.689709189Z [error] 2026-05-02 19:25:01,712 [INFO] apscheduler.executors.default: Running job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-02 19:40:01 UTC)" (scheduled at 2026-05-02 19:25:01.711441+00:00)
+2026-05-02T19:25:08.689712498Z [error] 2026-05-02 19:25:01,716 [INFO] apscheduler.executors.default: Running job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-02 19:40:01 UTC)" (scheduled at 2026-05-02 19:25:01.711588+00:00)
+2026-05-02T19:25:08.689715139Z [error] 2026-05-02 19:25:01,768 [INFO] apscheduler.executors.default: Running job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-02 19:40:01 UTC)" (scheduled at 2026-05-02 19:25:01.768135+00:00)
+2026-05-02T19:25:08.689717867Z [error] 2026-05-02 19:25:01,773 [INFO] apscheduler.executors.default: Running job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-02 19:40:01 UTC)" (scheduled at 2026-05-02 19:25:01.768400+00:00)
+2026-05-02T19:25:08.689721515Z [error] 2026-05-02 19:25:01,913 [INFO] app.engine.watchlist: evaluate_watchlist: 1 active rows
+2026-05-02T19:25:08.689724429Z [error] 2026-05-02 19:25:01,970 [INFO] app.engine.watchlist: evaluate_watchlist: 1 active rows
+2026-05-02T19:25:08.689728366Z [error] 2026-05-02 19:25:02,308 [INFO] app.engine.watchlist: evaluate_watchlist: done {'rows_evaluated': 1, 'in_cooldown': 0, 'crossings': 0, 'events_inserted': 0, 'duplicates': 0, 'errors': 0}
+2026-05-02T19:25:08.689731138Z [error] 2026-05-02 19:25:02,308 [INFO] apscheduler.executors.default: Job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-02 19:40:01 UTC)" executed successfully
+2026-05-02T19:25:08.689733827Z [error] 2026-05-02 19:25:02,364 [INFO] app.engine.watchlist: evaluate_watchlist: done {'rows_evaluated': 1, 'in_cooldown': 0, 'crossings': 0, 'events_inserted': 0, 'duplicates': 0, 'errors': 0}
+2026-05-02T19:25:08.689736812Z [error] 2026-05-02 19:25:02,364 [INFO] apscheduler.executors.default: Job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-02 19:40:01 UTC)" executed successfully
+2026-05-02T19:25:13.695473643Z [info] INFO:     100.64.0.22:34206 - "GET / HTTP/1.1" 200 OK
+2026-05-02T19:25:21.791587204Z [error] 2026-05-02 19:25:21,790 [INFO] httpx: HTTP Request: GET https://api.llama.fi/hacks "HTTP/1.1 200 OK"
+2026-05-02T19:25:21.993674152Z [error] 2026-05-02 19:25:21,985 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: fetched 513 hacks
+2026-05-02T19:25:24.743323408Z [error] 2026-05-02 19:25:24,622 [INFO] httpx: HTTP Request: GET https://api.llama.fi/hacks "HTTP/1.1 200 OK"
+2026-05-02T19:25:24.872808914Z [error] 2026-05-02 19:25:24,870 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: fetched 513 hacks
+2026-05-02T19:27:05.290935838Z [error] 2026-05-02 19:27:03,601 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: done {'fetched': 513, 'inserted': 0, 'duplicates': 513, 'malformed': 0, 'trigger_errors': 0}
+2026-05-02T19:27:05.290941085Z [error] 2026-05-02 19:27:03,602 [INFO] apscheduler.executors.default: Job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-02 19:40:01 UTC)" executed successfully
+2026-05-02T19:27:06.367168185Z [error] 2026-05-02 19:27:06,359 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: done {'fetched': 513, 'inserted': 0, 'duplicates': 513, 'malformed': 0, 'trigger_errors': 0}
+2026-05-02T19:27:06.367171571Z [error] 2026-05-02 19:27:06,359 [INFO] apscheduler.executors.default: Job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-02 19:40:01 UTC)" executed successfully
+2026-05-02T19:28:16.725344980Z [info] INFO:     100.64.0.47:57212 - "GET / HTTP/1.1" 200 OK
+2026-05-02T19:31:16.549592747Z [info] INFO:     100.64.0.2:10926 - "GET / HTTP/1.1" 200 OK
+2026-05-02T19:34:16.370659079Z [info] INFO:     100.64.0.13:52482 - "GET / HTTP/1.1" 200 OK
+2026-05-02T19:37:16.157731993Z [info] INFO:     100.64.0.29:31330 - "GET / HTTP/1.1" 200 OK
+2026-05-02T19:40:05.910514836Z [error] 2026-05-02 19:40:01,711 [INFO] apscheduler.executors.default: Running job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-02 19:55:01 UTC)" (scheduled at 2026-05-02 19:40:01.711441+00:00)
+2026-05-02T19:40:05.910518496Z [error] 2026-05-02 19:40:01,716 [INFO] apscheduler.executors.default: Running job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-02 19:55:01 UTC)" (scheduled at 2026-05-02 19:40:01.711588+00:00)
+2026-05-02T19:40:05.910522319Z [error] 2026-05-02 19:40:01,768 [INFO] apscheduler.executors.default: Running job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-02 19:55:01 UTC)" (scheduled at 2026-05-02 19:40:01.768135+00:00)
+2026-05-02T19:40:05.910526205Z [error] 2026-05-02 19:40:01,773 [INFO] apscheduler.executors.default: Running job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-02 19:55:01 UTC)" (scheduled at 2026-05-02 19:40:01.768400+00:00)
+2026-05-02T19:40:05.910529881Z [error] 2026-05-02 19:40:01,913 [INFO] app.engine.watchlist: evaluate_watchlist: 1 active rows
+2026-05-02T19:40:05.910533738Z [error] 2026-05-02 19:40:01,978 [INFO] app.engine.watchlist: evaluate_watchlist: 1 active rows
+2026-05-02T19:40:05.910537433Z [error] 2026-05-02 19:40:02,308 [INFO] app.engine.watchlist: evaluate_watchlist: done {'rows_evaluated': 1, 'in_cooldown': 0, 'crossings': 0, 'events_inserted': 0, 'duplicates': 0, 'errors': 0}
+2026-05-02T19:40:05.910540740Z [error] 2026-05-02 19:40:02,308 [INFO] apscheduler.executors.default: Job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-02 19:55:01 UTC)" executed successfully
+2026-05-02T19:40:05.910544336Z [error] 2026-05-02 19:40:02,379 [INFO] app.engine.watchlist: evaluate_watchlist: done {'rows_evaluated': 1, 'in_cooldown': 0, 'crossings': 0, 'events_inserted': 0, 'duplicates': 0, 'errors': 0}
+2026-05-02T19:40:05.910548156Z [error] 2026-05-02 19:40:02,379 [INFO] apscheduler.executors.default: Job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-02 19:55:01 UTC)" executed successfully
+2026-05-02T19:40:05.912271999Z [error] 2026-05-02 19:40:02,516 [INFO] httpx: HTTP Request: GET https://api.llama.fi/hacks "HTTP/1.1 200 OK"
+2026-05-02T19:40:05.912280318Z [error] 2026-05-02 19:40:02,517 [INFO] httpx: HTTP Request: GET https://api.llama.fi/hacks "HTTP/1.1 200 OK"
+2026-05-02T19:40:05.912285071Z [error] 2026-05-02 19:40:02,701 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: fetched 513 hacks
+2026-05-02T19:40:05.912289049Z [error] 2026-05-02 19:40:02,702 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: fetched 513 hacks
+2026-05-02T19:40:13.164833802Z [info] INFO:     100.64.0.44:12198 - "GET / HTTP/1.1" 200 OK
+2026-05-02T19:41:53.348461180Z [error] 2026-05-02 19:41:44,192 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: done {'fetched': 513, 'inserted': 0, 'duplicates': 513, 'malformed': 0, 'trigger_errors': 0}
+2026-05-02T19:41:53.348464362Z [error] 2026-05-02 19:41:44,192 [INFO] apscheduler.executors.default: Job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-02 19:55:01 UTC)" executed successfully
+2026-05-02T19:41:53.348467291Z [error] 2026-05-02 19:41:44,431 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: done {'fetched': 513, 'inserted': 0, 'duplicates': 513, 'malformed': 0, 'trigger_errors': 0}
+2026-05-02T19:41:53.348470102Z [error] 2026-05-02 19:41:44,431 [INFO] apscheduler.executors.default: Job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-02 19:55:01 UTC)" executed successfully
+2026-05-02T19:43:13.128636814Z [info] INFO:     100.64.0.13:42996 - "GET / HTTP/1.1" 200 OK
+2026-05-02T19:46:13.454258315Z [info] INFO:     100.64.0.13:51772 - "GET / HTTP/1.1" 200 OK
+2026-05-02T19:49:13.231072955Z [info] INFO:     100.64.0.37:12680 - "GET / HTTP/1.1" 200 OK
+2026-05-02T19:51:43.638417005Z [error]     |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.638424461Z [error]     |   File "/usr/local/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+2026-05-02T19:51:43.638488429Z [error] 2026-05-02 19:51:37,765 [WARNING] app.ops.routes: keeper_cycle_start failed: name 'fetch_one_async' is not defined
+2026-05-02T19:51:43.638491280Z [info] INFO:     100.64.0.39:17380 - "POST /api/ops/keeper-cycle/start HTTP/1.1" 500 Internal Server Error
+2026-05-02T19:51:43.638494911Z [info] INFO:     100.64.0.56:42706 - "GET /api/scores HTTP/1.1" 500 Internal Server Error
+2026-05-02T19:51:43.638500176Z [error] ERROR:    Exception in ASGI application
+2026-05-02T19:51:43.638503232Z [error]   + Exception Group Traceback (most recent call last):
+2026-05-02T19:51:43.638506025Z [error]   |   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 76, in collapse_excgroups
+2026-05-02T19:51:43.638508647Z [error]   |     yield
+2026-05-02T19:51:43.638511570Z [error]   |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 186, in __call__
+2026-05-02T19:51:43.638514084Z [error]   |     async with anyio.create_task_group() as task_group:
+2026-05-02T19:51:43.638516814Z [error]   |   File "/usr/local/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 799, in __aexit__
+2026-05-02T19:51:43.638520394Z [error]   |     raise BaseExceptionGroup(
+2026-05-02T19:51:43.638523188Z [error]   | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+2026-05-02T19:51:43.638525900Z [error]   +-+---------------- 1 ----------------
+2026-05-02T19:51:43.638528519Z [error]     | Traceback (most recent call last):
+2026-05-02T19:51:43.638531140Z [error]     |   File "/usr/local/lib/python3.11/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+2026-05-02T19:51:43.638534635Z [error]     |     result = await app(  # type: ignore[func-returns-value]
+2026-05-02T19:51:43.639697396Z [error]     |     return await self.app(scope, receive, send)
+2026-05-02T19:51:43.639707091Z [error]     |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.639711464Z [error]     |   File "/usr/local/lib/python3.11/site-packages/fastapi/applications.py", line 1054, in __call__
+2026-05-02T19:51:43.639714981Z [error]     |     await super().__call__(scope, receive, send)
+2026-05-02T19:51:43.639718989Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/applications.py", line 113, in __call__
+2026-05-02T19:51:43.639722645Z [error]     |     await self.middleware_stack(scope, receive, send)
+2026-05-02T19:51:43.639726124Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 187, in __call__
+2026-05-02T19:51:43.639730868Z [error]     |     raise exc
+2026-05-02T19:51:43.639734664Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 165, in __call__
+2026-05-02T19:51:43.639737929Z [error]     |     await self.app(scope, receive, _send)
+2026-05-02T19:51:43.639743562Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 185, in __call__
+2026-05-02T19:51:43.639746766Z [error]     |     with collapse_excgroups():
+2026-05-02T19:51:43.639749945Z [error]     |   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
+2026-05-02T19:51:43.639753175Z [error]     |     self.gen.throw(typ, value, traceback)
+2026-05-02T19:51:43.639756792Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 82, in collapse_excgroups
+2026-05-02T19:51:43.639760969Z [error]     |     raise exc
+2026-05-02T19:51:43.639765213Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 187, in __call__
+2026-05-02T19:51:43.639769531Z [error]     |     response = await self.dispatch_func(request, call_next)
+2026-05-02T19:51:43.641048909Z [error]     |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.641056390Z [error]     |     raise exc
+2026-05-02T19:51:43.641056553Z [error]     |   File "/app/app/server.py", line 337, in rate_limit_and_track
+2026-05-02T19:51:43.641063181Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+2026-05-02T19:51:43.641063294Z [error]     |     response = await call_next(request)
+2026-05-02T19:51:43.641068664Z [error]     |                ^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.641070848Z [error]     |     await app(scope, receive, sender)
+2026-05-02T19:51:43.641074764Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 163, in call_next
+2026-05-02T19:51:43.641077241Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 715, in __call__
+2026-05-02T19:51:43.641081690Z [error]     |     await self.middleware_stack(scope, receive, send)
+2026-05-02T19:51:43.641083849Z [error]     |     raise app_exc
+2026-05-02T19:51:43.641088392Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 149, in coro
+2026-05-02T19:51:43.641093142Z [error]     |     await self.app(scope, receive_or_disconnect, send_no_error)
+2026-05-02T19:51:43.641096510Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/cors.py", line 85, in __call__
+2026-05-02T19:51:43.641099966Z [error]     |     await self.app(scope, receive, send)
+2026-05-02T19:51:43.641104130Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+2026-05-02T19:51:43.641107754Z [error]     |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+2026-05-02T19:51:43.641111178Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+2026-05-02T19:51:43.642706967Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 735, in app
+2026-05-02T19:51:43.642714987Z [error]     |     await route.handle(scope, receive, send)
+2026-05-02T19:51:43.642720851Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 288, in handle
+2026-05-02T19:51:43.642725477Z [error]     |     await self.app(scope, receive, send)
+2026-05-02T19:51:43.642730560Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 76, in app
+2026-05-02T19:51:43.642734964Z [error]     |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+2026-05-02T19:51:43.642741729Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+2026-05-02T19:51:43.642745888Z [error]     |     raise exc
+2026-05-02T19:51:43.642749103Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+2026-05-02T19:51:43.642752360Z [error]     |     await app(scope, receive, sender)
+2026-05-02T19:51:43.642755533Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 73, in app
+2026-05-02T19:51:43.642758416Z [error]     |     response = await f(request)
+2026-05-02T19:51:43.642762212Z [error]     |                ^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.642765317Z [error]     |   File "/usr/local/lib/python3.11/site-packages/fastapi/routing.py", line 301, in app
+2026-05-02T19:51:43.642769403Z [error]     |     raw_response = await run_endpoint_function(
+2026-05-02T19:51:43.642772288Z [error]     |                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.642775349Z [error]     |   File "/usr/local/lib/python3.11/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+2026-05-02T19:51:43.642778589Z [error]     |     return await dependant.call(**values)
+2026-05-02T19:51:43.644062329Z [error]     |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.644069096Z [error]     |   File "/app/app/server.py", line 1468, in get_scores
+2026-05-02T19:51:43.644073290Z [error]     |     rows = await fetch_all_async("""
+2026-05-02T19:51:43.644076321Z [error]     |                  ^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.644082080Z [error]     | NameError: name 'fetch_all_async' is not defined
+2026-05-02T19:51:43.644085393Z [error]     +------------------------------------
+2026-05-02T19:51:43.644088790Z [error] 
+2026-05-02T19:51:43.644092387Z [error] During handling of the above exception, another exception occurred:
+2026-05-02T19:51:43.644095988Z [error] 
+2026-05-02T19:51:43.644099650Z [error] Traceback (most recent call last):
+2026-05-02T19:51:43.644103051Z [error]   File "/usr/local/lib/python3.11/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+2026-05-02T19:51:43.644106970Z [error]     result = await app(  # type: ignore[func-returns-value]
+2026-05-02T19:51:43.644110231Z [error]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.644113126Z [error]   File "/usr/local/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+2026-05-02T19:51:43.644116288Z [error]     return await self.app(scope, receive, send)
+2026-05-02T19:51:43.644119889Z [error]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.644123813Z [error]   File "/usr/local/lib/python3.11/site-packages/fastapi/applications.py", line 1054, in __call__
+2026-05-02T19:51:43.644127215Z [error]     await super().__call__(scope, receive, send)
+2026-05-02T19:51:43.644131472Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/applications.py", line 113, in __call__
+2026-05-02T19:51:43.644134643Z [error]     await self.middleware_stack(scope, receive, send)
+2026-05-02T19:51:43.644141640Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 187, in __call__
+2026-05-02T19:51:43.645968514Z [error]     raise exc
+2026-05-02T19:51:43.645973046Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 165, in __call__
+2026-05-02T19:51:43.645976046Z [error]     await self.app(scope, receive, _send)
+2026-05-02T19:51:43.645979142Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 185, in __call__
+2026-05-02T19:51:43.645983694Z [error]     with collapse_excgroups():
+2026-05-02T19:51:43.645987563Z [error]   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
+2026-05-02T19:51:43.645992624Z [error]     self.gen.throw(typ, value, traceback)
+2026-05-02T19:51:43.645996424Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 82, in collapse_excgroups
+2026-05-02T19:51:43.645999966Z [error]     raise exc
+2026-05-02T19:51:43.646003251Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 187, in __call__
+2026-05-02T19:51:43.646006421Z [error]     response = await self.dispatch_func(request, call_next)
+2026-05-02T19:51:43.646010157Z [error]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.646014213Z [error]   File "/app/app/server.py", line 337, in rate_limit_and_track
+2026-05-02T19:51:43.646018234Z [error]     response = await call_next(request)
+2026-05-02T19:51:43.646021047Z [error]                ^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.646023936Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 163, in call_next
+2026-05-02T19:51:43.646026693Z [error]     raise app_exc
+2026-05-02T19:51:43.646029787Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 149, in coro
+2026-05-02T19:51:43.646032691Z [error]     await self.app(scope, receive_or_disconnect, send_no_error)
+2026-05-02T19:51:43.646035415Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/cors.py", line 85, in __call__
+2026-05-02T19:51:43.647512449Z [error]     await self.app(scope, receive, send)
+2026-05-02T19:51:43.647515844Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+2026-05-02T19:51:43.647518786Z [error]     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+2026-05-02T19:51:43.647522785Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+2026-05-02T19:51:43.647525967Z [error]     raise exc
+2026-05-02T19:51:43.647529464Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+2026-05-02T19:51:43.647532729Z [error]     await app(scope, receive, sender)
+2026-05-02T19:51:43.647535924Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 715, in __call__
+2026-05-02T19:51:43.647539261Z [error]     await self.middleware_stack(scope, receive, send)
+2026-05-02T19:51:43.647542614Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 735, in app
+2026-05-02T19:51:43.647545793Z [error]     await route.handle(scope, receive, send)
+2026-05-02T19:51:43.647548592Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 288, in handle
+2026-05-02T19:51:43.647551724Z [error]     await self.app(scope, receive, send)
+2026-05-02T19:51:43.647554887Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 76, in app
+2026-05-02T19:51:43.647558094Z [error]     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+2026-05-02T19:51:43.647561242Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+2026-05-02T19:51:43.647564178Z [error]     raise exc
+2026-05-02T19:51:43.647567801Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+2026-05-02T19:51:43.649349661Z [error]     await app(scope, receive, sender)
+2026-05-02T19:51:43.649355724Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 73, in app
+2026-05-02T19:51:43.649359144Z [error]     response = await f(request)
+2026-05-02T19:51:43.649362055Z [error]                ^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.649366075Z [error]   File "/usr/local/lib/python3.11/site-packages/fastapi/routing.py", line 301, in app
+2026-05-02T19:51:43.649369433Z [error]     raw_response = await run_endpoint_function(
+2026-05-02T19:51:43.649372716Z [error]                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.649376110Z [error]   File "/usr/local/lib/python3.11/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+2026-05-02T19:51:43.649379335Z [error]     return await dependant.call(**values)
+2026-05-02T19:51:43.649382758Z [error]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.649385940Z [error]   File "/app/app/server.py", line 1468, in get_scores
+2026-05-02T19:51:43.649389382Z [error]     rows = await fetch_all_async("""
+2026-05-02T19:51:43.649392680Z [error]                  ^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.649395960Z [error] NameError: name 'fetch_all_async' is not defined
+2026-05-02T19:51:43.649399268Z [info] INFO:     100.64.0.39:17380 - "GET /api/psi/scores HTTP/1.1" 500 Internal Server Error
+2026-05-02T19:51:43.649402550Z [error] ERROR:    Exception in ASGI application
+2026-05-02T19:51:43.649406015Z [error]   + Exception Group Traceback (most recent call last):
+2026-05-02T19:51:43.649409471Z [error]   |   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 76, in collapse_excgroups
+2026-05-02T19:51:43.649412597Z [error]   |     yield
+2026-05-02T19:51:43.649416534Z [error]   |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 186, in __call__
+2026-05-02T19:51:43.649419731Z [error]   |     async with anyio.create_task_group() as task_group:
+2026-05-02T19:51:43.651000266Z [error]     |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.651004318Z [error]   |   File "/usr/local/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 799, in __aexit__
+2026-05-02T19:51:43.651006393Z [error]     |   File "/usr/local/lib/python3.11/site-packages/fastapi/applications.py", line 1054, in __call__
+2026-05-02T19:51:43.651011598Z [error]     |     await super().__call__(scope, receive, send)
+2026-05-02T19:51:43.651016001Z [error]   |     raise BaseExceptionGroup(
+2026-05-02T19:51:43.651016799Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/applications.py", line 113, in __call__
+2026-05-02T19:51:43.651022492Z [error]     |     await self.middleware_stack(scope, receive, send)
+2026-05-02T19:51:43.651023660Z [error]   | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+2026-05-02T19:51:43.651026615Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 187, in __call__
+2026-05-02T19:51:43.651031327Z [error]   +-+---------------- 1 ----------------
+2026-05-02T19:51:43.651032110Z [error]     |     raise exc
+2026-05-02T19:51:43.651037078Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 165, in __call__
+2026-05-02T19:51:43.651038783Z [error]     | Traceback (most recent call last):
+2026-05-02T19:51:43.651043530Z [error]     |   File "/usr/local/lib/python3.11/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+2026-05-02T19:51:43.651047572Z [error]     |     result = await app(  # type: ignore[func-returns-value]
+2026-05-02T19:51:43.651051088Z [error]     |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.651054671Z [error]     |   File "/usr/local/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+2026-05-02T19:51:43.651058175Z [error]     |     return await self.app(scope, receive, send)
+2026-05-02T19:51:43.652831995Z [error]     |     await self.app(scope, receive_or_disconnect, send_no_error)
+2026-05-02T19:51:43.652835054Z [error]     |     await self.app(scope, receive, _send)
+2026-05-02T19:51:43.652837562Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/cors.py", line 85, in __call__
+2026-05-02T19:51:43.652842925Z [error]     |     await self.app(scope, receive, send)
+2026-05-02T19:51:43.652999939Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 185, in __call__
+2026-05-02T19:51:43.653008651Z [error]     |     with collapse_excgroups():
+2026-05-02T19:51:43.653012421Z [error]     |   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
+2026-05-02T19:51:43.653016335Z [error]     |     self.gen.throw(typ, value, traceback)
+2026-05-02T19:51:43.653020281Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 82, in collapse_excgroups
+2026-05-02T19:51:43.653024415Z [error]     |     raise exc
+2026-05-02T19:51:43.653028307Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 187, in __call__
+2026-05-02T19:51:43.653032276Z [error]     |     response = await self.dispatch_func(request, call_next)
+2026-05-02T19:51:43.653036911Z [error]     |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.653040421Z [error]     |   File "/app/app/server.py", line 337, in rate_limit_and_track
+2026-05-02T19:51:43.653045075Z [error]     |     response = await call_next(request)
+2026-05-02T19:51:43.653062304Z [error]     |                ^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.653066824Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 163, in call_next
+2026-05-02T19:51:43.653070788Z [error]     |     raise app_exc
+2026-05-02T19:51:43.653074217Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 149, in coro
+2026-05-02T19:51:43.654500911Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+2026-05-02T19:51:43.654505512Z [error]     |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+2026-05-02T19:51:43.654509449Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+2026-05-02T19:51:43.654513828Z [error]     |     raise exc
+2026-05-02T19:51:43.654518652Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+2026-05-02T19:51:43.654521885Z [error]     |     await app(scope, receive, sender)
+2026-05-02T19:51:43.654525231Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 715, in __call__
+2026-05-02T19:51:43.654528788Z [error]     |     await self.middleware_stack(scope, receive, send)
+2026-05-02T19:51:43.654532535Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 735, in app
+2026-05-02T19:51:43.654535891Z [error]     |     await route.handle(scope, receive, send)
+2026-05-02T19:51:43.654539604Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 288, in handle
+2026-05-02T19:51:43.654543584Z [error]     |     await self.app(scope, receive, send)
+2026-05-02T19:51:43.654546996Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 76, in app
+2026-05-02T19:51:43.654550008Z [error]     |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+2026-05-02T19:51:43.654556266Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+2026-05-02T19:51:43.654559289Z [error]     |     raise exc
+2026-05-02T19:51:43.654562101Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+2026-05-02T19:51:43.656294816Z [error] Traceback (most recent call last):
+2026-05-02T19:51:43.656300387Z [error]   File "/usr/local/lib/python3.11/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+2026-05-02T19:51:43.656305030Z [error]     result = await app(  # type: ignore[func-returns-value]
+2026-05-02T19:51:43.656315043Z [error]     |     await app(scope, receive, sender)
+2026-05-02T19:51:43.656356191Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 73, in app
+2026-05-02T19:51:43.656359433Z [error]     |     response = await f(request)
+2026-05-02T19:51:43.656362551Z [error]     |                ^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.656365476Z [error]     |   File "/usr/local/lib/python3.11/site-packages/fastapi/routing.py", line 301, in app
+2026-05-02T19:51:43.656369106Z [error]     |     raw_response = await run_endpoint_function(
+2026-05-02T19:51:43.656372523Z [error]     |                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.656375206Z [error]     |   File "/usr/local/lib/python3.11/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+2026-05-02T19:51:43.656377862Z [error]     |     return await dependant.call(**values)
+2026-05-02T19:51:43.656380607Z [error]     |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.656383365Z [error]     |   File "/app/app/server.py", line 4670, in psi_scores
+2026-05-02T19:51:43.656385971Z [error]     |     rows = await fetch_all_async("""
+2026-05-02T19:51:43.656389683Z [error]     |                  ^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.656392563Z [error]     | NameError: name 'fetch_all_async' is not defined
+2026-05-02T19:51:43.656395803Z [error]     +------------------------------------
+2026-05-02T19:51:43.656399183Z [error] 
+2026-05-02T19:51:43.656402297Z [error] During handling of the above exception, another exception occurred:
+2026-05-02T19:51:43.656405102Z [error] 
+2026-05-02T19:51:43.657834179Z [error]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.657839843Z [error]   File "/usr/local/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+2026-05-02T19:51:43.657840250Z [error]     await self.app(scope, receive, _send)
+2026-05-02T19:51:43.657843817Z [error]     return await self.app(scope, receive, send)
+2026-05-02T19:51:43.657847299Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 185, in __call__
+2026-05-02T19:51:43.657848588Z [error]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.657851804Z [error]   File "/usr/local/lib/python3.11/site-packages/fastapi/applications.py", line 1054, in __call__
+2026-05-02T19:51:43.657855648Z [error]     await super().__call__(scope, receive, send)
+2026-05-02T19:51:43.657856477Z [error]     with collapse_excgroups():
+2026-05-02T19:51:43.657860347Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/applications.py", line 113, in __call__
+2026-05-02T19:51:43.657861969Z [error]   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
+2026-05-02T19:51:43.657865508Z [error]     await self.middleware_stack(scope, receive, send)
+2026-05-02T19:51:43.657867486Z [error]     self.gen.throw(typ, value, traceback)
+2026-05-02T19:51:43.657872995Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 82, in collapse_excgroups
+2026-05-02T19:51:43.657873006Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 187, in __call__
+2026-05-02T19:51:43.657877912Z [error]     raise exc
+2026-05-02T19:51:43.657883451Z [error]     raise exc
+2026-05-02T19:51:43.657884541Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 187, in __call__
+2026-05-02T19:51:43.657889116Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 165, in __call__
+2026-05-02T19:51:43.659447961Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 715, in __call__
+2026-05-02T19:51:43.659452086Z [error]     response = await self.dispatch_func(request, call_next)
+2026-05-02T19:51:43.659452928Z [error]     await self.middleware_stack(scope, receive, send)
+2026-05-02T19:51:43.659458683Z [error]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.659462011Z [error]   File "/app/app/server.py", line 337, in rate_limit_and_track
+2026-05-02T19:51:43.659465030Z [error]     response = await call_next(request)
+2026-05-02T19:51:43.659469035Z [error]                ^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.659471991Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 163, in call_next
+2026-05-02T19:51:43.659474964Z [error]     raise app_exc
+2026-05-02T19:51:43.659477901Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 149, in coro
+2026-05-02T19:51:43.659482272Z [error]     await self.app(scope, receive_or_disconnect, send_no_error)
+2026-05-02T19:51:43.659486445Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/cors.py", line 85, in __call__
+2026-05-02T19:51:43.659489706Z [error]     await self.app(scope, receive, send)
+2026-05-02T19:51:43.659492689Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+2026-05-02T19:51:43.659495412Z [error]     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+2026-05-02T19:51:43.659498219Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+2026-05-02T19:51:43.659501018Z [error]     raise exc
+2026-05-02T19:51:43.659505419Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+2026-05-02T19:51:43.659508268Z [error]     await app(scope, receive, sender)
+2026-05-02T19:51:43.660988164Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 735, in app
+2026-05-02T19:51:43.660992075Z [error]     await route.handle(scope, receive, send)
+2026-05-02T19:51:43.660995206Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 288, in handle
+2026-05-02T19:51:43.660997973Z [error]     await self.app(scope, receive, send)
+2026-05-02T19:51:43.661000765Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 76, in app
+2026-05-02T19:51:43.661003718Z [error]     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+2026-05-02T19:51:43.661006429Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+2026-05-02T19:51:43.661009124Z [error]     raise exc
+2026-05-02T19:51:43.661011816Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+2026-05-02T19:51:43.661015148Z [error]     await app(scope, receive, sender)
+2026-05-02T19:51:43.661017970Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 73, in app
+2026-05-02T19:51:43.661020760Z [error]     response = await f(request)
+2026-05-02T19:51:43.661023444Z [error]                ^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.661026205Z [error]   File "/usr/local/lib/python3.11/site-packages/fastapi/routing.py", line 301, in app
+2026-05-02T19:51:43.661029021Z [error]     raw_response = await run_endpoint_function(
+2026-05-02T19:51:43.661032079Z [error]                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.661034899Z [error]   File "/usr/local/lib/python3.11/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+2026-05-02T19:51:43.661037776Z [error]     return await dependant.call(**values)
+2026-05-02T19:51:43.661040704Z [error]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.662559920Z [error]   | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+2026-05-02T19:51:43.662564060Z [error]   +-+---------------- 1 ----------------
+2026-05-02T19:51:43.662568430Z [error]   File "/app/app/server.py", line 4670, in psi_scores
+2026-05-02T19:51:43.662569120Z [error]     | Traceback (most recent call last):
+2026-05-02T19:51:43.662574418Z [error]     |   File "/usr/local/lib/python3.11/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+2026-05-02T19:51:43.662577262Z [error]     rows = await fetch_all_async("""
+2026-05-02T19:51:43.662595746Z [error]                  ^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.662608201Z [error] NameError: name 'fetch_all_async' is not defined
+2026-05-02T19:51:43.662612015Z [error] 2026-05-02 19:51:39,049 [WARNING] app.ops.routes: keeper_cycle_start failed: name 'fetch_one_async' is not defined
+2026-05-02T19:51:43.662615386Z [info] INFO:     100.64.0.47:46270 - "POST /api/ops/keeper-cycle/start HTTP/1.1" 500 Internal Server Error
+2026-05-02T19:51:43.662621349Z [info] INFO:     100.64.0.48:16870 - "GET /api/scores HTTP/1.1" 500 Internal Server Error
+2026-05-02T19:51:43.662625132Z [error] ERROR:    Exception in ASGI application
+2026-05-02T19:51:43.662628434Z [error]   + Exception Group Traceback (most recent call last):
+2026-05-02T19:51:43.662631717Z [error]   |   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 76, in collapse_excgroups
+2026-05-02T19:51:43.662634850Z [error]   |     yield
+2026-05-02T19:51:43.662637937Z [error]   |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 186, in __call__
+2026-05-02T19:51:43.662641612Z [error]   |     async with anyio.create_task_group() as task_group:
+2026-05-02T19:51:43.662644626Z [error]   |   File "/usr/local/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 799, in __aexit__
+2026-05-02T19:51:43.662647667Z [error]   |     raise BaseExceptionGroup(
+2026-05-02T19:51:43.664095611Z [error]     |     result = await app(  # type: ignore[func-returns-value]
+2026-05-02T19:51:43.664101144Z [error]     |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.664107131Z [error]     |   File "/usr/local/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+2026-05-02T19:51:43.664111260Z [error]     |     return await self.app(scope, receive, send)
+2026-05-02T19:51:43.664115373Z [error]     |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.664119396Z [error]     |   File "/usr/local/lib/python3.11/site-packages/fastapi/applications.py", line 1054, in __call__
+2026-05-02T19:51:43.664123913Z [error]     |     await super().__call__(scope, receive, send)
+2026-05-02T19:51:43.664127818Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/applications.py", line 113, in __call__
+2026-05-02T19:51:43.664131843Z [error]     |     await self.middleware_stack(scope, receive, send)
+2026-05-02T19:51:43.664135388Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 187, in __call__
+2026-05-02T19:51:43.664146788Z [error]     |     raise exc
+2026-05-02T19:51:43.664150500Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 165, in __call__
+2026-05-02T19:51:43.664153928Z [error]     |     await self.app(scope, receive, _send)
+2026-05-02T19:51:43.664157465Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 185, in __call__
+2026-05-02T19:51:43.664161899Z [error]     |     with collapse_excgroups():
+2026-05-02T19:51:43.664164982Z [error]     |   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
+2026-05-02T19:51:43.664169799Z [error]     |     self.gen.throw(typ, value, traceback)
+2026-05-02T19:51:43.664172606Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 82, in collapse_excgroups
+2026-05-02T19:51:43.665655526Z [error]     |     raise exc
+2026-05-02T19:51:43.665660161Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 187, in __call__
+2026-05-02T19:51:43.665663793Z [error]     |     response = await self.dispatch_func(request, call_next)
+2026-05-02T19:51:43.665667054Z [error]     |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.665670404Z [error]     |   File "/app/app/server.py", line 337, in rate_limit_and_track
+2026-05-02T19:51:43.665673498Z [error]     |     response = await call_next(request)
+2026-05-02T19:51:43.665676880Z [error]     |                ^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.665679859Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 163, in call_next
+2026-05-02T19:51:43.665682776Z [error]     |     raise app_exc
+2026-05-02T19:51:43.665687098Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 149, in coro
+2026-05-02T19:51:43.665690399Z [error]     |     await self.app(scope, receive_or_disconnect, send_no_error)
+2026-05-02T19:51:43.665693681Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/cors.py", line 85, in __call__
+2026-05-02T19:51:43.665697226Z [error]     |     await self.app(scope, receive, send)
+2026-05-02T19:51:43.665700838Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+2026-05-02T19:51:43.665704561Z [error]     |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+2026-05-02T19:51:43.665707640Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+2026-05-02T19:51:43.665710756Z [error]     |     raise exc
+2026-05-02T19:51:43.665718892Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+2026-05-02T19:51:43.667271028Z [error]     |     await app(scope, receive, sender)
+2026-05-02T19:51:43.667276594Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 715, in __call__
+2026-05-02T19:51:43.667280544Z [error]     |     await self.middleware_stack(scope, receive, send)
+2026-05-02T19:51:43.667283893Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 735, in app
+2026-05-02T19:51:43.667287591Z [error]     |     await route.handle(scope, receive, send)
+2026-05-02T19:51:43.667291383Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 288, in handle
+2026-05-02T19:51:43.667296496Z [error]     |     await self.app(scope, receive, send)
+2026-05-02T19:51:43.667301280Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 76, in app
+2026-05-02T19:51:43.667304608Z [error]     |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+2026-05-02T19:51:43.667308074Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+2026-05-02T19:51:43.667311137Z [error]     |     raise exc
+2026-05-02T19:51:43.667314595Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+2026-05-02T19:51:43.667318055Z [error]     |     await app(scope, receive, sender)
+2026-05-02T19:51:43.667321158Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 73, in app
+2026-05-02T19:51:43.667324344Z [error]     |     response = await f(request)
+2026-05-02T19:51:43.667328486Z [error]     |                ^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.667332135Z [error]     |   File "/usr/local/lib/python3.11/site-packages/fastapi/routing.py", line 301, in app
+2026-05-02T19:51:43.667336143Z [error]     |     raw_response = await run_endpoint_function(
+2026-05-02T19:51:43.668871719Z [error]   File "/usr/local/lib/python3.11/site-packages/fastapi/applications.py", line 1054, in __call__
+2026-05-02T19:51:43.668875039Z [error]     await super().__call__(scope, receive, send)
+2026-05-02T19:51:43.668886817Z [error]     |                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.668891541Z [error]     |   File "/usr/local/lib/python3.11/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+2026-05-02T19:51:43.668895251Z [error]     |     return await dependant.call(**values)
+2026-05-02T19:51:43.668898446Z [error]     |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.668901349Z [error]     |   File "/app/app/server.py", line 1468, in get_scores
+2026-05-02T19:51:43.668904209Z [error]     |     rows = await fetch_all_async("""
+2026-05-02T19:51:43.668907115Z [error]     |                  ^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.668910473Z [error]     | NameError: name 'fetch_all_async' is not defined
+2026-05-02T19:51:43.668913651Z [error]     +------------------------------------
+2026-05-02T19:51:43.668916540Z [error] 
+2026-05-02T19:51:43.668919263Z [error] During handling of the above exception, another exception occurred:
+2026-05-02T19:51:43.668929841Z [error] 
+2026-05-02T19:51:43.668932763Z [error] Traceback (most recent call last):
+2026-05-02T19:51:43.668935401Z [error]   File "/usr/local/lib/python3.11/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+2026-05-02T19:51:43.668938346Z [error]     result = await app(  # type: ignore[func-returns-value]
+2026-05-02T19:51:43.668940956Z [error]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.668943758Z [error]   File "/usr/local/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+2026-05-02T19:51:43.668946426Z [error]     return await self.app(scope, receive, send)
+2026-05-02T19:51:43.668949027Z [error]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.670551874Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/applications.py", line 113, in __call__
+2026-05-02T19:51:43.670551989Z [error]     raise exc
+2026-05-02T19:51:43.670559844Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 187, in __call__
+2026-05-02T19:51:43.670559977Z [error]     await self.middleware_stack(scope, receive, send)
+2026-05-02T19:51:43.670565760Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 187, in __call__
+2026-05-02T19:51:43.670566671Z [error]     response = await self.dispatch_func(request, call_next)
+2026-05-02T19:51:43.670570754Z [error]     raise exc
+2026-05-02T19:51:43.670572646Z [error]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.670576623Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 165, in __call__
+2026-05-02T19:51:43.670577992Z [error]   File "/app/app/server.py", line 337, in rate_limit_and_track
+2026-05-02T19:51:43.670581914Z [error]     await self.app(scope, receive, _send)
+2026-05-02T19:51:43.670583543Z [error]     response = await call_next(request)
+2026-05-02T19:51:43.670586810Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 185, in __call__
+2026-05-02T19:51:43.670589006Z [error]                ^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.670593877Z [error]     with collapse_excgroups():
+2026-05-02T19:51:43.670594028Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 163, in call_next
+2026-05-02T19:51:43.670597555Z [error]   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
+2026-05-02T19:51:43.670600481Z [error]     self.gen.throw(typ, value, traceback)
+2026-05-02T19:51:43.670603027Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 82, in collapse_excgroups
+2026-05-02T19:51:43.671971152Z [error]     await route.handle(scope, receive, send)
+2026-05-02T19:51:43.671977973Z [error]     raise app_exc
+2026-05-02T19:51:43.671978173Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 288, in handle
+2026-05-02T19:51:43.671983466Z [error]     await self.app(scope, receive, send)
+2026-05-02T19:51:43.671985734Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 149, in coro
+2026-05-02T19:51:43.671989634Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 76, in app
+2026-05-02T19:51:43.671991896Z [error]     await self.app(scope, receive_or_disconnect, send_no_error)
+2026-05-02T19:51:43.671995237Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/cors.py", line 85, in __call__
+2026-05-02T19:51:43.671998000Z [error]     await self.app(scope, receive, send)
+2026-05-02T19:51:43.672000997Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+2026-05-02T19:51:43.672004045Z [error]     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+2026-05-02T19:51:43.672007177Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+2026-05-02T19:51:43.672010300Z [error]     raise exc
+2026-05-02T19:51:43.672013419Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+2026-05-02T19:51:43.672016386Z [error]     await app(scope, receive, sender)
+2026-05-02T19:51:43.672019107Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 715, in __call__
+2026-05-02T19:51:43.672022852Z [error]     await self.middleware_stack(scope, receive, send)
+2026-05-02T19:51:43.672025491Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 735, in app
+2026-05-02T19:51:43.673576768Z [error]     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+2026-05-02T19:51:43.673582377Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+2026-05-02T19:51:43.673586996Z [error]     raise exc
+2026-05-02T19:51:43.673590095Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+2026-05-02T19:51:43.673593170Z [error]     await app(scope, receive, sender)
+2026-05-02T19:51:43.673596793Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 73, in app
+2026-05-02T19:51:43.673599709Z [error]     response = await f(request)
+2026-05-02T19:51:43.673603047Z [error]                ^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.673608207Z [error]   File "/usr/local/lib/python3.11/site-packages/fastapi/routing.py", line 301, in app
+2026-05-02T19:51:43.673611679Z [error]     raw_response = await run_endpoint_function(
+2026-05-02T19:51:43.673615100Z [error]                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.673618720Z [error]   File "/usr/local/lib/python3.11/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+2026-05-02T19:51:43.673621456Z [error]     return await dependant.call(**values)
+2026-05-02T19:51:43.673625023Z [error]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.673627614Z [error]   File "/app/app/server.py", line 1468, in get_scores
+2026-05-02T19:51:43.673630419Z [error]     rows = await fetch_all_async("""
+2026-05-02T19:51:43.673633444Z [error]                  ^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.673636300Z [error] NameError: name 'fetch_all_async' is not defined
+2026-05-02T19:51:43.673639307Z [info] INFO:     100.64.0.56:42712 - "GET /api/psi/scores HTTP/1.1" 500 Internal Server Error
+2026-05-02T19:51:43.673642850Z [error] ERROR:    Exception in ASGI application
+2026-05-02T19:51:43.673645590Z [error]   + Exception Group Traceback (most recent call last):
+2026-05-02T19:51:43.675286840Z [error]     |     return await self.app(scope, receive, send)
+2026-05-02T19:51:43.675295403Z [error]     |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.675298052Z [error]   |   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 76, in collapse_excgroups
+2026-05-02T19:51:43.675303103Z [error]     |   File "/usr/local/lib/python3.11/site-packages/fastapi/applications.py", line 1054, in __call__
+2026-05-02T19:51:43.675305671Z [error]   |     yield
+2026-05-02T19:51:43.675310099Z [error]   |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 186, in __call__
+2026-05-02T19:51:43.675311869Z [error]     |     await super().__call__(scope, receive, send)
+2026-05-02T19:51:43.675313798Z [error]   |     async with anyio.create_task_group() as task_group:
+2026-05-02T19:51:43.675318238Z [error]   |   File "/usr/local/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 799, in __aexit__
+2026-05-02T19:51:43.675319650Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/applications.py", line 113, in __call__
+2026-05-02T19:51:43.675322743Z [error]   |     raise BaseExceptionGroup(
+2026-05-02T19:51:43.675325916Z [error]   | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+2026-05-02T19:51:43.675328948Z [error]   +-+---------------- 1 ----------------
+2026-05-02T19:51:43.675335069Z [error]     | Traceback (most recent call last):
+2026-05-02T19:51:43.675337904Z [error]     |   File "/usr/local/lib/python3.11/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+2026-05-02T19:51:43.675340731Z [error]     |     result = await app(  # type: ignore[func-returns-value]
+2026-05-02T19:51:43.675343408Z [error]     |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.675346262Z [error]     |   File "/usr/local/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+2026-05-02T19:51:43.676796984Z [error]     |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.676803252Z [error]     |   File "/app/app/server.py", line 337, in rate_limit_and_track
+2026-05-02T19:51:43.676805705Z [error]     |     await self.middleware_stack(scope, receive, send)
+2026-05-02T19:51:43.676810301Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 187, in __call__
+2026-05-02T19:51:43.676811307Z [error]     |     response = await call_next(request)
+2026-05-02T19:51:43.676814395Z [error]     |     raise exc
+2026-05-02T19:51:43.676818879Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 165, in __call__
+2026-05-02T19:51:43.676819550Z [error]     |                ^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.676823018Z [error]     |     await self.app(scope, receive, _send)
+2026-05-02T19:51:43.676826539Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 163, in call_next
+2026-05-02T19:51:43.676827829Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 185, in __call__
+2026-05-02T19:51:43.676832704Z [error]     |     with collapse_excgroups():
+2026-05-02T19:51:43.676834514Z [error]     |     raise app_exc
+2026-05-02T19:51:43.676837296Z [error]     |   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
+2026-05-02T19:51:43.676840413Z [error]     |     self.gen.throw(typ, value, traceback)
+2026-05-02T19:51:43.676844542Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 82, in collapse_excgroups
+2026-05-02T19:51:43.676847187Z [error]     |     raise exc
+2026-05-02T19:51:43.676849630Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 187, in __call__
+2026-05-02T19:51:43.676852202Z [error]     |     response = await self.dispatch_func(request, call_next)
+2026-05-02T19:51:43.678516775Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 149, in coro
+2026-05-02T19:51:43.678521992Z [error]     |     await self.app(scope, receive_or_disconnect, send_no_error)
+2026-05-02T19:51:43.678525372Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/cors.py", line 85, in __call__
+2026-05-02T19:51:43.678528192Z [error]     |     await self.app(scope, receive, send)
+2026-05-02T19:51:43.678531184Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+2026-05-02T19:51:43.678535686Z [error]     |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+2026-05-02T19:51:43.678539781Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+2026-05-02T19:51:43.678543285Z [error]     |     raise exc
+2026-05-02T19:51:43.678547262Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+2026-05-02T19:51:43.678550374Z [error]     |     await app(scope, receive, sender)
+2026-05-02T19:51:43.678553162Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 715, in __call__
+2026-05-02T19:51:43.678555973Z [error]     |     await self.middleware_stack(scope, receive, send)
+2026-05-02T19:51:43.678558695Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 735, in app
+2026-05-02T19:51:43.678564692Z [error]     |     await route.handle(scope, receive, send)
+2026-05-02T19:51:43.678567989Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 288, in handle
+2026-05-02T19:51:43.678571124Z [error]     |     await self.app(scope, receive, send)
+2026-05-02T19:51:43.678574796Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 76, in app
+2026-05-02T19:51:43.680030077Z [error]     |   File "/app/app/server.py", line 4670, in psi_scores
+2026-05-02T19:51:43.680032541Z [error]     |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+2026-05-02T19:51:43.680035334Z [error]     |     rows = await fetch_all_async("""
+2026-05-02T19:51:43.680039611Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+2026-05-02T19:51:43.680041183Z [error]     |                  ^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.680044768Z [error]     |     raise exc
+2026-05-02T19:51:43.680046517Z [error]     | NameError: name 'fetch_all_async' is not defined
+2026-05-02T19:51:43.680049828Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+2026-05-02T19:51:43.680051302Z [error]     +------------------------------------
+2026-05-02T19:51:43.680056277Z [error]     |     await app(scope, receive, sender)
+2026-05-02T19:51:43.680056505Z [error] 
+2026-05-02T19:51:43.680060462Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 73, in app
+2026-05-02T19:51:43.680063583Z [error]     |     response = await f(request)
+2026-05-02T19:51:43.680066257Z [error]     |                ^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.680068997Z [error]     |   File "/usr/local/lib/python3.11/site-packages/fastapi/routing.py", line 301, in app
+2026-05-02T19:51:43.680073034Z [error]     |     raw_response = await run_endpoint_function(
+2026-05-02T19:51:43.680075788Z [error]     |                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.680078532Z [error]     |   File "/usr/local/lib/python3.11/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+2026-05-02T19:51:43.680081246Z [error]     |     return await dependant.call(**values)
+2026-05-02T19:51:43.680083935Z [error]     |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.681497520Z [error] During handling of the above exception, another exception occurred:
+2026-05-02T19:51:43.681501959Z [error] 
+2026-05-02T19:51:43.681505506Z [error] Traceback (most recent call last):
+2026-05-02T19:51:43.681508776Z [error]   File "/usr/local/lib/python3.11/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+2026-05-02T19:51:43.681511873Z [error]     result = await app(  # type: ignore[func-returns-value]
+2026-05-02T19:51:43.681515011Z [error]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.681518644Z [error]   File "/usr/local/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+2026-05-02T19:51:43.681521777Z [error]     return await self.app(scope, receive, send)
+2026-05-02T19:51:43.681525494Z [error]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.681528983Z [error]   File "/usr/local/lib/python3.11/site-packages/fastapi/applications.py", line 1054, in __call__
+2026-05-02T19:51:43.681533576Z [error]     await super().__call__(scope, receive, send)
+2026-05-02T19:51:43.683077642Z [error]   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
+2026-05-02T19:51:43.684784869Z [error]     raise exc
+2026-05-02T19:51:43.686779505Z [error]     raw_response = await run_endpoint_function(
+2026-05-02T19:51:43.689746324Z [error]     |   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
+2026-05-02T19:51:43.691397301Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+2026-05-02T19:51:43.692918799Z [error]     |                ^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.694347090Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 185, in __call__
+2026-05-02T19:51:43.697580293Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 288, in handle
+2026-05-02T19:51:43.699371766Z [error] NameError: name 'fetch_all_async' is not defined
+2026-05-02T19:51:43.700695935Z [error]     |   File "/usr/local/lib/python3.11/site-packages/fastapi/applications.py", line 1054, in __call__
+2026-05-02T19:51:43.703615241Z [error]     |   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 288, in handle
+2026-05-02T19:51:43.705219951Z [error]     |                   ^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.707167849Z [error]     await self.app(scope, receive, _send)
+2026-05-02T19:51:43.708940622Z [error]     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+2026-05-02T19:51:43.710860972Z [error]     response = await f(request)
+2026-05-02T19:51:43.712401572Z [error]     |     return await self.app(scope, receive, send)
+2026-05-02T19:51:43.715354574Z [error]     |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+2026-05-02T19:51:43.717201655Z [error]     |     response = await f(request)
+2026-05-02T19:51:43.718701127Z [error]     return await self.app(scope, receive, send)
+2026-05-02T19:51:43.721757643Z [error]   File "/usr/local/lib/python3.11/site-packages/starlette/routing.py", line 288, in handle
+2026-05-02T19:51:43.723326613Z [error]                  ^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.725030706Z [error]     |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.726716878Z [error]     |   File "/app/app/server.py", line 337, in rate_limit_and_track
+2026-05-02T19:51:43.728550971Z [error]     |     await route.handle(scope, receive, send)
+2026-05-02T19:51:43.730358570Z [error]     |                   ^^^^^^^^^^^^^^^
+2026-05-02T19:51:43.733562972Z [error]     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+2026-05-02T19:51:43.735084731Z [error]     response = await f(request)
+2026-05-02T19:51:58.165319680Z [error] Railway rate limit of 500 logs/sec reached for replica, update your application to reduce the logging rate. Messages dropped: 602
+2026-05-02T19:52:13.829091491Z [info] INFO:     100.64.0.43:25968 - "GET / HTTP/1.1" 200 OK
+2026-05-02T19:52:13.829095693Z [info] INFO:     100.64.0.25:28008 - "GET / HTTP/1.1" 200 OK
+2026-05-02T19:55:03.631310958Z [error] 2026-05-02 19:55:01,712 [INFO] apscheduler.executors.default: Running job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-02 20:10:01 UTC)" (scheduled at 2026-05-02 19:55:01.711441+00:00)
+2026-05-02T19:55:03.631318582Z [error] 2026-05-02 19:55:01,717 [INFO] apscheduler.executors.default: Running job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-02 20:10:01 UTC)" (scheduled at 2026-05-02 19:55:01.711588+00:00)
+2026-05-02T19:55:03.631323296Z [error] 2026-05-02 19:55:01,768 [INFO] apscheduler.executors.default: Running job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-02 20:10:01 UTC)" (scheduled at 2026-05-02 19:55:01.768135+00:00)
+2026-05-02T19:55:03.631326499Z [error] 2026-05-02 19:55:01,772 [INFO] apscheduler.executors.default: Running job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-02 20:10:01 UTC)" (scheduled at 2026-05-02 19:55:01.768400+00:00)
+2026-05-02T19:55:03.631329885Z [error] 2026-05-02 19:55:01,915 [INFO] app.engine.watchlist: evaluate_watchlist: 1 active rows
+2026-05-02T19:55:03.631333802Z [error] 2026-05-02 19:55:01,969 [INFO] app.engine.watchlist: evaluate_watchlist: 1 active rows
+2026-05-02T19:55:03.631337816Z [error] 2026-05-02 19:55:02,311 [INFO] app.engine.watchlist: evaluate_watchlist: done {'rows_evaluated': 1, 'in_cooldown': 0, 'crossings': 0, 'events_inserted': 0, 'duplicates': 0, 'errors': 0}
+2026-05-02T19:55:03.631341705Z [error] 2026-05-02 19:55:02,311 [INFO] apscheduler.executors.default: Job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-02 20:10:01 UTC)" executed successfully
+2026-05-02T19:55:03.631345302Z [error] 2026-05-02 19:55:02,363 [INFO] app.engine.watchlist: evaluate_watchlist: done {'rows_evaluated': 1, 'in_cooldown': 0, 'crossings': 0, 'events_inserted': 0, 'duplicates': 0, 'errors': 0}
+2026-05-02T19:55:03.631349367Z [error] 2026-05-02 19:55:02,363 [INFO] apscheduler.executors.default: Job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-02 20:10:01 UTC)" executed successfully
+2026-05-02T19:55:03.633532641Z [error] 2026-05-02 19:55:02,514 [INFO] httpx: HTTP Request: GET https://api.llama.fi/hacks "HTTP/1.1 200 OK"
+2026-05-02T19:55:03.633537109Z [error] 2026-05-02 19:55:02,515 [INFO] httpx: HTTP Request: GET https://api.llama.fi/hacks "HTTP/1.1 200 OK"
+2026-05-02T19:55:03.633540052Z [error] 2026-05-02 19:55:02,701 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: fetched 513 hacks
+2026-05-02T19:55:03.633544807Z [error] 2026-05-02 19:55:02,702 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: fetched 513 hacks
+2026-05-02T19:55:06.558852335Z [info] INFO:     100.64.0.40:27802 - "GET / HTTP/1.1" 200 OK
+2026-05-02T19:56:46.326952646Z [error] 2026-05-02 19:56:44,436 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: done {'fetched': 513, 'inserted': 0, 'duplicates': 513, 'malformed': 0, 'trigger_errors': 0}
+2026-05-02T19:56:46.326959436Z [error] 2026-05-02 19:56:44,437 [INFO] apscheduler.executors.default: Job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-02 20:10:01 UTC)" executed successfully
+2026-05-02T19:56:46.326964787Z [error] 2026-05-02 19:56:44,944 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: done {'fetched': 513, 'inserted': 0, 'duplicates': 513, 'malformed': 0, 'trigger_errors': 0}
+2026-05-02T19:56:46.326967985Z [error] 2026-05-02 19:56:44,944 [INFO] apscheduler.executors.default: Job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-02 20:10:01 UTC)" executed successfully
+2026-05-02T19:58:06.339043489Z [info] INFO:     100.64.0.38:43138 - "GET / HTTP/1.1" 200 OK
+2026-05-02T19:58:06.339048139Z [info] INFO:     100.64.0.26:47686 - "GET /favicon.ico HTTP/1.1" 200 OK
+2026-05-02T19:58:13.265036981Z [info] INFO:     100.64.0.16:56280 - "GET / HTTP/1.1" 200 OK
+2026-05-02T20:01:23.783636256Z [info] INFO:     100.64.0.29:47508 - "GET / HTTP/1.1" 200 OK
+2026-05-02T20:04:23.568652474Z [info] INFO:     100.64.0.53:41246 - "GET / HTTP/1.1" 200 OK
