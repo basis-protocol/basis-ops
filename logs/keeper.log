@@ -1,271 +1,31 @@
-2026-05-02T02:07:25.350639683Z [info] Starting Container
-2026-05-02T02:07:26.136461732Z [info] Basis Keeper starting
-2026-05-02T02:07:26.136462922Z [info] === Keeper cycle start ===
-2026-05-02T02:07:26.136468516Z [info] Keeper wallet address
-2026-05-02T02:07:26.136474810Z [info] Fetching scores from API
-2026-05-02T02:07:26.136474948Z [error] ALERT: Keeper started. Interval: 3600s. Wallet: 0x2dF0f62D1861Aa59A4430e3B2b2E7a0D29Cb723b
-2026-05-02T02:07:26.136479844Z [info] Wallet balances
-2026-05-02T02:07:26.136482496Z [warn] Failed to fetch API scores — skipping score updates, using static TOKEN_ADDRESSES for staleness check
-2026-05-02T02:07:26.136486069Z [error] ALERT: Keeper wallet balance LOW: 0.000912 ETH on Arbitrum
-2026-05-02T02:07:26.136487545Z [error] ALERT: Basis keeper: API fetch failed — API returned HTTP 502: {"status":"error","code":502,"message":"Application failed to respond","request_id":"mXi019AiTn-fi_Eg2prcFg"}
-2026-05-02T02:07:26.136581505Z [info] ◇ injected env (0) from .env // tip: ◈ secrets for agents [www.dotenvx.com]
-2026-05-02T02:07:26.137654656Z [info] No on-chain updates needed this cycle
-2026-05-02T02:07:26.137663438Z [error] ALERT: STALE SCORE: 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 not updated in 7200s
-2026-05-02T02:07:26.137668228Z [info] No updates to publish
-2026-05-02T02:07:26.137678156Z [info] No updates to publish
-2026-05-02T02:07:26.137684041Z [warn] PSI score publishing failed (non-blocking)
-2026-05-02T02:07:26.137686196Z [info] Fetching PSI scores from API
-2026-05-02T02:07:26.137689076Z [info] Diff complete
-2026-05-02T02:07:26.185011655Z [error] ALERT: STALE SCORE: 0xdac17f958d2ee523a2206206994597c13d831ec7 not updated in 7200s
-2026-05-02T02:07:26.227111681Z [error] ALERT: STALE SCORE: 0x6b175474e89094c44da98b954eedeac495271d0f not updated in 7200s
-2026-05-02T02:07:26.286907728Z [error] ALERT: STALE SCORE: 0x853d955acef822db058eb8505911ed77f175b99e not updated in 7200s
-2026-05-02T02:07:26.318157244Z [error] ALERT: STALE SCORE: 0x6c3ea9036406852006290770bedfcaba0e23a0e8 not updated in 7200s
-2026-05-02T02:07:26.367460975Z [error] ALERT: STALE SCORE: 0xc5f0f7b66764f6ec8c8dff7ba683102295e16409 not updated in 7200s
-2026-05-02T02:07:26.413306707Z [error] ALERT: STALE SCORE: 0x0000000000085d4780b73119b644ae5ecd22b376 not updated in 7200s
-2026-05-02T02:07:26.458430132Z [error] ALERT: STALE SCORE: 0x0c10bf8fcb7bf5412187a595ab97a3609160b5c6 not updated in 7200s
-2026-05-02T02:07:26.493311258Z [error] ALERT: STALE SCORE: 0x4c9edd5852cd905f086c759e8383e09bff1e68b3 not updated in 7200s
-2026-05-02T02:07:26.571969330Z [error] ALERT: STALE SCORE: 0x8d0d000ee44948fc98c9b98a4fa4921476f08b0d not updated in 7200s
-2026-05-02T02:07:26.585506513Z [info] === Keeper cycle complete ===
-2026-05-02T02:07:26.630965213Z [info] Wallet balances
-2026-05-02T02:07:26.630968372Z [error] ALERT: Keeper wallet balance LOW: 0.000912 ETH on Arbitrum
-2026-05-02T02:07:26.630971328Z [info] Sleeping 3600s until next cycle
-2026-05-02T03:07:34.955564761Z [info] === Keeper cycle start ===
-2026-05-02T03:07:34.955569171Z [info] Fetching scores from API
-2026-05-02T03:07:34.955572602Z [warn] Failed to fetch API scores — skipping score updates, using static TOKEN_ADDRESSES for staleness check
-2026-05-02T03:07:34.955576151Z [error] ALERT: Basis keeper: API fetch failed — API returned HTTP 502: {"status":"error","code":502,"message":"Application failed to respond","request_id":"NoiWshnARku9anTjnpoFkQ"}
-2026-05-02T03:07:34.955579460Z [info] Diff complete
-2026-05-02T03:07:34.955582773Z [info] No updates to publish
-2026-05-02T03:07:34.955586863Z [info] No updates to publish
-2026-05-02T03:07:34.955590145Z [info] Fetching PSI scores from API
-2026-05-02T03:07:34.955594331Z [warn] PSI score publishing failed (non-blocking)
-2026-05-02T03:07:34.955597253Z [info] No on-chain updates needed this cycle
-2026-05-02T03:07:34.956313268Z [error] ALERT: STALE SCORE: 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 not updated in 7200s
-2026-05-02T03:07:34.956318500Z [error] ALERT: STALE SCORE: 0xdac17f958d2ee523a2206206994597c13d831ec7 not updated in 7200s
-2026-05-02T03:07:34.956321877Z [error] ALERT: STALE SCORE: 0x6b175474e89094c44da98b954eedeac495271d0f not updated in 7200s
-2026-05-02T03:07:34.956325305Z [error] ALERT: STALE SCORE: 0x853d955acef822db058eb8505911ed77f175b99e not updated in 7200s
-2026-05-02T03:07:34.956328889Z [error] ALERT: STALE SCORE: 0x6c3ea9036406852006290770bedfcaba0e23a0e8 not updated in 7200s
-2026-05-02T03:07:34.956332011Z [error] ALERT: STALE SCORE: 0xc5f0f7b66764f6ec8c8dff7ba683102295e16409 not updated in 7200s
-2026-05-02T03:07:34.956336509Z [error] ALERT: STALE SCORE: 0x0000000000085d4780b73119b644ae5ecd22b376 not updated in 7200s
-2026-05-02T03:07:34.956341110Z [error] ALERT: STALE SCORE: 0x0c10bf8fcb7bf5412187a595ab97a3609160b5c6 not updated in 7200s
-2026-05-02T03:07:34.956345171Z [error] ALERT: STALE SCORE: 0x4c9edd5852cd905f086c759e8383e09bff1e68b3 not updated in 7200s
-2026-05-02T03:07:34.956349405Z [error] ALERT: STALE SCORE: 0x8d0d000ee44948fc98c9b98a4fa4921476f08b0d not updated in 7200s
-2026-05-02T03:07:34.956353379Z [info] === Keeper cycle complete ===
-2026-05-02T03:07:34.957420458Z [info] Wallet balances
-2026-05-02T03:07:34.957425164Z [error] ALERT: Keeper wallet balance LOW: 0.000912 ETH on Arbitrum
-2026-05-02T03:07:34.957429790Z [info] Sleeping 3600s until next cycle
-2026-05-02T04:07:29.118447346Z [info] No updates to publish
-2026-05-02T04:07:29.118454899Z [info] Fetching PSI scores from API
-2026-05-02T04:07:29.118484220Z [warn] PSI score publishing failed (non-blocking)
-2026-05-02T04:07:29.118488992Z [info] No on-chain updates needed this cycle
-2026-05-02T04:07:29.118494240Z [info] === Keeper cycle start ===
-2026-05-02T04:07:29.118518070Z [info] Fetching scores from API
-2026-05-02T04:07:29.118548546Z [info] Diff complete
-2026-05-02T04:07:29.118549146Z [warn] Failed to fetch API scores — skipping score updates, using static TOKEN_ADDRESSES for staleness check
-2026-05-02T04:07:29.118554891Z [error] ALERT: Basis keeper: API fetch failed — API returned HTTP 502: {"status":"error","code":502,"message":"Application failed to respond","request_id":"4aCx2FiiTTSZd-_RxtoGcA"}
-2026-05-02T04:07:29.118555633Z [info] No updates to publish
-2026-05-02T04:07:29.118926183Z [error] ALERT: STALE SCORE: 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 not updated in 7200s
-2026-05-02T04:07:29.118946138Z [error] ALERT: STALE SCORE: 0xdac17f958d2ee523a2206206994597c13d831ec7 not updated in 7200s
-2026-05-02T04:07:29.118949284Z [error] ALERT: STALE SCORE: 0x6b175474e89094c44da98b954eedeac495271d0f not updated in 7200s
-2026-05-02T04:07:29.118952993Z [error] ALERT: STALE SCORE: 0x853d955acef822db058eb8505911ed77f175b99e not updated in 7200s
-2026-05-02T04:07:29.118956428Z [error] ALERT: STALE SCORE: 0x6c3ea9036406852006290770bedfcaba0e23a0e8 not updated in 7200s
-2026-05-02T04:07:29.118959533Z [error] ALERT: STALE SCORE: 0xc5f0f7b66764f6ec8c8dff7ba683102295e16409 not updated in 7200s
-2026-05-02T04:07:29.118962901Z [error] ALERT: STALE SCORE: 0x0000000000085d4780b73119b644ae5ecd22b376 not updated in 7200s
-2026-05-02T04:07:29.118965803Z [error] ALERT: STALE SCORE: 0x0c10bf8fcb7bf5412187a595ab97a3609160b5c6 not updated in 7200s
-2026-05-02T04:07:29.118969238Z [error] ALERT: STALE SCORE: 0x4c9edd5852cd905f086c759e8383e09bff1e68b3 not updated in 7200s
-2026-05-02T04:07:29.118971995Z [error] ALERT: STALE SCORE: 0x8d0d000ee44948fc98c9b98a4fa4921476f08b0d not updated in 7200s
-2026-05-02T04:07:29.118974745Z [info] === Keeper cycle complete ===
-2026-05-02T04:07:29.119928107Z [info] Wallet balances
-2026-05-02T04:07:29.119931336Z [error] ALERT: Keeper wallet balance LOW: 0.000912 ETH on Arbitrum
-2026-05-02T04:07:29.119934346Z [info] Sleeping 3600s until next cycle
-2026-05-02T05:07:34.613717752Z [info] Fetching PSI scores from API
-2026-05-02T05:07:34.613722638Z [warn] PSI score publishing failed (non-blocking)
-2026-05-02T05:07:34.613725743Z [info] No on-chain updates needed this cycle
-2026-05-02T05:07:34.613741474Z [info] === Keeper cycle start ===
-2026-05-02T05:07:34.613744859Z [info] Fetching scores from API
-2026-05-02T05:07:34.613748360Z [warn] Failed to fetch API scores — skipping score updates, using static TOKEN_ADDRESSES for staleness check
-2026-05-02T05:07:34.613752136Z [error] ALERT: Basis keeper: API fetch failed — API returned HTTP 502: {"status":"error","code":502,"message":"Application failed to respond","request_id":"zBmEA1fjStKQd4L39I3ezw"}
-2026-05-02T05:07:34.613755677Z [info] Diff complete
-2026-05-02T05:07:34.613765773Z [info] No updates to publish
-2026-05-02T05:07:34.613771209Z [info] No updates to publish
-2026-05-02T05:07:34.614433881Z [error] ALERT: STALE SCORE: 0xdac17f958d2ee523a2206206994597c13d831ec7 not updated in 7200s
-2026-05-02T05:07:34.614439354Z [error] ALERT: STALE SCORE: 0x6b175474e89094c44da98b954eedeac495271d0f not updated in 7200s
-2026-05-02T05:07:34.614443694Z [info] === Keeper cycle complete ===
-2026-05-02T05:07:34.614444217Z [error] ALERT: STALE SCORE: 0x853d955acef822db058eb8505911ed77f175b99e not updated in 7200s
-2026-05-02T05:07:34.614450583Z [error] ALERT: STALE SCORE: 0x6c3ea9036406852006290770bedfcaba0e23a0e8 not updated in 7200s
-2026-05-02T05:07:34.614454420Z [error] ALERT: STALE SCORE: 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 not updated in 7200s
-2026-05-02T05:07:34.614455865Z [error] ALERT: STALE SCORE: 0x0000000000085d4780b73119b644ae5ecd22b376 not updated in 7200s
-2026-05-02T05:07:34.614456679Z [error] ALERT: STALE SCORE: 0xc5f0f7b66764f6ec8c8dff7ba683102295e16409 not updated in 7200s
-2026-05-02T05:07:34.614462388Z [error] ALERT: STALE SCORE: 0x0c10bf8fcb7bf5412187a595ab97a3609160b5c6 not updated in 7200s
-2026-05-02T05:07:34.614466641Z [error] ALERT: STALE SCORE: 0x4c9edd5852cd905f086c759e8383e09bff1e68b3 not updated in 7200s
-2026-05-02T05:07:34.614469829Z [error] ALERT: STALE SCORE: 0x8d0d000ee44948fc98c9b98a4fa4921476f08b0d not updated in 7200s
-2026-05-02T05:07:34.615362728Z [info] Wallet balances
-2026-05-02T05:07:34.615366691Z [error] ALERT: Keeper wallet balance LOW: 0.000912 ETH on Arbitrum
-2026-05-02T05:07:34.615369993Z [info] Sleeping 3600s until next cycle
-2026-05-02T06:07:30.966067134Z [info] No updates to publish
-2026-05-02T06:07:30.966075055Z [info] No updates to publish
-2026-05-02T06:07:30.966081719Z [info] Fetching PSI scores from API
-2026-05-02T06:07:30.966085351Z [warn] PSI score publishing failed (non-blocking)
-2026-05-02T06:07:30.966089277Z [info] No on-chain updates needed this cycle
-2026-05-02T06:07:30.966269247Z [info] === Keeper cycle start ===
-2026-05-02T06:07:30.966272280Z [info] Fetching scores from API
-2026-05-02T06:07:30.966275249Z [warn] Failed to fetch API scores — skipping score updates, using static TOKEN_ADDRESSES for staleness check
-2026-05-02T06:07:30.966278420Z [error] ALERT: Basis keeper: API fetch failed — API returned HTTP 502: {"status":"error","code":502,"message":"Application failed to respond","request_id":"-CZAfMSFQgy_xSeL0_TJvA"}
-2026-05-02T06:07:30.966281523Z [info] Diff complete
-2026-05-02T06:07:30.967226937Z [error] ALERT: STALE SCORE: 0xdac17f958d2ee523a2206206994597c13d831ec7 not updated in 7200s
-2026-05-02T06:07:30.967231559Z [error] ALERT: STALE SCORE: 0x6b175474e89094c44da98b954eedeac495271d0f not updated in 7200s
-2026-05-02T06:07:30.967234827Z [error] ALERT: STALE SCORE: 0x853d955acef822db058eb8505911ed77f175b99e not updated in 7200s
-2026-05-02T06:07:30.967238095Z [error] ALERT: STALE SCORE: 0x6c3ea9036406852006290770bedfcaba0e23a0e8 not updated in 7200s
-2026-05-02T06:07:30.967241319Z [error] ALERT: STALE SCORE: 0xc5f0f7b66764f6ec8c8dff7ba683102295e16409 not updated in 7200s
-2026-05-02T06:07:30.967244338Z [error] ALERT: STALE SCORE: 0x0000000000085d4780b73119b644ae5ecd22b376 not updated in 7200s
-2026-05-02T06:07:30.967247456Z [error] ALERT: STALE SCORE: 0x0c10bf8fcb7bf5412187a595ab97a3609160b5c6 not updated in 7200s
-2026-05-02T06:07:30.967250517Z [error] ALERT: STALE SCORE: 0x4c9edd5852cd905f086c759e8383e09bff1e68b3 not updated in 7200s
-2026-05-02T06:07:30.967253652Z [error] ALERT: STALE SCORE: 0x8d0d000ee44948fc98c9b98a4fa4921476f08b0d not updated in 7200s
-2026-05-02T06:07:30.967256912Z [info] === Keeper cycle complete ===
-2026-05-02T06:07:30.967278818Z [error] ALERT: STALE SCORE: 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 not updated in 7200s
-2026-05-02T06:07:30.968464551Z [info] Wallet balances
-2026-05-02T06:07:30.968471233Z [error] ALERT: Keeper wallet balance LOW: 0.000912 ETH on Arbitrum
-2026-05-02T06:07:30.968475039Z [info] Sleeping 3600s until next cycle
-2026-05-02T07:07:39.624260671Z [info] === Keeper cycle start ===
-2026-05-02T07:07:39.624265109Z [info] Fetching scores from API
-2026-05-02T07:07:39.624269476Z [warn] Failed to fetch API scores — skipping score updates, using static TOKEN_ADDRESSES for staleness check
-2026-05-02T07:07:39.624276633Z [error] ALERT: Basis keeper: API fetch failed — API returned HTTP 502: {"status":"error","code":502,"message":"Application failed to respond","request_id":"vyNqQIqkRdqQiuiP9I3ezw"}
-2026-05-02T07:07:39.624281207Z [info] Diff complete
-2026-05-02T07:07:39.624285409Z [info] No updates to publish
-2026-05-02T07:07:39.624290362Z [info] No updates to publish
-2026-05-02T07:07:39.624295196Z [info] Fetching PSI scores from API
-2026-05-02T07:07:39.624298607Z [warn] PSI score publishing failed (non-blocking)
-2026-05-02T07:07:39.624303183Z [info] No on-chain updates needed this cycle
-2026-05-02T07:07:39.625372748Z [error] ALERT: STALE SCORE: 0x6b175474e89094c44da98b954eedeac495271d0f not updated in 7200s
-2026-05-02T07:07:39.625379038Z [error] ALERT: STALE SCORE: 0x853d955acef822db058eb8505911ed77f175b99e not updated in 7200s
-2026-05-02T07:07:39.625383850Z [error] ALERT: STALE SCORE: 0x6c3ea9036406852006290770bedfcaba0e23a0e8 not updated in 7200s
-2026-05-02T07:07:39.625389615Z [error] ALERT: STALE SCORE: 0xc5f0f7b66764f6ec8c8dff7ba683102295e16409 not updated in 7200s
-2026-05-02T07:07:39.625394635Z [error] ALERT: STALE SCORE: 0x0000000000085d4780b73119b644ae5ecd22b376 not updated in 7200s
-2026-05-02T07:07:39.625399452Z [error] ALERT: STALE SCORE: 0x0c10bf8fcb7bf5412187a595ab97a3609160b5c6 not updated in 7200s
-2026-05-02T07:07:39.625403882Z [error] ALERT: STALE SCORE: 0x4c9edd5852cd905f086c759e8383e09bff1e68b3 not updated in 7200s
-2026-05-02T07:07:39.625409530Z [error] ALERT: STALE SCORE: 0x8d0d000ee44948fc98c9b98a4fa4921476f08b0d not updated in 7200s
-2026-05-02T07:07:39.625414256Z [error] ALERT: STALE SCORE: 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 not updated in 7200s
-2026-05-02T07:07:39.625414286Z [info] === Keeper cycle complete ===
-2026-05-02T07:07:39.625418259Z [error] ALERT: STALE SCORE: 0xdac17f958d2ee523a2206206994597c13d831ec7 not updated in 7200s
-2026-05-02T07:07:39.626521385Z [info] Wallet balances
-2026-05-02T07:07:39.626525652Z [error] ALERT: Keeper wallet balance LOW: 0.000912 ETH on Arbitrum
-2026-05-02T07:07:39.626528630Z [info] Sleeping 3600s until next cycle
-2026-05-02T08:07:36.319067415Z [info] No updates to publish
-2026-05-02T08:07:36.319073477Z [info] No updates to publish
-2026-05-02T08:07:36.319077252Z [info] Fetching PSI scores from API
-2026-05-02T08:07:36.319081084Z [warn] PSI score publishing failed (non-blocking)
-2026-05-02T08:07:36.319084924Z [info] No on-chain updates needed this cycle
-2026-05-02T08:07:36.319190434Z [info] === Keeper cycle start ===
-2026-05-02T08:07:36.319194560Z [info] Fetching scores from API
-2026-05-02T08:07:36.319199044Z [warn] Failed to fetch API scores — skipping score updates, using static TOKEN_ADDRESSES for staleness check
-2026-05-02T08:07:36.319202991Z [error] ALERT: Basis keeper: API fetch failed — API returned HTTP 502: {"status":"error","code":502,"message":"Application failed to respond","request_id":"Hn54bRIDR2yH-BY10_TJvA"}
-2026-05-02T08:07:36.319207922Z [info] Diff complete
-2026-05-02T08:07:36.320320654Z [error] ALERT: STALE SCORE: 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 not updated in 7200s
-2026-05-02T08:07:36.320328671Z [error] ALERT: STALE SCORE: 0xdac17f958d2ee523a2206206994597c13d831ec7 not updated in 7200s
-2026-05-02T08:07:36.320334776Z [error] ALERT: STALE SCORE: 0x6b175474e89094c44da98b954eedeac495271d0f not updated in 7200s
-2026-05-02T08:07:36.320340767Z [error] ALERT: STALE SCORE: 0x853d955acef822db058eb8505911ed77f175b99e not updated in 7200s
-2026-05-02T08:07:36.320346774Z [error] ALERT: STALE SCORE: 0x6c3ea9036406852006290770bedfcaba0e23a0e8 not updated in 7200s
-2026-05-02T08:07:36.320352526Z [error] ALERT: STALE SCORE: 0xc5f0f7b66764f6ec8c8dff7ba683102295e16409 not updated in 7200s
-2026-05-02T08:07:36.320358426Z [error] ALERT: STALE SCORE: 0x0000000000085d4780b73119b644ae5ecd22b376 not updated in 7200s
-2026-05-02T08:07:36.320369253Z [error] ALERT: STALE SCORE: 0x0c10bf8fcb7bf5412187a595ab97a3609160b5c6 not updated in 7200s
-2026-05-02T08:07:36.320375205Z [error] ALERT: STALE SCORE: 0x4c9edd5852cd905f086c759e8383e09bff1e68b3 not updated in 7200s
-2026-05-02T08:07:36.320380471Z [error] ALERT: STALE SCORE: 0x8d0d000ee44948fc98c9b98a4fa4921476f08b0d not updated in 7200s
-2026-05-02T08:07:36.320385486Z [info] === Keeper cycle complete ===
-2026-05-02T08:07:36.321378492Z [info] Wallet balances
-2026-05-02T08:07:36.321383705Z [error] ALERT: Keeper wallet balance LOW: 0.000912 ETH on Arbitrum
-2026-05-02T08:07:36.321388018Z [info] Sleeping 3600s until next cycle
-2026-05-02T09:07:37.801103142Z [info] === Keeper cycle start ===
-2026-05-02T09:07:37.801106294Z [info] Fetching scores from API
-2026-05-02T09:07:37.801109704Z [warn] Failed to fetch API scores — skipping score updates, using static TOKEN_ADDRESSES for staleness check
-2026-05-02T09:07:37.801113026Z [error] ALERT: Basis keeper: API fetch failed — API returned HTTP 502: {"status":"error","code":502,"message":"Application failed to respond","request_id":"bJtZNi4fRXGwpMTl0_TJvA"}
-2026-05-02T09:07:37.801116112Z [info] Diff complete
-2026-05-02T09:07:37.801119562Z [info] No updates to publish
-2026-05-02T09:07:37.801123660Z [info] No updates to publish
-2026-05-02T09:07:37.801127342Z [info] Fetching PSI scores from API
-2026-05-02T09:07:37.801130838Z [warn] PSI score publishing failed (non-blocking)
-2026-05-02T09:07:37.801134802Z [info] No on-chain updates needed this cycle
-2026-05-02T09:07:37.801888351Z [error] ALERT: STALE SCORE: 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 not updated in 7200s
-2026-05-02T09:07:37.801892176Z [error] ALERT: STALE SCORE: 0xdac17f958d2ee523a2206206994597c13d831ec7 not updated in 7200s
-2026-05-02T09:07:37.801895023Z [error] ALERT: STALE SCORE: 0x6b175474e89094c44da98b954eedeac495271d0f not updated in 7200s
-2026-05-02T09:07:37.801897819Z [error] ALERT: STALE SCORE: 0x853d955acef822db058eb8505911ed77f175b99e not updated in 7200s
-2026-05-02T09:07:37.801900607Z [error] ALERT: STALE SCORE: 0x6c3ea9036406852006290770bedfcaba0e23a0e8 not updated in 7200s
-2026-05-02T09:07:37.801910546Z [error] ALERT: STALE SCORE: 0xc5f0f7b66764f6ec8c8dff7ba683102295e16409 not updated in 7200s
-2026-05-02T09:07:37.801914565Z [error] ALERT: STALE SCORE: 0x0000000000085d4780b73119b644ae5ecd22b376 not updated in 7200s
-2026-05-02T09:07:37.801917438Z [error] ALERT: STALE SCORE: 0x0c10bf8fcb7bf5412187a595ab97a3609160b5c6 not updated in 7200s
-2026-05-02T09:07:37.801920551Z [error] ALERT: STALE SCORE: 0x4c9edd5852cd905f086c759e8383e09bff1e68b3 not updated in 7200s
-2026-05-02T09:07:37.801923286Z [error] ALERT: STALE SCORE: 0x8d0d000ee44948fc98c9b98a4fa4921476f08b0d not updated in 7200s
-2026-05-02T09:07:37.801926003Z [info] === Keeper cycle complete ===
-2026-05-02T09:07:37.802936635Z [info] Wallet balances
-2026-05-02T09:07:37.802945508Z [error] ALERT: Keeper wallet balance LOW: 0.000912 ETH on Arbitrum
-2026-05-02T09:07:37.802948970Z [info] Sleeping 3600s until next cycle
-2026-05-02T10:07:38.682969231Z [info] === Keeper cycle start ===
-2026-05-02T10:07:38.682980641Z [info] Fetching scores from API
-2026-05-02T10:07:38.682983914Z [warn] Failed to fetch API scores — skipping score updates, using static TOKEN_ADDRESSES for staleness check
-2026-05-02T10:07:38.682987085Z [error] ALERT: Basis keeper: API fetch failed — API returned HTTP 502: {"status":"error","code":502,"message":"Application failed to respond","request_id":"vGiJAhaiQeqh8wET0_TJvA"}
-2026-05-02T10:07:38.682990074Z [info] Diff complete
-2026-05-02T10:07:38.682993974Z [info] No updates to publish
-2026-05-02T10:07:38.682997259Z [info] No updates to publish
-2026-05-02T10:07:38.683000696Z [info] Fetching PSI scores from API
-2026-05-02T10:07:38.683003871Z [warn] PSI score publishing failed (non-blocking)
-2026-05-02T10:07:38.683006995Z [info] No on-chain updates needed this cycle
-2026-05-02T10:07:38.684021051Z [error] ALERT: STALE SCORE: 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 not updated in 7200s
-2026-05-02T10:07:38.684026856Z [error] ALERT: STALE SCORE: 0xdac17f958d2ee523a2206206994597c13d831ec7 not updated in 7200s
-2026-05-02T10:07:38.684030766Z [error] ALERT: STALE SCORE: 0x6b175474e89094c44da98b954eedeac495271d0f not updated in 7200s
-2026-05-02T10:07:38.684035550Z [error] ALERT: STALE SCORE: 0x853d955acef822db058eb8505911ed77f175b99e not updated in 7200s
-2026-05-02T10:07:38.684040073Z [error] ALERT: STALE SCORE: 0x6c3ea9036406852006290770bedfcaba0e23a0e8 not updated in 7200s
-2026-05-02T10:07:38.684043518Z [error] ALERT: STALE SCORE: 0xc5f0f7b66764f6ec8c8dff7ba683102295e16409 not updated in 7200s
-2026-05-02T10:07:38.684047087Z [error] ALERT: STALE SCORE: 0x0000000000085d4780b73119b644ae5ecd22b376 not updated in 7200s
-2026-05-02T10:07:38.684050570Z [error] ALERT: STALE SCORE: 0x0c10bf8fcb7bf5412187a595ab97a3609160b5c6 not updated in 7200s
-2026-05-02T10:07:38.684053777Z [error] ALERT: STALE SCORE: 0x4c9edd5852cd905f086c759e8383e09bff1e68b3 not updated in 7200s
-2026-05-02T10:07:38.684057608Z [error] ALERT: STALE SCORE: 0x8d0d000ee44948fc98c9b98a4fa4921476f08b0d not updated in 7200s
-2026-05-02T10:07:38.684060933Z [info] === Keeper cycle complete ===
-2026-05-02T10:07:38.685548162Z [info] Wallet balances
-2026-05-02T10:07:38.685553116Z [error] ALERT: Keeper wallet balance LOW: 0.000912 ETH on Arbitrum
-2026-05-02T10:07:38.685558921Z [info] Sleeping 3600s until next cycle
-2026-05-02T11:07:38.806398951Z [info] Diff complete
-2026-05-02T11:07:38.806408165Z [info] No updates to publish
-2026-05-02T11:07:38.806413557Z [info] No updates to publish
-2026-05-02T11:07:38.806418027Z [info] Fetching PSI scores from API
-2026-05-02T11:07:38.806423769Z [warn] PSI score publishing failed (non-blocking)
-2026-05-02T11:07:38.806428397Z [info] No on-chain updates needed this cycle
-2026-05-02T11:07:38.806445810Z [info] === Keeper cycle start ===
-2026-05-02T11:07:38.806449893Z [info] Fetching scores from API
-2026-05-02T11:07:38.806454206Z [warn] Failed to fetch API scores — skipping score updates, using static TOKEN_ADDRESSES for staleness check
-2026-05-02T11:07:38.806458079Z [error] ALERT: Basis keeper: API fetch failed — API returned HTTP 502: {"status":"error","code":502,"message":"Application failed to respond","request_id":"9w_mlqsVQXOQK8w9npoFkQ"}
-2026-05-02T11:07:38.808530935Z [error] ALERT: STALE SCORE: 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 not updated in 7200s
-2026-05-02T11:07:38.808538383Z [error] ALERT: STALE SCORE: 0xdac17f958d2ee523a2206206994597c13d831ec7 not updated in 7200s
-2026-05-02T11:07:38.808542883Z [error] ALERT: STALE SCORE: 0x6b175474e89094c44da98b954eedeac495271d0f not updated in 7200s
-2026-05-02T11:07:38.808546872Z [error] ALERT: STALE SCORE: 0x853d955acef822db058eb8505911ed77f175b99e not updated in 7200s
-2026-05-02T11:07:38.808551470Z [error] ALERT: STALE SCORE: 0x6c3ea9036406852006290770bedfcaba0e23a0e8 not updated in 7200s
-2026-05-02T11:07:38.808556307Z [error] ALERT: STALE SCORE: 0xc5f0f7b66764f6ec8c8dff7ba683102295e16409 not updated in 7200s
-2026-05-02T11:07:38.808562919Z [error] ALERT: STALE SCORE: 0x0000000000085d4780b73119b644ae5ecd22b376 not updated in 7200s
-2026-05-02T11:07:38.808568732Z [error] ALERT: STALE SCORE: 0x0c10bf8fcb7bf5412187a595ab97a3609160b5c6 not updated in 7200s
-2026-05-02T11:07:38.808573222Z [error] ALERT: STALE SCORE: 0x4c9edd5852cd905f086c759e8383e09bff1e68b3 not updated in 7200s
-2026-05-02T11:07:38.808577463Z [error] ALERT: STALE SCORE: 0x8d0d000ee44948fc98c9b98a4fa4921476f08b0d not updated in 7200s
-2026-05-02T11:07:38.808581913Z [info] === Keeper cycle complete ===
-2026-05-02T11:07:38.809855628Z [info] Wallet balances
-2026-05-02T11:07:38.809861648Z [error] ALERT: Keeper wallet balance LOW: 0.000912 ETH on Arbitrum
-2026-05-02T11:07:38.809864676Z [info] Sleeping 3600s until next cycle
-2026-05-02T12:07:42.625305383Z [info] No updates to publish
-2026-05-02T12:07:42.625310286Z [warn] Failed to fetch API scores — skipping score updates, using static TOKEN_ADDRESSES for staleness check
-2026-05-02T12:07:42.625311870Z [info] Fetching PSI scores from API
-2026-05-02T12:07:42.625317264Z [warn] PSI score publishing failed (non-blocking)
-2026-05-02T12:07:42.625319532Z [error] ALERT: Basis keeper: API fetch failed — API returned HTTP 502: {"status":"error","code":502,"message":"Application failed to respond","request_id":"I7ZCr7SDRimGFbGlxtoGcA"}
-2026-05-02T12:07:42.625323621Z [info] Diff complete
-2026-05-02T12:07:42.625327698Z [info] No updates to publish
-2026-05-02T12:07:42.625340530Z [info] === Keeper cycle start ===
-2026-05-02T12:07:42.625350382Z [info] No on-chain updates needed this cycle
-2026-05-02T12:07:42.625366033Z [info] Fetching scores from API
-2026-05-02T12:07:42.626768257Z [error] ALERT: STALE SCORE: 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 not updated in 7200s
-2026-05-02T12:07:42.626774629Z [error] ALERT: STALE SCORE: 0xdac17f958d2ee523a2206206994597c13d831ec7 not updated in 7200s
-2026-05-02T12:07:42.626779025Z [error] ALERT: STALE SCORE: 0x6b175474e89094c44da98b954eedeac495271d0f not updated in 7200s
-2026-05-02T12:07:42.626782639Z [error] ALERT: STALE SCORE: 0x853d955acef822db058eb8505911ed77f175b99e not updated in 7200s
-2026-05-02T12:07:42.626786488Z [error] ALERT: STALE SCORE: 0x6c3ea9036406852006290770bedfcaba0e23a0e8 not updated in 7200s
-2026-05-02T12:07:42.626790378Z [error] ALERT: STALE SCORE: 0xc5f0f7b66764f6ec8c8dff7ba683102295e16409 not updated in 7200s
-2026-05-02T12:07:42.626794940Z [error] ALERT: STALE SCORE: 0x0000000000085d4780b73119b644ae5ecd22b376 not updated in 7200s
-2026-05-02T12:07:42.626798555Z [error] ALERT: STALE SCORE: 0x0c10bf8fcb7bf5412187a595ab97a3609160b5c6 not updated in 7200s
-2026-05-02T12:07:42.626802110Z [error] ALERT: STALE SCORE: 0x4c9edd5852cd905f086c759e8383e09bff1e68b3 not updated in 7200s
-2026-05-02T12:07:42.626806303Z [error] ALERT: STALE SCORE: 0x8d0d000ee44948fc98c9b98a4fa4921476f08b0d not updated in 7200s
-2026-05-02T12:07:42.626809882Z [info] === Keeper cycle complete ===
-2026-05-02T12:07:42.627433584Z [info] Wallet balances
-2026-05-02T12:07:42.627438590Z [error] ALERT: Keeper wallet balance LOW: 0.000912 ETH on Arbitrum
-2026-05-02T12:07:42.627441954Z [info] Sleeping 3600s until next cycle
+2026-05-02T13:58:03.198386809Z [info] Starting Container
+2026-05-02T13:58:03.725903951Z [warn] Failed to fetch API scores — skipping score updates, using static TOKEN_ADDRESSES for staleness check
+2026-05-02T13:58:03.725912305Z [error] ALERT: Basis keeper: API fetch failed — API returned HTTP 502: {"status":"error","code":502,"message":"Application failed to respond","request_id":"Cms_fpl8R3uBeiWe-_9nXA"}
+2026-05-02T13:58:03.725958390Z [info] ◇ injected env (0) from .env // tip: ◈ secrets for agents [www.dotenvx.com]
+2026-05-02T13:58:03.725961206Z [info] Basis Keeper starting
+2026-05-02T13:58:03.725964119Z [info] Keeper wallet address
+2026-05-02T13:58:03.725966813Z [error] ALERT: Keeper started. Interval: 3600s. Wallet: 0x2dF0f62D1861Aa59A4430e3B2b2E7a0D29Cb723b
+2026-05-02T13:58:03.725969841Z [info] Wallet balances
+2026-05-02T13:58:03.725972796Z [error] ALERT: Keeper wallet balance LOW: 0.000912 ETH on Arbitrum
+2026-05-02T13:58:03.725975791Z [info] === Keeper cycle start ===
+2026-05-02T13:58:03.725979003Z [info] Fetching scores from API
+2026-05-02T13:58:03.726908026Z [info] Diff complete
+2026-05-02T13:58:03.726911877Z [info] No updates to publish
+2026-05-02T13:58:03.726914814Z [info] No updates to publish
+2026-05-02T13:58:03.726917298Z [info] Fetching PSI scores from API
+2026-05-02T13:58:03.726920719Z [warn] PSI score publishing failed (non-blocking)
+2026-05-02T13:58:03.726923717Z [info] No on-chain updates needed this cycle
+2026-05-02T13:58:03.726926265Z [error] ALERT: STALE SCORE: 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 not updated in 7200s
+2026-05-02T13:58:03.726928905Z [error] ALERT: STALE SCORE: 0xdac17f958d2ee523a2206206994597c13d831ec7 not updated in 7200s
+2026-05-02T13:58:03.733137931Z [error] ALERT: STALE SCORE: 0x6b175474e89094c44da98b954eedeac495271d0f not updated in 7200s
+2026-05-02T13:58:03.789507404Z [error] ALERT: STALE SCORE: 0x853d955acef822db058eb8505911ed77f175b99e not updated in 7200s
+2026-05-02T13:58:03.835635376Z [error] ALERT: STALE SCORE: 0x6c3ea9036406852006290770bedfcaba0e23a0e8 not updated in 7200s
+2026-05-02T13:58:03.879094185Z [error] ALERT: STALE SCORE: 0xc5f0f7b66764f6ec8c8dff7ba683102295e16409 not updated in 7200s
+2026-05-02T13:58:03.923679087Z [error] ALERT: STALE SCORE: 0x0000000000085d4780b73119b644ae5ecd22b376 not updated in 7200s
+2026-05-02T13:58:03.940227778Z [error] ALERT: STALE SCORE: 0x0c10bf8fcb7bf5412187a595ab97a3609160b5c6 not updated in 7200s
+2026-05-02T13:58:03.984032120Z [error] ALERT: STALE SCORE: 0x4c9edd5852cd905f086c759e8383e09bff1e68b3 not updated in 7200s
+2026-05-02T13:58:04.021769533Z [error] ALERT: STALE SCORE: 0x8d0d000ee44948fc98c9b98a4fa4921476f08b0d not updated in 7200s
+2026-05-02T13:58:04.048958046Z [info] === Keeper cycle complete ===
+2026-05-02T13:58:04.084837691Z [info] Wallet balances
+2026-05-02T13:58:04.084841124Z [error] ALERT: Keeper wallet balance LOW: 0.000912 ETH on Arbitrum
+2026-05-02T13:58:04.086411994Z [info] Sleeping 3600s until next cycle
