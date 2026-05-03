@@ -570,3 +570,499 @@
 2026-05-03T09:43:14.811560654Z [info] INFO:     100.64.0.23:50190 - "GET / HTTP/1.1" 200 OK
 2026-05-03T09:46:16.673506494Z [info] INFO:     100.64.0.20:42324 - "GET / HTTP/1.1" 200 OK
 2026-05-03T09:49:21.980079075Z [info] INFO:     100.64.0.24:17998 - "GET / HTTP/1.1" 200 OK
+2026-05-03T09:52:13.801550878Z [info] INFO:     100.64.0.25:11704 - "GET / HTTP/1.1" 200 OK
+2026-05-03T09:52:33.796326647Z [info] INFO:     100.64.0.7:56580 - "POST /api/ops/keeper-cycle/start HTTP/1.1" 200 OK
+2026-05-03T09:52:33.796333546Z [info] INFO:     100.64.0.10:61456 - "GET /api/scores HTTP/1.1" 200 OK
+2026-05-03T09:52:33.796337652Z [info] INFO:     100.64.0.7:56594 - "GET /api/psi/scores HTTP/1.1" 200 OK
+2026-05-03T09:52:34.739771768Z [error] 2026-05-03 09:52:34,737 [ERROR] app.database: [sync-in-async] fetch_all called from async context at /app/app/lenses/__init__.py:94 (list_lenses)
+2026-05-03T09:52:34.977194561Z [error] 2026-05-03 09:52:34,975 [ERROR] app.database: [sync-in-async] fetch_one called from async context at /app/app/lenses/__init__.py:50 (load_lens)
+2026-05-03T09:52:35.678803069Z [info] INFO:     100.64.0.6:38262 - "GET /api/reports/lenses HTTP/1.1" 200 OK
+2026-05-03T09:52:35.678808537Z [info] INFO:     100.64.0.26:33720 - "POST /api/ops/keeper-cycle/start HTTP/1.1" 200 OK
+2026-05-03T09:52:35.697717272Z [info] INFO:     100.64.0.10:18344 - "GET /api/scores HTTP/1.1" 200 OK
+2026-05-03T09:52:35.966928163Z [info] INFO:     100.64.0.27:56706 - "GET /api/scores HTTP/1.1" 200 OK
+2026-05-03T09:52:36.631095894Z [info] INFO:     100.64.0.28:14102 - "GET /api/psi/scores HTTP/1.1" 200 OK
+2026-05-03T09:52:38.550523325Z [error] 2026-05-03 09:52:38,409 [WARNING] app.report: _get_holder_concentration_trend(usdc) failed: relation "concentration_snapshots" does not exist
+2026-05-03T09:52:38.550531107Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T09:52:38.550538219Z [error]                          ^
+2026-05-03T09:52:38.550545406Z [error] 
+2026-05-03T09:52:39.057671145Z [info] INFO:     100.64.0.4:12354 - "GET /api/reports/stablecoin/usdc?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T09:52:41.943488331Z [error] 2026-05-03 09:52:41,941 [WARNING] app.report: _get_holder_concentration_trend(usdt) failed: relation "concentration_snapshots" does not exist
+2026-05-03T09:52:41.943503223Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T09:52:41.943512665Z [error]                          ^
+2026-05-03T09:52:41.943521648Z [error] 
+2026-05-03T09:52:42.693100970Z [info] INFO:     100.64.0.5:61994 - "GET /api/reports/stablecoin/usdt?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T09:52:45.652391297Z [error] 2026-05-03 09:52:45,549 [WARNING] app.report: _get_holder_concentration_trend(usd1) failed: relation "concentration_snapshots" does not exist
+2026-05-03T09:52:45.652397403Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T09:52:45.652403866Z [error]                          ^
+2026-05-03T09:52:45.652411296Z [error] 
+2026-05-03T09:52:46.688375292Z [info] INFO:     100.64.0.10:49932 - "GET /api/reports/stablecoin/usd1?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T09:52:49.086331685Z [error] 2026-05-03 09:52:49,081 [WARNING] app.report: _get_holder_concentration_trend(usds) failed: relation "concentration_snapshots" does not exist
+2026-05-03T09:52:49.086338468Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T09:52:49.086343550Z [error]                          ^
+2026-05-03T09:52:49.086353128Z [error] 
+2026-05-03T09:52:49.810112479Z [info] INFO:     100.64.0.10:49932 - "GET /api/reports/stablecoin/usds?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T09:52:52.710863563Z [error] 2026-05-03 09:52:52,625 [WARNING] app.report: _get_holder_concentration_trend(dai) failed: relation "concentration_snapshots" does not exist
+2026-05-03T09:52:52.710869694Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T09:52:52.710875620Z [error]                          ^
+2026-05-03T09:52:52.710881954Z [error] 
+2026-05-03T09:52:53.747499951Z [info] INFO:     100.64.0.22:13074 - "GET /api/reports/lenses HTTP/1.1" 200 OK
+2026-05-03T09:52:53.747506949Z [info] INFO:     100.64.0.6:15508 - "GET /api/reports/stablecoin/dai?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T09:52:53.817825103Z [info] INFO:     100.64.0.22:13074 - "GET /api/scores HTTP/1.1" 200 OK
+2026-05-03T09:52:56.735518304Z [error] 2026-05-03 09:52:56,275 [WARNING] app.report: _get_holder_concentration_trend(fdusd) failed: relation "concentration_snapshots" does not exist
+2026-05-03T09:52:56.735522494Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T09:52:56.735529978Z [error]                          ^
+2026-05-03T09:52:56.735535171Z [error] 
+2026-05-03T09:52:56.917761764Z [info] INFO:     100.64.0.9:53188 - "GET /api/reports/stablecoin/fdusd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T09:52:56.929690719Z [error] 2026-05-03 09:52:56,927 [WARNING] app.report: _get_holder_concentration_trend(usdc) failed: relation "concentration_snapshots" does not exist
+2026-05-03T09:52:56.929702120Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T09:52:56.929707394Z [error]                          ^
+2026-05-03T09:52:56.929712145Z [error] 
+2026-05-03T09:52:57.779073986Z [info] INFO:     100.64.0.29:24508 - "GET /api/reports/stablecoin/usdc?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T09:53:00.166230599Z [error] 2026-05-03 09:52:59,483 [WARNING] app.report: _get_holder_concentration_trend(rlusd) failed: relation "concentration_snapshots" does not exist
+2026-05-03T09:53:00.166238402Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T09:53:00.166246859Z [error]                          ^
+2026-05-03T09:53:00.166254616Z [error] 
+2026-05-03T09:53:00.166264193Z [info] INFO:     100.64.0.9:53188 - "GET /api/reports/stablecoin/rlusd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T09:53:00.833068962Z [error] 2026-05-03 09:53:00,556 [WARNING] app.report: _get_holder_concentration_trend(usdt) failed: relation "concentration_snapshots" does not exist
+2026-05-03T09:53:00.833078729Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T09:53:00.833086031Z [error]                          ^
+2026-05-03T09:53:00.833092266Z [error] 
+2026-05-03T09:53:01.793106511Z [info] INFO:     100.64.0.30:61880 - "GET /api/reports/stablecoin/usdt?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T09:53:03.748741250Z [error] 2026-05-03 09:53:03,260 [WARNING] app.report: _get_holder_concentration_trend(usde) failed: relation "concentration_snapshots" does not exist
+2026-05-03T09:53:03.748746168Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T09:53:03.748750768Z [error]                          ^
+2026-05-03T09:53:03.748756106Z [error] 
+2026-05-03T09:53:04.032321433Z [info] INFO:     100.64.0.6:57230 - "GET /api/reports/stablecoin/usde?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T09:53:04.140688606Z [error] 2026-05-03 09:53:04,136 [WARNING] app.report: _get_holder_concentration_trend(usd1) failed: relation "concentration_snapshots" does not exist
+2026-05-03T09:53:04.140698730Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T09:53:04.140705627Z [error]                          ^
+2026-05-03T09:53:04.140711877Z [error] 
+2026-05-03T09:53:04.823926195Z [info] INFO:     100.64.0.26:47952 - "GET /api/reports/stablecoin/usd1?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T09:53:06.830004915Z [error] 2026-05-03 09:53:06,762 [WARNING] app.report: _get_holder_concentration_trend(pyusd) failed: relation "concentration_snapshots" does not exist
+2026-05-03T09:53:06.830014507Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T09:53:06.830020978Z [error]                          ^
+2026-05-03T09:53:06.830027269Z [error] 
+2026-05-03T09:53:07.858025788Z [info] INFO:     100.64.0.9:53188 - "GET /api/reports/stablecoin/pyusd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T09:53:08.123882258Z [error] 2026-05-03 09:53:08,114 [WARNING] app.report: _get_holder_concentration_trend(usds) failed: relation "concentration_snapshots" does not exist
+2026-05-03T09:53:08.123891822Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T09:53:08.123897846Z [error]                          ^
+2026-05-03T09:53:08.123936574Z [error] 
+2026-05-03T09:53:08.976851523Z [info] INFO:     100.64.0.31:54042 - "GET /api/reports/stablecoin/usds?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T09:53:11.047689123Z [error] 2026-05-03 09:53:10,340 [WARNING] app.report: _get_holder_concentration_trend(usdp) failed: relation "concentration_snapshots" does not exist
+2026-05-03T09:53:11.047698039Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T09:53:11.047708332Z [error]                          ^
+2026-05-03T09:53:11.047716116Z [error] 
+2026-05-03T09:53:11.068293431Z [info] INFO:     100.64.0.7:16664 - "GET /api/reports/stablecoin/usdp?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T09:53:13.297379412Z [error] 2026-05-03 09:53:12,238 [WARNING] app.report: _get_holder_concentration_trend(dai) failed: relation "concentration_snapshots" does not exist
+2026-05-03T09:53:13.297383672Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T09:53:13.297387914Z [error]                          ^
+2026-05-03T09:53:13.297392041Z [error] 
+2026-05-03T09:53:13.297396350Z [info] INFO:     100.64.0.26:37976 - "GET /api/reports/stablecoin/dai?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T09:53:14.330553402Z [error] 2026-05-03 09:53:13,690 [WARNING] app.report: _get_holder_concentration_trend(lusd) failed: relation "concentration_snapshots" does not exist
+2026-05-03T09:53:14.330559564Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T09:53:14.330565595Z [error]                          ^
+2026-05-03T09:53:14.330571065Z [error] 
+2026-05-03T09:53:15.282696809Z [info] INFO:     100.64.0.9:53188 - "GET /api/reports/stablecoin/lusd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T09:53:16.980762526Z [error] 2026-05-03 09:53:16,345 [WARNING] app.report: _get_holder_concentration_trend(fdusd) failed: relation "concentration_snapshots" does not exist
+2026-05-03T09:53:16.980768309Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T09:53:16.980774916Z [error]                          ^
+2026-05-03T09:53:16.980783998Z [error] 
+2026-05-03T09:53:17.127083384Z [info] INFO:     100.64.0.27:13210 - "GET /api/reports/stablecoin/fdusd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T09:53:17.312967598Z [error] 2026-05-03 09:53:17,305 [WARNING] app.report: _get_holder_concentration_trend(crvusd) failed: relation "concentration_snapshots" does not exist
+2026-05-03T09:53:17.312975634Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T09:53:17.312979885Z [error]                          ^
+2026-05-03T09:53:17.312984349Z [error] 
+2026-05-03T09:53:18.061082096Z [info] INFO:     100.64.0.5:50848 - "GET /api/reports/stablecoin/crvusd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T09:53:20.901300375Z [error] 2026-05-03 09:53:20,457 [WARNING] app.report: _get_holder_concentration_trend(rlusd) failed: relation "concentration_snapshots" does not exist
+2026-05-03T09:53:20.901309137Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T09:53:20.901315048Z [error]                          ^
+2026-05-03T09:53:20.901415195Z [error] 
+2026-05-03T09:53:20.901424263Z [error] 2026-05-03 09:53:20,645 [WARNING] app.report: _get_holder_concentration_trend(usdtb) failed: relation "concentration_snapshots" does not exist
+2026-05-03T09:53:20.901429483Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T09:53:20.901435613Z [error]                          ^
+2026-05-03T09:53:20.901440490Z [error] 
+2026-05-03T09:53:21.214136723Z [info] INFO:     100.64.0.32:52836 - "GET /api/reports/stablecoin/rlusd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T09:53:21.292436956Z [info] INFO:     100.64.0.3:34704 - "GET /api/reports/stablecoin/usdtb?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T09:53:21.329910285Z [info] INFO:     100.64.0.10:53322 - "GET /api/reports/stablecoin/tusd?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-05-03T09:53:24.213616584Z [error] 2026-05-03 09:53:23,983 [WARNING] app.report: _get_holder_concentration_trend(musd) failed: relation "concentration_snapshots" does not exist
+2026-05-03T09:53:24.213626056Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T09:53:24.213633780Z [error]                          ^
+2026-05-03T09:53:24.213643185Z [error] 
+2026-05-03T09:53:24.323084596Z [error] 2026-05-03 09:53:24,319 [WARNING] app.report: _get_holder_concentration_trend(usde) failed: relation "concentration_snapshots" does not exist
+2026-05-03T09:53:24.323092215Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T09:53:24.323096520Z [error]                          ^
+2026-05-03T09:53:24.323101443Z [error] 
+2026-05-03T09:53:25.083982468Z [info] INFO:     100.64.0.3:34704 - "GET /api/reports/stablecoin/musd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T09:53:25.083988677Z [info] INFO:     100.64.0.33:29440 - "GET /api/reports/stablecoin/usde?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T09:53:27.250464959Z [error] 2026-05-03 09:53:27,186 [WARNING] app.report: _get_holder_concentration_trend(usdd) failed: relation "concentration_snapshots" does not exist
+2026-05-03T09:53:27.250471128Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T09:53:27.250477807Z [error]                          ^
+2026-05-03T09:53:27.250493527Z [error] 
+2026-05-03T09:53:28.102087021Z [info] INFO:     100.64.0.6:42978 - "GET /api/reports/stablecoin/usdd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T09:53:28.259127345Z [error] 2026-05-03 09:53:28,253 [WARNING] app.report: _get_holder_concentration_trend(pyusd) failed: relation "concentration_snapshots" does not exist
+2026-05-03T09:53:28.259136570Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T09:53:28.259143918Z [error]                          ^
+2026-05-03T09:53:28.259149880Z [error] 
+2026-05-03T09:53:29.124634054Z [info] INFO:     100.64.0.19:17570 - "GET /api/reports/stablecoin/pyusd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T09:53:31.210238969Z [error] 2026-05-03 09:53:30,709 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: fetched 513 hacks
+2026-05-03T09:53:31.210258097Z [error] 2026-05-03 09:53:30,720 [INFO] apscheduler.executors.default: Running job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 10:08:30 UTC)" (scheduled at 2026-05-03 09:53:30.720491+00:00)
+2026-05-03T09:53:31.210259504Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T09:53:31.210264142Z [error] 2026-05-03 09:53:30,729 [INFO] apscheduler.executors.default: Running job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 10:08:30 UTC)" (scheduled at 2026-05-03 09:53:30.720703+00:00)
+2026-05-03T09:53:31.210270359Z [error]                          ^
+2026-05-03T09:53:31.210270813Z [error] 2026-05-03 09:53:30,749 [INFO] httpx: HTTP Request: GET https://api.llama.fi/hacks "HTTP/1.1 200 OK"
+2026-05-03T09:53:31.210277996Z [error] 2026-05-03 09:53:30,753 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: fetched 513 hacks
+2026-05-03T09:53:31.210280992Z [error] 
+2026-05-03T09:53:31.210283731Z [error] 2026-05-03 09:53:30,442 [WARNING] app.report: _get_holder_concentration_trend(gho) failed: relation "concentration_snapshots" does not exist
+2026-05-03T09:53:31.210287821Z [error] 2026-05-03 09:53:30,655 [INFO] apscheduler.executors.default: Running job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 10:08:30 UTC)" (scheduled at 2026-05-03 09:53:30.654288+00:00)
+2026-05-03T09:53:31.210290684Z [error] 2026-05-03 09:53:31,111 [INFO] app.engine.watchlist: evaluate_watchlist: 1 active rows
+2026-05-03T09:53:31.210293871Z [error] 2026-05-03 09:53:30,670 [INFO] apscheduler.executors.default: Running job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 10:08:30 UTC)" (scheduled at 2026-05-03 09:53:30.654522+00:00)
+2026-05-03T09:53:31.210302885Z [error] 2026-05-03 09:53:30,705 [INFO] httpx: HTTP Request: GET https://api.llama.fi/hacks "HTTP/1.1 200 OK"
+2026-05-03T09:53:31.341502273Z [error] 2026-05-03 09:53:31,336 [INFO] app.engine.watchlist: evaluate_watchlist: 1 active rows
+2026-05-03T09:53:31.341509458Z [info] INFO:     100.64.0.3:34704 - "GET /api/reports/stablecoin/gho?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T09:53:31.355308239Z [info] INFO:     100.64.0.7:16214 - "GET /api/reports/stablecoin/gusd?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-05-03T09:53:31.366141584Z [info] INFO:     100.64.0.6:42978 - "GET /api/reports/stablecoin/dola?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-05-03T09:53:32.046048964Z [error] 2026-05-03 09:53:31,729 [INFO] app.engine.watchlist: evaluate_watchlist: done {'rows_evaluated': 1, 'in_cooldown': 0, 'crossings': 0, 'events_inserted': 0, 'duplicates': 0, 'errors': 0}
+2026-05-03T09:53:32.046055729Z [error] 2026-05-03 09:53:31,729 [INFO] apscheduler.executors.default: Job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 10:08:30 UTC)" executed successfully
+2026-05-03T09:53:32.046062983Z [error] 2026-05-03 09:53:31,792 [INFO] app.engine.watchlist: evaluate_watchlist: done {'rows_evaluated': 1, 'in_cooldown': 0, 'crossings': 0, 'events_inserted': 0, 'duplicates': 0, 'errors': 0}
+2026-05-03T09:53:32.046069739Z [error] 2026-05-03 09:53:31,793 [INFO] apscheduler.executors.default: Job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 10:08:30 UTC)" executed successfully
+2026-05-03T09:53:33.186350605Z [error] 2026-05-03 09:53:33,182 [WARNING] app.report: _get_holder_concentration_trend(usdp) failed: relation "concentration_snapshots" does not exist
+2026-05-03T09:53:33.186357711Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T09:53:33.186362871Z [error]                          ^
+2026-05-03T09:53:33.186367513Z [error] 
+2026-05-03T09:53:34.151325710Z [info] INFO:     100.64.0.17:14162 - "GET /api/reports/stablecoin/usdp?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T09:53:35.366563508Z [error] 2026-05-03 09:53:35,361 [WARNING] app.report: _get_holder_concentration_trend(frax) failed: relation "concentration_snapshots" does not exist
+2026-05-03T09:53:35.366572210Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T09:53:35.366578246Z [error]                          ^
+2026-05-03T09:53:35.366584316Z [error] 
+2026-05-03T09:53:36.109428276Z [info] INFO:     100.64.0.10:36142 - "GET /api/reports/stablecoin/frax?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T09:53:38.051738824Z [error] 2026-05-03 09:53:37,617 [WARNING] app.report: _get_holder_concentration_trend(lusd) failed: relation "concentration_snapshots" does not exist
+2026-05-03T09:53:38.051742491Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T09:53:38.051748094Z [error]                          ^
+2026-05-03T09:53:38.051752365Z [error] 
+2026-05-03T09:53:38.332031987Z [info] INFO:     100.64.0.26:26518 - "GET /api/reports/stablecoin/lusd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T09:53:42.092109888Z [error] 2026-05-03 09:53:41,524 [WARNING] app.report: _get_holder_concentration_trend(crvusd) failed: relation "concentration_snapshots" does not exist
+2026-05-03T09:53:42.092116743Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T09:53:42.092123335Z [error]                          ^
+2026-05-03T09:53:42.092130013Z [error] 
+2026-05-03T09:53:42.229191129Z [info] INFO:     100.64.0.34:36334 - "GET /api/reports/stablecoin/crvusd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T09:53:42.407520486Z [info] INFO:     100.64.0.17:41102 - "GET /api/reports/stablecoin/usdtb?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-05-03T09:53:45.613164405Z [error]                          ^
+2026-05-03T09:53:45.613453630Z [error] 2026-05-03 09:53:45,462 [WARNING] app.report: _get_holder_concentration_trend(tusd) failed: relation "concentration_snapshots" does not exist
+2026-05-03T09:53:45.613460250Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T09:53:45.613591923Z [error] 
+2026-05-03T09:53:46.413014272Z [info] INFO:     100.64.0.29:45128 - "GET /api/reports/stablecoin/tusd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T09:53:46.413021329Z [info] INFO:     100.64.0.26:50188 - "GET /api/reports/stablecoin/musd?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-05-03T09:53:46.494126026Z [info] INFO:     100.64.0.28:27908 - "GET /api/reports/stablecoin/usdd?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-05-03T09:53:46.608528871Z [info] INFO:     100.64.0.26:50188 - "GET /api/reports/stablecoin/gho?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-05-03T09:53:47.448016989Z [info] INFO:     100.64.0.28:27908 - "GET /api/reports/stablecoin/gusd?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-05-03T09:53:49.490972865Z [error] 2026-05-03 09:53:49,487 [WARNING] app.report: _get_holder_concentration_trend(dola) failed: relation "concentration_snapshots" does not exist
+2026-05-03T09:53:49.490981729Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T09:53:49.490988410Z [error]                          ^
+2026-05-03T09:53:49.490995877Z [error] 
+2026-05-03T09:53:50.471618551Z [info] INFO:     100.64.0.34:15650 - "GET /api/reports/stablecoin/dola?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T09:53:50.471624898Z [info] INFO:     100.64.0.28:27908 - "GET /api/reports/stablecoin/frax?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-05-03T09:54:59.733245961Z [info] INFO:     100.64.0.34:16094 - "GET /api/state-root/latest HTTP/1.1" 200 OK
+2026-05-03T09:54:59.733251453Z [info] INFO:     100.64.0.34:16094 - "POST /api/ops/keeper-cycle/1000/complete HTTP/1.1" 200 OK
+2026-05-03T09:54:59.733279432Z [info] INFO:     100.64.0.9:59912 - "GET /api/state-root/latest HTTP/1.1" 200 OK
+2026-05-03T09:54:59.733286497Z [info] INFO:     100.64.0.6:54594 - "POST /api/ops/keeper-cycle/999/complete HTTP/1.1" 200 OK
+2026-05-03T09:55:19.772672422Z [info] INFO:     100.64.0.14:50096 - "GET / HTTP/1.1" 200 OK
+2026-05-03T09:55:20.768789680Z [error] 2026-05-03 09:55:20,456 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: done {'fetched': 513, 'inserted': 0, 'duplicates': 513, 'malformed': 0, 'trigger_errors': 0}
+2026-05-03T09:55:20.768797621Z [error] 2026-05-03 09:55:20,457 [INFO] apscheduler.executors.default: Job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 10:08:30 UTC)" executed successfully
+2026-05-03T09:55:40.177100527Z [error] 2026-05-03 09:55:32,358 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: done {'fetched': 513, 'inserted': 0, 'duplicates': 513, 'malformed': 0, 'trigger_errors': 0}
+2026-05-03T09:55:40.177105461Z [error] 2026-05-03 09:55:32,358 [INFO] apscheduler.executors.default: Job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 10:08:30 UTC)" executed successfully
+2026-05-03T09:56:40.266145670Z [info] INFO:     100.64.0.16:22454 - "GET / HTTP/1.1" 200 OK
+2026-05-03T09:58:20.796203541Z [info] INFO:     100.64.0.11:56532 - "GET / HTTP/1.1" 200 OK
+2026-05-03T10:01:14.953281614Z [info] INFO:     100.64.0.35:18112 - "GET / HTTP/1.1" 200 OK
+2026-05-03T10:04:16.345272469Z [info] INFO:     100.64.0.27:28584 - "GET / HTTP/1.1" 200 OK
+2026-05-03T10:07:09.767873680Z [info] INFO:     100.64.0.36:20428 - "GET / HTTP/1.1" 200 OK
+2026-05-03T10:08:31.988285263Z [error] 2026-05-03 10:08:30,894 [INFO] app.engine.watchlist: evaluate_watchlist: 1 active rows
+2026-05-03T10:08:31.988307709Z [error] 2026-05-03 10:08:30,681 [INFO] apscheduler.executors.default: Running job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 10:23:30 UTC)" (scheduled at 2026-05-03 10:08:30.654522+00:00)
+2026-05-03T10:08:31.988316298Z [error] 2026-05-03 10:08:30,724 [INFO] apscheduler.executors.default: Running job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 10:23:30 UTC)" (scheduled at 2026-05-03 10:08:30.720491+00:00)
+2026-05-03T10:08:31.988322295Z [error] 2026-05-03 10:08:30,729 [INFO] httpx: HTTP Request: GET https://api.llama.fi/hacks "HTTP/1.1 200 OK"
+2026-05-03T10:08:31.988328907Z [error] 2026-05-03 10:08:30,735 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: fetched 513 hacks
+2026-05-03T10:08:31.988339008Z [error] 2026-05-03 10:08:30,736 [INFO] apscheduler.executors.default: Running job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 10:23:30 UTC)" (scheduled at 2026-05-03 10:08:30.720703+00:00)
+2026-05-03T10:08:31.988379314Z [error] 2026-05-03 10:08:30,969 [INFO] app.engine.watchlist: evaluate_watchlist: 1 active rows
+2026-05-03T10:08:31.988383417Z [error] 2026-05-03 10:08:30,756 [INFO] httpx: HTTP Request: GET https://api.llama.fi/hacks "HTTP/1.1 200 OK"
+2026-05-03T10:08:31.988390390Z [error] 2026-05-03 10:08:31,326 [INFO] app.engine.watchlist: evaluate_watchlist: done {'rows_evaluated': 1, 'in_cooldown': 0, 'crossings': 0, 'events_inserted': 0, 'duplicates': 0, 'errors': 0}
+2026-05-03T10:08:31.988398565Z [error] 2026-05-03 10:08:30,760 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: fetched 513 hacks
+2026-05-03T10:08:31.988444702Z [error] 2026-05-03 10:08:30,656 [INFO] apscheduler.executors.default: Running job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 10:23:30 UTC)" (scheduled at 2026-05-03 10:08:30.654288+00:00)
+2026-05-03T10:08:31.988651402Z [error] 2026-05-03 10:08:31,327 [INFO] apscheduler.executors.default: Job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 10:23:30 UTC)" executed successfully
+2026-05-03T10:08:31.988657096Z [error] 2026-05-03 10:08:31,442 [INFO] app.engine.watchlist: evaluate_watchlist: done {'rows_evaluated': 1, 'in_cooldown': 0, 'crossings': 0, 'events_inserted': 0, 'duplicates': 0, 'errors': 0}
+2026-05-03T10:08:31.988662360Z [error] 2026-05-03 10:08:31,443 [INFO] apscheduler.executors.default: Job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 10:23:30 UTC)" executed successfully
+2026-05-03T10:10:13.355972016Z [info] INFO:     100.64.0.18:30252 - "GET / HTTP/1.1" 200 OK
+2026-05-03T10:10:32.651283372Z [error] 2026-05-03 10:10:26,492 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: done {'fetched': 513, 'inserted': 0, 'duplicates': 513, 'malformed': 0, 'trigger_errors': 0}
+2026-05-03T10:10:32.651289604Z [error] 2026-05-03 10:10:26,492 [INFO] apscheduler.executors.default: Job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 10:23:30 UTC)" executed successfully
+2026-05-03T10:10:32.651295664Z [error] 2026-05-03 10:10:31,034 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: done {'fetched': 513, 'inserted': 0, 'duplicates': 513, 'malformed': 0, 'trigger_errors': 0}
+2026-05-03T10:10:32.651305353Z [error] 2026-05-03 10:10:31,035 [INFO] apscheduler.executors.default: Job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 10:23:30 UTC)" executed successfully
+2026-05-03T10:13:16.840888770Z [info] INFO:     100.64.0.12:60260 - "GET / HTTP/1.1" 200 OK
+2026-05-03T10:16:13.205260967Z [info] INFO:     100.64.0.30:42646 - "GET / HTTP/1.1" 200 OK
+2026-05-03T10:19:08.796050707Z [info] INFO:     100.64.0.15:60514 - "GET / HTTP/1.1" 200 OK
+2026-05-03T10:22:44.353652175Z [info] INFO:     100.64.0.18:28842 - "GET / HTTP/1.1" 200 OK
+2026-05-03T10:23:34.468718434Z [error] 2026-05-03 10:23:30,654 [INFO] apscheduler.executors.default: Running job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 10:38:30 UTC)" (scheduled at 2026-05-03 10:23:30.654288+00:00)
+2026-05-03T10:23:34.468731201Z [error] 2026-05-03 10:23:30,665 [INFO] apscheduler.executors.default: Running job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 10:38:30 UTC)" (scheduled at 2026-05-03 10:23:30.654522+00:00)
+2026-05-03T10:23:34.468739738Z [error] 2026-05-03 10:23:30,720 [INFO] apscheduler.executors.default: Running job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 10:38:30 UTC)" (scheduled at 2026-05-03 10:23:30.720491+00:00)
+2026-05-03T10:23:34.469082224Z [error] 2026-05-03 10:23:30,728 [INFO] apscheduler.executors.default: Running job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 10:38:30 UTC)" (scheduled at 2026-05-03 10:23:30.720703+00:00)
+2026-05-03T10:23:34.469094329Z [error] 2026-05-03 10:23:30,877 [INFO] app.engine.watchlist: evaluate_watchlist: 1 active rows
+2026-05-03T10:23:34.469100898Z [error] 2026-05-03 10:23:30,959 [INFO] app.engine.watchlist: evaluate_watchlist: 1 active rows
+2026-05-03T10:23:34.469107678Z [error] 2026-05-03 10:23:31,298 [INFO] app.engine.watchlist: evaluate_watchlist: done {'rows_evaluated': 1, 'in_cooldown': 0, 'crossings': 0, 'events_inserted': 0, 'duplicates': 0, 'errors': 0}
+2026-05-03T10:23:34.469113701Z [error] 2026-05-03 10:23:31,298 [INFO] apscheduler.executors.default: Job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 10:38:30 UTC)" executed successfully
+2026-05-03T10:23:34.469120573Z [error] 2026-05-03 10:23:31,423 [INFO] app.engine.watchlist: evaluate_watchlist: done {'rows_evaluated': 1, 'in_cooldown': 0, 'crossings': 0, 'events_inserted': 0, 'duplicates': 0, 'errors': 0}
+2026-05-03T10:23:34.469128122Z [error] 2026-05-03 10:23:31,423 [INFO] apscheduler.executors.default: Job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 10:38:30 UTC)" executed successfully
+2026-05-03T10:23:34.472816891Z [error] 2026-05-03 10:23:34,022 [INFO] httpx: HTTP Request: GET https://api.llama.fi/hacks "HTTP/1.1 200 OK"
+2026-05-03T10:23:34.472825297Z [error] 2026-05-03 10:23:34,022 [INFO] httpx: HTTP Request: GET https://api.llama.fi/hacks "HTTP/1.1 200 OK"
+2026-05-03T10:23:34.472831777Z [error] 2026-05-03 10:23:34,218 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: fetched 513 hacks
+2026-05-03T10:23:34.472837973Z [error] 2026-05-03 10:23:34,220 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: fetched 513 hacks
+2026-05-03T10:25:14.611947585Z [info] INFO:     100.64.0.37:51068 - "GET / HTTP/1.1" 200 OK
+2026-05-03T10:25:23.514017320Z [error] 2026-05-03 10:25:23,043 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: done {'fetched': 513, 'inserted': 0, 'duplicates': 513, 'malformed': 0, 'trigger_errors': 0}
+2026-05-03T10:25:23.514024573Z [error] 2026-05-03 10:25:23,043 [INFO] apscheduler.executors.default: Job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 10:38:30 UTC)" executed successfully
+2026-05-03T10:25:42.990017018Z [error] 2026-05-03 10:25:34,325 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: done {'fetched': 513, 'inserted': 0, 'duplicates': 513, 'malformed': 0, 'trigger_errors': 0}
+2026-05-03T10:25:42.990027846Z [error] 2026-05-03 10:25:34,326 [INFO] apscheduler.executors.default: Job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 10:38:30 UTC)" executed successfully
+2026-05-03T10:28:23.619788763Z [info] INFO:     100.64.0.27:52738 - "GET / HTTP/1.1" 200 OK
+2026-05-03T10:31:16.152865549Z [info] INFO:     100.64.0.38:14514 - "GET / HTTP/1.1" 200 OK
+2026-05-03T10:34:18.430815021Z [info] INFO:     100.64.0.20:25098 - "GET / HTTP/1.1" 200 OK
+2026-05-03T10:37:09.496134889Z [info] INFO:     100.64.0.4:40266 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-05-03T10:37:13.854583443Z [info] INFO:     100.64.0.9:18058 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-05-03T10:37:13.854588803Z [info] INFO:     100.64.0.37:15390 - "GET / HTTP/1.1" 200 OK
+2026-05-03T10:37:20.517579235Z [info] INFO:     100.64.0.5:31420 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-05-03T10:37:24.516090660Z [info] INFO:     100.64.0.4:53904 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-05-03T10:37:26.681108861Z [info] INFO:     100.64.0.5:31422 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-05-03T10:37:47.366224425Z [info] INFO:     100.64.0.10:22250 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-05-03T10:37:47.366230709Z [info] INFO:     100.64.0.8:26772 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-05-03T10:37:47.366236434Z [info] INFO:     100.64.0.10:22252 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-05-03T10:37:49.487628293Z [info] INFO:     100.64.0.7:46752 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-05-03T10:37:52.430328653Z [info] INFO:     100.64.0.9:44720 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-05-03T10:37:55.154870460Z [info] INFO:     100.64.0.6:17422 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-05-03T10:37:59.302744989Z [info] INFO:     100.64.0.3:46154 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-05-03T10:38:01.273266960Z [info] INFO:     100.64.0.4:26756 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-05-03T10:38:02.121584502Z [info] INFO:     100.64.0.5:32604 - "GET /api/provenance/cda-sources HTTP/1.1" 200 OK
+2026-05-03T10:38:03.314687761Z [info] INFO:     100.64.0.5:32604 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-05-03T10:38:05.303301446Z [info] INFO:     100.64.0.9:42256 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-05-03T10:38:09.255372603Z [info] INFO:     100.64.0.10:43778 - "POST /api/provenance/static/register HTTP/1.1" 405 Method Not Allowed
+2026-05-03T10:38:11.274488821Z [info] INFO:     100.64.0.5:18560 - "POST /api/provenance/static/register HTTP/1.1" 405 Method Not Allowed
+2026-05-03T10:38:13.330080926Z [info] INFO:     100.64.0.7:55472 - "POST /api/provenance/static/register HTTP/1.1" 405 Method Not Allowed
+2026-05-03T10:38:15.342766326Z [info] INFO:     100.64.0.31:51616 - "GET /robots.txt HTTP/1.1" 200 OK
+2026-05-03T10:38:16.132638162Z [info] INFO:     100.64.0.4:34882 - "POST /api/provenance/static/register HTTP/1.1" 405 Method Not Allowed
+2026-05-03T10:38:16.132643897Z [info] INFO:     100.64.0.31:51616 - "GET /sitemap-markdown.xml HTTP/1.1" 200 OK
+2026-05-03T10:38:20.113501669Z [info] INFO:     100.64.0.9:20346 - "POST /api/provenance/static/register HTTP/1.1" 405 Method Not Allowed
+2026-05-03T10:38:22.482471350Z [info] INFO:     100.64.0.9:20346 - "POST /api/provenance/static/register HTTP/1.1" 405 Method Not Allowed
+2026-05-03T10:38:25.306557648Z [info] INFO:     100.64.0.3:18678 - "POST /api/provenance/static/register HTTP/1.1" 405 Method Not Allowed
+2026-05-03T10:38:28.554807666Z [info] INFO:     100.64.0.9:20350 - "POST /api/provenance/static/register HTTP/1.1" 405 Method Not Allowed
+2026-05-03T10:38:31.388356378Z [error] 2026-05-03 10:38:30,654 [INFO] apscheduler.executors.default: Running job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 10:53:30 UTC)" (scheduled at 2026-05-03 10:38:30.654288+00:00)
+2026-05-03T10:38:31.388368461Z [error] 2026-05-03 10:38:30,668 [INFO] apscheduler.executors.default: Running job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 10:53:30 UTC)" (scheduled at 2026-05-03 10:38:30.654522+00:00)
+2026-05-03T10:38:31.388373746Z [error] 2026-05-03 10:38:30,895 [INFO] app.engine.watchlist: evaluate_watchlist: 1 active rows
+2026-05-03T10:38:31.388383460Z [error] 2026-05-03 10:38:30,721 [INFO] apscheduler.executors.default: Running job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 10:53:30 UTC)" (scheduled at 2026-05-03 10:38:30.720491+00:00)
+2026-05-03T10:38:31.388390887Z [error] 2026-05-03 10:38:30,980 [INFO] app.engine.watchlist: evaluate_watchlist: 1 active rows
+2026-05-03T10:38:31.388391520Z [error] 2026-05-03 10:38:30,732 [INFO] apscheduler.executors.default: Running job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 10:53:30 UTC)" (scheduled at 2026-05-03 10:38:30.720703+00:00)
+2026-05-03T10:38:31.388398469Z [error] 2026-05-03 10:38:31,348 [INFO] app.engine.watchlist: evaluate_watchlist: done {'rows_evaluated': 1, 'in_cooldown': 0, 'crossings': 0, 'events_inserted': 0, 'duplicates': 0, 'errors': 0}
+2026-05-03T10:38:31.388403438Z [error] 2026-05-03 10:38:31,348 [INFO] apscheduler.executors.default: Job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 10:53:30 UTC)" executed successfully
+2026-05-03T10:38:31.450266748Z [error] 2026-05-03 10:38:31,447 [INFO] app.engine.watchlist: evaluate_watchlist: done {'rows_evaluated': 1, 'in_cooldown': 0, 'crossings': 0, 'events_inserted': 0, 'duplicates': 0, 'errors': 0}
+2026-05-03T10:38:31.450278449Z [error] 2026-05-03 10:38:31,447 [INFO] apscheduler.executors.default: Job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 10:53:30 UTC)" executed successfully
+2026-05-03T10:38:31.489467072Z [error] 2026-05-03 10:38:31,486 [INFO] httpx: HTTP Request: GET https://api.llama.fi/hacks "HTTP/1.1 200 OK"
+2026-05-03T10:38:31.489474199Z [error] 2026-05-03 10:38:31,486 [INFO] httpx: HTTP Request: GET https://api.llama.fi/hacks "HTTP/1.1 200 OK"
+2026-05-03T10:38:32.295999353Z [error] 2026-05-03 10:38:31,679 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: fetched 513 hacks
+2026-05-03T10:38:32.296010917Z [error] 2026-05-03 10:38:31,682 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: fetched 513 hacks
+2026-05-03T10:40:22.821765839Z [info] INFO:     100.64.0.28:30116 - "GET / HTTP/1.1" 200 OK
+2026-05-03T10:40:27.752045129Z [error] 2026-05-03 10:40:27,379 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: done {'fetched': 513, 'inserted': 0, 'duplicates': 513, 'malformed': 0, 'trigger_errors': 0}
+2026-05-03T10:40:27.752051486Z [error] 2026-05-03 10:40:27,380 [INFO] apscheduler.executors.default: Job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 10:53:30 UTC)" executed successfully
+2026-05-03T10:40:32.730586921Z [error] 2026-05-03 10:40:32,584 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: done {'fetched': 513, 'inserted': 0, 'duplicates': 513, 'malformed': 0, 'trigger_errors': 0}
+2026-05-03T10:40:32.730591841Z [error] 2026-05-03 10:40:32,584 [INFO] apscheduler.executors.default: Job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 10:53:30 UTC)" executed successfully
+2026-05-03T10:43:13.620721234Z [info] INFO:     100.64.0.2:53218 - "GET / HTTP/1.1" 200 OK
+2026-05-03T10:46:13.716427451Z [info] INFO:     100.64.0.39:56464 - "GET / HTTP/1.1" 200 OK
+2026-05-03T10:49:19.772894481Z [info] INFO:     100.64.0.40:62208 - "GET / HTTP/1.1" 200 OK
+2026-05-03T10:52:13.914353305Z [info] INFO:     100.64.0.25:54758 - "GET / HTTP/1.1" 200 OK
+2026-05-03T10:53:34.649906390Z [error] 2026-05-03 10:53:30,654 [INFO] apscheduler.executors.default: Running job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 11:08:30 UTC)" (scheduled at 2026-05-03 10:53:30.654288+00:00)
+2026-05-03T10:53:34.649915777Z [error] 2026-05-03 10:53:30,663 [INFO] apscheduler.executors.default: Running job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 11:08:30 UTC)" (scheduled at 2026-05-03 10:53:30.654522+00:00)
+2026-05-03T10:53:34.649923909Z [error] 2026-05-03 10:53:30,720 [INFO] apscheduler.executors.default: Running job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 11:08:30 UTC)" (scheduled at 2026-05-03 10:53:30.720491+00:00)
+2026-05-03T10:53:34.649931051Z [error] 2026-05-03 10:53:30,728 [INFO] apscheduler.executors.default: Running job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 11:08:30 UTC)" (scheduled at 2026-05-03 10:53:30.720703+00:00)
+2026-05-03T10:53:34.649939738Z [error] 2026-05-03 10:53:30,876 [INFO] app.engine.watchlist: evaluate_watchlist: 1 active rows
+2026-05-03T10:53:34.649946298Z [error] 2026-05-03 10:53:30,962 [INFO] app.engine.watchlist: evaluate_watchlist: 1 active rows
+2026-05-03T10:53:34.649952287Z [error] 2026-05-03 10:53:31,297 [INFO] app.engine.watchlist: evaluate_watchlist: done {'rows_evaluated': 1, 'in_cooldown': 0, 'crossings': 0, 'events_inserted': 0, 'duplicates': 0, 'errors': 0}
+2026-05-03T10:53:34.649958986Z [error] 2026-05-03 10:53:31,298 [INFO] apscheduler.executors.default: Job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 11:08:30 UTC)" executed successfully
+2026-05-03T10:53:34.649964373Z [error] 2026-05-03 10:53:31,429 [INFO] app.engine.watchlist: evaluate_watchlist: done {'rows_evaluated': 1, 'in_cooldown': 0, 'crossings': 0, 'events_inserted': 0, 'duplicates': 0, 'errors': 0}
+2026-05-03T10:53:34.649971422Z [error] 2026-05-03 10:53:31,429 [INFO] apscheduler.executors.default: Job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 11:08:30 UTC)" executed successfully
+2026-05-03T10:53:34.652653357Z [error] 2026-05-03 10:53:31,536 [INFO] httpx: HTTP Request: GET https://api.llama.fi/hacks "HTTP/1.1 200 OK"
+2026-05-03T10:53:34.652659508Z [error] 2026-05-03 10:53:31,536 [INFO] httpx: HTTP Request: GET https://api.llama.fi/hacks "HTTP/1.1 200 OK"
+2026-05-03T10:53:34.652663598Z [error] 2026-05-03 10:53:31,742 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: fetched 513 hacks
+2026-05-03T10:53:34.652667454Z [error] 2026-05-03 10:53:31,743 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: fetched 513 hacks
+2026-05-03T10:54:54.504766768Z [info] INFO:     100.64.0.7:39926 - "POST /api/ops/keeper-cycle/start HTTP/1.1" 200 OK
+2026-05-03T10:54:54.504774343Z [info] INFO:     100.64.0.6:11624 - "GET /api/scores HTTP/1.1" 200 OK
+2026-05-03T10:54:55.383515696Z [info] INFO:     100.64.0.3:54896 - "GET /api/psi/scores HTTP/1.1" 200 OK
+2026-05-03T10:54:57.361427906Z [error] 2026-05-03 10:54:57,149 [ERROR] app.database: [sync-in-async] fetch_all called from async context at /app/app/lenses/__init__.py:94 (list_lenses)
+2026-05-03T10:54:57.380069169Z [error] 2026-05-03 10:54:57,377 [ERROR] app.database: [sync-in-async] fetch_one called from async context at /app/app/lenses/__init__.py:50 (load_lens)
+2026-05-03T10:54:58.451711388Z [info] INFO:     100.64.0.10:44684 - "GET /api/reports/lenses HTTP/1.1" 200 OK
+2026-05-03T10:54:58.618448019Z [info] INFO:     100.64.0.8:58824 - "GET /api/scores HTTP/1.1" 200 OK
+2026-05-03T10:54:59.597460470Z [info] INFO:     100.64.0.31:28942 - "POST /api/ops/keeper-cycle/start HTTP/1.1" 200 OK
+2026-05-03T10:54:59.597468278Z [info] INFO:     100.64.0.25:50830 - "GET /api/scores HTTP/1.1" 200 OK
+2026-05-03T10:54:59.681640068Z [info] INFO:     100.64.0.31:28942 - "GET /api/psi/scores HTTP/1.1" 200 OK
+2026-05-03T10:55:01.689261342Z [error] 2026-05-03 10:55:01,428 [WARNING] app.report: _get_holder_concentration_trend(usdc) failed: relation "concentration_snapshots" does not exist
+2026-05-03T10:55:01.689266447Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T10:55:01.689271093Z [error]                          ^
+2026-05-03T10:55:01.689308393Z [error] 
+2026-05-03T10:55:02.876643467Z [info] INFO:     100.64.0.7:39938 - "GET /api/reports/stablecoin/usdc?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T10:55:05.894409020Z [error] 2026-05-03 10:55:05,215 [WARNING] app.report: _get_holder_concentration_trend(usdt) failed: relation "concentration_snapshots" does not exist
+2026-05-03T10:55:05.894413325Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T10:55:05.894417196Z [error]                          ^
+2026-05-03T10:55:05.894421039Z [error] 
+2026-05-03T10:55:05.923543378Z [info] INFO:     100.64.0.6:34480 - "GET /api/reports/stablecoin/usdt?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T10:55:06.915323579Z [info] INFO:     100.64.0.15:49216 - "GET / HTTP/1.1" 200 OK
+2026-05-03T10:55:09.937518887Z [error] 2026-05-03 10:55:09,182 [WARNING] app.report: _get_holder_concentration_trend(usd1) failed: relation "concentration_snapshots" does not exist
+2026-05-03T10:55:09.937524516Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T10:55:09.937530246Z [error]                          ^
+2026-05-03T10:55:09.937538940Z [error] 
+2026-05-03T10:55:11.200194316Z [info] INFO:     100.64.0.7:39938 - "GET /api/reports/stablecoin/usd1?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T10:55:13.245534534Z [error] 2026-05-03 10:55:12,672 [WARNING] app.report: _get_holder_concentration_trend(usds) failed: relation "concentration_snapshots" does not exist
+2026-05-03T10:55:13.245540858Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T10:55:13.245545943Z [error]                          ^
+2026-05-03T10:55:13.245665068Z [error] 
+2026-05-03T10:55:14.219723170Z [info] INFO:     100.64.0.10:29646 - "GET /api/reports/stablecoin/usds?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T10:55:17.020053739Z [error] 
+2026-05-03T10:55:17.020075086Z [error] 2026-05-03 10:55:16,479 [WARNING] app.report: _get_holder_concentration_trend(dai) failed: relation "concentration_snapshots" does not exist
+2026-05-03T10:55:17.020080500Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T10:55:17.020086042Z [error]                          ^
+2026-05-03T10:55:17.246388662Z [info] INFO:     100.64.0.10:29646 - "GET /api/reports/stablecoin/dai?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T10:55:18.131605138Z [info] INFO:     100.64.0.28:55804 - "GET /api/reports/lenses HTTP/1.1" 200 OK
+2026-05-03T10:55:18.155251250Z [info] INFO:     100.64.0.32:60366 - "GET /api/scores HTTP/1.1" 200 OK
+2026-05-03T10:55:20.113033066Z [error] 2026-05-03 10:55:20,110 [WARNING] app.report: _get_holder_concentration_trend(fdusd) failed: relation "concentration_snapshots" does not exist
+2026-05-03T10:55:20.113039940Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T10:55:20.113044431Z [error]                          ^
+2026-05-03T10:55:20.113048901Z [error] 
+2026-05-03T10:55:21.252771057Z [info] INFO:     100.64.0.7:30972 - "GET /api/reports/stablecoin/fdusd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T10:55:22.221491658Z [error] 2026-05-03 10:55:21,492 [WARNING] app.report: _get_holder_concentration_trend(usdc) failed: relation "concentration_snapshots" does not exist
+2026-05-03T10:55:22.221497534Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T10:55:22.221504324Z [error]                          ^
+2026-05-03T10:55:22.221511137Z [error] 
+2026-05-03T10:55:22.221517482Z [info] INFO:     100.64.0.25:56458 - "GET /api/reports/stablecoin/usdc?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T10:55:24.124944960Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T10:55:24.124953493Z [error]                          ^
+2026-05-03T10:55:24.124955033Z [error] 2026-05-03 10:55:23,933 [WARNING] app.report: _get_holder_concentration_trend(rlusd) failed: relation "concentration_snapshots" does not exist
+2026-05-03T10:55:24.124961496Z [error] 
+2026-05-03T10:55:25.168389255Z [info] INFO:     100.64.0.9:46316 - "GET /api/reports/stablecoin/rlusd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T10:55:26.077931854Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T10:55:26.077937338Z [error]                          ^
+2026-05-03T10:55:26.077942422Z [error] 
+2026-05-03T10:55:26.078420707Z [error] 2026-05-03 10:55:25,570 [WARNING] app.report: _get_holder_concentration_trend(usdt) failed: relation "concentration_snapshots" does not exist
+2026-05-03T10:55:26.215633961Z [error] 2026-05-03 10:55:26,211 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: done {'fetched': 513, 'inserted': 0, 'duplicates': 513, 'malformed': 0, 'trigger_errors': 0}
+2026-05-03T10:55:26.215644905Z [error] 2026-05-03 10:55:26,212 [INFO] apscheduler.executors.default: Job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 11:08:30 UTC)" executed successfully
+2026-05-03T10:55:26.326810325Z [info] INFO:     100.64.0.30:33882 - "GET /api/reports/stablecoin/usdt?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T10:55:28.307683407Z [error] 
+2026-05-03T10:55:28.307714488Z [error] 2026-05-03 10:55:28,196 [WARNING] app.report: _get_holder_concentration_trend(usde) failed: relation "concentration_snapshots" does not exist
+2026-05-03T10:55:28.307720100Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T10:55:28.307726198Z [error]                          ^
+2026-05-03T10:55:29.301564927Z [info] INFO:     100.64.0.5:28496 - "GET /api/reports/stablecoin/usde?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T10:55:30.214128332Z [error] 2026-05-03 10:55:29,605 [WARNING] app.report: _get_holder_concentration_trend(usd1) failed: relation "concentration_snapshots" does not exist
+2026-05-03T10:55:30.214134530Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T10:55:30.214140886Z [error]                          ^
+2026-05-03T10:55:30.214148005Z [error] 
+2026-05-03T10:55:30.369415387Z [info] INFO:     100.64.0.34:45796 - "GET /api/reports/stablecoin/usd1?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T10:55:32.293600635Z [error] 2026-05-03 10:55:32,072 [WARNING] app.report: _get_holder_concentration_trend(pyusd) failed: relation "concentration_snapshots" does not exist
+2026-05-03T10:55:32.293606503Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T10:55:32.293612039Z [error]                          ^
+2026-05-03T10:55:32.293618410Z [error] 
+2026-05-03T10:55:33.384703400Z [info] INFO:     100.64.0.10:24714 - "GET /api/reports/stablecoin/pyusd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T10:55:33.384709514Z [info] INFO:     100.64.0.6:54226 - "GET /api/reports/stablecoin/usdp?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-05-03T10:55:33.384714367Z [error] 2026-05-03 10:55:33,177 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: done {'fetched': 513, 'inserted': 0, 'duplicates': 513, 'malformed': 0, 'trigger_errors': 0}
+2026-05-03T10:55:33.384718850Z [error] 2026-05-03 10:55:33,178 [INFO] apscheduler.executors.default: Job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 11:08:30 UTC)" executed successfully
+2026-05-03T10:55:34.306332997Z [error] 2026-05-03 10:55:33,744 [WARNING] app.report: _get_holder_concentration_trend(usds) failed: relation "concentration_snapshots" does not exist
+2026-05-03T10:55:34.306339216Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T10:55:34.306344754Z [error]                          ^
+2026-05-03T10:55:34.306352839Z [error] 
+2026-05-03T10:55:34.513861505Z [info] INFO:     100.64.0.17:17854 - "GET /api/reports/stablecoin/usds?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T10:55:36.332682905Z [error] 2026-05-03 10:55:35,812 [WARNING] app.report: _get_holder_concentration_trend(lusd) failed: relation "concentration_snapshots" does not exist
+2026-05-03T10:55:36.332695070Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T10:55:36.332703496Z [error]                          ^
+2026-05-03T10:55:36.332710975Z [error] 
+2026-05-03T10:55:36.531316752Z [info] INFO:     100.64.0.5:28496 - "GET /api/reports/stablecoin/lusd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T10:55:36.541065367Z [info] INFO:     100.64.0.8:24018 - "GET /api/reports/stablecoin/crvusd?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-05-03T10:55:38.425518575Z [error] 2026-05-03 10:55:37,880 [WARNING] app.report: _get_holder_concentration_trend(dai) failed: relation "concentration_snapshots" does not exist
+2026-05-03T10:55:38.425522990Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T10:55:38.425527891Z [error]                          ^
+2026-05-03T10:55:38.425533114Z [error] 
+2026-05-03T10:55:39.581148479Z [info] INFO:     100.64.0.31:35062 - "GET /api/reports/stablecoin/dai?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T10:55:39.581152939Z [error] 2026-05-03 10:55:39,355 [WARNING] app.report: _get_holder_concentration_trend(usdtb) failed: relation "concentration_snapshots" does not exist
+2026-05-03T10:55:39.581161144Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T10:55:39.581167288Z [error]                          ^
+2026-05-03T10:55:39.581173019Z [error] 
+2026-05-03T10:55:40.425133794Z [info] INFO:     100.64.0.10:21150 - "GET /api/reports/stablecoin/tusd?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-05-03T10:55:40.425156584Z [info] INFO:     100.64.0.8:24018 - "GET /api/reports/stablecoin/musd?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-05-03T10:55:40.425165033Z [info] INFO:     100.64.0.10:21150 - "GET /api/reports/stablecoin/usdd?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-05-03T10:55:40.425172279Z [info] INFO:     100.64.0.4:60732 - "GET /api/reports/stablecoin/gho?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-05-03T10:55:40.425202725Z [info] INFO:     100.64.0.9:21298 - "GET /api/reports/stablecoin/usdtb?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T10:55:43.060708101Z [error] 2026-05-03 10:55:42,001 [WARNING] app.report: _get_holder_concentration_trend(fdusd) failed: relation "concentration_snapshots" does not exist
+2026-05-03T10:55:43.060717166Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T10:55:43.060724410Z [error]                          ^
+2026-05-03T10:55:43.060732008Z [error] 
+2026-05-03T10:55:43.060740517Z [info] INFO:     100.64.0.31:35062 - "GET /api/reports/stablecoin/fdusd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T10:55:43.060751181Z [error] 2026-05-03 10:55:43,028 [WARNING] app.report: _get_holder_concentration_trend(gusd) failed: relation "concentration_snapshots" does not exist
+2026-05-03T10:55:43.060758343Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T10:55:43.060765891Z [error]                          ^
+2026-05-03T10:55:43.060781159Z [error] 
+2026-05-03T10:55:44.934646892Z [info] INFO:     100.64.0.3:18940 - "GET /api/reports/stablecoin/gusd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T10:55:47.353813416Z [error] 
+2026-05-03T10:55:47.353838573Z [info] INFO:     100.64.0.41:58862 - "GET /api/reports/stablecoin/rlusd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T10:55:47.353842580Z [error]                          ^
+2026-05-03T10:55:47.353854035Z [error] 
+2026-05-03T10:55:47.353867526Z [error] 2026-05-03 10:55:46,706 [WARNING] app.report: _get_holder_concentration_trend(dola) failed: relation "concentration_snapshots" does not exist
+2026-05-03T10:55:47.353876673Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T10:55:47.353885633Z [error]                          ^
+2026-05-03T10:55:47.353895666Z [error] 2026-05-03 10:55:46,265 [WARNING] app.report: _get_holder_concentration_trend(rlusd) failed: relation "concentration_snapshots" does not exist
+2026-05-03T10:55:47.353910060Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T10:55:48.310146074Z [info] INFO:     100.64.0.3:18940 - "GET /api/reports/stablecoin/dola?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T10:55:50.527830113Z [error] 2026-05-03 10:55:50,324 [WARNING] app.report: _get_holder_concentration_trend(frax) failed: relation "concentration_snapshots" does not exist
+2026-05-03T10:55:50.527835956Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T10:55:50.527841257Z [error]                          ^
+2026-05-03T10:55:50.527847125Z [error] 
+2026-05-03T10:55:50.527852342Z [error] 2026-05-03 10:55:50,510 [WARNING] app.report: _get_holder_concentration_trend(usde) failed: relation "concentration_snapshots" does not exist
+2026-05-03T10:55:50.527857438Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T10:55:50.527862171Z [error]                          ^
+2026-05-03T10:55:50.527868279Z [error] 
+2026-05-03T10:55:51.313883786Z [info] INFO:     100.64.0.34:26586 - "GET /api/reports/stablecoin/usde?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T10:55:51.313956091Z [info] INFO:     100.64.0.3:18940 - "GET /api/reports/stablecoin/frax?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T10:55:54.487300906Z [error] 2026-05-03 10:55:54,412 [WARNING] app.report: _get_holder_concentration_trend(pyusd) failed: relation "concentration_snapshots" does not exist
+2026-05-03T10:55:54.487311089Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T10:55:54.487317058Z [error]                          ^
+2026-05-03T10:55:54.487325457Z [error] 
+2026-05-03T10:55:55.602438133Z [info] INFO:     100.64.0.28:48268 - "GET /api/reports/stablecoin/pyusd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T10:55:58.809390963Z [error] 2026-05-03 10:55:58,433 [WARNING] app.report: _get_holder_concentration_trend(usdp) failed: relation "concentration_snapshots" does not exist
+2026-05-03T10:55:58.809404443Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T10:55:58.809414020Z [error]                          ^
+2026-05-03T10:55:58.809425738Z [error] 
+2026-05-03T10:56:00.242562320Z [info] INFO:     100.64.0.34:26586 - "GET /api/reports/stablecoin/usdp?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T10:56:02.792078845Z [error] 2026-05-03 10:56:02,475 [WARNING] app.report: _get_holder_concentration_trend(lusd) failed: relation "concentration_snapshots" does not exist
+2026-05-03T10:56:02.792192261Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T10:56:02.792200970Z [error]                          ^
+2026-05-03T10:56:02.792210041Z [error] 
+2026-05-03T10:56:03.533136502Z [info] INFO:     100.64.0.26:49366 - "GET /api/reports/stablecoin/lusd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T10:56:06.711659856Z [error] 2026-05-03 10:56:06,494 [WARNING] app.report: _get_holder_concentration_trend(crvusd) failed: relation "concentration_snapshots" does not exist
+2026-05-03T10:56:06.711678194Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T10:56:06.711684742Z [error]                          ^
+2026-05-03T10:56:06.711691399Z [error] 
+2026-05-03T10:56:07.760495078Z [info] INFO:     100.64.0.34:49454 - "GET /api/reports/stablecoin/crvusd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T10:56:10.758452560Z [error] 2026-05-03 10:56:10,480 [WARNING] app.report: _get_holder_concentration_trend(usdtb) failed: relation "concentration_snapshots" does not exist
+2026-05-03T10:56:10.758463998Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T10:56:10.758480633Z [error]                          ^
+2026-05-03T10:56:10.758482597Z [error] 
+2026-05-03T10:56:11.869287445Z [info] INFO:     100.64.0.19:27872 - "GET /api/reports/stablecoin/usdtb?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T10:56:11.869293824Z [info] INFO:     100.64.0.34:49454 - "GET /api/reports/stablecoin/tusd?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-05-03T10:56:15.086236071Z [error] 2026-05-03 10:56:14,414 [WARNING] app.report: _get_holder_concentration_trend(musd) failed: relation "concentration_snapshots" does not exist
+2026-05-03T10:56:15.086240466Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T10:56:15.086244954Z [error]                          ^
+2026-05-03T10:56:15.086249724Z [error] 
+2026-05-03T10:56:15.171728518Z [info] INFO:     100.64.0.27:49762 - "GET /api/reports/stablecoin/musd?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T10:56:16.157807878Z [info] INFO:     100.64.0.34:49454 - "GET /api/reports/stablecoin/usdd?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-05-03T10:56:16.157818895Z [info] INFO:     100.64.0.19:57804 - "GET /api/reports/stablecoin/gho?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-05-03T10:56:16.157827532Z [info] INFO:     100.64.0.34:49454 - "GET /api/reports/stablecoin/gusd?format=json&template=sbt_metadata HTTP/1.1" 429 Too Many Requests
+2026-05-03T10:56:18.944188014Z [error] 2026-05-03 10:56:18,675 [WARNING] app.report: _get_holder_concentration_trend(dola) failed: relation "concentration_snapshots" does not exist
+2026-05-03T10:56:18.944192103Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T10:56:18.944196089Z [error]                          ^
+2026-05-03T10:56:18.944200858Z [error] 
+2026-05-03T10:56:19.878603491Z [info] INFO:     100.64.0.27:49762 - "GET /api/reports/stablecoin/dola?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T10:56:23.365963668Z [error] 2026-05-03 10:56:22,771 [WARNING] app.report: _get_holder_concentration_trend(frax) failed: relation "concentration_snapshots" does not exist
+2026-05-03T10:56:23.365971290Z [error] LINE 4:             FROM concentration_snapshots
+2026-05-03T10:56:23.365977096Z [error]                          ^
+2026-05-03T10:56:23.365983989Z [error] 
+2026-05-03T10:56:24.346180906Z [info] INFO:     100.64.0.34:49454 - "GET /api/reports/stablecoin/frax?format=json&template=sbt_metadata HTTP/1.1" 200 OK
+2026-05-03T10:56:54.769352633Z [info] INFO:     100.64.0.4:55426 - "GET /api/state-root/latest HTTP/1.1" 200 OK
+2026-05-03T10:56:55.443763508Z [info] INFO:     100.64.0.10:55698 - "POST /api/ops/keeper-cycle/1001/complete HTTP/1.1" 200 OK
+2026-05-03T10:57:36.422696764Z [info] INFO:     100.64.0.30:55116 - "GET /api/state-root/latest HTTP/1.1" 200 OK
+2026-05-03T10:57:36.422702085Z [info] INFO:     100.64.0.33:57658 - "POST /api/ops/keeper-cycle/1002/complete HTTP/1.1" 200 OK
+2026-05-03T10:58:05.946306369Z [info] INFO:     100.64.0.26:20730 - "GET /sitemap.xml HTTP/1.1" 200 OK
