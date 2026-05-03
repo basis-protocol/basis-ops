@@ -1,4 +1,3 @@
-2026-05-01T06:53:07.813039956Z [error] 2026-05-01 06:53:07,810 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
 2026-05-01T06:53:07.813043052Z [error] 2026-05-01 06:53:07,811 WARNING [basis_state] Failed to fetch history for stablecoin:RAI
 2026-05-01T06:53:07.813046002Z [error] 2026-05-01 06:53:07,811 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/FRAX params={'format': 'json'}
 2026-05-01T06:53:07.844506126Z [error] 2026-05-01 06:53:07,838 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/FRAX?format=json "HTTP/1.1 429 "
@@ -1999,3 +1998,4 @@
 2026-05-03T15:12:13.899658419Z [info] INFO:     100.64.0.13:61128 - "GET //site/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
 2026-05-03T15:12:13.899665139Z [info] INFO:     100.64.0.12:33168 - "GET //cms/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
 2026-05-03T15:12:13.899668428Z [info] INFO:     100.64.0.15:33346 - "GET //sito/wp-includes/wlwmanifest.xml HTTP/1.1" 404 Not Found
+2026-05-03T15:35:55.719497351Z [info] INFO:     100.64.0.4:27906 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
