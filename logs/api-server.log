@@ -1066,3 +1066,124 @@
 2026-05-03T10:57:36.422696764Z [info] INFO:     100.64.0.30:55116 - "GET /api/state-root/latest HTTP/1.1" 200 OK
 2026-05-03T10:57:36.422702085Z [info] INFO:     100.64.0.33:57658 - "POST /api/ops/keeper-cycle/1002/complete HTTP/1.1" 200 OK
 2026-05-03T10:58:05.946306369Z [info] INFO:     100.64.0.26:20730 - "GET /sitemap.xml HTTP/1.1" 200 OK
+2026-05-03T10:58:56.068333805Z [info] INFO:     100.64.0.18:61398 - "GET / HTTP/1.1" 200 OK
+2026-05-03T11:00:05.880008743Z [error] 2026-05-03 11:00:04,354 [ERROR] app.database: [sync-in-async] fetch_all called from async context at /app/app/ops/tools/twitter_monitor.py:31 (scan_target_tweets)
+2026-05-03T11:00:05.880013480Z [error] 2026-05-03 11:00:04,652 [ERROR] app.database: [sync-in-async] fetch_all called from async context at /app/app/ops/tools/twitter_monitor.py:45 (scan_target_tweets)
+2026-05-03T11:00:05.880141175Z [info] INFO:     100.64.0.35:54634 - "POST /api/ops/twitter/scan HTTP/1.1" 200 OK
+2026-05-03T11:00:07.272655205Z [error] 2026-05-03 11:00:06,831 [INFO] httpx: HTTP Request: POST https://api.parallel.ai/v1beta/search "HTTP/1.1 200 OK"
+2026-05-03T11:00:08.337121013Z [error] 2026-05-03 11:00:08,184 [INFO] httpx: HTTP Request: POST https://api.parallel.ai/v1beta/search "HTTP/1.1 200 OK"
+2026-05-03T11:00:08.337125025Z [error] 2026-05-03 11:00:08,197 [ERROR] app.database: [sync-in-async] fetch_one called from async context at /app/app/ops/tools/twitter_monitor.py:111 (_scan_handle)
+2026-05-03T11:00:12.247213392Z [error] 2026-05-03 11:00:11,705 [INFO] httpx: HTTP Request: POST https://api.parallel.ai/v1beta/search "HTTP/1.1 200 OK"
+2026-05-03T11:00:14.491600318Z [error] 2026-05-03 11:00:13,815 [INFO] httpx: HTTP Request: POST https://api.parallel.ai/v1beta/search "HTTP/1.1 200 OK"
+2026-05-03T11:00:14.491618167Z [error] 2026-05-03 11:00:14,306 [ERROR] app.database: [sync-in-async] execute called from async context at /app/app/ops/tools/twitter_monitor.py:117 (_scan_handle)
+2026-05-03T11:00:16.275405251Z [error] 2026-05-03 11:00:16,090 [INFO] httpx: HTTP Request: POST https://api.parallel.ai/v1beta/search "HTTP/1.1 200 OK"
+2026-05-03T11:01:15.569995736Z [info] INFO:     100.64.0.42:14960 - "GET / HTTP/1.1" 200 OK
+2026-05-03T11:04:19.729590373Z [info] INFO:     100.64.0.28:27988 - "GET / HTTP/1.1" 200 OK
+2026-05-03T11:07:23.525363931Z [info] INFO:     100.64.0.20:59332 - "GET / HTTP/1.1" 200 OK
+2026-05-03T11:08:34.713789316Z [error] 2026-05-03 11:08:30,934 [INFO] app.engine.watchlist: evaluate_watchlist: 1 active rows
+2026-05-03T11:08:34.713806637Z [error] 2026-05-03 11:08:30,968 [INFO] app.engine.watchlist: evaluate_watchlist: 1 active rows
+2026-05-03T11:08:34.713813445Z [error] 2026-05-03 11:08:31,437 [INFO] app.engine.watchlist: evaluate_watchlist: done {'rows_evaluated': 1, 'in_cooldown': 0, 'crossings': 0, 'events_inserted': 0, 'duplicates': 0, 'errors': 0}
+2026-05-03T11:08:34.713819955Z [error] 2026-05-03 11:08:31,437 [INFO] apscheduler.executors.default: Job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 11:23:30 UTC)" executed successfully
+2026-05-03T11:08:34.713825810Z [error] 2026-05-03 11:08:31,485 [INFO] app.engine.watchlist: evaluate_watchlist: done {'rows_evaluated': 1, 'in_cooldown': 0, 'crossings': 0, 'events_inserted': 0, 'duplicates': 0, 'errors': 0}
+2026-05-03T11:08:34.713832325Z [error] 2026-05-03 11:08:30,656 [INFO] apscheduler.executors.default: Running job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 11:23:30 UTC)" (scheduled at 2026-05-03 11:08:30.654288+00:00)
+2026-05-03T11:08:34.713835771Z [error] 2026-05-03 11:08:31,485 [INFO] apscheduler.executors.default: Job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 11:23:30 UTC)" executed successfully
+2026-05-03T11:08:34.713838946Z [error] 2026-05-03 11:08:30,676 [INFO] apscheduler.executors.default: Running job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 11:23:30 UTC)" (scheduled at 2026-05-03 11:08:30.654522+00:00)
+2026-05-03T11:08:34.713844945Z [error] 2026-05-03 11:08:30,722 [INFO] apscheduler.executors.default: Running job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 11:23:30 UTC)" (scheduled at 2026-05-03 11:08:30.720491+00:00)
+2026-05-03T11:08:34.713851818Z [error] 2026-05-03 11:08:30,733 [INFO] apscheduler.executors.default: Running job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 11:23:30 UTC)" (scheduled at 2026-05-03 11:08:30.720703+00:00)
+2026-05-03T11:08:34.715865499Z [error] 2026-05-03 11:08:31,496 [INFO] httpx: HTTP Request: GET https://api.llama.fi/hacks "HTTP/1.1 200 OK"
+2026-05-03T11:08:34.715874224Z [error] 2026-05-03 11:08:31,496 [INFO] httpx: HTTP Request: GET https://api.llama.fi/hacks "HTTP/1.1 200 OK"
+2026-05-03T11:08:34.715879980Z [error] 2026-05-03 11:08:31,686 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: fetched 513 hacks
+2026-05-03T11:08:34.715885804Z [error] 2026-05-03 11:08:31,689 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: fetched 513 hacks
+2026-05-03T11:10:15.306317524Z [info] INFO:     100.64.0.39:32542 - "GET / HTTP/1.1" 200 OK
+2026-05-03T11:10:34.683308727Z [error] 2026-05-03 11:10:32,824 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: done {'fetched': 513, 'inserted': 0, 'duplicates': 513, 'malformed': 0, 'trigger_errors': 0}
+2026-05-03T11:10:34.683316180Z [error] 2026-05-03 11:10:32,824 [INFO] apscheduler.executors.default: Job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 11:23:30 UTC)" executed successfully
+2026-05-03T11:10:40.660604911Z [error] 2026-05-03 11:10:40,653 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: done {'fetched': 513, 'inserted': 0, 'duplicates': 513, 'malformed': 0, 'trigger_errors': 0}
+2026-05-03T11:10:40.660613620Z [error] 2026-05-03 11:10:40,653 [INFO] apscheduler.executors.default: Job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 11:23:30 UTC)" executed successfully
+2026-05-03T11:13:22.242771144Z [info] INFO:     100.64.0.43:16952 - "GET / HTTP/1.1" 200 OK
+2026-05-03T11:16:14.615371204Z [info] INFO:     100.64.0.34:26748 - "GET / HTTP/1.1" 200 OK
+2026-05-03T11:19:09.522941866Z [info] INFO:     100.64.0.38:34336 - "GET / HTTP/1.1" 200 OK
+2026-05-03T11:22:12.454468387Z [info] INFO:     100.64.0.15:53204 - "GET / HTTP/1.1" 200 OK
+2026-05-03T11:23:32.922182597Z [error] 2026-05-03 11:23:30,655 [INFO] apscheduler.executors.default: Running job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 11:38:30 UTC)" (scheduled at 2026-05-03 11:23:30.654288+00:00)
+2026-05-03T11:23:32.922187537Z [error] 2026-05-03 11:23:30,670 [INFO] apscheduler.executors.default: Running job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 11:38:30 UTC)" (scheduled at 2026-05-03 11:23:30.654522+00:00)
+2026-05-03T11:23:32.922193772Z [error] 2026-05-03 11:23:30,721 [INFO] apscheduler.executors.default: Running job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 11:38:30 UTC)" (scheduled at 2026-05-03 11:23:30.720491+00:00)
+2026-05-03T11:23:32.922198421Z [error] 2026-05-03 11:23:30,730 [INFO] apscheduler.executors.default: Running job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 11:38:30 UTC)" (scheduled at 2026-05-03 11:23:30.720703+00:00)
+2026-05-03T11:23:32.922202943Z [error] 2026-05-03 11:23:30,918 [INFO] app.engine.watchlist: evaluate_watchlist: 1 active rows
+2026-05-03T11:23:32.922208170Z [error] 2026-05-03 11:23:30,963 [INFO] app.engine.watchlist: evaluate_watchlist: 1 active rows
+2026-05-03T11:23:32.922212464Z [error] 2026-05-03 11:23:31,415 [INFO] app.engine.watchlist: evaluate_watchlist: done {'rows_evaluated': 1, 'in_cooldown': 0, 'crossings': 0, 'events_inserted': 0, 'duplicates': 0, 'errors': 0}
+2026-05-03T11:23:32.922217049Z [error] 2026-05-03 11:23:31,416 [INFO] apscheduler.executors.default: Job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 11:38:30 UTC)" executed successfully
+2026-05-03T11:23:32.922220968Z [error] 2026-05-03 11:23:31,428 [INFO] app.engine.watchlist: evaluate_watchlist: done {'rows_evaluated': 1, 'in_cooldown': 0, 'crossings': 0, 'events_inserted': 0, 'duplicates': 0, 'errors': 0}
+2026-05-03T11:23:32.922225175Z [error] 2026-05-03 11:23:31,428 [INFO] apscheduler.executors.default: Job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 11:38:30 UTC)" executed successfully
+2026-05-03T11:23:32.924491760Z [error] 2026-05-03 11:23:32,638 [INFO] httpx: HTTP Request: GET https://api.llama.fi/hacks "HTTP/1.1 200 OK"
+2026-05-03T11:23:32.924499151Z [error] 2026-05-03 11:23:32,638 [INFO] httpx: HTTP Request: GET https://api.llama.fi/hacks "HTTP/1.1 200 OK"
+2026-05-03T11:23:32.924504589Z [error] 2026-05-03 11:23:32,841 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: fetched 513 hacks
+2026-05-03T11:23:32.924509735Z [error] 2026-05-03 11:23:32,842 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: fetched 513 hacks
+2026-05-03T11:25:14.584533693Z [info] INFO:     100.64.0.44:16636 - "GET / HTTP/1.1" 200 OK
+2026-05-03T11:25:34.583051690Z [error] 2026-05-03 11:25:33,036 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: done {'fetched': 513, 'inserted': 0, 'duplicates': 513, 'malformed': 0, 'trigger_errors': 0}
+2026-05-03T11:25:34.583056844Z [error] 2026-05-03 11:25:33,036 [INFO] apscheduler.executors.default: Job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 11:38:30 UTC)" executed successfully
+2026-05-03T11:25:42.528510572Z [error] 2026-05-03 11:25:42,051 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: done {'fetched': 513, 'inserted': 0, 'duplicates': 513, 'malformed': 0, 'trigger_errors': 0}
+2026-05-03T11:25:42.528517343Z [error] 2026-05-03 11:25:42,053 [INFO] apscheduler.executors.default: Job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 11:38:30 UTC)" executed successfully
+2026-05-03T11:28:12.411375044Z [info] INFO:     100.64.0.34:13032 - "GET / HTTP/1.1" 200 OK
+2026-05-03T11:31:12.358683471Z [info] INFO:     100.64.0.36:33034 - "GET / HTTP/1.1" 200 OK
+2026-05-03T11:34:15.133202974Z [info] INFO:     100.64.0.11:11534 - "GET / HTTP/1.1" 200 OK
+2026-05-03T11:37:16.556658375Z [info] INFO:     100.64.0.45:46786 - "GET / HTTP/1.1" 200 OK
+2026-05-03T11:38:36.148743149Z [error] 2026-05-03 11:38:30,721 [INFO] apscheduler.executors.default: Running job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 11:53:30 UTC)" (scheduled at 2026-05-03 11:38:30.720491+00:00)
+2026-05-03T11:38:36.148757761Z [error] 2026-05-03 11:38:30,731 [INFO] apscheduler.executors.default: Running job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 11:53:30 UTC)" (scheduled at 2026-05-03 11:38:30.720703+00:00)
+2026-05-03T11:38:36.148763841Z [error] 2026-05-03 11:38:30,918 [INFO] app.engine.watchlist: evaluate_watchlist: 1 active rows
+2026-05-03T11:38:36.148769058Z [error] 2026-05-03 11:38:30,965 [INFO] app.engine.watchlist: evaluate_watchlist: 1 active rows
+2026-05-03T11:38:36.148777236Z [error] 2026-05-03 11:38:31,419 [INFO] app.engine.watchlist: evaluate_watchlist: done {'rows_evaluated': 1, 'in_cooldown': 0, 'crossings': 0, 'events_inserted': 0, 'duplicates': 0, 'errors': 0}
+2026-05-03T11:38:36.148785779Z [error] 2026-05-03 11:38:31,419 [INFO] apscheduler.executors.default: Job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 11:53:30 UTC)" executed successfully
+2026-05-03T11:38:36.148790952Z [error] 2026-05-03 11:38:31,432 [INFO] app.engine.watchlist: evaluate_watchlist: done {'rows_evaluated': 1, 'in_cooldown': 0, 'crossings': 0, 'events_inserted': 0, 'duplicates': 0, 'errors': 0}
+2026-05-03T11:38:36.148873401Z [info] INFO:     100.64.0.10:22078 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-05-03T11:38:36.148878452Z [error] 2026-05-03 11:38:30,655 [INFO] apscheduler.executors.default: Running job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 11:53:30 UTC)" (scheduled at 2026-05-03 11:38:30.654288+00:00)
+2026-05-03T11:38:36.148883224Z [error] 2026-05-03 11:38:30,665 [INFO] apscheduler.executors.default: Running job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 11:53:30 UTC)" (scheduled at 2026-05-03 11:38:30.654522+00:00)
+2026-05-03T11:38:36.150551057Z [error] 2026-05-03 11:38:31,432 [INFO] apscheduler.executors.default: Job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 11:53:30 UTC)" executed successfully
+2026-05-03T11:38:36.150556564Z [error] 2026-05-03 11:38:31,497 [INFO] httpx: HTTP Request: GET https://api.llama.fi/hacks "HTTP/1.1 200 OK"
+2026-05-03T11:38:36.150561729Z [error] 2026-05-03 11:38:31,497 [INFO] httpx: HTTP Request: GET https://api.llama.fi/hacks "HTTP/1.1 200 OK"
+2026-05-03T11:38:36.150568404Z [error] 2026-05-03 11:38:31,693 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: fetched 513 hacks
+2026-05-03T11:38:36.150573954Z [error] 2026-05-03 11:38:31,696 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: fetched 513 hacks
+2026-05-03T11:38:36.150579190Z [info] INFO:     100.64.0.4:60884 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-05-03T11:38:43.553552218Z [info] INFO:     100.64.0.9:54474 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-05-03T11:38:46.398827497Z [info] INFO:     100.64.0.5:56404 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-05-03T11:38:48.332203084Z [info] INFO:     100.64.0.5:56404 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-05-03T11:38:50.258537847Z [info] INFO:     100.64.0.3:61770 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-05-03T11:38:52.211111628Z [info] INFO:     100.64.0.8:42948 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-05-03T11:38:57.309168359Z [info] INFO:     100.64.0.5:33928 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-05-03T11:38:59.632575550Z [info] INFO:     100.64.0.3:61774 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-05-03T11:39:03.458836248Z [info] INFO:     100.64.0.3:61774 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-05-03T11:39:06.767076958Z [info] INFO:     100.64.0.10:35828 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-05-03T11:39:16.287627131Z [info] INFO:     100.64.0.9:48660 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-05-03T11:39:17.963809506Z [info] INFO:     100.64.0.7:22472 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-05-03T11:39:19.042615502Z [info] INFO:     100.64.0.3:19344 - "GET /api/provenance/cda-sources HTTP/1.1" 200 OK
+2026-05-03T11:39:20.283376480Z [info] INFO:     100.64.0.9:48660 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-05-03T11:39:22.360554674Z [info] INFO:     100.64.0.5:14296 - "POST /api/provenance/register HTTP/1.1" 200 OK
+2026-05-03T11:39:26.183083143Z [info] INFO:     100.64.0.6:15624 - "POST /api/provenance/static/register HTTP/1.1" 405 Method Not Allowed
+2026-05-03T11:39:28.394094054Z [info] INFO:     100.64.0.6:15624 - "POST /api/provenance/static/register HTTP/1.1" 405 Method Not Allowed
+2026-05-03T11:39:31.377140305Z [info] INFO:     100.64.0.4:50462 - "POST /api/provenance/static/register HTTP/1.1" 405 Method Not Allowed
+2026-05-03T11:39:33.259679013Z [info] INFO:     100.64.0.10:61996 - "POST /api/provenance/static/register HTTP/1.1" 405 Method Not Allowed
+2026-05-03T11:39:37.202537998Z [info] INFO:     100.64.0.7:50618 - "POST /api/provenance/static/register HTTP/1.1" 405 Method Not Allowed
+2026-05-03T11:39:40.175829105Z [info] INFO:     100.64.0.9:37512 - "POST /api/provenance/static/register HTTP/1.1" 405 Method Not Allowed
+2026-05-03T11:39:42.237846670Z [info] INFO:     100.64.0.10:15004 - "POST /api/provenance/static/register HTTP/1.1" 405 Method Not Allowed
+2026-05-03T11:39:45.099355587Z [info] INFO:     100.64.0.3:40782 - "POST /api/provenance/static/register HTTP/1.1" 405 Method Not Allowed
+2026-05-03T11:40:15.749268770Z [info] INFO:     100.64.0.30:43642 - "GET / HTTP/1.1" 200 OK
+2026-05-03T11:40:35.936319759Z [error] 2026-05-03 11:40:32,159 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: done {'fetched': 513, 'inserted': 0, 'duplicates': 513, 'malformed': 0, 'trigger_errors': 0}
+2026-05-03T11:40:35.936324776Z [error] 2026-05-03 11:40:32,159 [INFO] apscheduler.executors.default: Job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 11:53:30 UTC)" executed successfully
+2026-05-03T11:40:41.029801761Z [error] 2026-05-03 11:40:40,735 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: done {'fetched': 513, 'inserted': 0, 'duplicates': 513, 'malformed': 0, 'trigger_errors': 0}
+2026-05-03T11:40:41.029808149Z [error] 2026-05-03 11:40:40,735 [INFO] apscheduler.executors.default: Job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 11:53:30 UTC)" executed successfully
+2026-05-03T11:43:21.593838660Z [info] INFO:     100.64.0.14:34424 - "GET / HTTP/1.1" 200 OK
+2026-05-03T11:46:22.687598714Z [info] INFO:     100.64.0.23:60180 - "GET / HTTP/1.1" 200 OK
+2026-05-03T11:49:16.684488451Z [info] INFO:     100.64.0.46:35182 - "GET / HTTP/1.1" 200 OK
+2026-05-03T11:52:22.058337511Z [info] INFO:     100.64.0.31:41142 - "GET / HTTP/1.1" 200 OK
+2026-05-03T11:53:31.396337785Z [error] 2026-05-03 11:53:30,654 [INFO] apscheduler.executors.default: Running job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 12:08:30 UTC)" (scheduled at 2026-05-03 11:53:30.654288+00:00)
+2026-05-03T11:53:31.396346071Z [error] 2026-05-03 11:53:30,662 [INFO] apscheduler.executors.default: Running job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 12:08:30 UTC)" (scheduled at 2026-05-03 11:53:30.654522+00:00)
+2026-05-03T11:53:31.396352225Z [error] 2026-05-03 11:53:30,721 [INFO] apscheduler.executors.default: Running job "poll_defillama_hacks (trigger: interval[0:15:00], next run at: 2026-05-03 12:08:30 UTC)" (scheduled at 2026-05-03 11:53:30.720491+00:00)
+2026-05-03T11:53:31.396358291Z [error] 2026-05-03 11:53:30,729 [INFO] apscheduler.executors.default: Running job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 12:08:30 UTC)" (scheduled at 2026-05-03 11:53:30.720703+00:00)
+2026-05-03T11:53:31.396365029Z [error] 2026-05-03 11:53:30,911 [INFO] app.engine.watchlist: evaluate_watchlist: 1 active rows
+2026-05-03T11:53:31.396371206Z [error] 2026-05-03 11:53:30,962 [INFO] app.engine.watchlist: evaluate_watchlist: 1 active rows
+2026-05-03T11:53:31.414923136Z [error] 2026-05-03 11:53:31,407 [INFO] app.engine.watchlist: evaluate_watchlist: done {'rows_evaluated': 1, 'in_cooldown': 0, 'crossings': 0, 'events_inserted': 0, 'duplicates': 0, 'errors': 0}
+2026-05-03T11:53:31.414929931Z [error] 2026-05-03 11:53:31,408 [INFO] apscheduler.executors.default: Job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 12:08:30 UTC)" executed successfully
+2026-05-03T11:53:31.431675838Z [error] 2026-05-03 11:53:31,427 [INFO] app.engine.watchlist: evaluate_watchlist: done {'rows_evaluated': 1, 'in_cooldown': 0, 'crossings': 0, 'events_inserted': 0, 'duplicates': 0, 'errors': 0}
+2026-05-03T11:53:31.431692283Z [error] 2026-05-03 11:53:31,427 [INFO] apscheduler.executors.default: Job "evaluate_watchlist (trigger: interval[0:15:00], next run at: 2026-05-03 12:08:30 UTC)" executed successfully
+2026-05-03T11:53:31.457481526Z [error] 2026-05-03 11:53:31,450 [INFO] httpx: HTTP Request: GET https://api.llama.fi/hacks "HTTP/1.1 200 OK"
+2026-05-03T11:53:31.457490892Z [error] 2026-05-03 11:53:31,451 [INFO] httpx: HTTP Request: GET https://api.llama.fi/hacks "HTTP/1.1 200 OK"
+2026-05-03T11:53:31.642289870Z [error] 2026-05-03 11:53:31,638 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: fetched 513 hacks
+2026-05-03T11:53:31.745752567Z [error] 2026-05-03 11:53:31,742 [INFO] app.engine.event_sources.defillama_hacks: poll_defillama_hacks: fetched 513 hacks
