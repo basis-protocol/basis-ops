@@ -1,147 +1,3 @@
-2026-04-26T00:31:25.818138425Z [info] INFO:     100.64.0.11:19358 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
-2026-04-26T01:14:07.717897721Z [info] INFO:     100.64.0.30:33164 - "GET / HTTP/1.1" 200 OK
-2026-04-26T01:36:38.377010694Z [info] INFO:     100.64.0.8:26826 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
-2026-04-26T02:40:41.673421906Z [info] INFO:     100.64.0.8:47112 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
-2026-04-26T03:47:35.182884224Z [info] INFO:     100.64.0.14:47194 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
-2026-04-26T04:02:06.094802028Z [info] INFO:     100.64.0.28:36306 - "GET / HTTP/1.1" 200 OK
-2026-04-26T04:46:18.020723411Z [info] INFO:     100.64.0.20:40976 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
-2026-04-26T05:49:31.110294921Z [info] INFO:     100.64.0.34:50300 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
-2026-04-26T06:18:52.194809697Z [error] 2026-04-26 06:18:44,706 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/psi/scores "HTTP/1.1 200 "
-2026-04-26T06:18:52.194810398Z [info] INFO:     100.64.0.46:22512 - "GET / HTTP/1.1" 200 OK
-2026-04-26T06:18:52.194814735Z [error] 2026-04-26 06:18:42,401 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/scores params=None
-2026-04-26T06:18:52.194818578Z [error] 2026-04-26 06:18:44,706 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/psi/scores 200 (6934 bytes)
-2026-04-26T06:18:52.194820226Z [info] INFO:     100.64.0.42:41882 - "GET /favicon.ico HTTP/1.1" 404 Not Found
-2026-04-26T06:18:52.194824491Z [error] 2026-04-26 06:18:44,707 INFO [basis_state] Returning 51 entities to client (caching)
-2026-04-26T06:18:52.194826984Z [error] 2026-04-26 06:18:44,039 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/scores "HTTP/1.1 200 "
-2026-04-26T06:18:52.194829995Z [error] 2026-04-26 06:18:44,707 INFO [basis_state] Computing 7d changes for 36 entities
-2026-04-26T06:18:52.194834316Z [error] 2026-04-26 06:18:44,040 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/scores 200 (38128 bytes)
-2026-04-26T06:18:52.194834904Z [error] 2026-04-26 06:18:44,707 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDT params={'format': 'json'}
-2026-04-26T06:18:52.194839128Z [error] 2026-04-26 06:18:44,040 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/psi/scores params=None
-2026-04-26T06:18:52.194841626Z [info] INFO:     100.64.0.43:45198 - "GET /api/entities HTTP/1.1" 200 OK
-2026-04-26T06:18:52.194845337Z [info] INFO:     100.64.0.32:14342 - "GET /favicon.ico HTTP/1.1" 404 Not Found
-2026-04-26T06:18:52.194848576Z [error] 2026-04-26 06:18:48,430 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDT?format=json "HTTP/1.1 200 "
-2026-04-26T06:18:52.195952888Z [error] 2026-04-26 06:18:48,430 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDT 200 (5109 bytes)
-2026-04-26T06:18:52.195956858Z [error] 2026-04-26 06:18:48,431 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USD1 params={'format': 'json'}
-2026-04-26T06:18:52.195960802Z [error] 2026-04-26 06:18:51,991 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USD1?format=json "HTTP/1.1 200 "
-2026-04-26T06:18:52.195963850Z [error] 2026-04-26 06:18:51,992 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USD1 200 (4511 bytes)
-2026-04-26T06:18:52.195966871Z [error] 2026-04-26 06:18:51,992 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDC params={'format': 'json'}
-2026-04-26T06:18:55.645896387Z [error] 2026-04-26 06:18:55,642 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDC?format=json "HTTP/1.1 200 "
-2026-04-26T06:18:55.645901287Z [error] 2026-04-26 06:18:55,643 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDC 200 (31828 bytes)
-2026-04-26T06:18:55.645905670Z [error] 2026-04-26 06:18:55,644 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDS params={'format': 'json'}
-2026-04-26T06:18:59.436781794Z [error] 2026-04-26 06:18:59,434 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDS?format=json "HTTP/1.1 200 "
-2026-04-26T06:18:59.438677666Z [error] 2026-04-26 06:18:59,435 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDS 200 (2734 bytes)
-2026-04-26T06:18:59.438683306Z [error] 2026-04-26 06:18:59,435 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/RLUSD params={'format': 'json'}
-2026-04-26T06:19:03.162664032Z [error] 2026-04-26 06:19:02,986 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/RLUSD?format=json "HTTP/1.1 200 "
-2026-04-26T06:19:03.162668960Z [error] 2026-04-26 06:19:02,987 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/RLUSD 200 (2807 bytes)
-2026-04-26T06:19:03.162673202Z [error] 2026-04-26 06:19:02,987 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDP params={'format': 'json'}
-2026-04-26T06:19:06.550488684Z [error] 2026-04-26 06:19:06,547 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDP?format=json "HTTP/1.1 200 "
-2026-04-26T06:19:06.550493368Z [error] 2026-04-26 06:19:06,548 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDP 200 (3138 bytes)
-2026-04-26T06:19:06.550497288Z [error] 2026-04-26 06:19:06,548 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/DAI params={'format': 'json'}
-2026-04-26T06:19:09.784234473Z [error] 2026-04-26 06:19:09,780 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/DAI?format=json "HTTP/1.1 200 "
-2026-04-26T06:19:09.784240409Z [error] 2026-04-26 06:19:09,781 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/DAI 200 (3686 bytes)
-2026-04-26T06:19:09.784244873Z [error] 2026-04-26 06:19:09,781 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/FDUSD params={'format': 'json'}
-2026-04-26T06:19:13.444947015Z [error] 2026-04-26 06:19:13,441 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/FDUSD?format=json "HTTP/1.1 200 "
-2026-04-26T06:19:13.444951539Z [error] 2026-04-26 06:19:13,442 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/FDUSD 200 (29274 bytes)
-2026-04-26T06:19:13.453291543Z [error] 2026-04-26 06:19:13,449 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDTB params={'format': 'json'}
-2026-04-26T06:19:17.184195853Z [error] 2026-04-26 06:19:17,007 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDTB?format=json "HTTP/1.1 200 "
-2026-04-26T06:19:17.184200137Z [error] 2026-04-26 06:19:17,008 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDTB 200 (2434 bytes)
-2026-04-26T06:19:17.184204698Z [error] 2026-04-26 06:19:17,008 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDD params={'format': 'json'}
-2026-04-26T06:19:20.556071368Z [error] 2026-04-26 06:19:20,552 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDD?format=json "HTTP/1.1 200 "
-2026-04-26T06:19:20.556075184Z [error] 2026-04-26 06:19:20,553 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDD 200 (2993 bytes)
-2026-04-26T06:19:20.556078711Z [error] 2026-04-26 06:19:20,553 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/TUSD params={'format': 'json'}
-2026-04-26T06:19:20.583070069Z [error] 2026-04-26 06:19:20,579 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/TUSD?format=json "HTTP/1.1 429 "
-2026-04-26T06:19:20.583075809Z [error] 2026-04-26 06:19:20,579 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/TUSD 429 (56 bytes)
-2026-04-26T06:19:20.583079403Z [error] 2026-04-26 06:19:20,579 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-26T06:19:20.583082457Z [error] 2026-04-26 06:19:20,579 WARNING [basis_state] Failed to fetch history for stablecoin:TUSD
-2026-04-26T06:19:20.583097299Z [error] 2026-04-26 06:19:20,579 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/GHO params={'format': 'json'}
-2026-04-26T06:19:20.604659357Z [error] 2026-04-26 06:19:20,602 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/GHO?format=json "HTTP/1.1 429 "
-2026-04-26T06:19:20.607251294Z [error] 2026-04-26 06:19:20,602 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/GHO 429 (56 bytes)
-2026-04-26T06:19:20.607259146Z [error] 2026-04-26 06:19:20,603 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-26T06:19:20.607264267Z [error] 2026-04-26 06:19:20,603 WARNING [basis_state] Failed to fetch history for stablecoin:GHO
-2026-04-26T06:19:20.607269486Z [error] 2026-04-26 06:19:20,603 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/PYUSD params={'format': 'json'}
-2026-04-26T06:19:24.224584072Z [error] 2026-04-26 06:19:23,828 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/PYUSD?format=json "HTTP/1.1 200 "
-2026-04-26T06:19:24.224592475Z [error] 2026-04-26 06:19:23,829 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/PYUSD 200 (4981 bytes)
-2026-04-26T06:19:24.224596866Z [error] 2026-04-26 06:19:23,829 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDe params={'format': 'json'}
-2026-04-26T06:19:27.246950248Z [error] 2026-04-26 06:19:27,060 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDe?format=json "HTTP/1.1 200 "
-2026-04-26T06:19:27.246955676Z [error] 2026-04-26 06:19:27,061 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDe 200 (6391 bytes)
-2026-04-26T06:19:27.246960092Z [error] 2026-04-26 06:19:27,062 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/MUSD params={'format': 'json'}
-2026-04-26T06:19:27.246964776Z [error] 2026-04-26 06:19:27,102 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/MUSD?format=json "HTTP/1.1 429 "
-2026-04-26T06:19:27.246968788Z [error] 2026-04-26 06:19:27,102 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/MUSD 429 (56 bytes)
-2026-04-26T06:19:27.246972177Z [error] 2026-04-26 06:19:27,103 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-26T06:19:27.246975877Z [error] 2026-04-26 06:19:27,103 WARNING [basis_state] Failed to fetch history for stablecoin:MUSD
-2026-04-26T06:19:27.246979827Z [error] 2026-04-26 06:19:27,103 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/FRAX params={'format': 'json'}
-2026-04-26T06:19:30.332430005Z [error] 2026-04-26 06:19:30,330 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/FRAX?format=json "HTTP/1.1 200 "
-2026-04-26T06:19:30.332436175Z [error] 2026-04-26 06:19:30,330 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/FRAX 200 (2793 bytes)
-2026-04-26T06:19:30.334166031Z [error] 2026-04-26 06:19:30,330 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/LUSD params={'format': 'json'}
-2026-04-26T06:19:30.357967689Z [error] 2026-04-26 06:19:30,356 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/LUSD?format=json "HTTP/1.1 429 "
-2026-04-26T06:19:30.359788636Z [error] 2026-04-26 06:19:30,356 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/LUSD 429 (56 bytes)
-2026-04-26T06:19:30.359793292Z [error] 2026-04-26 06:19:30,356 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-26T06:19:30.359796482Z [error] 2026-04-26 06:19:30,357 WARNING [basis_state] Failed to fetch history for stablecoin:LUSD
-2026-04-26T06:19:30.359799806Z [error] 2026-04-26 06:19:30,357 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/DOLA params={'format': 'json'}
-2026-04-26T06:19:33.579968599Z [error] 2026-04-26 06:19:33,576 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/DOLA?format=json "HTTP/1.1 200 "
-2026-04-26T06:19:33.579973623Z [error] 2026-04-26 06:19:33,577 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/DOLA 200 (3184 bytes)
-2026-04-26T06:19:33.579977235Z [error] 2026-04-26 06:19:33,577 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/crvUSD params={'format': 'json'}
-2026-04-26T06:19:33.616593459Z [error] 2026-04-26 06:19:33,614 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/crvUSD?format=json "HTTP/1.1 429 "
-2026-04-26T06:19:33.618400367Z [error] 2026-04-26 06:19:33,615 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/crvUSD 429 (56 bytes)
-2026-04-26T06:19:33.618404245Z [error] 2026-04-26 06:19:33,615 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-26T06:19:33.618407065Z [error] 2026-04-26 06:19:33,615 WARNING [basis_state] Failed to fetch history for stablecoin:crvUSD
-2026-04-26T06:19:33.618411016Z [error] 2026-04-26 06:19:33,615 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/SUSDS params={'format': 'json'}
-2026-04-26T06:19:36.841528107Z [error] 2026-04-26 06:19:36,838 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/SUSDS?format=json "HTTP/1.1 200 "
-2026-04-26T06:19:36.841532159Z [error] 2026-04-26 06:19:36,839 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/SUSDS 200 (2771 bytes)
-2026-04-26T06:19:36.841535353Z [error] 2026-04-26 06:19:36,839 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/EURC params={'format': 'json'}
-2026-04-26T06:19:40.225584142Z [error] 2026-04-26 06:19:40,066 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/EURC?format=json "HTTP/1.1 200 "
-2026-04-26T06:19:40.225593340Z [error] 2026-04-26 06:19:40,067 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/EURC 200 (2945 bytes)
-2026-04-26T06:19:40.225598137Z [error] 2026-04-26 06:19:40,067 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/GUSD params={'format': 'json'}
-2026-04-26T06:19:40.225602926Z [error] 2026-04-26 06:19:40,095 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/GUSD?format=json "HTTP/1.1 429 "
-2026-04-26T06:19:40.225607062Z [error] 2026-04-26 06:19:40,095 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/GUSD 429 (56 bytes)
-2026-04-26T06:19:40.225610717Z [error] 2026-04-26 06:19:40,095 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-26T06:19:40.225614803Z [error] 2026-04-26 06:19:40,096 WARNING [basis_state] Failed to fetch history for stablecoin:GUSD
-2026-04-26T06:19:40.225618329Z [error] 2026-04-26 06:19:40,096 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/SUSDE params={'format': 'json'}
-2026-04-26T06:19:43.335459276Z [error] 2026-04-26 06:19:43,331 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/SUSDE?format=json "HTTP/1.1 200 "
-2026-04-26T06:19:43.335465212Z [error] 2026-04-26 06:19:43,332 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/SUSDE 200 (2947 bytes)
-2026-04-26T06:19:43.335469490Z [error] 2026-04-26 06:19:43,332 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/STKGHO params={'format': 'json'}
-2026-04-26T06:19:46.824616275Z [error] 2026-04-26 06:19:46,821 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/STKGHO?format=json "HTTP/1.1 200 "
-2026-04-26T06:19:46.824620120Z [error] 2026-04-26 06:19:46,822 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/STKGHO 200 (2291 bytes)
-2026-04-26T06:19:46.824622955Z [error] 2026-04-26 06:19:46,822 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/EURI params={'format': 'json'}
-2026-04-26T06:19:50.232404276Z [error] 2026-04-26 06:19:50,036 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/EURI?format=json "HTTP/1.1 200 "
-2026-04-26T06:19:50.232409669Z [error] 2026-04-26 06:19:50,037 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/EURI 200 (2343 bytes)
-2026-04-26T06:19:50.232414599Z [error] 2026-04-26 06:19:50,037 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/BUSD0 params={'format': 'json'}
-2026-04-26T06:19:53.630012610Z [error] 2026-04-26 06:19:53,628 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/BUSD0?format=json "HTTP/1.1 200 "
-2026-04-26T06:19:53.631924820Z [error] 2026-04-26 06:19:53,628 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/BUSD0 200 (10170 bytes)
-2026-04-26T06:19:53.631928479Z [error] 2026-04-26 06:19:53,629 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/STEAKUSDC params={'format': 'json'}
-2026-04-26T06:19:57.236982159Z [error] 2026-04-26 06:19:57,158 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/STEAKUSDC?format=json "HTTP/1.1 200 "
-2026-04-26T06:19:57.236986210Z [error] 2026-04-26 06:19:57,158 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/STEAKUSDC 200 (2335 bytes)
-2026-04-26T06:19:57.236989820Z [error] 2026-04-26 06:19:57,159 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/MIM params={'format': 'json'}
-2026-04-26T06:20:00.707342108Z [error] 2026-04-26 06:20:00,703 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/MIM?format=json "HTTP/1.1 200 "
-2026-04-26T06:20:00.707349741Z [error] 2026-04-26 06:20:00,703 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/MIM 200 (2817 bytes)
-2026-04-26T06:20:00.707355174Z [error] 2026-04-26 06:20:00,704 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/SDOLA params={'format': 'json'}
-2026-04-26T06:20:04.249913556Z [error] 2026-04-26 06:20:04,246 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/SDOLA?format=json "HTTP/1.1 200 "
-2026-04-26T06:20:04.251205597Z [error] 2026-04-26 06:20:04,246 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/SDOLA 200 (2615 bytes)
-2026-04-26T06:20:04.251210480Z [error] 2026-04-26 06:20:04,247 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/OUSD params={'format': 'json'}
-2026-04-26T06:20:04.274990282Z [error] 2026-04-26 06:20:04,272 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/OUSD?format=json "HTTP/1.1 429 "
-2026-04-26T06:20:04.274996406Z [error] 2026-04-26 06:20:04,272 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/OUSD 429 (56 bytes)
-2026-04-26T06:20:04.275000787Z [error] 2026-04-26 06:20:04,272 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-26T06:20:04.275004254Z [error] 2026-04-26 06:20:04,272 WARNING [basis_state] Failed to fetch history for stablecoin:OUSD
-2026-04-26T06:20:04.275007625Z [error] 2026-04-26 06:20:04,272 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/FRAX params={'format': 'json'}
-2026-04-26T06:20:04.303538056Z [error] 2026-04-26 06:20:04,299 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/FRAX?format=json "HTTP/1.1 429 "
-2026-04-26T06:20:04.303547284Z [error] 2026-04-26 06:20:04,300 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/FRAX 429 (56 bytes)
-2026-04-26T06:20:04.303551929Z [error] 2026-04-26 06:20:04,300 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-26T06:20:04.303555401Z [error] 2026-04-26 06:20:04,300 WARNING [basis_state] Failed to fetch history for stablecoin:FRAX
-2026-04-26T06:20:04.303559250Z [error] 2026-04-26 06:20:04,300 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/sUSD params={'format': 'json'}
-2026-04-26T06:20:04.333787245Z [error] 2026-04-26 06:20:04,331 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/sUSD?format=json "HTTP/1.1 429 "
-2026-04-26T06:20:04.333792855Z [error] 2026-04-26 06:20:04,331 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/sUSD 429 (56 bytes)
-2026-04-26T06:20:04.333796859Z [error] 2026-04-26 06:20:04,331 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
-2026-04-26T06:20:04.333800177Z [error] 2026-04-26 06:20:04,331 WARNING [basis_state] Failed to fetch history for stablecoin:sUSD
-2026-04-26T06:20:04.333804145Z [error] 2026-04-26 06:20:04,331 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/USDD (BTTC bridge) params={'format': 'json'}
-2026-04-26T06:20:07.871897767Z [error] 2026-04-26 06:20:07,868 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/USDD%20(BTTC%20bridge)?format=json "HTTP/1.1 200 "
-2026-04-26T06:20:07.871903078Z [error] 2026-04-26 06:20:07,869 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/USDD (BTTC bridge) 200 (2195 bytes)
-2026-04-26T06:20:07.871906993Z [error] 2026-04-26 06:20:07,869 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/RAI params={'format': 'json'}
-2026-04-26T06:20:11.234259010Z [error] 2026-04-26 06:20:11,100 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/RAI?format=json "HTTP/1.1 200 "
-2026-04-26T06:20:11.234265233Z [error] 2026-04-26 06:20:11,101 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/RAI 200 (2455 bytes)
-2026-04-26T06:20:11.234270339Z [error] 2026-04-26 06:20:11,101 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/EURE params={'format': 'json'}
-2026-04-26T06:20:11.234274349Z [error] 2026-04-26 06:20:11,134 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/EURE?format=json "HTTP/1.1 429 "
-2026-04-26T06:20:11.234277737Z [error] 2026-04-26 06:20:11,135 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/reports/stablecoin/EURE 429 (56 bytes)
-2026-04-26T06:20:11.234281048Z [error] 2026-04-26 06:20:11,135 ERROR [basis_state.api_client] API error response body: {"error":"Rate limit exceeded","retry_after_seconds":60}
 2026-04-26T06:20:11.234284561Z [error] 2026-04-26 06:20:11,135 WARNING [basis_state] Failed to fetch history for stablecoin:EURE
 2026-04-26T06:20:11.234288104Z [error] 2026-04-26 06:20:11,135 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/reports/stablecoin/EURS params={'format': 'json'}
 2026-04-26T06:20:14.680082236Z [error] 2026-04-26 06:20:14,676 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/reports/stablecoin/EURS?format=json "HTTP/1.1 200 "
@@ -1903,3 +1759,243 @@
 2026-05-02T22:21:11.836769863Z [info] INFO:     100.64.0.36:19726 - "GET /terms HTTP/1.1" 200 OK
 2026-05-02T22:35:12.562995904Z [info] INFO:     100.64.0.10:41166 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
 2026-05-02T23:37:58.994372887Z [info] INFO:     100.64.0.9:43936 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
+2026-05-03T00:39:05.375677061Z [info] INFO:     100.64.0.19:38056 - "GET / HTTP/1.1" 200 OK
+2026-05-03T00:42:15.034362489Z [info] INFO:     100.64.0.21:18500 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
+2026-05-03T00:55:26.295953153Z [info] INFO:     100.64.0.46:51814 - "GET / HTTP/1.1" 200 OK
+2026-05-03T00:55:26.295959457Z [info] INFO:     100.64.0.42:48184 - "GET / HTTP/1.1" 200 OK
+2026-05-03T00:55:26.295962767Z [info] INFO:     100.64.0.46:51814 - "GET / HTTP/1.1" 200 OK
+2026-05-03T00:55:26.295966681Z [info] INFO:     100.64.0.54:27554 - "GET / HTTP/1.1" 200 OK
+2026-05-03T00:59:05.975727430Z [info] INFO:     100.64.0.6:14188 - "GET /.env.stage HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.975733739Z [info] INFO:     100.64.0.35:57090 - "GET /phpinfo.php HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.975737334Z [info] INFO:     100.64.0.7:32468 - "GET /.aws/config HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.975740842Z [info] INFO:     100.64.0.5:18432 - "GET /test.php HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.975744197Z [info] INFO:     100.64.0.10:17208 - "GET /.aws/credentials HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.975747886Z [info] INFO:     100.64.0.6:14206 - "GET /.npmrc HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.975751371Z [info] INFO:     100.64.0.9:32188 - "GET /.docker/config.json HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.975754992Z [info] INFO:     100.64.0.4:56444 - "GET /.aws/credentials HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.975758734Z [info] INFO:     100.64.0.4:56456 - "GET /.htpasswd HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.975762286Z [info] INFO:     100.64.0.12:62590 - "GET /info.php HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.975765876Z [info] INFO:     100.64.0.15:52468 - "GET /.aws/config HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.975769028Z [info] INFO:     100.64.0.8:28608 - "GET /php_info.php HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.975772122Z [info] INFO:     100.64.0.8:28610 - "GET /info.php HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.975775500Z [info] INFO:     100.64.0.21:37790 - "GET /.env.test HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.975778904Z [info] INFO:     100.64.0.3:54862 - "GET /.env HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.975782049Z [info] INFO:     100.64.0.9:32188 - "GET / HTTP/1.1" 200 OK
+2026-05-03T00:59:05.975785635Z [info] INFO:     100.64.0.7:32468 - "GET /.env.prod HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.975789079Z [info] INFO:     100.64.0.6:14206 - "GET /.env.staging HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.977409532Z [info] INFO:     100.64.0.5:18432 - "GET /.env.development HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.977415028Z [info] INFO:     100.64.0.33:39676 - "GET /test.php HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.977417548Z [info] INFO:     100.64.0.36:56212 - "GET /.netrc HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.977426821Z [info] INFO:     100.64.0.20:31844 - "GET /.env.production HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.977430587Z [info] INFO:     100.64.0.3:54862 - "GET /php.php HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.977437484Z [info] INFO:     100.64.0.4:56456 - "GET /.env HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.977442428Z [info] INFO:     100.64.0.48:30388 - "GET / HTTP/1.1" 200 OK
+2026-05-03T00:59:05.977444478Z [info] INFO:     100.64.0.13:17056 - "GET /.git/config HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.977448302Z [info] INFO:     100.64.0.4:56456 - "GET /i.php HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.977450527Z [info] INFO:     100.64.0.34:48934 - "GET /.git/config HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.977454078Z [info] INFO:     100.64.0.10:17208 - "GET /php-info.php HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.977457009Z [info] INFO:     100.64.0.8:28610 - "GET /.kube/config HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.977459906Z [info] INFO:     100.64.0.33:39676 - "GET /phpinfo.php HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.977463575Z [info] INFO:     100.64.0.21:37790 - "GET /.env.local HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.977466934Z [info] INFO:     100.64.0.12:62590 - "GET /php.php HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.977469839Z [info] INFO:     100.64.0.9:32188 - "GET /?=phpinfo() HTTP/1.1" 200 OK
+2026-05-03T00:59:05.977472841Z [info] INFO:     100.64.0.10:17222 - "GET /.dockerenv HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.977475934Z [info] INFO:     100.64.0.33:39688 - "GET /.htpasswd HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.977478861Z [info] INFO:     100.64.0.35:57090 - "GET /.env.dev HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.979336973Z [info] INFO:     100.64.0.7:32468 - "GET /.env.production HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.979343482Z [info] INFO:     100.64.0.9:32188 - "GET /.git/HEAD HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.979348937Z [info] INFO:     100.64.0.8:28610 - "GET /_profiler/phpinfo HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.979353697Z [info] INFO:     100.64.0.4:56444 - "GET /index.php?=phpinfo() HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.979357203Z [info] INFO:     100.64.0.10:17222 - "GET /.%2567%2569%2574/%2563%256F%256E%2566%2569%2567 HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.979361044Z [info] INFO:     100.64.0.34:48934 - "GET /.git/index HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.979364477Z [info] INFO:     100.64.0.35:57090 - "GET /.env.local HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.979367797Z [info] INFO:     100.64.0.6:14206 - "GET /.env.staging HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.979370954Z [info] INFO:     100.64.0.6:14188 - "GET /.env.dev HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.979374314Z [info] INFO:     100.64.0.15:52468 - "GET /.env.test HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.979377880Z [info] INFO:     100.64.0.8:28608 - "GET /.env.prod HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.979381790Z [info] INFO:     100.64.0.9:32188 - "GET /.env.development HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.979384826Z [info] INFO:     100.64.0.34:48944 - "GET /.git/logs/HEAD HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.979387737Z [info] INFO:     100.64.0.48:30388 - "GET /.git/packed-refs HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.979390706Z [info] INFO:     100.64.0.7:32468 - "GET /.git-credentials HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.979393754Z [info] INFO:     100.64.0.13:17056 - "GET /.%2565%256Ev HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.979396684Z [info] INFO:     100.64.0.9:32198 - "GET /.env%3A%3A%24DATA HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.979400251Z [info] INFO:     100.64.0.8:28610 - "GET /.gitconfig HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.981334724Z [info] INFO:     100.64.0.9:32198 - "GET /.env.old HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.981342044Z [info] INFO:     100.64.0.35:57090 - "GET /wp-config.php.old HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.981349730Z [info] INFO:     100.64.0.34:48944 - "GET /.env.save HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.981351010Z [info] INFO:     100.64.0.21:37790 - "GET /wp-config.php.bak HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.981354819Z [info] INFO:     100.64.0.4:56444 - "GET /wp-config.php.txt HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.981356622Z [info] INFO:     100.64.0.20:31844 - "GET /.git-credentials HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.981360336Z [info] INFO:     100.64.0.14:34802 - "GET /.env.swp HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.981361909Z [info] INFO:     100.64.0.14:34802 - "GET /.git/refs/heads/main HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.981365129Z [info] INFO:     100.64.0.9:32206 - "GET /wp-config.php~ HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.981366956Z [info] INFO:     100.64.0.4:56444 - "GET /.env%3B.jpg HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.981370914Z [info] INFO:     100.64.0.8:28608 - "GET /.env.dist HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.981371534Z [info] INFO:     100.64.0.35:57090 - "GET /%2577%2570%252D%2563%256F%256E%2566%2569%2567.%2570%2568%2570.%2562%2561%256B HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.981376799Z [info] INFO:     100.64.0.6:14188 - "GET /wp-config.php.save HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.981376859Z [info] INFO:     100.64.0.8:28608 - "GET /.git/refs/heads/master HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.981381060Z [info] INFO:     100.64.0.5:18432 - "GET /.env.bak HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.981384594Z [info] INFO:     100.64.0.21:37790 - "GET /.env%3B.css HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.981387916Z [info] INFO:     100.64.0.12:62590 - "GET /.env.backup HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.982818713Z [info] INFO:     100.64.0.12:62590 - "GET /.env~ HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.982825228Z [info] INFO:     100.64.0.6:14206 - "GET /wp-config.php.orig HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.982831240Z [info] INFO:     100.64.0.9:32188 - "GET /wp-config-backup.php HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.982834726Z [info] INFO:     100.64.0.35:57090 - "GET /.env_backup HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.982838256Z [info] INFO:     100.64.0.35:57098 - "GET /wp-config_old.php HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.982842553Z [info] INFO:     100.64.0.9:32198 - "GET /.env.backup HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.982845837Z [info] INFO:     100.64.0.5:18432 - "GET /wp-config.php.swp HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.982849418Z [info] INFO:     100.64.0.4:56444 - "GET /backup/wp-config.php HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.982853087Z [info] INFO:     100.64.0.8:28608 - "GET /.env.bak HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.982856910Z [info] INFO:     100.64.0.10:17222 - "GET /wp-config.php%3A%3A%24DATA HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.982860488Z [info] INFO:     100.64.0.12:62590 - "GET /old-wp-config.php HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.982863937Z [info] INFO:     100.64.0.35:57090 - "GET /wp-config-old.php HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.982867632Z [info] INFO:     100.64.0.12:62604 - "GET /.env.development.local HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.982871013Z [info] INFO:     100.64.0.4:56456 - "GET /.env.old HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.982874181Z [info] INFO:     100.64.0.48:30388 - "GET /.env.save HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.982877482Z [info] INFO:     100.64.0.6:14206 - "GET /server-status HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.982880630Z [info] INFO:     100.64.0.8:28610 - "GET /wp-content/debug.log HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.982884034Z [info] INFO:     100.64.0.6:14188 - "GET /api/.env HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.984567766Z [info] INFO:     100.64.0.35:57114 - "GET /api/v1/.env HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.984572646Z [info] INFO:     100.64.0.2:54030 - "GET /.env.production.local HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.984576815Z [info] INFO:     100.64.0.10:17222 - "GET /server-info HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.984579998Z [info] INFO:     100.64.0.10:17208 - "GET /app/.env HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.984583552Z [info] INFO:     100.64.0.12:62604 - "GET /nginx_status HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.984586906Z [info] INFO:     100.64.0.35:57090 - "GET /apps/.env HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.984590175Z [info] INFO:     100.64.0.35:57098 - "GET /backend/.env HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.984593906Z [info] INFO:     100.64.0.12:62590 - "GET /_profiler HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.984597614Z [info] INFO:     100.64.0.4:56456 - "GET /app_dev.php HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.984601322Z [info] INFO:     100.64.0.11:27816 - "GET /server-status?auto HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.984604287Z [info] INFO:     100.64.0.9:32198 - "GET /?-s HTTP/1.1" 200 OK
+2026-05-03T00:59:05.984607761Z [info] INFO:     100.64.0.10:17208 - "GET /public/.env HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.984611125Z [info] INFO:     100.64.0.6:14188 - "GET /auth.json HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.984615787Z [info] INFO:     100.64.0.4:56444 - "GET /admin/.env HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.984619994Z [info] INFO:     100.64.0.35:57098 - "GET /composer.json HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.984623267Z [info] INFO:     100.64.0.6:14206 - "GET /web/.env HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.984634868Z [info] INFO:     100.64.0.35:57090 - "GET /composer.lock HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.984639385Z [info] INFO:     100.64.0.12:62590 - "GET /.composer/auth.json HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.986439929Z [info] INFO:     100.64.0.4:56456 - "GET /config/.env HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.986444008Z [info] INFO:     100.64.0.20:31844 - "GET /actuator/env HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.986447093Z [info] INFO:     100.64.0.15:52468 - "GET /public/.env HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.986448191Z [info] INFO:     100.64.0.21:37790 - "GET /laravel/.env HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.986453129Z [info] INFO:     100.64.0.9:32188 - "GET /actuator/configprops HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.986457070Z [info] INFO:     100.64.0.20:31844 - "GET /src/.env HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.986458555Z [info] INFO:     100.64.0.35:57114 - "GET /actuator/env HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.986462792Z [info] INFO:     100.64.0.4:56444 - "GET /prisma/.env HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.986466208Z [info] INFO:     100.64.0.21:37790 - "GET /api/.env HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.986469660Z [info] INFO:     100.64.0.20:31844 - "GET /actuator/loggers HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.986473183Z [info] INFO:     100.64.0.9:32188 - "GET /backend/.env HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.986477263Z [info] INFO:     100.64.0.35:57114 - "GET /server/.env HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.986481258Z [info] INFO:     100.64.0.10:17208 - "GET /storage/.env HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.986484215Z [info] INFO:     100.64.0.35:57090 - "GET /actuator/beans HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.986486930Z [info] INFO:     100.64.0.10:17222 - "GET /actuator/mappings HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.986489753Z [info] INFO:     100.64.0.6:14206 - "GET /actuator/trace HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.986492624Z [info] INFO:     100.64.0.8:28610 - "GET /actuator/health HTTP/1.1" 404 Not Found
+2026-05-03T00:59:05.986495317Z [info] INFO:     100.64.0.35:57098 - "GET /actuator/threaddump HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.469213207Z [info] INFO:     100.64.0.3:23158 - "GET /test.php HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.469221840Z [info] INFO:     100.64.0.35:49716 - "GET /.htpasswd HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.469225555Z [info] INFO:     100.64.0.2:39482 - "GET /.env.test HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.469232772Z [info] INFO:     100.64.0.21:36560 - "GET /php.php HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.469236499Z [info] INFO:     100.64.0.35:49716 - "GET /.env.staging HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.469239862Z [info] INFO:     100.64.0.21:36560 - "GET /php.php HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.469243093Z [info] INFO:     100.64.0.15:58770 - "GET /php-info.php HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.469246479Z [info] INFO:     100.64.0.4:57838 - "GET /i.php HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.469251321Z [info] INFO:     100.64.0.4:57840 - "GET /.env.stage HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.469254574Z [info] INFO:     100.64.0.6:39770 - "GET /.env.dev HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.469257589Z [info] INFO:     100.64.0.8:44702 - "GET /.aws/credentials HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.469268506Z [info] INFO:     100.64.0.11:32186 - "GET /info.php HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.469272945Z [info] INFO:     100.64.0.35:49722 - "GET /phpinfo.php HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.469276118Z [info] INFO:     100.64.0.7:39456 - "GET /.env.development HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.469279226Z [info] INFO:     100.64.0.48:22038 - "GET /test.php HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.469282283Z [info] INFO:     100.64.0.14:47222 - "GET /.aws/config HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.469285190Z [info] INFO:     100.64.0.21:36560 - "GET / HTTP/1.1" 200 OK
+2026-05-03T01:04:56.469288521Z [info] INFO:     100.64.0.35:49722 - "GET /.env.production HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.469292394Z [info] INFO:     100.64.0.33:15848 - "GET / HTTP/1.1" 200 OK
+2026-05-03T01:04:56.470219369Z [info] INFO:     100.64.0.33:15862 - "GET /.env HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.470223889Z [info] INFO:     100.64.0.2:39482 - "GET /.env.prod HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.470228433Z [info] INFO:     100.64.0.10:53850 - "GET /.env.local HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.470232626Z [info] INFO:     100.64.0.9:26560 - "GET /php_info.php HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.470242044Z [info] INFO:     100.64.0.34:43942 - "GET /phpinfo.php HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.470247085Z [info] INFO:     100.64.0.21:36560 - "GET /.docker/config.json HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.470252513Z [info] INFO:     100.64.0.35:49722 - "GET /info.php HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.470257307Z [info] INFO:     100.64.0.6:39770 - "GET /.npmrc HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.470262730Z [info] INFO:     100.64.0.11:32186 - "GET /.aws/config HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.470265169Z [info] INFO:     100.64.0.4:57840 - "GET /.env HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.470269443Z [info] INFO:     100.64.0.18:58108 - "GET /.env.local HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.470271430Z [info] INFO:     100.64.0.14:47222 - "GET /.kube/config HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.470275930Z [info] INFO:     100.64.0.33:15848 - "GET /.env.production HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.470277802Z [info] INFO:     100.64.0.8:44702 - "GET /.htpasswd HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.470284513Z [info] INFO:     100.64.0.2:39482 - "GET /.env.prod HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.470289291Z [info] INFO:     100.64.0.18:58108 - "GET /.dockerenv HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.470293177Z [info] INFO:     100.64.0.14:47226 - "GET /.netrc HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.470299715Z [info] INFO:     100.64.0.36:54938 - "GET /?=phpinfo() HTTP/1.1" 200 OK
+2026-05-03T01:04:56.471329574Z [info] INFO:     100.64.0.5:34716 - "GET /.aws/credentials HTTP/1.1" 404 Not Found
+2026-05-03T01:04:56.471335603Z [info] INFO:     100.64.0.36:54938 - "GET /.env.staging HTTP/1.1" 404 Not Found
+2026-05-03T01:12:56.405867569Z [info] INFO:     100.64.0.37:57074 - "GET / HTTP/1.1" 200 OK
+2026-05-03T01:46:39.702792749Z [info] INFO:     100.64.0.4:58520 - "GET /.git/config HTTP/1.1" 404 Not Found
+2026-05-03T01:51:00.246425129Z [info] INFO:     100.64.0.7:45722 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
+2026-05-03T01:58:50.222174714Z [info] INFO:     100.64.0.36:47010 - "GET /.aws/credentials HTTP/1.1" 404 Not Found
+2026-05-03T01:58:50.222182315Z [info] INFO:     100.64.0.9:17648 - "GET /.htpasswd HTTP/1.1" 404 Not Found
+2026-05-03T01:58:50.222186437Z [info] INFO:     100.64.0.34:25482 - "GET /test.php HTTP/1.1" 404 Not Found
+2026-05-03T01:58:50.222191163Z [info] INFO:     100.64.0.21:32432 - "GET /php-info.php HTTP/1.1" 404 Not Found
+2026-05-03T01:58:50.222196225Z [info] INFO:     100.64.0.33:41428 - "GET /.npmrc HTTP/1.1" 404 Not Found
+2026-05-03T01:58:50.222200546Z [info] INFO:     100.64.0.21:32434 - "GET /.netrc HTTP/1.1" 404 Not Found
+2026-05-03T01:58:50.222204842Z [info] INFO:     100.64.0.36:47022 - "GET / HTTP/1.1" 200 OK
+2026-05-03T01:58:50.222208917Z [info] INFO:     100.64.0.11:27772 - "GET /.aws/config HTTP/1.1" 404 Not Found
+2026-05-03T01:58:50.222212953Z [info] INFO:     100.64.0.2:39316 - "GET /php.php HTTP/1.1" 404 Not Found
+2026-05-03T01:58:50.222216971Z [info] INFO:     100.64.0.5:13808 - "GET /.dockerenv HTTP/1.1" 404 Not Found
+2026-05-03T01:58:50.222220761Z [info] INFO:     100.64.0.7:60760 - "GET /.aws/credentials HTTP/1.1" 404 Not Found
+2026-05-03T01:58:50.222319483Z [info] INFO:     100.64.0.35:23572 - "GET /phpinfo.php HTTP/1.1" 404 Not Found
+2026-05-03T01:58:50.222324452Z [info] INFO:     100.64.0.5:13812 - "GET /.env.test HTTP/1.1" 404 Not Found
+2026-05-03T01:58:50.222329036Z [info] INFO:     100.64.0.13:27520 - "GET /.docker/config.json HTTP/1.1" 404 Not Found
+2026-05-03T01:58:50.222332422Z [info] INFO:     100.64.0.6:27804 - "GET /i.php HTTP/1.1" 404 Not Found
+2026-05-03T01:58:50.222336453Z [info] INFO:     100.64.0.48:16306 - "GET /.kube/config HTTP/1.1" 404 Not Found
+2026-05-03T01:58:50.243419475Z [info] INFO:     100.64.0.11:27772 - "GET /.aws/config HTTP/1.1" 404 Not Found
+2026-05-03T01:58:50.254560191Z [info] INFO:     100.64.0.21:32434 - "GET /info.php HTTP/1.1" 404 Not Found
+2026-05-03T01:58:50.265957627Z [info] INFO:     100.64.0.9:17648 - "GET /test.php HTTP/1.1" 404 Not Found
+2026-05-03T01:58:50.273085461Z [info] INFO:     100.64.0.34:25482 - "GET / HTTP/1.1" 200 OK
+2026-05-03T01:58:50.282045026Z [info] INFO:     100.64.0.2:39316 - "GET /phpinfo.php HTTP/1.1" 404 Not Found
+2026-05-03T01:58:50.290343409Z [info] INFO:     100.64.0.5:13812 - "GET /php_info.php HTTP/1.1" 404 Not Found
+2026-05-03T01:58:50.306064338Z [info] INFO:     100.64.0.13:27520 - "GET /.env HTTP/1.1" 404 Not Found
+2026-05-03T01:58:50.418481006Z [info] INFO:     100.64.0.7:60760 - "GET /.env.staging HTTP/1.1" 404 Not Found
+2026-05-03T01:58:50.441832935Z [info] INFO:     100.64.0.36:47022 - "GET /.env.prod HTTP/1.1" 404 Not Found
+2026-05-03T01:58:50.456634258Z [info] INFO:     100.64.0.2:39326 - "GET /.env.stage HTTP/1.1" 404 Not Found
+2026-05-03T01:58:50.532728397Z [info] INFO:     100.64.0.14:32242 - "GET /.env.dev HTTP/1.1" 404 Not Found
+2026-05-03T01:58:50.575026890Z [info] INFO:     100.64.0.34:25482 - "GET /.env.local HTTP/1.1" 404 Not Found
+2026-05-03T02:20:42.658468515Z [info] INFO:     100.64.0.50:24612 - "GET / HTTP/1.1" 200 OK
+2026-05-03T02:34:53.361607614Z [info] INFO:     100.64.0.36:22778 - "GET /wp-login.php HTTP/1.1" 404 Not Found
+2026-05-03T02:55:44.831003366Z [info] INFO:     100.64.0.14:61008 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
+2026-05-03T03:02:54.656294646Z [info] INFO:     100.64.0.43:24726 - "GET / HTTP/1.1" 200 OK
+2026-05-03T03:02:54.656303410Z [error] 2026-05-03 03:02:53,337 INFO [basis_state.api_client] API request (attempt 1): GET https://basisprotocol.xyz/api/scores params=None
+2026-05-03T03:02:54.656307493Z [info] INFO:     100.64.0.43:24726 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+2026-05-03T03:02:54.656314512Z [info] INFO:     100.64.0.46:43914 - "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 Not Found
+2026-05-03T03:02:54.656317794Z [error] 2026-05-03 03:02:53,462 INFO [httpx] HTTP Request: GET https://basisprotocol.xyz/api/scores "HTTP/1.1 500 "
+2026-05-03T03:02:54.656320803Z [error] 2026-05-03 03:02:53,462 INFO [basis_state.api_client] API response: https://basisprotocol.xyz/api/scores 500 (21 bytes)
+2026-05-03T03:02:54.656324044Z [error] 2026-05-03 03:02:53,462 ERROR [basis_state.api_client] API error response body: Internal Server Error
+2026-05-03T03:02:54.656328589Z [error] 2026-05-03 03:02:53,462 ERROR [basis_state] Failed to fetch entities from Basis Protocol API (https://basisprotocol.xyz)
+2026-05-03T03:02:54.656331592Z [error] Traceback (most recent call last):
+2026-05-03T03:02:54.656334548Z [error]   File "/app/app/main.py", line 526, in entities_json
+2026-05-03T03:02:54.656341367Z [error]     sii = await api_client.get_sii_scores()
+2026-05-03T03:02:54.656344949Z [error]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-03T03:02:54.656347903Z [error]   File "/app/app/api_client.py", line 53, in get_sii_scores
+2026-05-03T03:02:54.656352470Z [error]     return await _get("/api/scores")
+2026-05-03T03:02:54.656356107Z [error]            ^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-03T03:02:54.656359104Z [error]   File "/app/app/api_client.py", line 46, in _get
+2026-05-03T03:02:54.656362136Z [error]     resp.raise_for_status()
+2026-05-03T03:02:54.656365513Z [error]   File "/usr/local/lib/python3.11/site-packages/httpx/_models.py", line 829, in raise_for_status
+2026-05-03T03:02:54.657750159Z [error]     raise HTTPStatusError(message, request=request, response=self)
+2026-05-03T03:02:54.657754698Z [error] httpx.HTTPStatusError: Server error '500 ' for url 'https://basisprotocol.xyz/api/scores'
+2026-05-03T03:02:54.657758071Z [error] For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2026-05-03T03:02:54.657761130Z [info] INFO:     100.64.0.32:58416 - "GET /api/entities HTTP/1.1" 200 OK
+2026-05-03T03:02:54.657764573Z [info] INFO:     100.64.0.47:44148 - "GET /apple-touch-icon.png HTTP/1.1" 404 Not Found
+2026-05-03T03:02:54.657767469Z [info] INFO:     100.64.0.31:41768 - "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 Not Found
+2026-05-03T03:02:54.657772607Z [info] INFO:     100.64.0.38:59168 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+2026-05-03T03:02:54.657775340Z [info] INFO:     100.64.0.44:19672 - "GET /apple-touch-icon.png HTTP/1.1" 404 Not Found
+2026-05-03T03:11:24.655046866Z [info] INFO:     100.64.0.57:46652 - "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 Not Found
+2026-05-03T03:11:24.655054672Z [info] INFO:     100.64.0.37:45782 - "GET /apple-touch-icon.png HTTP/1.1" 404 Not Found
+2026-05-03T03:11:24.655058868Z [info] INFO:     100.64.0.29:21798 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+2026-05-03T03:11:24.655063252Z [info] INFO:     100.64.0.58:55090 - "GET / HTTP/1.1" 200 OK
+2026-05-03T03:22:34.931065292Z [info] INFO:     100.64.0.52:44960 - "GET /wp-login.php HTTP/1.1" 404 Not Found
+2026-05-03T03:24:14.576883480Z [info] INFO:     100.64.0.40:41872 - "GET /robots.txt HTTP/1.1" 404 Not Found
+2026-05-03T03:24:14.576888069Z [info] INFO:     100.64.0.32:43010 - "GET / HTTP/1.1" 200 OK
+2026-05-03T04:01:38.618892697Z [info] INFO:     100.64.0.9:11588 - "GET /wp-admin/install.php?step=1 HTTP/1.1" 404 Not Found
+2026-05-03T04:11:09.753369219Z [info] INFO:     100.64.0.23:17988 - "GET / HTTP/1.1" 200 OK
